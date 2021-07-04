@@ -5,6 +5,8 @@ from multiprocessing.pool import ThreadPool
 import platform
 import numpy as np
 
+from tqdm import tqdm
+
 # https://stackoverflow.com/a/51954326/9477154
 MAX_NUMPY_CORES = 1
 print("Setting numpy cores to %i" % MAX_NUMPY_CORES)
@@ -36,7 +38,7 @@ import dask.dataframe as dd
 # DIRECTORIES
 #######################################################################
 # in old base dir (scratch1)
-BASE_DIR = '/dfs/scratch1/safegraph_homes/'
+BASE_DIR = '/media/gpu/easystore/'
 UNZIPPED_DATA_DIR = os.path.join(BASE_DIR, 'all_aggregate_data/20191213-safegraph-aggregate-longitudinal-data-to-unzip-to/')
 ANNOTATED_H5_DATA_DIR = os.path.join(BASE_DIR, 'all_aggregate_data/chunks_with_demographic_annotations/')
 CHUNK_FILENAME = 'chunk_1.2017-3.2020_c2.h5'
@@ -46,9 +48,9 @@ PATH_TO_IPF_OUTPUT = os.path.join(BASE_DIR, 'all_aggregate_data/ipf_output/')
 OLD_FITTED_MODEL_DIR = os.path.join(BASE_DIR, 'all_aggregate_data/fitted_models/')
 
 # in new base dir
-NEW_BASE_DIR = '/dfs/scratch2/second_safegraph_homes/'
+NEW_BASE_DIR = '/media/gpu/easystore/'
 FITTED_MODEL_DIR = os.path.join(NEW_BASE_DIR, 'extra_safegraph_aggregate_models/')
-CURRENT_DATA_DIR = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/raw_safegraph_data/')
+CURRENT_DATA_DIR = os.path.join(NEW_BASE_DIR, 'Safegraph/')
 NEW_STRATIFIED_BY_AREA_DIR = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/stratified_by_metro_area/')
 PATH_TO_NEW_IPF_OUTPUT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/ipf_output/')
 PATH_TO_SEIR_INIT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/seir_init/')
@@ -484,6 +486,7 @@ def get_datetime_hour_as_string(datetime_hour):
 
 def load_csv_possibly_with_dask(filenames, use_dask=False, compression='gzip', blocksize=None, compute_with_dask=True, **kwargs):
     # Avoid loading the index column because it's probably not desired.
+
     if not ('usecols' in kwargs and kwargs['usecols'] is not None):
         kwargs['usecols'] = lambda col: col != 'Unnamed: 0'
     if use_dask:
@@ -495,7 +498,10 @@ def load_csv_possibly_with_dask(filenames, use_dask=False, compression='gzip', b
             return d
     else:
         # Use tqdm to display a progress bar.
-        return pd.concat(pd.read_csv(f, **kwargs) for f in tqdm_wrap(filenames))
+        # return pd.concat(pd.read_csv(f, **kwargs) for f in tqdm_wrap(filenames))
+        if not isinstance(filenames, list):
+            filenames = [filenames]
+        return pd.concat(pd.read_csv(f, **kwargs, engine='python') for f in tqdm(filenames))
 
 def get_cumulative(x):
     '''

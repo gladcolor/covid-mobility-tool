@@ -18,7 +18,7 @@ import time
 import scipy 
 
 # automatically read weekly strings so we don't have to remember to update it each week.
-ALL_WEEKLY_STRINGS = sorted([a.replace('-weekly-patterns.csv.gz', '') for a in os.listdir('/dfs/scratch1/safegraph_homes/all_aggregate_data/weekly_patterns_data/v1/main-file/')])
+ALL_WEEKLY_STRINGS = sorted([a.replace('-weekly-patterns.csv.gz', '') for a in os.listdir('/media/gpu/easystore/Safegraph/Weekly Places Patterns v2 (until 2020-06-15)/main-file/')])
 try:
     cast_to_datetime = [datetime.datetime.strptime(s, '%Y-%m-%d') for s in ALL_WEEKLY_STRINGS]
 except:
@@ -390,7 +390,7 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
         if week_string <= '2020-12-09':  # this is release date; start of this week is 2020-11-30
             path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20200615/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
         else:
-            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20201130/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, '/Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/2021/%s/' % week_datetime.strftime('%Y/%m/%d'))
         inner_folder = os.listdir(path_to_weekly_dir)
         assert len(inner_folder) == 1  # there is always a single folder inside the weekly folder 
         path_to_patterns_parts = os.path.join(path_to_weekly_dir, inner_folder[0])
@@ -463,21 +463,27 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
     return df
 
 def load_core_places_footprint_data(cols_to_keep):
-    area_csv = os.path.join(CURRENT_DATA_DIR, 'core_places_footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz')
+    area_csv = os.path.join(CURRENT_DATA_DIR, 'Geometry Footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz')
     print('Loading', area_csv)
-    df = load_csv_possibly_with_dask(area_csv, usecols=cols_to_keep, use_dask=True)
+    df = load_csv_possibly_with_dask(area_csv, usecols=cols_to_keep, use_dask=False)
     df = df.set_index('safegraph_place_id')
     print('Loaded core places footprint data for %d POIs' % len(df))
     return df
 
 def load_core_places_data(cols_to_keep):
-    core_dir = os.path.join(CURRENT_DATA_DIR, 'core_places/2020/10/')  # use the most recent core info
+    core_dir = os.path.join(CURRENT_DATA_DIR, 'Core Places US (Nov 2020 - Present)/core_poi/2021/06/05/00')  # use the most recent core info
     dfs = []
     for filename in sorted(os.listdir(core_dir)):
         if filename.startswith('core_poi-part'):
+
             path_to_csv = os.path.join(core_dir, filename)
+
+
             print('Loading', path_to_csv)
-            df = load_csv_possibly_with_dask(path_to_csv, usecols=cols_to_keep, use_dask=True)
+
+            path_to_csv = [path_to_csv]  # Huan
+            # df = load_csv_possibly_with_dask(path_to_csv, usecols=cols_to_keep, use_dask=True)
+            df = load_csv_possibly_with_dask(path_to_csv, usecols=cols_to_keep, use_dask=False)  # Huan
             dfs.append(df)
     df = pd.concat(dfs, axis=0)
     df = df.set_index('safegraph_place_id')
