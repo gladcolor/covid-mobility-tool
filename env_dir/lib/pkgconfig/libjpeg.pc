@@ -1,0 +1,10 @@
+prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libjpeg
+Description: Reads and writes JPEG files
+Version: 12:0:3
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

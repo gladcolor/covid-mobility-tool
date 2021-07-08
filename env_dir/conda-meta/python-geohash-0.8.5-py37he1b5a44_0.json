@@ -1,0 +1,152 @@
+{
+  "build": "py37he1b5a44_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "python_abi * *_cp37m"
+  ],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/python-geohash-0.8.5-py37he1b5a44_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/__pycache__/geohash.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/jpgrid.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/jpiarea.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/quadtree.cpython-37.pyc",
+    "lib/python3.7/site-packages/_geohash.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/geohash.py",
+    "lib/python3.7/site-packages/jpgrid.py",
+    "lib/python3.7/site-packages/jpiarea.py",
+    "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/METADATA",
+    "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/RECORD",
+    "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/WHEEL",
+    "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/quadtree.py"
+  ],
+  "fn": "python-geohash-0.8.5-py37he1b5a44_0.tar.bz2",
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/python-geohash-0.8.5-py37he1b5a44_0",
+    "type": 1
+  },
+  "md5": "d2b2ce9501d79512f5655269113751de",
+  "name": "python-geohash",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/python-geohash-0.8.5-py37he1b5a44_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/geohash.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "c564b800c3d6a077b15b247c8dad02d3adfb0e9566f6ea3ac4e3db249630f5d0",
+        "sha256_in_prefix": "c564b800c3d6a077b15b247c8dad02d3adfb0e9566f6ea3ac4e3db249630f5d0",
+        "size_in_bytes": 9660
+      },
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/jpgrid.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f7d707f4bbd72c10250f9bb1622969e3c508eb0dfd9a3827d3c06a280c50f50c",
+        "sha256_in_prefix": "f7d707f4bbd72c10250f9bb1622969e3c508eb0dfd9a3827d3c06a280c50f50c",
+        "size_in_bytes": 4176
+      },
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/jpiarea.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ac28732092d4ff5a83a6885749318f0be0ba4ec3fa8e54acf91ae987bfdbede",
+        "sha256_in_prefix": "0ac28732092d4ff5a83a6885749318f0be0ba4ec3fa8e54acf91ae987bfdbede",
+        "size_in_bytes": 2546
+      },
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/quadtree.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "a20e9aefcae105dba2f5659eff84d7d9bd7e8acba92995766480ce4f15582419",
+        "sha256_in_prefix": "a20e9aefcae105dba2f5659eff84d7d9bd7e8acba92995766480ce4f15582419",
+        "size_in_bytes": 2869
+      },
+      {
+        "_path": "lib/python3.7/site-packages/_geohash.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "3c9ac55daf93d88a9600ca5692dc82315076a0735512bd288caa300a5d74f079",
+        "sha256_in_prefix": "3c9ac55daf93d88a9600ca5692dc82315076a0735512bd288caa300a5d74f079",
+        "size_in_bytes": 26312
+      },
+      {
+        "_path": "lib/python3.7/site-packages/geohash.py",
+        "path_type": "hardlink",
+        "sha256": "48278215f667f1877a5b2f2f40bc18546cff4effb803dc848e9e9dcd1872ec14",
+        "sha256_in_prefix": "48278215f667f1877a5b2f2f40bc18546cff4effb803dc848e9e9dcd1872ec14",
+        "size_in_bytes": 13863
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jpgrid.py",
+        "path_type": "hardlink",
+        "sha256": "eb2d0359f51d096043f033fc7844aaca88395e9525f19b2ad4033eefcdf67204",
+        "sha256_in_prefix": "eb2d0359f51d096043f033fc7844aaca88395e9525f19b2ad4033eefcdf67204",
+        "size_in_bytes": 3422
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jpiarea.py",
+        "path_type": "hardlink",
+        "sha256": "c656b5485d4ce45dfe61166dfbb74525c1fcc8538f87d7604d8f2948bbbc679d",
+        "sha256_in_prefix": "c656b5485d4ce45dfe61166dfbb74525c1fcc8538f87d7604d8f2948bbbc679d",
+        "size_in_bytes": 2176
+      },
+      {
+        "_path": "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d62c2907b63933dfd34c9d71017c7824eba0a174c4117707a154d08898a205c2",
+        "sha256_in_prefix": "d62c2907b63933dfd34c9d71017c7824eba0a174c4117707a154d08898a205c2",
+        "size_in_bytes": 250
+      },
+      {
+        "_path": "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "504d0cca1ff483618e54f698c836a282b99d5168fa2a73bbdbe25e10e8f5e7fb",
+        "sha256_in_prefix": "504d0cca1ff483618e54f698c836a282b99d5168fa2a73bbdbe25e10e8f5e7fb",
+        "size_in_bytes": 949
+      },
+      {
+        "_path": "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "49bd4e3e64b4895a8b49b11694d1bc6bc44b6aa1facf51df23446dc9374b2b45",
+        "sha256_in_prefix": "49bd4e3e64b4895a8b49b11694d1bc6bc44b6aa1facf51df23446dc9374b2b45",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/python_geohash-0.8.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ac4347c72be3a7091002f3ef55708a9683e41f7c5fe6a4ae0ef199a0ec07aa84",
+        "sha256_in_prefix": "ac4347c72be3a7091002f3ef55708a9683e41f7c5fe6a4ae0ef199a0ec07aa84",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "lib/python3.7/site-packages/quadtree.py",
+        "path_type": "hardlink",
+        "sha256": "a72e90a1155af2e648b5bac2eccd80569f903c99d2f550fe11babed969769f1c",
+        "sha256_in_prefix": "a72e90a1155af2e648b5bac2eccd80569f903c99d2f550fe11babed969769f1c",
+        "size_in_bytes": 2696
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "python-geohash==0.8.5=py37he1b5a44_0",
+  "sha256": "c5658ef326bba0d4f3775469431edc2b46ad6da5410a4cd1865c156c6f0d9059",
+  "size": 32436,
+  "subdir": "linux-64",
+  "timestamp": 1562701426271,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/python-geohash-0.8.5-py37he1b5a44_0.tar.bz2",
+  "version": "0.8.5"
+}

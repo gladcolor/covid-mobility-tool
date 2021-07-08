@@ -1,0 +1,210 @@
+{
+  "build": "r36h96ca727_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-ellipsis-0.1.0-r36h96ca727_0",
+  "features": "",
+  "files": [
+    "lib/R/library/ellipsis/DESCRIPTION",
+    "lib/R/library/ellipsis/INDEX",
+    "lib/R/library/ellipsis/Meta/Rd.rds",
+    "lib/R/library/ellipsis/Meta/features.rds",
+    "lib/R/library/ellipsis/Meta/hsearch.rds",
+    "lib/R/library/ellipsis/Meta/links.rds",
+    "lib/R/library/ellipsis/Meta/nsInfo.rds",
+    "lib/R/library/ellipsis/Meta/package.rds",
+    "lib/R/library/ellipsis/NAMESPACE",
+    "lib/R/library/ellipsis/NEWS.md",
+    "lib/R/library/ellipsis/R/ellipsis",
+    "lib/R/library/ellipsis/R/ellipsis.rdb",
+    "lib/R/library/ellipsis/R/ellipsis.rdx",
+    "lib/R/library/ellipsis/help/AnIndex",
+    "lib/R/library/ellipsis/help/aliases.rds",
+    "lib/R/library/ellipsis/help/ellipsis.rdb",
+    "lib/R/library/ellipsis/help/ellipsis.rdx",
+    "lib/R/library/ellipsis/help/paths.rds",
+    "lib/R/library/ellipsis/html/00Index.html",
+    "lib/R/library/ellipsis/html/R.css",
+    "lib/R/library/ellipsis/libs/ellipsis.so"
+  ],
+  "fn": "r-ellipsis-0.1.0-r36h96ca727_0.conda",
+  "legacy_bz2_md5": "89a18e5e987800146a4a49bd2f59e30a",
+  "legacy_bz2_size": 36009,
+  "license": "GPL-3",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-ellipsis-0.1.0-r36h96ca727_0",
+    "type": 1
+  },
+  "md5": "6199ac6e395d0212b12bcf46ec0c60ac",
+  "name": "r-ellipsis",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-ellipsis-0.1.0-r36h96ca727_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/ellipsis/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "b8a443922cdaf5e113cc3c71d6f24eb96a557009ee8c29c83af12ec47e0391ba",
+        "sha256_in_prefix": "b8a443922cdaf5e113cc3c71d6f24eb96a557009ee8c29c83af12ec47e0391ba",
+        "size_in_bytes": 1023
+      },
+      {
+        "_path": "lib/R/library/ellipsis/INDEX",
+        "path_type": "hardlink",
+        "sha256": "2d2a810f799767d925c8e85925907017aef4cb498d5d50d9d0de3f8b53095635",
+        "sha256_in_prefix": "2d2a810f799767d925c8e85925907017aef4cb498d5d50d9d0de3f8b53095635",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "ef6dcab4a3de9e40c411e472beaee0ef78053275b846dbccfefe5a92122959e9",
+        "sha256_in_prefix": "ef6dcab4a3de9e40c411e472beaee0ef78053275b846dbccfefe5a92122959e9",
+        "size_in_bytes": 316
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "0eaf3dc277f549dc029cb3fc2e76d393b6cde20b6c9d787402281d36e6733c7b",
+        "sha256_in_prefix": "0eaf3dc277f549dc029cb3fc2e76d393b6cde20b6c9d787402281d36e6733c7b",
+        "size_in_bytes": 348
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "ef500b806167bb366b758f992375527cfbe573815f637d39312d2b7b4a830cdb",
+        "sha256_in_prefix": "ef500b806167bb366b758f992375527cfbe573815f637d39312d2b7b4a830cdb",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "74d516abe3290794e83e37624b9aaa6162cf3aefb7eeb0b40ea4af1e8548fd01",
+        "sha256_in_prefix": "74d516abe3290794e83e37624b9aaa6162cf3aefb7eeb0b40ea4af1e8548fd01",
+        "size_in_bytes": 331
+      },
+      {
+        "_path": "lib/R/library/ellipsis/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "284cb26ef800c8bd835e972d2b2b0a71c40fb49f59ca3bde3bdb6182fbb8daf4",
+        "sha256_in_prefix": "284cb26ef800c8bd835e972d2b2b0a71c40fb49f59ca3bde3bdb6182fbb8daf4",
+        "size_in_bytes": 1028
+      },
+      {
+        "_path": "lib/R/library/ellipsis/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "cd22e3af75c5c2d47af767665ea33f16bb1568f115fbfe05c7cd103ab59c39ff",
+        "sha256_in_prefix": "cd22e3af75c5c2d47af767665ea33f16bb1568f115fbfe05c7cd103ab59c39ff",
+        "size_in_bytes": 189
+      },
+      {
+        "_path": "lib/R/library/ellipsis/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "29bff37b5c09e02cbf4fe74681f53ea29a842e229a2457bea8304c7ae7724b7a",
+        "sha256_in_prefix": "29bff37b5c09e02cbf4fe74681f53ea29a842e229a2457bea8304c7ae7724b7a",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "lib/R/library/ellipsis/R/ellipsis",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/ellipsis/R/ellipsis.rdb",
+        "path_type": "hardlink",
+        "sha256": "fb57df2b7a5adc522fea5f47af98b728edbd8a3ec11acce39eb97b24903f75dc",
+        "sha256_in_prefix": "fb57df2b7a5adc522fea5f47af98b728edbd8a3ec11acce39eb97b24903f75dc",
+        "size_in_bytes": 4098
+      },
+      {
+        "_path": "lib/R/library/ellipsis/R/ellipsis.rdx",
+        "path_type": "hardlink",
+        "sha256": "1144b51f63d735f1f863f9481ee719a4be3812ac6cddcf829e326c541bf44592",
+        "sha256_in_prefix": "1144b51f63d735f1f863f9481ee719a4be3812ac6cddcf829e326c541bf44592",
+        "size_in_bytes": 368
+      },
+      {
+        "_path": "lib/R/library/ellipsis/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "eb51ce7813f68acd6379b9db842efa572644338e04112335903f0af661a14006",
+        "sha256_in_prefix": "eb51ce7813f68acd6379b9db842efa572644338e04112335903f0af661a14006",
+        "size_in_bytes": 126
+      },
+      {
+        "_path": "lib/R/library/ellipsis/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "2f6ec45765db41031963c2739d31266a0c70054f698280b2bb3a4ccff16ef2e8",
+        "sha256_in_prefix": "2f6ec45765db41031963c2739d31266a0c70054f698280b2bb3a4ccff16ef2e8",
+        "size_in_bytes": 121
+      },
+      {
+        "_path": "lib/R/library/ellipsis/help/ellipsis.rdb",
+        "path_type": "hardlink",
+        "sha256": "b12a1e1fff6ba0f57274859b147da4996e2d51089a76b94a5c3e95c9501b8edf",
+        "sha256_in_prefix": "b12a1e1fff6ba0f57274859b147da4996e2d51089a76b94a5c3e95c9501b8edf",
+        "size_in_bytes": 4086
+      },
+      {
+        "_path": "lib/R/library/ellipsis/help/ellipsis.rdx",
+        "path_type": "hardlink",
+        "sha256": "053e2d6bc2e4373ea844035a0fa388fd0fd58c0b70e296b1002605c920ee55f4",
+        "sha256_in_prefix": "053e2d6bc2e4373ea844035a0fa388fd0fd58c0b70e296b1002605c920ee55f4",
+        "size_in_bytes": 218
+      },
+      {
+        "_path": "lib/R/library/ellipsis/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "ba3c3bf7fef0f2246c170e4b8ceb3f350c2dcc6b2dc40ad8b1356d9b33fea5ac",
+        "sha256_in_prefix": "ba3c3bf7fef0f2246c170e4b8ceb3f350c2dcc6b2dc40ad8b1356d9b33fea5ac",
+        "size_in_bytes": 187
+      },
+      {
+        "_path": "lib/R/library/ellipsis/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "4b553328dc6835b5f6094f27409e779ac80e7c01e999fccea1f371742bf195bf",
+        "sha256_in_prefix": "4b553328dc6835b5f6094f27409e779ac80e7c01e999fccea1f371742bf195bf",
+        "size_in_bytes": 1431
+      },
+      {
+        "_path": "lib/R/library/ellipsis/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/ellipsis/libs/ellipsis.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-ellipsis_1558365420933/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "594249ae9c580e7f0b1cc2ef187c957e8287a8a26928b569dd191b0815bd5938",
+        "sha256_in_prefix": "2cb4c7430214af02bdc123e70bbcd533c77a914fc7c269a7330e0e2f458919f3",
+        "size_in_bytes": 17216
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-ellipsis==0.1.0=r36h96ca727_0",
+  "sha256": "759fe10de82fb1b3bcefd1c9c556e81c88cc55a6f44770e2b5fd93eb67f6f8d0",
+  "size": 35931,
+  "subdir": "linux-64",
+  "timestamp": 1558365445300,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-ellipsis-0.1.0-r36h96ca727_0.conda",
+  "version": "0.1.0"
+}

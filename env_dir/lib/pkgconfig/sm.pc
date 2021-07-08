@@ -1,0 +1,12 @@
+prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SM
+Description: X Session Management Library
+Version: 1.2.2
+Requires:
+Requires.private: ice xproto
+Cflags: -I${includedir}
+Libs: -L${libdir} -lSM

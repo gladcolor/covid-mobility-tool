@@ -1,0 +1,13 @@
+prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+exec_prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+libdir=/media/gpu/easystore/covid-mobility-tool/env_dir/lib
+includedir=/media/gpu/easystore/covid-mobility-tool/env_dir/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 1.8.8
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -lm    
+Requires.private: glib-2.0 >= 2.19.1 graphite2
+Cflags: -I${includedir}/harfbuzz

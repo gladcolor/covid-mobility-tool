@@ -1,0 +1,431 @@
+{
+  "build": "r36h96ca727_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-lattice >=0.20_27",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-zoo-1.8_6-r36h96ca727_0",
+  "features": "",
+  "files": [
+    "lib/R/library/zoo/CITATION",
+    "lib/R/library/zoo/DESCRIPTION",
+    "lib/R/library/zoo/INDEX",
+    "lib/R/library/zoo/Meta/Rd.rds",
+    "lib/R/library/zoo/Meta/demo.rds",
+    "lib/R/library/zoo/Meta/features.rds",
+    "lib/R/library/zoo/Meta/hsearch.rds",
+    "lib/R/library/zoo/Meta/links.rds",
+    "lib/R/library/zoo/Meta/nsInfo.rds",
+    "lib/R/library/zoo/Meta/package.rds",
+    "lib/R/library/zoo/Meta/vignette.rds",
+    "lib/R/library/zoo/NAMESPACE",
+    "lib/R/library/zoo/NEWS",
+    "lib/R/library/zoo/R/zoo",
+    "lib/R/library/zoo/R/zoo.rdb",
+    "lib/R/library/zoo/R/zoo.rdx",
+    "lib/R/library/zoo/THANKS",
+    "lib/R/library/zoo/TODO",
+    "lib/R/library/zoo/WISHLIST",
+    "lib/R/library/zoo/demo/zoo-overplot.R",
+    "lib/R/library/zoo/doc/MSFT.rda",
+    "lib/R/library/zoo/doc/demo1.txt",
+    "lib/R/library/zoo/doc/demo2.txt",
+    "lib/R/library/zoo/doc/index.html",
+    "lib/R/library/zoo/doc/sunw.rda",
+    "lib/R/library/zoo/doc/zoo-design.R",
+    "lib/R/library/zoo/doc/zoo-design.Rnw",
+    "lib/R/library/zoo/doc/zoo-design.pdf",
+    "lib/R/library/zoo/doc/zoo-faq.R",
+    "lib/R/library/zoo/doc/zoo-faq.Rnw",
+    "lib/R/library/zoo/doc/zoo-faq.pdf",
+    "lib/R/library/zoo/doc/zoo-quickref.R",
+    "lib/R/library/zoo/doc/zoo-quickref.Rnw",
+    "lib/R/library/zoo/doc/zoo-quickref.pdf",
+    "lib/R/library/zoo/doc/zoo-read.R",
+    "lib/R/library/zoo/doc/zoo-read.Rnw",
+    "lib/R/library/zoo/doc/zoo-read.pdf",
+    "lib/R/library/zoo/doc/zoo.R",
+    "lib/R/library/zoo/doc/zoo.Rnw",
+    "lib/R/library/zoo/doc/zoo.pdf",
+    "lib/R/library/zoo/help/AnIndex",
+    "lib/R/library/zoo/help/aliases.rds",
+    "lib/R/library/zoo/help/paths.rds",
+    "lib/R/library/zoo/help/zoo.rdb",
+    "lib/R/library/zoo/help/zoo.rdx",
+    "lib/R/library/zoo/html/00Index.html",
+    "lib/R/library/zoo/html/R.css",
+    "lib/R/library/zoo/include/zoo.h",
+    "lib/R/library/zoo/libs/zoo.so"
+  ],
+  "fn": "r-zoo-1.8_6-r36h96ca727_0.tar.bz2",
+  "license": "GPL-2 | GPL-3",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-zoo-1.8_6-r36h96ca727_0",
+    "type": 1
+  },
+  "md5": "092bfd3d265488fb80099fc794ddeff7",
+  "name": "r-zoo",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-zoo-1.8_6-r36h96ca727_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/zoo/CITATION",
+        "path_type": "hardlink",
+        "sha256": "733a0b5e5537289289dbaf16faed760381781ac110e1795a60b61d05d10bc5f6",
+        "sha256_in_prefix": "733a0b5e5537289289dbaf16faed760381781ac110e1795a60b61d05d10bc5f6",
+        "size_in_bytes": 759
+      },
+      {
+        "_path": "lib/R/library/zoo/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "4e0391561742390efcbea39d26a1bebb61fdc3b860192b3cedb0d44852fe715b",
+        "sha256_in_prefix": "4e0391561742390efcbea39d26a1bebb61fdc3b860192b3cedb0d44852fe715b",
+        "size_in_bytes": 1869
+      },
+      {
+        "_path": "lib/R/library/zoo/INDEX",
+        "path_type": "hardlink",
+        "sha256": "cc5701035117a8c51e89adf3d4062605b2b21c468aef8a494a6387a0746b1f1f",
+        "sha256_in_prefix": "cc5701035117a8c51e89adf3d4062605b2b21c468aef8a494a6387a0746b1f1f",
+        "size_in_bytes": 1668
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "063fd5351b84423fdf4d054796e6d3cd548c34744f9950f99c2386067385e48e",
+        "sha256_in_prefix": "063fd5351b84423fdf4d054796e6d3cd548c34744f9950f99c2386067385e48e",
+        "size_in_bytes": 2559
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/demo.rds",
+        "path_type": "hardlink",
+        "sha256": "c129fe822cc3a4f9500aec1118b5c39a1748b4a9630afe683768c127629153ba",
+        "sha256_in_prefix": "c129fe822cc3a4f9500aec1118b5c39a1748b4a9630afe683768c127629153ba",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "089daaae5486cc1074c39a757afd136d3d84260e0a5f18983d66281ab3463a33",
+        "sha256_in_prefix": "089daaae5486cc1074c39a757afd136d3d84260e0a5f18983d66281ab3463a33",
+        "size_in_bytes": 132
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "5101eca8d8223e3c8f7ed825f9e3701f89a6883c6116cd84925bd85ec2ba7ac9",
+        "sha256_in_prefix": "5101eca8d8223e3c8f7ed825f9e3701f89a6883c6116cd84925bd85ec2ba7ac9",
+        "size_in_bytes": 2749
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "64ebda0a5c93cea48cadd868b5cef84534cdb0654eafbc4dd3e0baa8f06a700e",
+        "sha256_in_prefix": "64ebda0a5c93cea48cadd868b5cef84534cdb0654eafbc4dd3e0baa8f06a700e",
+        "size_in_bytes": 1957
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "1d12764a2a4344873f81be2a4ec87dfa55157cf1cb3c6409f52175b6c89680fd",
+        "sha256_in_prefix": "1d12764a2a4344873f81be2a4ec87dfa55157cf1cb3c6409f52175b6c89680fd",
+        "size_in_bytes": 1746
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "c5a31b55e0b6d9e73f7e0c9688d2d18202f83bf8f61595c0655587bd2373dd56",
+        "sha256_in_prefix": "c5a31b55e0b6d9e73f7e0c9688d2d18202f83bf8f61595c0655587bd2373dd56",
+        "size_in_bytes": 1476
+      },
+      {
+        "_path": "lib/R/library/zoo/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "e761d8ae91d0c8f19336ab0bc5ac745e730358b0b872452e3a8126756e09d337",
+        "sha256_in_prefix": "e761d8ae91d0c8f19336ab0bc5ac745e730358b0b872452e3a8126756e09d337",
+        "size_in_bytes": 511
+      },
+      {
+        "_path": "lib/R/library/zoo/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "0df07cec38c0603cdcc94720c7fce09e30a2ee52e49a8bac558e16071bde369f",
+        "sha256_in_prefix": "0df07cec38c0603cdcc94720c7fce09e30a2ee52e49a8bac558e16071bde369f",
+        "size_in_bytes": 10925
+      },
+      {
+        "_path": "lib/R/library/zoo/NEWS",
+        "path_type": "hardlink",
+        "sha256": "eadf6c51b2e721830760d18a745954bb5d5af5c8ac7b4c2290f7c6613c7dcdbf",
+        "sha256_in_prefix": "eadf6c51b2e721830760d18a745954bb5d5af5c8ac7b4c2290f7c6613c7dcdbf",
+        "size_in_bytes": 35135
+      },
+      {
+        "_path": "lib/R/library/zoo/R/zoo",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/zoo/R/zoo.rdb",
+        "path_type": "hardlink",
+        "sha256": "74d9a13e976937ea7f0b9ccdd36eabcb7b5185f39d5394862aa9daa9335354be",
+        "sha256_in_prefix": "74d9a13e976937ea7f0b9ccdd36eabcb7b5185f39d5394862aa9daa9335354be",
+        "size_in_bytes": 288988
+      },
+      {
+        "_path": "lib/R/library/zoo/R/zoo.rdx",
+        "path_type": "hardlink",
+        "sha256": "c1f0608dea8b2de015ba944770bd04bf130daecf884a1f568b65af4f602130c8",
+        "sha256_in_prefix": "c1f0608dea8b2de015ba944770bd04bf130daecf884a1f568b65af4f602130c8",
+        "size_in_bytes": 3891
+      },
+      {
+        "_path": "lib/R/library/zoo/THANKS",
+        "path_type": "hardlink",
+        "sha256": "17f61cc5a5830f8dae5c0fc1c1cc83301fd2bb846b8f56ac821aa538bf09ef9b",
+        "sha256_in_prefix": "17f61cc5a5830f8dae5c0fc1c1cc83301fd2bb846b8f56ac821aa538bf09ef9b",
+        "size_in_bytes": 918
+      },
+      {
+        "_path": "lib/R/library/zoo/TODO",
+        "path_type": "hardlink",
+        "sha256": "18b7c0f18fb2b3a6dc6480212593fa4f97271d2646902cd9fa521fea473d5268",
+        "sha256_in_prefix": "18b7c0f18fb2b3a6dc6480212593fa4f97271d2646902cd9fa521fea473d5268",
+        "size_in_bytes": 1477
+      },
+      {
+        "_path": "lib/R/library/zoo/WISHLIST",
+        "path_type": "hardlink",
+        "sha256": "29854534100d268d8bc4caf8b496d80ed05ece073ee4c0ccd0df6fcd89f00377",
+        "sha256_in_prefix": "29854534100d268d8bc4caf8b496d80ed05ece073ee4c0ccd0df6fcd89f00377",
+        "size_in_bytes": 4687
+      },
+      {
+        "_path": "lib/R/library/zoo/demo/zoo-overplot.R",
+        "path_type": "hardlink",
+        "sha256": "269987ca87f384d4321d061969f592403bd274fe3d1dd206fecaaec92fe3cbea",
+        "sha256_in_prefix": "269987ca87f384d4321d061969f592403bd274fe3d1dd206fecaaec92fe3cbea",
+        "size_in_bytes": 5913
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/MSFT.rda",
+        "path_type": "hardlink",
+        "sha256": "d3acf174d6f0e2d9fd28c260dc7e8f5b5fef5e0bc31ed0e34fe1c9c2ea550e57",
+        "sha256_in_prefix": "d3acf174d6f0e2d9fd28c260dc7e8f5b5fef5e0bc31ed0e34fe1c9c2ea550e57",
+        "size_in_bytes": 10850
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/demo1.txt",
+        "path_type": "hardlink",
+        "sha256": "a54a3cdeb593703177a04d14f351151be256cccc0fd7fdce5a7ee4effd852524",
+        "sha256_in_prefix": "a54a3cdeb593703177a04d14f351151be256cccc0fd7fdce5a7ee4effd852524",
+        "size_in_bytes": 360
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/demo2.txt",
+        "path_type": "hardlink",
+        "sha256": "d5843f1cdda9923de3bd5bd55f973f872328a5e117a63fd1be0433c41699262b",
+        "sha256_in_prefix": "d5843f1cdda9923de3bd5bd55f973f872328a5e117a63fd1be0433c41699262b",
+        "size_in_bytes": 680
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "04261db411b4169a30e0d6f5ddeb4a3d89cd0e37d4c0f77aabc6ebcfd5d7e4a8",
+        "sha256_in_prefix": "04261db411b4169a30e0d6f5ddeb4a3d89cd0e37d4c0f77aabc6ebcfd5d7e4a8",
+        "size_in_bytes": 3661
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/sunw.rda",
+        "path_type": "hardlink",
+        "sha256": "fa3a7bc279cb60228271fef9165d5921f07685eaaa10cd0e25046276e0b004f3",
+        "sha256_in_prefix": "fa3a7bc279cb60228271fef9165d5921f07685eaaa10cd0e25046276e0b004f3",
+        "size_in_bytes": 16694
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-design.R",
+        "path_type": "hardlink",
+        "sha256": "2a7d7b83712c7c06effe5a7e7184d5722e467864c99807638911a696f9bdedcf",
+        "sha256_in_prefix": "2a7d7b83712c7c06effe5a7e7184d5722e467864c99807638911a696f9bdedcf",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-design.Rnw",
+        "path_type": "hardlink",
+        "sha256": "f0f13529a3a9cc3b02652981f4ff5ccf4eb980dd6da2e2a7adf0e55f8c12d175",
+        "sha256_in_prefix": "f0f13529a3a9cc3b02652981f4ff5ccf4eb980dd6da2e2a7adf0e55f8c12d175",
+        "size_in_bytes": 4327
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-design.pdf",
+        "path_type": "hardlink",
+        "sha256": "88e6f8c48db4d2a544ccaf6526ef26140d51934710d3c0fa79f055c766ea11cb",
+        "sha256_in_prefix": "88e6f8c48db4d2a544ccaf6526ef26140d51934710d3c0fa79f055c766ea11cb",
+        "size_in_bytes": 38929
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-faq.R",
+        "path_type": "hardlink",
+        "sha256": "66297c70a95ef779b08fc68af96bfe7e6e823c61ebd5237f4c107b1df98eccb2",
+        "sha256_in_prefix": "66297c70a95ef779b08fc68af96bfe7e6e823c61ebd5237f4c107b1df98eccb2",
+        "size_in_bytes": 12803
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-faq.Rnw",
+        "path_type": "hardlink",
+        "sha256": "f7aa4ceceb8bc77cf7b7cb150cf4003867a2aee0bbb210118fdb5225e04b5765",
+        "sha256_in_prefix": "f7aa4ceceb8bc77cf7b7cb150cf4003867a2aee0bbb210118fdb5225e04b5765",
+        "size_in_bytes": 28746
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-faq.pdf",
+        "path_type": "hardlink",
+        "sha256": "90eccfdae5c58a189a26e60eddf4363b7055a179658175c514da2b4e8f6b8e4f",
+        "sha256_in_prefix": "90eccfdae5c58a189a26e60eddf4363b7055a179658175c514da2b4e8f6b8e4f",
+        "size_in_bytes": 105853
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-quickref.R",
+        "path_type": "hardlink",
+        "sha256": "4b4280b5003e3722407069e6fa23c99f4c9eb70251f531d4f9da12c79ffb2b02",
+        "sha256_in_prefix": "4b4280b5003e3722407069e6fa23c99f4c9eb70251f531d4f9da12c79ffb2b02",
+        "size_in_bytes": 9497
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-quickref.Rnw",
+        "path_type": "hardlink",
+        "sha256": "6e6fe32977dbb78e8a3601743211b130832e177a75d2c63bd24cedcfcc5811f4",
+        "sha256_in_prefix": "6e6fe32977dbb78e8a3601743211b130832e177a75d2c63bd24cedcfcc5811f4",
+        "size_in_bytes": 12534
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-quickref.pdf",
+        "path_type": "hardlink",
+        "sha256": "a62c7ae554c0b0f34915544ed832ba47b1fd86a50fae3e52fdf4de84d9f2e0a2",
+        "sha256_in_prefix": "a62c7ae554c0b0f34915544ed832ba47b1fd86a50fae3e52fdf4de84d9f2e0a2",
+        "size_in_bytes": 76855
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-read.R",
+        "path_type": "hardlink",
+        "sha256": "eaba02c17788971622cbf8ade6d2e42f52b9b937f6238c0f5fa3daa67c6c62ad",
+        "sha256_in_prefix": "eaba02c17788971622cbf8ade6d2e42f52b9b937f6238c0f5fa3daa67c6c62ad",
+        "size_in_bytes": 10535
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-read.Rnw",
+        "path_type": "hardlink",
+        "sha256": "75dfae7e51a3854bdf5d2bbfaca98fd811f9ecc6f5532389a0d563a159a3ffd2",
+        "sha256_in_prefix": "75dfae7e51a3854bdf5d2bbfaca98fd811f9ecc6f5532389a0d563a159a3ffd2",
+        "size_in_bytes": 18519
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo-read.pdf",
+        "path_type": "hardlink",
+        "sha256": "0c8c81d34e570ed9e9a9a2935150c9dff5717b98a837f57578e74e0894b4d91e",
+        "sha256_in_prefix": "0c8c81d34e570ed9e9a9a2935150c9dff5717b98a837f57578e74e0894b4d91e",
+        "size_in_bytes": 78382
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo.R",
+        "path_type": "hardlink",
+        "sha256": "d03f6d0380a3f2ea1a7185b9c38570ab18189b3c3d37dd94d7a77ced6fa32d73",
+        "sha256_in_prefix": "d03f6d0380a3f2ea1a7185b9c38570ab18189b3c3d37dd94d7a77ced6fa32d73",
+        "size_in_bytes": 10752
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo.Rnw",
+        "path_type": "hardlink",
+        "sha256": "120afb6fbfb1aff49f0a4117d466dedc3e0bd8d5af827fcfb7c37bbbcfa3c4e8",
+        "sha256_in_prefix": "120afb6fbfb1aff49f0a4117d466dedc3e0bd8d5af827fcfb7c37bbbcfa3c4e8",
+        "size_in_bytes": 50736
+      },
+      {
+        "_path": "lib/R/library/zoo/doc/zoo.pdf",
+        "path_type": "hardlink",
+        "sha256": "fa4de7f1a91dce9eef7f7b8cf5f186e8bafce4bb0709f59225e7efabd47ba941",
+        "sha256_in_prefix": "fa4de7f1a91dce9eef7f7b8cf5f186e8bafce4bb0709f59225e7efabd47ba941",
+        "size_in_bytes": 238975
+      },
+      {
+        "_path": "lib/R/library/zoo/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "c01ab53c64203c617c75df84ea5e2cecd0999927200c20ada1ef5fe5abf81031",
+        "sha256_in_prefix": "c01ab53c64203c617c75df84ea5e2cecd0999927200c20ada1ef5fe5abf81031",
+        "size_in_bytes": 6863
+      },
+      {
+        "_path": "lib/R/library/zoo/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "137c2273528512c6ed7cad00a48898b231654ec466633390821328e090ea3740",
+        "sha256_in_prefix": "137c2273528512c6ed7cad00a48898b231654ec466633390821328e090ea3740",
+        "size_in_bytes": 1903
+      },
+      {
+        "_path": "lib/R/library/zoo/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "c44ad2af718f29d5683c4fc3bc8c2110a57bd78e40d27a94ead377895013ee82",
+        "sha256_in_prefix": "c44ad2af718f29d5683c4fc3bc8c2110a57bd78e40d27a94ead377895013ee82",
+        "size_in_bytes": 378
+      },
+      {
+        "_path": "lib/R/library/zoo/help/zoo.rdb",
+        "path_type": "hardlink",
+        "sha256": "593821ba89c5786e93cc9c821e648f04559cf5774dc79c091e41919c8f544258",
+        "sha256_in_prefix": "593821ba89c5786e93cc9c821e648f04559cf5774dc79c091e41919c8f544258",
+        "size_in_bytes": 178526
+      },
+      {
+        "_path": "lib/R/library/zoo/help/zoo.rdx",
+        "path_type": "hardlink",
+        "sha256": "5984f5918cc60f7a33fe720bcf9271c9ee805143ade2e6ea4def4cdb9aaf222e",
+        "sha256_in_prefix": "5984f5918cc60f7a33fe720bcf9271c9ee805143ade2e6ea4def4cdb9aaf222e",
+        "size_in_bytes": 777
+      },
+      {
+        "_path": "lib/R/library/zoo/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "4e5ada02768960a52838f74bc703ecddc236abe9ec688eb4f48633c7b9a24754",
+        "sha256_in_prefix": "4e5ada02768960a52838f74bc703ecddc236abe9ec688eb4f48633c7b9a24754",
+        "size_in_bytes": 41216
+      },
+      {
+        "_path": "lib/R/library/zoo/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/zoo/include/zoo.h",
+        "path_type": "hardlink",
+        "sha256": "4cf753c4ac817116db6060d1caba11b00024d0d76da3d95a375f8eac792a83da",
+        "sha256_in_prefix": "4cf753c4ac817116db6060d1caba11b00024d0d76da3d95a375f8eac792a83da",
+        "size_in_bytes": 364
+      },
+      {
+        "_path": "lib/R/library/zoo/libs/zoo.so",
+        "path_type": "hardlink",
+        "sha256": "b4b83aef253ef7fd16f290300cdbdf83c4ab2cbcd96cf9d916921e76102f5d10",
+        "sha256_in_prefix": "b4b83aef253ef7fd16f290300cdbdf83c4ab2cbcd96cf9d916921e76102f5d10",
+        "size_in_bytes": 26000
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-zoo==1.8_6=r36h96ca727_0",
+  "sha256": "52d0f3375e8825461524bc420f655e3c2b5bff5e2d5481bb95787bc6bdac5c49",
+  "size": 1100539,
+  "subdir": "linux-64",
+  "timestamp": 1565193536843,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-zoo-1.8_6-r36h96ca727_0.tar.bz2",
+  "version": "1.8_6"
+}

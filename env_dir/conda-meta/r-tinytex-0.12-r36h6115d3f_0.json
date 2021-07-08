@@ -1,0 +1,280 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-xfun >=0.5",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-tinytex-0.12-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/tinytex/DESCRIPTION",
+    "lib/R/library/tinytex/INDEX",
+    "lib/R/library/tinytex/LICENSE",
+    "lib/R/library/tinytex/MD5",
+    "lib/R/library/tinytex/Meta/Rd.rds",
+    "lib/R/library/tinytex/Meta/features.rds",
+    "lib/R/library/tinytex/Meta/hsearch.rds",
+    "lib/R/library/tinytex/Meta/links.rds",
+    "lib/R/library/tinytex/Meta/nsInfo.rds",
+    "lib/R/library/tinytex/Meta/package.rds",
+    "lib/R/library/tinytex/NAMESPACE",
+    "lib/R/library/tinytex/NEWS.Rd",
+    "lib/R/library/tinytex/R/tinytex",
+    "lib/R/library/tinytex/R/tinytex.rdb",
+    "lib/R/library/tinytex/R/tinytex.rdx",
+    "lib/R/library/tinytex/help/AnIndex",
+    "lib/R/library/tinytex/help/aliases.rds",
+    "lib/R/library/tinytex/help/paths.rds",
+    "lib/R/library/tinytex/help/tinytex.rdb",
+    "lib/R/library/tinytex/help/tinytex.rdx",
+    "lib/R/library/tinytex/html/00Index.html",
+    "lib/R/library/tinytex/html/R.css",
+    "lib/R/library/tinytex/html/copy_tinytex.html",
+    "lib/R/library/tinytex/html/install_tinytex.html",
+    "lib/R/library/tinytex/html/latexmk.html",
+    "lib/R/library/tinytex/html/parse_packages.html",
+    "lib/R/library/tinytex/html/r_texmf.html",
+    "lib/R/library/tinytex/html/tl_pkgs.html",
+    "lib/R/library/tinytex/html/tl_sizes.html",
+    "lib/R/library/tinytex/html/tlmgr.html"
+  ],
+  "fn": "r-tinytex-0.12-r36h6115d3f_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-tinytex-0.12-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "8824fdf36352b9963b80242c3163dce1",
+  "name": "r-tinytex",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-tinytex-0.12-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/tinytex/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "d709d53c01d36480a9e4398e39471e278ddcb9768d094902f5e540c6bf95ea60",
+        "sha256_in_prefix": "d709d53c01d36480a9e4398e39471e278ddcb9768d094902f5e540c6bf95ea60",
+        "size_in_bytes": 1328
+      },
+      {
+        "_path": "lib/R/library/tinytex/INDEX",
+        "path_type": "hardlink",
+        "sha256": "5a7e7c1f4e0f70a94a6ef8f6c408e849906114ce1f4088b95b4db153501c3bae",
+        "sha256_in_prefix": "5a7e7c1f4e0f70a94a6ef8f6c408e849906114ce1f4088b95b4db153501c3bae",
+        "size_in_bytes": 563
+      },
+      {
+        "_path": "lib/R/library/tinytex/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "8b0f3278cfceb67c8b1d5c65b9e4fb839ef70cf66b5838668a81b7c7c4b9fbf9",
+        "sha256_in_prefix": "8b0f3278cfceb67c8b1d5c65b9e4fb839ef70cf66b5838668a81b7c7c4b9fbf9",
+        "size_in_bytes": 62
+      },
+      {
+        "_path": "lib/R/library/tinytex/MD5",
+        "path_type": "hardlink",
+        "sha256": "7d18992e9bedbed9767dcc4a5040d491e075880c0fefcdead70c71e0684f7de8",
+        "sha256_in_prefix": "7d18992e9bedbed9767dcc4a5040d491e075880c0fefcdead70c71e0684f7de8",
+        "size_in_bytes": 1463
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "496bbd78ca3ac01d2db99b9cce4d2b81da02f920c1d3e8e4bcb93fdd1b1e7e8b",
+        "sha256_in_prefix": "496bbd78ca3ac01d2db99b9cce4d2b81da02f920c1d3e8e4bcb93fdd1b1e7e8b",
+        "size_in_bytes": 589
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "52e97cba22aa1c0cc1aca059703a150cb8918db5c286f1eb5b9bef34e2605330",
+        "sha256_in_prefix": "52e97cba22aa1c0cc1aca059703a150cb8918db5c286f1eb5b9bef34e2605330",
+        "size_in_bytes": 610
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "bcdd71d02d8d4b3fb83fa58bbc233be2603ae63e180559cc927fabfdd43e702e",
+        "sha256_in_prefix": "bcdd71d02d8d4b3fb83fa58bbc233be2603ae63e180559cc927fabfdd43e702e",
+        "size_in_bytes": 301
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "0c98483be46b18be2eb60e6ae737201f254afaaad8e9ba0006656114d66fec7a",
+        "sha256_in_prefix": "0c98483be46b18be2eb60e6ae737201f254afaaad8e9ba0006656114d66fec7a",
+        "size_in_bytes": 398
+      },
+      {
+        "_path": "lib/R/library/tinytex/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "16366498000f807ac8e0c11b2d82c401e299a140d1e4f7f2d6ce7c94293d623b",
+        "sha256_in_prefix": "16366498000f807ac8e0c11b2d82c401e299a140d1e4f7f2d6ce7c94293d623b",
+        "size_in_bytes": 1104
+      },
+      {
+        "_path": "lib/R/library/tinytex/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "49871ccdeae028f40baca43bc5fc40c86bc2517729c7015bd2f79752a35dd5b0",
+        "sha256_in_prefix": "49871ccdeae028f40baca43bc5fc40c86bc2517729c7015bd2f79752a35dd5b0",
+        "size_in_bytes": 632
+      },
+      {
+        "_path": "lib/R/library/tinytex/NEWS.Rd",
+        "path_type": "hardlink",
+        "sha256": "df90de351c47ccbb7910d915737b7639d3d914eeeaae2fd283a61a664e13b08b",
+        "sha256_in_prefix": "df90de351c47ccbb7910d915737b7639d3d914eeeaae2fd283a61a664e13b08b",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "lib/R/library/tinytex/R/tinytex",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/tinytex/R/tinytex.rdb",
+        "path_type": "hardlink",
+        "sha256": "14eaa5dc3e173511201828923223038ed45b79c4a3594782dec17f38eae92a36",
+        "sha256_in_prefix": "14eaa5dc3e173511201828923223038ed45b79c4a3594782dec17f38eae92a36",
+        "size_in_bytes": 63178
+      },
+      {
+        "_path": "lib/R/library/tinytex/R/tinytex.rdx",
+        "path_type": "hardlink",
+        "sha256": "8f9e419d3e29ebee1f8d69702446349b39795de67064933c21085379cef49a45",
+        "sha256_in_prefix": "8f9e419d3e29ebee1f8d69702446349b39795de67064933c21085379cef49a45",
+        "size_in_bytes": 1133
+      },
+      {
+        "_path": "lib/R/library/tinytex/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "08940990265dbf5d0cef50a0a2fc8dad9581f2c5e035d46246a521dda85f67a4",
+        "sha256_in_prefix": "08940990265dbf5d0cef50a0a2fc8dad9581f2c5e035d46246a521dda85f67a4",
+        "size_in_bytes": 470
+      },
+      {
+        "_path": "lib/R/library/tinytex/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "c5008b69d0f3ad0ad7568f04729c16c05df765d63877e01a513e271905fe3a66",
+        "sha256_in_prefix": "c5008b69d0f3ad0ad7568f04729c16c05df765d63877e01a513e271905fe3a66",
+        "size_in_bytes": 252
+      },
+      {
+        "_path": "lib/R/library/tinytex/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "c8c899eeb6dc34d0f42ea8579d6384da8259bccd242e75a713b57be7d0a0be0b",
+        "sha256_in_prefix": "c8c899eeb6dc34d0f42ea8579d6384da8259bccd242e75a713b57be7d0a0be0b",
+        "size_in_bytes": 220
+      },
+      {
+        "_path": "lib/R/library/tinytex/help/tinytex.rdb",
+        "path_type": "hardlink",
+        "sha256": "55b9ac38711bd173006d28b0d6c384fcf1caaf7900bb4e422dff4990d138f8c4",
+        "sha256_in_prefix": "55b9ac38711bd173006d28b0d6c384fcf1caaf7900bb4e422dff4990d138f8c4",
+        "size_in_bytes": 21840
+      },
+      {
+        "_path": "lib/R/library/tinytex/help/tinytex.rdx",
+        "path_type": "hardlink",
+        "sha256": "42a68f669f09b7c8b675652afcfad0a9501f9dfaacca7f6973277f88c5372b5a",
+        "sha256_in_prefix": "42a68f669f09b7c8b675652afcfad0a9501f9dfaacca7f6973277f88c5372b5a",
+        "size_in_bytes": 330
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "9b3b3cac2b659de08d312507499790461434e35cd524fb05e6534166225f31f6",
+        "sha256_in_prefix": "9b3b3cac2b659de08d312507499790461434e35cd524fb05e6534166225f31f6",
+        "size_in_bytes": 3665
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/copy_tinytex.html",
+        "path_type": "hardlink",
+        "sha256": "f9f4bee05fbc3d5854442666a7d664566ef68f2ed2df7da7c00a704c780f7f75",
+        "sha256_in_prefix": "f9f4bee05fbc3d5854442666a7d664566ef68f2ed2df7da7c00a704c780f7f75",
+        "size_in_bytes": 2319
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/install_tinytex.html",
+        "path_type": "hardlink",
+        "sha256": "7bfe5cd962c0f89ac44cf18472025e181cc0bfba36e57b5695e7e70658b21b70",
+        "sha256_in_prefix": "7bfe5cd962c0f89ac44cf18472025e181cc0bfba36e57b5695e7e70658b21b70",
+        "size_in_bytes": 3001
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/latexmk.html",
+        "path_type": "hardlink",
+        "sha256": "75c11b57b011d4de7807888a40fcd4e0b72f15475628e574363dcd3cac1bf6b1",
+        "sha256_in_prefix": "75c11b57b011d4de7807888a40fcd4e0b72f15475628e574363dcd3cac1bf6b1",
+        "size_in_bytes": 6132
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/parse_packages.html",
+        "path_type": "hardlink",
+        "sha256": "655e762c3a394a86a74ef82de598a2432ce15c171c6ebc0b4662f18ed07a8484",
+        "sha256_in_prefix": "655e762c3a394a86a74ef82de598a2432ce15c171c6ebc0b4662f18ed07a8484",
+        "size_in_bytes": 2422
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/r_texmf.html",
+        "path_type": "hardlink",
+        "sha256": "0b3c288e9187bb11a19d00fc0731f86d9ae4ad72ca4e1fb457e7a20b14d4f3a6",
+        "sha256_in_prefix": "0b3c288e9187bb11a19d00fc0731f86d9ae4ad72ca4e1fb457e7a20b14d4f3a6",
+        "size_in_bytes": 1996
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/tl_pkgs.html",
+        "path_type": "hardlink",
+        "sha256": "dbb66f8fb627084a21f0f86f4250d27f9470b84ada0eae0b3dfdb3538a520aea",
+        "sha256_in_prefix": "dbb66f8fb627084a21f0f86f4250d27f9470b84ada0eae0b3dfdb3538a520aea",
+        "size_in_bytes": 1146
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/tl_sizes.html",
+        "path_type": "hardlink",
+        "sha256": "5dacf245146f4872a6d45c3f7fe34b912f50fe42c5cd459e7467a14613fdf510",
+        "sha256_in_prefix": "5dacf245146f4872a6d45c3f7fe34b912f50fe42c5cd459e7467a14613fdf510",
+        "size_in_bytes": 1301
+      },
+      {
+        "_path": "lib/R/library/tinytex/html/tlmgr.html",
+        "path_type": "hardlink",
+        "sha256": "8304133057dad9779cdbcee3050dc2a52cf58bf60bb84a69dc66525efbf16e5d",
+        "sha256_in_prefix": "8304133057dad9779cdbcee3050dc2a52cf58bf60bb84a69dc66525efbf16e5d",
+        "size_in_bytes": 5651
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-tinytex==0.12=r36h6115d3f_0",
+  "sha256": "8e9f3cd990938525a16c3396abdf971004f888649b17ea9a1c02698632372cae",
+  "size": 108974,
+  "subdir": "noarch",
+  "timestamp": 1557986138458,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-tinytex-0.12-r36h6115d3f_0.tar.bz2",
+  "version": "0.12"
+}

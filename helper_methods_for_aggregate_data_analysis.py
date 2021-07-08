@@ -390,7 +390,10 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
         if week_string <= '2020-12-09':  # this is release date; start of this week is 2020-11-30
             path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20200615/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
         else:
-            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, '/Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/2021/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            #date_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            ##hour_dir = os.listdir(date_dir)[0]
+            #week_dir = os.path.join(date_dir, hour_dir)
+            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
         inner_folder = os.listdir(path_to_weekly_dir)
         assert len(inner_folder) == 1  # there is always a single folder inside the weekly folder 
         path_to_patterns_parts = os.path.join(path_to_weekly_dir, inner_folder[0])
@@ -400,7 +403,7 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
                 path_to_csv = os.path.join(path_to_patterns_parts, filename)
                 assert os.path.isfile(path_to_csv)
                 print('Loading from %s' % path_to_csv)
-                df = load_csv_possibly_with_dask(path_to_csv, use_dask=True, usecols=cols_to_load, dtype={'poi_cbg':'float64'})
+                df = load_csv_possibly_with_dask(path_to_csv, use_dask=False, usecols=cols_to_load, dtype={'poi_cbg':'float64'})
                 dfs.append(df)
         df = pd.concat(dfs, axis=0)
         start_day_string = df.iloc[0].date_range_start.split('T')[0]
@@ -737,14 +740,28 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     Definition of
     num_devices_residing: Number of distinct devices observed with a primary nighttime location in the specified census block group.
     """
+
+
     assert version in {'v1', 'v2'}
-    acs_data = pd.read_csv(PATH_TO_ACS_1YR_DATA,
+    # acs_data = pd.read_csv(PATH_TO_ACS_1YR_DATA,
+    #                       encoding='cp1252',
+    #                    usecols=['STATEA', 'COUNTYA', 'TRACTA', 'BLKGRPA','AJWBE001'],
+    #                    dtype={'STATEA':str,
+    #                           'COUNTYA':str,
+    #                           'BLKGRPA':str,
+    #                          'TRACTA':str})
+
+    acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA) # Huan
+    # acs_data = pd.read_csv(PATH_TO_ACS_1YR_DATA,
+    '''
+    acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA,
                           encoding='cp1252',
                        usecols=['STATEA', 'COUNTYA', 'TRACTA', 'BLKGRPA','AJWBE001'],
                        dtype={'STATEA':str,
                               'COUNTYA':str,
                               'BLKGRPA':str,
                              'TRACTA':str})
+
     # https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html
     # FULL BLOCK GROUP CODE = STATE+COUNTY+TRACT+BLOCK GROUP
     assert (acs_data['STATEA'].map(len) == 2).all()
@@ -761,7 +778,12 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     acs_data = acs_data[['census_block_group', 'AJWBE001', 'STATEA', 'county_code']]
     acs_data = acs_data.rename(mapper={'AJWBE001':'total_cbg_population',
                                        'STATEA':'state_code'}, axis=1)
-    print("%i rows of 2018 1-year ACS data read" % len(acs_data))
+    print("%i rows of 2018 1-year ACS data read" % len(acs_data))    
+    '''
+
+    acs_data['census_block_group'] = acs_data['census_block_group'].astype(int)
+    acs_data['county_code'] = (acs_data['STATEA'] + acs_data['COUNTYA']).astype(int)
+
     if just_load_census_data:
         return acs_data
     combined_data = acs_data
@@ -791,14 +813,14 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
                 '/dfs/scratch1/safegraph_homes/all_aggregate_data/weekly_patterns_data/v1/home_summary_file/%s-home-panel-summary.csv' % date_string)
             all_date_strings.append(date_string)
     else:
-        path_to_weekly_v2_pt1 = os.path.join(CURRENT_DATA_DIR, 'weekly_pre_20200615/home-summary-file/')
+        path_to_weekly_v2_pt1 = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns Backfill for Dec 2020 and Onward Release/home_panel_summary_backfill/2020/12/14/21/')
         for filename in os.listdir(path_to_weekly_v2_pt1):
             date_string = filename[:-len('-home-panel-summary.csv')]
             if min_date_string is None or date_string >= min_date_string:
                 if max_date_string is None or date_string <= max_date_string:
                     all_filenames.append(os.path.join(path_to_weekly_v2_pt1, filename))
                     all_date_strings.append(date_string)
-        path_to_weekly_v2_pt2 = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20200615/home_panel_summary/')
+        path_to_weekly_v2_pt2 = os.path.join(CURRENT_DATA_DIR, '/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-06-15 to 2020-11-30)/home_panel_summary/')
         for year in os.listdir(path_to_weekly_v2_pt2):
             for month in os.listdir(os.path.join(path_to_weekly_v2_pt2, year)):
                 for week in os.listdir(os.path.join(path_to_weekly_v2_pt2, '%s/%s/' % (year, month))):
@@ -851,7 +873,7 @@ def load_and_reconcile_multiple_acs_data():
     Because we use Census data from two data sources, load a single dataframe that combines both. 
     """
     acs_1_year_d = load_dataframe_to_correct_for_population_size(just_load_census_data=True)
-    column_rename = {'total_cbg_population':'total_cbg_population_2018_1YR'}
+    column_rename = {'total_cbg_population': 'total_cbg_population_2019_5YR'}
     acs_1_year_d = acs_1_year_d.rename(mapper=column_rename, axis=1)
     acs_1_year_d['state_name'] = acs_1_year_d['state_code'].map(lambda x:FIPS_CODES_FOR_50_STATES_PLUS_DC[str(x)] if str(x) in FIPS_CODES_FOR_50_STATES_PLUS_DC else np.nan)
     acs_5_year_d = pd.read_csv(PATH_TO_ACS_5YR_DATA)
@@ -860,7 +882,7 @@ def load_and_reconcile_multiple_acs_data():
     # rename dynamic attributes to indicate that they are from ACS 2017 5-year
     dynamic_attributes = ['p_black', 'p_white', 'p_asian', 'median_household_income',
                           'block_group_area_in_square_miles', 'people_per_mile']
-    column_rename = {attr:'%s_2017_5YR' % attr for attr in dynamic_attributes}
+    column_rename = {attr:'%s_2019_5YR' % attr for attr in dynamic_attributes}
     acs_5_year_d = acs_5_year_d.rename(mapper=column_rename, axis=1)
     # repetitive with 'state_code' and 'county_code' column from acs_1_year_d
     acs_5_year_d = acs_5_year_d.drop(['Unnamed: 0', 'STATEFP', 'COUNTYFP'], axis=1)
@@ -981,7 +1003,7 @@ def get_daily_case_detection_rate(min_datetime=None, max_datetime=None):
     
 def write_out_acs_5_year_data():
     cbg_mapper = CensusBlockGroups(
-        base_directory='/dfs/scratch1/safegraph_homes/old_dfs_scratch0_directory_contents/new_census_data/',
+        base_directory='/media/gpu/easystore/covid_mobility_results/new_census_data/',
         gdb_files=None)
 
     geometry_cols = ['STATEFP',
@@ -991,6 +1013,9 @@ def write_out_acs_5_year_data():
               'CBSA Title',
               'State Name']
     block_group_cols = ['GEOID',
+                        'total_cbg_population',
+                        'state_code',
+                        'county_code',
                               'p_black',
                               'p_white',
                               'p_asian',
@@ -1089,7 +1114,7 @@ class CensusBlockGroups:
         county_to_msa_mapping_filepath=PATH_TO_COUNTY_TO_MSA_MAPPING):
         self.base_directory = base_directory
         if gdb_files is None:
-            self.gdb_files = ['ACS_2017_5YR_BG.gdb']
+            self.gdb_files = ['ACS_2019_5YR_BG.gdb']
         else:
             self.gdb_files = gdb_files
         self.crs_to_use = WGS_84_CRS # https://epsg.io/4326, WGS84 - World Geodetic System 1984, used in GPS.
@@ -1108,8 +1133,11 @@ class CensusBlockGroups:
         gdf = self.geometry_d[['geometry']].copy().to_crs({'proj':'cea'})
         area_in_square_meters = gdf['geometry'].area.values
         self.block_group_d['block_group_area_in_square_miles'] = area_in_square_meters / (1609.34 ** 2)
-        self.block_group_d['people_per_mile'] = (self.block_group_d['B03002e1'] /
+        self.block_group_d['people_per_mile'] = (self.block_group_d['B01001e1'] /
                                                self.block_group_d['block_group_area_in_square_miles'])
+
+        self.block_group_d['total_cbg_population'] = (self.block_group_d['B01001e1'])
+
         print(self.block_group_d[['block_group_area_in_square_miles', 'people_per_mile']].describe())
 
 
@@ -1140,7 +1168,7 @@ class CensusBlockGroups:
             layer_list = fiona.listlayers(full_path)
             print(file)
             print(layer_list)
-            geographic_layer_name = [a for a in layer_list if a[:15] == 'ACS_2017_5YR_BG']
+            geographic_layer_name = [a for a in layer_list if a[:15] == 'ACS_2019_5YR_BG']
             assert len(geographic_layer_name) == 1
             geographic_layer_name = geographic_layer_name[0]
 
@@ -1257,7 +1285,7 @@ class CensusBlockGroups:
         # https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2017/delineation-files/list1.xls
         """
         print("Loading county to MSA mapping")
-        self.counties_to_msa_df = pd.read_csv(self.county_to_msa_mapping_filepath, skiprows=2, dtype={'FIPS State Code':str, 'FIPS County Code':str})
+        self.counties_to_msa_df = pd.read_csv(self.county_to_msa_mapping_filepath, skiprows=0, dtype={'FIPS State Code':str, 'FIPS County Code':str})
         print("%i rows read" % len(self.counties_to_msa_df))
         self.counties_to_msa_df = self.counties_to_msa_df[['CBSA Title',
                                                            'Metropolitan/Micropolitan Statistical Area',
@@ -1346,3 +1374,6 @@ class CensusBlockGroups:
 
         print("Total query time is %2.3f" % (time.time() - t0))
         return results
+
+if __name__ == "__main__":
+    write_out_acs_5_year_data()

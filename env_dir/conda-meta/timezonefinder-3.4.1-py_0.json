@@ -1,0 +1,301 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "importlib_resources",
+    "numba",
+    "numpy",
+    "python",
+    "six"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/timezonefinder-3.4.1-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/LICENSE",
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/timezonefinder-3.4.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/timezonefinder/__init__.py",
+    "lib/python3.7/site-packages/timezonefinder/file_converter.py",
+    "lib/python3.7/site-packages/timezonefinder/global_settings.py",
+    "lib/python3.7/site-packages/timezonefinder/helpers.py",
+    "lib/python3.7/site-packages/timezonefinder/helpers_numba.py",
+    "lib/python3.7/site-packages/timezonefinder/hole_adr2data.bin",
+    "lib/python3.7/site-packages/timezonefinder/hole_coord_amount.bin",
+    "lib/python3.7/site-packages/timezonefinder/hole_data.bin",
+    "lib/python3.7/site-packages/timezonefinder/hole_poly_ids.bin",
+    "lib/python3.7/site-packages/timezonefinder/kwargs_only.py",
+    "lib/python3.7/site-packages/timezonefinder/poly_adr2data.bin",
+    "lib/python3.7/site-packages/timezonefinder/poly_coord_amount.bin",
+    "lib/python3.7/site-packages/timezonefinder/poly_data.bin",
+    "lib/python3.7/site-packages/timezonefinder/poly_max_values.bin",
+    "lib/python3.7/site-packages/timezonefinder/poly_nr2zone_id.bin",
+    "lib/python3.7/site-packages/timezonefinder/poly_zone_ids.bin",
+    "lib/python3.7/site-packages/timezonefinder/shortcuts_adr2data.bin",
+    "lib/python3.7/site-packages/timezonefinder/shortcuts_data.bin",
+    "lib/python3.7/site-packages/timezonefinder/shortcuts_entry_amount.bin",
+    "lib/python3.7/site-packages/timezonefinder/shortcuts_unique_id.bin",
+    "lib/python3.7/site-packages/timezonefinder/timezone_names.json",
+    "lib/python3.7/site-packages/timezonefinder/timezonefinder.py",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/file_converter.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/global_settings.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/helpers.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/helpers_numba.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/kwargs_only.cpython-37.pyc",
+    "lib/python3.7/site-packages/timezonefinder/__pycache__/timezonefinder.cpython-37.pyc"
+  ],
+  "fn": "timezonefinder-3.4.1-py_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/timezonefinder-3.4.1-py_0",
+    "type": 1
+  },
+  "md5": "533d294feb38feabf8e2375ca4be715d",
+  "name": "timezonefinder",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/timezonefinder-3.4.1-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "04996d7d9eb2b8fa6e7ad905609d307017ed7fe458b7b248820c64976fdd441b",
+        "sha256_in_prefix": "04996d7d9eb2b8fa6e7ad905609d307017ed7fe458b7b248820c64976fdd441b",
+        "size_in_bytes": 1078
+      },
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a6d35157996055f6ba4cd17b8bff3e7f3406eb6b0e6cdaf6fdb396ba67eaf768",
+        "sha256_in_prefix": "a6d35157996055f6ba4cd17b8bff3e7f3406eb6b0e6cdaf6fdb396ba67eaf768",
+        "size_in_bytes": 25383
+      },
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5c703583f85fd36b04dbddf182cd3c4e30047c3798bbff310494f3266c2acf01",
+        "sha256_in_prefix": "5c703583f85fd36b04dbddf182cd3c4e30047c3798bbff310494f3266c2acf01",
+        "size_in_bytes": 2772
+      },
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff024574e624ee2df1c53f0494e91426f39d3af7cd19b47d83e6dfe94413eac5",
+        "sha256_in_prefix": "ff024574e624ee2df1c53f0494e91426f39d3af7cd19b47d83e6dfe94413eac5",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/timezonefinder-3.4.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "92b3bf6f26d2e47536c0cfc5b91cb03fd067185adcfd00e15feaba4e09b60469",
+        "sha256_in_prefix": "92b3bf6f26d2e47536c0cfc5b91cb03fd067185adcfd00e15feaba4e09b60469",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "site-packages/timezonefinder/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b9c4746c77977219cfc016a8ca29fd3e10406e4c4f8f34f877532f0925b30589",
+        "sha256_in_prefix": "b9c4746c77977219cfc016a8ca29fd3e10406e4c4f8f34f877532f0925b30589",
+        "size_in_bytes": 180
+      },
+      {
+        "_path": "site-packages/timezonefinder/file_converter.py",
+        "path_type": "hardlink",
+        "sha256": "477f4a63b666e035b677d0f0a8b4a277cc18b910c6006ba16d221d5c3e383be4",
+        "sha256_in_prefix": "477f4a63b666e035b677d0f0a8b4a277cc18b910c6006ba16d221d5c3e383be4",
+        "size_in_bytes": 39621
+      },
+      {
+        "_path": "site-packages/timezonefinder/global_settings.py",
+        "path_type": "hardlink",
+        "sha256": "1847767ce2514b35f0bcfe21589e92e4c413e1e3bbda5f4f6a25e6b95c0b3eb8",
+        "sha256_in_prefix": "1847767ce2514b35f0bcfe21589e92e4c413e1e3bbda5f4f6a25e6b95c0b3eb8",
+        "size_in_bytes": 1926
+      },
+      {
+        "_path": "site-packages/timezonefinder/helpers.py",
+        "path_type": "hardlink",
+        "sha256": "3d6138f81293de8a461e0e36099054fe428299e13000d32d63bab0605ea66cde",
+        "sha256_in_prefix": "3d6138f81293de8a461e0e36099054fe428299e13000d32d63bab0605ea66cde",
+        "size_in_bytes": 12123
+      },
+      {
+        "_path": "site-packages/timezonefinder/helpers_numba.py",
+        "path_type": "hardlink",
+        "sha256": "74ee980f4f8d9238dfe053a62c4ffadebcef977d677b5b7c4e5b7d8fcc2f3b8d",
+        "sha256_in_prefix": "74ee980f4f8d9238dfe053a62c4ffadebcef977d677b5b7c4e5b7d8fcc2f3b8d",
+        "size_in_bytes": 14505
+      },
+      {
+        "_path": "site-packages/timezonefinder/hole_adr2data.bin",
+        "path_type": "hardlink",
+        "sha256": "4e8b01d675188d5f8d2da45aaaedfaf85cd2002f05bba58e232b17902d0d83c5",
+        "sha256_in_prefix": "4e8b01d675188d5f8d2da45aaaedfaf85cd2002f05bba58e232b17902d0d83c5",
+        "size_in_bytes": 1020
+      },
+      {
+        "_path": "site-packages/timezonefinder/hole_coord_amount.bin",
+        "path_type": "hardlink",
+        "sha256": "78334157ee3744870b2dca69192e8eeead0c26b4a70746de170cf648be279556",
+        "sha256_in_prefix": "78334157ee3744870b2dca69192e8eeead0c26b4a70746de170cf648be279556",
+        "size_in_bytes": 510
+      },
+      {
+        "_path": "site-packages/timezonefinder/hole_data.bin",
+        "path_type": "hardlink",
+        "sha256": "be0454155edc3692e6c7d15c7378e21e8931e5d3d71567cfc5a5adff31c2cebd",
+        "sha256_in_prefix": "be0454155edc3692e6c7d15c7378e21e8931e5d3d71567cfc5a5adff31c2cebd",
+        "size_in_bytes": 427400
+      },
+      {
+        "_path": "site-packages/timezonefinder/hole_poly_ids.bin",
+        "path_type": "hardlink",
+        "sha256": "deae9ee3f1a2676f58d17fb4e3b84a9a5e4b41475b8e8c92246cc2bc34ce71d4",
+        "sha256_in_prefix": "deae9ee3f1a2676f58d17fb4e3b84a9a5e4b41475b8e8c92246cc2bc34ce71d4",
+        "size_in_bytes": 510
+      },
+      {
+        "_path": "site-packages/timezonefinder/kwargs_only.py",
+        "path_type": "hardlink",
+        "sha256": "c5f267faf3ad3fd24ee408817f00a0606d46adab3a4446d07d48eb94f205cce2",
+        "sha256_in_prefix": "c5f267faf3ad3fd24ee408817f00a0606d46adab3a4446d07d48eb94f205cce2",
+        "size_in_bytes": 994
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_adr2data.bin",
+        "path_type": "hardlink",
+        "sha256": "115618dafbefe7e1367e66325cd492a1df6f8964bb8286151abf1c291be18555",
+        "sha256_in_prefix": "115618dafbefe7e1367e66325cd492a1df6f8964bb8286151abf1c291be18555",
+        "size_in_bytes": 4696
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_coord_amount.bin",
+        "path_type": "hardlink",
+        "sha256": "d77de3de81e6511570879b4ac2902a2769eb24133b9a3a6e5889f8041c427149",
+        "sha256_in_prefix": "d77de3de81e6511570879b4ac2902a2769eb24133b9a3a6e5889f8041c427149",
+        "size_in_bytes": 4696
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_data.bin",
+        "path_type": "hardlink",
+        "sha256": "c5c60c699cc673b565aefbbc705f0d3127cbcb8311c72787465bf487e893f88c",
+        "sha256_in_prefix": "c5c60c699cc673b565aefbbc705f0d3127cbcb8311c72787465bf487e893f88c",
+        "size_in_bytes": 45032744
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_max_values.bin",
+        "path_type": "hardlink",
+        "sha256": "cf18cef7909673930388670d4606225ac16f33f4e11532611fc32c712422f2fe",
+        "sha256_in_prefix": "cf18cef7909673930388670d4606225ac16f33f4e11532611fc32c712422f2fe",
+        "size_in_bytes": 18784
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_nr2zone_id.bin",
+        "path_type": "hardlink",
+        "sha256": "d33bb3d60f68120848895ac37725f1e237b2626beb8eff22588500358dcafcbf",
+        "sha256_in_prefix": "d33bb3d60f68120848895ac37725f1e237b2626beb8eff22588500358dcafcbf",
+        "size_in_bytes": 854
+      },
+      {
+        "_path": "site-packages/timezonefinder/poly_zone_ids.bin",
+        "path_type": "hardlink",
+        "sha256": "9812d5cbade1b71fdd12dddbc142ddacbf5d1038d99ce62868ccce458acfd3c9",
+        "sha256_in_prefix": "9812d5cbade1b71fdd12dddbc142ddacbf5d1038d99ce62868ccce458acfd3c9",
+        "size_in_bytes": 2348
+      },
+      {
+        "_path": "site-packages/timezonefinder/shortcuts_adr2data.bin",
+        "path_type": "hardlink",
+        "sha256": "9051ee80f5341a357adb3a24f3e902a7465756bb41234da624800e1cda1220f2",
+        "sha256_in_prefix": "9051ee80f5341a357adb3a24f3e902a7465756bb41234da624800e1cda1220f2",
+        "size_in_bytes": 518400
+      },
+      {
+        "_path": "site-packages/timezonefinder/shortcuts_data.bin",
+        "path_type": "hardlink",
+        "sha256": "0c31766e95e344374040ccde7ae85e381430f9a96308294f4b55cbca024a8835",
+        "sha256_in_prefix": "0c31766e95e344374040ccde7ae85e381430f9a96308294f4b55cbca024a8835",
+        "size_in_bytes": 124662
+      },
+      {
+        "_path": "site-packages/timezonefinder/shortcuts_entry_amount.bin",
+        "path_type": "hardlink",
+        "sha256": "d3364df312cd85120206fd37d1c952e1aca422ebef63354ecb1a0968b1fc4c3e",
+        "sha256_in_prefix": "d3364df312cd85120206fd37d1c952e1aca422ebef63354ecb1a0968b1fc4c3e",
+        "size_in_bytes": 259200
+      },
+      {
+        "_path": "site-packages/timezonefinder/shortcuts_unique_id.bin",
+        "path_type": "hardlink",
+        "sha256": "568759eb469dad94323510258d0ac24237574848b487594a5a289f6f6dc9e62b",
+        "sha256_in_prefix": "568759eb469dad94323510258d0ac24237574848b487594a5a289f6f6dc9e62b",
+        "size_in_bytes": 259200
+      },
+      {
+        "_path": "site-packages/timezonefinder/timezone_names.json",
+        "path_type": "hardlink",
+        "sha256": "d256384a268629d15c3f4ed957661e6ae47ef2afa51670300b17d29271d9ab14",
+        "sha256_in_prefix": "d256384a268629d15c3f4ed957661e6ae47ef2afa51670300b17d29271d9ab14",
+        "size_in_bytes": 10009
+      },
+      {
+        "_path": "site-packages/timezonefinder/timezonefinder.py",
+        "path_type": "hardlink",
+        "sha256": "9a87849046715c0396adf4eb9b843ba8c02797523f458d548886550276b40ab0",
+        "sha256_in_prefix": "9a87849046715c0396adf4eb9b843ba8c02797523f458d548886550276b40ab0",
+        "size_in_bytes": 25621
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/file_converter.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/global_settings.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/helpers.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/helpers_numba.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/kwargs_only.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/timezonefinder/__pycache__/timezonefinder.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "timezonefinder==3.4.1=py_0",
+  "sha256": "e93cd376ca34532fa55316136e921241afa06c2d0c7453689f3c06f2485007fc",
+  "size": 42906735,
+  "subdir": "noarch",
+  "timestamp": 1547424297773,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/timezonefinder-3.4.1-py_0.tar.bz2",
+  "version": "3.4.1"
+}

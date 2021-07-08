@@ -1,0 +1,71 @@
+{
+  "build": "14_mkl",
+  "build_number": 14,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "libcblas 3.8.0 14_mkl",
+    "liblapack 3.8.0 14_mkl",
+    "liblapacke 3.8.0 14_mkl",
+    "blas * mkl"
+  ],
+  "depends": [
+    "mkl >=2019.0,<2020.0a0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/libblas-3.8.0-14_mkl",
+  "features": "",
+  "files": [
+    "etc/conda/activate.d/libblas_mkl_activate.sh",
+    "etc/conda/deactivate.d/libblas_mkl_deactivate.sh",
+    "lib/libblas.so",
+    "lib/libblas.so.3"
+  ],
+  "fn": "libblas-3.8.0-14_mkl.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/libblas-3.8.0-14_mkl",
+    "type": 1
+  },
+  "md5": "0550bfde4d205989788dae58f7886dc6",
+  "name": "libblas",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/libblas-3.8.0-14_mkl.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/activate.d/libblas_mkl_activate.sh",
+        "path_type": "hardlink",
+        "sha256": "db497627395a99ce7cce993bdd8a0de19eae2daf1245948e0cc2b75f7846d2d6",
+        "sha256_in_prefix": "db497627395a99ce7cce993bdd8a0de19eae2daf1245948e0cc2b75f7846d2d6",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "etc/conda/deactivate.d/libblas_mkl_deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "5583b295f92f9553bcbdd67e32178f316e274b7065137c963fece293169bd76f",
+        "sha256_in_prefix": "5583b295f92f9553bcbdd67e32178f316e274b7065137c963fece293169bd76f",
+        "size_in_bytes": 197
+      },
+      {
+        "_path": "lib/libblas.so",
+        "path_type": "softlink",
+        "sha256": "776090c95b7a1584d17e21092362db6684e1647eb7e229772d7268ea14a9d3a6",
+        "size_in_bytes": 6502823
+      },
+      {
+        "_path": "lib/libblas.so.3",
+        "path_type": "softlink",
+        "sha256": "776090c95b7a1584d17e21092362db6684e1647eb7e229772d7268ea14a9d3a6",
+        "size_in_bytes": 6502823
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "722614f594de113462c52ad6ae2bfe6a04c4b83ddd2391eb3c216111bad97c60",
+  "size": 10372,
+  "subdir": "linux-64",
+  "timestamp": 1571123958490,
+  "track_features": "blas_mkl",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libblas-3.8.0-14_mkl.tar.bz2",
+  "version": "3.8.0"
+}

@@ -1,0 +1,454 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "python_abi * *_cp37m"
+  ],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/asn1crypto-1.0.1-py37_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/LICENSE",
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/asn1crypto/__init__.py",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_errors.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_inet.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_int.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_iri.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_ordereddict.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_teletex_codec.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/_types.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/algos.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/cms.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/core.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/crl.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/csr.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/keys.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/ocsp.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/parser.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/pdf.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/pem.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/pkcs12.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/tsp.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/util.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/version.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/__pycache__/x509.cpython-37.pyc",
+    "lib/python3.7/site-packages/asn1crypto/_errors.py",
+    "lib/python3.7/site-packages/asn1crypto/_inet.py",
+    "lib/python3.7/site-packages/asn1crypto/_int.py",
+    "lib/python3.7/site-packages/asn1crypto/_iri.py",
+    "lib/python3.7/site-packages/asn1crypto/_ordereddict.py",
+    "lib/python3.7/site-packages/asn1crypto/_teletex_codec.py",
+    "lib/python3.7/site-packages/asn1crypto/_types.py",
+    "lib/python3.7/site-packages/asn1crypto/algos.py",
+    "lib/python3.7/site-packages/asn1crypto/cms.py",
+    "lib/python3.7/site-packages/asn1crypto/core.py",
+    "lib/python3.7/site-packages/asn1crypto/crl.py",
+    "lib/python3.7/site-packages/asn1crypto/csr.py",
+    "lib/python3.7/site-packages/asn1crypto/keys.py",
+    "lib/python3.7/site-packages/asn1crypto/ocsp.py",
+    "lib/python3.7/site-packages/asn1crypto/parser.py",
+    "lib/python3.7/site-packages/asn1crypto/pdf.py",
+    "lib/python3.7/site-packages/asn1crypto/pem.py",
+    "lib/python3.7/site-packages/asn1crypto/pkcs12.py",
+    "lib/python3.7/site-packages/asn1crypto/tsp.py",
+    "lib/python3.7/site-packages/asn1crypto/util.py",
+    "lib/python3.7/site-packages/asn1crypto/version.py",
+    "lib/python3.7/site-packages/asn1crypto/x509.py"
+  ],
+  "fn": "asn1crypto-1.0.1-py37_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/asn1crypto-1.0.1-py37_0",
+    "type": 1
+  },
+  "md5": "0066599394244f9d72d588b895706cc1",
+  "name": "asn1crypto",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/asn1crypto-1.0.1-py37_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a88480656ec98943fb04344f6a477ee74062896f3ddb1a6f99e5f05f0109a286",
+        "sha256_in_prefix": "a88480656ec98943fb04344f6a477ee74062896f3ddb1a6f99e5f05f0109a286",
+        "size_in_bytes": 1075
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "36e4bbfeb31de98a4acc5e381c3028ca9e5843ef5be4b677ce21d20ceba2baba",
+        "sha256_in_prefix": "36e4bbfeb31de98a4acc5e381c3028ca9e5843ef5be4b677ce21d20ceba2baba",
+        "size_in_bytes": 13330
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "3ae7b611815f3517b883024e35385a63b2702cc3f638b8a9fcf279d3082e65fc",
+        "sha256_in_prefix": "3ae7b611815f3517b883024e35385a63b2702cc3f638b8a9fcf279d3082e65fc",
+        "size_in_bytes": 3369
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c18058d843b9d0584071c9295a63b77376709363002c00b1ea53c097a8152a71",
+        "sha256_in_prefix": "c18058d843b9d0584071c9295a63b77376709363002c00b1ea53c097a8152a71",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto-1.0.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "cfcfa317f43e8e0cc6a31ed3d976226a7dfec9ea6d2d2d88ecc8e824b05aab56",
+        "sha256_in_prefix": "cfcfa317f43e8e0cc6a31ed3d976226a7dfec9ea6d2d2d88ecc8e824b05aab56",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "77e1e7698f8853437569ea5423d6d8475d49d8419c70600df240ef28c806bbbf",
+        "sha256_in_prefix": "77e1e7698f8853437569ea5423d6d8475d49d8419c70600df240ef28c806bbbf",
+        "size_in_bytes": 209
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "cfc759551d9ec4b0b29c9e46dccf6386e0584f20a3e5df7c954a10b8b06cb903",
+        "sha256_in_prefix": "cfc759551d9ec4b0b29c9e46dccf6386e0584f20a3e5df7c954a10b8b06cb903",
+        "size_in_bytes": 364
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_errors.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "9bf2254c70b01a6737c19d8aa7e74f5ef14c9c7388b073c26503ce92e5b37ebc",
+        "sha256_in_prefix": "9bf2254c70b01a6737c19d8aa7e74f5ef14c9c7388b073c26503ce92e5b37ebc",
+        "size_in_bytes": 1237
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_inet.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "363990524ef4d8b94644455ba69c66cfbc3386be9570155ff8d02f16ce6aaa2d",
+        "sha256_in_prefix": "363990524ef4d8b94644455ba69c66cfbc3386be9570155ff8d02f16ce6aaa2d",
+        "size_in_bytes": 3592
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_int.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "06200291f545d690e422d43881c1b300ce482265aa4da0170f01b57e2332844e",
+        "sha256_in_prefix": "06200291f545d690e422d43881c1b300ce482265aa4da0170f01b57e2332844e",
+        "size_in_bytes": 676
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_iri.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8931bdbbc8092346a98ea77ee0ba41a154e9cb57b58abeceaf37a381a556d1f5",
+        "sha256_in_prefix": "8931bdbbc8092346a98ea77ee0ba41a154e9cb57b58abeceaf37a381a556d1f5",
+        "size_in_bytes": 6481
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_ordereddict.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f8ec2a9745e0765565a92e763ef090f4b31bb64f7a60e588b41c4ffb93237ebe",
+        "sha256_in_prefix": "f8ec2a9745e0765565a92e763ef090f4b31bb64f7a60e588b41c4ffb93237ebe",
+        "size_in_bytes": 3660
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_teletex_codec.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "24e95ed17947d6c6a704d4470c698c296022388358108962bea1cd2a2202fb97",
+        "sha256_in_prefix": "24e95ed17947d6c6a704d4470c698c296022388358108962bea1cd2a2202fb97",
+        "size_in_bytes": 2978
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/_types.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "11e93b2d675caf0f43bd35391246ce3a43bf6892f0799cb907c9e3fcc3faf9b0",
+        "sha256_in_prefix": "11e93b2d675caf0f43bd35391246ce3a43bf6892f0799cb907c9e3fcc3faf9b0",
+        "size_in_bytes": 1267
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/algos.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "3f5aa862d9501c7fcf45ad2a21b0b1ddb326ff54deba2d7a06093dcc64689935",
+        "sha256_in_prefix": "3f5aa862d9501c7fcf45ad2a21b0b1ddb326ff54deba2d7a06093dcc64689935",
+        "size_in_bytes": 26104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/cms.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2a511639cc5d81e8b8db5dad707552173bc9040a5ea01e6c7ed0a87043378d7",
+        "sha256_in_prefix": "c2a511639cc5d81e8b8db5dad707552173bc9040a5ea01e6c7ed0a87043378d7",
+        "size_in_bytes": 26729
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/core.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b6f783a9d5177f4ca5b76292a7cd94c12487658ffd91cceeac0e0b6e44cf435c",
+        "sha256_in_prefix": "b6f783a9d5177f4ca5b76292a7cd94c12487658ffd91cceeac0e0b6e44cf435c",
+        "size_in_bytes": 125612
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/crl.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "91fad315e4100870af3d65a7394d1e04d449b5888eb5a4655da6e184b3318de9",
+        "sha256_in_prefix": "91fad315e4100870af3d65a7394d1e04d449b5888eb5a4655da6e184b3318de9",
+        "size_in_bytes": 14714
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/csr.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b42677b25a956e57f9144eb7948422a1004eaa01948253153a3c34892b6a3ea8",
+        "sha256_in_prefix": "b42677b25a956e57f9144eb7948422a1004eaa01948253153a3c34892b6a3ea8",
+        "size_in_bytes": 2888
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/keys.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee1e3cebe3555e0fc7a99923a08835f881e7801cd1529558634b5001d1fb75f2",
+        "sha256_in_prefix": "ee1e3cebe3555e0fc7a99923a08835f881e7801cd1529558634b5001d1fb75f2",
+        "size_in_bytes": 29332
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/ocsp.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "64402e469f3e213f4a66b2c38dba9c46b73c73a1a4719ef152ff53b173fe8762",
+        "sha256_in_prefix": "64402e469f3e213f4a66b2c38dba9c46b73c73a1a4719ef152ff53b173fe8762",
+        "size_in_bytes": 19574
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/parser.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "6524496e37cd932fe297f2f8f6c65da6e65f76ce259f506f9c9634ba17448919",
+        "sha256_in_prefix": "6524496e37cd932fe297f2f8f6c65da6e65f76ce259f506f9c9634ba17448919",
+        "size_in_bytes": 6742
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/pdf.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "209a6d414ec1a3592eba46204538b1ed51ee0e0980c68ee063f1ef5100a55aaa",
+        "sha256_in_prefix": "209a6d414ec1a3592eba46204538b1ed51ee0e0980c68ee063f1ef5100a55aaa",
+        "size_in_bytes": 2770
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/pem.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "ff1da8e76d4b3ef302da6d14df6379a19550c3b018a39bed8a8241670b34f05c",
+        "sha256_in_prefix": "ff1da8e76d4b3ef302da6d14df6379a19550c3b018a39bed8a8241670b34f05c",
+        "size_in_bytes": 5081
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/pkcs12.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "63cf612bc2b687dab362931048147e72fddbcbc579749fd859461cfd808948f6",
+        "sha256_in_prefix": "63cf612bc2b687dab362931048147e72fddbcbc579749fd859461cfd808948f6",
+        "size_in_bytes": 5378
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/tsp.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "01ce7999174ae6256e09c35bc5f548cbf71a2d3fe229352950331b2a2fe93ebe",
+        "sha256_in_prefix": "01ce7999174ae6256e09c35bc5f548cbf71a2d3fe229352950331b2a2fe93ebe",
+        "size_in_bytes": 9221
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/util.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "5208e082308734100bc599ea829678c3c5e34e1e3caf9f19c467f3e8d021876f",
+        "sha256_in_prefix": "5208e082308734100bc599ea829678c3c5e34e1e3caf9f19c467f3e8d021876f",
+        "size_in_bytes": 22616
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/version.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b59cc2bc9ad01e20c642862236ce6dc67b5f45854459b0c854d44183dd919dc6",
+        "sha256_in_prefix": "b59cc2bc9ad01e20c642862236ce6dc67b5f45854459b0c854d44183dd919dc6",
+        "size_in_bytes": 324
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/__pycache__/x509.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "27f59172a85095729ef9a2e976134df3d75d37806530af5f03237f3e9e924f6b",
+        "sha256_in_prefix": "27f59172a85095729ef9a2e976134df3d75d37806530af5f03237f3e9e924f6b",
+        "size_in_bytes": 79609
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_errors.py",
+        "path_type": "hardlink",
+        "sha256": "bf5bf255674ee3db4bba054b9cabed8ebf5975d2e978aa01fb2ac13833b0d2d8",
+        "sha256_in_prefix": "bf5bf255674ee3db4bba054b9cabed8ebf5975d2e978aa01fb2ac13833b0d2d8",
+        "size_in_bytes": 1070
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_inet.py",
+        "path_type": "hardlink",
+        "sha256": "cf62bc08ac527c443777450c208817c3936e80a2d9c914bffc29f5d22bdb8863",
+        "sha256_in_prefix": "cf62bc08ac527c443777450c208817c3936e80a2d9c914bffc29f5d22bdb8863",
+        "size_in_bytes": 4661
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_int.py",
+        "path_type": "hardlink",
+        "sha256": "a1eddcc62721e738f78109040a5e999c03829fe3f26131e41b5d7b6c0976d536",
+        "sha256_in_prefix": "a1eddcc62721e738f78109040a5e999c03829fe3f26131e41b5d7b6c0976d536",
+        "size_in_bytes": 494
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_iri.py",
+        "path_type": "hardlink",
+        "sha256": "da420ff2018887c057b75abfd12e4a867333514408bee4f414301837229ea9b6",
+        "sha256_in_prefix": "da420ff2018887c057b75abfd12e4a867333514408bee4f414301837229ea9b6",
+        "size_in_bytes": 8733
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_ordereddict.py",
+        "path_type": "hardlink",
+        "sha256": "e550182dbc7112d7dd6462a08f320dc6598d91883d77fec99990057ebd047009",
+        "sha256_in_prefix": "e550182dbc7112d7dd6462a08f320dc6598d91883d77fec99990057ebd047009",
+        "size_in_bytes": 4533
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_teletex_codec.py",
+        "path_type": "hardlink",
+        "sha256": "2e10e9913a6b3daa1ced427d8bdbb09cffb9026d344956c74908b33e908ba6a1",
+        "sha256_in_prefix": "2e10e9913a6b3daa1ced427d8bdbb09cffb9026d344956c74908b33e908ba6a1",
+        "size_in_bytes": 5053
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/_types.py",
+        "path_type": "hardlink",
+        "sha256": "3b0b17df47a9bfe11323d786acb5bd18baafd0a7a889246725c8cdf76ae8aa14",
+        "sha256_in_prefix": "3b0b17df47a9bfe11323d786acb5bd18baafd0a7a889246725c8cdf76ae8aa14",
+        "size_in_bytes": 939
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/algos.py",
+        "path_type": "hardlink",
+        "sha256": "9c4685535080f04764631317ae16e5840f815a509d96cd872f2187d1a7660cc0",
+        "sha256_in_prefix": "9c4685535080f04764631317ae16e5840f815a509d96cd872f2187d1a7660cc0",
+        "size_in_bytes": 35611
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/cms.py",
+        "path_type": "hardlink",
+        "sha256": "36b8b8a33653c5ded41c241dd76dfb76914bf1320ada08f379c2ec124e7e73c9",
+        "sha256_in_prefix": "36b8b8a33653c5ded41c241dd76dfb76914bf1320ada08f379c2ec124e7e73c9",
+        "size_in_bytes": 26520
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/core.py",
+        "path_type": "hardlink",
+        "sha256": "0c2e411430ad8ace68c6468ba8c9fbc6a61907888dd293e88987e84157ae6e1d",
+        "sha256_in_prefix": "0c2e411430ad8ace68c6468ba8c9fbc6a61907888dd293e88987e84157ae6e1d",
+        "size_in_bytes": 169647
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/crl.py",
+        "path_type": "hardlink",
+        "sha256": "2892ee127d480c93b5f57e1e2d8851c9a33e0029f12a48a6a06b32027cc67600",
+        "sha256_in_prefix": "2892ee127d480c93b5f57e1e2d8851c9a33e0029f12a48a6a06b32027cc67600",
+        "size_in_bytes": 16104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/csr.py",
+        "path_type": "hardlink",
+        "sha256": "08fd2d386c873c45776699c1ecbe0bf57f97d5ea43e93562c5a97a500b53bcb4",
+        "sha256_in_prefix": "08fd2d386c873c45776699c1ecbe0bf57f97d5ea43e93562c5a97a500b53bcb4",
+        "size_in_bytes": 2142
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/keys.py",
+        "path_type": "hardlink",
+        "sha256": "2df39ac16b3c263e2b35d9a116f91deb4e0d4a053e925156defec94fd517ba24",
+        "sha256_in_prefix": "2df39ac16b3c263e2b35d9a116f91deb4e0d4a053e925156defec94fd517ba24",
+        "size_in_bytes": 34219
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/ocsp.py",
+        "path_type": "hardlink",
+        "sha256": "daac431a00a9d97289e71147131d2394b1641d859d2afaed5017462eb5153db1",
+        "sha256_in_prefix": "daac431a00a9d97289e71147131d2394b1641d859d2afaed5017462eb5153db1",
+        "size_in_bytes": 19024
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/parser.py",
+        "path_type": "hardlink",
+        "sha256": "94d7b0c0ac621e9425fce973ed4a0fc1637e84267e545e236d043f71e97ec779",
+        "sha256_in_prefix": "94d7b0c0ac621e9425fce973ed4a0fc1637e84267e545e236d043f71e97ec779",
+        "size_in_bytes": 8853
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/pdf.py",
+        "path_type": "hardlink",
+        "sha256": "1cdc9b9e76b9586d9fb666fc371fd3e6b7b22c9d04ee1257a23dfb0ee2dba57d",
+        "sha256_in_prefix": "1cdc9b9e76b9586d9fb666fc371fd3e6b7b22c9d04ee1257a23dfb0ee2dba57d",
+        "size_in_bytes": 2250
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/pem.py",
+        "path_type": "hardlink",
+        "sha256": "b38eabfca090f61d4710d5cc8780062935deb22bd0aca9d6cd4dfe82893be6e2",
+        "sha256_in_prefix": "b38eabfca090f61d4710d5cc8780062935deb22bd0aca9d6cd4dfe82893be6e2",
+        "size_in_bytes": 6145
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/pkcs12.py",
+        "path_type": "hardlink",
+        "sha256": "abe2867ef68eef607c01fbe8970b2a8404298eeaa79047333dd75760b0455121",
+        "sha256_in_prefix": "abe2867ef68eef607c01fbe8970b2a8404298eeaa79047333dd75760b0455121",
+        "size_in_bytes": 4566
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/tsp.py",
+        "path_type": "hardlink",
+        "sha256": "8e98e9166581c17e06515ad8bbd1a793a617467cdbfae545bdf6894a8fa6ff64",
+        "sha256_in_prefix": "8e98e9166581c17e06515ad8bbd1a793a617467cdbfae545bdf6894a8fa6ff64",
+        "size_in_bytes": 7827
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/util.py",
+        "path_type": "hardlink",
+        "sha256": "da8639db8b730cf30df8964a429bac3f7ea680f487737e88efa41fcab2feedde",
+        "sha256_in_prefix": "da8639db8b730cf30df8964a429bac3f7ea680f487737e88efa41fcab2feedde",
+        "size_in_bytes": 21613
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/version.py",
+        "path_type": "hardlink",
+        "sha256": "da1f70ecc3e8f4001aa7168aca4135531ed289cf6ba24172d5d3e705f1dd59a0",
+        "sha256_in_prefix": "da1f70ecc3e8f4001aa7168aca4135531ed289cf6ba24172d5d3e705f1dd59a0",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "lib/python3.7/site-packages/asn1crypto/x509.py",
+        "path_type": "hardlink",
+        "sha256": "6cadbeb24f05a39619364a0899864b9ad75dffa730b1f97aaefede428d43fb5d",
+        "sha256_in_prefix": "6cadbeb24f05a39619364a0899864b9ad75dffa730b1f97aaefede428d43fb5d",
+        "size_in_bytes": 93212
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "asn1crypto==1.0.1=py37_0",
+  "sha256": "cc99d58e393075268ed4e3d0b1e762b0d3b53f6c7084588c685de5ee4d2a062d",
+  "size": 161257,
+  "subdir": "linux-64",
+  "timestamp": 1570253258388,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/asn1crypto-1.0.1-py37_0.tar.bz2",
+  "version": "1.0.1"
+}

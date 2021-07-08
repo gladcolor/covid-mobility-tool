@@ -1,0 +1,311 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-plogr-0.2.0-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/plogr/DESCRIPTION",
+    "lib/R/library/plogr/INDEX",
+    "lib/R/library/plogr/LICENSE",
+    "lib/R/library/plogr/MD5",
+    "lib/R/library/plogr/Meta/Rd.rds",
+    "lib/R/library/plogr/Meta/features.rds",
+    "lib/R/library/plogr/Meta/hsearch.rds",
+    "lib/R/library/plogr/Meta/links.rds",
+    "lib/R/library/plogr/Meta/nsInfo.rds",
+    "lib/R/library/plogr/Meta/package.rds",
+    "lib/R/library/plogr/NAMESPACE",
+    "lib/R/library/plogr/NEWS.md",
+    "lib/R/library/plogr/R/plogr",
+    "lib/R/library/plogr/R/plogr.rdb",
+    "lib/R/library/plogr/R/plogr.rdx",
+    "lib/R/library/plogr/help/AnIndex",
+    "lib/R/library/plogr/help/aliases.rds",
+    "lib/R/library/plogr/help/paths.rds",
+    "lib/R/library/plogr/help/plogr.rdb",
+    "lib/R/library/plogr/help/plogr.rdx",
+    "lib/R/library/plogr/html/00Index.html",
+    "lib/R/library/plogr/html/R.css",
+    "lib/R/library/plogr/html/plogr-package.html",
+    "lib/R/library/plogr/include/plog/Appenders/ColorConsoleAppender.h",
+    "lib/R/library/plogr/include/plog/Appenders/ConsoleAppender.h",
+    "lib/R/library/plogr/include/plog/Appenders/IAppender.h",
+    "lib/R/library/plogr/include/plog/Formatters/FuncMessageFormatter.h",
+    "lib/R/library/plogr/include/plog/Init.h",
+    "lib/R/library/plogr/include/plog/Log.h",
+    "lib/R/library/plogr/include/plog/Logger.h",
+    "lib/R/library/plogr/include/plog/Record.h",
+    "lib/R/library/plogr/include/plog/Severity.h",
+    "lib/R/library/plogr/include/plog/Util.h",
+    "lib/R/library/plogr/include/plogr.h"
+  ],
+  "fn": "r-plogr-0.2.0-r36h6115d3f_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-plogr-0.2.0-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "daf2062c6b829cae9fb8e4516a868ef0",
+  "name": "r-plogr",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-plogr-0.2.0-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/plogr/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "9df0e29c1c980c8d69657d8d5e78797006c411196e8efda2fa80213ebae3f6a5",
+        "sha256_in_prefix": "9df0e29c1c980c8d69657d8d5e78797006c411196e8efda2fa80213ebae3f6a5",
+        "size_in_bytes": 978
+      },
+      {
+        "_path": "lib/R/library/plogr/INDEX",
+        "path_type": "hardlink",
+        "sha256": "f1c7473ee15057812a99c776db1325585b2ed29ae08c11a787fbe494edb38348",
+        "sha256_in_prefix": "f1c7473ee15057812a99c776db1325585b2ed29ae08c11a787fbe494edb38348",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "lib/R/library/plogr/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4296ba1e21a94c0c9e25ba515ab54382a458df30e557f9f5a680b2e711f5ec96",
+        "sha256_in_prefix": "4296ba1e21a94c0c9e25ba515ab54382a458df30e557f9f5a680b2e711f5ec96",
+        "size_in_bytes": 60
+      },
+      {
+        "_path": "lib/R/library/plogr/MD5",
+        "path_type": "hardlink",
+        "sha256": "6e86dc92a4eaaa612345b3b51d4982b0b76f4fd88db4132a6270744df260bc1d",
+        "sha256_in_prefix": "6e86dc92a4eaaa612345b3b51d4982b0b76f4fd88db4132a6270744df260bc1d",
+        "size_in_bytes": 1766
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "51643027c02e72c843b1fe37a2cd145e1acd5414f8f61e4b28fd5af663fa7fbf",
+        "sha256_in_prefix": "51643027c02e72c843b1fe37a2cd145e1acd5414f8f61e4b28fd5af663fa7fbf",
+        "size_in_bytes": 267
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "c263f3d9ecd476ff98d0a76db0b4386b957119664a68f8481d22211e5d56d3ce",
+        "sha256_in_prefix": "c263f3d9ecd476ff98d0a76db0b4386b957119664a68f8481d22211e5d56d3ce",
+        "size_in_bytes": 300
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "6f463358111b27f0357bf493ca510ab65a660ae22b4af5e1caad37cdd42f4a88",
+        "sha256_in_prefix": "6f463358111b27f0357bf493ca510ab65a660ae22b4af5e1caad37cdd42f4a88",
+        "size_in_bytes": 133
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "2d475826d1b0026b6f0b664762360eaa1523c13f79fd2d4382abb6103584b768",
+        "sha256_in_prefix": "2d475826d1b0026b6f0b664762360eaa1523c13f79fd2d4382abb6103584b768",
+        "size_in_bytes": 189
+      },
+      {
+        "_path": "lib/R/library/plogr/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "c4feeca583d5184203a7b53285bb92f3e8ec55eab8c927a0d989a52e39c84110",
+        "sha256_in_prefix": "c4feeca583d5184203a7b53285bb92f3e8ec55eab8c927a0d989a52e39c84110",
+        "size_in_bytes": 919
+      },
+      {
+        "_path": "lib/R/library/plogr/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "2e7e1354b1aeb24a3a05d11cff88cdba218b52c7a9dbaa7d2dbc689343c490cd",
+        "sha256_in_prefix": "2e7e1354b1aeb24a3a05d11cff88cdba218b52c7a9dbaa7d2dbc689343c490cd",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "lib/R/library/plogr/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "e10f04ed19b57cea6ba00c81a07912cc23b34aaff9dc01dcac66ba38bdc843a5",
+        "sha256_in_prefix": "e10f04ed19b57cea6ba00c81a07912cc23b34aaff9dc01dcac66ba38bdc843a5",
+        "size_in_bytes": 588
+      },
+      {
+        "_path": "lib/R/library/plogr/R/plogr",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/plogr/R/plogr.rdb",
+        "path_type": "hardlink",
+        "sha256": "bcdc53addc83304808f2b83accf76ae1e95aec2ebb51c8c91ace8e1da85ddc1d",
+        "sha256_in_prefix": "bcdc53addc83304808f2b83accf76ae1e95aec2ebb51c8c91ace8e1da85ddc1d",
+        "size_in_bytes": 884
+      },
+      {
+        "_path": "lib/R/library/plogr/R/plogr.rdx",
+        "path_type": "hardlink",
+        "sha256": "5cb798853950a78208dafb64b92053bb8a3b0cc740c0ef98879966fa49c5b58e",
+        "sha256_in_prefix": "5cb798853950a78208dafb64b92053bb8a3b0cc740c0ef98879966fa49c5b58e",
+        "size_in_bytes": 238
+      },
+      {
+        "_path": "lib/R/library/plogr/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "2d3a430eaca5de8bf54f643f1cc192a5f334a369e4a83d9752eaf62908a85b92",
+        "sha256_in_prefix": "2d3a430eaca5de8bf54f643f1cc192a5f334a369e4a83d9752eaf62908a85b92",
+        "size_in_bytes": 50
+      },
+      {
+        "_path": "lib/R/library/plogr/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "3b355201202c6b3b7e2e720af559b3d418683f452148b5ae0f2141a257586d06",
+        "sha256_in_prefix": "3b355201202c6b3b7e2e720af559b3d418683f452148b5ae0f2141a257586d06",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "lib/R/library/plogr/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "398bb4a095235cf73f7ff868e1230d5987bb5b34e9e53805f59abd015819a00c",
+        "sha256_in_prefix": "398bb4a095235cf73f7ff868e1230d5987bb5b34e9e53805f59abd015819a00c",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/R/library/plogr/help/plogr.rdb",
+        "path_type": "hardlink",
+        "sha256": "e2a1567289e4d42b2260c118c28326d2d88c4227021f9ed8671f8777b02e4c9f",
+        "sha256_in_prefix": "e2a1567289e4d42b2260c118c28326d2d88c4227021f9ed8671f8777b02e4c9f",
+        "size_in_bytes": 1952
+      },
+      {
+        "_path": "lib/R/library/plogr/help/plogr.rdx",
+        "path_type": "hardlink",
+        "sha256": "2a06968ee8385dccbaa8ac031b0fc56027ef104b50311df2429c06f1f02d9275",
+        "sha256_in_prefix": "2a06968ee8385dccbaa8ac031b0fc56027ef104b50311df2429c06f1f02d9275",
+        "size_in_bytes": 164
+      },
+      {
+        "_path": "lib/R/library/plogr/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "5f251f92220c9c23b0193b2a9cc703290938ad39418aee9b78d0f5eef42ace04",
+        "sha256_in_prefix": "5f251f92220c9c23b0193b2a9cc703290938ad39418aee9b78d0f5eef42ace04",
+        "size_in_bytes": 1217
+      },
+      {
+        "_path": "lib/R/library/plogr/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/plogr/html/plogr-package.html",
+        "path_type": "hardlink",
+        "sha256": "7376e9a5373556da3690922c8984bcf91d6430a5f3bb76c4f264181ac88ed5f1",
+        "sha256_in_prefix": "7376e9a5373556da3690922c8984bcf91d6430a5f3bb76c4f264181ac88ed5f1",
+        "size_in_bytes": 1924
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Appenders/ColorConsoleAppender.h",
+        "path_type": "hardlink",
+        "sha256": "4c7d57c017f77a627630cf45d2d30c2f9d5703dda639fa1aef0a1bf99fc6392e",
+        "sha256_in_prefix": "4c7d57c017f77a627630cf45d2d30c2f9d5703dda639fa1aef0a1bf99fc6392e",
+        "size_in_bytes": 2950
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Appenders/ConsoleAppender.h",
+        "path_type": "hardlink",
+        "sha256": "148dc0f7f57fec94a25c5c06891cc6890e8eaaf212ca15f3ad8bb5f26373786f",
+        "sha256_in_prefix": "148dc0f7f57fec94a25c5c06891cc6890e8eaaf212ca15f3ad8bb5f26373786f",
+        "size_in_bytes": 487
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Appenders/IAppender.h",
+        "path_type": "hardlink",
+        "sha256": "80067e4cc2717c0d2e317aba0ad3c6d94323704ec867b76b445a9b41e8586b40",
+        "sha256_in_prefix": "80067e4cc2717c0d2e317aba0ad3c6d94323704ec867b76b445a9b41e8586b40",
+        "size_in_bytes": 182
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Formatters/FuncMessageFormatter.h",
+        "path_type": "hardlink",
+        "sha256": "adc7f5cecf7d72f31982ea4d90888793b05b0e55fc80a39e2da951957c95ade7",
+        "sha256_in_prefix": "adc7f5cecf7d72f31982ea4d90888793b05b0e55fc80a39e2da951957c95ade7",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Init.h",
+        "path_type": "hardlink",
+        "sha256": "79eb7a82ca0d1611352d919e1d7dff7c1b3abb38b9463bebedca9909d13adad7",
+        "sha256_in_prefix": "79eb7a82ca0d1611352d919e1d7dff7c1b3abb38b9463bebedca9909d13adad7",
+        "size_in_bytes": 666
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Log.h",
+        "path_type": "hardlink",
+        "sha256": "2c59bedf9c2ab99982a9dad61718642608c120b8cb4709369fa34fe90e4348dc",
+        "sha256_in_prefix": "2c59bedf9c2ab99982a9dad61718642608c120b8cb4709369fa34fe90e4348dc",
+        "size_in_bytes": 5345
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Logger.h",
+        "path_type": "hardlink",
+        "sha256": "7ccfc10e8e515e449a47cac02c68c921fe440132d37ea7287bdedcc458110a06",
+        "sha256_in_prefix": "7ccfc10e8e515e449a47cac02c68c921fe440132d37ea7287bdedcc458110a06",
+        "size_in_bytes": 1522
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Record.h",
+        "path_type": "hardlink",
+        "sha256": "ff03ee3c4544e446c66bf0bb19c0b5f68fa6d8ae46b690f9b490c73edaf88ac3",
+        "sha256_in_prefix": "ff03ee3c4544e446c66bf0bb19c0b5f68fa6d8ae46b690f9b490c73edaf88ac3",
+        "size_in_bytes": 1835
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Severity.h",
+        "path_type": "hardlink",
+        "sha256": "9986f09b4f842e02db5385b8549680f2d1266b316ef0de7b0cea64c405c74654",
+        "sha256_in_prefix": "9986f09b4f842e02db5385b8549680f2d1266b316ef0de7b0cea64c405c74654",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plog/Util.h",
+        "path_type": "hardlink",
+        "sha256": "cc391e7426cb1f78ab5630963275f9fc4a50446ae53145a3bbdaf5454a0b2595",
+        "sha256_in_prefix": "cc391e7426cb1f78ab5630963275f9fc4a50446ae53145a3bbdaf5454a0b2595",
+        "size_in_bytes": 2254
+      },
+      {
+        "_path": "lib/R/library/plogr/include/plogr.h",
+        "path_type": "hardlink",
+        "sha256": "5ce54c33850e0fe75fbf987812d2c7f907a315999e4a99171c006efdd01d0100",
+        "sha256_in_prefix": "5ce54c33850e0fe75fbf987812d2c7f907a315999e4a99171c006efdd01d0100",
+        "size_in_bytes": 940
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-plogr==0.2.0=r36h6115d3f_0",
+  "sha256": "5ebecd8a137eb88bec110a4e3f0c7eef7f5323ea9fb36d58d72c2e26348542dd",
+  "size": 19992,
+  "subdir": "noarch",
+  "timestamp": 1557936290109,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-plogr-0.2.0-r36h6115d3f_0.tar.bz2",
+  "version": "0.2.0"
+}

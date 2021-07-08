@@ -1,0 +1,726 @@
+{
+  "build": "py37h516909a_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "python_abi * *_cp37m"
+  ],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/ephem-3.7.7.1-py37h516909a_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/COPYING",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/LICENSE-GPL",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/LICENSE-LGPL",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/ephem/__init__.py",
+    "lib/python3.7/site-packages/ephem/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/__pycache__/cities.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/__pycache__/stars.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/_libastro.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/ephem/cities.py",
+    "lib/python3.7/site-packages/ephem/doc/CHANGELOG.rst",
+    "lib/python3.7/site-packages/ephem/doc/angle.rst",
+    "lib/python3.7/site-packages/ephem/doc/catalogs.rst",
+    "lib/python3.7/site-packages/ephem/doc/coordinates.rst",
+    "lib/python3.7/site-packages/ephem/doc/date.rst",
+    "lib/python3.7/site-packages/ephem/doc/examples.rst",
+    "lib/python3.7/site-packages/ephem/doc/index.rst",
+    "lib/python3.7/site-packages/ephem/doc/newton.rst",
+    "lib/python3.7/site-packages/ephem/doc/quick.rst",
+    "lib/python3.7/site-packages/ephem/doc/radec.rst",
+    "lib/python3.7/site-packages/ephem/doc/reference.rst",
+    "lib/python3.7/site-packages/ephem/doc/rise-set.rst",
+    "lib/python3.7/site-packages/ephem/doc/tutorial.rst",
+    "lib/python3.7/site-packages/ephem/stars.py",
+    "lib/python3.7/site-packages/ephem/tests/__init__.py",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_angles.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_bodies.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_cities.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_constants.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_dates.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_github_issues.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_jpl.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_launchpad_236872.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_launchpad_244811.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_locales.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_observers.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_rst.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_satellite.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_stars.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_usno.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/__pycache__/test_usno_equinoxes.cpython-37.pyc",
+    "lib/python3.7/site-packages/ephem/tests/jpl/europa.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/hyperion.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/jupiter.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/mars.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/neptune.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/oberon.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/phobos.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/saturn.txt",
+    "lib/python3.7/site-packages/ephem/tests/jpl/uranus.txt",
+    "lib/python3.7/site-packages/ephem/tests/test_angles.py",
+    "lib/python3.7/site-packages/ephem/tests/test_bodies.py",
+    "lib/python3.7/site-packages/ephem/tests/test_cities.py",
+    "lib/python3.7/site-packages/ephem/tests/test_constants.py",
+    "lib/python3.7/site-packages/ephem/tests/test_dates.py",
+    "lib/python3.7/site-packages/ephem/tests/test_github_issues.py",
+    "lib/python3.7/site-packages/ephem/tests/test_jpl.py",
+    "lib/python3.7/site-packages/ephem/tests/test_launchpad_236872.py",
+    "lib/python3.7/site-packages/ephem/tests/test_launchpad_244811.py",
+    "lib/python3.7/site-packages/ephem/tests/test_locales.py",
+    "lib/python3.7/site-packages/ephem/tests/test_observers.py",
+    "lib/python3.7/site-packages/ephem/tests/test_rst.py",
+    "lib/python3.7/site-packages/ephem/tests/test_satellite.py",
+    "lib/python3.7/site-packages/ephem/tests/test_stars.py",
+    "lib/python3.7/site-packages/ephem/tests/test_usno.py",
+    "lib/python3.7/site-packages/ephem/tests/test_usno_equinoxes.py",
+    "lib/python3.7/site-packages/ephem/tests/usno/appgeo_deneb.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/appgeo_jupiter.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/appgeo_moon.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/appgeo_sun.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/apptopo_deneb.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/apptopo_moon.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/apptopo_sun.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/astrom_antares.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/astrom_mercury.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/astrom_neptune.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/moon_phases.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/riset_moon.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/riset_sun.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/risettran_moon.txt",
+    "lib/python3.7/site-packages/ephem/tests/usno/risettran_rigel.txt"
+  ],
+  "fn": "ephem-3.7.7.1-py37h516909a_0.tar.bz2",
+  "license": "LGPL",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/ephem-3.7.7.1-py37h516909a_0",
+    "type": 1
+  },
+  "md5": "194101f53cce7ba1460a9a68af0b6825",
+  "name": "ephem",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/ephem-3.7.7.1-py37h516909a_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/COPYING",
+        "path_type": "hardlink",
+        "sha256": "acee512e3701083ad3ebe2c34b0e0326e2831d8e1e5412c8becf28a939e11e37",
+        "sha256_in_prefix": "acee512e3701083ad3ebe2c34b0e0326e2831d8e1e5412c8becf28a939e11e37",
+        "size_in_bytes": 1059
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/LICENSE-GPL",
+        "path_type": "hardlink",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "sha256_in_prefix": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "size_in_bytes": 35147
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/LICENSE-LGPL",
+        "path_type": "hardlink",
+        "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "sha256_in_prefix": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+        "size_in_bytes": 7639
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "fd0501f5438d4f3e9d2ddb0e5445413f3b73132e20375abd862e9631beb9db48",
+        "sha256_in_prefix": "fd0501f5438d4f3e9d2ddb0e5445413f3b73132e20375abd862e9631beb9db48",
+        "size_in_bytes": 5869
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "f2120017300a82ec1f29ae9249cc8a989a08f195fb1e810b6a5ba4bfc215d0c3",
+        "sha256_in_prefix": "f2120017300a82ec1f29ae9249cc8a989a08f195fb1e810b6a5ba4bfc215d0c3",
+        "size_in_bytes": 6688
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f5c1b1c10ded4d3ec602c74708f1aa2e2eb50d71a92565642eb7a7dcc42e0f49",
+        "sha256_in_prefix": "f5c1b1c10ded4d3ec602c74708f1aa2e2eb50d71a92565642eb7a7dcc42e0f49",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem-3.7.7.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6b855cac906f3110daf257d91cfcad69ddebf8ac81056b1100158646a7e64084",
+        "sha256_in_prefix": "6b855cac906f3110daf257d91cfcad69ddebf8ac81056b1100158646a7e64084",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5219a3e260b1f759fc9ec83270b01b31d1ae432d68fa6c6dc006aae572ce014e",
+        "sha256_in_prefix": "5219a3e260b1f759fc9ec83270b01b31d1ae432d68fa6c6dc006aae572ce014e",
+        "size_in_bytes": 24117
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "d6a36195ad22e27544cd159cf6d2f0e6d0daace5668dd615e201ad5a93583f56",
+        "sha256_in_prefix": "d6a36195ad22e27544cd159cf6d2f0e6d0daace5668dd615e201ad5a93583f56",
+        "size_in_bytes": 22100
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/__pycache__/cities.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "2a20696a3cf607c9547e483a9185a60cbbedaa9ac4c34b69129f303d24cee24c",
+        "sha256_in_prefix": "2a20696a3cf607c9547e483a9185a60cbbedaa9ac4c34b69129f303d24cee24c",
+        "size_in_bytes": 7697
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/__pycache__/stars.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8bde9fb049260c4ee6fa1d31559aa6fce314c259241f48bd44b2f15444e3bac6",
+        "sha256_in_prefix": "8bde9fb049260c4ee6fa1d31559aa6fce314c259241f48bd44b2f15444e3bac6",
+        "size_in_bytes": 10226
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/_libastro.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "a1e85bb34c8d98b13b0aabfec9ab80282218177cc146daff38c8ae79ac05a85f",
+        "sha256_in_prefix": "a1e85bb34c8d98b13b0aabfec9ab80282218177cc146daff38c8ae79ac05a85f",
+        "size_in_bytes": 1295176
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/cities.py",
+        "path_type": "hardlink",
+        "sha256": "a6fbc4885d93d52253ebd578438e125fd36e8fae148ddacd22a42bd1f8f3d7ad",
+        "sha256_in_prefix": "a6fbc4885d93d52253ebd578438e125fd36e8fae148ddacd22a42bd1f8f3d7ad",
+        "size_in_bytes": 10011
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/CHANGELOG.rst",
+        "path_type": "hardlink",
+        "sha256": "ca6f7e18d05a5ccac8bc90b88fdc6c5fd2106bb1c9362cb396d5968af83c5a01",
+        "sha256_in_prefix": "ca6f7e18d05a5ccac8bc90b88fdc6c5fd2106bb1c9362cb396d5968af83c5a01",
+        "size_in_bytes": 16055
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/angle.rst",
+        "path_type": "hardlink",
+        "sha256": "3d011d144a4e3f29ce501313cb8e0a2eebb2c4ab19e0207276ea0d9ef9f524d3",
+        "sha256_in_prefix": "3d011d144a4e3f29ce501313cb8e0a2eebb2c4ab19e0207276ea0d9ef9f524d3",
+        "size_in_bytes": 3667
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/catalogs.rst",
+        "path_type": "hardlink",
+        "sha256": "c173313d672755cc337543841ee38634fcf05e75d02962f4154752c213f694c6",
+        "sha256_in_prefix": "c173313d672755cc337543841ee38634fcf05e75d02962f4154752c213f694c6",
+        "size_in_bytes": 1607
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/coordinates.rst",
+        "path_type": "hardlink",
+        "sha256": "5b9d6f6944d0a644b5060fcebd50c6f0bdc2c6eb134299fb3939328555cd025b",
+        "sha256_in_prefix": "5b9d6f6944d0a644b5060fcebd50c6f0bdc2c6eb134299fb3939328555cd025b",
+        "size_in_bytes": 5715
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/date.rst",
+        "path_type": "hardlink",
+        "sha256": "ce8d0ecf1cac42255e1607c622f3117f5f3c6bbae1b33b9141bcde055e3e8a44",
+        "sha256_in_prefix": "ce8d0ecf1cac42255e1607c622f3117f5f3c6bbae1b33b9141bcde055e3e8a44",
+        "size_in_bytes": 7875
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/examples.rst",
+        "path_type": "hardlink",
+        "sha256": "0e7acc57c4ceacdce02f54a1d76e1ae56e78b79b483b07dbae8921efeebb6519",
+        "sha256_in_prefix": "0e7acc57c4ceacdce02f54a1d76e1ae56e78b79b483b07dbae8921efeebb6519",
+        "size_in_bytes": 4130
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/index.rst",
+        "path_type": "hardlink",
+        "sha256": "2aa5ca588f729c82f3f5b5833f978a517102dc91e2e116e2f23082e1f0a38ae3",
+        "sha256_in_prefix": "2aa5ca588f729c82f3f5b5833f978a517102dc91e2e116e2f23082e1f0a38ae3",
+        "size_in_bytes": 8568
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/newton.rst",
+        "path_type": "hardlink",
+        "sha256": "89c21dc2b597b518b76d8f24ca4131e81cb8862dc70559fff6522fbda1e3b89b",
+        "sha256_in_prefix": "89c21dc2b597b518b76d8f24ca4131e81cb8862dc70559fff6522fbda1e3b89b",
+        "size_in_bytes": 3306
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/quick.rst",
+        "path_type": "hardlink",
+        "sha256": "ea4356fb650892699226d86d711057b67652ed2003ca781267abe61594d51a8b",
+        "sha256_in_prefix": "ea4356fb650892699226d86d711057b67652ed2003ca781267abe61594d51a8b",
+        "size_in_bytes": 28334
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/radec.rst",
+        "path_type": "hardlink",
+        "sha256": "c2f05a19259e72bc7da5f86669066ba362515c010516a867ed195861f8b95a70",
+        "sha256_in_prefix": "c2f05a19259e72bc7da5f86669066ba362515c010516a867ed195861f8b95a70",
+        "size_in_bytes": 8608
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/reference.rst",
+        "path_type": "hardlink",
+        "sha256": "bd48fc6ce2c49f0079edee3e594a018cdf92d032b09c14bdb068e730db94289a",
+        "sha256_in_prefix": "bd48fc6ce2c49f0079edee3e594a018cdf92d032b09c14bdb068e730db94289a",
+        "size_in_bytes": 752
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/rise-set.rst",
+        "path_type": "hardlink",
+        "sha256": "e2376d3b65f3df7d4e7d14f49561c70450f921afe600d74e4b446672f6d4eb6e",
+        "sha256_in_prefix": "e2376d3b65f3df7d4e7d14f49561c70450f921afe600d74e4b446672f6d4eb6e",
+        "size_in_bytes": 4433
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/doc/tutorial.rst",
+        "path_type": "hardlink",
+        "sha256": "75366b0a88f192ea7ea5f3f38e73e5767fa8e742a19f0ccdba326f2c1d933a47",
+        "sha256_in_prefix": "75366b0a88f192ea7ea5f3f38e73e5767fa8e742a19f0ccdba326f2c1d933a47",
+        "size_in_bytes": 29098
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/stars.py",
+        "path_type": "hardlink",
+        "sha256": "c0cacb67bb6cc4089016701dd5670ec88d014162f209626d3b69a5871ab4f6c1",
+        "sha256_in_prefix": "c0cacb67bb6cc4089016701dd5670ec88d014162f209626d3b69a5871ab4f6c1",
+        "size_in_bytes": 11633
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "35947889b76befe04c1238965db6fd3340d6263d6c042bab14db7ce595ba354d",
+        "sha256_in_prefix": "35947889b76befe04c1238965db6fd3340d6263d6c042bab14db7ce595ba354d",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_angles.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "efb3ed887baf5a821c244e1ce91819e6f1d7bcbb4b20288dea73a799432e703b",
+        "sha256_in_prefix": "efb3ed887baf5a821c244e1ce91819e6f1d7bcbb4b20288dea73a799432e703b",
+        "size_in_bytes": 2619
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_bodies.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "c195539d7c62842aa59a073e7dcff95a145b6a162f062a2bffdbefa2bc5d3d14",
+        "sha256_in_prefix": "c195539d7c62842aa59a073e7dcff95a145b6a162f062a2bffdbefa2bc5d3d14",
+        "size_in_bytes": 9138
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_cities.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "492aa98200180b56bb31973f43bb5956a532dc779aa32181adf6435d562fd31b",
+        "sha256_in_prefix": "492aa98200180b56bb31973f43bb5956a532dc779aa32181adf6435d562fd31b",
+        "size_in_bytes": 722
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_constants.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "6e18243e91ef397c792b7cf06328167fb12cf02e0a124d3181477d261fd7f7fe",
+        "sha256_in_prefix": "6e18243e91ef397c792b7cf06328167fb12cf02e0a124d3181477d261fd7f7fe",
+        "size_in_bytes": 661
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_dates.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f01c64ecb7d2959704ff62d843d15f7750d14a49a16f2dcbe5e47b661477cfe9",
+        "sha256_in_prefix": "f01c64ecb7d2959704ff62d843d15f7750d14a49a16f2dcbe5e47b661477cfe9",
+        "size_in_bytes": 4537
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_github_issues.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d60bbc8979495478d10036a80661dbb0cc2d752192563941ff89166ff02a837",
+        "sha256_in_prefix": "8d60bbc8979495478d10036a80661dbb0cc2d752192563941ff89166ff02a837",
+        "size_in_bytes": 4150
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_jpl.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "676acd417a042cd432cbecb018a2632038bd37f2af7e1627e79d7a1797d8e24d",
+        "sha256_in_prefix": "676acd417a042cd432cbecb018a2632038bd37f2af7e1627e79d7a1797d8e24d",
+        "size_in_bytes": 2439
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_launchpad_236872.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "aeb857b279f696e7334479633e076a2d24569d18a7ba02f38a7471d7b7a6137c",
+        "sha256_in_prefix": "aeb857b279f696e7334479633e076a2d24569d18a7ba02f38a7471d7b7a6137c",
+        "size_in_bytes": 616
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_launchpad_244811.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "cf5598cf403e60d9915c7a922e8cfc2b2776a35a7026911d617c19fde7393cf2",
+        "sha256_in_prefix": "cf5598cf403e60d9915c7a922e8cfc2b2776a35a7026911d617c19fde7393cf2",
+        "size_in_bytes": 820
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_locales.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "e68c12035d1020e147259382e271e92073f4e3a7f7469e48a008d63e83ec408b",
+        "sha256_in_prefix": "e68c12035d1020e147259382e271e92073f4e3a7f7469e48a008d63e83ec408b",
+        "size_in_bytes": 1532
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_observers.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "4b52f240daeadc7d1c77f3cef3cdb4189858887303db7ea5b54bf153dd1e2def",
+        "sha256_in_prefix": "4b52f240daeadc7d1c77f3cef3cdb4189858887303db7ea5b54bf153dd1e2def",
+        "size_in_bytes": 1612
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_rst.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "58a478560e558c6ec78d6458795bef2e552840fcfc61ef678b5f42a1e1a9256f",
+        "sha256_in_prefix": "58a478560e558c6ec78d6458795bef2e552840fcfc61ef678b5f42a1e1a9256f",
+        "size_in_bytes": 1259
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_satellite.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "a06d38bf8da86f1ae971812240eecc62944aa4188a925916069a3ac7d0e429cb",
+        "sha256_in_prefix": "a06d38bf8da86f1ae971812240eecc62944aa4188a925916069a3ac7d0e429cb",
+        "size_in_bytes": 3480
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_stars.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "61f28cc33976b380da03a9d49f23cf2aaefc24f820c9feaee5d9453feab21df5",
+        "sha256_in_prefix": "61f28cc33976b380da03a9d49f23cf2aaefc24f820c9feaee5d9453feab21df5",
+        "size_in_bytes": 13859
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_usno.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "437b1376895b18c563511bd5cf5a1b1be1f9170c0298dce1a3e216c17103b243",
+        "sha256_in_prefix": "437b1376895b18c563511bd5cf5a1b1be1f9170c0298dce1a3e216c17103b243",
+        "size_in_bytes": 15292
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/__pycache__/test_usno_equinoxes.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8a403416a8c3d354ec597b14cbecd17feae9707415f7e96a9cfd59094dbc2f93",
+        "sha256_in_prefix": "8a403416a8c3d354ec597b14cbecd17feae9707415f7e96a9cfd59094dbc2f93",
+        "size_in_bytes": 6303
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/europa.txt",
+        "path_type": "hardlink",
+        "sha256": "b23a4c85adb2934bc6bd19f74fd24d2a33a399d9f4736ce2184366b1130f7804",
+        "sha256_in_prefix": "b23a4c85adb2934bc6bd19f74fd24d2a33a399d9f4736ce2184366b1130f7804",
+        "size_in_bytes": 7951
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/hyperion.txt",
+        "path_type": "hardlink",
+        "sha256": "d8dbaa44190f282dec8c2668a15102523632f3ace46074cdcc872ea9a4235f06",
+        "sha256_in_prefix": "d8dbaa44190f282dec8c2668a15102523632f3ace46074cdcc872ea9a4235f06",
+        "size_in_bytes": 5683
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/jupiter.txt",
+        "path_type": "hardlink",
+        "sha256": "bbd1f25b8bbebb4de326ebb8544799a76f970b946add44caa00e3866737b7815",
+        "sha256_in_prefix": "bbd1f25b8bbebb4de326ebb8544799a76f970b946add44caa00e3866737b7815",
+        "size_in_bytes": 6519
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/mars.txt",
+        "path_type": "hardlink",
+        "sha256": "9cab44449b48d8f2c09c3dd23a14f4d312f882d381aa41fb47ec9c8a4cd0ca6b",
+        "sha256_in_prefix": "9cab44449b48d8f2c09c3dd23a14f4d312f882d381aa41fb47ec9c8a4cd0ca6b",
+        "size_in_bytes": 7956
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/neptune.txt",
+        "path_type": "hardlink",
+        "sha256": "1d6d8bbf60b7c70f0ea797be21f3014a640ed7933d5b45f6c7092e7f401972ae",
+        "sha256_in_prefix": "1d6d8bbf60b7c70f0ea797be21f3014a640ed7933d5b45f6c7092e7f401972ae",
+        "size_in_bytes": 5239
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/oberon.txt",
+        "path_type": "hardlink",
+        "sha256": "331a9332cda4361256e2c4d237149122800b3b8a9c88006412d78a5ac412cd66",
+        "sha256_in_prefix": "331a9332cda4361256e2c4d237149122800b3b8a9c88006412d78a5ac412cd66",
+        "size_in_bytes": 5233
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/phobos.txt",
+        "path_type": "hardlink",
+        "sha256": "522a4c6bbe1d8b668d78d8f5c723784f3837c8d1c9fac2c43024563bda0afc79",
+        "sha256_in_prefix": "522a4c6bbe1d8b668d78d8f5c723784f3837c8d1c9fac2c43024563bda0afc79",
+        "size_in_bytes": 7957
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/saturn.txt",
+        "path_type": "hardlink",
+        "sha256": "ead33a9ec5e9b8118f61cb4d2adb0d410c537a148f939ca3f10d35da98de359a",
+        "sha256_in_prefix": "ead33a9ec5e9b8118f61cb4d2adb0d410c537a148f939ca3f10d35da98de359a",
+        "size_in_bytes": 5721
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/jpl/uranus.txt",
+        "path_type": "hardlink",
+        "sha256": "d0f64829f109659b043094ddb373ae995df1e60d09ab2f93755f15adeeea62ea",
+        "sha256_in_prefix": "d0f64829f109659b043094ddb373ae995df1e60d09ab2f93755f15adeeea62ea",
+        "size_in_bytes": 5239
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_angles.py",
+        "path_type": "hardlink",
+        "sha256": "f7ae544dfebc512b67fe893319abda13e6186f7e3723f6ceed84ecfdd705a6a6",
+        "sha256_in_prefix": "f7ae544dfebc512b67fe893319abda13e6186f7e3723f6ceed84ecfdd705a6a6",
+        "size_in_bytes": 1547
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_bodies.py",
+        "path_type": "hardlink",
+        "sha256": "89a1872fdf53f9fa63c34900d2a7339dfac0f656fd0db5f82b633901714f9af6",
+        "sha256_in_prefix": "89a1872fdf53f9fa63c34900d2a7339dfac0f656fd0db5f82b633901714f9af6",
+        "size_in_bytes": 12516
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_cities.py",
+        "path_type": "hardlink",
+        "sha256": "0a447e4327ff4e7adb1933cf2f8ecf814dab66b4f3c44e2f2668679446093c09",
+        "sha256_in_prefix": "0a447e4327ff4e7adb1933cf2f8ecf814dab66b4f3c44e2f2668679446093c09",
+        "size_in_bytes": 284
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_constants.py",
+        "path_type": "hardlink",
+        "sha256": "767487a5b495373bc9a701016fca070306db9fe1cfa1424539d0e3044a26e0b5",
+        "sha256_in_prefix": "767487a5b495373bc9a701016fca070306db9fe1cfa1424539d0e3044a26e0b5",
+        "size_in_bytes": 434
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_dates.py",
+        "path_type": "hardlink",
+        "sha256": "2b5b585bc9ac1cb4b9277ffc569169c5a5b47a3a57d1ebe8cf810ffd98db5989",
+        "sha256_in_prefix": "2b5b585bc9ac1cb4b9277ffc569169c5a5b47a3a57d1ebe8cf810ffd98db5989",
+        "size_in_bytes": 4331
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_github_issues.py",
+        "path_type": "hardlink",
+        "sha256": "a1eb4afe8ae5fc3bc5b5a1c58557e2af3a794bab4fbc195092620f895e959021",
+        "sha256_in_prefix": "a1eb4afe8ae5fc3bc5b5a1c58557e2af3a794bab4fbc195092620f895e959021",
+        "size_in_bytes": 3632
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_jpl.py",
+        "path_type": "hardlink",
+        "sha256": "ebb51cd5a170f3d152da49caba51333fbf013dcccb20c32a0410dd1f367ac7db",
+        "sha256_in_prefix": "ebb51cd5a170f3d152da49caba51333fbf013dcccb20c32a0410dd1f367ac7db",
+        "size_in_bytes": 3026
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_launchpad_236872.py",
+        "path_type": "hardlink",
+        "sha256": "caa236acd1a5be5dc4fbba2642182199823d871cf72497660e61817251c0d66d",
+        "sha256_in_prefix": "caa236acd1a5be5dc4fbba2642182199823d871cf72497660e61817251c0d66d",
+        "size_in_bytes": 371
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_launchpad_244811.py",
+        "path_type": "hardlink",
+        "sha256": "caab8e0ef9ee19de25915be0d00fc26f4139585c2b5e045ed39f742926e6fb98",
+        "sha256_in_prefix": "caab8e0ef9ee19de25915be0d00fc26f4139585c2b5e045ed39f742926e6fb98",
+        "size_in_bytes": 801
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_locales.py",
+        "path_type": "hardlink",
+        "sha256": "daa3daf7eab446b505efd1618eee2a80c05832d9caf2d0c927eb1527814d13f3",
+        "sha256_in_prefix": "daa3daf7eab446b505efd1618eee2a80c05832d9caf2d0c927eb1527814d13f3",
+        "size_in_bytes": 1307
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_observers.py",
+        "path_type": "hardlink",
+        "sha256": "e9fd31b2d62d7703799e1590bc8eccb7eead6236f6d4a7c349efff4a7057f642",
+        "sha256_in_prefix": "e9fd31b2d62d7703799e1590bc8eccb7eead6236f6d4a7c349efff4a7057f642",
+        "size_in_bytes": 1115
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_rst.py",
+        "path_type": "hardlink",
+        "sha256": "1622f56978c8fe981e6dfb13f5e4ef7b26d600b7bab9b3d5f8155490f4ff6a97",
+        "sha256_in_prefix": "1622f56978c8fe981e6dfb13f5e4ef7b26d600b7bab9b3d5f8155490f4ff6a97",
+        "size_in_bytes": 986
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_satellite.py",
+        "path_type": "hardlink",
+        "sha256": "9efa750e9933957d9e310993c6595381f13b297bd8a01ee9d2ab7584053fa480",
+        "sha256_in_prefix": "9efa750e9933957d9e310993c6595381f13b297bd8a01ee9d2ab7584053fa480",
+        "size_in_bytes": 3603
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_stars.py",
+        "path_type": "hardlink",
+        "sha256": "24b190a7a18beba74d1d965196a6b89667d956690bc7f90eeeb0d919defce6b7",
+        "sha256_in_prefix": "24b190a7a18beba74d1d965196a6b89667d956690bc7f90eeeb0d919defce6b7",
+        "size_in_bytes": 8622
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_usno.py",
+        "path_type": "hardlink",
+        "sha256": "45686d944194a96afa0558ca7bdb3ccf57a9e5728f561ef856461f0f2b7eb418",
+        "sha256_in_prefix": "45686d944194a96afa0558ca7bdb3ccf57a9e5728f561ef856461f0f2b7eb418",
+        "size_in_bytes": 17188
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/test_usno_equinoxes.py",
+        "path_type": "hardlink",
+        "sha256": "ea5ed0813ee645d5e9f11ce40adfa8c0dadb50468e2e6182afdec2b1da2349cc",
+        "sha256_in_prefix": "ea5ed0813ee645d5e9f11ce40adfa8c0dadb50468e2e6182afdec2b1da2349cc",
+        "size_in_bytes": 6856
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/appgeo_deneb.txt",
+        "path_type": "hardlink",
+        "sha256": "258bcfef5f264cbef052bb8465293d76371de9ef284759b9cbb6361efccb7b4e",
+        "sha256_in_prefix": "258bcfef5f264cbef052bb8465293d76371de9ef284759b9cbb6361efccb7b4e",
+        "size_in_bytes": 1182
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/appgeo_jupiter.txt",
+        "path_type": "hardlink",
+        "sha256": "06cc5452d5dfd6927cd5f077e6d26f9e497904529dbff4c82bd48264ad695b2c",
+        "sha256_in_prefix": "06cc5452d5dfd6927cd5f077e6d26f9e497904529dbff4c82bd48264ad695b2c",
+        "size_in_bytes": 1297
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/appgeo_moon.txt",
+        "path_type": "hardlink",
+        "sha256": "68ed34d66e88ad510bfc29593ebcefc0aa450c2895998bd5a35650f67a4653b5",
+        "sha256_in_prefix": "68ed34d66e88ad510bfc29593ebcefc0aa450c2895998bd5a35650f67a4653b5",
+        "size_in_bytes": 1285
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/appgeo_sun.txt",
+        "path_type": "hardlink",
+        "sha256": "d27ac6f06a22edceaecaf82e0f5e2a734906d38c24ddf23ab5da8ec8ee3083db",
+        "sha256_in_prefix": "d27ac6f06a22edceaecaf82e0f5e2a734906d38c24ddf23ab5da8ec8ee3083db",
+        "size_in_bytes": 1422
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/apptopo_deneb.txt",
+        "path_type": "hardlink",
+        "sha256": "6a1495acc1a92a0a105dd03a2a35d977ef862c511ad7c0c02d26d89510fbb14b",
+        "sha256_in_prefix": "6a1495acc1a92a0a105dd03a2a35d977ef862c511ad7c0c02d26d89510fbb14b",
+        "size_in_bytes": 1394
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/apptopo_moon.txt",
+        "path_type": "hardlink",
+        "sha256": "e193a88588a0e1114d1a9efbeacaf5cc1f1f0c694d5c5a249d21ee7169726931",
+        "sha256_in_prefix": "e193a88588a0e1114d1a9efbeacaf5cc1f1f0c694d5c5a249d21ee7169726931",
+        "size_in_bytes": 1518
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/apptopo_sun.txt",
+        "path_type": "hardlink",
+        "sha256": "4f5969e8322f2e320d9d106f8619a8ff9af3cddb77a24c493bfbb293346ee542",
+        "sha256_in_prefix": "4f5969e8322f2e320d9d106f8619a8ff9af3cddb77a24c493bfbb293346ee542",
+        "size_in_bytes": 1530
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/astrom_antares.txt",
+        "path_type": "hardlink",
+        "sha256": "1d8d30072740637c470840c092e830e5eaa9992dfb0c3aaa1ab1431cd8e38a84",
+        "sha256_in_prefix": "1d8d30072740637c470840c092e830e5eaa9992dfb0c3aaa1ab1431cd8e38a84",
+        "size_in_bytes": 1182
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/astrom_mercury.txt",
+        "path_type": "hardlink",
+        "sha256": "0438ca1cb9e166f1d3559bf095d9b61a884639b55099da48baed6b785864e357",
+        "sha256_in_prefix": "0438ca1cb9e166f1d3559bf095d9b61a884639b55099da48baed6b785864e357",
+        "size_in_bytes": 1297
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/astrom_neptune.txt",
+        "path_type": "hardlink",
+        "sha256": "3680b0efa748892fff406c9c7da94fcd46b2dc21850b5dba17acb70e2bd8e53f",
+        "sha256_in_prefix": "3680b0efa748892fff406c9c7da94fcd46b2dc21850b5dba17acb70e2bd8e53f",
+        "size_in_bytes": 1297
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/moon_phases.txt",
+        "path_type": "hardlink",
+        "sha256": "c577b09aa13d7b9b3040107299ec1ba8a0fbf13e3ab218ea219ff2fdc7335c42",
+        "sha256_in_prefix": "c577b09aa13d7b9b3040107299ec1ba8a0fbf13e3ab218ea219ff2fdc7335c42",
+        "size_in_bytes": 1072
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/riset_moon.txt",
+        "path_type": "hardlink",
+        "sha256": "0796a25a799863464be4481803a5b020372b3d0788506ade67356e2cae1bba47",
+        "sha256_in_prefix": "0796a25a799863464be4481803a5b020372b3d0788506ade67356e2cae1bba47",
+        "size_in_bytes": 5498
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/riset_sun.txt",
+        "path_type": "hardlink",
+        "sha256": "ed3d0723b1087d99f5d8e3c7f73292eaa5a7d538d65d31486294e9d45c19a047",
+        "sha256_in_prefix": "ed3d0723b1087d99f5d8e3c7f73292eaa5a7d538d65d31486294e9d45c19a047",
+        "size_in_bytes": 5498
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/risettran_moon.txt",
+        "path_type": "hardlink",
+        "sha256": "a751f648a2c9691c4175fe55b8b9151087b31fcb5b9e48eec81d0ba2290ab4d4",
+        "sha256_in_prefix": "a751f648a2c9691c4175fe55b8b9151087b31fcb5b9e48eec81d0ba2290ab4d4",
+        "size_in_bytes": 2042
+      },
+      {
+        "_path": "lib/python3.7/site-packages/ephem/tests/usno/risettran_rigel.txt",
+        "path_type": "hardlink",
+        "sha256": "6e74cf7405df8ea8b73c0c208878786762a4f5092c7299100597c32ee0e7af4f",
+        "sha256_in_prefix": "6e74cf7405df8ea8b73c0c208878786762a4f5092c7299100597c32ee0e7af4f",
+        "size_in_bytes": 2481
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "ephem==3.7.7.1=py37h516909a_0",
+  "sha256": "92ae198b305841778a3c82ae7639799bd43f9e4bf88e04d59ece5bb440cc2876",
+  "size": 773142,
+  "subdir": "linux-64",
+  "timestamp": 1582552713937,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ephem-3.7.7.1-py37h516909a_0.tar.bz2",
+  "version": "3.7.7.1"
+}

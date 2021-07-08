@@ -1,0 +1,9 @@
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+Url: http://www.postgresql.org/
+Version: 11.4
+Requires: 
+Requires.private: 
+Cflags: -I/media/gpu/easystore/covid-mobility-tool/env_dir/include
+Libs: -L/media/gpu/easystore/covid-mobility-tool/env_dir/lib -lpgtypes
+Libs.private: -L/media/gpu/easystore/covid-mobility-tool/env_dir/lib -lm

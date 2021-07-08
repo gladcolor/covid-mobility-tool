@@ -1,0 +1,215 @@
+{
+  "build": "r36h29659fb_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-glue >=1.3.0",
+    "r-purrr",
+    "r-rcpp >=0.12.0",
+    "r-rlang >=0.2.2",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-tidyselect-0.2.5-r36h29659fb_0",
+  "features": "",
+  "files": [
+    "lib/R/library/tidyselect/DESCRIPTION",
+    "lib/R/library/tidyselect/INDEX",
+    "lib/R/library/tidyselect/Meta/Rd.rds",
+    "lib/R/library/tidyselect/Meta/features.rds",
+    "lib/R/library/tidyselect/Meta/hsearch.rds",
+    "lib/R/library/tidyselect/Meta/links.rds",
+    "lib/R/library/tidyselect/Meta/nsInfo.rds",
+    "lib/R/library/tidyselect/Meta/package.rds",
+    "lib/R/library/tidyselect/NAMESPACE",
+    "lib/R/library/tidyselect/NEWS.md",
+    "lib/R/library/tidyselect/R/tidyselect",
+    "lib/R/library/tidyselect/R/tidyselect.rdb",
+    "lib/R/library/tidyselect/R/tidyselect.rdx",
+    "lib/R/library/tidyselect/help/AnIndex",
+    "lib/R/library/tidyselect/help/aliases.rds",
+    "lib/R/library/tidyselect/help/paths.rds",
+    "lib/R/library/tidyselect/help/tidyselect.rdb",
+    "lib/R/library/tidyselect/help/tidyselect.rdx",
+    "lib/R/library/tidyselect/html/00Index.html",
+    "lib/R/library/tidyselect/html/R.css",
+    "lib/R/library/tidyselect/libs/tidyselect.so"
+  ],
+  "fn": "r-tidyselect-0.2.5-r36h29659fb_0.conda",
+  "legacy_bz2_md5": "d2fe8f82ec4a7db528e932e686500d70",
+  "legacy_bz2_size": 141411,
+  "license": "GPL-3",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-tidyselect-0.2.5-r36h29659fb_0",
+    "type": 1
+  },
+  "md5": "dd82484eac9425e1809d1c1afcf5d715",
+  "name": "r-tidyselect",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-tidyselect-0.2.5-r36h29659fb_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/tidyselect/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "6a1356411670d5e4b5f75cc3c503840869716b99c214351b40a0c88677ba5ecb",
+        "sha256_in_prefix": "6a1356411670d5e4b5f75cc3c503840869716b99c214351b40a0c88677ba5ecb",
+        "size_in_bytes": 1043
+      },
+      {
+        "_path": "lib/R/library/tidyselect/INDEX",
+        "path_type": "hardlink",
+        "sha256": "cad04377822c2432d5588448367e13e7031bef3e52921c408b7521759833f8d8",
+        "sha256_in_prefix": "cad04377822c2432d5588448367e13e7031bef3e52921c408b7521759833f8d8",
+        "size_in_bytes": 211
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "e8655e6018280cdcfa6c3d55a9fbcaa8e8178435ba7654c040d8638a51c89639",
+        "sha256_in_prefix": "e8655e6018280cdcfa6c3d55a9fbcaa8e8178435ba7654c040d8638a51c89639",
+        "size_in_bytes": 576
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "80872f038871f83f96ee2c64bf638df6a53ff570aa35806d9dc1a7898029548e",
+        "sha256_in_prefix": "80872f038871f83f96ee2c64bf638df6a53ff570aa35806d9dc1a7898029548e",
+        "size_in_bytes": 657
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "3365a7cd9f44b9daff4d0e5cf8cc77999887b581d7ac22e077a768591716e3c6",
+        "sha256_in_prefix": "3365a7cd9f44b9daff4d0e5cf8cc77999887b581d7ac22e077a768591716e3c6",
+        "size_in_bytes": 329
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "da4ff5d63c63fa7bf4a6cc35282536e113219fdd8a53025b37813a17b60af5a2",
+        "sha256_in_prefix": "da4ff5d63c63fa7bf4a6cc35282536e113219fdd8a53025b37813a17b60af5a2",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "lib/R/library/tidyselect/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "c67b2970e0a222e90a25f7d783d2acc0382e236d1c6b6c80719b4dd32567d248",
+        "sha256_in_prefix": "c67b2970e0a222e90a25f7d783d2acc0382e236d1c6b6c80719b4dd32567d248",
+        "size_in_bytes": 1113
+      },
+      {
+        "_path": "lib/R/library/tidyselect/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "0c525a90b3b505d091b038a6ec3a8ee2209c8f3bbee3f38af1791689c35e4588",
+        "sha256_in_prefix": "0c525a90b3b505d091b038a6ec3a8ee2209c8f3bbee3f38af1791689c35e4588",
+        "size_in_bytes": 686
+      },
+      {
+        "_path": "lib/R/library/tidyselect/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "b2a954a567ed68b485d5a2ad553852d11db6f06451f51dda854cc017463e6d76",
+        "sha256_in_prefix": "b2a954a567ed68b485d5a2ad553852d11db6f06451f51dda854cc017463e6d76",
+        "size_in_bytes": 7195
+      },
+      {
+        "_path": "lib/R/library/tidyselect/R/tidyselect",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/tidyselect/R/tidyselect.rdb",
+        "path_type": "hardlink",
+        "sha256": "46442e7cb8eb8271c26ce46f23e41affa2e82f5b0824de3cadd36cb13e6acfcf",
+        "sha256_in_prefix": "46442e7cb8eb8271c26ce46f23e41affa2e82f5b0824de3cadd36cb13e6acfcf",
+        "size_in_bytes": 50220
+      },
+      {
+        "_path": "lib/R/library/tidyselect/R/tidyselect.rdx",
+        "path_type": "hardlink",
+        "sha256": "d438098a1766ffbc09c65dea86861152cfb87bcbe7ede9ac9a8185d6a818dc95",
+        "sha256_in_prefix": "d438098a1766ffbc09c65dea86861152cfb87bcbe7ede9ac9a8185d6a818dc95",
+        "size_in_bytes": 1462
+      },
+      {
+        "_path": "lib/R/library/tidyselect/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "9f8de1738eeea4ecc1646e1c4bccbaf3fe1e7b2c8e8ecaeba9e5a958e86d99c5",
+        "sha256_in_prefix": "9f8de1738eeea4ecc1646e1c4bccbaf3fe1e7b2c8e8ecaeba9e5a958e86d99c5",
+        "size_in_bytes": 587
+      },
+      {
+        "_path": "lib/R/library/tidyselect/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "8b1204451b8e1cd5795107023a133b0ea5864a9eb7af9dfb530f5ddd06d65635",
+        "sha256_in_prefix": "8b1204451b8e1cd5795107023a133b0ea5864a9eb7af9dfb530f5ddd06d65635",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "lib/R/library/tidyselect/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "f6d1d6b23666b3bb2ffe65830b8905f7dda21b2eefe7b68f859d7222d15c2e12",
+        "sha256_in_prefix": "f6d1d6b23666b3bb2ffe65830b8905f7dda21b2eefe7b68f859d7222d15c2e12",
+        "size_in_bytes": 219
+      },
+      {
+        "_path": "lib/R/library/tidyselect/help/tidyselect.rdb",
+        "path_type": "hardlink",
+        "sha256": "db1fa6d356f25a0afc21c6426d1ce0473c0992acc4e145b821e096ca535eeb7a",
+        "sha256_in_prefix": "db1fa6d356f25a0afc21c6426d1ce0473c0992acc4e145b821e096ca535eeb7a",
+        "size_in_bytes": 17991
+      },
+      {
+        "_path": "lib/R/library/tidyselect/help/tidyselect.rdx",
+        "path_type": "hardlink",
+        "sha256": "c205e3ebe4b3ebb06f9fee8ecbf271dafbf7727a84f992866fdfe77b0fc0ece6",
+        "sha256_in_prefix": "c205e3ebe4b3ebb06f9fee8ecbf271dafbf7727a84f992866fdfe77b0fc0ece6",
+        "size_in_bytes": 322
+      },
+      {
+        "_path": "lib/R/library/tidyselect/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "943d285436dbc24b22021b91afb87ebe251295fac99cef07150f2d68e69bd868",
+        "sha256_in_prefix": "943d285436dbc24b22021b91afb87ebe251295fac99cef07150f2d68e69bd868",
+        "size_in_bytes": 2899
+      },
+      {
+        "_path": "lib/R/library/tidyselect/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/tidyselect/libs/tidyselect.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-tidyselect_1558600286118/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "49baf5f1f468b8ce4842b7b9f441f7257aefea35b09fc4a32b24b5db3fd747b3",
+        "sha256_in_prefix": "5b2a8292ce0920ae7e732748f3aa66bcf58d9824a9d8017982f2e442fa3e90a7",
+        "size_in_bytes": 106056
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-tidyselect==0.2.5=r36h29659fb_0",
+  "sha256": "4eb05b8b75db2bbd14352a9d8486dbaee7a5ee284087350a892e03365310b1ca",
+  "size": 132770,
+  "subdir": "linux-64",
+  "timestamp": 1558600318702,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-tidyselect-0.2.5-r36h29659fb_0.conda",
+  "version": "0.2.5"
+}

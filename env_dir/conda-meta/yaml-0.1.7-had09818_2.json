@@ -1,0 +1,95 @@
+{
+  "build": "had09818_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/yaml-0.1.7-had09818_2",
+  "features": "",
+  "files": [
+    "include/yaml.h",
+    "lib/libyaml-0.so.2",
+    "lib/libyaml-0.so.2.0.5",
+    "lib/libyaml.a",
+    "lib/libyaml.la",
+    "lib/libyaml.so",
+    "lib/pkgconfig/yaml-0.1.pc"
+  ],
+  "fn": "yaml-0.1.7-had09818_2.conda",
+  "legacy_bz2_md5": "8bc3d68df049640c74941c52156a2e7a",
+  "legacy_bz2_size": 87051,
+  "license": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/yaml-0.1.7-had09818_2",
+    "type": 1
+  },
+  "md5": "e5f9ce5f2d1a8d17a4fade8a546b43aa",
+  "name": "yaml",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/yaml-0.1.7-had09818_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/yaml.h",
+        "path_type": "hardlink",
+        "sha256": "5a16306d95841c740f30b118cf528289f2745390008b992d72caa9a0f08b0fe9",
+        "sha256_in_prefix": "5a16306d95841c740f30b118cf528289f2745390008b992d72caa9a0f08b0fe9",
+        "size_in_bytes": 54225
+      },
+      {
+        "_path": "lib/libyaml-0.so.2",
+        "path_type": "softlink",
+        "sha256": "4d74ccc54d35f6d56d865b96745d73e06695c8df2e3f93c7e8f48176111b133f",
+        "size_in_bytes": 131576
+      },
+      {
+        "_path": "lib/libyaml-0.so.2.0.5",
+        "path_type": "hardlink",
+        "sha256": "4d74ccc54d35f6d56d865b96745d73e06695c8df2e3f93c7e8f48176111b133f",
+        "sha256_in_prefix": "4d74ccc54d35f6d56d865b96745d73e06695c8df2e3f93c7e8f48176111b133f",
+        "size_in_bytes": 131576
+      },
+      {
+        "_path": "lib/libyaml.a",
+        "path_type": "hardlink",
+        "sha256": "425a11bd5720160892c53d5aab0cbacf0823dbebb7eb1da7959e95d5292e9cec",
+        "sha256_in_prefix": "425a11bd5720160892c53d5aab0cbacf0823dbebb7eb1da7959e95d5292e9cec",
+        "size_in_bytes": 171088
+      },
+      {
+        "_path": "lib/libyaml.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "0c57f663f584e0bac52a3681d65e8f0cd5e2cf457d6e3eea9fb2d408f821808d",
+        "sha256_in_prefix": "272af8f4d91d2ba2e4393e6de1a8b346b7f8924daca6de39c14de0d6fbbb5494",
+        "size_in_bytes": 969
+      },
+      {
+        "_path": "lib/libyaml.so",
+        "path_type": "softlink",
+        "sha256": "4d74ccc54d35f6d56d865b96745d73e06695c8df2e3f93c7e8f48176111b133f",
+        "size_in_bytes": 131576
+      },
+      {
+        "_path": "lib/pkgconfig/yaml-0.1.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c3949fda489ec0b8056cd54a203e3355fa2dadd9c157c71ba9d24d4b509e8e52",
+        "sha256_in_prefix": "e18fffcead14c84305d56d98364a489fc85eb933bbd4db967d1644f82d0a9a87",
+        "size_in_bytes": 224
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "yaml==0.1.7=had09818_2",
+  "sha256": "3453139916ec0615675af07abd704883f28b97a9a84539d72bcc28d5aa5779e2",
+  "size": 74652,
+  "subdir": "linux-64",
+  "timestamp": 1510609996778,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/yaml-0.1.7-had09818_2.conda",
+  "version": "0.1.7"
+}

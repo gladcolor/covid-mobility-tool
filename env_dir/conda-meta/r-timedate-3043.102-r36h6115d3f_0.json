@@ -1,0 +1,839 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-timedate-3043.102-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/timeDate/COPYRIGHT.html",
+    "lib/R/library/timeDate/DESCRIPTION",
+    "lib/R/library/timeDate/INDEX",
+    "lib/R/library/timeDate/MD5",
+    "lib/R/library/timeDate/Meta/Rd.rds",
+    "lib/R/library/timeDate/Meta/features.rds",
+    "lib/R/library/timeDate/Meta/hsearch.rds",
+    "lib/R/library/timeDate/Meta/links.rds",
+    "lib/R/library/timeDate/Meta/nsInfo.rds",
+    "lib/R/library/timeDate/Meta/package.rds",
+    "lib/R/library/timeDate/NAMESPACE",
+    "lib/R/library/timeDate/R/timeDate",
+    "lib/R/library/timeDate/R/timeDate.rdb",
+    "lib/R/library/timeDate/R/timeDate.rdx",
+    "lib/R/library/timeDate/help/AnIndex",
+    "lib/R/library/timeDate/help/aliases.rds",
+    "lib/R/library/timeDate/help/paths.rds",
+    "lib/R/library/timeDate/help/timeDate.rdb",
+    "lib/R/library/timeDate/help/timeDate.rdx",
+    "lib/R/library/timeDate/html/00Index.html",
+    "lib/R/library/timeDate/html/00timeDate-package.html",
+    "lib/R/library/timeDate/html/R.css",
+    "lib/R/library/timeDate/html/base-c.html",
+    "lib/R/library/timeDate/html/base-diff.html",
+    "lib/R/library/timeDate/html/base-difftimeDate.html",
+    "lib/R/library/timeDate/html/base-format.html",
+    "lib/R/library/timeDate/html/base-length.html",
+    "lib/R/library/timeDate/html/base-rep.html",
+    "lib/R/library/timeDate/html/base-rev.html",
+    "lib/R/library/timeDate/html/base-round.html",
+    "lib/R/library/timeDate/html/base-sample.html",
+    "lib/R/library/timeDate/html/base-sort.html",
+    "lib/R/library/timeDate/html/base-start.html",
+    "lib/R/library/timeDate/html/base-subset.html",
+    "lib/R/library/timeDate/html/base-summary.html",
+    "lib/R/library/timeDate/html/base-unique.html",
+    "lib/R/library/timeDate/html/calendar-Easter.html",
+    "lib/R/library/timeDate/html/calendar-align.html",
+    "lib/R/library/timeDate/html/calendar-dayOfWeek.html",
+    "lib/R/library/timeDate/html/calendar-dayOfYear.html",
+    "lib/R/library/timeDate/html/calendar-endpoints.html",
+    "lib/R/library/timeDate/html/calendar-firstDay.html",
+    "lib/R/library/timeDate/html/calendar-isBizday.html",
+    "lib/R/library/timeDate/html/calendar-isRegular.html",
+    "lib/R/library/timeDate/html/calendar-isWeekday.html",
+    "lib/R/library/timeDate/html/calendar-julian.html",
+    "lib/R/library/timeDate/html/calendar-nDay.html",
+    "lib/R/library/timeDate/html/calendar-onOrAfter.html",
+    "lib/R/library/timeDate/html/calendar-periods.html",
+    "lib/R/library/timeDate/html/class-timeDate.html",
+    "lib/R/library/timeDate/html/graphics-plot.html",
+    "lib/R/library/timeDate/html/holiday-Dates.html",
+    "lib/R/library/timeDate/html/holiday-LONDON.html",
+    "lib/R/library/timeDate/html/holiday-Listing.html",
+    "lib/R/library/timeDate/html/holiday-NERC.html",
+    "lib/R/library/timeDate/html/holiday-NYSE.html",
+    "lib/R/library/timeDate/html/holiday-TSX.html",
+    "lib/R/library/timeDate/html/holiday-ZURICH.html",
+    "lib/R/library/timeDate/html/holiday.html",
+    "lib/R/library/timeDate/html/methods-as.html",
+    "lib/R/library/timeDate/html/methods-mathOps.html",
+    "lib/R/library/timeDate/html/methods-names.html",
+    "lib/R/library/timeDate/html/methods-show.html",
+    "lib/R/library/timeDate/html/options-RmetricsOptions.html",
+    "lib/R/library/timeDate/html/options-currentYear.html",
+    "lib/R/library/timeDate/html/options-myFinCenter.html",
+    "lib/R/library/timeDate/html/options-myUnits.html",
+    "lib/R/library/timeDate/html/stats-blockStart.html",
+    "lib/R/library/timeDate/html/stats-kurtosis.html",
+    "lib/R/library/timeDate/html/stats-na-fail.html",
+    "lib/R/library/timeDate/html/stats-skewness.html",
+    "lib/R/library/timeDate/html/stats-window.html",
+    "lib/R/library/timeDate/html/timeDate-Calendar.html",
+    "lib/R/library/timeDate/html/timeDate-DaylightSavingTime.html",
+    "lib/R/library/timeDate/html/timeDate-Sequence.html",
+    "lib/R/library/timeDate/html/timeDate-Sys.timeDate.html",
+    "lib/R/library/timeDate/html/timeDate-finCenter.html",
+    "lib/R/library/timeDate/html/timeDate-listFinCenter.html",
+    "lib/R/library/timeDate/html/timeDate-midnightStandard.html",
+    "lib/R/library/timeDate/html/timeDate-rulesFinCenter.html",
+    "lib/R/library/timeDate/html/timeDate-whichFormat.html",
+    "lib/R/library/timeDate/html/timeDate.html",
+    "lib/R/library/timeDate/unitTests/Makefile",
+    "lib/R/library/timeDate/unitTests/runTests.R",
+    "lib/R/library/timeDate/unitTests/runit.AAA.R",
+    "lib/R/library/timeDate/unitTests/runit.Class.R",
+    "lib/R/library/timeDate/unitTests/runit.Coercion.R",
+    "lib/R/library/timeDate/unitTests/runit.DaylightSavingTime.R",
+    "lib/R/library/timeDate/unitTests/runit.FinCenter.R",
+    "lib/R/library/timeDate/unitTests/runit.HolidayCalendars.R",
+    "lib/R/library/timeDate/unitTests/runit.HolidayDates.R",
+    "lib/R/library/timeDate/unitTests/runit.MathOps.R",
+    "lib/R/library/timeDate/unitTests/runit.SpecialDates.R",
+    "lib/R/library/timeDate/unitTests/runit.Subsets.R",
+    "lib/R/library/timeDate/unitTests/runit.ZZZ.R",
+    "lib/R/library/timeDate/unitTests/runit.dayOfWeek.R",
+    "lib/R/library/timeDate/unitTests/runit.dayOfYear.R",
+    "lib/R/library/timeDate/unitTests/runit.isWeekday.R",
+    "lib/R/library/timeDate/unitTests/runit.isWeekend.R",
+    "lib/R/library/timeDate/unitTests/runit.seq.R"
+  ],
+  "fn": "r-timedate-3043.102-r36h6115d3f_0.tar.bz2",
+  "license": "GPL (>= 2)",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-timedate-3043.102-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "192cef9f8c969052e4a393280383da30",
+  "name": "r-timedate",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-timedate-3043.102-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/timeDate/COPYRIGHT.html",
+        "path_type": "hardlink",
+        "sha256": "0a41739c1648c8ad3bac9f1dbcd157b7ee6d55df42deee6d40d401729ec913da",
+        "sha256_in_prefix": "0a41739c1648c8ad3bac9f1dbcd157b7ee6d55df42deee6d40d401729ec913da",
+        "size_in_bytes": 8457
+      },
+      {
+        "_path": "lib/R/library/timeDate/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "488d24ece2518e77a2155df754a024785908fb609800eca49c5cbe1a74efe370",
+        "sha256_in_prefix": "488d24ece2518e77a2155df754a024785908fb609800eca49c5cbe1a74efe370",
+        "size_in_bytes": 1225
+      },
+      {
+        "_path": "lib/R/library/timeDate/INDEX",
+        "path_type": "hardlink",
+        "sha256": "075ec248d893d91c9fd9b070db7c96ded213df97fe636d46a6fc50f778f06233",
+        "sha256_in_prefix": "075ec248d893d91c9fd9b070db7c96ded213df97fe636d46a6fc50f778f06233",
+        "size_in_bytes": 3043
+      },
+      {
+        "_path": "lib/R/library/timeDate/MD5",
+        "path_type": "hardlink",
+        "sha256": "05a5acc6fdc1cf85e06cb3638303938a3f6ec2f1417ca0725d9704c5b3c8b7e5",
+        "sha256_in_prefix": "05a5acc6fdc1cf85e06cb3638303938a3f6ec2f1417ca0725d9704c5b3c8b7e5",
+        "size_in_bytes": 5803
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "9b5ec134cc7dc1840c5b639c01844e6591c531458f53ab274d6115df2c123d15",
+        "sha256_in_prefix": "9b5ec134cc7dc1840c5b639c01844e6591c531458f53ab274d6115df2c123d15",
+        "size_in_bytes": 6446
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "19eb4cdf69666a30594133730721c5a89105e09d4f8feb9f03825fdf3f551ee2",
+        "sha256_in_prefix": "19eb4cdf69666a30594133730721c5a89105e09d4f8feb9f03825fdf3f551ee2",
+        "size_in_bytes": 6580
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "76301df067cbc1ea20438ec8f8f1ed896fa2646ffae4241e729eb379058e25ef",
+        "sha256_in_prefix": "76301df067cbc1ea20438ec8f8f1ed896fa2646ffae4241e729eb379058e25ef",
+        "size_in_bytes": 5811
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "d872bbb16805766b3f09aad922c4cf08e5b637b539c3bf83f20f205fac5de925",
+        "sha256_in_prefix": "d872bbb16805766b3f09aad922c4cf08e5b637b539c3bf83f20f205fac5de925",
+        "size_in_bytes": 4746
+      },
+      {
+        "_path": "lib/R/library/timeDate/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "0b7c363cb0f2799649067af554baf74b3eb0b8db853a6cdaf9835c83fe0b0433",
+        "sha256_in_prefix": "0b7c363cb0f2799649067af554baf74b3eb0b8db853a6cdaf9835c83fe0b0433",
+        "size_in_bytes": 1151
+      },
+      {
+        "_path": "lib/R/library/timeDate/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "5daf7ba543c6effdb365e2f8eaaf6e676dc05709ed5d995dbc419694165589f6",
+        "sha256_in_prefix": "5daf7ba543c6effdb365e2f8eaaf6e676dc05709ed5d995dbc419694165589f6",
+        "size_in_bytes": 14390
+      },
+      {
+        "_path": "lib/R/library/timeDate/R/timeDate",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/timeDate/R/timeDate.rdb",
+        "path_type": "hardlink",
+        "sha256": "c1e7a2cef351f12e5cb9fe891aba6126b22fbaa6551c426fd0a19d3571280df5",
+        "sha256_in_prefix": "c1e7a2cef351f12e5cb9fe891aba6126b22fbaa6551c426fd0a19d3571280df5",
+        "size_in_bytes": 1469691
+      },
+      {
+        "_path": "lib/R/library/timeDate/R/timeDate.rdx",
+        "path_type": "hardlink",
+        "sha256": "03bf3139f4bc007640e8021344fb0138560d57a48650391cbcb443bd1f84735d",
+        "sha256_in_prefix": "03bf3139f4bc007640e8021344fb0138560d57a48650391cbcb443bd1f84735d",
+        "size_in_bytes": 10598
+      },
+      {
+        "_path": "lib/R/library/timeDate/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "5edab80b78ae5d5b6408095bbd216a70c21f3db6be9d049553397f00381eb50f",
+        "sha256_in_prefix": "5edab80b78ae5d5b6408095bbd216a70c21f3db6be9d049553397f00381eb50f",
+        "size_in_bytes": 25028
+      },
+      {
+        "_path": "lib/R/library/timeDate/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "6f047baefea4825f1367534062a79ace49f321dd70b0c4deb8ed3ffe554cfeaf",
+        "sha256_in_prefix": "6f047baefea4825f1367534062a79ace49f321dd70b0c4deb8ed3ffe554cfeaf",
+        "size_in_bytes": 5851
+      },
+      {
+        "_path": "lib/R/library/timeDate/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "dd6b1d2280adee2c32c6194831bc3d3ebfcf178f6c4a39226b45c1c9a127ccdc",
+        "sha256_in_prefix": "dd6b1d2280adee2c32c6194831bc3d3ebfcf178f6c4a39226b45c1c9a127ccdc",
+        "size_in_bytes": 707
+      },
+      {
+        "_path": "lib/R/library/timeDate/help/timeDate.rdb",
+        "path_type": "hardlink",
+        "sha256": "7eb57dfaa1dd415e809d223764446bdb2c2ca6c0dfeee07ffe375cc6291398e0",
+        "sha256_in_prefix": "7eb57dfaa1dd415e809d223764446bdb2c2ca6c0dfeee07ffe375cc6291398e0",
+        "size_in_bytes": 169635
+      },
+      {
+        "_path": "lib/R/library/timeDate/help/timeDate.rdx",
+        "path_type": "hardlink",
+        "sha256": "0a40d00af553dea1314e800c7dbe53843ea5dd1124b820dd9568acee1adb12ed",
+        "sha256_in_prefix": "0a40d00af553dea1314e800c7dbe53843ea5dd1124b820dd9568acee1adb12ed",
+        "size_in_bytes": 1537
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "df5384edee7d84a58199ac270cc2b08cee99bdcf261ee8126154ebb837b66cff",
+        "sha256_in_prefix": "df5384edee7d84a58199ac270cc2b08cee99bdcf261ee8126154ebb837b66cff",
+        "size_in_bytes": 92468
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/00timeDate-package.html",
+        "path_type": "hardlink",
+        "sha256": "56bb6f23383c12e9cee9f7ee2967eb72741eba8ec3201b84932b13a197e6b088",
+        "sha256_in_prefix": "56bb6f23383c12e9cee9f7ee2967eb72741eba8ec3201b84932b13a197e6b088",
+        "size_in_bytes": 21684
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-c.html",
+        "path_type": "hardlink",
+        "sha256": "acdb87732de000666074120db7f861e33bd7827537a183245760bbefa31ddb9e",
+        "sha256_in_prefix": "acdb87732de000666074120db7f861e33bd7827537a183245760bbefa31ddb9e",
+        "size_in_bytes": 1678
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-diff.html",
+        "path_type": "hardlink",
+        "sha256": "ec12537d96ac09f25619acf7c126087b84a937589783feb01e8e1c2f4f79d42c",
+        "sha256_in_prefix": "ec12537d96ac09f25619acf7c126087b84a937589783feb01e8e1c2f4f79d42c",
+        "size_in_bytes": 2411
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-difftimeDate.html",
+        "path_type": "hardlink",
+        "sha256": "45a576e8dcfc68947f61e3ad648c8ff9ecf45af5e95e130b8d74ad6a692d6261",
+        "sha256_in_prefix": "45a576e8dcfc68947f61e3ad648c8ff9ecf45af5e95e130b8d74ad6a692d6261",
+        "size_in_bytes": 1858
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-format.html",
+        "path_type": "hardlink",
+        "sha256": "802bf84ad3c2b89df66517717390d06ef8ca205c89181912b2a5f33fe97518c2",
+        "sha256_in_prefix": "802bf84ad3c2b89df66517717390d06ef8ca205c89181912b2a5f33fe97518c2",
+        "size_in_bytes": 1940
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-length.html",
+        "path_type": "hardlink",
+        "sha256": "d32a0f061de1428ed044fc5a54cc8eab8a79bee5723b67b59cde79e322802db2",
+        "sha256_in_prefix": "d32a0f061de1428ed044fc5a54cc8eab8a79bee5723b67b59cde79e322802db2",
+        "size_in_bytes": 1213
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-rep.html",
+        "path_type": "hardlink",
+        "sha256": "ae42e273d7db9d3aee961802e20dc6a7d58cd3f705d3266bf01d28ca9648b83f",
+        "sha256_in_prefix": "ae42e273d7db9d3aee961802e20dc6a7d58cd3f705d3266bf01d28ca9648b83f",
+        "size_in_bytes": 1838
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-rev.html",
+        "path_type": "hardlink",
+        "sha256": "91657370d52863bdbb051fb46806e5c5cc7bc9a371763633bfe43222c80677ad",
+        "sha256_in_prefix": "91657370d52863bdbb051fb46806e5c5cc7bc9a371763633bfe43222c80677ad",
+        "size_in_bytes": 1717
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-round.html",
+        "path_type": "hardlink",
+        "sha256": "f4990ce5b3b945bda99807fefded211df73ef8a6b8a84c3862fe9e1bda8fbe47",
+        "sha256_in_prefix": "f4990ce5b3b945bda99807fefded211df73ef8a6b8a84c3862fe9e1bda8fbe47",
+        "size_in_bytes": 1891
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-sample.html",
+        "path_type": "hardlink",
+        "sha256": "4175ed0b9b9a0eb4d12b98f40664a3bf9e77827e4673e1235c1545cf1e54c288",
+        "sha256_in_prefix": "4175ed0b9b9a0eb4d12b98f40664a3bf9e77827e4673e1235c1545cf1e54c288",
+        "size_in_bytes": 1465
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-sort.html",
+        "path_type": "hardlink",
+        "sha256": "fd156ce216ca465491ec8899e38499b14c7ffe2f49b4662c02d97e6d34b184ba",
+        "sha256_in_prefix": "fd156ce216ca465491ec8899e38499b14c7ffe2f49b4662c02d97e6d34b184ba",
+        "size_in_bytes": 1828
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-start.html",
+        "path_type": "hardlink",
+        "sha256": "b4695e5022c9a613c8855ac123aaed1bb5edddea243d9c7c8586859b989dc584",
+        "sha256_in_prefix": "b4695e5022c9a613c8855ac123aaed1bb5edddea243d9c7c8586859b989dc584",
+        "size_in_bytes": 2185
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-subset.html",
+        "path_type": "hardlink",
+        "sha256": "a5e9144d1cc3f50b38be651593182cfe1fb03e607ebce30e12870bd8a3581f9f",
+        "sha256_in_prefix": "a5e9144d1cc3f50b38be651593182cfe1fb03e607ebce30e12870bd8a3581f9f",
+        "size_in_bytes": 1040
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-summary.html",
+        "path_type": "hardlink",
+        "sha256": "04cfcf8e1971513d8387a84f5d8403abb3caabe071f744f9ec0fbef0693d9d0a",
+        "sha256_in_prefix": "04cfcf8e1971513d8387a84f5d8403abb3caabe071f744f9ec0fbef0693d9d0a",
+        "size_in_bytes": 1535
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/base-unique.html",
+        "path_type": "hardlink",
+        "sha256": "2ce2ece01c3d27d434c3aa51a403bac1a0c7c405e1839e2ca958669ea4e86c8b",
+        "sha256_in_prefix": "2ce2ece01c3d27d434c3aa51a403bac1a0c7c405e1839e2ca958669ea4e86c8b",
+        "size_in_bytes": 1855
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-Easter.html",
+        "path_type": "hardlink",
+        "sha256": "7df0cecfb19a26b739c9e48ceec07bc8cb4def7bbd1fa7a1b09c653b0ecd48ff",
+        "sha256_in_prefix": "7df0cecfb19a26b739c9e48ceec07bc8cb4def7bbd1fa7a1b09c653b0ecd48ff",
+        "size_in_bytes": 2470
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-align.html",
+        "path_type": "hardlink",
+        "sha256": "22b68b39b58be23bbb7b75fffe46beea992c7f020708baef79ff3bd86d38e773",
+        "sha256_in_prefix": "22b68b39b58be23bbb7b75fffe46beea992c7f020708baef79ff3bd86d38e773",
+        "size_in_bytes": 2700
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-dayOfWeek.html",
+        "path_type": "hardlink",
+        "sha256": "0a498176e5c5785a03493891591542d189ef6c04f64d60f0f135145b45ec239a",
+        "sha256_in_prefix": "0a498176e5c5785a03493891591542d189ef6c04f64d60f0f135145b45ec239a",
+        "size_in_bytes": 1546
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-dayOfYear.html",
+        "path_type": "hardlink",
+        "sha256": "d69b80af2a8ad1d11e6ddff1b3e54dee76a64520c98009a583b957a94cb4cd34",
+        "sha256_in_prefix": "d69b80af2a8ad1d11e6ddff1b3e54dee76a64520c98009a583b957a94cb4cd34",
+        "size_in_bytes": 1518
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-endpoints.html",
+        "path_type": "hardlink",
+        "sha256": "bd9fe4539f6b0cfb8c7faef28f83f767b8d84c4967ad9955cdf724abb6fdd0bd",
+        "sha256_in_prefix": "bd9fe4539f6b0cfb8c7faef28f83f767b8d84c4967ad9955cdf724abb6fdd0bd",
+        "size_in_bytes": 2187
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-firstDay.html",
+        "path_type": "hardlink",
+        "sha256": "bd720aa19b74c4417546a0385b14bad2a72c48affbbd8bf4980193adc32ca295",
+        "sha256_in_prefix": "bd720aa19b74c4417546a0385b14bad2a72c48affbbd8bf4980193adc32ca295",
+        "size_in_bytes": 3520
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-isBizday.html",
+        "path_type": "hardlink",
+        "sha256": "b3c46d27fdeb488c12922467f48db65fe4bfd92ea3b2931ec1c52a13bfbe493e",
+        "sha256_in_prefix": "b3c46d27fdeb488c12922467f48db65fe4bfd92ea3b2931ec1c52a13bfbe493e",
+        "size_in_bytes": 1931
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-isRegular.html",
+        "path_type": "hardlink",
+        "sha256": "08381550e4321b7edad374e2f56c0d01b304a62bdef45ff8988f061d2992f9b3",
+        "sha256_in_prefix": "08381550e4321b7edad374e2f56c0d01b304a62bdef45ff8988f061d2992f9b3",
+        "size_in_bytes": 2534
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-isWeekday.html",
+        "path_type": "hardlink",
+        "sha256": "7ac0220f585eb0621402a2ec5a57c94ffe0302803b9ee2b0875baee1b59694a0",
+        "sha256_in_prefix": "7ac0220f585eb0621402a2ec5a57c94ffe0302803b9ee2b0875baee1b59694a0",
+        "size_in_bytes": 1635
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-julian.html",
+        "path_type": "hardlink",
+        "sha256": "1b728c7be02fc233a62eef52c064bcb41251e24a7651a5ccdeff61de3f0f503d",
+        "sha256_in_prefix": "1b728c7be02fc233a62eef52c064bcb41251e24a7651a5ccdeff61de3f0f503d",
+        "size_in_bytes": 2729
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-nDay.html",
+        "path_type": "hardlink",
+        "sha256": "f2c58d02d9b4df98df1c53659ebaa6c55247fd880a67f3a26383c5b58a4eb1c1",
+        "sha256_in_prefix": "f2c58d02d9b4df98df1c53659ebaa6c55247fd880a67f3a26383c5b58a4eb1c1",
+        "size_in_bytes": 2555
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-onOrAfter.html",
+        "path_type": "hardlink",
+        "sha256": "1ed66c6f9149561ee31471ef00cece85f31a739d0f21a6cf710c457faea0ebb6",
+        "sha256_in_prefix": "1ed66c6f9149561ee31471ef00cece85f31a739d0f21a6cf710c457faea0ebb6",
+        "size_in_bytes": 2633
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/calendar-periods.html",
+        "path_type": "hardlink",
+        "sha256": "37fbeb00021d81c090ba212fc0c992226aefce60539568987f51e7ffc23682c9",
+        "sha256_in_prefix": "37fbeb00021d81c090ba212fc0c992226aefce60539568987f51e7ffc23682c9",
+        "size_in_bytes": 2424
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/class-timeDate.html",
+        "path_type": "hardlink",
+        "sha256": "04ad6da438322e76131a08126562a3fe919ac9fe13252bfc7ce1c549ec928585",
+        "sha256_in_prefix": "04ad6da438322e76131a08126562a3fe919ac9fe13252bfc7ce1c549ec928585",
+        "size_in_bytes": 11969
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/graphics-plot.html",
+        "path_type": "hardlink",
+        "sha256": "b34b4e666835205bfcaba5b2e4a2ff234e3a4de141a606ec1c3acf9fbb3f01dc",
+        "sha256_in_prefix": "b34b4e666835205bfcaba5b2e4a2ff234e3a4de141a606ec1c3acf9fbb3f01dc",
+        "size_in_bytes": 3630
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-Dates.html",
+        "path_type": "hardlink",
+        "sha256": "e8d4a28a479de6fe50b41dbf8ebc785de0226d4d0af6ffe96a6eec16ca35b10a",
+        "sha256_in_prefix": "e8d4a28a479de6fe50b41dbf8ebc785de0226d4d0af6ffe96a6eec16ca35b10a",
+        "size_in_bytes": 8652
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-LONDON.html",
+        "path_type": "hardlink",
+        "sha256": "f6711ff199a2f226cd7d410cd36283fcf9f29a2cb5d00a4ef738be0f7b0be233",
+        "sha256_in_prefix": "f6711ff199a2f226cd7d410cd36283fcf9f29a2cb5d00a4ef738be0f7b0be233",
+        "size_in_bytes": 1547
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-Listing.html",
+        "path_type": "hardlink",
+        "sha256": "afb0aeffd5817d5b3975071594a833bc02e283edd9789be969ae6629f1e6b16a",
+        "sha256_in_prefix": "afb0aeffd5817d5b3975071594a833bc02e283edd9789be969ae6629f1e6b16a",
+        "size_in_bytes": 1313
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-NERC.html",
+        "path_type": "hardlink",
+        "sha256": "cd43e10dd72196db6973735f16b19ed84089c5f42f47fafa4c7d0c5f5ad08a8e",
+        "sha256_in_prefix": "cd43e10dd72196db6973735f16b19ed84089c5f42f47fafa4c7d0c5f5ad08a8e",
+        "size_in_bytes": 1577
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-NYSE.html",
+        "path_type": "hardlink",
+        "sha256": "5a7bb315952e03ddb35525e6c5d92d1073b377ef96f42d323736ac745d909649",
+        "sha256_in_prefix": "5a7bb315952e03ddb35525e6c5d92d1073b377ef96f42d323736ac745d909649",
+        "size_in_bytes": 1271
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-TSX.html",
+        "path_type": "hardlink",
+        "sha256": "5547e725bb48cbecabdc20edfd7923a448ee49f938d2ab838daf46bc8baa8f19",
+        "sha256_in_prefix": "5547e725bb48cbecabdc20edfd7923a448ee49f938d2ab838daf46bc8baa8f19",
+        "size_in_bytes": 1262
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday-ZURICH.html",
+        "path_type": "hardlink",
+        "sha256": "b7b6640a559a125d603b99e75a7d4a661aad0ac47a916c795fa9fed33ad9fb46",
+        "sha256_in_prefix": "b7b6640a559a125d603b99e75a7d4a661aad0ac47a916c795fa9fed33ad9fb46",
+        "size_in_bytes": 1545
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/holiday.html",
+        "path_type": "hardlink",
+        "sha256": "326e93e05d1de0adbbfc6c33aa8d71d3fca54fb4892b3a6061b498cf34df831f",
+        "sha256_in_prefix": "326e93e05d1de0adbbfc6c33aa8d71d3fca54fb4892b3a6061b498cf34df831f",
+        "size_in_bytes": 5148
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/methods-as.html",
+        "path_type": "hardlink",
+        "sha256": "e0c42d377b1eddc6bd133a466f664f1cede8df2bdfbf1b76d158b9d3e86d650d",
+        "sha256_in_prefix": "e0c42d377b1eddc6bd133a466f664f1cede8df2bdfbf1b76d158b9d3e86d650d",
+        "size_in_bytes": 3197
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/methods-mathOps.html",
+        "path_type": "hardlink",
+        "sha256": "0d31832318c6779f333d6408ff14cd91444532e52b851088a86b2212ac22d4b9",
+        "sha256_in_prefix": "0d31832318c6779f333d6408ff14cd91444532e52b851088a86b2212ac22d4b9",
+        "size_in_bytes": 2951
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/methods-names.html",
+        "path_type": "hardlink",
+        "sha256": "fac6cd502a3f0b02fc93c4a65faa7d460b089c3159693f239c9d0204fd21edce",
+        "sha256_in_prefix": "fac6cd502a3f0b02fc93c4a65faa7d460b089c3159693f239c9d0204fd21edce",
+        "size_in_bytes": 1385
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/methods-show.html",
+        "path_type": "hardlink",
+        "sha256": "230f508a99c73c1ef5433807ad463852c765cada924987a2611b774ec525101d",
+        "sha256_in_prefix": "230f508a99c73c1ef5433807ad463852c765cada924987a2611b774ec525101d",
+        "size_in_bytes": 1063
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/options-RmetricsOptions.html",
+        "path_type": "hardlink",
+        "sha256": "7bac1a05fe1eef30beab71cc4a24c0a4119eff7d0e68ea35400f850346c64d7c",
+        "sha256_in_prefix": "7bac1a05fe1eef30beab71cc4a24c0a4119eff7d0e68ea35400f850346c64d7c",
+        "size_in_bytes": 1473
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/options-currentYear.html",
+        "path_type": "hardlink",
+        "sha256": "ada486d30d12e29ea7a2e9e68b70b02aafb24ab8af71ac914df2f01c97a6826e",
+        "sha256_in_prefix": "ada486d30d12e29ea7a2e9e68b70b02aafb24ab8af71ac914df2f01c97a6826e",
+        "size_in_bytes": 904
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/options-myFinCenter.html",
+        "path_type": "hardlink",
+        "sha256": "38da828581c94632b4b5d034514a557b3b66e868ef04c2677c99d172a59c29b0",
+        "sha256_in_prefix": "38da828581c94632b4b5d034514a557b3b66e868ef04c2677c99d172a59c29b0",
+        "size_in_bytes": 1412
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/options-myUnits.html",
+        "path_type": "hardlink",
+        "sha256": "1be255c8447d77e67bf00efc9cce1f04e4db031de9c27e3033eb193c20067bc8",
+        "sha256_in_prefix": "1be255c8447d77e67bf00efc9cce1f04e4db031de9c27e3033eb193c20067bc8",
+        "size_in_bytes": 975
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/stats-blockStart.html",
+        "path_type": "hardlink",
+        "sha256": "01fba8c4a917a9102bb69dfe74b82e231faf1648a44c6377820268acba61380d",
+        "sha256_in_prefix": "01fba8c4a917a9102bb69dfe74b82e231faf1648a44c6377820268acba61380d",
+        "size_in_bytes": 1992
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/stats-kurtosis.html",
+        "path_type": "hardlink",
+        "sha256": "8203fe4eb7052c7fd4dd3449baf8f24f03fa52131f4ab0375c331df15edf559a",
+        "sha256_in_prefix": "8203fe4eb7052c7fd4dd3449baf8f24f03fa52131f4ab0375c331df15edf559a",
+        "size_in_bytes": 2566
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/stats-na-fail.html",
+        "path_type": "hardlink",
+        "sha256": "9657e920ce1977445f3a2ed5dca5267d56d95ed4ae1d4ae76fa5559db325b15b",
+        "sha256_in_prefix": "9657e920ce1977445f3a2ed5dca5267d56d95ed4ae1d4ae76fa5559db325b15b",
+        "size_in_bytes": 928
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/stats-skewness.html",
+        "path_type": "hardlink",
+        "sha256": "c57c43eba85e4921a1873652fca29facbbfff15bbbaab8c99f7b53119e91b8a3",
+        "sha256_in_prefix": "c57c43eba85e4921a1873652fca29facbbfff15bbbaab8c99f7b53119e91b8a3",
+        "size_in_bytes": 2384
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/stats-window.html",
+        "path_type": "hardlink",
+        "sha256": "8f8843ea9273f29b0dd219b6f1066d7e112ee3de8c8fa737f3d170d0caab3987",
+        "sha256_in_prefix": "8f8843ea9273f29b0dd219b6f1066d7e112ee3de8c8fa737f3d170d0caab3987",
+        "size_in_bytes": 1908
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-Calendar.html",
+        "path_type": "hardlink",
+        "sha256": "cb52e8e356faeec35c251a75f5c8c26cce8071ec641ba33aa23fe2dd1054235a",
+        "sha256_in_prefix": "cb52e8e356faeec35c251a75f5c8c26cce8071ec641ba33aa23fe2dd1054235a",
+        "size_in_bytes": 2456
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-DaylightSavingTime.html",
+        "path_type": "hardlink",
+        "sha256": "89372802dfa78ce51ca8626e6bfcd0c3ad915ea9aff2245562ccbe3cd170df66",
+        "sha256_in_prefix": "89372802dfa78ce51ca8626e6bfcd0c3ad915ea9aff2245562ccbe3cd170df66",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-Sequence.html",
+        "path_type": "hardlink",
+        "sha256": "5c9235fa1659c682f1655e1f1fd0aa95d83506663c6e02eb81881c92893e0eaa",
+        "sha256_in_prefix": "5c9235fa1659c682f1655e1f1fd0aa95d83506663c6e02eb81881c92893e0eaa",
+        "size_in_bytes": 3912
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-Sys.timeDate.html",
+        "path_type": "hardlink",
+        "sha256": "3fb1f628d19be7533067b9eb2bcb06695696c292ac1d1e4debdcaefc7738dfc0",
+        "sha256_in_prefix": "3fb1f628d19be7533067b9eb2bcb06695696c292ac1d1e4debdcaefc7738dfc0",
+        "size_in_bytes": 1447
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-finCenter.html",
+        "path_type": "hardlink",
+        "sha256": "31162d7fa5cdd7c82c3a65ec6ef74b4f61fc983e38d17a878b48deef0ddb9851",
+        "sha256_in_prefix": "31162d7fa5cdd7c82c3a65ec6ef74b4f61fc983e38d17a878b48deef0ddb9851",
+        "size_in_bytes": 1528
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-listFinCenter.html",
+        "path_type": "hardlink",
+        "sha256": "ac0cd7339604c2c7d416347b160133c2c2c8079190736546dd6e3e5b37d2b148",
+        "sha256_in_prefix": "ac0cd7339604c2c7d416347b160133c2c2c8079190736546dd6e3e5b37d2b148",
+        "size_in_bytes": 2006
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-midnightStandard.html",
+        "path_type": "hardlink",
+        "sha256": "9f51a75934100753a9f481e28726d03561cdec58cf7c4f8f5082faf686359544",
+        "sha256_in_prefix": "9f51a75934100753a9f481e28726d03561cdec58cf7c4f8f5082faf686359544",
+        "size_in_bytes": 1923
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-rulesFinCenter.html",
+        "path_type": "hardlink",
+        "sha256": "62ab24b523faa3afe224a50ef3329b1b1480202f38b56848b7ff7eb2870f7e3b",
+        "sha256_in_prefix": "62ab24b523faa3afe224a50ef3329b1b1480202f38b56848b7ff7eb2870f7e3b",
+        "size_in_bytes": 1609
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate-whichFormat.html",
+        "path_type": "hardlink",
+        "sha256": "633b26fb519f36de312d32c2beafc1f99f03b5dfc6c974c807861f7f4946df44",
+        "sha256_in_prefix": "633b26fb519f36de312d32c2beafc1f99f03b5dfc6c974c807861f7f4946df44",
+        "size_in_bytes": 1338
+      },
+      {
+        "_path": "lib/R/library/timeDate/html/timeDate.html",
+        "path_type": "hardlink",
+        "sha256": "638ccaf82fdca734f3ab57f920598ef7130b26d356cf561daa2f62bf23acec6b",
+        "sha256_in_prefix": "638ccaf82fdca734f3ab57f920598ef7130b26d356cf561daa2f62bf23acec6b",
+        "size_in_bytes": 3368
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/Makefile",
+        "path_type": "hardlink",
+        "sha256": "c02c46da0adc1595cf02c587d87d783d87b65ffc975a9d01004ee1dbef6bdf21",
+        "sha256_in_prefix": "c02c46da0adc1595cf02c587d87d783d87b65ffc975a9d01004ee1dbef6bdf21",
+        "size_in_bytes": 273
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runTests.R",
+        "path_type": "hardlink",
+        "sha256": "0d5c759a8c646cfec8c6bb89b956fd49d390ed23bc87afbaea026dc91f520394",
+        "sha256_in_prefix": "0d5c759a8c646cfec8c6bb89b956fd49d390ed23bc87afbaea026dc91f520394",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.AAA.R",
+        "path_type": "hardlink",
+        "sha256": "85503850540a2ded8c5af1457e2ffbe9a84142145f330325cc09080e23876a3e",
+        "sha256_in_prefix": "85503850540a2ded8c5af1457e2ffbe9a84142145f330325cc09080e23876a3e",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.Class.R",
+        "path_type": "hardlink",
+        "sha256": "d99f461731bb7c8b3521a88e2ae817ad775c3c08f21599d86ce61488920b76cb",
+        "sha256_in_prefix": "d99f461731bb7c8b3521a88e2ae817ad775c3c08f21599d86ce61488920b76cb",
+        "size_in_bytes": 20249
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.Coercion.R",
+        "path_type": "hardlink",
+        "sha256": "f0f73525777c98eefc050b58febd5a2185a8e1dbddd51f72a84831195d3599aa",
+        "sha256_in_prefix": "f0f73525777c98eefc050b58febd5a2185a8e1dbddd51f72a84831195d3599aa",
+        "size_in_bytes": 5057
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.DaylightSavingTime.R",
+        "path_type": "hardlink",
+        "sha256": "72dcbfe0a180f1bf49084c59178173766fcb951f32fefabb10bec83b8969668a",
+        "sha256_in_prefix": "72dcbfe0a180f1bf49084c59178173766fcb951f32fefabb10bec83b8969668a",
+        "size_in_bytes": 10110
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.FinCenter.R",
+        "path_type": "hardlink",
+        "sha256": "ddc7917d7c4a490d056afcc81de08d58e2c77499c9e609f3fbd148df62f82cf1",
+        "sha256_in_prefix": "ddc7917d7c4a490d056afcc81de08d58e2c77499c9e609f3fbd148df62f82cf1",
+        "size_in_bytes": 2457
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.HolidayCalendars.R",
+        "path_type": "hardlink",
+        "sha256": "918d561939d8738ceb19b073b815af711253810c5e48ebefcf3e372e00f1e779",
+        "sha256_in_prefix": "918d561939d8738ceb19b073b815af711253810c5e48ebefcf3e372e00f1e779",
+        "size_in_bytes": 10180
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.HolidayDates.R",
+        "path_type": "hardlink",
+        "sha256": "5bc84cee040da20343ca6c0964a241dfa4f8232e5d78a675a690ac6add46a184",
+        "sha256_in_prefix": "5bc84cee040da20343ca6c0964a241dfa4f8232e5d78a675a690ac6add46a184",
+        "size_in_bytes": 2374
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.MathOps.R",
+        "path_type": "hardlink",
+        "sha256": "a85bfb45c247572de8b95ecfc74002f51947f561cd5ab0a4226dcd649d030c0d",
+        "sha256_in_prefix": "a85bfb45c247572de8b95ecfc74002f51947f561cd5ab0a4226dcd649d030c0d",
+        "size_in_bytes": 5894
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.SpecialDates.R",
+        "path_type": "hardlink",
+        "sha256": "6b9c45663a2f2844dd32857c9277c8d12e224aa2dee59e48e9fd527762f38c42",
+        "sha256_in_prefix": "6b9c45663a2f2844dd32857c9277c8d12e224aa2dee59e48e9fd527762f38c42",
+        "size_in_bytes": 4701
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.Subsets.R",
+        "path_type": "hardlink",
+        "sha256": "eeb3e2f8d30c18d131600a7d4b5a20ced23b151c0723c49461a4bdec6a9b35e5",
+        "sha256_in_prefix": "eeb3e2f8d30c18d131600a7d4b5a20ced23b151c0723c49461a4bdec6a9b35e5",
+        "size_in_bytes": 7831
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.ZZZ.R",
+        "path_type": "hardlink",
+        "sha256": "9e8c57e7ffb8c448cfa3622986f76da52c25adbc91a7686ecc047ca2ece8822e",
+        "sha256_in_prefix": "9e8c57e7ffb8c448cfa3622986f76da52c25adbc91a7686ecc047ca2ece8822e",
+        "size_in_bytes": 169
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.dayOfWeek.R",
+        "path_type": "hardlink",
+        "sha256": "fbfbb5cd3dc9d46c47875516c95bab02b1772d4b0448974a005532224e7468bc",
+        "sha256_in_prefix": "fbfbb5cd3dc9d46c47875516c95bab02b1772d4b0448974a005532224e7468bc",
+        "size_in_bytes": 1183
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.dayOfYear.R",
+        "path_type": "hardlink",
+        "sha256": "2ff54082d6991f523389287589b98a7e55930084704d03981f8814e7aa555bc5",
+        "sha256_in_prefix": "2ff54082d6991f523389287589b98a7e55930084704d03981f8814e7aa555bc5",
+        "size_in_bytes": 1170
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.isWeekday.R",
+        "path_type": "hardlink",
+        "sha256": "86bc8bf272de3c814625bda19837ecf8f2b92c9749048ea471471ab7c22c8840",
+        "sha256_in_prefix": "86bc8bf272de3c814625bda19837ecf8f2b92c9749048ea471471ab7c22c8840",
+        "size_in_bytes": 1321
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.isWeekend.R",
+        "path_type": "hardlink",
+        "sha256": "0a7c59310121cef0c7f95b9780ef6027a9f9239d64ad086fd52a4839b92ea369",
+        "sha256_in_prefix": "0a7c59310121cef0c7f95b9780ef6027a9f9239d64ad086fd52a4839b92ea369",
+        "size_in_bytes": 1327
+      },
+      {
+        "_path": "lib/R/library/timeDate/unitTests/runit.seq.R",
+        "path_type": "hardlink",
+        "sha256": "e66b8b8f8c764d6421d6d0d1e0fe4f2c5d31cb9003269cdd94433a1599a847a9",
+        "sha256_in_prefix": "e66b8b8f8c764d6421d6d0d1e0fe4f2c5d31cb9003269cdd94433a1599a847a9",
+        "size_in_bytes": 4236
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-timedate==3043.102=r36h6115d3f_0",
+  "sha256": "c729263ebfa5e7fa6bb550786c25f4193630f138f1646c86d45c327a57460717",
+  "size": 1626142,
+  "subdir": "noarch",
+  "timestamp": 1557945030360,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-timedate-3043.102-r36h6115d3f_0.tar.bz2",
+  "version": "3043.102"
+}

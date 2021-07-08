@@ -1,0 +1,407 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-crayon-1.3.4-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/crayon/ANSI-256-OSX.png",
+    "lib/R/library/crayon/ANSI-8-OSX.png",
+    "lib/R/library/crayon/DESCRIPTION",
+    "lib/R/library/crayon/INDEX",
+    "lib/R/library/crayon/LICENSE",
+    "lib/R/library/crayon/MD5",
+    "lib/R/library/crayon/Meta/Rd.rds",
+    "lib/R/library/crayon/Meta/features.rds",
+    "lib/R/library/crayon/Meta/hsearch.rds",
+    "lib/R/library/crayon/Meta/links.rds",
+    "lib/R/library/crayon/Meta/nsInfo.rds",
+    "lib/R/library/crayon/Meta/package.rds",
+    "lib/R/library/crayon/NAMESPACE",
+    "lib/R/library/crayon/NEWS.md",
+    "lib/R/library/crayon/R/crayon",
+    "lib/R/library/crayon/R/crayon.rdb",
+    "lib/R/library/crayon/R/crayon.rdx",
+    "lib/R/library/crayon/README.markdown",
+    "lib/R/library/crayon/help/AnIndex",
+    "lib/R/library/crayon/help/aliases.rds",
+    "lib/R/library/crayon/help/crayon.rdb",
+    "lib/R/library/crayon/help/crayon.rdx",
+    "lib/R/library/crayon/help/paths.rds",
+    "lib/R/library/crayon/html/00Index.html",
+    "lib/R/library/crayon/html/R.css",
+    "lib/R/library/crayon/html/chr.html",
+    "lib/R/library/crayon/html/col_align.html",
+    "lib/R/library/crayon/html/col_nchar.html",
+    "lib/R/library/crayon/html/col_strsplit.html",
+    "lib/R/library/crayon/html/col_substr.html",
+    "lib/R/library/crayon/html/col_substring.html",
+    "lib/R/library/crayon/html/combine_styles.html",
+    "lib/R/library/crayon/html/concat.html",
+    "lib/R/library/crayon/html/crayon.html",
+    "lib/R/library/crayon/html/drop_style.html",
+    "lib/R/library/crayon/html/has_color.html",
+    "lib/R/library/crayon/html/has_style.html",
+    "lib/R/library/crayon/html/make_style.html",
+    "lib/R/library/crayon/html/num_colors.html",
+    "lib/R/library/crayon/html/show_ansi_colors.html",
+    "lib/R/library/crayon/html/start.crayon.html",
+    "lib/R/library/crayon/html/strip_style.html",
+    "lib/R/library/crayon/html/style.html",
+    "lib/R/library/crayon/html/styles.html",
+    "lib/R/library/crayon/logo.png",
+    "lib/R/library/crayon/logo.svg.gz"
+  ],
+  "fn": "r-crayon-1.3.4-r36h6115d3f_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-crayon-1.3.4-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "70fd000207c4eaeebf56225c856e4a73",
+  "name": "r-crayon",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-crayon-1.3.4-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/crayon/ANSI-256-OSX.png",
+        "path_type": "hardlink",
+        "sha256": "033df9e51be50ee42018e388ac4d8e1e202266ece6f76803aa77ef7c464d9936",
+        "sha256_in_prefix": "033df9e51be50ee42018e388ac4d8e1e202266ece6f76803aa77ef7c464d9936",
+        "size_in_bytes": 467885
+      },
+      {
+        "_path": "lib/R/library/crayon/ANSI-8-OSX.png",
+        "path_type": "hardlink",
+        "sha256": "987ed58f0f346de5e1d5d0ddfc29d6ad2cd455a5cf2049e9e0c7d1fe79346e32",
+        "sha256_in_prefix": "987ed58f0f346de5e1d5d0ddfc29d6ad2cd455a5cf2049e9e0c7d1fe79346e32",
+        "size_in_bytes": 70267
+      },
+      {
+        "_path": "lib/R/library/crayon/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "ce522989aa8a9a86dc2a65a8395f9736d45858bb1651d8bd8c861ea6ef4b5ece",
+        "sha256_in_prefix": "ce522989aa8a9a86dc2a65a8395f9736d45858bb1651d8bd8c861ea6ef4b5ece",
+        "size_in_bytes": 1418
+      },
+      {
+        "_path": "lib/R/library/crayon/INDEX",
+        "path_type": "hardlink",
+        "sha256": "33ae048072463086801a167da04e3a69a12720f68619d5f9847141f17618bd97",
+        "sha256_in_prefix": "33ae048072463086801a167da04e3a69a12720f68619d5f9847141f17618bd97",
+        "size_in_bytes": 1134
+      },
+      {
+        "_path": "lib/R/library/crayon/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "1d8fdf0305f6876dbd483dfef3472efff298edd370afccff3eee8df196e75633",
+        "sha256_in_prefix": "1d8fdf0305f6876dbd483dfef3472efff298edd370afccff3eee8df196e75633",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "lib/R/library/crayon/MD5",
+        "path_type": "hardlink",
+        "sha256": "0eed7ca04b648d09f2a229aeb63b8d9b4933875947adca9eac8cd86c2d2f449d",
+        "sha256_in_prefix": "0eed7ca04b648d09f2a229aeb63b8d9b4933875947adca9eac8cd86c2d2f449d",
+        "size_in_bytes": 2313
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "2f3157c12f05679bed1fb98c52bd0540f6b9d3badbe5c20bfae6a80779212ed0",
+        "sha256_in_prefix": "2f3157c12f05679bed1fb98c52bd0540f6b9d3badbe5c20bfae6a80779212ed0",
+        "size_in_bytes": 962
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "320019b33361a9722214b93fd8e1326607f01e9889a93d0330f512f1aa937378",
+        "sha256_in_prefix": "320019b33361a9722214b93fd8e1326607f01e9889a93d0330f512f1aa937378",
+        "size_in_bytes": 1019
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "a3ef01426296430c064cae6ede4565a56f9bad5a55b36b072552ec8cdc1ee5af",
+        "sha256_in_prefix": "a3ef01426296430c064cae6ede4565a56f9bad5a55b36b072552ec8cdc1ee5af",
+        "size_in_bytes": 531
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "06e7f5c83c9495dca6977d7e948073b0b5a0f7bc40db821729531dd0bfcf53f7",
+        "sha256_in_prefix": "06e7f5c83c9495dca6977d7e948073b0b5a0f7bc40db821729531dd0bfcf53f7",
+        "size_in_bytes": 602
+      },
+      {
+        "_path": "lib/R/library/crayon/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "f1c6a8d771dfaaccfa8bb598664715d30b992377c0850abc0f5676cdc8d2f582",
+        "sha256_in_prefix": "f1c6a8d771dfaaccfa8bb598664715d30b992377c0850abc0f5676cdc8d2f582",
+        "size_in_bytes": 1200
+      },
+      {
+        "_path": "lib/R/library/crayon/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "45c49853dd30b80c823ff45c782b48307fa0adb96b5c9224e83092475dfbc399",
+        "sha256_in_prefix": "45c49853dd30b80c823ff45c782b48307fa0adb96b5c9224e83092475dfbc399",
+        "size_in_bytes": 1196
+      },
+      {
+        "_path": "lib/R/library/crayon/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "037aeb507402635f64c22cd6418693cb8ed94eb6f6d5196a5b491d72abf287aa",
+        "sha256_in_prefix": "037aeb507402635f64c22cd6418693cb8ed94eb6f6d5196a5b491d72abf287aa",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "lib/R/library/crayon/R/crayon",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/crayon/R/crayon.rdb",
+        "path_type": "hardlink",
+        "sha256": "bff7769250f30f8e19441aaada2d12d810cc3461d61865588c75f526145b9ba8",
+        "sha256_in_prefix": "bff7769250f30f8e19441aaada2d12d810cc3461d61865588c75f526145b9ba8",
+        "size_in_bytes": 70986
+      },
+      {
+        "_path": "lib/R/library/crayon/R/crayon.rdx",
+        "path_type": "hardlink",
+        "sha256": "f618145c1729c87f898168d2a66ce9de7b5713c72285cba0de727cf01c011f41",
+        "sha256_in_prefix": "f618145c1729c87f898168d2a66ce9de7b5713c72285cba0de727cf01c011f41",
+        "size_in_bytes": 1620
+      },
+      {
+        "_path": "lib/R/library/crayon/README.markdown",
+        "path_type": "hardlink",
+        "sha256": "c12c91f283e222c23260bdfbd84bb69d4c0a46767c09a951ea00fcc426e93b70",
+        "sha256_in_prefix": "c12c91f283e222c23260bdfbd84bb69d4c0a46767c09a951ea00fcc426e93b70",
+        "size_in_bytes": 3674
+      },
+      {
+        "_path": "lib/R/library/crayon/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "811b7b85d12e20f7ecce53708cdc23e590932422a91cf920a5f8026504f5b60f",
+        "sha256_in_prefix": "811b7b85d12e20f7ecce53708cdc23e590932422a91cf920a5f8026504f5b60f",
+        "size_in_bytes": 908
+      },
+      {
+        "_path": "lib/R/library/crayon/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "37eabab40f69ff535ccf712c7ac708f72c95521f3b3a9037e34b8b2f684c088b",
+        "sha256_in_prefix": "37eabab40f69ff535ccf712c7ac708f72c95521f3b3a9037e34b8b2f684c088b",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "lib/R/library/crayon/help/crayon.rdb",
+        "path_type": "hardlink",
+        "sha256": "54dde42c4ba990d9c79fa89db54f985f197434b2615af97ec7b8433419d5e000",
+        "sha256_in_prefix": "54dde42c4ba990d9c79fa89db54f985f197434b2615af97ec7b8433419d5e000",
+        "size_in_bytes": 38911
+      },
+      {
+        "_path": "lib/R/library/crayon/help/crayon.rdx",
+        "path_type": "hardlink",
+        "sha256": "ce96f29acbf6fd73dfba715f8acf4c7141e107a6f0c2f69e39f8e446def884fa",
+        "sha256_in_prefix": "ce96f29acbf6fd73dfba715f8acf4c7141e107a6f0c2f69e39f8e446def884fa",
+        "size_in_bytes": 547
+      },
+      {
+        "_path": "lib/R/library/crayon/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "c3b7e5e329ce848cc5f8fab9ce1a70b42918364282566bc77afe965d133d4ca8",
+        "sha256_in_prefix": "c3b7e5e329ce848cc5f8fab9ce1a70b42918364282566bc77afe965d133d4ca8",
+        "size_in_bytes": 296
+      },
+      {
+        "_path": "lib/R/library/crayon/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "b659772ca54387987049c9e412221ef9e069690e443041b9a03dca77dc7451ca",
+        "sha256_in_prefix": "b659772ca54387987049c9e412221ef9e069690e443041b9a03dca77dc7451ca",
+        "size_in_bytes": 6505
+      },
+      {
+        "_path": "lib/R/library/crayon/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/crayon/html/chr.html",
+        "path_type": "hardlink",
+        "sha256": "ddb2eecf263f2fb20afa4aac57d3ca5fec14cbabca63221fe27aa02e2055a3c4",
+        "sha256_in_prefix": "ddb2eecf263f2fb20afa4aac57d3ca5fec14cbabca63221fe27aa02e2055a3c4",
+        "size_in_bytes": 1209
+      },
+      {
+        "_path": "lib/R/library/crayon/html/col_align.html",
+        "path_type": "hardlink",
+        "sha256": "2f5ca58754088f0fc3465bafe46ba845c1aed680970418f61e54326754e10dda",
+        "sha256_in_prefix": "2f5ca58754088f0fc3465bafe46ba845c1aed680970418f61e54326754e10dda",
+        "size_in_bytes": 2042
+      },
+      {
+        "_path": "lib/R/library/crayon/html/col_nchar.html",
+        "path_type": "hardlink",
+        "sha256": "1f1adb35e05ac7b51de3e861378c813ff72826af49e3a6eb873860838906e767",
+        "sha256_in_prefix": "1f1adb35e05ac7b51de3e861378c813ff72826af49e3a6eb873860838906e767",
+        "size_in_bytes": 1967
+      },
+      {
+        "_path": "lib/R/library/crayon/html/col_strsplit.html",
+        "path_type": "hardlink",
+        "sha256": "d5c41034dd4bfbc2c3ff4b80512c0114fd8d4d06dd6f7bd29e670fd9f76ae8be",
+        "sha256_in_prefix": "d5c41034dd4bfbc2c3ff4b80512c0114fd8d4d06dd6f7bd29e670fd9f76ae8be",
+        "size_in_bytes": 2569
+      },
+      {
+        "_path": "lib/R/library/crayon/html/col_substr.html",
+        "path_type": "hardlink",
+        "sha256": "1b02b0feebd5c9b1ddfcc4981e7d75c9f50603e833a89e8cc4d9966ceb6818cc",
+        "sha256_in_prefix": "1b02b0feebd5c9b1ddfcc4981e7d75c9f50603e833a89e8cc4d9966ceb6818cc",
+        "size_in_bytes": 2584
+      },
+      {
+        "_path": "lib/R/library/crayon/html/col_substring.html",
+        "path_type": "hardlink",
+        "sha256": "e9e8640b3259d0d54af1c691327a7fa228f31ce572c8caa33105b072b9074d41",
+        "sha256_in_prefix": "e9e8640b3259d0d54af1c691327a7fa228f31ce572c8caa33105b072b9074d41",
+        "size_in_bytes": 2696
+      },
+      {
+        "_path": "lib/R/library/crayon/html/combine_styles.html",
+        "path_type": "hardlink",
+        "sha256": "0984ae03b89df36e4dc30adc830b41c8899c8d020a54b68a7947c2879243662e",
+        "sha256_in_prefix": "0984ae03b89df36e4dc30adc830b41c8899c8d020a54b68a7947c2879243662e",
+        "size_in_bytes": 2443
+      },
+      {
+        "_path": "lib/R/library/crayon/html/concat.html",
+        "path_type": "hardlink",
+        "sha256": "0948c81011b5a6a1955905c0e005365f320e3149d33e273dbd91740abdab2767",
+        "sha256_in_prefix": "0948c81011b5a6a1955905c0e005365f320e3149d33e273dbd91740abdab2767",
+        "size_in_bytes": 1495
+      },
+      {
+        "_path": "lib/R/library/crayon/html/crayon.html",
+        "path_type": "hardlink",
+        "sha256": "995da0a33b85e7d60d5eee67213d7cb9b9abaa487e92c224ff51fd09f6d89afa",
+        "sha256_in_prefix": "995da0a33b85e7d60d5eee67213d7cb9b9abaa487e92c224ff51fd09f6d89afa",
+        "size_in_bytes": 4339
+      },
+      {
+        "_path": "lib/R/library/crayon/html/drop_style.html",
+        "path_type": "hardlink",
+        "sha256": "3fb437fedd9709c250caac90591ab29bd68a1e5a4bd788880bbf0df7d72b2108",
+        "sha256_in_prefix": "3fb437fedd9709c250caac90591ab29bd68a1e5a4bd788880bbf0df7d72b2108",
+        "size_in_bytes": 1312
+      },
+      {
+        "_path": "lib/R/library/crayon/html/has_color.html",
+        "path_type": "hardlink",
+        "sha256": "2bfb1069198db0f507b31f00e98d94ebfb5994b087493aa14ab40c11560eda9b",
+        "sha256_in_prefix": "2bfb1069198db0f507b31f00e98d94ebfb5994b087493aa14ab40c11560eda9b",
+        "size_in_bytes": 2945
+      },
+      {
+        "_path": "lib/R/library/crayon/html/has_style.html",
+        "path_type": "hardlink",
+        "sha256": "badb8bafb1c655ad0f61f8f45b99c19515f5074f3b0666330e43b28bfae7c564",
+        "sha256_in_prefix": "badb8bafb1c655ad0f61f8f45b99c19515f5074f3b0666330e43b28bfae7c564",
+        "size_in_bytes": 1282
+      },
+      {
+        "_path": "lib/R/library/crayon/html/make_style.html",
+        "path_type": "hardlink",
+        "sha256": "63e7f2d2ff07c2528a571b45b8ea037d45fb10a11ab3ec660730896f2cdde123",
+        "sha256_in_prefix": "63e7f2d2ff07c2528a571b45b8ea037d45fb10a11ab3ec660730896f2cdde123",
+        "size_in_bytes": 4379
+      },
+      {
+        "_path": "lib/R/library/crayon/html/num_colors.html",
+        "path_type": "hardlink",
+        "sha256": "c444e6b487509f45edd72afb77e0c1b87e13a56c6a7ce8e091cc8f4b2c3b66cd",
+        "sha256_in_prefix": "c444e6b487509f45edd72afb77e0c1b87e13a56c6a7ce8e091cc8f4b2c3b66cd",
+        "size_in_bytes": 2277
+      },
+      {
+        "_path": "lib/R/library/crayon/html/show_ansi_colors.html",
+        "path_type": "hardlink",
+        "sha256": "277a4d0b66d77029cf5f7f916cc77ea8a05cc86a1168dce7fcb58f320c835d27",
+        "sha256_in_prefix": "277a4d0b66d77029cf5f7f916cc77ea8a05cc86a1168dce7fcb58f320c835d27",
+        "size_in_bytes": 1213
+      },
+      {
+        "_path": "lib/R/library/crayon/html/start.crayon.html",
+        "path_type": "hardlink",
+        "sha256": "2f42303ff6305824b93112ab7ca835f4a18e6141e3511bd8671bd58af63ea85b",
+        "sha256_in_prefix": "2f42303ff6305824b93112ab7ca835f4a18e6141e3511bd8671bd58af63ea85b",
+        "size_in_bytes": 1587
+      },
+      {
+        "_path": "lib/R/library/crayon/html/strip_style.html",
+        "path_type": "hardlink",
+        "sha256": "a629e88a5a06ad2a4d21392223916521ab37e1056869665dde95c6546dd39c7a",
+        "sha256_in_prefix": "a629e88a5a06ad2a4d21392223916521ab37e1056869665dde95c6546dd39c7a",
+        "size_in_bytes": 1144
+      },
+      {
+        "_path": "lib/R/library/crayon/html/style.html",
+        "path_type": "hardlink",
+        "sha256": "6521107fd0f250f6b65aeff0e5c90524e5a8bf042b3ad7daca1e5fb9ba912910",
+        "sha256_in_prefix": "6521107fd0f250f6b65aeff0e5c90524e5a8bf042b3ad7daca1e5fb9ba912910",
+        "size_in_bytes": 1606
+      },
+      {
+        "_path": "lib/R/library/crayon/html/styles.html",
+        "path_type": "hardlink",
+        "sha256": "4cb51f4fc06b239cc302aa2d996747b66735da0bc783c5994c3cad0543b3d150",
+        "sha256_in_prefix": "4cb51f4fc06b239cc302aa2d996747b66735da0bc783c5994c3cad0543b3d150",
+        "size_in_bytes": 1292
+      },
+      {
+        "_path": "lib/R/library/crayon/logo.png",
+        "path_type": "hardlink",
+        "sha256": "a5108caa254c2c97ef42afff7684483f3eb764f5ad828f575dab1dc5e375665a",
+        "sha256_in_prefix": "a5108caa254c2c97ef42afff7684483f3eb764f5ad828f575dab1dc5e375665a",
+        "size_in_bytes": 37280
+      },
+      {
+        "_path": "lib/R/library/crayon/logo.svg.gz",
+        "path_type": "hardlink",
+        "sha256": "1958f9a60c33412d7fa90f21c47b7b8b68082cdd3620e53377797a9318a661f5",
+        "sha256_in_prefix": "1958f9a60c33412d7fa90f21c47b7b8b68082cdd3620e53377797a9318a661f5",
+        "size_in_bytes": 59649
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-crayon==1.3.4=r36h6115d3f_0",
+  "sha256": "97bb8325e6102caf67022c2a9b537d7889f769dcc5159b22dfe4e7bea36af885",
+  "size": 775144,
+  "subdir": "noarch",
+  "timestamp": 1557941514453,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-crayon-1.3.4-r36h6115d3f_0.tar.bz2",
+  "version": "1.3.4"
+}

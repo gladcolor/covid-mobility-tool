@@ -1,0 +1,417 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-processx >=3.3.0",
+    "r-r6",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-callr-3.2.0-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/callr/DESCRIPTION",
+    "lib/R/library/callr/INDEX",
+    "lib/R/library/callr/LICENSE",
+    "lib/R/library/callr/MD5",
+    "lib/R/library/callr/Meta/Rd.rds",
+    "lib/R/library/callr/Meta/features.rds",
+    "lib/R/library/callr/Meta/hsearch.rds",
+    "lib/R/library/callr/Meta/links.rds",
+    "lib/R/library/callr/Meta/nsInfo.rds",
+    "lib/R/library/callr/Meta/package.rds",
+    "lib/R/library/callr/NAMESPACE",
+    "lib/R/library/callr/NEWS.md",
+    "lib/R/library/callr/R/callr",
+    "lib/R/library/callr/R/callr.rdb",
+    "lib/R/library/callr/R/callr.rdx",
+    "lib/R/library/callr/_pkgdown.yml",
+    "lib/R/library/callr/developer-notes.md",
+    "lib/R/library/callr/help/AnIndex",
+    "lib/R/library/callr/help/aliases.rds",
+    "lib/R/library/callr/help/callr.rdb",
+    "lib/R/library/callr/help/callr.rdx",
+    "lib/R/library/callr/help/paths.rds",
+    "lib/R/library/callr/html/00Index.html",
+    "lib/R/library/callr/html/R.css",
+    "lib/R/library/callr/html/callr.html",
+    "lib/R/library/callr/html/convert_and_check_my_args.html",
+    "lib/R/library/callr/html/default_repos.html",
+    "lib/R/library/callr/html/get_result.html",
+    "lib/R/library/callr/html/make_error.html",
+    "lib/R/library/callr/html/r.html",
+    "lib/R/library/callr/html/r_bg.html",
+    "lib/R/library/callr/html/r_copycat.html",
+    "lib/R/library/callr/html/r_process.html",
+    "lib/R/library/callr/html/r_process_options.html",
+    "lib/R/library/callr/html/r_session.html",
+    "lib/R/library/callr/html/r_session_options.html",
+    "lib/R/library/callr/html/r_vanilla.html",
+    "lib/R/library/callr/html/rcmd.html",
+    "lib/R/library/callr/html/rcmd_bg.html",
+    "lib/R/library/callr/html/rcmd_copycat.html",
+    "lib/R/library/callr/html/rcmd_process.html",
+    "lib/R/library/callr/html/rcmd_process_options.html",
+    "lib/R/library/callr/html/rcmd_safe.html",
+    "lib/R/library/callr/html/reexports.html",
+    "lib/R/library/callr/html/rscript.html",
+    "lib/R/library/callr/html/rscript_process.html",
+    "lib/R/library/callr/html/rscript_process_options.html"
+  ],
+  "fn": "r-callr-3.2.0-r36h6115d3f_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-callr-3.2.0-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "de50930e3217cfbdd410b930678b37ec",
+  "name": "r-callr",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-callr-3.2.0-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/callr/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "155fa7df7ba6a669015fb57e228237d6236dca7d3b7c8431cb8bf239084cbcad",
+        "sha256_in_prefix": "155fa7df7ba6a669015fb57e228237d6236dca7d3b7c8431cb8bf239084cbcad",
+        "size_in_bytes": 1233
+      },
+      {
+        "_path": "lib/R/library/callr/INDEX",
+        "path_type": "hardlink",
+        "sha256": "ff200cf2a6ffaa24e5dec26d5e4f3a063adf730f8b871abd63b111fe0f8ca40b",
+        "sha256_in_prefix": "ff200cf2a6ffaa24e5dec26d5e4f3a063adf730f8b871abd63b111fe0f8ca40b",
+        "size_in_bytes": 1616
+      },
+      {
+        "_path": "lib/R/library/callr/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d6b7150f98cf5f38484556b8e7a164dbf8669f20191a100908c814ea38aefeb1",
+        "sha256_in_prefix": "d6b7150f98cf5f38484556b8e7a164dbf8669f20191a100908c814ea38aefeb1",
+        "size_in_bytes": 54
+      },
+      {
+        "_path": "lib/R/library/callr/MD5",
+        "path_type": "hardlink",
+        "sha256": "8cd68da12b9dc29732fc065b3408b79712510d377303a6f995d54e1573c87617",
+        "sha256_in_prefix": "8cd68da12b9dc29732fc065b3408b79712510d377303a6f995d54e1573c87617",
+        "size_in_bytes": 2426
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "a96e456b3d4b8ba6e21fcb3acb2b4e4eb136a3fedafdf5fd54debfb7329b8172",
+        "sha256_in_prefix": "a96e456b3d4b8ba6e21fcb3acb2b4e4eb136a3fedafdf5fd54debfb7329b8172",
+        "size_in_bytes": 1117
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "a514cf1e08bb6d24fb8bc578387e5e7eb71b7025fa9094569015dd2dd05f962d",
+        "sha256_in_prefix": "a514cf1e08bb6d24fb8bc578387e5e7eb71b7025fa9094569015dd2dd05f962d",
+        "size_in_bytes": 1135
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "7842226d0e542d2d75488a866df465d989a44e0faafcc03fe1faf42afe7ee213",
+        "sha256_in_prefix": "7842226d0e542d2d75488a866df465d989a44e0faafcc03fe1faf42afe7ee213",
+        "size_in_bytes": 429
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "f87b0026839dcb4f0f8275396a81938974a229006283596848df336490e9d546",
+        "sha256_in_prefix": "f87b0026839dcb4f0f8275396a81938974a229006283596848df336490e9d546",
+        "size_in_bytes": 343
+      },
+      {
+        "_path": "lib/R/library/callr/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "f9364b5405195ecc5875f3d3ded1af3b21dd5c3f5204dccaa1fc63cdca8ecd1f",
+        "sha256_in_prefix": "f9364b5405195ecc5875f3d3ded1af3b21dd5c3f5204dccaa1fc63cdca8ecd1f",
+        "size_in_bytes": 1149
+      },
+      {
+        "_path": "lib/R/library/callr/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "d8653318ee46eeb56d40e583d1b4416f7f4d3d96ae9231dfa4d0ecee5a5d3c70",
+        "sha256_in_prefix": "d8653318ee46eeb56d40e583d1b4416f7f4d3d96ae9231dfa4d0ecee5a5d3c70",
+        "size_in_bytes": 563
+      },
+      {
+        "_path": "lib/R/library/callr/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "34cfe7e936023cbad689fb82794e37b90db12c74d908197d8c1ee38f2a8b9239",
+        "sha256_in_prefix": "34cfe7e936023cbad689fb82794e37b90db12c74d908197d8c1ee38f2a8b9239",
+        "size_in_bytes": 4139
+      },
+      {
+        "_path": "lib/R/library/callr/R/callr",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/callr/R/callr.rdb",
+        "path_type": "hardlink",
+        "sha256": "651a9f3c9d9954566897182a884a6b1c0ac3c904aa06c89cd6d5bb5a9bffced9",
+        "sha256_in_prefix": "651a9f3c9d9954566897182a884a6b1c0ac3c904aa06c89cd6d5bb5a9bffced9",
+        "size_in_bytes": 183459
+      },
+      {
+        "_path": "lib/R/library/callr/R/callr.rdx",
+        "path_type": "hardlink",
+        "sha256": "308112d8ad2f6dc7950cbec4f6894d971d37e85790b0a698bd7c1d775d104e35",
+        "sha256_in_prefix": "308112d8ad2f6dc7950cbec4f6894d971d37e85790b0a698bd7c1d775d104e35",
+        "size_in_bytes": 1478
+      },
+      {
+        "_path": "lib/R/library/callr/_pkgdown.yml",
+        "path_type": "hardlink",
+        "sha256": "b62701682225b8f4265916463751044f3a0a2af4c9e0dec8b0824dd9c21d7f49",
+        "sha256_in_prefix": "b62701682225b8f4265916463751044f3a0a2af4c9e0dec8b0824dd9c21d7f49",
+        "size_in_bytes": 638
+      },
+      {
+        "_path": "lib/R/library/callr/developer-notes.md",
+        "path_type": "hardlink",
+        "sha256": "7ce4c49717f53112ea6a7182a3a6149c39226a38595527a9f86ca60cc9022d48",
+        "sha256_in_prefix": "7ce4c49717f53112ea6a7182a3a6149c39226a38595527a9f86ca60cc9022d48",
+        "size_in_bytes": 2002
+      },
+      {
+        "_path": "lib/R/library/callr/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "71de7d338eeca74dc56c9e050704e4efe2c9de90bc66d60e027ca2a680ac7883",
+        "sha256_in_prefix": "71de7d338eeca74dc56c9e050704e4efe2c9de90bc66d60e027ca2a680ac7883",
+        "size_in_bytes": 682
+      },
+      {
+        "_path": "lib/R/library/callr/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "c88169cd751f116f20d79cd676bcbd43cbf7ace456d5b35566d18ec5d2c3b6f5",
+        "sha256_in_prefix": "c88169cd751f116f20d79cd676bcbd43cbf7ace456d5b35566d18ec5d2c3b6f5",
+        "size_in_bytes": 309
+      },
+      {
+        "_path": "lib/R/library/callr/help/callr.rdb",
+        "path_type": "hardlink",
+        "sha256": "444e24b8db119182bfa44079dd653555680f857bb755d2d0fbb341f6444c663f",
+        "sha256_in_prefix": "444e24b8db119182bfa44079dd653555680f857bb755d2d0fbb341f6444c663f",
+        "size_in_bytes": 61662
+      },
+      {
+        "_path": "lib/R/library/callr/help/callr.rdx",
+        "path_type": "hardlink",
+        "sha256": "32bb751e068425dfc0af804229fdfce14c61438d93e5974a244d0d77f721399a",
+        "sha256_in_prefix": "32bb751e068425dfc0af804229fdfce14c61438d93e5974a244d0d77f721399a",
+        "size_in_bytes": 651
+      },
+      {
+        "_path": "lib/R/library/callr/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "731a35a4ccbdfdc9ad27c1faf6636cd8da250db2b64c7904ab80a37daa68dad4",
+        "sha256_in_prefix": "731a35a4ccbdfdc9ad27c1faf6636cd8da250db2b64c7904ab80a37daa68dad4",
+        "size_in_bytes": 327
+      },
+      {
+        "_path": "lib/R/library/callr/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "7bd051237ea7ce13be08874f30e06c22297f610b5b6cc83228cf92d146bae8fb",
+        "sha256_in_prefix": "7bd051237ea7ce13be08874f30e06c22297f610b5b6cc83228cf92d146bae8fb",
+        "size_in_bytes": 3879
+      },
+      {
+        "_path": "lib/R/library/callr/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/callr/html/callr.html",
+        "path_type": "hardlink",
+        "sha256": "80c03e6312a925c34a4917cfcf2f04faf539a5bb7c1b31ad41b17a913e02c282",
+        "sha256_in_prefix": "80c03e6312a925c34a4917cfcf2f04faf539a5bb7c1b31ad41b17a913e02c282",
+        "size_in_bytes": 834
+      },
+      {
+        "_path": "lib/R/library/callr/html/convert_and_check_my_args.html",
+        "path_type": "hardlink",
+        "sha256": "c7b00a74b345aaa47eaea66ebd26aab3b9f3456c55d440d6ae6a02609498525f",
+        "sha256_in_prefix": "c7b00a74b345aaa47eaea66ebd26aab3b9f3456c55d440d6ae6a02609498525f",
+        "size_in_bytes": 1589
+      },
+      {
+        "_path": "lib/R/library/callr/html/default_repos.html",
+        "path_type": "hardlink",
+        "sha256": "b6046071b00155c2347621e244e88fba70c5794106bdf1136cf253b69807d23b",
+        "sha256_in_prefix": "b6046071b00155c2347621e244e88fba70c5794106bdf1136cf253b69807d23b",
+        "size_in_bytes": 1241
+      },
+      {
+        "_path": "lib/R/library/callr/html/get_result.html",
+        "path_type": "hardlink",
+        "sha256": "097d1a76cc1a18f2a343e96a418a50afbf62699d8d86e399007330cba0d262d0",
+        "sha256_in_prefix": "097d1a76cc1a18f2a343e96a418a50afbf62699d8d86e399007330cba0d262d0",
+        "size_in_bytes": 1590
+      },
+      {
+        "_path": "lib/R/library/callr/html/make_error.html",
+        "path_type": "hardlink",
+        "sha256": "333f00689bd7f326ea9eb179715de975cbf0879c259671c1e62d5bb0fe085c2f",
+        "sha256_in_prefix": "333f00689bd7f326ea9eb179715de975cbf0879c259671c1e62d5bb0fe085c2f",
+        "size_in_bytes": 1403
+      },
+      {
+        "_path": "lib/R/library/callr/html/r.html",
+        "path_type": "hardlink",
+        "sha256": "f5ce4087d17e79f0941a56fe85d29d361125e420caa3cbe57d37cded166fe0b1",
+        "sha256_in_prefix": "f5ce4087d17e79f0941a56fe85d29d361125e420caa3cbe57d37cded166fe0b1",
+        "size_in_bytes": 9411
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_bg.html",
+        "path_type": "hardlink",
+        "sha256": "2c62ce9366f09367fd34cb004dfdc93fd7247f82dc9960d9da57dc1f75e10fe1",
+        "sha256_in_prefix": "2c62ce9366f09367fd34cb004dfdc93fd7247f82dc9960d9da57dc1f75e10fe1",
+        "size_in_bytes": 5425
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_copycat.html",
+        "path_type": "hardlink",
+        "sha256": "c60d64c58983ad6fcab2ca23f0cb7e7e351fd948fefd4ceb588e839391993eca",
+        "sha256_in_prefix": "c60d64c58983ad6fcab2ca23f0cb7e7e351fd948fefd4ceb588e839391993eca",
+        "size_in_bytes": 3737
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_process.html",
+        "path_type": "hardlink",
+        "sha256": "7acdbf6dd0550ac30537681f73f35aa314ff55d628986c336093cf3a636b1fba",
+        "sha256_in_prefix": "7acdbf6dd0550ac30537681f73f35aa314ff55d628986c336093cf3a636b1fba",
+        "size_in_bytes": 2095
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_process_options.html",
+        "path_type": "hardlink",
+        "sha256": "843245d2d5c7c97ef266e8240c1155020a0f9c59aa92166cdd2b41c6cd61a19a",
+        "sha256_in_prefix": "843245d2d5c7c97ef266e8240c1155020a0f9c59aa92166cdd2b41c6cd61a19a",
+        "size_in_bytes": 1657
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_session.html",
+        "path_type": "hardlink",
+        "sha256": "2a1df44f58a71f8671b4f0259a6cf22b7ce55d2a01a15f44b38713f24659d468",
+        "sha256_in_prefix": "2a1df44f58a71f8671b4f0259a6cf22b7ce55d2a01a15f44b38713f24659d468",
+        "size_in_bytes": 4198
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_session_options.html",
+        "path_type": "hardlink",
+        "sha256": "2640e859be49f2189c1638a65e1a686a6aa3a562a7e156afd867e28f3913aa80",
+        "sha256_in_prefix": "2640e859be49f2189c1638a65e1a686a6aa3a562a7e156afd867e28f3913aa80",
+        "size_in_bytes": 1084
+      },
+      {
+        "_path": "lib/R/library/callr/html/r_vanilla.html",
+        "path_type": "hardlink",
+        "sha256": "45cbd0a691622f1cec0b134c477485df1607e5f41ad9e4631c5d372521de34e3",
+        "sha256_in_prefix": "45cbd0a691622f1cec0b134c477485df1607e5f41ad9e4631c5d372521de34e3",
+        "size_in_bytes": 3784
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd.html",
+        "path_type": "hardlink",
+        "sha256": "40559420153e2dddb4c4a3a53bcf20ace41e8dcd3d4230ce1818b252c26d06b1",
+        "sha256_in_prefix": "40559420153e2dddb4c4a3a53bcf20ace41e8dcd3d4230ce1818b252c26d06b1",
+        "size_in_bytes": 6670
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd_bg.html",
+        "path_type": "hardlink",
+        "sha256": "be07ca63e6c14cd7822a6e6f86d7145cd268d546956399a5e1422e6654e20e11",
+        "sha256_in_prefix": "be07ca63e6c14cd7822a6e6f86d7145cd268d546956399a5e1422e6654e20e11",
+        "size_in_bytes": 3931
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd_copycat.html",
+        "path_type": "hardlink",
+        "sha256": "bd6acdd76886a58428047172756abcb691dfa6f7e4caa701de0dd59b20664707",
+        "sha256_in_prefix": "bd6acdd76886a58428047172756abcb691dfa6f7e4caa701de0dd59b20664707",
+        "size_in_bytes": 2563
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd_process.html",
+        "path_type": "hardlink",
+        "sha256": "f9e492cec0778970334001378a5490b290beb43f4a1c9cf9c47f85ad00d44c28",
+        "sha256_in_prefix": "f9e492cec0778970334001378a5490b290beb43f4a1c9cf9c47f85ad00d44c28",
+        "size_in_bytes": 1559
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd_process_options.html",
+        "path_type": "hardlink",
+        "sha256": "5045265849ff78afac0696dbca1b670b039af5a0d78b26ba466b23c89e7f9a71",
+        "sha256_in_prefix": "5045265849ff78afac0696dbca1b670b039af5a0d78b26ba466b23c89e7f9a71",
+        "size_in_bytes": 1800
+      },
+      {
+        "_path": "lib/R/library/callr/html/rcmd_safe.html",
+        "path_type": "hardlink",
+        "sha256": "9124bfa12621c0c038fa3f88ca698a42b84e2d701bf0e72082cec60cebe4931c",
+        "sha256_in_prefix": "9124bfa12621c0c038fa3f88ca698a42b84e2d701bf0e72082cec60cebe4931c",
+        "size_in_bytes": 2394
+      },
+      {
+        "_path": "lib/R/library/callr/html/reexports.html",
+        "path_type": "hardlink",
+        "sha256": "fecff4a030e321cdb2348e5e805c6bb6b166fc1a7b01bde0350e9be4a8bc890f",
+        "sha256_in_prefix": "fecff4a030e321cdb2348e5e805c6bb6b166fc1a7b01bde0350e9be4a8bc890f",
+        "size_in_bytes": 1075
+      },
+      {
+        "_path": "lib/R/library/callr/html/rscript.html",
+        "path_type": "hardlink",
+        "sha256": "d94c86ca32fb4258e4e565d046e735d0e196961fdef22ea9263676a61d81e62e",
+        "sha256_in_prefix": "d94c86ca32fb4258e4e565d046e735d0e196961fdef22ea9263676a61d81e62e",
+        "size_in_bytes": 5409
+      },
+      {
+        "_path": "lib/R/library/callr/html/rscript_process.html",
+        "path_type": "hardlink",
+        "sha256": "1648f76870414ea8b503d0e09b004b3bf703a285b8102f81a0bdb8222c54f159",
+        "sha256_in_prefix": "1648f76870414ea8b503d0e09b004b3bf703a285b8102f81a0bdb8222c54f159",
+        "size_in_bytes": 1591
+      },
+      {
+        "_path": "lib/R/library/callr/html/rscript_process_options.html",
+        "path_type": "hardlink",
+        "sha256": "4b221b118c9a7c6574bd432ac0d5a6662412665767065de2ad08343355243659",
+        "sha256_in_prefix": "4b221b118c9a7c6574bd432ac0d5a6662412665767065de2ad08343355243659",
+        "size_in_bytes": 1712
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-callr==3.2.0=r36h6115d3f_0",
+  "sha256": "7687de5dc3bbf9aa64ad6dd6e9517d17ffb050872497bcaddc679171b7e874bc",
+  "size": 276049,
+  "subdir": "noarch",
+  "timestamp": 1557987785942,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-callr-3.2.0-r36h6115d3f_0.tar.bz2",
+  "version": "3.2.0"
+}

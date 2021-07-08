@@ -1,0 +1,284 @@
+{
+  "build": "r36h80f5a37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libgfortran-ng >=7,<8.0a0",
+    "libstdcxx-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-nloptr-1.2.1-r36h80f5a37_0",
+  "features": "",
+  "files": [
+    "lib/R/library/nloptr/CITATION",
+    "lib/R/library/nloptr/DESCRIPTION",
+    "lib/R/library/nloptr/INDEX",
+    "lib/R/library/nloptr/Meta/Rd.rds",
+    "lib/R/library/nloptr/Meta/features.rds",
+    "lib/R/library/nloptr/Meta/hsearch.rds",
+    "lib/R/library/nloptr/Meta/links.rds",
+    "lib/R/library/nloptr/Meta/nsInfo.rds",
+    "lib/R/library/nloptr/Meta/package.rds",
+    "lib/R/library/nloptr/Meta/vignette.rds",
+    "lib/R/library/nloptr/NAMESPACE",
+    "lib/R/library/nloptr/R/nloptr",
+    "lib/R/library/nloptr/R/nloptr.rdb",
+    "lib/R/library/nloptr/R/nloptr.rdx",
+    "lib/R/library/nloptr/doc/index.html",
+    "lib/R/library/nloptr/doc/nloptr.R",
+    "lib/R/library/nloptr/doc/nloptr.Rmd",
+    "lib/R/library/nloptr/doc/nloptr.pdf",
+    "lib/R/library/nloptr/help/AnIndex",
+    "lib/R/library/nloptr/help/aliases.rds",
+    "lib/R/library/nloptr/help/nloptr.rdb",
+    "lib/R/library/nloptr/help/nloptr.rdx",
+    "lib/R/library/nloptr/help/paths.rds",
+    "lib/R/library/nloptr/html/00Index.html",
+    "lib/R/library/nloptr/html/R.css",
+    "lib/R/library/nloptr/include/nlopt.f",
+    "lib/R/library/nloptr/include/nlopt.h",
+    "lib/R/library/nloptr/include/nlopt.hpp",
+    "lib/R/library/nloptr/include/nloptrAPI.h",
+    "lib/R/library/nloptr/libs/nloptr.so"
+  ],
+  "fn": "r-nloptr-1.2.1-r36h80f5a37_0.conda",
+  "legacy_bz2_md5": "e2750ee0ad13ba03ed64fc5ce45b9948",
+  "legacy_bz2_size": 480458,
+  "license": "LGPL-3",
+  "license_family": "LGPL",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-nloptr-1.2.1-r36h80f5a37_0",
+    "type": 1
+  },
+  "md5": "2354e72f346320d0c95709605071c75e",
+  "name": "r-nloptr",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-nloptr-1.2.1-r36h80f5a37_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/nloptr/CITATION",
+        "path_type": "hardlink",
+        "sha256": "0b24b32cae34f1fa4d387741f94adc23977d7b375d2558b08ee6727c2f4a99c8",
+        "sha256_in_prefix": "0b24b32cae34f1fa4d387741f94adc23977d7b375d2558b08ee6727c2f4a99c8",
+        "size_in_bytes": 780
+      },
+      {
+        "_path": "lib/R/library/nloptr/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "61b9c7f034e702861cf78f8fec888031d25d4abd2f6274c85ed615f7e58a17b8",
+        "sha256_in_prefix": "61b9c7f034e702861cf78f8fec888031d25d4abd2f6274c85ed615f7e58a17b8",
+        "size_in_bytes": 1332
+      },
+      {
+        "_path": "lib/R/library/nloptr/INDEX",
+        "path_type": "hardlink",
+        "sha256": "59035748416f965b62bab1c87647513ea090b0d4ab4464bf99bcf0c8670c40e8",
+        "sha256_in_prefix": "59035748416f965b62bab1c87647513ea090b0d4ab4464bf99bcf0c8670c40e8",
+        "size_in_bytes": 1649
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "bd45bab18ac59f1af63a0ffa598873b27f6f071250d26f1b2a58d33efd189bfa",
+        "sha256_in_prefix": "bd45bab18ac59f1af63a0ffa598873b27f6f071250d26f1b2a58d33efd189bfa",
+        "size_in_bytes": 1160
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "8527ff3affbdf3c82ea9a26699e516318078a94fd06fca6e310e10410526a62e",
+        "sha256_in_prefix": "8527ff3affbdf3c82ea9a26699e516318078a94fd06fca6e310e10410526a62e",
+        "size_in_bytes": 1177
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "1dc341f1bb0208aeb4703143221ee1beaa22a0e33d263edf286d6878863b5ca6",
+        "sha256_in_prefix": "1dc341f1bb0208aeb4703143221ee1beaa22a0e33d263edf286d6878863b5ca6",
+        "size_in_bytes": 431
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "fe6d7d8af31e8a13bf6b2b4e2ed473a1c27863abbee604a480db9cd37831b3a8",
+        "sha256_in_prefix": "fe6d7d8af31e8a13bf6b2b4e2ed473a1c27863abbee604a480db9cd37831b3a8",
+        "size_in_bytes": 464
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "121f0cb7e6daec8d7031bc12b2210e6db7050bb156341eecc86715a8a8d65db2",
+        "sha256_in_prefix": "121f0cb7e6daec8d7031bc12b2210e6db7050bb156341eecc86715a8a8d65db2",
+        "size_in_bytes": 1189
+      },
+      {
+        "_path": "lib/R/library/nloptr/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "d0df73659dbf35c1183653605991b3bd45410d8837df4253c1b2377943fe0d09",
+        "sha256_in_prefix": "d0df73659dbf35c1183653605991b3bd45410d8837df4253c1b2377943fe0d09",
+        "size_in_bytes": 224
+      },
+      {
+        "_path": "lib/R/library/nloptr/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "9630f559497cdaa57d46bb4a76a91d4a5ea0e71f719e690d794d360a4df48cb4",
+        "sha256_in_prefix": "9630f559497cdaa57d46bb4a76a91d4a5ea0e71f719e690d794d360a4df48cb4",
+        "size_in_bytes": 567
+      },
+      {
+        "_path": "lib/R/library/nloptr/R/nloptr",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/nloptr/R/nloptr.rdb",
+        "path_type": "hardlink",
+        "sha256": "36f7086bd0a81d53077250456cba681c22e0d82d71f93aa4c43bf48f08cfb900",
+        "sha256_in_prefix": "36f7086bd0a81d53077250456cba681c22e0d82d71f93aa4c43bf48f08cfb900",
+        "size_in_bytes": 63487
+      },
+      {
+        "_path": "lib/R/library/nloptr/R/nloptr.rdx",
+        "path_type": "hardlink",
+        "sha256": "73a01f5539afb528c52af345ec1a7818a8c5a33b51fef8ea144261c6aeb4ffcb",
+        "sha256_in_prefix": "73a01f5539afb528c52af345ec1a7818a8c5a33b51fef8ea144261c6aeb4ffcb",
+        "size_in_bytes": 682
+      },
+      {
+        "_path": "lib/R/library/nloptr/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "645fab6f632eacd567146a39b48fbe691b1041925de354848e109cd04ed1512b",
+        "sha256_in_prefix": "645fab6f632eacd567146a39b48fbe691b1041925de354848e109cd04ed1512b",
+        "size_in_bytes": 1346
+      },
+      {
+        "_path": "lib/R/library/nloptr/doc/nloptr.R",
+        "path_type": "hardlink",
+        "sha256": "548a754d9350db54a967834d9334d68ebc9ea8c76b5dfda59353a0e49db9310d",
+        "sha256_in_prefix": "548a754d9350db54a967834d9334d68ebc9ea8c76b5dfda59353a0e49db9310d",
+        "size_in_bytes": 5318
+      },
+      {
+        "_path": "lib/R/library/nloptr/doc/nloptr.Rmd",
+        "path_type": "hardlink",
+        "sha256": "7c6d0eebc3fd219f7fe0df4713508d10043fedd7ad335022aeff9942cd92892b",
+        "sha256_in_prefix": "7c6d0eebc3fd219f7fe0df4713508d10043fedd7ad335022aeff9942cd92892b",
+        "size_in_bytes": 14936
+      },
+      {
+        "_path": "lib/R/library/nloptr/doc/nloptr.pdf",
+        "path_type": "hardlink",
+        "sha256": "b10661d7a27563034bbc487f1514951655c9005155005649c1296e0867882de2",
+        "sha256_in_prefix": "b10661d7a27563034bbc487f1514951655c9005155005649c1296e0867882de2",
+        "size_in_bytes": 95655
+      },
+      {
+        "_path": "lib/R/library/nloptr/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "2ac3c5681947ed97719f1bdb70b2fca753cc0a32e6d66c7a13a6aa9253576f30",
+        "sha256_in_prefix": "2ac3c5681947ed97719f1bdb70b2fca753cc0a32e6d66c7a13a6aa9253576f30",
+        "size_in_bytes": 509
+      },
+      {
+        "_path": "lib/R/library/nloptr/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "b28dc4c6ecd4e16e2f92641762b54bfb3b0e687dd5de84c2628cfd56f9ff9c52",
+        "sha256_in_prefix": "b28dc4c6ecd4e16e2f92641762b54bfb3b0e687dd5de84c2628cfd56f9ff9c52",
+        "size_in_bytes": 281
+      },
+      {
+        "_path": "lib/R/library/nloptr/help/nloptr.rdb",
+        "path_type": "hardlink",
+        "sha256": "4293b1875514dde70082b03c48d59b5f9c35a830f286961341500971d44b1190",
+        "sha256_in_prefix": "4293b1875514dde70082b03c48d59b5f9c35a830f286961341500971d44b1190",
+        "size_in_bytes": 89228
+      },
+      {
+        "_path": "lib/R/library/nloptr/help/nloptr.rdx",
+        "path_type": "hardlink",
+        "sha256": "323e286155a8f9be3d1e58d8115ede3bd0f526a114e0c213f274246c930f3035",
+        "sha256_in_prefix": "323e286155a8f9be3d1e58d8115ede3bd0f526a114e0c213f274246c930f3035",
+        "size_in_bytes": 692
+      },
+      {
+        "_path": "lib/R/library/nloptr/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "d88cdcaa9febdfa3937feb6eb57c93b5d97d3b71d36384048764dcc961f79b51",
+        "sha256_in_prefix": "d88cdcaa9febdfa3937feb6eb57c93b5d97d3b71d36384048764dcc961f79b51",
+        "size_in_bytes": 356
+      },
+      {
+        "_path": "lib/R/library/nloptr/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "a131601346c69ab2edc87ceee77c2e4134b2242ab3d77b0ab354ff75d78b7660",
+        "sha256_in_prefix": "a131601346c69ab2edc87ceee77c2e4134b2242ab3d77b0ab354ff75d78b7660",
+        "size_in_bytes": 4292
+      },
+      {
+        "_path": "lib/R/library/nloptr/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/nloptr/include/nlopt.f",
+        "path_type": "hardlink",
+        "sha256": "1092bbda2af650e7a13044d230d53e678ca95b2159bb10af973c06b298240ec4",
+        "sha256_in_prefix": "1092bbda2af650e7a13044d230d53e678ca95b2159bb10af973c06b298240ec4",
+        "size_in_bytes": 3864
+      },
+      {
+        "_path": "lib/R/library/nloptr/include/nlopt.h",
+        "path_type": "hardlink",
+        "sha256": "a6eaee366c87b8292d89a486f3a45737d005c97a2969c45bb4ba5ff31b17e997",
+        "sha256_in_prefix": "a6eaee366c87b8292d89a486f3a45737d005c97a2969c45bb4ba5ff31b17e997",
+        "size_in_bytes": 13959
+      },
+      {
+        "_path": "lib/R/library/nloptr/include/nlopt.hpp",
+        "path_type": "hardlink",
+        "sha256": "6f2c962494bfbabcc393a42e0ba56b36892a3b6be18a4968f1fa5ac7ee53bb9b",
+        "sha256_in_prefix": "6f2c962494bfbabcc393a42e0ba56b36892a3b6be18a4968f1fa5ac7ee53bb9b",
+        "size_in_bytes": 21084
+      },
+      {
+        "_path": "lib/R/library/nloptr/include/nloptrAPI.h",
+        "path_type": "hardlink",
+        "sha256": "09a48fffc252ccff4a6ff35974cb80929c8d1b8ad1ecdee7f03e7cf13c2b11d7",
+        "sha256_in_prefix": "09a48fffc252ccff4a6ff35974cb80929c8d1b8ad1ecdee7f03e7cf13c2b11d7",
+        "size_in_bytes": 18427
+      },
+      {
+        "_path": "lib/R/library/nloptr/libs/nloptr.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-nloptr_1558429788186/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "adcac8071c65a1583ebfd9e51e4bd566497b32b9e7e3b7fbe0653fd03e4ba043",
+        "sha256_in_prefix": "07828327c908e946b6fb2008a15c39d85efba13ec7d2c56838facb4be61c2cff",
+        "size_in_bytes": 666400
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-nloptr==1.2.1=r36h80f5a37_0",
+  "sha256": "1150f1ba3d7b43a7c8f05d979b5a2c2f2cda2998a6e48f4fd404205bd930df0b",
+  "size": 448488,
+  "subdir": "linux-64",
+  "timestamp": 1558429887982,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-nloptr-1.2.1-r36h80f5a37_0.conda",
+  "version": "1.2.1"
+}

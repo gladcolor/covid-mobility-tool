@@ -1,0 +1,31 @@
+{
+  "build": "anacondar_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/_r-mutex-1.0.0-anacondar_1",
+  "features": "",
+  "files": [],
+  "fn": "_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "license": "BSD",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/_r-mutex-1.0.0-anacondar_1",
+    "type": 1
+  },
+  "md5": "7a225c91f31848a2f7211ca995b56902",
+  "name": "_r-mutex",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "_r-mutex==1.0.0=anacondar_1",
+  "sha256": "b0b461d246b9a2fc9820a0e212284819733bcf4222572fe2199948f22b2e72ec",
+  "size": 3486,
+  "subdir": "linux-64",
+  "timestamp": 1562083752862,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "version": "1.0.0"
+}

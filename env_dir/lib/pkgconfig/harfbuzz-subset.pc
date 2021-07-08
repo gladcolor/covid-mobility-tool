@@ -1,0 +1,12 @@
+prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+exec_prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+libdir=/media/gpu/easystore/covid-mobility-tool/env_dir/lib
+includedir=/media/gpu/easystore/covid-mobility-tool/env_dir/include
+
+Name: harfbuzz
+Description: HarfBuzz font subsetter
+Version: 1.8.8
+
+Requires: harfbuzz
+Libs: -L${libdir} -lharfbuzz-subset
+Cflags: -I${includedir}/harfbuzz

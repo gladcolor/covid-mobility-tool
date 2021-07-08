@@ -1,0 +1,357 @@
+{
+  "build": "r36ha65eedd_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libgfortran-ng >=7,<8.0a0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-foreach",
+    "r-matrix >=1.0_6",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-glmnet-2.0_16-r36ha65eedd_0",
+  "features": "",
+  "files": [
+    "lib/R/library/glmnet/CITATION",
+    "lib/R/library/glmnet/DESCRIPTION",
+    "lib/R/library/glmnet/INDEX",
+    "lib/R/library/glmnet/Meta/Rd.rds",
+    "lib/R/library/glmnet/Meta/data.rds",
+    "lib/R/library/glmnet/Meta/features.rds",
+    "lib/R/library/glmnet/Meta/hsearch.rds",
+    "lib/R/library/glmnet/Meta/links.rds",
+    "lib/R/library/glmnet/Meta/nsInfo.rds",
+    "lib/R/library/glmnet/Meta/package.rds",
+    "lib/R/library/glmnet/Meta/vignette.rds",
+    "lib/R/library/glmnet/NAMESPACE",
+    "lib/R/library/glmnet/R/glmnet",
+    "lib/R/library/glmnet/R/glmnet.rdb",
+    "lib/R/library/glmnet/R/glmnet.rdx",
+    "lib/R/library/glmnet/data/BinomialExample.RData",
+    "lib/R/library/glmnet/data/CVXResults.RData",
+    "lib/R/library/glmnet/data/CoxExample.RData",
+    "lib/R/library/glmnet/data/MultiGaussianExample.RData",
+    "lib/R/library/glmnet/data/MultinomialExample.RData",
+    "lib/R/library/glmnet/data/PoissonExample.RData",
+    "lib/R/library/glmnet/data/QuickStartExample.RData",
+    "lib/R/library/glmnet/data/SparseExample.RData",
+    "lib/R/library/glmnet/doc/Coxnet.R",
+    "lib/R/library/glmnet/doc/Coxnet.pdf",
+    "lib/R/library/glmnet/doc/Coxnet.rnw",
+    "lib/R/library/glmnet/doc/glmnet_beta.R",
+    "lib/R/library/glmnet/doc/glmnet_beta.Rmd",
+    "lib/R/library/glmnet/doc/glmnet_beta.pdf",
+    "lib/R/library/glmnet/doc/index.html",
+    "lib/R/library/glmnet/help/AnIndex",
+    "lib/R/library/glmnet/help/aliases.rds",
+    "lib/R/library/glmnet/help/glmnet.rdb",
+    "lib/R/library/glmnet/help/glmnet.rdx",
+    "lib/R/library/glmnet/help/paths.rds",
+    "lib/R/library/glmnet/html/00Index.html",
+    "lib/R/library/glmnet/html/R.css",
+    "lib/R/library/glmnet/libs/glmnet.so",
+    "lib/R/library/glmnet/mortran/glmnet5dp.m"
+  ],
+  "fn": "r-glmnet-2.0_16-r36ha65eedd_0.conda",
+  "legacy_bz2_md5": "6bd8eda434cf0d4467de1b8b03802aed",
+  "legacy_bz2_size": 1500821,
+  "license": "GPL-2",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-glmnet-2.0_16-r36ha65eedd_0",
+    "type": 1
+  },
+  "md5": "63b442629e173b5ce8efe3d9b1d9978c",
+  "name": "r-glmnet",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-glmnet-2.0_16-r36ha65eedd_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/glmnet/CITATION",
+        "path_type": "hardlink",
+        "sha256": "2c5229104d32b6623429babbada9d378b482f211115ceda83e69753d647b3166",
+        "sha256_in_prefix": "2c5229104d32b6623429babbada9d378b482f211115ceda83e69753d647b3166",
+        "size_in_bytes": 1741
+      },
+      {
+        "_path": "lib/R/library/glmnet/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "2c727a8d37a4c8871ee10a1cbec289935c8128ac2294dd4f27b23fb07f0b25fe",
+        "sha256_in_prefix": "2c727a8d37a4c8871ee10a1cbec289935c8128ac2294dd4f27b23fb07f0b25fe",
+        "size_in_bytes": 1152
+      },
+      {
+        "_path": "lib/R/library/glmnet/INDEX",
+        "path_type": "hardlink",
+        "sha256": "05d3e5bc765701f1f3c94581482dbe85ef69a211f21a1cb0663f422b1c1ae2d8",
+        "sha256_in_prefix": "05d3e5bc765701f1f3c94581482dbe85ef69a211f21a1cb0663f422b1c1ae2d8",
+        "size_in_bytes": 783
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "7ebde856d946e45e3c0936c101229042af84d484d46a5a4e49fd3b0f1aad10af",
+        "sha256_in_prefix": "7ebde856d946e45e3c0936c101229042af84d484d46a5a4e49fd3b0f1aad10af",
+        "size_in_bytes": 956
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/data.rds",
+        "path_type": "hardlink",
+        "sha256": "3a1cc67641d9fc2407e47a6a7684098cb380167e378972270bb792e829afe4cc",
+        "sha256_in_prefix": "3a1cc67641d9fc2407e47a6a7684098cb380167e378972270bb792e829afe4cc",
+        "size_in_bytes": 250
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "e9eac5180eb07fd25a5c0cdb270c2244217e73bf0c009d9ca5f155c2c9ce1406",
+        "sha256_in_prefix": "e9eac5180eb07fd25a5c0cdb270c2244217e73bf0c009d9ca5f155c2c9ce1406",
+        "size_in_bytes": 1100
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "3c08b5c1d9a9dd7e37e012e6742328c45b9c056f87444db0fbd2a3abe2d36da8",
+        "sha256_in_prefix": "3c08b5c1d9a9dd7e37e012e6742328c45b9c056f87444db0fbd2a3abe2d36da8",
+        "size_in_bytes": 550
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "998444a9d273ee0bcf00ee9d41871aaa97afde36ac53acdaf78ba9efc62474e2",
+        "sha256_in_prefix": "998444a9d273ee0bcf00ee9d41871aaa97afde36ac53acdaf78ba9efc62474e2",
+        "size_in_bytes": 720
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "7e2b2ac9c2d036e860e32cf7f1143d386e7ca06082317a34f904409c0228eb9a",
+        "sha256_in_prefix": "7e2b2ac9c2d036e860e32cf7f1143d386e7ca06082317a34f904409c0228eb9a",
+        "size_in_bytes": 1149
+      },
+      {
+        "_path": "lib/R/library/glmnet/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "772d144c7955a67928f9b71350fce46dea81fdc15a7e567ef6c466185b4c5131",
+        "sha256_in_prefix": "772d144c7955a67928f9b71350fce46dea81fdc15a7e567ef6c466185b4c5131",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "lib/R/library/glmnet/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "e04ae3118b7012394200d1455318a145216b3e71187ee7d49f78f0183ad0a71b",
+        "sha256_in_prefix": "e04ae3118b7012394200d1455318a145216b3e71187ee7d49f78f0183ad0a71b",
+        "size_in_bytes": 1428
+      },
+      {
+        "_path": "lib/R/library/glmnet/R/glmnet",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/glmnet/R/glmnet.rdb",
+        "path_type": "hardlink",
+        "sha256": "89bb52cae950e5861d5a8733e2faeb3362a3a79f9c8f9ac82a2d8e79cab5adb6",
+        "sha256_in_prefix": "89bb52cae950e5861d5a8733e2faeb3362a3a79f9c8f9ac82a2d8e79cab5adb6",
+        "size_in_bytes": 122138
+      },
+      {
+        "_path": "lib/R/library/glmnet/R/glmnet.rdx",
+        "path_type": "hardlink",
+        "sha256": "03b4e101f09aab73c2144ac7ce476cf0717935d1d2b44560187eff470e6aa69f",
+        "sha256_in_prefix": "03b4e101f09aab73c2144ac7ce476cf0717935d1d2b44560187eff470e6aa69f",
+        "size_in_bytes": 981
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/BinomialExample.RData",
+        "path_type": "hardlink",
+        "sha256": "fb7bbb6cf2973def269721d7e601f3de3ef1e266bd40e6be9a05ad94f08bba31",
+        "sha256_in_prefix": "fb7bbb6cf2973def269721d7e601f3de3ef1e266bd40e6be9a05ad94f08bba31",
+        "size_in_bytes": 23218
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/CVXResults.RData",
+        "path_type": "hardlink",
+        "sha256": "f9ef3cf76777e3eeaa6d8207b391f3dbd83894d0b8795af403015e138aa6f71d",
+        "sha256_in_prefix": "f9ef3cf76777e3eeaa6d8207b391f3dbd83894d0b8795af403015e138aa6f71d",
+        "size_in_bytes": 202
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/CoxExample.RData",
+        "path_type": "hardlink",
+        "sha256": "e264b2d09c8efb93ca720203a28e204409638b76c28ce753f53b5e103ac83e3d",
+        "sha256_in_prefix": "e264b2d09c8efb93ca720203a28e204409638b76c28ce753f53b5e103ac83e3d",
+        "size_in_bytes": 238741
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/MultiGaussianExample.RData",
+        "path_type": "hardlink",
+        "sha256": "a87f112003e96be420ec72f7a7ee005710d5725013f4e205d22b41f1ac431f71",
+        "sha256_in_prefix": "a87f112003e96be420ec72f7a7ee005710d5725013f4e205d22b41f1ac431f71",
+        "size_in_bytes": 18647
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/MultinomialExample.RData",
+        "path_type": "hardlink",
+        "sha256": "93a12fbaa6a525c942efa95c3952b6cb05946c8e9276ffc2b8d60806b4fca9a3",
+        "sha256_in_prefix": "93a12fbaa6a525c942efa95c3952b6cb05946c8e9276ffc2b8d60806b4fca9a3",
+        "size_in_bytes": 115682
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/PoissonExample.RData",
+        "path_type": "hardlink",
+        "sha256": "71cd6fc39631cfa8c9c773474ea5d2dc30d756bf41ffe1409f593ddd46073850",
+        "sha256_in_prefix": "71cd6fc39631cfa8c9c773474ea5d2dc30d756bf41ffe1409f593ddd46073850",
+        "size_in_bytes": 77450
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/QuickStartExample.RData",
+        "path_type": "hardlink",
+        "sha256": "54772b53668f445fae157bdac055792f90164200fdf81dab41d481d07020e82e",
+        "sha256_in_prefix": "54772b53668f445fae157bdac055792f90164200fdf81dab41d481d07020e82e",
+        "size_in_bytes": 16275
+      },
+      {
+        "_path": "lib/R/library/glmnet/data/SparseExample.RData",
+        "path_type": "hardlink",
+        "sha256": "ccb35850527b45ece4a2deb7c63b77cd1c0fa4c8e45b9bb53b1020e5379011ef",
+        "sha256_in_prefix": "ccb35850527b45ece4a2deb7c63b77cd1c0fa4c8e45b9bb53b1020e5379011ef",
+        "size_in_bytes": 3921
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/Coxnet.R",
+        "path_type": "hardlink",
+        "sha256": "ec9911e1d25e704fe033036f66f5062e8a7abe96b486b65450ca355ad796ddd9",
+        "sha256_in_prefix": "ec9911e1d25e704fe033036f66f5062e8a7abe96b486b65450ca355ad796ddd9",
+        "size_in_bytes": 1366
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/Coxnet.pdf",
+        "path_type": "hardlink",
+        "sha256": "db616069b5589b85913aadd6e30fd1b0e62a1c04a9e2c098385ab2f9c6c45bff",
+        "sha256_in_prefix": "db616069b5589b85913aadd6e30fd1b0e62a1c04a9e2c098385ab2f9c6c45bff",
+        "size_in_bytes": 99160
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/Coxnet.rnw",
+        "path_type": "hardlink",
+        "sha256": "2621dcac56ef5150d6dae2e9a01b99dda964b43b252d1d05e2b6d801b7d7047d",
+        "sha256_in_prefix": "2621dcac56ef5150d6dae2e9a01b99dda964b43b252d1d05e2b6d801b7d7047d",
+        "size_in_bytes": 3359
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/glmnet_beta.R",
+        "path_type": "hardlink",
+        "sha256": "77270c6d8e674ddd41076f3ce268f661b68ca465612bf28388ae729c35a79807",
+        "sha256_in_prefix": "77270c6d8e674ddd41076f3ce268f661b68ca465612bf28388ae729c35a79807",
+        "size_in_bytes": 12262
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/glmnet_beta.Rmd",
+        "path_type": "hardlink",
+        "sha256": "893b5c78ff1c1b3fb25c789b30e145058d42760da6658e20a0fc3767387d26ae",
+        "sha256_in_prefix": "893b5c78ff1c1b3fb25c789b30e145058d42760da6658e20a0fc3767387d26ae",
+        "size_in_bytes": 54259
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/glmnet_beta.pdf",
+        "path_type": "hardlink",
+        "sha256": "3ec9143f3cbcd56dbbdeb369312a22c3a0eb69f59568f11f4527606154d76f43",
+        "sha256_in_prefix": "3ec9143f3cbcd56dbbdeb369312a22c3a0eb69f59568f11f4527606154d76f43",
+        "size_in_bytes": 571335
+      },
+      {
+        "_path": "lib/R/library/glmnet/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "e91108cbf573b8492d54482c3ad4bf2554df9246c1ee246d2f1b1a1cf92f222a",
+        "sha256_in_prefix": "e91108cbf573b8492d54482c3ad4bf2554df9246c1ee246d2f1b1a1cf92f222a",
+        "size_in_bytes": 1815
+      },
+      {
+        "_path": "lib/R/library/glmnet/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "4edb1a6fb0ea6903bb6fcad90c824ae911aeeba02698baabd465c4d206ea8621",
+        "sha256_in_prefix": "4edb1a6fb0ea6903bb6fcad90c824ae911aeeba02698baabd465c4d206ea8621",
+        "size_in_bytes": 1567
+      },
+      {
+        "_path": "lib/R/library/glmnet/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "7570fde743a753512648becf75cd492675c495764a1d0e21dba70cd732055252",
+        "sha256_in_prefix": "7570fde743a753512648becf75cd492675c495764a1d0e21dba70cd732055252",
+        "size_in_bytes": 493
+      },
+      {
+        "_path": "lib/R/library/glmnet/help/glmnet.rdb",
+        "path_type": "hardlink",
+        "sha256": "e5916d7a347d31d3f64499d0ebc5f472dc9f922ea0cecd7086497b482411ad7c",
+        "sha256_in_prefix": "e5916d7a347d31d3f64499d0ebc5f472dc9f922ea0cecd7086497b482411ad7c",
+        "size_in_bytes": 58638
+      },
+      {
+        "_path": "lib/R/library/glmnet/help/glmnet.rdx",
+        "path_type": "hardlink",
+        "sha256": "c88505512d31e2d1ee3bea8df1da23f6ee77fc2ec1867b4cb2c303d022afb19e",
+        "sha256_in_prefix": "c88505512d31e2d1ee3bea8df1da23f6ee77fc2ec1867b4cb2c303d022afb19e",
+        "size_in_bytes": 424
+      },
+      {
+        "_path": "lib/R/library/glmnet/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "3faf3a929c29bd8600bbf076b3ab9e29ddc9924e3349e289f76e2175025b6b2f",
+        "sha256_in_prefix": "3faf3a929c29bd8600bbf076b3ab9e29ddc9924e3349e289f76e2175025b6b2f",
+        "size_in_bytes": 253
+      },
+      {
+        "_path": "lib/R/library/glmnet/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "b7121a07817639b6bd417d36f167927f55bcb72426ba8dad4ffca18d30a163c0",
+        "sha256_in_prefix": "b7121a07817639b6bd417d36f167927f55bcb72426ba8dad4ffca18d30a163c0",
+        "size_in_bytes": 4150
+      },
+      {
+        "_path": "lib/R/library/glmnet/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/glmnet/libs/glmnet.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-glmnet_1558444370277/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "971a24242f270fad430f6b4e9bcb53a447d62681ab92e67d11c8b6e23fac28ce",
+        "sha256_in_prefix": "06c0a7a713411c908c243b4be71a5abf1efbc9cfa07471a543e46f3ad61565c1",
+        "size_in_bytes": 276472
+      },
+      {
+        "_path": "lib/R/library/glmnet/mortran/glmnet5dp.m",
+        "path_type": "hardlink",
+        "sha256": "0f4286a2dfab49979359f2c5be4545b5656a92cfa18326a037c23ed9a4f2ad59",
+        "sha256_in_prefix": "0f4286a2dfab49979359f2c5be4545b5656a92cfa18326a037c23ed9a4f2ad59",
+        "size_in_bytes": 151929
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-glmnet==2.0_16=r36ha65eedd_0",
+  "sha256": "cce3332849f3167996d95e87980fc7686b48f22d1a841d1a8eeead15a84e4dbb",
+  "size": 1443188,
+  "subdir": "linux-64",
+  "timestamp": 1558444406802,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-glmnet-2.0_16-r36ha65eedd_0.conda",
+  "version": "2.0_16"
+}

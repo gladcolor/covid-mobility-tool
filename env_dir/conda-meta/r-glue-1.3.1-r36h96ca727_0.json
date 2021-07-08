@@ -1,0 +1,290 @@
+{
+  "build": "r36h96ca727_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-glue-1.3.1-r36h96ca727_0",
+  "features": "",
+  "files": [
+    "lib/R/library/glue/DESCRIPTION",
+    "lib/R/library/glue/INDEX",
+    "lib/R/library/glue/LICENSE",
+    "lib/R/library/glue/Meta/Rd.rds",
+    "lib/R/library/glue/Meta/features.rds",
+    "lib/R/library/glue/Meta/hsearch.rds",
+    "lib/R/library/glue/Meta/links.rds",
+    "lib/R/library/glue/Meta/nsInfo.rds",
+    "lib/R/library/glue/Meta/package.rds",
+    "lib/R/library/glue/Meta/vignette.rds",
+    "lib/R/library/glue/NAMESPACE",
+    "lib/R/library/glue/NEWS.md",
+    "lib/R/library/glue/R/glue",
+    "lib/R/library/glue/R/glue.rdb",
+    "lib/R/library/glue/R/glue.rdx",
+    "lib/R/library/glue/doc/index.html",
+    "lib/R/library/glue/doc/speed.R",
+    "lib/R/library/glue/doc/speed.Rmd",
+    "lib/R/library/glue/doc/speed.html",
+    "lib/R/library/glue/doc/transformers.R",
+    "lib/R/library/glue/doc/transformers.Rmd",
+    "lib/R/library/glue/doc/transformers.html",
+    "lib/R/library/glue/help/AnIndex",
+    "lib/R/library/glue/help/aliases.rds",
+    "lib/R/library/glue/help/figures/logo.png",
+    "lib/R/library/glue/help/glue.rdb",
+    "lib/R/library/glue/help/glue.rdx",
+    "lib/R/library/glue/help/paths.rds",
+    "lib/R/library/glue/html/00Index.html",
+    "lib/R/library/glue/html/R.css",
+    "lib/R/library/glue/libs/glue.so"
+  ],
+  "fn": "r-glue-1.3.1-r36h96ca727_0.conda",
+  "legacy_bz2_md5": "53db25199865c90c058996196b024b64",
+  "legacy_bz2_size": 168754,
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-glue-1.3.1-r36h96ca727_0",
+    "type": 1
+  },
+  "md5": "c42ca43ef4547b5ef12b5799360e87a8",
+  "name": "r-glue",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-glue-1.3.1-r36h96ca727_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/glue/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "516e8f8fc4f6b0f3b56a57b4332370b3143181312508d98acc129dce52d58c0b",
+        "sha256_in_prefix": "516e8f8fc4f6b0f3b56a57b4332370b3143181312508d98acc129dce52d58c0b",
+        "size_in_bytes": 1202
+      },
+      {
+        "_path": "lib/R/library/glue/INDEX",
+        "path_type": "hardlink",
+        "sha256": "c0b74c1df50495fbeeb67cbcf84009db61170ef660290a477672157268a10e04",
+        "sha256_in_prefix": "c0b74c1df50495fbeeb67cbcf84009db61170ef660290a477672157268a10e04",
+        "size_in_bytes": 409
+      },
+      {
+        "_path": "lib/R/library/glue/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "2b2bb51c3562ee3d0923fa86a9f9b63f7b7f1294e89ee8b0e2801e145644b9b2",
+        "sha256_in_prefix": "2b2bb51c3562ee3d0923fa86a9f9b63f7b7f1294e89ee8b0e2801e145644b9b2",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "877f173dd2f21bd44a98b133b392b498b56d67c58848c32a5b06b1a67cf77f5e",
+        "sha256_in_prefix": "877f173dd2f21bd44a98b133b392b498b56d67c58848c32a5b06b1a67cf77f5e",
+        "size_in_bytes": 550
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "2c2e86bc5f44dda60767d097eb83a6620190eac817937b606977baf48229db6c",
+        "sha256_in_prefix": "2c2e86bc5f44dda60767d097eb83a6620190eac817937b606977baf48229db6c",
+        "size_in_bytes": 565
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "bb032bf2a963314e646172de21845f2d9745c6102c2ecd407cbf875a1bb0debf",
+        "sha256_in_prefix": "bb032bf2a963314e646172de21845f2d9745c6102c2ecd407cbf875a1bb0debf",
+        "size_in_bytes": 280
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "bc028f745b95eae427332242839e6c898e3b786d0beba67b717e3cea002a97bc",
+        "sha256_in_prefix": "bc028f745b95eae427332242839e6c898e3b786d0beba67b717e3cea002a97bc",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "a86b7e15340fbf53a321319857e349e0309947c5716baaea0b5aaea81d72ab7f",
+        "sha256_in_prefix": "a86b7e15340fbf53a321319857e349e0309947c5716baaea0b5aaea81d72ab7f",
+        "size_in_bytes": 1240
+      },
+      {
+        "_path": "lib/R/library/glue/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "a60f7c1bbf46def7c91eb5b4b832a5ecc958c1d81d0d4655de20336046bac38e",
+        "sha256_in_prefix": "a60f7c1bbf46def7c91eb5b4b832a5ecc958c1d81d0d4655de20336046bac38e",
+        "size_in_bytes": 225
+      },
+      {
+        "_path": "lib/R/library/glue/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "662b45e1ab36d4673e302d178650cb2659c01fd0e399a2c8dfba5122cbf345af",
+        "sha256_in_prefix": "662b45e1ab36d4673e302d178650cb2659c01fd0e399a2c8dfba5122cbf345af",
+        "size_in_bytes": 571
+      },
+      {
+        "_path": "lib/R/library/glue/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "ebf0d7f429a78ab9e597f656227603dc99a38f597717aced783077712e8b04ae",
+        "sha256_in_prefix": "ebf0d7f429a78ab9e597f656227603dc99a38f597717aced783077712e8b04ae",
+        "size_in_bytes": 3015
+      },
+      {
+        "_path": "lib/R/library/glue/R/glue",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/glue/R/glue.rdb",
+        "path_type": "hardlink",
+        "sha256": "b1e7ce8eb3cf89003f0861750ad9c2559b3a2a8586f1f338bed3cfef5464c61e",
+        "sha256_in_prefix": "b1e7ce8eb3cf89003f0861750ad9c2559b3a2a8586f1f338bed3cfef5464c61e",
+        "size_in_bytes": 28866
+      },
+      {
+        "_path": "lib/R/library/glue/R/glue.rdx",
+        "path_type": "hardlink",
+        "sha256": "d804b827624bc3689d155ae0aa2c7ba23c93c37901ae4fdffeadb031f49ba29c",
+        "sha256_in_prefix": "d804b827624bc3689d155ae0aa2c7ba23c93c37901ae4fdffeadb031f49ba29c",
+        "size_in_bytes": 831
+      },
+      {
+        "_path": "lib/R/library/glue/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "fae70f2b49041acb9ec7fcd5ed88a004f8e7a7766251e91c82aca5b64b39d8b9",
+        "sha256_in_prefix": "fae70f2b49041acb9ec7fcd5ed88a004f8e7a7766251e91c82aca5b64b39d8b9",
+        "size_in_bytes": 1768
+      },
+      {
+        "_path": "lib/R/library/glue/doc/speed.R",
+        "path_type": "hardlink",
+        "sha256": "899a39651cd8fd21842fb4d59ef1fe6e2d90cf4c8ed50c14160ce2a98bb052e6",
+        "sha256_in_prefix": "899a39651cd8fd21842fb4d59ef1fe6e2d90cf4c8ed50c14160ce2a98bb052e6",
+        "size_in_bytes": 1563
+      },
+      {
+        "_path": "lib/R/library/glue/doc/speed.Rmd",
+        "path_type": "hardlink",
+        "sha256": "3f7057531ae871eb3c6ebdcc3605738c58f68d8a22623ab3060e6a3d5df397e3",
+        "sha256_in_prefix": "3f7057531ae871eb3c6ebdcc3605738c58f68d8a22623ab3060e6a3d5df397e3",
+        "size_in_bytes": 3630
+      },
+      {
+        "_path": "lib/R/library/glue/doc/speed.html",
+        "path_type": "hardlink",
+        "sha256": "81e203f965d965583decd8b74704bc3394fec5771ced302665f0bc36ffab0056",
+        "sha256_in_prefix": "81e203f965d965583decd8b74704bc3394fec5771ced302665f0bc36ffab0056",
+        "size_in_bytes": 57681
+      },
+      {
+        "_path": "lib/R/library/glue/doc/transformers.R",
+        "path_type": "hardlink",
+        "sha256": "721102b194ef0b241cd327146c427558e25bd7ab433dcee948a317ba702f5a75",
+        "sha256_in_prefix": "721102b194ef0b241cd327146c427558e25bd7ab433dcee948a317ba702f5a75",
+        "size_in_bytes": 3049
+      },
+      {
+        "_path": "lib/R/library/glue/doc/transformers.Rmd",
+        "path_type": "hardlink",
+        "sha256": "8ea022210cebecac9b23acb15a3d8c3b19257e63ba8a78799407582946dd7b0e",
+        "sha256_in_prefix": "8ea022210cebecac9b23acb15a3d8c3b19257e63ba8a78799407582946dd7b0e",
+        "size_in_bytes": 4737
+      },
+      {
+        "_path": "lib/R/library/glue/doc/transformers.html",
+        "path_type": "hardlink",
+        "sha256": "63f8ff5da1d646710c227eea61d08f65332ca93b674533bb98595a4d97d19252",
+        "sha256_in_prefix": "63f8ff5da1d646710c227eea61d08f65332ca93b674533bb98595a4d97d19252",
+        "size_in_bytes": 24811
+      },
+      {
+        "_path": "lib/R/library/glue/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "7deb7d19106ad9c97d76d9ec905fbb39eee63460d6e9040792653df73e74d464",
+        "sha256_in_prefix": "7deb7d19106ad9c97d76d9ec905fbb39eee63460d6e9040792653df73e74d464",
+        "size_in_bytes": 335
+      },
+      {
+        "_path": "lib/R/library/glue/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "bc9cc3236bbc0e445ef0c3531a236791e1dcee872440eafe23a4f21109d45b51",
+        "sha256_in_prefix": "bc9cc3236bbc0e445ef0c3531a236791e1dcee872440eafe23a4f21109d45b51",
+        "size_in_bytes": 217
+      },
+      {
+        "_path": "lib/R/library/glue/help/figures/logo.png",
+        "path_type": "hardlink",
+        "sha256": "3a7f6f2ee7eaba9d632218c4c95e695b8730fa27a2f0e33de648aaa146149ea6",
+        "sha256_in_prefix": "3a7f6f2ee7eaba9d632218c4c95e695b8730fa27a2f0e33de648aaa146149ea6",
+        "size_in_bytes": 47931
+      },
+      {
+        "_path": "lib/R/library/glue/help/glue.rdb",
+        "path_type": "hardlink",
+        "sha256": "1473fee795d46260114414f2052d569b7cbe97794591ccb76932aa533160985f",
+        "sha256_in_prefix": "1473fee795d46260114414f2052d569b7cbe97794591ccb76932aa533160985f",
+        "size_in_bytes": 20391
+      },
+      {
+        "_path": "lib/R/library/glue/help/glue.rdx",
+        "path_type": "hardlink",
+        "sha256": "8e9d88e3dbb063c8f83c6a448369208cb5ba1d8632398d497b9d334ecafd1a00",
+        "sha256_in_prefix": "8e9d88e3dbb063c8f83c6a448369208cb5ba1d8632398d497b9d334ecafd1a00",
+        "size_in_bytes": 364
+      },
+      {
+        "_path": "lib/R/library/glue/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "4595d85f99d6228382fbdf5c9eeab7896e99a51efd4155b7f3b0eddbcbd843f5",
+        "sha256_in_prefix": "4595d85f99d6228382fbdf5c9eeab7896e99a51efd4155b7f3b0eddbcbd843f5",
+        "size_in_bytes": 235
+      },
+      {
+        "_path": "lib/R/library/glue/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "6eaa8717a465ae67277ff545210d4129633650f4d20d0f67c74e43950e53b97d",
+        "sha256_in_prefix": "6eaa8717a465ae67277ff545210d4129633650f4d20d0f67c74e43950e53b97d",
+        "size_in_bytes": 2595
+      },
+      {
+        "_path": "lib/R/library/glue/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/glue/libs/glue.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-glue_1558095663541/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "8b2b467c56fc99d373642600b4cfa9b4cd42e9abbc1a7b630fa9a445f3da3671",
+        "sha256_in_prefix": "26897c0acd497d6dec96891b67799da2f4e84f4e2195f2c3f9c3efd0a76c6847",
+        "size_in_bytes": 21552
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-glue==1.3.1=r36h96ca727_0",
+  "sha256": "e7125cb332341c1ba7ade1d1d4959ae7f72fcb2e00071ea95395cf8e180bbee4",
+  "size": 158165,
+  "subdir": "linux-64",
+  "timestamp": 1558095686882,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-glue-1.3.1-r36h96ca727_0.conda",
+  "version": "1.3.1"
+}

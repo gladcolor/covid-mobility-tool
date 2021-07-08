@@ -1,0 +1,286 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "pandas",
+    "python",
+    "setuptools"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/vincent-0.4.4-py_1",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/installed-files.txt",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/requires.txt",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/vincent-0.4.4-py2.7.egg-info/zip-safe",
+    "lib/python3.7/site-packages/vincent/__init__.py",
+    "lib/python3.7/site-packages/vincent/_compat.py",
+    "lib/python3.7/site-packages/vincent/axes.py",
+    "lib/python3.7/site-packages/vincent/charts.py",
+    "lib/python3.7/site-packages/vincent/colors.py",
+    "lib/python3.7/site-packages/vincent/core.py",
+    "lib/python3.7/site-packages/vincent/data.py",
+    "lib/python3.7/site-packages/vincent/legends.py",
+    "lib/python3.7/site-packages/vincent/marks.py",
+    "lib/python3.7/site-packages/vincent/properties.py",
+    "lib/python3.7/site-packages/vincent/scales.py",
+    "lib/python3.7/site-packages/vincent/transforms.py",
+    "lib/python3.7/site-packages/vincent/values.py",
+    "lib/python3.7/site-packages/vincent/vega_template.html",
+    "lib/python3.7/site-packages/vincent/visualization.py",
+    "lib/python3.7/site-packages/vincent/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/_compat.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/axes.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/charts.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/colors.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/core.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/data.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/legends.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/marks.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/properties.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/scales.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/transforms.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/values.cpython-37.pyc",
+    "lib/python3.7/site-packages/vincent/__pycache__/visualization.cpython-37.pyc"
+  ],
+  "fn": "vincent-0.4.4-py_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/vincent-0.4.4-py_1",
+    "type": 1
+  },
+  "md5": "082d436cd013869ce52835805839fc6e",
+  "name": "vincent",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/vincent-0.4.4-py_1.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "e702c734deba9736807d85c0bcb00bb53606dda05ea76ee4aedec949f37277f8",
+        "sha256_in_prefix": "e702c734deba9736807d85c0bcb00bb53606dda05ea76ee4aedec949f37277f8",
+        "size_in_bytes": 1450
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "f1567133cbbc02ded9a0f0b847b0a2976932a720997c1dec5a012ee17f93119a",
+        "sha256_in_prefix": "f1567133cbbc02ded9a0f0b847b0a2976932a720997c1dec5a012ee17f93119a",
+        "size_in_bytes": 512
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "1a5934a8e5c8d560551dc76e62b8d89b00f8da322540d67b18dfd8e5bc06882a",
+        "sha256_in_prefix": "1a5934a8e5c8d560551dc76e62b8d89b00f8da322540d67b18dfd8e5bc06882a",
+        "size_in_bytes": 734
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "fd6f8460ec2c463c8eedfa9a900217d09defbef0aacd2599f33e51b675c8483c",
+        "sha256_in_prefix": "fd6f8460ec2c463c8eedfa9a900217d09defbef0aacd2599f33e51b675c8483c",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "737a5dd5884c4abee2b4ee76fae2ecbf5d0798da2da2cf47cf7e39b26fe491a3",
+        "sha256_in_prefix": "737a5dd5884c4abee2b4ee76fae2ecbf5d0798da2da2cf47cf7e39b26fe491a3",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/vincent-0.4.4-py2.7.egg-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/vincent/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0548c417c7a3b46f01fd738e911027b29d33bff0895d90971c440c1b9fce1316",
+        "sha256_in_prefix": "0548c417c7a3b46f01fd738e911027b29d33bff0895d90971c440c1b9fce1316",
+        "size_in_bytes": 793
+      },
+      {
+        "_path": "site-packages/vincent/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "9b1f3122ee2d99a5109490be8c5d06b9b39957d6c85193bb28d2fc1a621aea47",
+        "sha256_in_prefix": "9b1f3122ee2d99a5109490be8c5d06b9b39957d6c85193bb28d2fc1a621aea47",
+        "size_in_bytes": 209
+      },
+      {
+        "_path": "site-packages/vincent/axes.py",
+        "path_type": "hardlink",
+        "sha256": "129245409ce68682efc07380c17f11ba9487503356de4892a25dc6a71458af14",
+        "sha256_in_prefix": "129245409ce68682efc07380c17f11ba9487503356de4892a25dc6a71458af14",
+        "size_in_bytes": 4148
+      },
+      {
+        "_path": "site-packages/vincent/charts.py",
+        "path_type": "hardlink",
+        "sha256": "9a7bf3015564b1e8731b86f7fe931587b884dce752a8580919153ca732791825",
+        "sha256_in_prefix": "9a7bf3015564b1e8731b86f7fe931587b884dce752a8580919153ca732791825",
+        "size_in_bytes": 20398
+      },
+      {
+        "_path": "site-packages/vincent/colors.py",
+        "path_type": "hardlink",
+        "sha256": "1c6957e0536c46ef83835cb73fa094d73916b522286c6fa8a32f5ad59f11ddff",
+        "sha256_in_prefix": "1c6957e0536c46ef83835cb73fa094d73916b522286c6fa8a32f5ad59f11ddff",
+        "size_in_bytes": 5609
+      },
+      {
+        "_path": "site-packages/vincent/core.py",
+        "path_type": "hardlink",
+        "sha256": "e96520ae18254650d784c5b7e888ad59675e6c668fef1de904c3dcd6513a7a5d",
+        "sha256_in_prefix": "e96520ae18254650d784c5b7e888ad59675e6c668fef1de904c3dcd6513a7a5d",
+        "size_in_bytes": 13550
+      },
+      {
+        "_path": "site-packages/vincent/data.py",
+        "path_type": "hardlink",
+        "sha256": "a53b64479853afdfb087fc85f03b1d577333ab872a82d991b6ac37c32112f599",
+        "sha256_in_prefix": "a53b64479853afdfb087fc85f03b1d577333ab872a82d991b6ac37c32112f599",
+        "size_in_bytes": 16927
+      },
+      {
+        "_path": "site-packages/vincent/legends.py",
+        "path_type": "hardlink",
+        "sha256": "4a9727578e4d8263fe1427d57357dad149cdee6da2ca794e8565763c455392aa",
+        "sha256_in_prefix": "4a9727578e4d8263fe1427d57357dad149cdee6da2ca794e8565763c455392aa",
+        "size_in_bytes": 2425
+      },
+      {
+        "_path": "site-packages/vincent/marks.py",
+        "path_type": "hardlink",
+        "sha256": "672359e9f2ceb83b07cff281661304e975e0518156f303f95ec1c3679697fc48",
+        "sha256_in_prefix": "672359e9f2ceb83b07cff281661304e975e0518156f303f95ec1c3679697fc48",
+        "size_in_bytes": 3996
+      },
+      {
+        "_path": "site-packages/vincent/properties.py",
+        "path_type": "hardlink",
+        "sha256": "6e0a3d68c110e0c8a4cf3be5faccf6fae041900b96e150ae7bff9f4ce90668b1",
+        "sha256_in_prefix": "6e0a3d68c110e0c8a4cf3be5faccf6fae041900b96e150ae7bff9f4ce90668b1",
+        "size_in_bytes": 10555
+      },
+      {
+        "_path": "site-packages/vincent/scales.py",
+        "path_type": "hardlink",
+        "sha256": "2faf896af6e78ac148b5c244fb3edd1a55a44e34125f0a4f07498542859d55f7",
+        "sha256_in_prefix": "2faf896af6e78ac148b5c244fb3edd1a55a44e34125f0a4f07498542859d55f7",
+        "size_in_bytes": 5858
+      },
+      {
+        "_path": "site-packages/vincent/transforms.py",
+        "path_type": "hardlink",
+        "sha256": "0789977a1b141730d7fa9aa786ef3b78e48026853404a0e853046f220bc98a98",
+        "sha256_in_prefix": "0789977a1b141730d7fa9aa786ef3b78e48026853404a0e853046f220bc98a98",
+        "size_in_bytes": 12195
+      },
+      {
+        "_path": "site-packages/vincent/values.py",
+        "path_type": "hardlink",
+        "sha256": "2e638d1dd5ab07b01d2b0bc0d9c6774585bfb0eaa8d42ea19ec43f6ccfc991f6",
+        "sha256_in_prefix": "2e638d1dd5ab07b01d2b0bc0d9c6774585bfb0eaa8d42ea19ec43f6ccfc991f6",
+        "size_in_bytes": 2509
+      },
+      {
+        "_path": "site-packages/vincent/vega_template.html",
+        "path_type": "hardlink",
+        "sha256": "1370773beb3f23cbec7e63806f58cbd8da3705391b857545ba596a06d3c9392d",
+        "sha256_in_prefix": "1370773beb3f23cbec7e63806f58cbd8da3705391b857545ba596a06d3c9392d",
+        "size_in_bytes": 606
+      },
+      {
+        "_path": "site-packages/vincent/visualization.py",
+        "path_type": "hardlink",
+        "sha256": "3a31a116f6bcdeca777c176db31ca6ae1abb04d27a7e91b9d5183b8cfbe23433",
+        "sha256_in_prefix": "3a31a116f6bcdeca777c176db31ca6ae1abb04d27a7e91b9d5183b8cfbe23433",
+        "size_in_bytes": 14539
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/_compat.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/axes.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/charts.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/colors.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/core.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/data.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/legends.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/marks.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/properties.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/scales.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/transforms.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/values.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/vincent/__pycache__/visualization.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "vincent==0.4.4=py_1",
+  "sha256": "c195eeec39e482d0351f544d7e51d7f0a01afae86df3fac7becde67e3852eeab",
+  "size": 28371,
+  "subdir": "noarch",
+  "timestamp": 1531005256940,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/vincent-0.4.4-py_1.tar.bz2",
+  "version": "0.4.4"
+}

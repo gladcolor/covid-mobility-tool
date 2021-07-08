@@ -63,7 +63,7 @@ dependencies:
   - gcc_linux-64=7.3.0=h553295d_8
   - gdal=2.3.3=py37hbb2a789_0
   - geographiclib=1.50=py_0
-  - geopandas=0.5.0=py_3
+  - geopandas
   - geopy=1.18.1=py_0
   - geos=3.7.1=hf484d3e_1000
   - gettext=0.19.8.1=hc5be6a0_1002
@@ -157,7 +157,7 @@ dependencies:
   - openssl=1.1.1g=h516909a_0
   - osmnx=0.10=py_1
   - packaging=19.2=py_0
-  - pandas=0.24.0=py37hf484d3e_0
+  - pandas
   - pandoc=2.2.3.2=0
   - pandocfilters=1.4.2=py37_1
   - pango=1.42.4=h049681c_0
@@ -400,7 +400,7 @@ dependencies:
     - blis==0.4.1
     - catalogue==1.0.0
     - cymem==2.0.3
-    #- en-core-web-sm
+    - en-core-web-sm
     - filelock==3.0.12
     - flake8==3.8.3
     - gdown==3.12.2

@@ -1,0 +1,207 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "jinja2",
+    "python",
+    "setuptools",
+    "six"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/branca-0.3.1-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/LICENSE.txt",
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/branca-0.3.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/branca/__init__.py",
+    "lib/python3.7/site-packages/branca/_cnames.json",
+    "lib/python3.7/site-packages/branca/_schemes.json",
+    "lib/python3.7/site-packages/branca/_version.py",
+    "lib/python3.7/site-packages/branca/colormap.py",
+    "lib/python3.7/site-packages/branca/element.py",
+    "lib/python3.7/site-packages/branca/plugins/__init__.py",
+    "lib/python3.7/site-packages/branca/scheme_base_codes.json",
+    "lib/python3.7/site-packages/branca/scheme_info.json",
+    "lib/python3.7/site-packages/branca/templates/color_scale.js",
+    "lib/python3.7/site-packages/branca/utilities.py",
+    "lib/python3.7/site-packages/branca/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/branca/__pycache__/_version.cpython-37.pyc",
+    "lib/python3.7/site-packages/branca/__pycache__/colormap.cpython-37.pyc",
+    "lib/python3.7/site-packages/branca/__pycache__/element.cpython-37.pyc",
+    "lib/python3.7/site-packages/branca/plugins/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/branca/__pycache__/utilities.cpython-37.pyc"
+  ],
+  "fn": "branca-0.3.1-py_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/branca-0.3.1-py_0",
+    "type": 1
+  },
+  "md5": "d578d9c8f065254757b9fd22b617fef0",
+  "name": "branca",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/branca-0.3.1-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "16fdcc16aaffc41013de6079ef5b6c265e2401089b03c507cc26a72011558bab",
+        "sha256_in_prefix": "16fdcc16aaffc41013de6079ef5b6c265e2401089b03c507cc26a72011558bab",
+        "size_in_bytes": 1079
+      },
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "868c194ab889cc8ece07a5a9018629d8b8de2dca29312bed29182fdaebc63c96",
+        "sha256_in_prefix": "868c194ab889cc8ece07a5a9018629d8b8de2dca29312bed29182fdaebc63c96",
+        "size_in_bytes": 3597
+      },
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "9f62697dda3bfe9e69cdecabe6951290462ded6026a6e93da774076964514dd3",
+        "sha256_in_prefix": "9f62697dda3bfe9e69cdecabe6951290462ded6026a6e93da774076964514dd3",
+        "size_in_bytes": 1497
+      },
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "8c8fb2e5987e5785b01ca51ce926dda46cd7ba3bea9f160d70a4b3e8e30b309a",
+        "sha256_in_prefix": "8c8fb2e5987e5785b01ca51ce926dda46cd7ba3bea9f160d70a4b3e8e30b309a",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "site-packages/branca-0.3.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ca95504f038da1bf91a3d61a167239252a771627bb8281b59073be38e3af8051",
+        "sha256_in_prefix": "ca95504f038da1bf91a3d61a167239252a771627bb8281b59073be38e3af8051",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/branca/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ce641c19124fd24580029ce1396aa53a301d7662b5f32d5306b320595621b36e",
+        "sha256_in_prefix": "ce641c19124fd24580029ce1396aa53a301d7662b5f32d5306b320595621b36e",
+        "size_in_bytes": 277
+      },
+      {
+        "_path": "site-packages/branca/_cnames.json",
+        "path_type": "hardlink",
+        "sha256": "d3c165fe3da0ebe3ff2a31b9779b74e36677ef267d5ca7adb8bf5d80e25cfe8c",
+        "sha256_in_prefix": "d3c165fe3da0ebe3ff2a31b9779b74e36677ef267d5ca7adb8bf5d80e25cfe8c",
+        "size_in_bytes": 3539
+      },
+      {
+        "_path": "site-packages/branca/_schemes.json",
+        "path_type": "hardlink",
+        "sha256": "320fe6810c8ee25f67054c43659533c0b4b015dc5a5263662128e7c35ea6307d",
+        "sha256_in_prefix": "320fe6810c8ee25f67054c43659533c0b4b015dc5a5263662128e7c35ea6307d",
+        "size_in_bytes": 20559
+      },
+      {
+        "_path": "site-packages/branca/_version.py",
+        "path_type": "hardlink",
+        "sha256": "270b65813293a6666ab1848e23cd327b10d91c73a93a1571645d55e629077a37",
+        "sha256_in_prefix": "270b65813293a6666ab1848e23cd327b10d91c73a93a1571645d55e629077a37",
+        "size_in_bytes": 497
+      },
+      {
+        "_path": "site-packages/branca/colormap.py",
+        "path_type": "hardlink",
+        "sha256": "ce032e71eeb5e2dd2d6848f183057f865c043f8e6511ecfe5dd8ffec7c4fa049",
+        "sha256_in_prefix": "ce032e71eeb5e2dd2d6848f183057f865c043f8e6511ecfe5dd8ffec7c4fa049",
+        "size_in_bytes": 17017
+      },
+      {
+        "_path": "site-packages/branca/element.py",
+        "path_type": "hardlink",
+        "sha256": "9f0acfeabe58ac30dc65c5a32a327d2b4f7454825d7e2ce7386383e4ae58f408",
+        "sha256_in_prefix": "9f0acfeabe58ac30dc65c5a32a327d2b4f7454825d7e2ce7386383e4ae58f408",
+        "size_in_bytes": 21519
+      },
+      {
+        "_path": "site-packages/branca/plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9293cc19195203e673a4649371ec5b0335968defeebacb7e8308025ad12eeb40",
+        "sha256_in_prefix": "9293cc19195203e673a4649371ec5b0335968defeebacb7e8308025ad12eeb40",
+        "size_in_bytes": 128
+      },
+      {
+        "_path": "site-packages/branca/scheme_base_codes.json",
+        "path_type": "hardlink",
+        "sha256": "630dbe4509d68536c8790b6b54ae50982853874404dc5499e36baf0e080112b9",
+        "sha256_in_prefix": "630dbe4509d68536c8790b6b54ae50982853874404dc5499e36baf0e080112b9",
+        "size_in_bytes": 328
+      },
+      {
+        "_path": "site-packages/branca/scheme_info.json",
+        "path_type": "hardlink",
+        "sha256": "63b39e392982d323df5e292d1d44bf7e8020c058e252c50f8d7b3e95a3a03d07",
+        "sha256_in_prefix": "63b39e392982d323df5e292d1d44bf7e8020c058e252c50f8d7b3e95a3a03d07",
+        "size_in_bytes": 664
+      },
+      {
+        "_path": "site-packages/branca/templates/color_scale.js",
+        "path_type": "hardlink",
+        "sha256": "7265b65ca8ed9fdb42bd39b309076dbd3f0350adbe149d5bac2224e409f5a52a",
+        "sha256_in_prefix": "7265b65ca8ed9fdb42bd39b309076dbd3f0350adbe149d5bac2224e409f5a52a",
+        "size_in_bytes": 2228
+      },
+      {
+        "_path": "site-packages/branca/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "10215ddfa3db2c134f594cb1605eb6ee6a8f60d274abf7ecf73ceebb0e7b4cb5",
+        "sha256_in_prefix": "10215ddfa3db2c134f594cb1605eb6ee6a8f60d274abf7ecf73ceebb0e7b4cb5",
+        "size_in_bytes": 13790
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/__pycache__/_version.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/__pycache__/colormap.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/__pycache__/element.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/plugins/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/branca/__pycache__/utilities.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "branca==0.3.1=py_0",
+  "sha256": "24eb334e3c9324e455ca91154a41dbefef31c370f86dc854fc4892dcf64f070a",
+  "size": 25906,
+  "subdir": "noarch",
+  "timestamp": 1541504065766,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/branca-0.3.1-py_0.tar.bz2",
+  "version": "0.3.1"
+}

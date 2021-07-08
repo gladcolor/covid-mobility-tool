@@ -1,0 +1,1263 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-dplyr",
+    "r-generics",
+    "r-glue",
+    "r-gower",
+    "r-ipred",
+    "r-lubridate",
+    "r-magrittr",
+    "r-matrix",
+    "r-purrr >=0.2.3",
+    "r-rcpproll",
+    "r-rlang >=0.3.0.1",
+    "r-tibble",
+    "r-tidyr",
+    "r-tidyselect >=0.1.1",
+    "r-timedate",
+    "r-withr",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-recipes-0.1.5-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/recipes/DESCRIPTION",
+    "lib/R/library/recipes/INDEX",
+    "lib/R/library/recipes/MD5",
+    "lib/R/library/recipes/Meta/Rd.rds",
+    "lib/R/library/recipes/Meta/data.rds",
+    "lib/R/library/recipes/Meta/features.rds",
+    "lib/R/library/recipes/Meta/hsearch.rds",
+    "lib/R/library/recipes/Meta/links.rds",
+    "lib/R/library/recipes/Meta/nsInfo.rds",
+    "lib/R/library/recipes/Meta/package.rds",
+    "lib/R/library/recipes/Meta/vignette.rds",
+    "lib/R/library/recipes/NAMESPACE",
+    "lib/R/library/recipes/NEWS.md",
+    "lib/R/library/recipes/R/recipes",
+    "lib/R/library/recipes/R/recipes.rdb",
+    "lib/R/library/recipes/R/recipes.rdx",
+    "lib/R/library/recipes/data/Rdata.rdb",
+    "lib/R/library/recipes/data/Rdata.rds",
+    "lib/R/library/recipes/data/Rdata.rdx",
+    "lib/R/library/recipes/data/datalist",
+    "lib/R/library/recipes/doc/Custom_Steps.R",
+    "lib/R/library/recipes/doc/Custom_Steps.Rmd",
+    "lib/R/library/recipes/doc/Custom_Steps.html",
+    "lib/R/library/recipes/doc/Dummies.R",
+    "lib/R/library/recipes/doc/Dummies.Rmd",
+    "lib/R/library/recipes/doc/Dummies.html",
+    "lib/R/library/recipes/doc/Ordering.Rmd",
+    "lib/R/library/recipes/doc/Ordering.html",
+    "lib/R/library/recipes/doc/Roles.R",
+    "lib/R/library/recipes/doc/Roles.Rmd",
+    "lib/R/library/recipes/doc/Roles.html",
+    "lib/R/library/recipes/doc/Selecting_Variables.R",
+    "lib/R/library/recipes/doc/Selecting_Variables.Rmd",
+    "lib/R/library/recipes/doc/Selecting_Variables.html",
+    "lib/R/library/recipes/doc/Simple_Example.R",
+    "lib/R/library/recipes/doc/Simple_Example.Rmd",
+    "lib/R/library/recipes/doc/Simple_Example.html",
+    "lib/R/library/recipes/doc/Skipping.R",
+    "lib/R/library/recipes/doc/Skipping.Rmd",
+    "lib/R/library/recipes/doc/Skipping.html",
+    "lib/R/library/recipes/doc/index.html",
+    "lib/R/library/recipes/help/AnIndex",
+    "lib/R/library/recipes/help/aliases.rds",
+    "lib/R/library/recipes/help/paths.rds",
+    "lib/R/library/recipes/help/recipes.rdb",
+    "lib/R/library/recipes/help/recipes.rdx",
+    "lib/R/library/recipes/html/00Index.html",
+    "lib/R/library/recipes/html/R.css",
+    "lib/R/library/recipes/html/Smithsonian.html",
+    "lib/R/library/recipes/html/add_step.html",
+    "lib/R/library/recipes/html/bake.html",
+    "lib/R/library/recipes/html/biomass.html",
+    "lib/R/library/recipes/html/check_cols.html",
+    "lib/R/library/recipes/html/check_missing.html",
+    "lib/R/library/recipes/html/check_name.html",
+    "lib/R/library/recipes/html/check_range.html",
+    "lib/R/library/recipes/html/check_type.html",
+    "lib/R/library/recipes/html/covers.html",
+    "lib/R/library/recipes/html/credit_data.html",
+    "lib/R/library/recipes/html/detect_step.html",
+    "lib/R/library/recipes/html/discretize.html",
+    "lib/R/library/recipes/html/fixed.html",
+    "lib/R/library/recipes/html/formula.recipe.html",
+    "lib/R/library/recipes/html/fully_trained.html",
+    "lib/R/library/recipes/html/has_role.html",
+    "lib/R/library/recipes/html/juice.html",
+    "lib/R/library/recipes/html/names0.html",
+    "lib/R/library/recipes/html/okc.html",
+    "lib/R/library/recipes/html/prep.html",
+    "lib/R/library/recipes/html/prepper.html",
+    "lib/R/library/recipes/html/print.recipe.html",
+    "lib/R/library/recipes/html/rand_id.html",
+    "lib/R/library/recipes/html/recipe.html",
+    "lib/R/library/recipes/html/recipes-internal.html",
+    "lib/R/library/recipes/html/recipes.html",
+    "lib/R/library/recipes/html/recipes_pkg_check.html",
+    "lib/R/library/recipes/html/reexports.html",
+    "lib/R/library/recipes/html/roles.html",
+    "lib/R/library/recipes/html/selections.html",
+    "lib/R/library/recipes/html/step.html",
+    "lib/R/library/recipes/html/step_BoxCox.html",
+    "lib/R/library/recipes/html/step_YeoJohnson.html",
+    "lib/R/library/recipes/html/step_arrange.html",
+    "lib/R/library/recipes/html/step_bagimpute.html",
+    "lib/R/library/recipes/html/step_bin2factor.html",
+    "lib/R/library/recipes/html/step_bs.html",
+    "lib/R/library/recipes/html/step_center.html",
+    "lib/R/library/recipes/html/step_classdist.html",
+    "lib/R/library/recipes/html/step_corr.html",
+    "lib/R/library/recipes/html/step_count.html",
+    "lib/R/library/recipes/html/step_date.html",
+    "lib/R/library/recipes/html/step_depth.html",
+    "lib/R/library/recipes/html/step_discretize.html",
+    "lib/R/library/recipes/html/step_downsample.html",
+    "lib/R/library/recipes/html/step_dummy.html",
+    "lib/R/library/recipes/html/step_factor2string.html",
+    "lib/R/library/recipes/html/step_filter.html",
+    "lib/R/library/recipes/html/step_geodist.html",
+    "lib/R/library/recipes/html/step_holiday.html",
+    "lib/R/library/recipes/html/step_hyperbolic.html",
+    "lib/R/library/recipes/html/step_ica.html",
+    "lib/R/library/recipes/html/step_integer.html",
+    "lib/R/library/recipes/html/step_interact.html",
+    "lib/R/library/recipes/html/step_intercept.html",
+    "lib/R/library/recipes/html/step_inverse.html",
+    "lib/R/library/recipes/html/step_invlogit.html",
+    "lib/R/library/recipes/html/step_isomap.html",
+    "lib/R/library/recipes/html/step_knnimpute.html",
+    "lib/R/library/recipes/html/step_kpca.html",
+    "lib/R/library/recipes/html/step_lag.html",
+    "lib/R/library/recipes/html/step_lincomb.html",
+    "lib/R/library/recipes/html/step_log.html",
+    "lib/R/library/recipes/html/step_logit.html",
+    "lib/R/library/recipes/html/step_lowerimpute.html",
+    "lib/R/library/recipes/html/step_meanimpute.html",
+    "lib/R/library/recipes/html/step_medianimpute.html",
+    "lib/R/library/recipes/html/step_modeimpute.html",
+    "lib/R/library/recipes/html/step_mutate.html",
+    "lib/R/library/recipes/html/step_naomit.html",
+    "lib/R/library/recipes/html/step_nnmf.html",
+    "lib/R/library/recipes/html/step_novel.html",
+    "lib/R/library/recipes/html/step_ns.html",
+    "lib/R/library/recipes/html/step_num2factor.html",
+    "lib/R/library/recipes/html/step_nzv.html",
+    "lib/R/library/recipes/html/step_ordinalscore.html",
+    "lib/R/library/recipes/html/step_other.html",
+    "lib/R/library/recipes/html/step_pca.html",
+    "lib/R/library/recipes/html/step_pls.html",
+    "lib/R/library/recipes/html/step_poly.html",
+    "lib/R/library/recipes/html/step_profile.html",
+    "lib/R/library/recipes/html/step_range.html",
+    "lib/R/library/recipes/html/step_ratio.html",
+    "lib/R/library/recipes/html/step_regex.html",
+    "lib/R/library/recipes/html/step_relu.html",
+    "lib/R/library/recipes/html/step_rm.html",
+    "lib/R/library/recipes/html/step_rollimpute.html",
+    "lib/R/library/recipes/html/step_sample.html",
+    "lib/R/library/recipes/html/step_scale.html",
+    "lib/R/library/recipes/html/step_shuffle.html",
+    "lib/R/library/recipes/html/step_slice.html",
+    "lib/R/library/recipes/html/step_spatialsign.html",
+    "lib/R/library/recipes/html/step_sqrt.html",
+    "lib/R/library/recipes/html/step_string2factor.html",
+    "lib/R/library/recipes/html/step_unorder.html",
+    "lib/R/library/recipes/html/step_upsample.html",
+    "lib/R/library/recipes/html/step_window.html",
+    "lib/R/library/recipes/html/step_zv.html",
+    "lib/R/library/recipes/html/summary.recipe.html",
+    "lib/R/library/recipes/html/terms_select.html",
+    "lib/R/library/recipes/html/tidy.recipe.html",
+    "lib/R/library/recipes/html/update.step.html"
+  ],
+  "fn": "r-recipes-0.1.5-r36h6115d3f_0.tar.bz2",
+  "license": "GPL-2",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-recipes-0.1.5-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "3a1c30e7795ecee16d244ce7ffb7914b",
+  "name": "r-recipes",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-recipes-0.1.5-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/recipes/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "13d693b966a223f7ebf7b6e3e683315a4c02141e9eb616007e2bc86f2890e6d7",
+        "sha256_in_prefix": "13d693b966a223f7ebf7b6e3e683315a4c02141e9eb616007e2bc86f2890e6d7",
+        "size_in_bytes": 1552
+      },
+      {
+        "_path": "lib/R/library/recipes/INDEX",
+        "path_type": "hardlink",
+        "sha256": "52a4cc7789a791287d563ade0da81e34b38a885df475f848ad99d7645dde9139",
+        "sha256_in_prefix": "52a4cc7789a791287d563ade0da81e34b38a885df475f848ad99d7645dde9139",
+        "size_in_bytes": 5576
+      },
+      {
+        "_path": "lib/R/library/recipes/MD5",
+        "path_type": "hardlink",
+        "sha256": "c1ee490062ef17fa51106165d3e6673732f838de100022994701f9e71e695ecb",
+        "sha256_in_prefix": "c1ee490062ef17fa51106165d3e6673732f838de100022994701f9e71e695ecb",
+        "size_in_bytes": 8257
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "feb152806d596a46d98226d78b54e231af2124b7d693404ded3b1a2adcfe5457",
+        "sha256_in_prefix": "feb152806d596a46d98226d78b54e231af2124b7d693404ded3b1a2adcfe5457",
+        "size_in_bytes": 4484
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/data.rds",
+        "path_type": "hardlink",
+        "sha256": "a1e93ea73a2e6f9e145a3ea6d8f15c67de4503691a417527d8c0269fe1f6706a",
+        "sha256_in_prefix": "a1e93ea73a2e6f9e145a3ea6d8f15c67de4503691a417527d8c0269fe1f6706a",
+        "size_in_bytes": 177
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "abc7b4d47652c632ac4db22104c4f15768c44e43e7793a35a975e4ecb643d99d",
+        "sha256_in_prefix": "abc7b4d47652c632ac4db22104c4f15768c44e43e7793a35a975e4ecb643d99d",
+        "size_in_bytes": 4418
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "8b57f8899d173ee7946b91f880d8bf915ef8a2c0e0522a2be48b47c1bd1617c8",
+        "sha256_in_prefix": "8b57f8899d173ee7946b91f880d8bf915ef8a2c0e0522a2be48b47c1bd1617c8",
+        "size_in_bytes": 2136
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "726e5bd4232b43fad5e388c8d8a4e66bad7673a9075b09e067060a72e2bbf858",
+        "sha256_in_prefix": "726e5bd4232b43fad5e388c8d8a4e66bad7673a9075b09e067060a72e2bbf858",
+        "size_in_bytes": 1928
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "ea14c5a0ad4f73dd4694cc787c92648759029f7e17b7d2cb48be11a5f75adb9c",
+        "sha256_in_prefix": "ea14c5a0ad4f73dd4694cc787c92648759029f7e17b7d2cb48be11a5f75adb9c",
+        "size_in_bytes": 1577
+      },
+      {
+        "_path": "lib/R/library/recipes/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "76447d653163c2328e2326a069689da67177786e2051ffb3e712c56823c25d12",
+        "sha256_in_prefix": "76447d653163c2328e2326a069689da67177786e2051ffb3e712c56823c25d12",
+        "size_in_bytes": 378
+      },
+      {
+        "_path": "lib/R/library/recipes/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "92cab25aa3d6241a06c8d623a318259b5c166f6344efba1e03983621e776c7c9",
+        "sha256_in_prefix": "92cab25aa3d6241a06c8d623a318259b5c166f6344efba1e03983621e776c7c9",
+        "size_in_bytes": 10811
+      },
+      {
+        "_path": "lib/R/library/recipes/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "6049a87cd1054eeb68551fb8b00ada5a5c7799625c756cf9f21d54588e41e6ae",
+        "sha256_in_prefix": "6049a87cd1054eeb68551fb8b00ada5a5c7799625c756cf9f21d54588e41e6ae",
+        "size_in_bytes": 12266
+      },
+      {
+        "_path": "lib/R/library/recipes/R/recipes",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/recipes/R/recipes.rdb",
+        "path_type": "hardlink",
+        "sha256": "342b5fb56476a8cffa5bc27f602a8c408454e144bb8fe6f703b6a4655ecf958c",
+        "sha256_in_prefix": "342b5fb56476a8cffa5bc27f602a8c408454e144bb8fe6f703b6a4655ecf958c",
+        "size_in_bytes": 446479
+      },
+      {
+        "_path": "lib/R/library/recipes/R/recipes.rdx",
+        "path_type": "hardlink",
+        "sha256": "a58681456e41269d52cff7e9865344acff4d7039c1298110efeedbcaf3f4be04",
+        "sha256_in_prefix": "a58681456e41269d52cff7e9865344acff4d7039c1298110efeedbcaf3f4be04",
+        "size_in_bytes": 6971
+      },
+      {
+        "_path": "lib/R/library/recipes/data/Rdata.rdb",
+        "path_type": "hardlink",
+        "sha256": "b646cb92d84e1317c201d17129e23ad30572fb9a9311d76c856d693e84a7b871",
+        "sha256_in_prefix": "b646cb92d84e1317c201d17129e23ad30572fb9a9311d76c856d693e84a7b871",
+        "size_in_bytes": 372758
+      },
+      {
+        "_path": "lib/R/library/recipes/data/Rdata.rds",
+        "path_type": "hardlink",
+        "sha256": "8e2c13fdf636a882cd0c0043c418dc8c725a05cdcb466ed45b5896fd235ebd40",
+        "sha256_in_prefix": "8e2c13fdf636a882cd0c0043c418dc8c725a05cdcb466ed45b5896fd235ebd40",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "lib/R/library/recipes/data/Rdata.rdx",
+        "path_type": "hardlink",
+        "sha256": "4069e57f62232e9b756780eb130b699feb291ddfe7be3ed8a82f8b913329aff2",
+        "sha256_in_prefix": "4069e57f62232e9b756780eb130b699feb291ddfe7be3ed8a82f8b913329aff2",
+        "size_in_bytes": 216
+      },
+      {
+        "_path": "lib/R/library/recipes/data/datalist",
+        "path_type": "hardlink",
+        "sha256": "ff32e91f4e50b34b7c60e62e8b52aeff6d226f1f7b5e663b5f9b2b4660289961",
+        "sha256_in_prefix": "ff32e91f4e50b34b7c60e62e8b52aeff6d226f1f7b5e663b5f9b2b4660289961",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Custom_Steps.R",
+        "path_type": "hardlink",
+        "sha256": "152297c09f8266a0040d200c4806c2ad4dbb160810b87caffde78004792cb7e2",
+        "sha256_in_prefix": "152297c09f8266a0040d200c4806c2ad4dbb160810b87caffde78004792cb7e2",
+        "size_in_bytes": 5076
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Custom_Steps.Rmd",
+        "path_type": "hardlink",
+        "sha256": "09d0f6593d464bd222beb9d7307a884bdb6bebe0c2aab911bbb3fbcb752d6d28",
+        "sha256_in_prefix": "09d0f6593d464bd222beb9d7307a884bdb6bebe0c2aab911bbb3fbcb752d6d28",
+        "size_in_bytes": 11383
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Custom_Steps.html",
+        "path_type": "hardlink",
+        "sha256": "cc35240227fc61c2ef4478be7a439c92e4efd20d63d378e4abcfc2cbf4c9c58d",
+        "sha256_in_prefix": "cc35240227fc61c2ef4478be7a439c92e4efd20d63d378e4abcfc2cbf4c9c58d",
+        "size_in_bytes": 218449
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Dummies.R",
+        "path_type": "hardlink",
+        "sha256": "665c546000fc8e4fc987cc0a8855a608b57684f8630cde95fb8d31c343e9d3c7",
+        "sha256_in_prefix": "665c546000fc8e4fc987cc0a8855a608b57684f8630cde95fb8d31c343e9d3c7",
+        "size_in_bytes": 3470
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Dummies.Rmd",
+        "path_type": "hardlink",
+        "sha256": "6030be277c1e566da5c552d1c6431668ec8df1a6808338a5e8de0384bf239f87",
+        "sha256_in_prefix": "6030be277c1e566da5c552d1c6431668ec8df1a6808338a5e8de0384bf239f87",
+        "size_in_bytes": 11145
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Dummies.html",
+        "path_type": "hardlink",
+        "sha256": "7f9240596bf8a0e5ac90f856e03c7cba8eab57f6aa9500f1a8146de8c1bcf3b7",
+        "sha256_in_prefix": "7f9240596bf8a0e5ac90f856e03c7cba8eab57f6aa9500f1a8146de8c1bcf3b7",
+        "size_in_bytes": 49648
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Ordering.Rmd",
+        "path_type": "hardlink",
+        "sha256": "66d4c852e1c97dc749eee10bd8157a30d75d9c027b24291f899c5ec618e23aed",
+        "sha256_in_prefix": "66d4c852e1c97dc749eee10bd8157a30d75d9c027b24291f899c5ec618e23aed",
+        "size_in_bytes": 1519
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Ordering.html",
+        "path_type": "hardlink",
+        "sha256": "92681335c1172ca8075f0e3e3560b24225bb2bdaf9891b5dd64a0c08a4f8a0ab",
+        "sha256_in_prefix": "92681335c1172ca8075f0e3e3560b24225bb2bdaf9891b5dd64a0c08a4f8a0ab",
+        "size_in_bytes": 6768
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Roles.R",
+        "path_type": "hardlink",
+        "sha256": "830ab5ac9faa88512bd961ae66a565efb82f77a2bfe1e5c2d234cdc8e9b3682e",
+        "sha256_in_prefix": "830ab5ac9faa88512bd961ae66a565efb82f77a2bfe1e5c2d234cdc8e9b3682e",
+        "size_in_bytes": 2332
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Roles.Rmd",
+        "path_type": "hardlink",
+        "sha256": "a9edce596e29f29f26e4281b082aa99fe29159a2abbf983bb56b560074d3e81e",
+        "sha256_in_prefix": "a9edce596e29f29f26e4281b082aa99fe29159a2abbf983bb56b560074d3e81e",
+        "size_in_bytes": 3929
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Roles.html",
+        "path_type": "hardlink",
+        "sha256": "4d6ae8ab12008f6fe060d108eff3afff8509dbbf0626f2cd566e1cc050acdcc9",
+        "sha256_in_prefix": "4d6ae8ab12008f6fe060d108eff3afff8509dbbf0626f2cd566e1cc050acdcc9",
+        "size_in_bytes": 33760
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Selecting_Variables.R",
+        "path_type": "hardlink",
+        "sha256": "3d7c5665c8a95ff4449109cc791160ab2818ae12641d6acd8fb7bda284034701",
+        "sha256_in_prefix": "3d7c5665c8a95ff4449109cc791160ab2818ae12641d6acd8fb7bda284034701",
+        "size_in_bytes": 1069
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Selecting_Variables.Rmd",
+        "path_type": "hardlink",
+        "sha256": "953025c94a8dd0b476d50334ed0958232e6635c14cf49ad5191baf8dd19472ca",
+        "sha256_in_prefix": "953025c94a8dd0b476d50334ed0958232e6635c14cf49ad5191baf8dd19472ca",
+        "size_in_bytes": 2328
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Selecting_Variables.html",
+        "path_type": "hardlink",
+        "sha256": "c3613c45683d87fcba3f4e5af676bc247efb0a490ff82c6c0fbec8f4d75a3424",
+        "sha256_in_prefix": "c3613c45683d87fcba3f4e5af676bc247efb0a490ff82c6c0fbec8f4d75a3424",
+        "size_in_bytes": 19682
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Simple_Example.R",
+        "path_type": "hardlink",
+        "sha256": "2b9bd3e5e71b49e058d3d0ce48ba0e684a760e915c12a85b0de4580dd70ce2b6",
+        "sha256_in_prefix": "2b9bd3e5e71b49e058d3d0ce48ba0e684a760e915c12a85b0de4580dd70ce2b6",
+        "size_in_bytes": 2452
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Simple_Example.Rmd",
+        "path_type": "hardlink",
+        "sha256": "937a93d8b806b2771e24bb4084304e571b4e5e9ff6e5b6be0b4e036d21668eca",
+        "sha256_in_prefix": "937a93d8b806b2771e24bb4084304e571b4e5e9ff6e5b6be0b4e036d21668eca",
+        "size_in_bytes": 7168
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Simple_Example.html",
+        "path_type": "hardlink",
+        "sha256": "00f91eee2bd200f4243240a86cb6b19082262b0db8950858860e4656f7aff96d",
+        "sha256_in_prefix": "00f91eee2bd200f4243240a86cb6b19082262b0db8950858860e4656f7aff96d",
+        "size_in_bytes": 36462
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Skipping.R",
+        "path_type": "hardlink",
+        "sha256": "66e7ab6885efaeccc3fc0a33992e88966565ac7998fdd046ee3dea88bd53c01e",
+        "sha256_in_prefix": "66e7ab6885efaeccc3fc0a33992e88966565ac7998fdd046ee3dea88bd53c01e",
+        "size_in_bytes": 647
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Skipping.Rmd",
+        "path_type": "hardlink",
+        "sha256": "1752c4254f817c46dd8b0d430e250bc86bedef0369fe0fab7e185cf537189350",
+        "sha256_in_prefix": "1752c4254f817c46dd8b0d430e250bc86bedef0369fe0fab7e185cf537189350",
+        "size_in_bytes": 3811
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/Skipping.html",
+        "path_type": "hardlink",
+        "sha256": "9e598631e55e4b73e92aa6e71fe5eaee1d30c819475ce8aa88e774e9eabd3fa6",
+        "sha256_in_prefix": "9e598631e55e4b73e92aa6e71fe5eaee1d30c819475ce8aa88e774e9eabd3fa6",
+        "size_in_bytes": 16801
+      },
+      {
+        "_path": "lib/R/library/recipes/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "0b70dd743b49db960b30921d587f9ed3ef19c4869f6afb6d6b8d5a8631705b01",
+        "sha256_in_prefix": "0b70dd743b49db960b30921d587f9ed3ef19c4869f6afb6d6b8d5a8631705b01",
+        "size_in_bytes": 4245
+      },
+      {
+        "_path": "lib/R/library/recipes/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "f13e7661e76f924176f90edd565a83be22109d617352c522a6f6736986b8a5de",
+        "sha256_in_prefix": "f13e7661e76f924176f90edd565a83be22109d617352c522a6f6736986b8a5de",
+        "size_in_bytes": 5651
+      },
+      {
+        "_path": "lib/R/library/recipes/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "5a7e441acd3bad6344c744bc6af23540b57132f63c4683aee5059eab8ae5952e",
+        "sha256_in_prefix": "5a7e441acd3bad6344c744bc6af23540b57132f63c4683aee5059eab8ae5952e",
+        "size_in_bytes": 1514
+      },
+      {
+        "_path": "lib/R/library/recipes/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "af39c4299f3526a4ffb363d70f25ab8a87a92c37263e234914d4d60c38b79428",
+        "sha256_in_prefix": "af39c4299f3526a4ffb363d70f25ab8a87a92c37263e234914d4d60c38b79428",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "lib/R/library/recipes/help/recipes.rdb",
+        "path_type": "hardlink",
+        "sha256": "d4a16e4eb62dc3dc7e55fc2d92be4c4e9fd7ae4f94efb7d1acf639bcd58c9768",
+        "sha256_in_prefix": "d4a16e4eb62dc3dc7e55fc2d92be4c4e9fd7ae4f94efb7d1acf639bcd58c9768",
+        "size_in_bytes": 401434
+      },
+      {
+        "_path": "lib/R/library/recipes/help/recipes.rdx",
+        "path_type": "hardlink",
+        "sha256": "f71c7fde13a086ab94da9d8bced885a7f879a23f98d093af2b1d6eea36111d27",
+        "sha256_in_prefix": "f71c7fde13a086ab94da9d8bced885a7f879a23f98d093af2b1d6eea36111d27",
+        "size_in_bytes": 2275
+      },
+      {
+        "_path": "lib/R/library/recipes/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "c0fed0d026942e51d77e45636088b6b09b21e56346f3d49b2b8649e5f18411ec",
+        "sha256_in_prefix": "c0fed0d026942e51d77e45636088b6b09b21e56346f3d49b2b8649e5f18411ec",
+        "size_in_bytes": 25896
+      },
+      {
+        "_path": "lib/R/library/recipes/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/recipes/html/Smithsonian.html",
+        "path_type": "hardlink",
+        "sha256": "8278b7a2856ac68297be23b07baa07c6d57b5e4a74c403a81a837ef56313bb50",
+        "sha256_in_prefix": "8278b7a2856ac68297be23b07baa07c6d57b5e4a74c403a81a837ef56313bb50",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "lib/R/library/recipes/html/add_step.html",
+        "path_type": "hardlink",
+        "sha256": "f1159b8907225fccd75a05bfcd53f5c3b6f9680a680282d331a42e35ceef6cc9",
+        "sha256_in_prefix": "f1159b8907225fccd75a05bfcd53f5c3b6f9680a680282d331a42e35ceef6cc9",
+        "size_in_bytes": 1367
+      },
+      {
+        "_path": "lib/R/library/recipes/html/bake.html",
+        "path_type": "hardlink",
+        "sha256": "2c83a2456d3c571fac6979fc075013bcb7db2ee7b594cdb59905bcddba730a3d",
+        "sha256_in_prefix": "2c83a2456d3c571fac6979fc075013bcb7db2ee7b594cdb59905bcddba730a3d",
+        "size_in_bytes": 3431
+      },
+      {
+        "_path": "lib/R/library/recipes/html/biomass.html",
+        "path_type": "hardlink",
+        "sha256": "5368489ee3446a59c9aeaace9094ac9f6e9d19af7f3ff56663cdbb9bf29d100e",
+        "sha256_in_prefix": "5368489ee3446a59c9aeaace9094ac9f6e9d19af7f3ff56663cdbb9bf29d100e",
+        "size_in_bytes": 1437
+      },
+      {
+        "_path": "lib/R/library/recipes/html/check_cols.html",
+        "path_type": "hardlink",
+        "sha256": "4c3b3a859ade4c273e7d5b8a1cef5ea97f7f65e335563fded5e240e0da04d663",
+        "sha256_in_prefix": "4c3b3a859ade4c273e7d5b8a1cef5ea97f7f65e335563fded5e240e0da04d663",
+        "size_in_bytes": 3195
+      },
+      {
+        "_path": "lib/R/library/recipes/html/check_missing.html",
+        "path_type": "hardlink",
+        "sha256": "fba02bf70b4cca491c6d69d36fbcfb1c6e6a76b4849e11b95ed3ec49e3e2b0c3",
+        "sha256_in_prefix": "fba02bf70b4cca491c6d69d36fbcfb1c6e6a76b4849e11b95ed3ec49e3e2b0c3",
+        "size_in_bytes": 4133
+      },
+      {
+        "_path": "lib/R/library/recipes/html/check_name.html",
+        "path_type": "hardlink",
+        "sha256": "de5980eb80805189300f2e47b00df0503400a1fb79e8c1d5c1bd58b5ba805577",
+        "sha256_in_prefix": "de5980eb80805189300f2e47b00df0503400a1fb79e8c1d5c1bd58b5ba805577",
+        "size_in_bytes": 1821
+      },
+      {
+        "_path": "lib/R/library/recipes/html/check_range.html",
+        "path_type": "hardlink",
+        "sha256": "c03b2845a821bfdfa78bd3d96380387eab7b400dd8bb97dd93a5c72f6336be4f",
+        "sha256_in_prefix": "c03b2845a821bfdfa78bd3d96380387eab7b400dd8bb97dd93a5c72f6336be4f",
+        "size_in_bytes": 5037
+      },
+      {
+        "_path": "lib/R/library/recipes/html/check_type.html",
+        "path_type": "hardlink",
+        "sha256": "24071d5ca84f7aabc9b239d9f9a9faebdc116aaf2a0541e6fce7842ca425c451",
+        "sha256_in_prefix": "24071d5ca84f7aabc9b239d9f9a9faebdc116aaf2a0541e6fce7842ca425c451",
+        "size_in_bytes": 1316
+      },
+      {
+        "_path": "lib/R/library/recipes/html/covers.html",
+        "path_type": "hardlink",
+        "sha256": "e9c280c56de050769ea21dc98786aaaf687e3d56497cbbd7d6af4517b395f223",
+        "sha256_in_prefix": "e9c280c56de050769ea21dc98786aaaf687e3d56497cbbd7d6af4517b395f223",
+        "size_in_bytes": 1271
+      },
+      {
+        "_path": "lib/R/library/recipes/html/credit_data.html",
+        "path_type": "hardlink",
+        "sha256": "2c2b6d2a04fbcd4e1caee36389e184bf2ca654e0be812e8f871d930a23d7457b",
+        "sha256_in_prefix": "2c2b6d2a04fbcd4e1caee36389e184bf2ca654e0be812e8f871d930a23d7457b",
+        "size_in_bytes": 1217
+      },
+      {
+        "_path": "lib/R/library/recipes/html/detect_step.html",
+        "path_type": "hardlink",
+        "sha256": "354d89ead57dffa26835120f0d25456281fc088d40177aeae8dda42596b78eac",
+        "sha256_in_prefix": "354d89ead57dffa26835120f0d25456281fc088d40177aeae8dda42596b78eac",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "lib/R/library/recipes/html/discretize.html",
+        "path_type": "hardlink",
+        "sha256": "8cc4af2707fd04ff3b71b65c339978a6fdefb350f34e2345496168a2bab61afe",
+        "sha256_in_prefix": "8cc4af2707fd04ff3b71b65c339978a6fdefb350f34e2345496168a2bab61afe",
+        "size_in_bytes": 4905
+      },
+      {
+        "_path": "lib/R/library/recipes/html/fixed.html",
+        "path_type": "hardlink",
+        "sha256": "a8d748f71884c699a908e02dc1630ea9504aa9ab5d0c0da45faa45da11d1139b",
+        "sha256_in_prefix": "a8d748f71884c699a908e02dc1630ea9504aa9ab5d0c0da45faa45da11d1139b",
+        "size_in_bytes": 1811
+      },
+      {
+        "_path": "lib/R/library/recipes/html/formula.recipe.html",
+        "path_type": "hardlink",
+        "sha256": "99451b002bea9e77d5929b5d28a6677a0739e99cbe523d16b20cc309ccfb267d",
+        "sha256_in_prefix": "99451b002bea9e77d5929b5d28a6677a0739e99cbe523d16b20cc309ccfb267d",
+        "size_in_bytes": 1536
+      },
+      {
+        "_path": "lib/R/library/recipes/html/fully_trained.html",
+        "path_type": "hardlink",
+        "sha256": "9d46c151e7b90ff6f7ea4ce2fbb2e398d919aca93f2390dc7a95e7d657493ca0",
+        "sha256_in_prefix": "9d46c151e7b90ff6f7ea4ce2fbb2e398d919aca93f2390dc7a95e7d657493ca0",
+        "size_in_bytes": 1411
+      },
+      {
+        "_path": "lib/R/library/recipes/html/has_role.html",
+        "path_type": "hardlink",
+        "sha256": "ed3c8881f9b56c49d4e74e3a41620317c7e5d03e2419098c4cd7376bbf4ffccc",
+        "sha256_in_prefix": "ed3c8881f9b56c49d4e74e3a41620317c7e5d03e2419098c4cd7376bbf4ffccc",
+        "size_in_bytes": 2428
+      },
+      {
+        "_path": "lib/R/library/recipes/html/juice.html",
+        "path_type": "hardlink",
+        "sha256": "48da2a60a6931204ce6583cdf14d640bbea8714670ec9d1d83bce97d390cb2a8",
+        "sha256_in_prefix": "48da2a60a6931204ce6583cdf14d640bbea8714670ec9d1d83bce97d390cb2a8",
+        "size_in_bytes": 3397
+      },
+      {
+        "_path": "lib/R/library/recipes/html/names0.html",
+        "path_type": "hardlink",
+        "sha256": "c3836ce8f25d697ea653e1f4c4e01378ece6f65c74b5d15ca9842f2432b74464",
+        "sha256_in_prefix": "c3836ce8f25d697ea653e1f4c4e01378ece6f65c74b5d15ca9842f2432b74464",
+        "size_in_bytes": 2775
+      },
+      {
+        "_path": "lib/R/library/recipes/html/okc.html",
+        "path_type": "hardlink",
+        "sha256": "26f98639869dd0ac84548d5e7b797575bc9d07d0bdb7280cf3ecf08a61478e37",
+        "sha256_in_prefix": "26f98639869dd0ac84548d5e7b797575bc9d07d0bdb7280cf3ecf08a61478e37",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/recipes/html/prep.html",
+        "path_type": "hardlink",
+        "sha256": "4daacf6052d24895b026ca8dddfb46b24fb2a00f0a96be43c0234acc1fc63efe",
+        "sha256_in_prefix": "4daacf6052d24895b026ca8dddfb46b24fb2a00f0a96be43c0234acc1fc63efe",
+        "size_in_bytes": 4068
+      },
+      {
+        "_path": "lib/R/library/recipes/html/prepper.html",
+        "path_type": "hardlink",
+        "sha256": "732eb2b8440b77a1f1f40bfcc951298fa17d1bba60c470099ed64eff0c8a2850",
+        "sha256_in_prefix": "732eb2b8440b77a1f1f40bfcc951298fa17d1bba60c470099ed64eff0c8a2850",
+        "size_in_bytes": 1811
+      },
+      {
+        "_path": "lib/R/library/recipes/html/print.recipe.html",
+        "path_type": "hardlink",
+        "sha256": "d61521bd63e32d92291f5cc2c8ef686de3f9665537617891839f16c1b763a103",
+        "sha256_in_prefix": "d61521bd63e32d92291f5cc2c8ef686de3f9665537617891839f16c1b763a103",
+        "size_in_bytes": 1385
+      },
+      {
+        "_path": "lib/R/library/recipes/html/rand_id.html",
+        "path_type": "hardlink",
+        "sha256": "eb2455f0d01dc6876180ebb2ff90b72ff619aaebc88ae93111af59baee2ee05d",
+        "sha256_in_prefix": "eb2455f0d01dc6876180ebb2ff90b72ff619aaebc88ae93111af59baee2ee05d",
+        "size_in_bytes": 1265
+      },
+      {
+        "_path": "lib/R/library/recipes/html/recipe.html",
+        "path_type": "hardlink",
+        "sha256": "8159dee570518c8cdf9cb5c46707d4a9cf115c5a45530a614f00eb0672eb5834",
+        "sha256_in_prefix": "8159dee570518c8cdf9cb5c46707d4a9cf115c5a45530a614f00eb0672eb5834",
+        "size_in_bytes": 7674
+      },
+      {
+        "_path": "lib/R/library/recipes/html/recipes-internal.html",
+        "path_type": "hardlink",
+        "sha256": "d5a35d7b856272db8be60afee19879443a0f2fcf13e3db94843839f5827b55a3",
+        "sha256_in_prefix": "d5a35d7b856272db8be60afee19879443a0f2fcf13e3db94843839f5827b55a3",
+        "size_in_bytes": 2486
+      },
+      {
+        "_path": "lib/R/library/recipes/html/recipes.html",
+        "path_type": "hardlink",
+        "sha256": "71e66d322b1909da4b1a00c2b25f56b3dc4d0fd5a768c6eca453bd8db5c81462",
+        "sha256_in_prefix": "71e66d322b1909da4b1a00c2b25f56b3dc4d0fd5a768c6eca453bd8db5c81462",
+        "size_in_bytes": 2342
+      },
+      {
+        "_path": "lib/R/library/recipes/html/recipes_pkg_check.html",
+        "path_type": "hardlink",
+        "sha256": "53575ccb5e279e859f2a12cd4fa6fc1957e3d7209badd3b386e5339528723836",
+        "sha256_in_prefix": "53575ccb5e279e859f2a12cd4fa6fc1957e3d7209badd3b386e5339528723836",
+        "size_in_bytes": 1495
+      },
+      {
+        "_path": "lib/R/library/recipes/html/reexports.html",
+        "path_type": "hardlink",
+        "sha256": "1388e9184dc9939337608fceb91ca783658350566ab26575d518796c60b2a8b5",
+        "sha256_in_prefix": "1388e9184dc9939337608fceb91ca783658350566ab26575d518796c60b2a8b5",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/recipes/html/roles.html",
+        "path_type": "hardlink",
+        "sha256": "72015cc8f1dd5f2be905a7ea05d30d87ab5f92eb00448731fd29e1b446695e68",
+        "sha256_in_prefix": "72015cc8f1dd5f2be905a7ea05d30d87ab5f92eb00448731fd29e1b446695e68",
+        "size_in_bytes": 5545
+      },
+      {
+        "_path": "lib/R/library/recipes/html/selections.html",
+        "path_type": "hardlink",
+        "sha256": "3aaabdaa22f9446cdb8c6de0e7decb202c1951237e669ec86020c58294a12aee",
+        "sha256_in_prefix": "3aaabdaa22f9446cdb8c6de0e7decb202c1951237e669ec86020c58294a12aee",
+        "size_in_bytes": 6132
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step.html",
+        "path_type": "hardlink",
+        "sha256": "f240e0bf25db2ecfaf7e5e648da3931665130730a56af3ec6ac94308da801881",
+        "sha256_in_prefix": "f240e0bf25db2ecfaf7e5e648da3931665130730a56af3ec6ac94308da801881",
+        "size_in_bytes": 1686
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_BoxCox.html",
+        "path_type": "hardlink",
+        "sha256": "2e0364b35cb602456b90840f81cbff870b02be60214a7ac94cde3a93c7318533",
+        "sha256_in_prefix": "2e0364b35cb602456b90840f81cbff870b02be60214a7ac94cde3a93c7318533",
+        "size_in_bytes": 5312
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_YeoJohnson.html",
+        "path_type": "hardlink",
+        "sha256": "4d6dc1cdd58cce243df73785483894380f18669b0ddad0e72574cb6518e071e8",
+        "sha256_in_prefix": "4d6dc1cdd58cce243df73785483894380f18669b0ddad0e72574cb6518e071e8",
+        "size_in_bytes": 5627
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_arrange.html",
+        "path_type": "hardlink",
+        "sha256": "fc8b09375d113f58445be64bc89adceda0781f4b1d93e8ff10305885c9815de3",
+        "sha256_in_prefix": "fc8b09375d113f58445be64bc89adceda0781f4b1d93e8ff10305885c9815de3",
+        "size_in_bytes": 4525
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_bagimpute.html",
+        "path_type": "hardlink",
+        "sha256": "f8f4cab337760ee6486c7aed4ed58681383f663346123af86bb54f8f5d55331b",
+        "sha256_in_prefix": "f8f4cab337760ee6486c7aed4ed58681383f663346123af86bb54f8f5d55331b",
+        "size_in_bytes": 7004
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_bin2factor.html",
+        "path_type": "hardlink",
+        "sha256": "3c85743d1e8c16c729c51d084d4bf67f357cfa6b459e5a0f8f9161503d3c4b1c",
+        "sha256_in_prefix": "3c85743d1e8c16c729c51d084d4bf67f357cfa6b459e5a0f8f9161503d3c4b1c",
+        "size_in_bytes": 4449
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_bs.html",
+        "path_type": "hardlink",
+        "sha256": "c3387ee46730191b05767c0b5d25298bb3aedfac78d3a94b047ed815491f2178",
+        "sha256_in_prefix": "c3387ee46730191b05767c0b5d25298bb3aedfac78d3a94b047ed815491f2178",
+        "size_in_bytes": 5062
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_center.html",
+        "path_type": "hardlink",
+        "sha256": "45a744a047a33f96a838eb52e84ce253ab8e968fa750c9f89454bd19d9d2f395",
+        "sha256_in_prefix": "45a744a047a33f96a838eb52e84ce253ab8e968fa750c9f89454bd19d9d2f395",
+        "size_in_bytes": 4415
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_classdist.html",
+        "path_type": "hardlink",
+        "sha256": "38fba57c190a3c5d38f398385124ddb18c80106fe89acbdbc507def1cb45c7ac",
+        "sha256_in_prefix": "38fba57c190a3c5d38f398385124ddb18c80106fe89acbdbc507def1cb45c7ac",
+        "size_in_bytes": 5315
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_corr.html",
+        "path_type": "hardlink",
+        "sha256": "0f864596e261a0a9171918cea8c48f1b2b6fb1ef2c9392283939d2b15de462fb",
+        "sha256_in_prefix": "0f864596e261a0a9171918cea8c48f1b2b6fb1ef2c9392283939d2b15de462fb",
+        "size_in_bytes": 5563
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_count.html",
+        "path_type": "hardlink",
+        "sha256": "84f2de080bc93c48a459cd453fb9de55828043c588176c0bf88c6950c8037375",
+        "sha256_in_prefix": "84f2de080bc93c48a459cd453fb9de55828043c588176c0bf88c6950c8037375",
+        "size_in_bytes": 4827
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_date.html",
+        "path_type": "hardlink",
+        "sha256": "06d55e51687b720ac8c20b94e1b22a4af5d82faeba7a9a7bc1d6542312f79f4f",
+        "sha256_in_prefix": "06d55e51687b720ac8c20b94e1b22a4af5d82faeba7a9a7bc1d6542312f79f4f",
+        "size_in_bytes": 5901
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_depth.html",
+        "path_type": "hardlink",
+        "sha256": "608ca4c50c4dd06f3c6407b12564a76ef28eefc0fd9e2e530a9775a7e20b38b5",
+        "sha256_in_prefix": "608ca4c50c4dd06f3c6407b12564a76ef28eefc0fd9e2e530a9775a7e20b38b5",
+        "size_in_bytes": 6450
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_discretize.html",
+        "path_type": "hardlink",
+        "sha256": "ef454d25b1614c859cff962f0aaaedc87b1952d344adc0c94f0535d721ff8361",
+        "sha256_in_prefix": "ef454d25b1614c859cff962f0aaaedc87b1952d344adc0c94f0535d721ff8361",
+        "size_in_bytes": 3766
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_downsample.html",
+        "path_type": "hardlink",
+        "sha256": "97e8d1b2ecf5ef6b316c03810140977397221944c3c66c5d964a49ec5a64cdbe",
+        "sha256_in_prefix": "97e8d1b2ecf5ef6b316c03810140977397221944c3c66c5d964a49ec5a64cdbe",
+        "size_in_bytes": 5813
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_dummy.html",
+        "path_type": "hardlink",
+        "sha256": "2d338cd7273ca64b87eb037ce29ef9c3f7b768b8999200960f0c574fef34cf32",
+        "sha256_in_prefix": "2d338cd7273ca64b87eb037ce29ef9c3f7b768b8999200960f0c574fef34cf32",
+        "size_in_bytes": 7504
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_factor2string.html",
+        "path_type": "hardlink",
+        "sha256": "4e294a6ac4f62e13aba535640b4cc7e3b0ac20a5c1c5fe86ad4349223833393a",
+        "sha256_in_prefix": "4e294a6ac4f62e13aba535640b4cc7e3b0ac20a5c1c5fe86ad4349223833393a",
+        "size_in_bytes": 4113
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_filter.html",
+        "path_type": "hardlink",
+        "sha256": "a8b8ed307fc9b0361eaeddd813bb2dba6ea9a171dcb7b959a4362835bb6c0a9c",
+        "sha256_in_prefix": "a8b8ed307fc9b0361eaeddd813bb2dba6ea9a171dcb7b959a4362835bb6c0a9c",
+        "size_in_bytes": 4457
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_geodist.html",
+        "path_type": "hardlink",
+        "sha256": "b38929cf913bc85000f368c8adaef861bc2e53ea0b6f88cd80fe5fee48dedffa",
+        "sha256_in_prefix": "b38929cf913bc85000f368c8adaef861bc2e53ea0b6f88cd80fe5fee48dedffa",
+        "size_in_bytes": 4616
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_holiday.html",
+        "path_type": "hardlink",
+        "sha256": "6f9b433ceee017792f699c8ba87c7557e40a54183a9c97c7c45448555f4f7eb2",
+        "sha256_in_prefix": "6f9b433ceee017792f699c8ba87c7557e40a54183a9c97c7c45448555f4f7eb2",
+        "size_in_bytes": 4776
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_hyperbolic.html",
+        "path_type": "hardlink",
+        "sha256": "775f7a60d0c832b7ad5d8e70e2a1d923bc480598b6dbbecc274a9ea230deaaa0",
+        "sha256_in_prefix": "775f7a60d0c832b7ad5d8e70e2a1d923bc480598b6dbbecc274a9ea230deaaa0",
+        "size_in_bytes": 4372
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_ica.html",
+        "path_type": "hardlink",
+        "sha256": "feb4c21efcecba217d999d30ff1e38a23c1d521e8d2b8fb80b99ad6b807f842c",
+        "sha256_in_prefix": "feb4c21efcecba217d999d30ff1e38a23c1d521e8d2b8fb80b99ad6b807f842c",
+        "size_in_bytes": 7084
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_integer.html",
+        "path_type": "hardlink",
+        "sha256": "2357832374bcd8c40e85a765e063d8944f41a7898390120c14ca1ee4af7211b3",
+        "sha256_in_prefix": "2357832374bcd8c40e85a765e063d8944f41a7898390120c14ca1ee4af7211b3",
+        "size_in_bytes": 5586
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_interact.html",
+        "path_type": "hardlink",
+        "sha256": "c85f009c9a889f4059e243f169910bd334b333139f66bd2e6d640abd96a6ccf2",
+        "sha256_in_prefix": "c85f009c9a889f4059e243f169910bd334b333139f66bd2e6d640abd96a6ccf2",
+        "size_in_bytes": 6303
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_intercept.html",
+        "path_type": "hardlink",
+        "sha256": "2a72a087fba85672ba7ab4e16aff1ab3d6b1cb486974cf2fc889fb1491fb83d6",
+        "sha256_in_prefix": "2a72a087fba85672ba7ab4e16aff1ab3d6b1cb486974cf2fc889fb1491fb83d6",
+        "size_in_bytes": 3908
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_inverse.html",
+        "path_type": "hardlink",
+        "sha256": "1d60fc887d995aa3b1744db817d1bac64e775a0801cf96a34d65dfe049298e03",
+        "sha256_in_prefix": "1d60fc887d995aa3b1744db817d1bac64e775a0801cf96a34d65dfe049298e03",
+        "size_in_bytes": 4038
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_invlogit.html",
+        "path_type": "hardlink",
+        "sha256": "bd987b3813e9476aee2035064240cf56a9edde1aa22620f7fa43c57d4bdad65f",
+        "sha256_in_prefix": "bd987b3813e9476aee2035064240cf56a9edde1aa22620f7fa43c57d4bdad65f",
+        "size_in_bytes": 4302
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_isomap.html",
+        "path_type": "hardlink",
+        "sha256": "d0b5aaa5ab9ba761865ff8fbf62ed7db2ca50363eece1d439305e83832791453",
+        "sha256_in_prefix": "d0b5aaa5ab9ba761865ff8fbf62ed7db2ca50363eece1d439305e83832791453",
+        "size_in_bytes": 7292
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_knnimpute.html",
+        "path_type": "hardlink",
+        "sha256": "65060a91a3c676c7e63be32ebb016c5b334b86c61c3cb06e3426d45427c9823d",
+        "sha256_in_prefix": "65060a91a3c676c7e63be32ebb016c5b334b86c61c3cb06e3426d45427c9823d",
+        "size_in_bytes": 6534
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_kpca.html",
+        "path_type": "hardlink",
+        "sha256": "cad3cc79d42b67ddf40ee2225e13cd27710d2db904199b3149c617536b27e471",
+        "sha256_in_prefix": "cad3cc79d42b67ddf40ee2225e13cd27710d2db904199b3149c617536b27e471",
+        "size_in_bytes": 7873
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_lag.html",
+        "path_type": "hardlink",
+        "sha256": "c4195094d19f1962873e57384e9d27a4029486ec3567a1613495423636313f9b",
+        "sha256_in_prefix": "c4195094d19f1962873e57384e9d27a4029486ec3567a1613495423636313f9b",
+        "size_in_bytes": 4166
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_lincomb.html",
+        "path_type": "hardlink",
+        "sha256": "6c1ca244469ad0ed6da28e025c75638bd06846f36556b870008f7c2dcefbdd7e",
+        "sha256_in_prefix": "6c1ca244469ad0ed6da28e025c75638bd06846f36556b870008f7c2dcefbdd7e",
+        "size_in_bytes": 4594
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_log.html",
+        "path_type": "hardlink",
+        "sha256": "105c36caae7d1c4ca82db263c0749a7cd0386b15c3c6250a2fb32cfad827fef3",
+        "sha256_in_prefix": "105c36caae7d1c4ca82db263c0749a7cd0386b15c3c6250a2fb32cfad827fef3",
+        "size_in_bytes": 4922
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_logit.html",
+        "path_type": "hardlink",
+        "sha256": "be4661caf148304bdd6c6826e6c1f8275f8cb723d5546c3a00ea2501cbfe5a16",
+        "sha256_in_prefix": "be4661caf148304bdd6c6826e6c1f8275f8cb723d5546c3a00ea2501cbfe5a16",
+        "size_in_bytes": 4088
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_lowerimpute.html",
+        "path_type": "hardlink",
+        "sha256": "eec78ac4e6b2105d9308e95c94419f10bcafb8d38a86a85fd5b5b5a1ede51c53",
+        "sha256_in_prefix": "eec78ac4e6b2105d9308e95c94419f10bcafb8d38a86a85fd5b5b5a1ede51c53",
+        "size_in_bytes": 4634
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_meanimpute.html",
+        "path_type": "hardlink",
+        "sha256": "cd63dc5ad390a5ec6a180842d4d385f31ba15ad9b1286011a2d49a331a5882ac",
+        "sha256_in_prefix": "cd63dc5ad390a5ec6a180842d4d385f31ba15ad9b1286011a2d49a331a5882ac",
+        "size_in_bytes": 4489
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_medianimpute.html",
+        "path_type": "hardlink",
+        "sha256": "43e35c01f854055af82640c0bf8a213ed769ad8fb2a0991f1f9e9ba0987904ce",
+        "sha256_in_prefix": "43e35c01f854055af82640c0bf8a213ed769ad8fb2a0991f1f9e9ba0987904ce",
+        "size_in_bytes": 4254
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_modeimpute.html",
+        "path_type": "hardlink",
+        "sha256": "daf446575b1593d3089900cb60810295ae0ea5ddb6fef5614172bd26c4f8fe1e",
+        "sha256_in_prefix": "daf446575b1593d3089900cb60810295ae0ea5ddb6fef5614172bd26c4f8fe1e",
+        "size_in_bytes": 4306
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_mutate.html",
+        "path_type": "hardlink",
+        "sha256": "e7283008b866d249162d24745fcec3056afd109af6bb2f420b7111afe3df6988",
+        "sha256_in_prefix": "e7283008b866d249162d24745fcec3056afd109af6bb2f420b7111afe3df6988",
+        "size_in_bytes": 4663
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_naomit.html",
+        "path_type": "hardlink",
+        "sha256": "3cf208cde030120ffbe747d122df75471b2efc903c22fea95669fe319a901ceb",
+        "sha256_in_prefix": "3cf208cde030120ffbe747d122df75471b2efc903c22fea95669fe319a901ceb",
+        "size_in_bytes": 3382
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_nnmf.html",
+        "path_type": "hardlink",
+        "sha256": "5e6791c65de78d4c9a2bfb5e71c9bf3dd3e9ca5570d941803d7e5b42623a9874",
+        "sha256_in_prefix": "5e6791c65de78d4c9a2bfb5e71c9bf3dd3e9ca5570d941803d7e5b42623a9874",
+        "size_in_bytes": 6201
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_novel.html",
+        "path_type": "hardlink",
+        "sha256": "5b14546454853a4110603c91f1ba261804cd1a542263e26ceeda9853a151021c",
+        "sha256_in_prefix": "5b14546454853a4110603c91f1ba261804cd1a542263e26ceeda9853a151021c",
+        "size_in_bytes": 4961
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_ns.html",
+        "path_type": "hardlink",
+        "sha256": "32763fbdcdb07733b314a089ab782e73c902911fe474080334ede13cc103448a",
+        "sha256_in_prefix": "32763fbdcdb07733b314a089ab782e73c902911fe474080334ede13cc103448a",
+        "size_in_bytes": 4856
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_num2factor.html",
+        "path_type": "hardlink",
+        "sha256": "458c8a24f05cfe3b89ff2ae50cbcb8ec1341b834541af140a70212ef9e5fcc8f",
+        "sha256_in_prefix": "458c8a24f05cfe3b89ff2ae50cbcb8ec1341b834541af140a70212ef9e5fcc8f",
+        "size_in_bytes": 5038
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_nzv.html",
+        "path_type": "hardlink",
+        "sha256": "e99f922a7ab69c6993a2e2d323f96bae0bcebdad3bcbc25c6e53067f648c5c90",
+        "sha256_in_prefix": "e99f922a7ab69c6993a2e2d323f96bae0bcebdad3bcbc25c6e53067f648c5c90",
+        "size_in_bytes": 5268
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_ordinalscore.html",
+        "path_type": "hardlink",
+        "sha256": "83ea8e698727a580cbdc2fd7f459a70f4380c057a871bfd6f796b36916360db7",
+        "sha256_in_prefix": "83ea8e698727a580cbdc2fd7f459a70f4380c057a871bfd6f796b36916360db7",
+        "size_in_bytes": 4913
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_other.html",
+        "path_type": "hardlink",
+        "sha256": "a6d2d29f473997844c9f372548fda70eb30da70bced75e1d21b70f454b95b331",
+        "sha256_in_prefix": "a6d2d29f473997844c9f372548fda70eb30da70bced75e1d21b70f454b95b331",
+        "size_in_bytes": 5825
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_pca.html",
+        "path_type": "hardlink",
+        "sha256": "f1312210afb2b1bfc036a6ac2fbc3f174438d49bc46073e8e448013596eeebda",
+        "sha256_in_prefix": "f1312210afb2b1bfc036a6ac2fbc3f174438d49bc46073e8e448013596eeebda",
+        "size_in_bytes": 7729
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_pls.html",
+        "path_type": "hardlink",
+        "sha256": "c7f83d71e83af239226edae32aa1eba42eb264618e8cc9b1168740da79f7a70e",
+        "sha256_in_prefix": "c7f83d71e83af239226edae32aa1eba42eb264618e8cc9b1168740da79f7a70e",
+        "size_in_bytes": 6855
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_poly.html",
+        "path_type": "hardlink",
+        "sha256": "a452663533928e07c3894e883084069ce8b841c1b465a10e5acf5a743b02eb06",
+        "sha256_in_prefix": "a452663533928e07c3894e883084069ce8b841c1b465a10e5acf5a743b02eb06",
+        "size_in_bytes": 4902
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_profile.html",
+        "path_type": "hardlink",
+        "sha256": "8850f94b674b0377d791c8f052b52b36d44e5b9ab9312a70e30104435b0b657b",
+        "sha256_in_prefix": "8850f94b674b0377d791c8f052b52b36d44e5b9ab9312a70e30104435b0b657b",
+        "size_in_bytes": 6893
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_range.html",
+        "path_type": "hardlink",
+        "sha256": "85ad7cce3cb2b354f39592fb3264179a0e1855ff3a45723b64af75667cf7e6b6",
+        "sha256_in_prefix": "85ad7cce3cb2b354f39592fb3264179a0e1855ff3a45723b64af75667cf7e6b6",
+        "size_in_bytes": 4267
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_ratio.html",
+        "path_type": "hardlink",
+        "sha256": "86c7ce23d6e31e4dd0eba5257d00ff3be56d34e978ac40bb2253fa210d1b2713",
+        "sha256_in_prefix": "86c7ce23d6e31e4dd0eba5257d00ff3be56d34e978ac40bb2253fa210d1b2713",
+        "size_in_bytes": 4822
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_regex.html",
+        "path_type": "hardlink",
+        "sha256": "36412858c8dffceb7a9ec130727f51ee97a3715710521b44bc5e385962344439",
+        "sha256_in_prefix": "36412858c8dffceb7a9ec130727f51ee97a3715710521b44bc5e385962344439",
+        "size_in_bytes": 4588
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_relu.html",
+        "path_type": "hardlink",
+        "sha256": "0e683e4fdf06dd8909f029ee3fc5220ae21f8a3c41e8349d9233ca51fe6d6592",
+        "sha256_in_prefix": "0e683e4fdf06dd8909f029ee3fc5220ae21f8a3c41e8349d9233ca51fe6d6592",
+        "size_in_bytes": 5670
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_rm.html",
+        "path_type": "hardlink",
+        "sha256": "2bd54abc1aa5cfad60c956c37b9f9cc2604cb39f89fe934edee60c8643ed902a",
+        "sha256_in_prefix": "2bd54abc1aa5cfad60c956c37b9f9cc2604cb39f89fe934edee60c8643ed902a",
+        "size_in_bytes": 3633
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_rollimpute.html",
+        "path_type": "hardlink",
+        "sha256": "0247927fad9e5672bbd4acc963e6cd00f9d3078d986c4ce5fdfa2161bd1285dd",
+        "sha256_in_prefix": "0247927fad9e5672bbd4acc963e6cd00f9d3078d986c4ce5fdfa2161bd1285dd",
+        "size_in_bytes": 5224
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_sample.html",
+        "path_type": "hardlink",
+        "sha256": "db98e039cf957e8ef144ad7dafd0d7056e7a01f47312205e48ca88c6749b0fec",
+        "sha256_in_prefix": "db98e039cf957e8ef144ad7dafd0d7056e7a01f47312205e48ca88c6749b0fec",
+        "size_in_bytes": 4290
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_scale.html",
+        "path_type": "hardlink",
+        "sha256": "53c6bc252ad14c1363cbf6c52b1b3bea0fa7ca04e9955eef70b1adddd9c3dde6",
+        "sha256_in_prefix": "53c6bc252ad14c1363cbf6c52b1b3bea0fa7ca04e9955eef70b1adddd9c3dde6",
+        "size_in_bytes": 4289
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_shuffle.html",
+        "path_type": "hardlink",
+        "sha256": "e42297f59b0bf6f95eeaa2516147b0ddca7cdcdee0136aa557a862d9707e32aa",
+        "sha256_in_prefix": "e42297f59b0bf6f95eeaa2516147b0ddca7cdcdee0136aa557a862d9707e32aa",
+        "size_in_bytes": 3459
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_slice.html",
+        "path_type": "hardlink",
+        "sha256": "3b100cea8c2c60ef37264d0a58e78d7879b575c960bc8f992ec01db8bda5fa9a",
+        "sha256_in_prefix": "3b100cea8c2c60ef37264d0a58e78d7879b575c960bc8f992ec01db8bda5fa9a",
+        "size_in_bytes": 4152
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_spatialsign.html",
+        "path_type": "hardlink",
+        "sha256": "1abc318381e1a5312749e2124747492f41c3044cd606579b9e645d22ba2ddd11",
+        "sha256_in_prefix": "1abc318381e1a5312749e2124747492f41c3044cd606579b9e645d22ba2ddd11",
+        "size_in_bytes": 4571
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_sqrt.html",
+        "path_type": "hardlink",
+        "sha256": "4c8e181cd53077bd84977bf5044d7f73b0990c027ad53d8ded645964d2b583a1",
+        "sha256_in_prefix": "4c8e181cd53077bd84977bf5044d7f73b0990c027ad53d8ded645964d2b583a1",
+        "size_in_bytes": 3903
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_string2factor.html",
+        "path_type": "hardlink",
+        "sha256": "8e00a069a156a9525f5d66444c5e78d32f1147b1abe7e8b69873cf38aff1760b",
+        "sha256_in_prefix": "8e00a069a156a9525f5d66444c5e78d32f1147b1abe7e8b69873cf38aff1760b",
+        "size_in_bytes": 4514
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_unorder.html",
+        "path_type": "hardlink",
+        "sha256": "a4591a29c366a1433a4e1dd8e29170de8cbe7c49d934d6b59f07f173ec3bcc83",
+        "sha256_in_prefix": "a4591a29c366a1433a4e1dd8e29170de8cbe7c49d934d6b59f07f173ec3bcc83",
+        "size_in_bytes": 4006
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_upsample.html",
+        "path_type": "hardlink",
+        "sha256": "30f1f6fb27a54edf1ee9b2ee5606f5bd49171245ff466cefa4dba3768441f65f",
+        "sha256_in_prefix": "30f1f6fb27a54edf1ee9b2ee5606f5bd49171245ff466cefa4dba3768441f65f",
+        "size_in_bytes": 5999
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_window.html",
+        "path_type": "hardlink",
+        "sha256": "a1967b26a0cc2d02393ce5df4842088697378e001b82b5abd9615d689842ba99",
+        "sha256_in_prefix": "a1967b26a0cc2d02393ce5df4842088697378e001b82b5abd9615d689842ba99",
+        "size_in_bytes": 6929
+      },
+      {
+        "_path": "lib/R/library/recipes/html/step_zv.html",
+        "path_type": "hardlink",
+        "sha256": "cefa91b8f7c272f996cf95e78cdba610856128da76ec2fd400456138b4997b6f",
+        "sha256_in_prefix": "cefa91b8f7c272f996cf95e78cdba610856128da76ec2fd400456138b4997b6f",
+        "size_in_bytes": 4009
+      },
+      {
+        "_path": "lib/R/library/recipes/html/summary.recipe.html",
+        "path_type": "hardlink",
+        "sha256": "ceb0b41f22bb57f882af136efca241183deca64fbfea98638d61fb637a2a92fe",
+        "sha256_in_prefix": "ceb0b41f22bb57f882af136efca241183deca64fbfea98638d61fb637a2a92fe",
+        "size_in_bytes": 2280
+      },
+      {
+        "_path": "lib/R/library/recipes/html/terms_select.html",
+        "path_type": "hardlink",
+        "sha256": "897a120e045cfffe01f6e2ddff52224eef6f23c1008329664ad8e7e02f0e663b",
+        "sha256_in_prefix": "897a120e045cfffe01f6e2ddff52224eef6f23c1008329664ad8e7e02f0e663b",
+        "size_in_bytes": 2063
+      },
+      {
+        "_path": "lib/R/library/recipes/html/tidy.recipe.html",
+        "path_type": "hardlink",
+        "sha256": "43fe3f2feee600a0ac75d9806c90e32c5ce40209ef07e493fd968de75ba700b9",
+        "sha256_in_prefix": "43fe3f2feee600a0ac75d9806c90e32c5ce40209ef07e493fd968de75ba700b9",
+        "size_in_bytes": 2761
+      },
+      {
+        "_path": "lib/R/library/recipes/html/update.step.html",
+        "path_type": "hardlink",
+        "sha256": "028c8f274c30623972da23f36a4bb77a66a33c336b6f1de94f65d4dc63ab0013",
+        "sha256_in_prefix": "028c8f274c30623972da23f36a4bb77a66a33c336b6f1de94f65d4dc63ab0013",
+        "size_in_bytes": 2609
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-recipes==0.1.5=r36h6115d3f_0",
+  "sha256": "8ea2ebd9f6f062600dbb3a6c0592b396481dc020bc10496b9b871df5b328b611",
+  "size": 1487268,
+  "subdir": "noarch",
+  "timestamp": 1558009259616,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-recipes-0.1.5-r36h6115d3f_0.tar.bz2",
+  "version": "0.1.5"
+}

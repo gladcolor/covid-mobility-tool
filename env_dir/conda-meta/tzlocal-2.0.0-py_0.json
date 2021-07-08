@@ -1,0 +1,160 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "pytz"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/tzlocal-2.0.0-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/LICENSE.txt",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/METADATA",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/RECORD",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/tzlocal-2.0.0.dist-info/zip-safe",
+    "lib/python3.7/site-packages/tzlocal/__init__.py",
+    "lib/python3.7/site-packages/tzlocal/unix.py",
+    "lib/python3.7/site-packages/tzlocal/utils.py",
+    "lib/python3.7/site-packages/tzlocal/win32.py",
+    "lib/python3.7/site-packages/tzlocal/windows_tz.py",
+    "lib/python3.7/site-packages/tzlocal/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/tzlocal/__pycache__/unix.cpython-37.pyc",
+    "lib/python3.7/site-packages/tzlocal/__pycache__/utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/tzlocal/__pycache__/win32.cpython-37.pyc",
+    "lib/python3.7/site-packages/tzlocal/__pycache__/windows_tz.cpython-37.pyc"
+  ],
+  "fn": "tzlocal-2.0.0-py_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/tzlocal-2.0.0-py_0",
+    "type": 1
+  },
+  "md5": "39fc5a98bcb235933f2a7af15166cbb4",
+  "name": "tzlocal",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/tzlocal-2.0.0-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "d99ab209aeb16aad2c25c90ffd83c1a981e290ffff76a420a2ab03e03f041b8c",
+        "sha256_in_prefix": "d99ab209aeb16aad2c25c90ffd83c1a981e290ffff76a420a2ab03e03f041b8c",
+        "size_in_bytes": 1060
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "20328a0051eb2161d0b4e4286cf23ef8abffbb6616b1b30bfca286f92b8a627f",
+        "sha256_in_prefix": "20328a0051eb2161d0b4e4286cf23ef8abffbb6616b1b30bfca286f92b8a627f",
+        "size_in_bytes": 7872
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "02578c0f47a08a288c5614fba41529c99a2c23d2b29dff8ed42e169ef9d75734",
+        "sha256_in_prefix": "02578c0f47a08a288c5614fba41529c99a2c23d2b29dff8ed42e169ef9d75734",
+        "size_in_bytes": 1059
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "87f6959f9381d8811152331b8b6a6e72647fcf3589b64df4dd85ef861eb4349f",
+        "sha256_in_prefix": "87f6959f9381d8811152331b8b6a6e72647fcf3589b64df4dd85ef861eb4349f",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "411eaf6563f9db4c1a1139e4a2d0293d03f2561f559e3a183e80151cb2b50eb1",
+        "sha256_in_prefix": "411eaf6563f9db4c1a1139e4a2d0293d03f2561f559e3a183e80151cb2b50eb1",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/tzlocal-2.0.0.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/tzlocal/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cce5c137920fdcd73580d88bf1a5701c08570184c57e44d20c9e957639a27c24",
+        "sha256_in_prefix": "cce5c137920fdcd73580d88bf1a5701c08570184c57e44d20c9e957639a27c24",
+        "size_in_bytes": 168
+      },
+      {
+        "_path": "site-packages/tzlocal/unix.py",
+        "path_type": "hardlink",
+        "sha256": "af4bf6dc96bca0b6867d7b224b0ab00e58490bc37cf3ad6086e1064e4077109f",
+        "sha256_in_prefix": "af4bf6dc96bca0b6867d7b224b0ab00e58490bc37cf3ad6086e1064e4077109f",
+        "size_in_bytes": 6066
+      },
+      {
+        "_path": "site-packages/tzlocal/utils.py",
+        "path_type": "hardlink",
+        "sha256": "97750613d3dc41a83088304688658864d25b03160cd57b39cc0bddf6c40fa869",
+        "sha256_in_prefix": "97750613d3dc41a83088304688658864d25b03160cd57b39cc0bddf6c40fa869",
+        "size_in_bytes": 1375
+      },
+      {
+        "_path": "site-packages/tzlocal/win32.py",
+        "path_type": "hardlink",
+        "sha256": "1a5bd45ffc92d4e184906987bd6fc0dc647902bc6bea5ae7d037ad55c45a9ca8",
+        "sha256_in_prefix": "1a5bd45ffc92d4e184906987bd6fc0dc647902bc6bea5ae7d037ad55c45a9ca8",
+        "size_in_bytes": 3265
+      },
+      {
+        "_path": "site-packages/tzlocal/windows_tz.py",
+        "path_type": "hardlink",
+        "sha256": "36cda86e2ab52d6b792538656ae3ccfadd48f042f01d601214ecdd7387be6f63",
+        "sha256_in_prefix": "36cda86e2ab52d6b792538656ae3ccfadd48f042f01d601214ecdd7387be6f63",
+        "size_in_bytes": 31348
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tzlocal/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tzlocal/__pycache__/unix.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tzlocal/__pycache__/utils.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tzlocal/__pycache__/win32.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/tzlocal/__pycache__/windows_tz.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "tzlocal==2.0.0=py_0",
+  "sha256": "4b6e6035bd26721c863986ee6454854e7d143c5fe41f668ddd1edc260bb7ed72",
+  "size": 17345,
+  "subdir": "noarch",
+  "timestamp": 1563899499754,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/tzlocal-2.0.0-py_0.tar.bz2",
+  "version": "2.0.0"
+}

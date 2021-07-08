@@ -1,0 +1,248 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-repr",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-irdisplay-0.7.0-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/IRdisplay/DESCRIPTION",
+    "lib/R/library/IRdisplay/INDEX",
+    "lib/R/library/IRdisplay/LICENSE",
+    "lib/R/library/IRdisplay/MD5",
+    "lib/R/library/IRdisplay/Meta/Rd.rds",
+    "lib/R/library/IRdisplay/Meta/features.rds",
+    "lib/R/library/IRdisplay/Meta/hsearch.rds",
+    "lib/R/library/IRdisplay/Meta/links.rds",
+    "lib/R/library/IRdisplay/Meta/nsInfo.rds",
+    "lib/R/library/IRdisplay/Meta/package.rds",
+    "lib/R/library/IRdisplay/NAMESPACE",
+    "lib/R/library/IRdisplay/R/IRdisplay",
+    "lib/R/library/IRdisplay/R/IRdisplay.rdb",
+    "lib/R/library/IRdisplay/R/IRdisplay.rdx",
+    "lib/R/library/IRdisplay/help/AnIndex",
+    "lib/R/library/IRdisplay/help/IRdisplay.rdb",
+    "lib/R/library/IRdisplay/help/IRdisplay.rdx",
+    "lib/R/library/IRdisplay/help/aliases.rds",
+    "lib/R/library/IRdisplay/help/paths.rds",
+    "lib/R/library/IRdisplay/html/00Index.html",
+    "lib/R/library/IRdisplay/html/IRdisplay-options.html",
+    "lib/R/library/IRdisplay/html/R.css",
+    "lib/R/library/IRdisplay/html/display.html",
+    "lib/R/library/IRdisplay/html/display_-less-than-image-greater-than.html",
+    "lib/R/library/IRdisplay/html/display_-less-than-text-greater-than.html",
+    "lib/R/library/IRdisplay/html/publish_mimebundle.html"
+  ],
+  "fn": "r-irdisplay-0.7.0-r36h6115d3f_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-irdisplay-0.7.0-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "e63cef0ad356b1e7b1fc6f6aa52f0a33",
+  "name": "r-irdisplay",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-irdisplay-0.7.0-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/IRdisplay/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "96b22b38070df6912dab854fe18af58f97a03d1e2ca4e0e02915423c7a4b4c1e",
+        "sha256_in_prefix": "96b22b38070df6912dab854fe18af58f97a03d1e2ca4e0e02915423c7a4b4c1e",
+        "size_in_bytes": 1160
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/INDEX",
+        "path_type": "hardlink",
+        "sha256": "91fc3aa1a16c95c68431d5beb7e9eff74b7ddefd96a8b27e8a32aa5185ad0424",
+        "sha256_in_prefix": "91fc3aa1a16c95c68431d5beb7e9eff74b7ddefd96a8b27e8a32aa5185ad0424",
+        "size_in_bytes": 343
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5bf6c32daefc8eb686021ef3b6a73c6204e82dc9a72e630feedd97dce207e77a",
+        "sha256_in_prefix": "5bf6c32daefc8eb686021ef3b6a73c6204e82dc9a72e630feedd97dce207e77a",
+        "size_in_bytes": 73
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/MD5",
+        "path_type": "hardlink",
+        "sha256": "c46715cda4ffdefaff4348a2c6587e46887a450bbc80564af1d56bee52fffd35",
+        "sha256_in_prefix": "c46715cda4ffdefaff4348a2c6587e46887a450bbc80564af1d56bee52fffd35",
+        "size_in_bytes": 1332
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "89874eecf9abd2438d877c1ab33a8c52168968f82021ddd03941684e6c1d3981",
+        "sha256_in_prefix": "89874eecf9abd2438d877c1ab33a8c52168968f82021ddd03941684e6c1d3981",
+        "size_in_bytes": 528
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "ee72b62cb636b4adaf0b0767039ccc14f67982c7a6a6d2964f3882418da8b315",
+        "sha256_in_prefix": "ee72b62cb636b4adaf0b0767039ccc14f67982c7a6a6d2964f3882418da8b315",
+        "size_in_bytes": 550
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "5579b458f0d1f6729a81da1b269fac363a90f93937a2a0844cb152ea99044354",
+        "sha256_in_prefix": "5579b458f0d1f6729a81da1b269fac363a90f93937a2a0844cb152ea99044354",
+        "size_in_bytes": 307
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "435590fe17313df100504fa8401a1a75145250c7b42c42edbef78fa79a47bb54",
+        "sha256_in_prefix": "435590fe17313df100504fa8401a1a75145250c7b42c42edbef78fa79a47bb54",
+        "size_in_bytes": 322
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "e146220ca52ca8e9928c7ecf76603d75749e76fc97a5966f6a8647fa988c5540",
+        "sha256_in_prefix": "e146220ca52ca8e9928c7ecf76603d75749e76fc97a5966f6a8647fa988c5540",
+        "size_in_bytes": 1060
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "1a16aaae6876c7a865ab3bdb4b3133ed3257090e7db8a3b2be8c4a5dac5ae5c8",
+        "sha256_in_prefix": "1a16aaae6876c7a865ab3bdb4b3133ed3257090e7db8a3b2be8c4a5dac5ae5c8",
+        "size_in_bytes": 397
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/R/IRdisplay",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/R/IRdisplay.rdb",
+        "path_type": "hardlink",
+        "sha256": "1bc4e73de1c22672737158522921f0efc0a466dc08067c8c6661a90c2354aa7c",
+        "sha256_in_prefix": "1bc4e73de1c22672737158522921f0efc0a466dc08067c8c6661a90c2354aa7c",
+        "size_in_bytes": 11605
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/R/IRdisplay.rdx",
+        "path_type": "hardlink",
+        "sha256": "77ff2651acdd9098f9ed88e81375e150f3eb1f4efa2349c8ee624a97d9bd859c",
+        "sha256_in_prefix": "77ff2651acdd9098f9ed88e81375e150f3eb1f4efa2349c8ee624a97d9bd859c",
+        "size_in_bytes": 546
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "9996d1ab14ecbe13fc5603fe7ea48f00e6ab3480031abf8bd5eebcdd584240ff",
+        "sha256_in_prefix": "9996d1ab14ecbe13fc5603fe7ea48f00e6ab3480031abf8bd5eebcdd584240ff",
+        "size_in_bytes": 745
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/help/IRdisplay.rdb",
+        "path_type": "hardlink",
+        "sha256": "91740da9f66f3875666e3bf1b810c671647f7d7867d6d5ec604b804226d70f6d",
+        "sha256_in_prefix": "91740da9f66f3875666e3bf1b810c671647f7d7867d6d5ec604b804226d70f6d",
+        "size_in_bytes": 9978
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/help/IRdisplay.rdx",
+        "path_type": "hardlink",
+        "sha256": "48623c36e5e465dd6a9fe25598dce1629682edbb2ee90cb01c692ee2dd4b785c",
+        "sha256_in_prefix": "48623c36e5e465dd6a9fe25598dce1629682edbb2ee90cb01c692ee2dd4b785c",
+        "size_in_bytes": 302
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "0249f02c6068560d11ae86313cd1f4010edd7d8d84cc3c04d16f0f7773c12b48",
+        "sha256_in_prefix": "0249f02c6068560d11ae86313cd1f4010edd7d8d84cc3c04d16f0f7773c12b48",
+        "size_in_bytes": 271
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "aea8912f159b65abef213a2dc9b2c08d011643de7be30f802c587e3f35c1c2c7",
+        "sha256_in_prefix": "aea8912f159b65abef213a2dc9b2c08d011643de7be30f802c587e3f35c1c2c7",
+        "size_in_bytes": 217
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "f285b5831d0d7a0d756a86ca8ff5cf5e822d69913d184704b717431589094615",
+        "sha256_in_prefix": "f285b5831d0d7a0d756a86ca8ff5cf5e822d69913d184704b717431589094615",
+        "size_in_bytes": 3333
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/IRdisplay-options.html",
+        "path_type": "hardlink",
+        "sha256": "5a0858790aa6ef14a3031f10d94de9179e695bb4d738071c9c7696b0f5f00b01",
+        "sha256_in_prefix": "5a0858790aa6ef14a3031f10d94de9179e695bb4d738071c9c7696b0f5f00b01",
+        "size_in_bytes": 1809
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/display.html",
+        "path_type": "hardlink",
+        "sha256": "c3e66d5a8e041faa3b9f68fd5b1be51c48fc432abafa12c66404a5493e9c928e",
+        "sha256_in_prefix": "c3e66d5a8e041faa3b9f68fd5b1be51c48fc432abafa12c66404a5493e9c928e",
+        "size_in_bytes": 2485
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/display_-less-than-image-greater-than.html",
+        "path_type": "hardlink",
+        "sha256": "d4cc85baae64c9ed8c6deda4e1dcda48bf08f9b88b354782147f1af54b3ecc56",
+        "sha256_in_prefix": "d4cc85baae64c9ed8c6deda4e1dcda48bf08f9b88b354782147f1af54b3ecc56",
+        "size_in_bytes": 2330
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/display_-less-than-text-greater-than.html",
+        "path_type": "hardlink",
+        "sha256": "65af9c5d53df3e2440daca3e9d29899903dc148dbd010572d437e9408511e240",
+        "sha256_in_prefix": "65af9c5d53df3e2440daca3e9d29899903dc148dbd010572d437e9408511e240",
+        "size_in_bytes": 1873
+      },
+      {
+        "_path": "lib/R/library/IRdisplay/html/publish_mimebundle.html",
+        "path_type": "hardlink",
+        "sha256": "71154a3bb90691324874d13509ad241256c596a985b374980c2f87d80b06a5e5",
+        "sha256_in_prefix": "71154a3bb90691324874d13509ad241256c596a985b374980c2f87d80b06a5e5",
+        "size_in_bytes": 2001
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-irdisplay==0.7.0=r36h6115d3f_0",
+  "sha256": "e9461bd8d635d821ce7774d1593c9f148a6847f98f9c40a440d7619ca9490709",
+  "size": 38955,
+  "subdir": "noarch",
+  "timestamp": 1557996571584,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-irdisplay-0.7.0-r36h6115d3f_0.tar.bz2",
+  "version": "0.7.0"
+}

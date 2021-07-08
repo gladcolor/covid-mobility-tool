@@ -1,0 +1,61 @@
+{
+  "build": "py37_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/locket-0.2.0-py37_1",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/locket-0.2.0-py3.7.egg-info",
+    "lib/python3.7/site-packages/locket/__init__.py",
+    "lib/python3.7/site-packages/locket/__pycache__/__init__.cpython-37.pyc"
+  ],
+  "fn": "locket-0.2.0-py37_1.conda",
+  "legacy_bz2_md5": "ac9e7e51f1d47e31b5ba210963a6cf9b",
+  "legacy_bz2_size": 8320,
+  "license": "BSD 2-Clause",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/locket-0.2.0-py37_1",
+    "type": 1
+  },
+  "md5": "f8bab10c5646b467c8cdc795fc132748",
+  "name": "locket",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/locket-0.2.0-py37_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/locket-0.2.0-py3.7.egg-info",
+        "path_type": "hardlink",
+        "sha256": "b34ecb7d8a844cf4c743c8bca7fd9a36a037083744459ae35435b620743a0b25",
+        "sha256_in_prefix": "b34ecb7d8a844cf4c743c8bca7fd9a36a037083744459ae35435b620743a0b25",
+        "size_in_bytes": 2717
+      },
+      {
+        "_path": "lib/python3.7/site-packages/locket/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "11a9cb824dd8beb48b1b7e4338bdc219184863e5cbefa7be4b9039d1a45293f0",
+        "sha256_in_prefix": "11a9cb824dd8beb48b1b7e4338bdc219184863e5cbefa7be4b9039d1a45293f0",
+        "size_in_bytes": 4384
+      },
+      {
+        "_path": "lib/python3.7/site-packages/locket/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f4291b68488675b5588aa38d947bfbedb7a74f9841d1962301069f37997fde71",
+        "sha256_in_prefix": "f4291b68488675b5588aa38d947bfbedb7a74f9841d1962301069f37997fde71",
+        "size_in_bytes": 5002
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "locket==0.2.0=py37_1",
+  "sha256": "50b0b79a30e3de6e39d2462c744c1ced498d5272bc8ba40c44aa8d5995bd3d3d",
+  "size": 8779,
+  "subdir": "linux-64",
+  "timestamp": 1530741774429,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/locket-0.2.0-py37_1.conda",
+  "version": "0.2.0"
+}

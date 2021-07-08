@@ -1,0 +1,319 @@
+{
+  "build": "r36_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-crayon",
+    "r-digest",
+    "r-evaluate >=0.10",
+    "r-irdisplay >=0.3.0.9999",
+    "r-jsonlite >=0.9.6",
+    "r-pbdzmq >=0.2_1",
+    "r-repr >=0.4.99",
+    "r-uuid",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-irkernel-0.8.15-r36_0",
+  "features": "",
+  "files": [
+    "lib/R/library/IRkernel/DESCRIPTION",
+    "lib/R/library/IRkernel/INDEX",
+    "lib/R/library/IRkernel/LICENSE",
+    "lib/R/library/IRkernel/MD5",
+    "lib/R/library/IRkernel/Meta/Rd.rds",
+    "lib/R/library/IRkernel/Meta/features.rds",
+    "lib/R/library/IRkernel/Meta/hsearch.rds",
+    "lib/R/library/IRkernel/Meta/links.rds",
+    "lib/R/library/IRkernel/Meta/nsInfo.rds",
+    "lib/R/library/IRkernel/Meta/package.rds",
+    "lib/R/library/IRkernel/NAMESPACE",
+    "lib/R/library/IRkernel/R/IRkernel",
+    "lib/R/library/IRkernel/R/IRkernel.rdb",
+    "lib/R/library/IRkernel/R/IRkernel.rdx",
+    "lib/R/library/IRkernel/help/AnIndex",
+    "lib/R/library/IRkernel/help/IRkernel.rdb",
+    "lib/R/library/IRkernel/help/IRkernel.rdx",
+    "lib/R/library/IRkernel/help/aliases.rds",
+    "lib/R/library/IRkernel/help/paths.rds",
+    "lib/R/library/IRkernel/html/00Index.html",
+    "lib/R/library/IRkernel/html/Comm-class.html",
+    "lib/R/library/IRkernel/html/CommManager-class.html",
+    "lib/R/library/IRkernel/html/IRkernel.html",
+    "lib/R/library/IRkernel/html/R.css",
+    "lib/R/library/IRkernel/html/comm_manager.html",
+    "lib/R/library/IRkernel/html/installspec.html",
+    "lib/R/library/IRkernel/html/log_-times.html",
+    "lib/R/library/IRkernel/html/main.html",
+    "lib/R/library/IRkernel/kernelspec/kernel.js",
+    "lib/R/library/IRkernel/kernelspec/kernel.json",
+    "lib/R/library/IRkernel/kernelspec/logo-64x64.png",
+    "share/jupyter/kernels/ir/kernel.js",
+    "share/jupyter/kernels/ir/kernel.json",
+    "share/jupyter/kernels/ir/logo-64x64.png"
+  ],
+  "fn": "r-irkernel-0.8.15-r36_0.tar.bz2",
+  "license": "MIT + file LICENSE",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-irkernel-0.8.15-r36_0",
+    "type": 1
+  },
+  "md5": "f3b346baee2a3f4e502f0c3d2c3a3797",
+  "name": "r-irkernel",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-irkernel-0.8.15-r36_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/IRkernel/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "9b10eadeb3c47b0da8af5d31ba5f1c91596f55d778ff1f4f347717e7ea7850b6",
+        "sha256_in_prefix": "9b10eadeb3c47b0da8af5d31ba5f1c91596f55d778ff1f4f347717e7ea7850b6",
+        "size_in_bytes": 1595
+      },
+      {
+        "_path": "lib/R/library/IRkernel/INDEX",
+        "path_type": "hardlink",
+        "sha256": "684140731a63560d58fc1c4604078de908ac4efcfa06527211607d96b526d638",
+        "sha256_in_prefix": "684140731a63560d58fc1c4604078de908ac4efcfa06527211607d96b526d638",
+        "size_in_bytes": 392
+      },
+      {
+        "_path": "lib/R/library/IRkernel/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5bf6c32daefc8eb686021ef3b6a73c6204e82dc9a72e630feedd97dce207e77a",
+        "sha256_in_prefix": "5bf6c32daefc8eb686021ef3b6a73c6204e82dc9a72e630feedd97dce207e77a",
+        "size_in_bytes": 73
+      },
+      {
+        "_path": "lib/R/library/IRkernel/MD5",
+        "path_type": "hardlink",
+        "sha256": "f3620db09ac10ad6619f59754eb765cb22651a2360f6ec64dba26eb6cb3f5d75",
+        "sha256_in_prefix": "f3620db09ac10ad6619f59754eb765cb22651a2360f6ec64dba26eb6cb3f5d75",
+        "size_in_bytes": 1551
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "9994ae25a89bb152dbe86bf4de018def024c2c567999a51e7c4c75a885134c67",
+        "sha256_in_prefix": "9994ae25a89bb152dbe86bf4de018def024c2c567999a51e7c4c75a885134c67",
+        "size_in_bytes": 526
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "39eccc0cd5a6476d81399318deddc5e295fd6251a961294f0fbb8d10c9bb6dcf",
+        "sha256_in_prefix": "39eccc0cd5a6476d81399318deddc5e295fd6251a961294f0fbb8d10c9bb6dcf",
+        "size_in_bytes": 540
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "c5067b2d1b817de906b7eaea788312687d1627b1ad81e032126fe6ed49146136",
+        "sha256_in_prefix": "c5067b2d1b817de906b7eaea788312687d1627b1ad81e032126fe6ed49146136",
+        "size_in_bytes": 289
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "6c77de5ba22b541a477c457ce1e22780f6bff8a85d495f678103e16893246740",
+        "sha256_in_prefix": "6c77de5ba22b541a477c457ce1e22780f6bff8a85d495f678103e16893246740",
+        "size_in_bytes": 647
+      },
+      {
+        "_path": "lib/R/library/IRkernel/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "420af1c8d5527f1ebf052bfcf6cd1b39a1cb9193c1b03742c28deb11ce9b9892",
+        "sha256_in_prefix": "420af1c8d5527f1ebf052bfcf6cd1b39a1cb9193c1b03742c28deb11ce9b9892",
+        "size_in_bytes": 1316
+      },
+      {
+        "_path": "lib/R/library/IRkernel/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "25c0d921d3e0c50c678b248a35b9da6340eb9977c3e22413a9a12ebc1d9cfb61",
+        "sha256_in_prefix": "25c0d921d3e0c50c678b248a35b9da6340eb9977c3e22413a9a12ebc1d9cfb61",
+        "size_in_bytes": 1351
+      },
+      {
+        "_path": "lib/R/library/IRkernel/R/IRkernel",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/IRkernel/R/IRkernel.rdb",
+        "path_type": "hardlink",
+        "sha256": "cd2a1a0fd6702a50981f1a00dd718b99c99080beeca8f64a1e7e9069068e6c59",
+        "sha256_in_prefix": "cd2a1a0fd6702a50981f1a00dd718b99c99080beeca8f64a1e7e9069068e6c59",
+        "size_in_bytes": 104406
+      },
+      {
+        "_path": "lib/R/library/IRkernel/R/IRkernel.rdx",
+        "path_type": "hardlink",
+        "sha256": "04ea8c6c115c31f659b30bc50954e4575af9cbe1a68577d4ada70c6309dbc25b",
+        "sha256_in_prefix": "04ea8c6c115c31f659b30bc50954e4575af9cbe1a68577d4ada70c6309dbc25b",
+        "size_in_bytes": 1384
+      },
+      {
+        "_path": "lib/R/library/IRkernel/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "eb54a553336f6dbc8452e839a96deb9f23d63ae2440a7a968234e13b983588b8",
+        "sha256_in_prefix": "eb54a553336f6dbc8452e839a96deb9f23d63ae2440a7a968234e13b983588b8",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "lib/R/library/IRkernel/help/IRkernel.rdb",
+        "path_type": "hardlink",
+        "sha256": "204327cc914c9525ebc45191294cda793514353d3c78b1ba5693e9c4e5883b59",
+        "sha256_in_prefix": "204327cc914c9525ebc45191294cda793514353d3c78b1ba5693e9c4e5883b59",
+        "size_in_bytes": 9172
+      },
+      {
+        "_path": "lib/R/library/IRkernel/help/IRkernel.rdx",
+        "path_type": "hardlink",
+        "sha256": "dd77f772682554f7f120f2e4894b8ded93c5b4cbe9b8f484d774a6ee923d019d",
+        "sha256_in_prefix": "dd77f772682554f7f120f2e4894b8ded93c5b4cbe9b8f484d774a6ee923d019d",
+        "size_in_bytes": 317
+      },
+      {
+        "_path": "lib/R/library/IRkernel/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "14e61bc32d0a479168f2ab75a89198bd051f67792d653bbd4dc5401724544ce3",
+        "sha256_in_prefix": "14e61bc32d0a479168f2ab75a89198bd051f67792d653bbd4dc5401724544ce3",
+        "size_in_bytes": 232
+      },
+      {
+        "_path": "lib/R/library/IRkernel/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "5f804205821515644b00ee86f6964dacc5243c055c08d7650312eea193b6b505",
+        "sha256_in_prefix": "5f804205821515644b00ee86f6964dacc5243c055c08d7650312eea193b6b505",
+        "size_in_bytes": 220
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "901d001f39064f8008096c029a849ced0273f41be8e5126aa22988367a58ec25",
+        "sha256_in_prefix": "901d001f39064f8008096c029a849ced0273f41be8e5126aa22988367a58ec25",
+        "size_in_bytes": 2718
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/Comm-class.html",
+        "path_type": "hardlink",
+        "sha256": "be8b48f8a349df58fbdca73c6c9b2150120da3bacb749f44dd68aad803570e49",
+        "sha256_in_prefix": "be8b48f8a349df58fbdca73c6c9b2150120da3bacb749f44dd68aad803570e49",
+        "size_in_bytes": 746
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/CommManager-class.html",
+        "path_type": "hardlink",
+        "sha256": "110c519c304aaf7308dcbcc681e40e784270afbd1817395b0f6b4c15dd38ae7a",
+        "sha256_in_prefix": "110c519c304aaf7308dcbcc681e40e784270afbd1817395b0f6b4c15dd38ae7a",
+        "size_in_bytes": 785
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/IRkernel.html",
+        "path_type": "hardlink",
+        "sha256": "0ee53f5abcb34830fa35daefbfea065ae208fe27f2e9f4e9124254bc13adeeae",
+        "sha256_in_prefix": "0ee53f5abcb34830fa35daefbfea065ae208fe27f2e9f4e9124254bc13adeeae",
+        "size_in_bytes": 2257
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/comm_manager.html",
+        "path_type": "hardlink",
+        "sha256": "c0f56fa9464d6a9f50d899608f4b0470698b343395c68e1b20e0d0645a4ec3eb",
+        "sha256_in_prefix": "c0f56fa9464d6a9f50d899608f4b0470698b343395c68e1b20e0d0645a4ec3eb",
+        "size_in_bytes": 947
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/installspec.html",
+        "path_type": "hardlink",
+        "sha256": "856a45e9d5665eba0f036bb0a1ac902ebb4b9b37822fdbff245e5b188cf3e05e",
+        "sha256_in_prefix": "856a45e9d5665eba0f036bb0a1ac902ebb4b9b37822fdbff245e5b188cf3e05e",
+        "size_in_bytes": 2236
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/log_-times.html",
+        "path_type": "hardlink",
+        "sha256": "11b235576dfdc696752e4bd2c6f4daf1d6440086b4810701829ae973868819dd",
+        "sha256_in_prefix": "11b235576dfdc696752e4bd2c6f4daf1d6440086b4810701829ae973868819dd",
+        "size_in_bytes": 1224
+      },
+      {
+        "_path": "lib/R/library/IRkernel/html/main.html",
+        "path_type": "hardlink",
+        "sha256": "382c5c0ee3420edc11b57cd3af5cad5eb2bbec0cc2c2157ce12778c2fc7ec0ba",
+        "sha256_in_prefix": "382c5c0ee3420edc11b57cd3af5cad5eb2bbec0cc2c2157ce12778c2fc7ec0ba",
+        "size_in_bytes": 1026
+      },
+      {
+        "_path": "lib/R/library/IRkernel/kernelspec/kernel.js",
+        "path_type": "hardlink",
+        "sha256": "2e205f5811372a9a97cd84309481ef5a1038dfbb6143dffc6d7452cec9fc2c63",
+        "sha256_in_prefix": "2e205f5811372a9a97cd84309481ef5a1038dfbb6143dffc6d7452cec9fc2c63",
+        "size_in_bytes": 2092
+      },
+      {
+        "_path": "lib/R/library/IRkernel/kernelspec/kernel.json",
+        "path_type": "hardlink",
+        "sha256": "952b2962d107f6dd911f5e89d2e6900218d14cc80ff29fb6be09df598bf8507d",
+        "sha256_in_prefix": "952b2962d107f6dd911f5e89d2e6900218d14cc80ff29fb6be09df598bf8507d",
+        "size_in_bytes": 123
+      },
+      {
+        "_path": "lib/R/library/IRkernel/kernelspec/logo-64x64.png",
+        "path_type": "hardlink",
+        "sha256": "eb3f7e50bbe53b440094c8f10318939af5467dfdb96fa4e2569da5f80dedda50",
+        "sha256_in_prefix": "eb3f7e50bbe53b440094c8f10318939af5467dfdb96fa4e2569da5f80dedda50",
+        "size_in_bytes": 8492
+      },
+      {
+        "_path": "share/jupyter/kernels/ir/kernel.js",
+        "path_type": "hardlink",
+        "sha256": "2e205f5811372a9a97cd84309481ef5a1038dfbb6143dffc6d7452cec9fc2c63",
+        "sha256_in_prefix": "2e205f5811372a9a97cd84309481ef5a1038dfbb6143dffc6d7452cec9fc2c63",
+        "size_in_bytes": 2092
+      },
+      {
+        "_path": "share/jupyter/kernels/ir/kernel.json",
+        "path_type": "hardlink",
+        "sha256": "952b2962d107f6dd911f5e89d2e6900218d14cc80ff29fb6be09df598bf8507d",
+        "sha256_in_prefix": "952b2962d107f6dd911f5e89d2e6900218d14cc80ff29fb6be09df598bf8507d",
+        "size_in_bytes": 123
+      },
+      {
+        "_path": "share/jupyter/kernels/ir/logo-64x64.png",
+        "path_type": "hardlink",
+        "sha256": "eb3f7e50bbe53b440094c8f10318939af5467dfdb96fa4e2569da5f80dedda50",
+        "sha256_in_prefix": "eb3f7e50bbe53b440094c8f10318939af5467dfdb96fa4e2569da5f80dedda50",
+        "size_in_bytes": 8492
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-irkernel==0.8.15=r36_0",
+  "sha256": "058b2e7b17a4916478ea0ff9ebadc879de96c514c06ea19454dd67890e80b7b6",
+  "size": 151388,
+  "subdir": "noarch",
+  "timestamp": 1558000813552,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-irkernel-0.8.15-r36_0.tar.bz2",
+  "version": "0.8.15"
+}

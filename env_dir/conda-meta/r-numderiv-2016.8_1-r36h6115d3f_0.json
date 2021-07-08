@@ -1,0 +1,287 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-numderiv-2016.8_1-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/numDeriv/DESCRIPTION",
+    "lib/R/library/numDeriv/INDEX",
+    "lib/R/library/numDeriv/MD5",
+    "lib/R/library/numDeriv/Meta/Rd.rds",
+    "lib/R/library/numDeriv/Meta/features.rds",
+    "lib/R/library/numDeriv/Meta/hsearch.rds",
+    "lib/R/library/numDeriv/Meta/links.rds",
+    "lib/R/library/numDeriv/Meta/nsInfo.rds",
+    "lib/R/library/numDeriv/Meta/package.rds",
+    "lib/R/library/numDeriv/Meta/vignette.rds",
+    "lib/R/library/numDeriv/NAMESPACE",
+    "lib/R/library/numDeriv/NEWS",
+    "lib/R/library/numDeriv/R/numDeriv",
+    "lib/R/library/numDeriv/R/numDeriv.rdb",
+    "lib/R/library/numDeriv/R/numDeriv.rdx",
+    "lib/R/library/numDeriv/doc/Guide.Stex",
+    "lib/R/library/numDeriv/doc/Guide.pdf",
+    "lib/R/library/numDeriv/doc/index.html",
+    "lib/R/library/numDeriv/help/AnIndex",
+    "lib/R/library/numDeriv/help/aliases.rds",
+    "lib/R/library/numDeriv/help/numDeriv.rdb",
+    "lib/R/library/numDeriv/help/numDeriv.rdx",
+    "lib/R/library/numDeriv/help/paths.rds",
+    "lib/R/library/numDeriv/html/00.numDeriv.Intro.html",
+    "lib/R/library/numDeriv/html/00Index.html",
+    "lib/R/library/numDeriv/html/R.css",
+    "lib/R/library/numDeriv/html/genD.html",
+    "lib/R/library/numDeriv/html/grad.html",
+    "lib/R/library/numDeriv/html/hessian.html",
+    "lib/R/library/numDeriv/html/jacobian.html",
+    "lib/R/library/numDeriv/html/numDeriv-package.html"
+  ],
+  "fn": "r-numderiv-2016.8_1-r36h6115d3f_0.tar.bz2",
+  "license": "GPL-2",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-numderiv-2016.8_1-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "3f3bf640c945bda3593ebf9d78cd0668",
+  "name": "r-numderiv",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-numderiv-2016.8_1-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/numDeriv/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "d779b2600bbb1e969b8009ae2ea128ecade57edc4a3fcfa56ac664af671cd396",
+        "sha256_in_prefix": "d779b2600bbb1e969b8009ae2ea128ecade57edc4a3fcfa56ac664af671cd396",
+        "size_in_bytes": 1017
+      },
+      {
+        "_path": "lib/R/library/numDeriv/INDEX",
+        "path_type": "hardlink",
+        "sha256": "f925291dbc1f2bdccee9e1d21684c2cfbe5bebcd53348260b66d55f36e6ea29c",
+        "sha256_in_prefix": "f925291dbc1f2bdccee9e1d21684c2cfbe5bebcd53348260b66d55f36e6ea29c",
+        "size_in_bytes": 341
+      },
+      {
+        "_path": "lib/R/library/numDeriv/MD5",
+        "path_type": "hardlink",
+        "sha256": "d193d13bac00dff32d70d99435b6f7773c0bd6364ac994b8fdec42daaede00df",
+        "sha256_in_prefix": "d193d13bac00dff32d70d99435b6f7773c0bd6364ac994b8fdec42daaede00df",
+        "size_in_bytes": 1513
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "77feb2dab5a6490b66d1445f910694a5377b4d1a32876aa2cc2d5693ec753ed7",
+        "sha256_in_prefix": "77feb2dab5a6490b66d1445f910694a5377b4d1a32876aa2cc2d5693ec753ed7",
+        "size_in_bytes": 462
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "4a36babf2dc46d6093dfdfa2e55865baaab57e5210a7714287507f8c185466f2",
+        "sha256_in_prefix": "4a36babf2dc46d6093dfdfa2e55865baaab57e5210a7714287507f8c185466f2",
+        "size_in_bytes": 489
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "d58952d4146da2a10102af5eeaa3ba760486f979b9737054c7c42f0df39ae46b",
+        "sha256_in_prefix": "d58952d4146da2a10102af5eeaa3ba760486f979b9737054c7c42f0df39ae46b",
+        "size_in_bytes": 225
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "d85b6c33670abb040be97bde6a398e7f8c3cdf79329b5d85bffb8988c1451bdd",
+        "sha256_in_prefix": "d85b6c33670abb040be97bde6a398e7f8c3cdf79329b5d85bffb8988c1451bdd",
+        "size_in_bytes": 238
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "93941a6d9018f7821aefad141b72b6aa0b80fe2d1d49375b24d271555c67755b",
+        "sha256_in_prefix": "93941a6d9018f7821aefad141b72b6aa0b80fe2d1d49375b24d271555c67755b",
+        "size_in_bytes": 963
+      },
+      {
+        "_path": "lib/R/library/numDeriv/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "b464dd11be2eee98864d55c0315dec4cd2be2897cc6c896f488e841e3337ed72",
+        "sha256_in_prefix": "b464dd11be2eee98864d55c0315dec4cd2be2897cc6c896f488e841e3337ed72",
+        "size_in_bytes": 201
+      },
+      {
+        "_path": "lib/R/library/numDeriv/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "c868a74683e493dd1ed5516798dcd3c5b9cade2e2381e51416a0d02417bb19b3",
+        "sha256_in_prefix": "c868a74683e493dd1ed5516798dcd3c5b9cade2e2381e51416a0d02417bb19b3",
+        "size_in_bytes": 189
+      },
+      {
+        "_path": "lib/R/library/numDeriv/NEWS",
+        "path_type": "hardlink",
+        "sha256": "58a7539ddc0716f10245b85b8fa23d33ec5c84a5f67866360b0219f52b3fd9a4",
+        "sha256_in_prefix": "58a7539ddc0716f10245b85b8fa23d33ec5c84a5f67866360b0219f52b3fd9a4",
+        "size_in_bytes": 2924
+      },
+      {
+        "_path": "lib/R/library/numDeriv/R/numDeriv",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/numDeriv/R/numDeriv.rdb",
+        "path_type": "hardlink",
+        "sha256": "d1ee496a82b7d0f7d887cb4b4a0ba2d6d7c21851b6088e6430b4de7f891c768a",
+        "sha256_in_prefix": "d1ee496a82b7d0f7d887cb4b4a0ba2d6d7c21851b6088e6430b4de7f891c768a",
+        "size_in_bytes": 20972
+      },
+      {
+        "_path": "lib/R/library/numDeriv/R/numDeriv.rdx",
+        "path_type": "hardlink",
+        "sha256": "4015b5450f329e867f8c1e2e05b86329a404f22fd1da5f06a62acd8084502ac0",
+        "sha256_in_prefix": "4015b5450f329e867f8c1e2e05b86329a404f22fd1da5f06a62acd8084502ac0",
+        "size_in_bytes": 348
+      },
+      {
+        "_path": "lib/R/library/numDeriv/doc/Guide.Stex",
+        "path_type": "hardlink",
+        "sha256": "9f7b0fae6d142c89645b8073f350b74084b28c1368fd9842d6e600eff49043dd",
+        "sha256_in_prefix": "9f7b0fae6d142c89645b8073f350b74084b28c1368fd9842d6e600eff49043dd",
+        "size_in_bytes": 1599
+      },
+      {
+        "_path": "lib/R/library/numDeriv/doc/Guide.pdf",
+        "path_type": "hardlink",
+        "sha256": "76efebdb7efdc09c99cfd4a64d62b80abf636f2801fecb3d72e0646a45749001",
+        "sha256_in_prefix": "76efebdb7efdc09c99cfd4a64d62b80abf636f2801fecb3d72e0646a45749001",
+        "size_in_bytes": 55487
+      },
+      {
+        "_path": "lib/R/library/numDeriv/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "62aa4ad117ab955e8c5388038e312265905c6d89c69910d67d33e84373b5fe99",
+        "sha256_in_prefix": "62aa4ad117ab955e8c5388038e312265905c6d89c69910d67d33e84373b5fe99",
+        "size_in_bytes": 1349
+      },
+      {
+        "_path": "lib/R/library/numDeriv/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "739fd5b0e1955edb04c4fcead811c934e3363cf3de5fb2fa97f31630326af5bf",
+        "sha256_in_prefix": "739fd5b0e1955edb04c4fcead811c934e3363cf3de5fb2fa97f31630326af5bf",
+        "size_in_bytes": 253
+      },
+      {
+        "_path": "lib/R/library/numDeriv/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "d1a7a400fba5675326ec4008d33b55c5a788921807e11bf7ec24a37426396baf",
+        "sha256_in_prefix": "d1a7a400fba5675326ec4008d33b55c5a788921807e11bf7ec24a37426396baf",
+        "size_in_bytes": 175
+      },
+      {
+        "_path": "lib/R/library/numDeriv/help/numDeriv.rdb",
+        "path_type": "hardlink",
+        "sha256": "c0eb7fb73277dab6815cd474251a8bf47610f9f152b420af55cbf24240a32dec",
+        "sha256_in_prefix": "c0eb7fb73277dab6815cd474251a8bf47610f9f152b420af55cbf24240a32dec",
+        "size_in_bytes": 27335
+      },
+      {
+        "_path": "lib/R/library/numDeriv/help/numDeriv.rdx",
+        "path_type": "hardlink",
+        "sha256": "c6671bc0cc49a48e629090fd3c6904851de8355bc22060a221ca82398a150cc9",
+        "sha256_in_prefix": "c6671bc0cc49a48e629090fd3c6904851de8355bc22060a221ca82398a150cc9",
+        "size_in_bytes": 296
+      },
+      {
+        "_path": "lib/R/library/numDeriv/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "724d6891891a8d2e0317fe7f792f98050a0eb17aa96c0ba7c85b24f36cfd392b",
+        "sha256_in_prefix": "724d6891891a8d2e0317fe7f792f98050a0eb17aa96c0ba7c85b24f36cfd392b",
+        "size_in_bytes": 208
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/00.numDeriv.Intro.html",
+        "path_type": "hardlink",
+        "sha256": "f8bb7d4c9ca20f6c59324a20091aeea0bf8e4379ba0686ac1fe6eea4bf117da9",
+        "sha256_in_prefix": "f8bb7d4c9ca20f6c59324a20091aeea0bf8e4379ba0686ac1fe6eea4bf117da9",
+        "size_in_bytes": 1007
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "bb35815eaa82f418132bd05da6f81f659396d001a79a3f5a8c6412f922f3bd1a",
+        "sha256_in_prefix": "bb35815eaa82f418132bd05da6f81f659396d001a79a3f5a8c6412f922f3bd1a",
+        "size_in_bytes": 2448
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/genD.html",
+        "path_type": "hardlink",
+        "sha256": "42e70cf7f9825e870e512ef1fae2d8be2c320ad0ce8a8adb305b85c0163e0907",
+        "sha256_in_prefix": "42e70cf7f9825e870e512ef1fae2d8be2c320ad0ce8a8adb305b85c0163e0907",
+        "size_in_bytes": 5778
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/grad.html",
+        "path_type": "hardlink",
+        "sha256": "62d1b39cd6950e9aa035a7cb52f5c2bec802407882ff274f4dd6b781e330764e",
+        "sha256_in_prefix": "62d1b39cd6950e9aa035a7cb52f5c2bec802407882ff274f4dd6b781e330764e",
+        "size_in_bytes": 10913
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/hessian.html",
+        "path_type": "hardlink",
+        "sha256": "c4a565031684f60278fffb16a1dacee62b8f688cf4c906166b501e0fef5524fb",
+        "sha256_in_prefix": "c4a565031684f60278fffb16a1dacee62b8f688cf4c906166b501e0fef5524fb",
+        "size_in_bytes": 4899
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/jacobian.html",
+        "path_type": "hardlink",
+        "sha256": "9a4dbed135c17c83382b42bb3ad865501fe6b92d5e452ac440bd5dac9877bdcd",
+        "sha256_in_prefix": "9a4dbed135c17c83382b42bb3ad865501fe6b92d5e452ac440bd5dac9877bdcd",
+        "size_in_bytes": 4083
+      },
+      {
+        "_path": "lib/R/library/numDeriv/html/numDeriv-package.html",
+        "path_type": "hardlink",
+        "sha256": "09588a4de87bc8fa3a0cb724a559528c927c2031c14fa4da485556dc84c5a270",
+        "sha256_in_prefix": "09588a4de87bc8fa3a0cb724a559528c927c2031c14fa4da485556dc84c5a270",
+        "size_in_bytes": 2050
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-numderiv==2016.8_1=r36h6115d3f_0",
+  "sha256": "3896972272400217802179dd21debe9f3af800d22f67d285073cbc865626e6d3",
+  "size": 134874,
+  "subdir": "noarch",
+  "timestamp": 1557942537907,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-numderiv-2016.8_1-r36h6115d3f_0.tar.bz2",
+  "version": "2016.8_1"
+}

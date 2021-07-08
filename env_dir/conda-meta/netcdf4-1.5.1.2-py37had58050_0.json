@@ -1,0 +1,169 @@
+{
+  "build": "py37had58050_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "python_abi * *_cp37m"
+  ],
+  "depends": [
+    "cftime",
+    "hdf5 >=1.10.4,<1.10.5.0a0",
+    "libgcc-ng >=7.3.0",
+    "libnetcdf >=4.6.2,<4.6.3.0a0",
+    "numpy >=1.9.3,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "setuptools"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/netcdf4-1.5.1.2-py37had58050_0",
+  "features": "",
+  "files": [
+    "bin/nc3tonc4",
+    "bin/nc4tonc3",
+    "bin/ncinfo",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/COPYING",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/METADATA",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/RECORD",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/WHEEL",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/entry_points.txt",
+    "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/netCDF4/__init__.py",
+    "lib/python3.7/site-packages/netCDF4/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/netCDF4/__pycache__/utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/netCDF4/utils.py"
+  ],
+  "fn": "netcdf4-1.5.1.2-py37had58050_0.tar.bz2",
+  "license": "OSI Approved and MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/netcdf4-1.5.1.2-py37had58050_0",
+    "type": 1
+  },
+  "md5": "ff6ebc8a05fdbe8be305bb17d8a66074",
+  "name": "netcdf4",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/netcdf4-1.5.1.2-py37had58050_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/nc3tonc4",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "b6e0eaffc1df91f04fa716ba4a495740ead42a3a62ee3db4e38c6eee3c979664",
+        "sha256_in_prefix": "2fb02dc957adcf8e01ba427e792599575206f6cb330895936be4740050eae5b4",
+        "size_in_bytes": 251
+      },
+      {
+        "_path": "bin/nc4tonc3",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "f4f9af1a1dbdce460be280bf0e5f471e3f564ead091a3db0743dec09f513a1df",
+        "sha256_in_prefix": "5a42bb83ce5e6c332ab3d42100e45caa4216383bc0ddf82e001e661c51a8eef2",
+        "size_in_bytes": 251
+      },
+      {
+        "_path": "bin/ncinfo",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "32c758b060cba93becb56c05e92ce3bcd2d0bf1c8274fd1b67ece60bd5d18cb1",
+        "sha256_in_prefix": "ed3dea750462c811994733edf1cc508593a2e05bdefa86365ec3dbf7ffd7421a",
+        "size_in_bytes": 247
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/COPYING",
+        "path_type": "hardlink",
+        "sha256": "645d8d05548dd825d032af5782a00545925699e2ce7a6cbcea592ab8178cd215",
+        "sha256_in_prefix": "645d8d05548dd825d032af5782a00545925699e2ce7a6cbcea592ab8178cd215",
+        "size_in_bytes": 1366
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4a2a4b6b837d0d3a107ab6c6084be1e732c80c715125f296b4c4f130433b8306",
+        "sha256_in_prefix": "4a2a4b6b837d0d3a107ab6c6084be1e732c80c715125f296b4c4f130433b8306",
+        "size_in_bytes": 1706
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "0d6491fa9910a4ff1025ea91ddf0cc0087d792134b197c4a47c6c34642359845",
+        "sha256_in_prefix": "0d6491fa9910a4ff1025ea91ddf0cc0087d792134b197c4a47c6c34642359845",
+        "size_in_bytes": 1173
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "a21c9b46e7b96cf479310512abb73a00697e88801dd0c5edfec7f261367546af",
+        "sha256_in_prefix": "a21c9b46e7b96cf479310512abb73a00697e88801dd0c5edfec7f261367546af",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "48e680d62a2292e107aefd8d9f1614ec105576ce59cc134e2d60392cdde9e589",
+        "sha256_in_prefix": "48e680d62a2292e107aefd8d9f1614ec105576ce59cc134e2d60392cdde9e589",
+        "size_in_bytes": 117
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4-1.5.1.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b2d61b24f7075840abac53f036de136767640268c5ccd776f527394f416425fb",
+        "sha256_in_prefix": "b2d61b24f7075840abac53f036de136767640268c5ccd776f527394f416425fb",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "50237ac81ca692567cc457f27f25384c492b019686925f23f9d461897d5a8a8d",
+        "sha256_in_prefix": "50237ac81ca692567cc457f27f25384c492b019686925f23f9d461897d5a8a8d",
+        "size_in_bytes": 769
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "d26b76f38f184f3173953bd3957fb915238f56b37bb2a3f679611dcb567e5923",
+        "sha256_in_prefix": "d26b76f38f184f3173953bd3957fb915238f56b37bb2a3f679611dcb567e5923",
+        "size_in_bytes": 788
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4/__pycache__/utils.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "885d27dbc18a823e918cc82329939709ede530fdb5c18ecfa84a7c7d74abf08b",
+        "sha256_in_prefix": "885d27dbc18a823e918cc82329939709ede530fdb5c18ecfa84a7c7d74abf08b",
+        "size_in_bytes": 23794
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "07d6688df7bfd7ddecc255bd7eecac4d3aee33f2f6167e218f134c4ed0de738a",
+        "sha256_in_prefix": "07d6688df7bfd7ddecc255bd7eecac4d3aee33f2f6167e218f134c4ed0de738a",
+        "size_in_bytes": 1615848
+      },
+      {
+        "_path": "lib/python3.7/site-packages/netCDF4/utils.py",
+        "path_type": "hardlink",
+        "sha256": "98bd00ace37bb871b70a3265e83189d9d8447c1efe193516ebc1e6b5da6bf56e",
+        "sha256_in_prefix": "98bd00ace37bb871b70a3265e83189d9d8447c1efe193516ebc1e6b5da6bf56e",
+        "size_in_bytes": 37486
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "netcdf4==1.5.1.2=py37had58050_0",
+  "sha256": "ff2986e7227936ea850dfe104ef64c062d5563a114bde3b47475493e76c7a2f6",
+  "size": 552182,
+  "subdir": "linux-64",
+  "timestamp": 1557162176997,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/netcdf4-1.5.1.2-py37had58050_0.tar.bz2",
+  "version": "1.5.1.2"
+}

@@ -1,0 +1,11 @@
+prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+exec_prefix=/media/gpu/easystore/covid-mobility-tool/env_dir
+libdir=/media/gpu/easystore/covid-mobility-tool/env_dir/lib
+includedir=/media/gpu/easystore/covid-mobility-tool/env_dir/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.4
+Libs: -L/media/gpu/easystore/covid-mobility-tool/env_dir/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/media/gpu/easystore/covid-mobility-tool/env_dir/include

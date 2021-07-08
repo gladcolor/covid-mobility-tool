@@ -1,0 +1,250 @@
+{
+  "build": "r36h96ca727_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-gower-0.2.0-r36h96ca727_0",
+  "features": "",
+  "files": [
+    "lib/R/library/gower/DESCRIPTION",
+    "lib/R/library/gower/INDEX",
+    "lib/R/library/gower/Meta/Rd.rds",
+    "lib/R/library/gower/Meta/features.rds",
+    "lib/R/library/gower/Meta/hsearch.rds",
+    "lib/R/library/gower/Meta/links.rds",
+    "lib/R/library/gower/Meta/nsInfo.rds",
+    "lib/R/library/gower/Meta/package.rds",
+    "lib/R/library/gower/Meta/vignette.rds",
+    "lib/R/library/gower/NAMESPACE",
+    "lib/R/library/gower/NEWS",
+    "lib/R/library/gower/R/gower",
+    "lib/R/library/gower/R/gower.rdb",
+    "lib/R/library/gower/R/gower.rdx",
+    "lib/R/library/gower/doc/index.html",
+    "lib/R/library/gower/doc/intro.R",
+    "lib/R/library/gower/doc/intro.Rnw",
+    "lib/R/library/gower/doc/intro.pdf",
+    "lib/R/library/gower/help/AnIndex",
+    "lib/R/library/gower/help/aliases.rds",
+    "lib/R/library/gower/help/gower.rdb",
+    "lib/R/library/gower/help/gower.rdx",
+    "lib/R/library/gower/help/paths.rds",
+    "lib/R/library/gower/html/00Index.html",
+    "lib/R/library/gower/html/R.css",
+    "lib/R/library/gower/libs/gower.so"
+  ],
+  "fn": "r-gower-0.2.0-r36h96ca727_0.conda",
+  "legacy_bz2_md5": "a1702c51838fa36a58583169727a9476",
+  "legacy_bz2_size": 177175,
+  "license": "GPL-3",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-gower-0.2.0-r36h96ca727_0",
+    "type": 1
+  },
+  "md5": "0fe3869d7458facdacd87bd264c75c7b",
+  "name": "r-gower",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-gower-0.2.0-r36h96ca727_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/gower/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "d1d16e96ca13305711e1931b98be5fb69d13fa86ed79353dcf3c6c6ba27d7d57",
+        "sha256_in_prefix": "d1d16e96ca13305711e1931b98be5fb69d13fa86ed79353dcf3c6c6ba27d7d57",
+        "size_in_bytes": 927
+      },
+      {
+        "_path": "lib/R/library/gower/INDEX",
+        "path_type": "hardlink",
+        "sha256": "17076ee502bc611fec4c78000a082f1cc25b5735604185c174520672848d1843",
+        "sha256_in_prefix": "17076ee502bc611fec4c78000a082f1cc25b5735604185c174520672848d1843",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "fb7f2abf46376dfdf67e6b1da480b331b2b47973dd6cafd271339b854c71411c",
+        "sha256_in_prefix": "fb7f2abf46376dfdf67e6b1da480b331b2b47973dd6cafd271339b854c71411c",
+        "size_in_bytes": 307
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "96bd74b8838f7798364ae1511ab58ac8f6427d92f22b7d17ff835a14f00d15ea",
+        "sha256_in_prefix": "96bd74b8838f7798364ae1511ab58ac8f6427d92f22b7d17ff835a14f00d15ea",
+        "size_in_bytes": 322
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "b71e3259a972515060e76bd8e37e7f4ffdad225194183572dfbc6ee02bd357ec",
+        "sha256_in_prefix": "b71e3259a972515060e76bd8e37e7f4ffdad225194183572dfbc6ee02bd357ec",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "2f4f752aa17cd866d686f368d1cf3b2cd7a64349bdd19f816bb101dd0ec27857",
+        "sha256_in_prefix": "2f4f752aa17cd866d686f368d1cf3b2cd7a64349bdd19f816bb101dd0ec27857",
+        "size_in_bytes": 298
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "e4d448450555a44b43a0bfbb596c52fd849a0aeff05f716f51112285bebb79f1",
+        "sha256_in_prefix": "e4d448450555a44b43a0bfbb596c52fd849a0aeff05f716f51112285bebb79f1",
+        "size_in_bytes": 905
+      },
+      {
+        "_path": "lib/R/library/gower/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "11f2545f608e1defd09742f1870f36aeeb5d36f7d9f770f8261713e3d1a91c45",
+        "sha256_in_prefix": "11f2545f608e1defd09742f1870f36aeeb5d36f7d9f770f8261713e3d1a91c45",
+        "size_in_bytes": 215
+      },
+      {
+        "_path": "lib/R/library/gower/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "1fe34de95cb9b2da1998637c92034d34b50124297fbf02a766cf7464bbb05fcb",
+        "sha256_in_prefix": "1fe34de95cb9b2da1998637c92034d34b50124297fbf02a766cf7464bbb05fcb",
+        "size_in_bytes": 121
+      },
+      {
+        "_path": "lib/R/library/gower/NEWS",
+        "path_type": "hardlink",
+        "sha256": "2a1355fe08afcacf34e89b807e6aad8b297e3d4da5a58c7b79e732d4d8fbddd1",
+        "sha256_in_prefix": "2a1355fe08afcacf34e89b807e6aad8b297e3d4da5a58c7b79e732d4d8fbddd1",
+        "size_in_bytes": 886
+      },
+      {
+        "_path": "lib/R/library/gower/R/gower",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/gower/R/gower.rdb",
+        "path_type": "hardlink",
+        "sha256": "609101201b251d33de0b718fb2e45ad695b72e25aa5505cebe8442650cb9623e",
+        "sha256_in_prefix": "609101201b251d33de0b718fb2e45ad695b72e25aa5505cebe8442650cb9623e",
+        "size_in_bytes": 8198
+      },
+      {
+        "_path": "lib/R/library/gower/R/gower.rdx",
+        "path_type": "hardlink",
+        "sha256": "3619487bbc6dc1b823781590e93ca1aa2a66d38fed93c304439f025c7ad98ea0",
+        "sha256_in_prefix": "3619487bbc6dc1b823781590e93ca1aa2a66d38fed93c304439f025c7ad98ea0",
+        "size_in_bytes": 340
+      },
+      {
+        "_path": "lib/R/library/gower/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "1732578d658a3cbf310828894ff2fb6fbd09965bcebfa930c5340f535e98306b",
+        "sha256_in_prefix": "1732578d658a3cbf310828894ff2fb6fbd09965bcebfa930c5340f535e98306b",
+        "size_in_bytes": 1321
+      },
+      {
+        "_path": "lib/R/library/gower/doc/intro.R",
+        "path_type": "hardlink",
+        "sha256": "6204a8a0180a23e2197e186f0ec1a63715a4265d3ba66c732c90c14b2510d85b",
+        "sha256_in_prefix": "6204a8a0180a23e2197e186f0ec1a63715a4265d3ba66c732c90c14b2510d85b",
+        "size_in_bytes": 1575
+      },
+      {
+        "_path": "lib/R/library/gower/doc/intro.Rnw",
+        "path_type": "hardlink",
+        "sha256": "301b1e2b5f4fea17a0b750cbe4ba419a6c26a711e1b70ce38528f8509befba74",
+        "sha256_in_prefix": "301b1e2b5f4fea17a0b750cbe4ba419a6c26a711e1b70ce38528f8509befba74",
+        "size_in_bytes": 4897
+      },
+      {
+        "_path": "lib/R/library/gower/doc/intro.pdf",
+        "path_type": "hardlink",
+        "sha256": "fd81d3b0c0e0841f13ccad135a533b5b74f215fbaa387555d5b34671191f481a",
+        "sha256_in_prefix": "fd81d3b0c0e0841f13ccad135a533b5b74f215fbaa387555d5b34671191f481a",
+        "size_in_bytes": 121070
+      },
+      {
+        "_path": "lib/R/library/gower/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "7904fa6cd50f154e266e1f5d7a3f61be967c9194f07ae1e5662857e69d629238",
+        "sha256_in_prefix": "7904fa6cd50f154e266e1f5d7a3f61be967c9194f07ae1e5662857e69d629238",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "lib/R/library/gower/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "ab9730ffc9979605595cbeaae0d7db1b9c02d58f3c67699913129daf13e7d772",
+        "sha256_in_prefix": "ab9730ffc9979605595cbeaae0d7db1b9c02d58f3c67699913129daf13e7d772",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "lib/R/library/gower/help/gower.rdb",
+        "path_type": "hardlink",
+        "sha256": "cfcb8a1b9ec285d429246be66eb1a83303d1c8b60e3e9407904b928b8cf21f44",
+        "sha256_in_prefix": "cfcb8a1b9ec285d429246be66eb1a83303d1c8b60e3e9407904b928b8cf21f44",
+        "size_in_bytes": 7823
+      },
+      {
+        "_path": "lib/R/library/gower/help/gower.rdx",
+        "path_type": "hardlink",
+        "sha256": "2b959064ce33b57c37bc849f5fb5ea52867d0d53d73f905d841543791cc0fbfb",
+        "sha256_in_prefix": "2b959064ce33b57c37bc849f5fb5ea52867d0d53d73f905d841543791cc0fbfb",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "lib/R/library/gower/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "1392caa464ef12f40d66bda0a7e951ce1cf8faefe3066123ddbdc2dda6fac113",
+        "sha256_in_prefix": "1392caa464ef12f40d66bda0a7e951ce1cf8faefe3066123ddbdc2dda6fac113",
+        "size_in_bytes": 171
+      },
+      {
+        "_path": "lib/R/library/gower/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "7dfb09e56ff087ee533839f1cbed2bf6118348ba2a07e2c20c1e2bfc51e71679",
+        "sha256_in_prefix": "7dfb09e56ff087ee533839f1cbed2bf6118348ba2a07e2c20c1e2bfc51e71679",
+        "size_in_bytes": 1394
+      },
+      {
+        "_path": "lib/R/library/gower/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/gower/libs/gower.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-gower_1558366212014/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+        "sha256": "69ddf0034981330a5db236ab9f948c6e656ed2d25f8d3b19b69eb7d5d20ba69a",
+        "sha256_in_prefix": "b7fc428d89e6b4de92405c9a49d3ab13faf857047eef411002239f96cd53ddc4",
+        "size_in_bytes": 30528
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-gower==0.2.0=r36h96ca727_0",
+  "sha256": "43efa2599e8de964ac07fb905422a4aa972ecda4aedb06a112b7a930a181d8da",
+  "size": 172041,
+  "subdir": "linux-64",
+  "timestamp": 1558366234018,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-gower-0.2.0-r36h96ca727_0.conda",
+  "version": "0.2.0"
+}

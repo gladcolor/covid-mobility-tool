@@ -1,0 +1,55 @@
+{
+  "build": "h553295d_8",
+  "build_number": 8,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "sysroot_linux-64 ==99999999999"
+  ],
+  "depends": [
+    "binutils_linux-64 2.31.1 h6176602_8",
+    "gcc_linux-64 7.3.0 h553295d_8",
+    "gxx_impl_linux-64 7.3.0.*"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_8",
+  "features": "",
+  "files": [
+    "etc/conda/activate.d/activate-gxx_linux-64.sh",
+    "etc/conda/deactivate.d/deactivate-gxx_linux-64.sh"
+  ],
+  "fn": "gxx_linux-64-7.3.0-h553295d_8.tar.bz2",
+  "license": "GPL",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_8",
+    "type": 1
+  },
+  "md5": "62201d8b1e60b5c07ab6194ace2d14ff",
+  "name": "gxx_linux-64",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_8.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/activate.d/activate-gxx_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "2db2ff3d12b1bcd8b53c7273dfecd12409da7e3b4cf4b293b4e40fd3ede9cf1c",
+        "sha256_in_prefix": "2db2ff3d12b1bcd8b53c7273dfecd12409da7e3b4cf4b293b4e40fd3ede9cf1c",
+        "size_in_bytes": 4851
+      },
+      {
+        "_path": "etc/conda/deactivate.d/deactivate-gxx_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "db5df8c8d9d7da8c6055e0c92eb410b76201d091dc1a3802512d4dd785e61f14",
+        "sha256_in_prefix": "db5df8c8d9d7da8c6055e0c92eb410b76201d091dc1a3802512d4dd785e61f14",
+        "size_in_bytes": 4853
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "gxx_linux-64==7.3.0=h553295d_8",
+  "sha256": "7b6566fad9d93994afcfca5ee15f7651c7fea7f2ff192c4bdce68c81959f507e",
+  "size": 152006,
+  "subdir": "linux-64",
+  "timestamp": 1565123741742,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/gxx_linux-64-7.3.0-h553295d_8.tar.bz2",
+  "version": "7.3.0"
+}

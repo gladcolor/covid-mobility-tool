@@ -1,0 +1,267 @@
+{
+  "build": "r36h29659fb_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-bh",
+    "r-bit64",
+    "r-blob >=1.1.1",
+    "r-dbi >=1.0.0",
+    "r-memoise",
+    "r-pkgconfig",
+    "r-plogr >=0.2.0",
+    "r-rcpp >=0.12.7",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-rsqlite-2.1.1-r36h29659fb_0",
+  "features": "",
+  "files": [
+    "lib/R/library/RSQLite/DESCRIPTION",
+    "lib/R/library/RSQLite/INDEX",
+    "lib/R/library/RSQLite/Meta/Rd.rds",
+    "lib/R/library/RSQLite/Meta/features.rds",
+    "lib/R/library/RSQLite/Meta/hsearch.rds",
+    "lib/R/library/RSQLite/Meta/links.rds",
+    "lib/R/library/RSQLite/Meta/nsInfo.rds",
+    "lib/R/library/RSQLite/Meta/package.rds",
+    "lib/R/library/RSQLite/Meta/vignette.rds",
+    "lib/R/library/RSQLite/NAMESPACE",
+    "lib/R/library/RSQLite/NEWS.md",
+    "lib/R/library/RSQLite/R/RSQLite",
+    "lib/R/library/RSQLite/R/RSQLite.rdb",
+    "lib/R/library/RSQLite/R/RSQLite.rdx",
+    "lib/R/library/RSQLite/db/datasets.sqlite",
+    "lib/R/library/RSQLite/doc/RSQLite.R",
+    "lib/R/library/RSQLite/doc/RSQLite.Rmd",
+    "lib/R/library/RSQLite/doc/RSQLite.html",
+    "lib/R/library/RSQLite/doc/index.html",
+    "lib/R/library/RSQLite/help/AnIndex",
+    "lib/R/library/RSQLite/help/RSQLite.rdb",
+    "lib/R/library/RSQLite/help/RSQLite.rdx",
+    "lib/R/library/RSQLite/help/aliases.rds",
+    "lib/R/library/RSQLite/help/paths.rds",
+    "lib/R/library/RSQLite/html/00Index.html",
+    "lib/R/library/RSQLite/html/R.css",
+    "lib/R/library/RSQLite/libs/RSQLite.so"
+  ],
+  "fn": "r-rsqlite-2.1.1-r36h29659fb_0.conda",
+  "legacy_bz2_md5": "3cc52b8d4cd739118062d7dc6a65113c",
+  "legacy_bz2_size": 1033870,
+  "license": "LGPL (>= 2)",
+  "license_family": "LGPL",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-rsqlite-2.1.1-r36h29659fb_0",
+    "type": 1
+  },
+  "md5": "46b92ac0195a3f9edb411c0320eaf39e",
+  "name": "r-rsqlite",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-rsqlite-2.1.1-r36h29659fb_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/RSQLite/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "d2d0bf78cdfd6fadbe031330d7ff7be38986e9692960e283b309404ff5c2e5e6",
+        "sha256_in_prefix": "d2d0bf78cdfd6fadbe031330d7ff7be38986e9692960e283b309404ff5c2e5e6",
+        "size_in_bytes": 2034
+      },
+      {
+        "_path": "lib/R/library/RSQLite/INDEX",
+        "path_type": "hardlink",
+        "sha256": "69c213732e6bdff4505673a4c20c10a7256b16f6abc324b21522e196fe00e584",
+        "sha256_in_prefix": "69c213732e6bdff4505673a4c20c10a7256b16f6abc324b21522e196fe00e584",
+        "size_in_bytes": 546
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "7b8a6ab7473ef386483c6494df02d6e18e451a13036bc85b648d61b363a83742",
+        "sha256_in_prefix": "7b8a6ab7473ef386483c6494df02d6e18e451a13036bc85b648d61b363a83742",
+        "size_in_bytes": 1438
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "fea7244b4656b1282e2a7a0c4d152bead37264500531490561f228787a7eb976",
+        "sha256_in_prefix": "fea7244b4656b1282e2a7a0c4d152bead37264500531490561f228787a7eb976",
+        "size_in_bytes": 1487
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "a1009d798a90e49fe62af888d29cf85f391d2598ff33b8a08bb71ebe075396e0",
+        "sha256_in_prefix": "a1009d798a90e49fe62af888d29cf85f391d2598ff33b8a08bb71ebe075396e0",
+        "size_in_bytes": 965
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "8616e751492bba7a9f705c60a1ebf02979eb1cea7740205f3b8b5cb13afddc2d",
+        "sha256_in_prefix": "8616e751492bba7a9f705c60a1ebf02979eb1cea7740205f3b8b5cb13afddc2d",
+        "size_in_bytes": 890
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "328830540f7e8b075edf7de78ba0060718f10767649c9a3e7bce88e4c4b02356",
+        "sha256_in_prefix": "328830540f7e8b075edf7de78ba0060718f10767649c9a3e7bce88e4c4b02356",
+        "size_in_bytes": 1553
+      },
+      {
+        "_path": "lib/R/library/RSQLite/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "e2bec5353fcae0946332cf2011c70df9677459aa2a1fb031187f72df0a28f858",
+        "sha256_in_prefix": "e2bec5353fcae0946332cf2011c70df9677459aa2a1fb031187f72df0a28f858",
+        "size_in_bytes": 195
+      },
+      {
+        "_path": "lib/R/library/RSQLite/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "1cab5628306406c3ab3db3c03b99eb9f03fb339480621cd5011c247b2521d7c1",
+        "sha256_in_prefix": "1cab5628306406c3ab3db3c03b99eb9f03fb339480621cd5011c247b2521d7c1",
+        "size_in_bytes": 2076
+      },
+      {
+        "_path": "lib/R/library/RSQLite/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "d31bb427d1c5aae7534e9b61000ee81905e5c0003794366d36b6950ac4455efe",
+        "sha256_in_prefix": "d31bb427d1c5aae7534e9b61000ee81905e5c0003794366d36b6950ac4455efe",
+        "size_in_bytes": 34176
+      },
+      {
+        "_path": "lib/R/library/RSQLite/R/RSQLite",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/RSQLite/R/RSQLite.rdb",
+        "path_type": "hardlink",
+        "sha256": "76bf9a761ed04e7ae339eb34a48c4015af3e09fedf14544779a14d674492b53c",
+        "sha256_in_prefix": "76bf9a761ed04e7ae339eb34a48c4015af3e09fedf14544779a14d674492b53c",
+        "size_in_bytes": 223917
+      },
+      {
+        "_path": "lib/R/library/RSQLite/R/RSQLite.rdx",
+        "path_type": "hardlink",
+        "sha256": "1beb089a8a8449048ff313b1581cbebee7bec6c10bf703893f7410b55bb40287",
+        "sha256_in_prefix": "1beb089a8a8449048ff313b1581cbebee7bec6c10bf703893f7410b55bb40287",
+        "size_in_bytes": 3033
+      },
+      {
+        "_path": "lib/R/library/RSQLite/db/datasets.sqlite",
+        "path_type": "hardlink",
+        "sha256": "a9f771f719f5d16f76bd11861b8403922ed2c7a44cac5c4b0b7dcb2c50ea92ca",
+        "sha256_in_prefix": "a9f771f719f5d16f76bd11861b8403922ed2c7a44cac5c4b0b7dcb2c50ea92ca",
+        "size_in_bytes": 193536
+      },
+      {
+        "_path": "lib/R/library/RSQLite/doc/RSQLite.R",
+        "path_type": "hardlink",
+        "sha256": "b37f9805ed438c59fcdb7df6207ea7d9fbf5b982a01f766c02eb0c701858932f",
+        "sha256_in_prefix": "b37f9805ed438c59fcdb7df6207ea7d9fbf5b982a01f766c02eb0c701858932f",
+        "size_in_bytes": 2189
+      },
+      {
+        "_path": "lib/R/library/RSQLite/doc/RSQLite.Rmd",
+        "path_type": "hardlink",
+        "sha256": "5d27369cbfd7e98c60a82b3a2459e8d69cc6d1879e0490a6f967235ed85c6366",
+        "sha256_in_prefix": "5d27369cbfd7e98c60a82b3a2459e8d69cc6d1879e0490a6f967235ed85c6366",
+        "size_in_bytes": 3797
+      },
+      {
+        "_path": "lib/R/library/RSQLite/doc/RSQLite.html",
+        "path_type": "hardlink",
+        "sha256": "4aef414547cd9112794060aa094044d75f13d5704204fc5804885f707676aea0",
+        "sha256_in_prefix": "4aef414547cd9112794060aa094044d75f13d5704204fc5804885f707676aea0",
+        "size_in_bytes": 17754
+      },
+      {
+        "_path": "lib/R/library/RSQLite/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "f992168c6a4f4aa17c741add1d58d7b043400910b7e77c47e5ea794850a30618",
+        "sha256_in_prefix": "f992168c6a4f4aa17c741add1d58d7b043400910b7e77c47e5ea794850a30618",
+        "size_in_bytes": 1320
+      },
+      {
+        "_path": "lib/R/library/RSQLite/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "75002e3b9cfb6e8a70c43ab4d9e8562452be89c4e4ac825062e1550a483c8ded",
+        "sha256_in_prefix": "75002e3b9cfb6e8a70c43ab4d9e8562452be89c4e4ac825062e1550a483c8ded",
+        "size_in_bytes": 3369
+      },
+      {
+        "_path": "lib/R/library/RSQLite/help/RSQLite.rdb",
+        "path_type": "hardlink",
+        "sha256": "86b8fbda1f21df535658938c4c63519182c380fce1392dfe176bc15a13b59890",
+        "sha256_in_prefix": "86b8fbda1f21df535658938c4c63519182c380fce1392dfe176bc15a13b59890",
+        "size_in_bytes": 43979
+      },
+      {
+        "_path": "lib/R/library/RSQLite/help/RSQLite.rdx",
+        "path_type": "hardlink",
+        "sha256": "8d32449f5b322f623a17cf11aa57264a0805e33389235ddbe978abef80d29d7f",
+        "sha256_in_prefix": "8d32449f5b322f623a17cf11aa57264a0805e33389235ddbe978abef80d29d7f",
+        "size_in_bytes": 706
+      },
+      {
+        "_path": "lib/R/library/RSQLite/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "23e2c47bd61cac72c4614a3d7f272cabc0069bdc26c3096fcf947f0ea794eb81",
+        "sha256_in_prefix": "23e2c47bd61cac72c4614a3d7f272cabc0069bdc26c3096fcf947f0ea794eb81",
+        "size_in_bytes": 890
+      },
+      {
+        "_path": "lib/R/library/RSQLite/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "1766f223f4c0f874be9acee9476516579d85294dc4228b27d37cd0384cdfd488",
+        "sha256_in_prefix": "1766f223f4c0f874be9acee9476516579d85294dc4228b27d37cd0384cdfd488",
+        "size_in_bytes": 415
+      },
+      {
+        "_path": "lib/R/library/RSQLite/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "fb3834a351a6bc6f10df99d100d3fcf2a29227a5dddf43a0ce47bab4e7bc75c5",
+        "sha256_in_prefix": "fb3834a351a6bc6f10df99d100d3fcf2a29227a5dddf43a0ce47bab4e7bc75c5",
+        "size_in_bytes": 3249
+      },
+      {
+        "_path": "lib/R/library/RSQLite/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/RSQLite/libs/RSQLite.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-rsqlite_1558541856838/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "ff9a7eaca16e3e63050b94079338e7b074e8052dcaf0ecfda385ce852ef19fb2",
+        "sha256_in_prefix": "30875b9faf8ea9e762d8328dfca824d62b4956b3a36eee71c90942dd6ba23eb1",
+        "size_in_bytes": 1453128
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-rsqlite==2.1.1=r36h29659fb_0",
+  "sha256": "d34c2ed671a32f627c0c1079d643c3d9d26f0f7747b167304d3968cdab2b5ab8",
+  "size": 946210,
+  "subdir": "linux-64",
+  "timestamp": 1558541956963,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-rsqlite-2.1.1-r36h29659fb_0.conda",
+  "version": "2.1.1"
+}

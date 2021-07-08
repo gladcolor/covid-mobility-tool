@@ -1,0 +1,602 @@
+{
+  "build": "r36h6115d3f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "r-glue >=1.2.0",
+    "r-magrittr",
+    "r-stringi >=1.1.7",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-stringr-1.4.0-r36h6115d3f_0",
+  "features": "",
+  "files": [
+    "lib/R/library/stringr/DESCRIPTION",
+    "lib/R/library/stringr/INDEX",
+    "lib/R/library/stringr/LICENSE",
+    "lib/R/library/stringr/MD5",
+    "lib/R/library/stringr/Meta/Rd.rds",
+    "lib/R/library/stringr/Meta/data.rds",
+    "lib/R/library/stringr/Meta/features.rds",
+    "lib/R/library/stringr/Meta/hsearch.rds",
+    "lib/R/library/stringr/Meta/links.rds",
+    "lib/R/library/stringr/Meta/nsInfo.rds",
+    "lib/R/library/stringr/Meta/package.rds",
+    "lib/R/library/stringr/Meta/vignette.rds",
+    "lib/R/library/stringr/NAMESPACE",
+    "lib/R/library/stringr/NEWS.md",
+    "lib/R/library/stringr/R/stringr",
+    "lib/R/library/stringr/R/stringr.rdb",
+    "lib/R/library/stringr/R/stringr.rdx",
+    "lib/R/library/stringr/data/Rdata.rdb",
+    "lib/R/library/stringr/data/Rdata.rds",
+    "lib/R/library/stringr/data/Rdata.rdx",
+    "lib/R/library/stringr/doc/index.html",
+    "lib/R/library/stringr/doc/regular-expressions.R",
+    "lib/R/library/stringr/doc/regular-expressions.Rmd",
+    "lib/R/library/stringr/doc/regular-expressions.html",
+    "lib/R/library/stringr/doc/stringr.R",
+    "lib/R/library/stringr/doc/stringr.Rmd",
+    "lib/R/library/stringr/doc/stringr.html",
+    "lib/R/library/stringr/help/AnIndex",
+    "lib/R/library/stringr/help/aliases.rds",
+    "lib/R/library/stringr/help/figures/logo.png",
+    "lib/R/library/stringr/help/paths.rds",
+    "lib/R/library/stringr/help/stringr.rdb",
+    "lib/R/library/stringr/help/stringr.rdx",
+    "lib/R/library/stringr/html/00Index.html",
+    "lib/R/library/stringr/html/R.css",
+    "lib/R/library/stringr/html/case.html",
+    "lib/R/library/stringr/html/invert_match.html",
+    "lib/R/library/stringr/html/modifiers.html",
+    "lib/R/library/stringr/html/pipe.html",
+    "lib/R/library/stringr/html/str_c.html",
+    "lib/R/library/stringr/html/str_conv.html",
+    "lib/R/library/stringr/html/str_count.html",
+    "lib/R/library/stringr/html/str_detect.html",
+    "lib/R/library/stringr/html/str_dup.html",
+    "lib/R/library/stringr/html/str_extract.html",
+    "lib/R/library/stringr/html/str_flatten.html",
+    "lib/R/library/stringr/html/str_glue.html",
+    "lib/R/library/stringr/html/str_interp.html",
+    "lib/R/library/stringr/html/str_length.html",
+    "lib/R/library/stringr/html/str_locate.html",
+    "lib/R/library/stringr/html/str_match.html",
+    "lib/R/library/stringr/html/str_order.html",
+    "lib/R/library/stringr/html/str_pad.html",
+    "lib/R/library/stringr/html/str_remove.html",
+    "lib/R/library/stringr/html/str_replace.html",
+    "lib/R/library/stringr/html/str_replace_na.html",
+    "lib/R/library/stringr/html/str_split.html",
+    "lib/R/library/stringr/html/str_starts.html",
+    "lib/R/library/stringr/html/str_sub.html",
+    "lib/R/library/stringr/html/str_subset.html",
+    "lib/R/library/stringr/html/str_trim.html",
+    "lib/R/library/stringr/html/str_trunc.html",
+    "lib/R/library/stringr/html/str_view.html",
+    "lib/R/library/stringr/html/str_wrap.html",
+    "lib/R/library/stringr/html/stringr-data.html",
+    "lib/R/library/stringr/html/stringr-package.html",
+    "lib/R/library/stringr/html/word.html",
+    "lib/R/library/stringr/htmlwidgets/lib/str_view.css",
+    "lib/R/library/stringr/htmlwidgets/str_view.js",
+    "lib/R/library/stringr/htmlwidgets/str_view.yaml"
+  ],
+  "fn": "r-stringr-1.4.0-r36h6115d3f_0.tar.bz2",
+  "license": "GPL-2 | file LICENSE",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-stringr-1.4.0-r36h6115d3f_0",
+    "type": 1
+  },
+  "md5": "1003f11f540d7b001d4a96f2733e1d63",
+  "name": "r-stringr",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-stringr-1.4.0-r36h6115d3f_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/stringr/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "78e5e2715cd93125160b592745022cccfcff8a9291ffe727316b59dd3f42f4c7",
+        "sha256_in_prefix": "78e5e2715cd93125160b592745022cccfcff8a9291ffe727316b59dd3f42f4c7",
+        "size_in_bytes": 1352
+      },
+      {
+        "_path": "lib/R/library/stringr/INDEX",
+        "path_type": "hardlink",
+        "sha256": "67fc2ac8d93a2b4c9270a39ceeec85d24d473cc28c599594612fa9e1d4a064d4",
+        "sha256_in_prefix": "67fc2ac8d93a2b4c9270a39ceeec85d24d473cc28c599594612fa9e1d4a064d4",
+        "size_in_bytes": 2136
+      },
+      {
+        "_path": "lib/R/library/stringr/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "sha256_in_prefix": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "size_in_bytes": 18092
+      },
+      {
+        "_path": "lib/R/library/stringr/MD5",
+        "path_type": "hardlink",
+        "sha256": "399da20ce4e92b4d719feb7fd38fac139353230b3be0285e5dfa3752a9bb85dd",
+        "sha256_in_prefix": "399da20ce4e92b4d719feb7fd38fac139353230b3be0285e5dfa3752a9bb85dd",
+        "size_in_bytes": 3663
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "2bf1debe6530b790fb3d5ec735d360ec9b6d254794f88b21384b8eab0a42e00d",
+        "sha256_in_prefix": "2bf1debe6530b790fb3d5ec735d360ec9b6d254794f88b21384b8eab0a42e00d",
+        "size_in_bytes": 1435
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/data.rds",
+        "path_type": "hardlink",
+        "sha256": "17e8ec23cc2ae4f55176a6d6b451cd5ea090e6dedad9493c03dadd8eaf02c52f",
+        "sha256_in_prefix": "17e8ec23cc2ae4f55176a6d6b451cd5ea090e6dedad9493c03dadd8eaf02c52f",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "1a3899df24d7a531af1f1bbbd2c56d4a79bc1fd32b9377e179a92d16eca0da37",
+        "sha256_in_prefix": "1a3899df24d7a531af1f1bbbd2c56d4a79bc1fd32b9377e179a92d16eca0da37",
+        "size_in_bytes": 1491
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "49cea65e7c96044ba43e5df0ec366b2fa8624238dd1886af35a4ea5fe471bb95",
+        "sha256_in_prefix": "49cea65e7c96044ba43e5df0ec366b2fa8624238dd1886af35a4ea5fe471bb95",
+        "size_in_bytes": 648
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "54dc0994f770e5b599024d9a7012296e73848fe83ed84636338bbf2c980233ff",
+        "sha256_in_prefix": "54dc0994f770e5b599024d9a7012296e73848fe83ed84636338bbf2c980233ff",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "d5444ab555c392ae4eac297c857eeef9dcf4e69833430db9ac046dcc9c98d1c5",
+        "sha256_in_prefix": "d5444ab555c392ae4eac297c857eeef9dcf4e69833430db9ac046dcc9c98d1c5",
+        "size_in_bytes": 1234
+      },
+      {
+        "_path": "lib/R/library/stringr/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "656882e9c01d8817d65e6f426234f6f19bb0954bc843caf27d399e7bdbbc29eb",
+        "sha256_in_prefix": "656882e9c01d8817d65e6f426234f6f19bb0954bc843caf27d399e7bdbbc29eb",
+        "size_in_bytes": 241
+      },
+      {
+        "_path": "lib/R/library/stringr/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "fdfb624c854170585320794b4a0e314a6523e692f77ee04b0aa0d7173201e1ba",
+        "sha256_in_prefix": "fdfb624c854170585320794b4a0e314a6523e692f77ee04b0aa0d7173201e1ba",
+        "size_in_bytes": 1009
+      },
+      {
+        "_path": "lib/R/library/stringr/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "0b5d2f16de7825b63288735034f979989d85d417037b2d9436de3b15e78c8a8f",
+        "sha256_in_prefix": "0b5d2f16de7825b63288735034f979989d85d417037b2d9436de3b15e78c8a8f",
+        "size_in_bytes": 9365
+      },
+      {
+        "_path": "lib/R/library/stringr/R/stringr",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/stringr/R/stringr.rdb",
+        "path_type": "hardlink",
+        "sha256": "917910a998bf9cb4458756a783f59376a27d8a68e465e563a2db05c57156fd2c",
+        "sha256_in_prefix": "917910a998bf9cb4458756a783f59376a27d8a68e465e563a2db05c57156fd2c",
+        "size_in_bytes": 42611
+      },
+      {
+        "_path": "lib/R/library/stringr/R/stringr.rdx",
+        "path_type": "hardlink",
+        "sha256": "cf78938730cbc083edf650703abad26b0c776860927e4757b33774654672417a",
+        "sha256_in_prefix": "cf78938730cbc083edf650703abad26b0c776860927e4757b33774654672417a",
+        "size_in_bytes": 1093
+      },
+      {
+        "_path": "lib/R/library/stringr/data/Rdata.rdb",
+        "path_type": "hardlink",
+        "sha256": "62b61ac628e97c6f6bc50466b8cd89c77adeb2c13bdcda439cc7eb18cbf47328",
+        "sha256_in_prefix": "62b61ac628e97c6f6bc50466b8cd89c77adeb2c13bdcda439cc7eb18cbf47328",
+        "size_in_bytes": 18281
+      },
+      {
+        "_path": "lib/R/library/stringr/data/Rdata.rds",
+        "path_type": "hardlink",
+        "sha256": "7fc0c0d84fd6cbd3b6a67d5127f37001123b5986f8c06bfc2c7349254df758d4",
+        "sha256_in_prefix": "7fc0c0d84fd6cbd3b6a67d5127f37001123b5986f8c06bfc2c7349254df758d4",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "lib/R/library/stringr/data/Rdata.rdx",
+        "path_type": "hardlink",
+        "sha256": "cd9199757eafc3acc78cb0ccc25f82e01a9c8983490451ddf8ca093f0b9d5f09",
+        "sha256_in_prefix": "cd9199757eafc3acc78cb0ccc25f82e01a9c8983490451ddf8ca093f0b9d5f09",
+        "size_in_bytes": 171
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "2fb23e104b77bcf50dfd9dd9a2f065f07d8e24a9ed5711ddc16fb8c9ea4abd0c",
+        "sha256_in_prefix": "2fb23e104b77bcf50dfd9dd9a2f065f07d8e24a9ed5711ddc16fb8c9ea4abd0c",
+        "size_in_bytes": 1896
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/regular-expressions.R",
+        "path_type": "hardlink",
+        "sha256": "eed0a8e09f32d1a52617468fa4198de22a295f11b6af02367ded6320914ef83c",
+        "sha256_in_prefix": "eed0a8e09f32d1a52617468fa4198de22a295f11b6af02367ded6320914ef83c",
+        "size_in_bytes": 5050
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/regular-expressions.Rmd",
+        "path_type": "hardlink",
+        "sha256": "f2a49be8920bbe6319bfae5765db50979243071544ffe8560d2e48a788e17ad7",
+        "sha256_in_prefix": "f2a49be8920bbe6319bfae5765db50979243071544ffe8560d2e48a788e17ad7",
+        "size_in_bytes": 14553
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/regular-expressions.html",
+        "path_type": "hardlink",
+        "sha256": "16fc796914c3f31ab44d4d3990513690c374f9b02d0630022706ca4f49dc9c50",
+        "sha256_in_prefix": "16fc796914c3f31ab44d4d3990513690c374f9b02d0630022706ca4f49dc9c50",
+        "size_in_bytes": 48923
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/stringr.R",
+        "path_type": "hardlink",
+        "sha256": "68568f4a2fec1d5ca4913023e74437c8b16f13e9cac39225b1735bf902b4d70e",
+        "sha256_in_prefix": "68568f4a2fec1d5ca4913023e74437c8b16f13e9cac39225b1735bf902b4d70e",
+        "size_in_bytes": 4156
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/stringr.Rmd",
+        "path_type": "hardlink",
+        "sha256": "162e27a30fdaac2888675eaae664e383003821ae6b7fbb3a4f0a2ff9adaff1cc",
+        "sha256_in_prefix": "162e27a30fdaac2888675eaae664e383003821ae6b7fbb3a4f0a2ff9adaff1cc",
+        "size_in_bytes": 9533
+      },
+      {
+        "_path": "lib/R/library/stringr/doc/stringr.html",
+        "path_type": "hardlink",
+        "sha256": "0b40ac8da433b19ad0423387e4dc1f2e865c95d08f698b0a3aa000f7653ce519",
+        "sha256_in_prefix": "0b40ac8da433b19ad0423387e4dc1f2e865c95d08f698b0a3aa000f7653ce519",
+        "size_in_bytes": 44031
+      },
+      {
+        "_path": "lib/R/library/stringr/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "e209ed01bd6698570bdcb0b5c623e68bcf0855c97650ceefcabeeb8d9c59f9e9",
+        "sha256_in_prefix": "e209ed01bd6698570bdcb0b5c623e68bcf0855c97650ceefcabeeb8d9c59f9e9",
+        "size_in_bytes": 1223
+      },
+      {
+        "_path": "lib/R/library/stringr/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "7ceae6945083b905411e844010d7969fdac1894a28ab2a3a9f1de9c3751de5af",
+        "sha256_in_prefix": "7ceae6945083b905411e844010d7969fdac1894a28ab2a3a9f1de9c3751de5af",
+        "size_in_bytes": 499
+      },
+      {
+        "_path": "lib/R/library/stringr/help/figures/logo.png",
+        "path_type": "hardlink",
+        "sha256": "e6adad315090c1138c635251b846e1b002609215ac8649fbd97f16013d85bb4e",
+        "sha256_in_prefix": "e6adad315090c1138c635251b846e1b002609215ac8649fbd97f16013d85bb4e",
+        "size_in_bytes": 24880
+      },
+      {
+        "_path": "lib/R/library/stringr/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "207f4230b8c69f095d434edde50f211cdf80ab99f5d982e5630853d4bf0c1797",
+        "sha256_in_prefix": "207f4230b8c69f095d434edde50f211cdf80ab99f5d982e5630853d4bf0c1797",
+        "size_in_bytes": 368
+      },
+      {
+        "_path": "lib/R/library/stringr/help/stringr.rdb",
+        "path_type": "hardlink",
+        "sha256": "ec393979e735228b8b8ca460f7d7a3bc8fb9fdb3bcb72edb56324594b9a498dc",
+        "sha256_in_prefix": "ec393979e735228b8b8ca460f7d7a3bc8fb9fdb3bcb72edb56324594b9a498dc",
+        "size_in_bytes": 71696
+      },
+      {
+        "_path": "lib/R/library/stringr/help/stringr.rdx",
+        "path_type": "hardlink",
+        "sha256": "3940f46af7c624d63ee42f7235cb27b2c2cbde5821a3a5e1b441aa6e1973bba3",
+        "sha256_in_prefix": "3940f46af7c624d63ee42f7235cb27b2c2cbde5821a3a5e1b441aa6e1973bba3",
+        "size_in_bytes": 811
+      },
+      {
+        "_path": "lib/R/library/stringr/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "fad96e098e0c6c6350bfb2e52715b0e1661a2787cbdd92140dfedc1546d6962a",
+        "sha256_in_prefix": "fad96e098e0c6c6350bfb2e52715b0e1661a2787cbdd92140dfedc1546d6962a",
+        "size_in_bytes": 8053
+      },
+      {
+        "_path": "lib/R/library/stringr/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/stringr/html/case.html",
+        "path_type": "hardlink",
+        "sha256": "9a2f5015168eec1c608bc67d1f216480f5b7adeacc50397038009212465f5a85",
+        "sha256_in_prefix": "9a2f5015168eec1c608bc67d1f216480f5b7adeacc50397038009212465f5a85",
+        "size_in_bytes": 1536
+      },
+      {
+        "_path": "lib/R/library/stringr/html/invert_match.html",
+        "path_type": "hardlink",
+        "sha256": "8f36bc73a1ff578de071ae826f49545e4a704ac550fe63f43206f1b66c25504f",
+        "sha256_in_prefix": "8f36bc73a1ff578de071ae826f49545e4a704ac550fe63f43206f1b66c25504f",
+        "size_in_bytes": 1522
+      },
+      {
+        "_path": "lib/R/library/stringr/html/modifiers.html",
+        "path_type": "hardlink",
+        "sha256": "1086a5b3ffdfa6d8e6c06ab7f2ac350a06143ae4f13b39cf6da3afd9a023c023",
+        "sha256_in_prefix": "1086a5b3ffdfa6d8e6c06ab7f2ac350a06143ae4f13b39cf6da3afd9a023c023",
+        "size_in_bytes": 5300
+      },
+      {
+        "_path": "lib/R/library/stringr/html/pipe.html",
+        "path_type": "hardlink",
+        "sha256": "269506ad412679d7eeb80dd8e0e3f253173b5410a5c946c3212557e507ae6ece",
+        "sha256_in_prefix": "269506ad412679d7eeb80dd8e0e3f253173b5410a5c946c3212557e507ae6ece",
+        "size_in_bytes": 757
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_c.html",
+        "path_type": "hardlink",
+        "sha256": "7e50b2e913362b740aab6277b33e15dfb526e4defe413539b02d684a7b3cc50f",
+        "sha256_in_prefix": "7e50b2e913362b740aab6277b33e15dfb526e4defe413539b02d684a7b3cc50f",
+        "size_in_bytes": 3328
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_conv.html",
+        "path_type": "hardlink",
+        "sha256": "f3f63755a93b6e35ce2242c61d07cc6b1cd09fdbe0526c9ea73d8ce194d675fc",
+        "sha256_in_prefix": "f3f63755a93b6e35ce2242c61d07cc6b1cd09fdbe0526c9ea73d8ce194d675fc",
+        "size_in_bytes": 1444
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_count.html",
+        "path_type": "hardlink",
+        "sha256": "cb84ee0c7ed474a12fb6b7a4d803f673e873b765c0dd4a53aab0234886d81bbe",
+        "sha256_in_prefix": "cb84ee0c7ed474a12fb6b7a4d803f673e873b765c0dd4a53aab0234886d81bbe",
+        "size_in_bytes": 2600
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_detect.html",
+        "path_type": "hardlink",
+        "sha256": "4bb175167f305826d0d06367672f970acd9038a2686ff134ecf780569f3a801a",
+        "sha256_in_prefix": "4bb175167f305826d0d06367672f970acd9038a2686ff134ecf780569f3a801a",
+        "size_in_bytes": 2981
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_dup.html",
+        "path_type": "hardlink",
+        "sha256": "f7321710bddfeea45f5a8f4227074685aead018c9a2adce21d6fd3fbac4230c7",
+        "sha256_in_prefix": "f7321710bddfeea45f5a8f4227074685aead018c9a2adce21d6fd3fbac4230c7",
+        "size_in_bytes": 1387
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_extract.html",
+        "path_type": "hardlink",
+        "sha256": "3a7ea0afdee7de821920bb3acd153110f1be5d393217c52d0dd98cbb1bc23a3c",
+        "sha256_in_prefix": "3a7ea0afdee7de821920bb3acd153110f1be5d393217c52d0dd98cbb1bc23a3c",
+        "size_in_bytes": 3193
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_flatten.html",
+        "path_type": "hardlink",
+        "sha256": "9a3eddd1f16f134ae5d361436ec8073329179d632d7b2f2b1b49c859e0b891e5",
+        "sha256_in_prefix": "9a3eddd1f16f134ae5d361436ec8073329179d632d7b2f2b1b49c859e0b891e5",
+        "size_in_bytes": 1215
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_glue.html",
+        "path_type": "hardlink",
+        "sha256": "fb81ad67b62355623016e6a1318c1270028fa321ffc7da0f46c64c719890c1cb",
+        "sha256_in_prefix": "fb81ad67b62355623016e6a1318c1270028fa321ffc7da0f46c64c719890c1cb",
+        "size_in_bytes": 3178
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_interp.html",
+        "path_type": "hardlink",
+        "sha256": "7370788586f19434e543e0886d2896414c31e233527c139384e4b3ddf48facf9",
+        "sha256_in_prefix": "7370788586f19434e543e0886d2896414c31e233527c139384e4b3ddf48facf9",
+        "size_in_bytes": 3097
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_length.html",
+        "path_type": "hardlink",
+        "sha256": "b6c9727b000de1007fa8dd0e50633930cb0b64ca312927c5a9011a01bd5db482",
+        "sha256_in_prefix": "b6c9727b000de1007fa8dd0e50633930cb0b64ca312927c5a9011a01bd5db482",
+        "size_in_bytes": 2001
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_locate.html",
+        "path_type": "hardlink",
+        "sha256": "61687fabf5f77de2a69f8a06f369beb28a7061ca505175adc6143cb477d84ce6",
+        "sha256_in_prefix": "61687fabf5f77de2a69f8a06f369beb28a7061ca505175adc6143cb477d84ce6",
+        "size_in_bytes": 2975
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_match.html",
+        "path_type": "hardlink",
+        "sha256": "3030235d99d51fc96261e38c1fd969120f4b74c24a5b55a7a001a97634613eab",
+        "sha256_in_prefix": "3030235d99d51fc96261e38c1fd969120f4b74c24a5b55a7a001a97634613eab",
+        "size_in_bytes": 2537
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_order.html",
+        "path_type": "hardlink",
+        "sha256": "fdf28e1f147c60edea8dd9eb9c3aca4abbb86532ee7ea90ccab4817eb72c4d2e",
+        "sha256_in_prefix": "fdf28e1f147c60edea8dd9eb9c3aca4abbb86532ee7ea90ccab4817eb72c4d2e",
+        "size_in_bytes": 2528
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_pad.html",
+        "path_type": "hardlink",
+        "sha256": "153044b3925561ae83917f6b576be96c883841599ea10cfed4eb076aced688a7",
+        "sha256_in_prefix": "153044b3925561ae83917f6b576be96c883841599ea10cfed4eb076aced688a7",
+        "size_in_bytes": 2020
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_remove.html",
+        "path_type": "hardlink",
+        "sha256": "4246c29b6b6ed4773e0be1baa87bff02e18dbd1ea2047f415fd6c461d46e1a9a",
+        "sha256_in_prefix": "4246c29b6b6ed4773e0be1baa87bff02e18dbd1ea2047f415fd6c461d46e1a9a",
+        "size_in_bytes": 2317
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_replace.html",
+        "path_type": "hardlink",
+        "sha256": "b51937ef14c1fa9b3580d4e0687311299aaf2dad6b15d0d7b666f7ef8f8e1de6",
+        "sha256_in_prefix": "b51937ef14c1fa9b3580d4e0687311299aaf2dad6b15d0d7b666f7ef8f8e1de6",
+        "size_in_bytes": 4053
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_replace_na.html",
+        "path_type": "hardlink",
+        "sha256": "22595428139d3cd34245c97ac89f00169bf77f746e59e6056f135d1b044dfa34",
+        "sha256_in_prefix": "22595428139d3cd34245c97ac89f00169bf77f746e59e6056f135d1b044dfa34",
+        "size_in_bytes": 1223
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_split.html",
+        "path_type": "hardlink",
+        "sha256": "c9eef03edc645550d3fe775b6907b335b6f605af0db04b3a329c58a728836563",
+        "sha256_in_prefix": "c9eef03edc645550d3fe775b6907b335b6f605af0db04b3a329c58a728836563",
+        "size_in_bytes": 3347
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_starts.html",
+        "path_type": "hardlink",
+        "sha256": "00e8869280fe86e3477d524fd4b4f7b8d5a70c2df2a5ef22d4cbedd45f6ccb5d",
+        "sha256_in_prefix": "00e8869280fe86e3477d524fd4b4f7b8d5a70c2df2a5ef22d4cbedd45f6ccb5d",
+        "size_in_bytes": 2421
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_sub.html",
+        "path_type": "hardlink",
+        "sha256": "87608eea10b6a654fcbdbf3bb18e4099dc2a7a1be091007fbf1583b809ddf11d",
+        "sha256_in_prefix": "87608eea10b6a654fcbdbf3bb18e4099dc2a7a1be091007fbf1583b809ddf11d",
+        "size_in_bytes": 3507
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_subset.html",
+        "path_type": "hardlink",
+        "sha256": "db6b543e7189b52a6873602598ab706323956faf912023be2834b42605d7fd57",
+        "sha256_in_prefix": "db6b543e7189b52a6873602598ab706323956faf912023be2834b42605d7fd57",
+        "size_in_bytes": 3332
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_trim.html",
+        "path_type": "hardlink",
+        "sha256": "29d49fcbd0ab377a600dfbbbb47147177c6b246305a0a56370d9ebfb6f49ad2b",
+        "sha256_in_prefix": "29d49fcbd0ab377a600dfbbbb47147177c6b246305a0a56370d9ebfb6f49ad2b",
+        "size_in_bytes": 1750
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_trunc.html",
+        "path_type": "hardlink",
+        "sha256": "9bd139e2c447088ed8e20cc4c816c7f2173d42e1088720f04ac8abb1cab5b528",
+        "sha256_in_prefix": "9bd139e2c447088ed8e20cc4c816c7f2173d42e1088720f04ac8abb1cab5b528",
+        "size_in_bytes": 1596
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_view.html",
+        "path_type": "hardlink",
+        "sha256": "df018ca2f17e6c95c1b77f1e6adbfac15868f71d8a9b96dd11babd684914295d",
+        "sha256_in_prefix": "df018ca2f17e6c95c1b77f1e6adbfac15868f71d8a9b96dd11babd684914295d",
+        "size_in_bytes": 2937
+      },
+      {
+        "_path": "lib/R/library/stringr/html/str_wrap.html",
+        "path_type": "hardlink",
+        "sha256": "14c9d3e66fc79dc7d59c912d0e21c0f1b59778ae8e3d01bf93dad5e2a28ce44c",
+        "sha256_in_prefix": "14c9d3e66fc79dc7d59c912d0e21c0f1b59778ae8e3d01bf93dad5e2a28ce44c",
+        "size_in_bytes": 2198
+      },
+      {
+        "_path": "lib/R/library/stringr/html/stringr-data.html",
+        "path_type": "hardlink",
+        "sha256": "f041b1a27fc863ce0b1d7f430928f6dccd7fa8533e339b00a59e283a695f9a59",
+        "sha256_in_prefix": "f041b1a27fc863ce0b1d7f430928f6dccd7fa8533e339b00a59e283a695f9a59",
+        "size_in_bytes": 1417
+      },
+      {
+        "_path": "lib/R/library/stringr/html/stringr-package.html",
+        "path_type": "hardlink",
+        "sha256": "322f4c5ad32e8750ac67e0d4aa85c706e90907443ddff94243f2e6cf1b3e0631",
+        "sha256_in_prefix": "322f4c5ad32e8750ac67e0d4aa85c706e90907443ddff94243f2e6cf1b3e0631",
+        "size_in_bytes": 1849
+      },
+      {
+        "_path": "lib/R/library/stringr/html/word.html",
+        "path_type": "hardlink",
+        "sha256": "78f29b99becf8be0d18b6f12201dad52a69c5aee77158d9a8c4ca776c78f3512",
+        "sha256_in_prefix": "78f29b99becf8be0d18b6f12201dad52a69c5aee77158d9a8c4ca776c78f3512",
+        "size_in_bytes": 2112
+      },
+      {
+        "_path": "lib/R/library/stringr/htmlwidgets/lib/str_view.css",
+        "path_type": "hardlink",
+        "sha256": "db85c40cd18bff4236d41e229f82558bd6b0ce857954910ffea2c554a6a3baf3",
+        "sha256_in_prefix": "db85c40cd18bff4236d41e229f82558bd6b0ce857954910ffea2c554a6a3baf3",
+        "size_in_bytes": 184
+      },
+      {
+        "_path": "lib/R/library/stringr/htmlwidgets/str_view.js",
+        "path_type": "hardlink",
+        "sha256": "0092ace08df87888271d30a56f19203ff4355f6aaa465be97c0488a39752e7ed",
+        "sha256_in_prefix": "0092ace08df87888271d30a56f19203ff4355f6aaa465be97c0488a39752e7ed",
+        "size_in_bytes": 247
+      },
+      {
+        "_path": "lib/R/library/stringr/htmlwidgets/str_view.yaml",
+        "path_type": "hardlink",
+        "sha256": "23551e3b0d03cecbcedb7541992e477adfb9e4ee203a65ff11e59be7e0711e3d",
+        "sha256_in_prefix": "23551e3b0d03cecbcedb7541992e477adfb9e4ee203a65ff11e59be7e0711e3d",
+        "size_in_bytes": 103
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-stringr==1.4.0=r36h6115d3f_0",
+  "sha256": "f6efdbdfa07ccbf8b01bbb0e0e6248fa2f64fd4176e2b149726da159e903936e",
+  "size": 226140,
+  "subdir": "noarch",
+  "timestamp": 1557953439126,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-stringr-1.4.0-r36h6115d3f_0.tar.bz2",
+  "version": "1.4.0"
+}

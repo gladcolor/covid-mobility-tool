@@ -1,0 +1,303 @@
+{
+  "build": "r36h6115d3f_4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/r/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.6,<3.7.0a0",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-labeling-0.3-r36h6115d3f_4",
+  "features": "",
+  "files": [
+    "lib/R/library/labeling/DESCRIPTION",
+    "lib/R/library/labeling/INDEX",
+    "lib/R/library/labeling/LICENSE",
+    "lib/R/library/labeling/MD5",
+    "lib/R/library/labeling/Meta/Rd.rds",
+    "lib/R/library/labeling/Meta/features.rds",
+    "lib/R/library/labeling/Meta/hsearch.rds",
+    "lib/R/library/labeling/Meta/links.rds",
+    "lib/R/library/labeling/Meta/nsInfo.rds",
+    "lib/R/library/labeling/Meta/package.rds",
+    "lib/R/library/labeling/NAMESPACE",
+    "lib/R/library/labeling/R/labeling",
+    "lib/R/library/labeling/R/labeling.rdb",
+    "lib/R/library/labeling/R/labeling.rdx",
+    "lib/R/library/labeling/help/AnIndex",
+    "lib/R/library/labeling/help/aliases.rds",
+    "lib/R/library/labeling/help/labeling.rdb",
+    "lib/R/library/labeling/help/labeling.rdx",
+    "lib/R/library/labeling/help/paths.rds",
+    "lib/R/library/labeling/html/00Index.html",
+    "lib/R/library/labeling/html/R.css",
+    "lib/R/library/labeling/html/extended.figures.html",
+    "lib/R/library/labeling/html/extended.html",
+    "lib/R/library/labeling/html/gnuplot.html",
+    "lib/R/library/labeling/html/heckbert.html",
+    "lib/R/library/labeling/html/labeling-internal.html",
+    "lib/R/library/labeling/html/labeling-package.html",
+    "lib/R/library/labeling/html/matplotlib.html",
+    "lib/R/library/labeling/html/nelder.html",
+    "lib/R/library/labeling/html/rpretty.html",
+    "lib/R/library/labeling/html/sparks.html",
+    "lib/R/library/labeling/html/thayer.html",
+    "lib/R/library/labeling/html/wilkinson.html"
+  ],
+  "fn": "r-labeling-0.3-r36h6115d3f_4.tar.bz2",
+  "license": "MIT + file LICENSE | Unlimited",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-labeling-0.3-r36h6115d3f_4",
+    "type": 1
+  },
+  "md5": "6f8bfcdc2960ea34175c2c934fd628c6",
+  "name": "r-labeling",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-labeling-0.3-r36h6115d3f_4.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/labeling/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "3e9a196a080867f375f26b507168a1ecc0379a58ea994a6ab5a551a2c9f2e554",
+        "sha256_in_prefix": "3e9a196a080867f375f26b507168a1ecc0379a58ea994a6ab5a551a2c9f2e554",
+        "size_in_bytes": 600
+      },
+      {
+        "_path": "lib/R/library/labeling/INDEX",
+        "path_type": "hardlink",
+        "sha256": "63184d9608cf041ebcca17b6bb295e17477d57da3b22ce023f84fba65ce86436",
+        "sha256_in_prefix": "63184d9608cf041ebcca17b6bb295e17477d57da3b22ce023f84fba65ce86436",
+        "size_in_bytes": 782
+      },
+      {
+        "_path": "lib/R/library/labeling/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d79afc41f4466fac750ca425cca2be0c5ba5f8b81942d9237d6bbeab51cfeb29",
+        "sha256_in_prefix": "d79afc41f4466fac750ca425cca2be0c5ba5f8b81942d9237d6bbeab51cfeb29",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "lib/R/library/labeling/MD5",
+        "path_type": "hardlink",
+        "sha256": "a6256b2d7a81410f473d8d39c22075d1895dd370067115a2bb55768c94b60372",
+        "sha256_in_prefix": "a6256b2d7a81410f473d8d39c22075d1895dd370067115a2bb55768c94b60372",
+        "size_in_bytes": 1650
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "06d81c6a92029827d5a804db400051b7f8e73cd222c81b1d613b9ae9f8b9e8e1",
+        "sha256_in_prefix": "06d81c6a92029827d5a804db400051b7f8e73cd222c81b1d613b9ae9f8b9e8e1",
+        "size_in_bytes": 688
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "sha256_in_prefix": "ea994aae41523332316746487fbc8be7bae2a0ce42895c9449fa3eafbadc4dae",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "dae75ea23864629de2b8c806fc01236cafb3d55b82288db7af79908ea04b9a7a",
+        "sha256_in_prefix": "dae75ea23864629de2b8c806fc01236cafb3d55b82288db7af79908ea04b9a7a",
+        "size_in_bytes": 755
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "94ffdd504f88dca21af6f6207440c879500c8788f65e7e05ccd239e426af5059",
+        "sha256_in_prefix": "94ffdd504f88dca21af6f6207440c879500c8788f65e7e05ccd239e426af5059",
+        "size_in_bytes": 368
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "f5d004e606c2c378f60621a8e1b035c2ee1795e56116476c42ea844200ef73e0",
+        "sha256_in_prefix": "f5d004e606c2c378f60621a8e1b035c2ee1795e56116476c42ea844200ef73e0",
+        "size_in_bytes": 271
+      },
+      {
+        "_path": "lib/R/library/labeling/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "55f1a361d36eb86ce702d9edd0b65f5942c34e7048f6e3f3c76f090a0358b920",
+        "sha256_in_prefix": "55f1a361d36eb86ce702d9edd0b65f5942c34e7048f6e3f3c76f090a0358b920",
+        "size_in_bytes": 664
+      },
+      {
+        "_path": "lib/R/library/labeling/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "f7b965521aa1bbbe5332538b745a944127b5557d0a0ebcfec97005e1e70ad1cb",
+        "sha256_in_prefix": "f7b965521aa1bbbe5332538b745a944127b5557d0a0ebcfec97005e1e70ad1cb",
+        "size_in_bytes": 173
+      },
+      {
+        "_path": "lib/R/library/labeling/R/labeling",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/labeling/R/labeling.rdb",
+        "path_type": "hardlink",
+        "sha256": "be09263b81f4fa5e4541a3488d37797d57d56eb6fc0f854f43a539b91dc5d785",
+        "sha256_in_prefix": "be09263b81f4fa5e4541a3488d37797d57d56eb6fc0f854f43a539b91dc5d785",
+        "size_in_bytes": 31784
+      },
+      {
+        "_path": "lib/R/library/labeling/R/labeling.rdx",
+        "path_type": "hardlink",
+        "sha256": "8926d017b0e4cccbab2c490ba97ca07743001e43a33ed891fd966fb62e13bda1",
+        "sha256_in_prefix": "8926d017b0e4cccbab2c490ba97ca07743001e43a33ed891fd966fb62e13bda1",
+        "size_in_bytes": 550
+      },
+      {
+        "_path": "lib/R/library/labeling/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "1c66242bb234e766aad32497cf4b41b0a702f1a2687d14029b7574d45cb9c3ac",
+        "sha256_in_prefix": "1c66242bb234e766aad32497cf4b41b0a702f1a2687d14029b7574d45cb9c3ac",
+        "size_in_bytes": 587
+      },
+      {
+        "_path": "lib/R/library/labeling/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "4b419ad3b1ab73063d645ed96d83893678e74966b2639620d50ce70f94d67cc2",
+        "sha256_in_prefix": "4b419ad3b1ab73063d645ed96d83893678e74966b2639620d50ce70f94d67cc2",
+        "size_in_bytes": 283
+      },
+      {
+        "_path": "lib/R/library/labeling/help/labeling.rdb",
+        "path_type": "hardlink",
+        "sha256": "f0ec0b6faa0f67d4741f2c39528ae5922b1af1d38876c341dc48fb71d6d9fae8",
+        "sha256_in_prefix": "f0ec0b6faa0f67d4741f2c39528ae5922b1af1d38876c341dc48fb71d6d9fae8",
+        "size_in_bytes": 20942
+      },
+      {
+        "_path": "lib/R/library/labeling/help/labeling.rdx",
+        "path_type": "hardlink",
+        "sha256": "3021925586b8676706b47481df213219fce8b777f59ee1918423f80f0975c60c",
+        "sha256_in_prefix": "3021925586b8676706b47481df213219fce8b777f59ee1918423f80f0975c60c",
+        "size_in_bytes": 429
+      },
+      {
+        "_path": "lib/R/library/labeling/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "8149c1f13ea971077ade2a456930b2c9dbab77a8131fe6331233f5e20fb90eb6",
+        "sha256_in_prefix": "8149c1f13ea971077ade2a456930b2c9dbab77a8131fe6331233f5e20fb90eb6",
+        "size_in_bytes": 264
+      },
+      {
+        "_path": "lib/R/library/labeling/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "061c11b6acb016c95cfeea7a073fa4f5e03d438cdb9b63312e9780706230813d",
+        "sha256_in_prefix": "061c11b6acb016c95cfeea7a073fa4f5e03d438cdb9b63312e9780706230813d",
+        "size_in_bytes": 2432
+      },
+      {
+        "_path": "lib/R/library/labeling/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/labeling/html/extended.figures.html",
+        "path_type": "hardlink",
+        "sha256": "c38995f6dbcee88fe2f21f5ea1890401c5a7c91d82b5b54d21088b31552cecab",
+        "sha256_in_prefix": "c38995f6dbcee88fe2f21f5ea1890401c5a7c91d82b5b54d21088b31552cecab",
+        "size_in_bytes": 1525
+      },
+      {
+        "_path": "lib/R/library/labeling/html/extended.html",
+        "path_type": "hardlink",
+        "sha256": "30fcbd90ca7e45ff33612a2a70a8c6887c4bf74d27bdc5555ce29c72c9379025",
+        "sha256_in_prefix": "30fcbd90ca7e45ff33612a2a70a8c6887c4bf74d27bdc5555ce29c72c9379025",
+        "size_in_bytes": 2197
+      },
+      {
+        "_path": "lib/R/library/labeling/html/gnuplot.html",
+        "path_type": "hardlink",
+        "sha256": "3651968a588daca565d9f9f192be71c6f1b566763a253332c313cfbb5b8c4cc4",
+        "sha256_in_prefix": "3651968a588daca565d9f9f192be71c6f1b566763a253332c313cfbb5b8c4cc4",
+        "size_in_bytes": 1442
+      },
+      {
+        "_path": "lib/R/library/labeling/html/heckbert.html",
+        "path_type": "hardlink",
+        "sha256": "65c1f0919ca2013816b4868468cd18cc016b3239d2d94160e669397d547eac58",
+        "sha256_in_prefix": "65c1f0919ca2013816b4868468cd18cc016b3239d2d94160e669397d547eac58",
+        "size_in_bytes": 1490
+      },
+      {
+        "_path": "lib/R/library/labeling/html/labeling-internal.html",
+        "path_type": "hardlink",
+        "sha256": "12f76996d90a21ab495f78671175788856d70fd709e93567b4d9e7a9c585151b",
+        "sha256_in_prefix": "12f76996d90a21ab495f78671175788856d70fd709e93567b4d9e7a9c585151b",
+        "size_in_bytes": 830
+      },
+      {
+        "_path": "lib/R/library/labeling/html/labeling-package.html",
+        "path_type": "hardlink",
+        "sha256": "67d3422b8b0a02915efaf61a148538351249805339236a49eac6a1a57ec70536",
+        "sha256_in_prefix": "67d3422b8b0a02915efaf61a148538351249805339236a49eac6a1a57ec70536",
+        "size_in_bytes": 3304
+      },
+      {
+        "_path": "lib/R/library/labeling/html/matplotlib.html",
+        "path_type": "hardlink",
+        "sha256": "cbcbea0a599320361cc971a028ef8b82fc7be09e92abcbbbd7757ef9e9f7d20a",
+        "sha256_in_prefix": "cbcbea0a599320361cc971a028ef8b82fc7be09e92abcbbbd7757ef9e9f7d20a",
+        "size_in_bytes": 1480
+      },
+      {
+        "_path": "lib/R/library/labeling/html/nelder.html",
+        "path_type": "hardlink",
+        "sha256": "78651f98a1ac900709bf910890fd65b41b1f3bbf6d2f488ce64ed070cccf09a2",
+        "sha256_in_prefix": "78651f98a1ac900709bf910890fd65b41b1f3bbf6d2f488ce64ed070cccf09a2",
+        "size_in_bytes": 1645
+      },
+      {
+        "_path": "lib/R/library/labeling/html/rpretty.html",
+        "path_type": "hardlink",
+        "sha256": "b387b1f1da3625fa1a135c14c59bf5ea7309e99bda37224fd3b35ef83ec16679",
+        "sha256_in_prefix": "b387b1f1da3625fa1a135c14c59bf5ea7309e99bda37224fd3b35ef83ec16679",
+        "size_in_bytes": 2696
+      },
+      {
+        "_path": "lib/R/library/labeling/html/sparks.html",
+        "path_type": "hardlink",
+        "sha256": "593a6809dddc109d20fed31a3247981f98c6c256a4dd4c7f73d588afe48708cf",
+        "sha256_in_prefix": "593a6809dddc109d20fed31a3247981f98c6c256a4dd4c7f73d588afe48708cf",
+        "size_in_bytes": 1491
+      },
+      {
+        "_path": "lib/R/library/labeling/html/thayer.html",
+        "path_type": "hardlink",
+        "sha256": "75c92178af1a2a3238c80f49d71cb8ad2cc9b8e59a044ef9cc19882290cb0a90",
+        "sha256_in_prefix": "75c92178af1a2a3238c80f49d71cb8ad2cc9b8e59a044ef9cc19882290cb0a90",
+        "size_in_bytes": 1555
+      },
+      {
+        "_path": "lib/R/library/labeling/html/wilkinson.html",
+        "path_type": "hardlink",
+        "sha256": "4269a67b7e6a13393832210ca342f23c41455e556f954bfe17c09b8bf0cfbf9d",
+        "sha256_in_prefix": "4269a67b7e6a13393832210ca342f23c41455e556f954bfe17c09b8bf0cfbf9d",
+        "size_in_bytes": 3189
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-labeling==0.3=r36h6115d3f_4",
+  "sha256": "0fe601212725b9ee072f2bb71529282f7e294704f06d3c73bd65f1f58691923d",
+  "size": 72540,
+  "subdir": "noarch",
+  "timestamp": 1557947384563,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/noarch/r-labeling-0.3-r36h6115d3f_4.tar.bz2",
+  "version": "0.3"
+}

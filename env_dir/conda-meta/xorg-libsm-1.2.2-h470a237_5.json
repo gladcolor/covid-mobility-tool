@@ -1,0 +1,94 @@
+{
+  "build": "h470a237_5",
+  "build_number": 5,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9",
+    "libuuid 1.0.*",
+    "xorg-libice 1.0.*"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/xorg-libsm-1.2.2-h470a237_5",
+  "features": "",
+  "files": [
+    "include/X11/SM/SM.h",
+    "include/X11/SM/SMlib.h",
+    "include/X11/SM/SMproto.h",
+    "lib/libSM.so",
+    "lib/libSM.so.6",
+    "lib/libSM.so.6.0.1",
+    "lib/pkgconfig/sm.pc"
+  ],
+  "fn": "xorg-libsm-1.2.2-h470a237_5.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/xorg-libsm-1.2.2-h470a237_5",
+    "type": 1
+  },
+  "md5": "78c03347efc45f0df5f79d20e1544c92",
+  "name": "xorg-libsm",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/xorg-libsm-1.2.2-h470a237_5.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/X11/SM/SM.h",
+        "path_type": "hardlink",
+        "sha256": "3580529fdcd97370008a713ff8c4e9e22d7ce179b04d1eabad9ab21085cb3373",
+        "sha256_in_prefix": "3580529fdcd97370008a713ff8c4e9e22d7ce179b04d1eabad9ab21085cb3373",
+        "size_in_bytes": 2927
+      },
+      {
+        "_path": "include/X11/SM/SMlib.h",
+        "path_type": "hardlink",
+        "sha256": "d2aea2243d0ec61de6dbde0a7b389d1d6918aa23adc50354d88f7580f8eac11a",
+        "sha256_in_prefix": "d2aea2243d0ec61de6dbde0a7b389d1d6918aa23adc50354d88f7580f8eac11a",
+        "size_in_bytes": 11268
+      },
+      {
+        "_path": "include/X11/SM/SMproto.h",
+        "path_type": "hardlink",
+        "sha256": "965cca37380cf71c0c4a2681c3c8b8e45a49a8807a1c82e7cf2a952cd63ec702",
+        "sha256_in_prefix": "965cca37380cf71c0c4a2681c3c8b8e45a49a8807a1c82e7cf2a952cd63ec702",
+        "size_in_bytes": 4852
+      },
+      {
+        "_path": "lib/libSM.so",
+        "path_type": "softlink",
+        "sha256": "c2aeb8f4bfdea3a55b20be4e0ccfff2ec94ce16fa67455f790457a8286b886e9",
+        "size_in_bytes": 49779
+      },
+      {
+        "_path": "lib/libSM.so.6",
+        "path_type": "softlink",
+        "sha256": "c2aeb8f4bfdea3a55b20be4e0ccfff2ec94ce16fa67455f790457a8286b886e9",
+        "size_in_bytes": 49779
+      },
+      {
+        "_path": "lib/libSM.so.6.0.1",
+        "path_type": "hardlink",
+        "sha256": "c2aeb8f4bfdea3a55b20be4e0ccfff2ec94ce16fa67455f790457a8286b886e9",
+        "sha256_in_prefix": "c2aeb8f4bfdea3a55b20be4e0ccfff2ec94ce16fa67455f790457a8286b886e9",
+        "size_in_bytes": 49779
+      },
+      {
+        "_path": "lib/pkgconfig/sm.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "11b6e96950adcf1fb99ca09d1090759620dac7cde9543af5214e648ed9cbb930",
+        "sha256_in_prefix": "0c022dbf6e0b5a8ef14123722adff3750cbaf6ccd1e8535be498a5012378befc",
+        "size_in_bytes": 270
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "xorg-libsm==1.2.2=h470a237_5",
+  "sha256": "733ec3820e29f7ccb2e00b754d9060261f5b0f879d4c41ac9dbd2738420bd054",
+  "size": 24764,
+  "subdir": "linux-64",
+  "timestamp": 1532828285478,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libsm-1.2.2-h470a237_5.tar.bz2",
+  "version": "1.2.2"
+}

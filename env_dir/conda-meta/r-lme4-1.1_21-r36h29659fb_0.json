@@ -1,0 +1,748 @@
+{
+  "build": "r36h29659fb_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-boot",
+    "r-lattice",
+    "r-mass",
+    "r-matrix >=1.2_1",
+    "r-minqa >=1.1.15",
+    "r-nlme >=3.1_123",
+    "r-nloptr >=1.0.4",
+    "r-rcpp >=0.10.5",
+    "r-rcppeigen",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-lme4-1.1_21-r36h29659fb_0",
+  "features": "",
+  "files": [
+    "lib/R/library/lme4/CITATION",
+    "lib/R/library/lme4/DESCRIPTION",
+    "lib/R/library/lme4/INDEX",
+    "lib/R/library/lme4/Meta/Rd.rds",
+    "lib/R/library/lme4/Meta/data.rds",
+    "lib/R/library/lme4/Meta/features.rds",
+    "lib/R/library/lme4/Meta/hsearch.rds",
+    "lib/R/library/lme4/Meta/links.rds",
+    "lib/R/library/lme4/Meta/nsInfo.rds",
+    "lib/R/library/lme4/Meta/package.rds",
+    "lib/R/library/lme4/Meta/vignette.rds",
+    "lib/R/library/lme4/NAMESPACE",
+    "lib/R/library/lme4/NEWS.Rd",
+    "lib/R/library/lme4/R/lme4",
+    "lib/R/library/lme4/R/lme4.rdb",
+    "lib/R/library/lme4/R/lme4.rdx",
+    "lib/R/library/lme4/R/sysdata.rdb",
+    "lib/R/library/lme4/R/sysdata.rdx",
+    "lib/R/library/lme4/data/Rdata.rdb",
+    "lib/R/library/lme4/data/Rdata.rds",
+    "lib/R/library/lme4/data/Rdata.rdx",
+    "lib/R/library/lme4/doc/Doxyfile",
+    "lib/R/library/lme4/doc/PLSvGLS.pdf",
+    "lib/R/library/lme4/doc/Theory.pdf",
+    "lib/R/library/lme4/doc/index.html",
+    "lib/R/library/lme4/doc/lme4-extras.pdf",
+    "lib/R/library/lme4/doc/lme4/inst/doc/Doxyfile",
+    "lib/R/library/lme4/doc/lme4/inst/doc/PLSvGLS.R",
+    "lib/R/library/lme4/doc/lme4/inst/doc/PLSvGLS.Rnw",
+    "lib/R/library/lme4/doc/lme4/inst/doc/Theory.R",
+    "lib/R/library/lme4/doc/lme4/inst/doc/Theory.Rnw",
+    "lib/R/library/lme4/doc/lme4/inst/doc/lmer.R",
+    "lib/R/library/lme4/doc/lme4/inst/doc/lmer.Rnw",
+    "lib/R/library/lme4/doc/lme4/inst/doc/lmerperf.R",
+    "lib/R/library/lme4/doc/lme4/inst/doc/lmerperf.Rmd",
+    "lib/R/library/lme4/doc/lme4/inst/doc/profiling.txt",
+    "lib/R/library/lme4/doc/lmer.pdf",
+    "lib/R/library/lme4/doc/lmerperf.html",
+    "lib/R/library/lme4/doc/profiling.txt",
+    "lib/R/library/lme4/help/AnIndex",
+    "lib/R/library/lme4/help/aliases.rds",
+    "lib/R/library/lme4/help/lme4.rdb",
+    "lib/R/library/lme4/help/lme4.rdx",
+    "lib/R/library/lme4/help/paths.rds",
+    "lib/R/library/lme4/html/00Index.html",
+    "lib/R/library/lme4/html/R.css",
+    "lib/R/library/lme4/libs/lme4.so",
+    "lib/R/library/lme4/testdata/Johnson.rda",
+    "lib/R/library/lme4/testdata/Rplots.pdf",
+    "lib/R/library/lme4/testdata/SO_sep25.RData",
+    "lib/R/library/lme4/testdata/Thailand.rda",
+    "lib/R/library/lme4/testdata/badhess.RData",
+    "lib/R/library/lme4/testdata/badprof.rds",
+    "lib/R/library/lme4/testdata/boo01L.RData",
+    "lib/R/library/lme4/testdata/colonizer_rand.rda",
+    "lib/R/library/lme4/testdata/confint_ex.rda",
+    "lib/R/library/lme4/testdata/crabs_randdata00.Rda",
+    "lib/R/library/lme4/testdata/crabs_randdata2.Rda",
+    "lib/R/library/lme4/testdata/culcita_dat.RData",
+    "lib/R/library/lme4/testdata/dat20101314.csv",
+    "lib/R/library/lme4/testdata/dataEx_Glmer.txt",
+    "lib/R/library/lme4/testdata/fakesim.RData",
+    "lib/R/library/lme4/testdata/gopherdat2.RData",
+    "lib/R/library/lme4/testdata/gotway_hessianfly.rda",
+    "lib/R/library/lme4/testdata/hotpower.csv",
+    "lib/R/library/lme4/testdata/koller-data.R",
+    "lib/R/library/lme4/testdata/lme-tst-fits.R",
+    "lib/R/library/lme4/testdata/lme-tst-fits.Rout",
+    "lib/R/library/lme4/testdata/lme-tst-fits.rda",
+    "lib/R/library/lme4/testdata/lme-tst-funs.R",
+    "lib/R/library/lme4/testdata/mastitis.rda",
+    "lib/R/library/lme4/testdata/polytom2.RData",
+    "lib/R/library/lme4/testdata/polytom3.RData",
+    "lib/R/library/lme4/testdata/polytomous_test.RData",
+    "lib/R/library/lme4/testdata/polytomous_vcov_ex.RData",
+    "lib/R/library/lme4/testdata/prLogistic.RData",
+    "lib/R/library/lme4/testdata/radinger_dat.RData",
+    "lib/R/library/lme4/testdata/rankMatrix.rds",
+    "lib/R/library/lme4/testdata/respiratory.RData",
+    "lib/R/library/lme4/testdata/sbTobb.Rdata",
+    "lib/R/library/lme4/testdata/survdat_reduced.Rda",
+    "lib/R/library/lme4/testdata/tmp.txt",
+    "lib/R/library/lme4/testdata/tprfm1.RData",
+    "lib/R/library/lme4/testdata/trees513.R",
+    "lib/R/library/lme4/testdata/trees513.RData",
+    "lib/R/library/lme4/vignettedata/calcium.txt",
+    "lib/R/library/lme4/vignettedata/mcmcsampdat.RData"
+  ],
+  "fn": "r-lme4-1.1_21-r36h29659fb_0.conda",
+  "legacy_bz2_md5": "60ac09e94e073a0b3dcb4a3e0e7283f5",
+  "legacy_bz2_size": 5161766,
+  "license": "GPL (>= 2)",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-lme4-1.1_21-r36h29659fb_0",
+    "type": 1
+  },
+  "md5": "02b548f4c48ff7fad32605d1b4ad3772",
+  "name": "r-lme4",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-lme4-1.1_21-r36h29659fb_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/lme4/CITATION",
+        "path_type": "hardlink",
+        "sha256": "9d871b3fe8de33858d3a040f84ba0d8fc17219c7913d37bb8a464846a6e39091",
+        "sha256_in_prefix": "9d871b3fe8de33858d3a040f84ba0d8fc17219c7913d37bb8a464846a6e39091",
+        "size_in_bytes": 983
+      },
+      {
+        "_path": "lib/R/library/lme4/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "255bb9ab349add12f65a43162960f20b27b76d460ac5a2558c8b72bee3c0bd1d",
+        "sha256_in_prefix": "255bb9ab349add12f65a43162960f20b27b76d460ac5a2558c8b72bee3c0bd1d",
+        "size_in_bytes": 2738
+      },
+      {
+        "_path": "lib/R/library/lme4/INDEX",
+        "path_type": "hardlink",
+        "sha256": "9d1e424db2394a8f65e2f03f2b79c8b81b0b9c852ae9f6da13bfc0d6f58037fb",
+        "sha256_in_prefix": "9d1e424db2394a8f65e2f03f2b79c8b81b0b9c852ae9f6da13bfc0d6f58037fb",
+        "size_in_bytes": 6149
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "21d571a67adc88359067d94bffa519d144649e8f6705dba20e58f41639e3cee0",
+        "sha256_in_prefix": "21d571a67adc88359067d94bffa519d144649e8f6705dba20e58f41639e3cee0",
+        "size_in_bytes": 4185
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/data.rds",
+        "path_type": "hardlink",
+        "sha256": "ba976a53f7b8c96d45149055f01144c52a534585857e526e4399d743b0867053",
+        "sha256_in_prefix": "ba976a53f7b8c96d45149055f01144c52a534585857e526e4399d743b0867053",
+        "size_in_bytes": 448
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "4da6727dab396c034528f72e90af511404d8c73d8ef2df9ca7065301587f9885",
+        "sha256_in_prefix": "4da6727dab396c034528f72e90af511404d8c73d8ef2df9ca7065301587f9885",
+        "size_in_bytes": 4166
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "9824568da6b087fbd98a9a114fb0823be21eb0927cddfbc878c99f81cc715209",
+        "sha256_in_prefix": "9824568da6b087fbd98a9a114fb0823be21eb0927cddfbc878c99f81cc715209",
+        "size_in_bytes": 2006
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "d9b91837e5a87bc8e6056c0b9f39cfddc02e067a9181e4002f1a589fbd1b57b2",
+        "sha256_in_prefix": "d9b91837e5a87bc8e6056c0b9f39cfddc02e067a9181e4002f1a589fbd1b57b2",
+        "size_in_bytes": 2458
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "58a003933cbf456728e89ee5b7da52fb33eb5bdcaf827a4004db5f7de7c8128d",
+        "sha256_in_prefix": "58a003933cbf456728e89ee5b7da52fb33eb5bdcaf827a4004db5f7de7c8128d",
+        "size_in_bytes": 1934
+      },
+      {
+        "_path": "lib/R/library/lme4/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "6da7c9871cee05b6a57a08c3ab5fd74bd4e04b7cdb8bf21d8de231fde4940e08",
+        "sha256_in_prefix": "6da7c9871cee05b6a57a08c3ab5fd74bd4e04b7cdb8bf21d8de231fde4940e08",
+        "size_in_bytes": 345
+      },
+      {
+        "_path": "lib/R/library/lme4/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "01742b773696534ef4759f866e4d2cc31cad9798b01340024efcc5971c8eb9b5",
+        "sha256_in_prefix": "01742b773696534ef4759f866e4d2cc31cad9798b01340024efcc5971c8eb9b5",
+        "size_in_bytes": 7640
+      },
+      {
+        "_path": "lib/R/library/lme4/NEWS.Rd",
+        "path_type": "hardlink",
+        "sha256": "cd5d22255d162d4627f1174a4d92c8d168baab6db29dd2bd52a6b5ca97d73952",
+        "sha256_in_prefix": "cd5d22255d162d4627f1174a4d92c8d168baab6db29dd2bd52a6b5ca97d73952",
+        "size_in_bytes": 40776
+      },
+      {
+        "_path": "lib/R/library/lme4/R/lme4",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/lme4/R/lme4.rdb",
+        "path_type": "hardlink",
+        "sha256": "10a77fb946b8f644db9c405c57b872fe6a56640b3659c1a1658ecd0bf1d2b913",
+        "sha256_in_prefix": "10a77fb946b8f644db9c405c57b872fe6a56640b3659c1a1658ecd0bf1d2b913",
+        "size_in_bytes": 761738
+      },
+      {
+        "_path": "lib/R/library/lme4/R/lme4.rdx",
+        "path_type": "hardlink",
+        "sha256": "cb47459df5d386f86fbaafb538ffb520fdeb75dbe8eb6172b909a8f874538257",
+        "sha256_in_prefix": "cb47459df5d386f86fbaafb538ffb520fdeb75dbe8eb6172b909a8f874538257",
+        "size_in_bytes": 5651
+      },
+      {
+        "_path": "lib/R/library/lme4/R/sysdata.rdb",
+        "path_type": "hardlink",
+        "sha256": "6a7904ca527dd3a42951797174080297697c8452fbc1e7e1bf21f9af3d39464b",
+        "sha256_in_prefix": "6a7904ca527dd3a42951797174080297697c8452fbc1e7e1bf21f9af3d39464b",
+        "size_in_bytes": 661345
+      },
+      {
+        "_path": "lib/R/library/lme4/R/sysdata.rdx",
+        "path_type": "hardlink",
+        "sha256": "57a942e4f143a7edf57d34d21714f78db737424a830a35d31399b161580cab69",
+        "sha256_in_prefix": "57a942e4f143a7edf57d34d21714f78db737424a830a35d31399b161580cab69",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "lib/R/library/lme4/data/Rdata.rdb",
+        "path_type": "hardlink",
+        "sha256": "06a2dd15179a2c715653d774c562d6ce06541081e4bcc4bb5c82976a2948bc62",
+        "sha256_in_prefix": "06a2dd15179a2c715653d774c562d6ce06541081e4bcc4bb5c82976a2948bc62",
+        "size_in_bytes": 250043
+      },
+      {
+        "_path": "lib/R/library/lme4/data/Rdata.rds",
+        "path_type": "hardlink",
+        "sha256": "55456b19e3eb4c3c8f58f5ecc8931aa9bbd594348b3753e670a9af094d3590d6",
+        "sha256_in_prefix": "55456b19e3eb4c3c8f58f5ecc8931aa9bbd594348b3753e670a9af094d3590d6",
+        "size_in_bytes": 211
+      },
+      {
+        "_path": "lib/R/library/lme4/data/Rdata.rdx",
+        "path_type": "hardlink",
+        "sha256": "93edb0ebc3e6925e9a6d71f6c2534d30b620883395c8fe6dac0ce4a4dea550e5",
+        "sha256_in_prefix": "93edb0ebc3e6925e9a6d71f6c2534d30b620883395c8fe6dac0ce4a4dea550e5",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/Doxyfile",
+        "path_type": "hardlink",
+        "sha256": "390df4b36aa1e7b6f372b0d0608d5f6486a12e2e680c2e6ae291c15973c11dc2",
+        "sha256_in_prefix": "390df4b36aa1e7b6f372b0d0608d5f6486a12e2e680c2e6ae291c15973c11dc2",
+        "size_in_bytes": 65424
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/PLSvGLS.pdf",
+        "path_type": "hardlink",
+        "sha256": "54f0e6aeeea44e5d8cb8718d1d48b19600557654ec6449f521233138e5d4a096",
+        "sha256_in_prefix": "54f0e6aeeea44e5d8cb8718d1d48b19600557654ec6449f521233138e5d4a096",
+        "size_in_bytes": 193327
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/Theory.pdf",
+        "path_type": "hardlink",
+        "sha256": "d5b27e8b0f3d8cd9f9618177e2b24b26df3b1305422290da8fc808937190db0f",
+        "sha256_in_prefix": "d5b27e8b0f3d8cd9f9618177e2b24b26df3b1305422290da8fc808937190db0f",
+        "size_in_bytes": 284797
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "e7db7850fc69a697bbe308b2da637b683a52122d424292e90ea4ff94340fe57a",
+        "sha256_in_prefix": "e7db7850fc69a697bbe308b2da637b683a52122d424292e90ea4ff94340fe57a",
+        "size_in_bytes": 3217
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4-extras.pdf",
+        "path_type": "hardlink",
+        "sha256": "57e75e1b1e161c0dbceb4ac48de990a7fab30f21eb89fc9841e7324d7f1df4c1",
+        "sha256_in_prefix": "57e75e1b1e161c0dbceb4ac48de990a7fab30f21eb89fc9841e7324d7f1df4c1",
+        "size_in_bytes": 355186
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/Doxyfile",
+        "path_type": "hardlink",
+        "sha256": "390df4b36aa1e7b6f372b0d0608d5f6486a12e2e680c2e6ae291c15973c11dc2",
+        "sha256_in_prefix": "390df4b36aa1e7b6f372b0d0608d5f6486a12e2e680c2e6ae291c15973c11dc2",
+        "size_in_bytes": 65424
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/PLSvGLS.R",
+        "path_type": "hardlink",
+        "sha256": "899805746a571520ef3de418d4778e311ee2de70a43ea62927a8d7868c8b3148",
+        "sha256_in_prefix": "899805746a571520ef3de418d4778e311ee2de70a43ea62927a8d7868c8b3148",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/PLSvGLS.Rnw",
+        "path_type": "hardlink",
+        "sha256": "784a0a708689d045c6d067b5236328408d0dc926d9c8e7e2cf39e2e7cdfe846c",
+        "sha256_in_prefix": "784a0a708689d045c6d067b5236328408d0dc926d9c8e7e2cf39e2e7cdfe846c",
+        "size_in_bytes": 18290
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/Theory.R",
+        "path_type": "hardlink",
+        "sha256": "f60ac3a6ffebfad31c967918e3b1107f04dd7a802c4e5eb30b3b413e6c2919c6",
+        "sha256_in_prefix": "f60ac3a6ffebfad31c967918e3b1107f04dd7a802c4e5eb30b3b413e6c2919c6",
+        "size_in_bytes": 253
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/Theory.Rnw",
+        "path_type": "hardlink",
+        "sha256": "7888876baa7a5b46f3bfe14487e9dc9032da6caf7ffe9d16b22a4834885d3409",
+        "sha256_in_prefix": "7888876baa7a5b46f3bfe14487e9dc9032da6caf7ffe9d16b22a4834885d3409",
+        "size_in_bytes": 53977
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/lmer.R",
+        "path_type": "hardlink",
+        "sha256": "54c3320ee97b6dcbe296641c32afde6c619f4615ba5689fc70758c21a4b6e4fa",
+        "sha256_in_prefix": "54c3320ee97b6dcbe296641c32afde6c619f4615ba5689fc70758c21a4b6e4fa",
+        "size_in_bytes": 14816
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/lmer.Rnw",
+        "path_type": "hardlink",
+        "sha256": "c15405aad0a7e4b36de55f6e8ebdb06c6644748d6f5c29292f1b1de18342fff6",
+        "sha256_in_prefix": "c15405aad0a7e4b36de55f6e8ebdb06c6644748d6f5c29292f1b1de18342fff6",
+        "size_in_bytes": 137499
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/lmerperf.R",
+        "path_type": "hardlink",
+        "sha256": "73d1ac88346c5dee90cbd0653250121444cbdb21793d9b8ebb27fa0493ee73f0",
+        "sha256_in_prefix": "73d1ac88346c5dee90cbd0653250121444cbdb21793d9b8ebb27fa0493ee73f0",
+        "size_in_bytes": 1348
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/lmerperf.Rmd",
+        "path_type": "hardlink",
+        "sha256": "a7f95a749523460c5600a87da9dfb6b451940d679af6ef7cb2bfd75757684c42",
+        "sha256_in_prefix": "a7f95a749523460c5600a87da9dfb6b451940d679af6ef7cb2bfd75757684c42",
+        "size_in_bytes": 2949
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lme4/inst/doc/profiling.txt",
+        "path_type": "hardlink",
+        "sha256": "9d65b675876f45b64cdf44e47d7241a57a17fbe018aafc76b0ed885d6e2dd7bd",
+        "sha256_in_prefix": "9d65b675876f45b64cdf44e47d7241a57a17fbe018aafc76b0ed885d6e2dd7bd",
+        "size_in_bytes": 4513
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lmer.pdf",
+        "path_type": "hardlink",
+        "sha256": "84deadcecfd43f47e434c2737615f5c71f10e956c8f8b548e904f0d2f04968a0",
+        "sha256_in_prefix": "84deadcecfd43f47e434c2737615f5c71f10e956c8f8b548e904f0d2f04968a0",
+        "size_in_bytes": 495199
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/lmerperf.html",
+        "path_type": "hardlink",
+        "sha256": "ee61d8d0fc530eccbc1be616ad5574e652e60fcecc8c89b67983b308573726d6",
+        "sha256_in_prefix": "ee61d8d0fc530eccbc1be616ad5574e652e60fcecc8c89b67983b308573726d6",
+        "size_in_bytes": 738905
+      },
+      {
+        "_path": "lib/R/library/lme4/doc/profiling.txt",
+        "path_type": "hardlink",
+        "sha256": "9d65b675876f45b64cdf44e47d7241a57a17fbe018aafc76b0ed885d6e2dd7bd",
+        "sha256_in_prefix": "9d65b675876f45b64cdf44e47d7241a57a17fbe018aafc76b0ed885d6e2dd7bd",
+        "size_in_bytes": 4513
+      },
+      {
+        "_path": "lib/R/library/lme4/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "2516d84aa2eb1f3111b11409c051ae1083ad731752fe0383813dd3e5c7060358",
+        "sha256_in_prefix": "2516d84aa2eb1f3111b11409c051ae1083ad731752fe0383813dd3e5c7060358",
+        "size_in_bytes": 4576
+      },
+      {
+        "_path": "lib/R/library/lme4/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "ea7956204f136ca924182e089b8eccb97f46e2546b2080ac3436273a16c65251",
+        "sha256_in_prefix": "ea7956204f136ca924182e089b8eccb97f46e2546b2080ac3436273a16c65251",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "lib/R/library/lme4/help/lme4.rdb",
+        "path_type": "hardlink",
+        "sha256": "d294a353ce4e1dd8c9503d2b3c59e5a90014ab0cae38d8538bfa6f139fa28bf7",
+        "sha256_in_prefix": "d294a353ce4e1dd8c9503d2b3c59e5a90014ab0cae38d8538bfa6f139fa28bf7",
+        "size_in_bytes": 359905
+      },
+      {
+        "_path": "lib/R/library/lme4/help/lme4.rdx",
+        "path_type": "hardlink",
+        "sha256": "b8790e92fbed142fbd9d1e552b1bd8ac78af86c942d0a8da04aa236dd3628da8",
+        "sha256_in_prefix": "b8790e92fbed142fbd9d1e552b1bd8ac78af86c942d0a8da04aa236dd3628da8",
+        "size_in_bytes": 1916
+      },
+      {
+        "_path": "lib/R/library/lme4/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "77b6bf66c70ede6d3902ecde130d319154421a11cfb0cc2004b627d3ace7b828",
+        "sha256_in_prefix": "77b6bf66c70ede6d3902ecde130d319154421a11cfb0cc2004b627d3ace7b828",
+        "size_in_bytes": 847
+      },
+      {
+        "_path": "lib/R/library/lme4/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "749f0dea602c22d283ab6ed69fe0af57e6b2115d1a11983ee4f54263e18f013f",
+        "sha256_in_prefix": "749f0dea602c22d283ab6ed69fe0af57e6b2115d1a11983ee4f54263e18f013f",
+        "size_in_bytes": 30020
+      },
+      {
+        "_path": "lib/R/library/lme4/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/lme4/libs/lme4.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-lme4_1558446964049/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "e0aa0e4534e9a367e36487abcffdab4098c02776c2ccdc73ec807faded9e151c",
+        "sha256_in_prefix": "393288271abd914c22e70c64147d9b6a70a495a013f8a53d3cfd85a527799d38",
+        "size_in_bytes": 507048
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/Johnson.rda",
+        "path_type": "hardlink",
+        "sha256": "8ceb624d16cecce95ac58d21d3d449c63d5584f2882df5f40657886c8d05bc16",
+        "sha256_in_prefix": "8ceb624d16cecce95ac58d21d3d449c63d5584f2882df5f40657886c8d05bc16",
+        "size_in_bytes": 833
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/Rplots.pdf",
+        "path_type": "hardlink",
+        "sha256": "4e97f90bb06e5c2fd9d58583f8c8704358740e2127d9c8e6f98994b63a01ec68",
+        "sha256_in_prefix": "4e97f90bb06e5c2fd9d58583f8c8704358740e2127d9c8e6f98994b63a01ec68",
+        "size_in_bytes": 12789
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/SO_sep25.RData",
+        "path_type": "hardlink",
+        "sha256": "346d640b069ba40153fa97362e30b88c6222c9bee9274645198131b34d1d04bd",
+        "sha256_in_prefix": "346d640b069ba40153fa97362e30b88c6222c9bee9274645198131b34d1d04bd",
+        "size_in_bytes": 12887
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/Thailand.rda",
+        "path_type": "hardlink",
+        "sha256": "6a12cd2cffe5d83ac44b52bab7d82af924e32d60d0b94b87500e0a857dbaa58d",
+        "sha256_in_prefix": "6a12cd2cffe5d83ac44b52bab7d82af924e32d60d0b94b87500e0a857dbaa58d",
+        "size_in_bytes": 6660
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/badhess.RData",
+        "path_type": "hardlink",
+        "sha256": "74929c42262880ad0a7b7ea698161876c676f555ee627bd825f9c380d2ac04a7",
+        "sha256_in_prefix": "74929c42262880ad0a7b7ea698161876c676f555ee627bd825f9c380d2ac04a7",
+        "size_in_bytes": 272438
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/badprof.rds",
+        "path_type": "hardlink",
+        "sha256": "56e73c382094c9442f1930773f9850215d09cdaa0993c18e7613d107368f4a6f",
+        "sha256_in_prefix": "56e73c382094c9442f1930773f9850215d09cdaa0993c18e7613d107368f4a6f",
+        "size_in_bytes": 106571
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/boo01L.RData",
+        "path_type": "hardlink",
+        "sha256": "e2d7482138a0e1669b0c3b7a828a3d45f60b83b2dd14e8887835986496870eba",
+        "sha256_in_prefix": "e2d7482138a0e1669b0c3b7a828a3d45f60b83b2dd14e8887835986496870eba",
+        "size_in_bytes": 30706
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/colonizer_rand.rda",
+        "path_type": "hardlink",
+        "sha256": "663bc5f7f66f51e5ed442eba839858e0b9233d491d22008e05b08bdc9890cb7e",
+        "sha256_in_prefix": "663bc5f7f66f51e5ed442eba839858e0b9233d491d22008e05b08bdc9890cb7e",
+        "size_in_bytes": 473
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/confint_ex.rda",
+        "path_type": "hardlink",
+        "sha256": "fdcb7d9dec6c65c6d4427642e9c2121b2431f59de97f02d04089fc9e2354c31b",
+        "sha256_in_prefix": "fdcb7d9dec6c65c6d4427642e9c2121b2431f59de97f02d04089fc9e2354c31b",
+        "size_in_bytes": 393
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/crabs_randdata00.Rda",
+        "path_type": "hardlink",
+        "sha256": "193e47c47587a718b5f8b18175b4a5a253893056c0b59104b3796ef172f9f211",
+        "sha256_in_prefix": "193e47c47587a718b5f8b18175b4a5a253893056c0b59104b3796ef172f9f211",
+        "size_in_bytes": 782
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/crabs_randdata2.Rda",
+        "path_type": "hardlink",
+        "sha256": "cd376351210cd0b3d32aa17c21c90f82f1ae4b248434bc0d8f0cf58d946ccddb",
+        "sha256_in_prefix": "cd376351210cd0b3d32aa17c21c90f82f1ae4b248434bc0d8f0cf58d946ccddb",
+        "size_in_bytes": 1906
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/culcita_dat.RData",
+        "path_type": "hardlink",
+        "sha256": "2cd0ffbaf52f705fb223755e831bc2f947aaaf17a633e6206ed7f541d772e08b",
+        "sha256_in_prefix": "2cd0ffbaf52f705fb223755e831bc2f947aaaf17a633e6206ed7f541d772e08b",
+        "size_in_bytes": 307
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/dat20101314.csv",
+        "path_type": "hardlink",
+        "sha256": "a461277b15a48251fbe38fe4faa931dadb7e6b40ba9b588e38d08864c3c438da",
+        "sha256_in_prefix": "a461277b15a48251fbe38fe4faa931dadb7e6b40ba9b588e38d08864c3c438da",
+        "size_in_bytes": 1448
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/dataEx_Glmer.txt",
+        "path_type": "hardlink",
+        "sha256": "4bc28110c38e3730cf0c762383f1e5574f8640f8a05681327e1e94f38c536f69",
+        "sha256_in_prefix": "4bc28110c38e3730cf0c762383f1e5574f8640f8a05681327e1e94f38c536f69",
+        "size_in_bytes": 4527
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/fakesim.RData",
+        "path_type": "hardlink",
+        "sha256": "eca53f99b041da217166c12545fa919c61a06e5f6c7522785be45f38aebd3753",
+        "sha256_in_prefix": "eca53f99b041da217166c12545fa919c61a06e5f6c7522785be45f38aebd3753",
+        "size_in_bytes": 4328
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/gopherdat2.RData",
+        "path_type": "hardlink",
+        "sha256": "29e48b50d33c42fc85caec91842cb651bac8e03e86c5735b3f317306893e9bc4",
+        "sha256_in_prefix": "29e48b50d33c42fc85caec91842cb651bac8e03e86c5735b3f317306893e9bc4",
+        "size_in_bytes": 576
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/gotway_hessianfly.rda",
+        "path_type": "hardlink",
+        "sha256": "ff79d1426c84ef933cb8101e42cf35afdd6ab6cd78c66b717a33a95dd0e58dce",
+        "sha256_in_prefix": "ff79d1426c84ef933cb8101e42cf35afdd6ab6cd78c66b717a33a95dd0e58dce",
+        "size_in_bytes": 73540
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/hotpower.csv",
+        "path_type": "hardlink",
+        "sha256": "8f9e371af6de3d03363562446fb1d6ef98dc3fc7084de1aaf67023fef58df791",
+        "sha256_in_prefix": "8f9e371af6de3d03363562446fb1d6ef98dc3fc7084de1aaf67023fef58df791",
+        "size_in_bytes": 399935
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/koller-data.R",
+        "path_type": "hardlink",
+        "sha256": "5617c4f933e9aa3780119afe554d818902069bc27bd27e90c0b95ed1775babf5",
+        "sha256_in_prefix": "5617c4f933e9aa3780119afe554d818902069bc27bd27e90c0b95ed1775babf5",
+        "size_in_bytes": 16666
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/lme-tst-fits.R",
+        "path_type": "hardlink",
+        "sha256": "628a87f7de395551d20cc0c677b175adce37777cb7c1585d47964051d8f264df",
+        "sha256_in_prefix": "628a87f7de395551d20cc0c677b175adce37777cb7c1585d47964051d8f264df",
+        "size_in_bytes": 3462
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/lme-tst-fits.Rout",
+        "path_type": "hardlink",
+        "sha256": "ea5546ca2ca107f6b4c2d8118eda7a413767dd8e1633660e1e290cb3ea4c1567",
+        "sha256_in_prefix": "ea5546ca2ca107f6b4c2d8118eda7a413767dd8e1633660e1e290cb3ea4c1567",
+        "size_in_bytes": 5270
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/lme-tst-fits.rda",
+        "path_type": "hardlink",
+        "sha256": "77f8224737f2f018d04da954b64779c232b2802fbae54401537b2b8dda5ccb65",
+        "sha256_in_prefix": "77f8224737f2f018d04da954b64779c232b2802fbae54401537b2b8dda5ccb65",
+        "size_in_bytes": 251611
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/lme-tst-funs.R",
+        "path_type": "hardlink",
+        "sha256": "dc4b925693a4dbee741be0111d7ef988b3c18f26c34a1009eebfae64c503193c",
+        "sha256_in_prefix": "dc4b925693a4dbee741be0111d7ef988b3c18f26c34a1009eebfae64c503193c",
+        "size_in_bytes": 3812
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/mastitis.rda",
+        "path_type": "hardlink",
+        "sha256": "d7e4aecb0007eddb8d575f6ce2ce8558cb0a146e5aaf9ee0620e4195a18f73be",
+        "sha256_in_prefix": "d7e4aecb0007eddb8d575f6ce2ce8558cb0a146e5aaf9ee0620e4195a18f73be",
+        "size_in_bytes": 16379
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/polytom2.RData",
+        "path_type": "hardlink",
+        "sha256": "5a8b2c8f1f398cf799d870715f648de883318ea94d3e09a11032898eadf03162",
+        "sha256_in_prefix": "5a8b2c8f1f398cf799d870715f648de883318ea94d3e09a11032898eadf03162",
+        "size_in_bytes": 2020
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/polytom3.RData",
+        "path_type": "hardlink",
+        "sha256": "da9cf57d2c612d362971afb66dce919f8831a496de2a9a1a19e8557cb31c8eb5",
+        "sha256_in_prefix": "da9cf57d2c612d362971afb66dce919f8831a496de2a9a1a19e8557cb31c8eb5",
+        "size_in_bytes": 5765
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/polytomous_test.RData",
+        "path_type": "hardlink",
+        "sha256": "2750b4b8204c7ac9773f5ad5fcc9c80ce8dbaab76f88cb54b22d5eca3c11b48f",
+        "sha256_in_prefix": "2750b4b8204c7ac9773f5ad5fcc9c80ce8dbaab76f88cb54b22d5eca3c11b48f",
+        "size_in_bytes": 2020
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/polytomous_vcov_ex.RData",
+        "path_type": "hardlink",
+        "sha256": "d2583fe8903387f63e2f6190f8774119f9b6dee3432144a3ff91d26c7ad147a9",
+        "sha256_in_prefix": "d2583fe8903387f63e2f6190f8774119f9b6dee3432144a3ff91d26c7ad147a9",
+        "size_in_bytes": 68626
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/prLogistic.RData",
+        "path_type": "hardlink",
+        "sha256": "0353d11a88d9198c06e323b1c2008f223021ccee45f0347f5f70823432969d64",
+        "sha256_in_prefix": "0353d11a88d9198c06e323b1c2008f223021ccee45f0347f5f70823432969d64",
+        "size_in_bytes": 26767
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/radinger_dat.RData",
+        "path_type": "hardlink",
+        "sha256": "2eeafcb2d081ae35c45c8c25d50b3162da95cfff7e59d5dc5b9d70b151a960ef",
+        "sha256_in_prefix": "2eeafcb2d081ae35c45c8c25d50b3162da95cfff7e59d5dc5b9d70b151a960ef",
+        "size_in_bytes": 1602
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/rankMatrix.rds",
+        "path_type": "hardlink",
+        "sha256": "fbde69b7550ee009d7586d9e401662e462dc7add96988b0c890b3c4433d8a177",
+        "sha256_in_prefix": "fbde69b7550ee009d7586d9e401662e462dc7add96988b0c890b3c4433d8a177",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/respiratory.RData",
+        "path_type": "hardlink",
+        "sha256": "077f17b22c9daab5b1d9b86e361b2b94bde899628a6e7b01add47ba1d60213fe",
+        "sha256_in_prefix": "077f17b22c9daab5b1d9b86e361b2b94bde899628a6e7b01add47ba1d60213fe",
+        "size_in_bytes": 1473
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/sbTobb.Rdata",
+        "path_type": "hardlink",
+        "sha256": "72ff3e3d8fe754230751598db49ac9b1f92e7e9c307915969fa075cea07cea49",
+        "sha256_in_prefix": "72ff3e3d8fe754230751598db49ac9b1f92e7e9c307915969fa075cea07cea49",
+        "size_in_bytes": 86514
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/survdat_reduced.Rda",
+        "path_type": "hardlink",
+        "sha256": "da044a6e51a526b52a64bdd85a5359f41e4f19d9fc683589c500ab90d9dfc45d",
+        "sha256_in_prefix": "da044a6e51a526b52a64bdd85a5359f41e4f19d9fc683589c500ab90d9dfc45d",
+        "size_in_bytes": 2251
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/tmp.txt",
+        "path_type": "hardlink",
+        "sha256": "b8694ed709ad6576fc863045fb395b525bb82e92086d7f783573885a1cdc519a",
+        "sha256_in_prefix": "b8694ed709ad6576fc863045fb395b525bb82e92086d7f783573885a1cdc519a",
+        "size_in_bytes": 4900
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/tprfm1.RData",
+        "path_type": "hardlink",
+        "sha256": "ca70fd11b2ca149516427c37ac3422aa5ef9f9766a6839b01f00d6c7fa0ccc84",
+        "sha256_in_prefix": "ca70fd11b2ca149516427c37ac3422aa5ef9f9766a6839b01f00d6c7fa0ccc84",
+        "size_in_bytes": 98853
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/trees513.R",
+        "path_type": "hardlink",
+        "sha256": "7bf22cc120f1eba086dd33ae431c73b449ef49d2d8e63c04bcfc706fa3bf7d26",
+        "sha256_in_prefix": "7bf22cc120f1eba086dd33ae431c73b449ef49d2d8e63c04bcfc706fa3bf7d26",
+        "size_in_bytes": 453
+      },
+      {
+        "_path": "lib/R/library/lme4/testdata/trees513.RData",
+        "path_type": "hardlink",
+        "sha256": "d573810b0d2eaf01c530b819b9009b2de02753df3f1b0bbec6ed1db018f559dc",
+        "sha256_in_prefix": "d573810b0d2eaf01c530b819b9009b2de02753df3f1b0bbec6ed1db018f559dc",
+        "size_in_bytes": 18599
+      },
+      {
+        "_path": "lib/R/library/lme4/vignettedata/calcium.txt",
+        "path_type": "hardlink",
+        "sha256": "5f0c590a1c41da6c8a191a2c2cc52330662b0b2525efe669dddb276251e7d99f",
+        "sha256_in_prefix": "5f0c590a1c41da6c8a191a2c2cc52330662b0b2525efe669dddb276251e7d99f",
+        "size_in_bytes": 1242
+      },
+      {
+        "_path": "lib/R/library/lme4/vignettedata/mcmcsampdat.RData",
+        "path_type": "hardlink",
+        "sha256": "b05d3abe37e7bf9f3efd96dd449da1c109973ffd8e9f69f1b2f51cd214f21ec8",
+        "sha256_in_prefix": "b05d3abe37e7bf9f3efd96dd449da1c109973ffd8e9f69f1b2f51cd214f21ec8",
+        "size_in_bytes": 293564
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-lme4==1.1_21=r36h29659fb_0",
+  "sha256": "9c47882d176d57cb274056fd4fcfe2d809be9e71aca2f1d2f1704044fe4839d4",
+  "size": 4919483,
+  "subdir": "linux-64",
+  "timestamp": 1558447068336,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-lme4-1.1_21-r36h29659fb_0.conda",
+  "version": "1.1_21"
+}

@@ -1,0 +1,205 @@
+{
+  "build": "r36h80f5a37_4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libgfortran-ng >=7,<8.0a0",
+    "libstdcxx-ng >=7.3.0",
+    "r-base >=3.6,<3.7.0a0",
+    "r-rcpp >=0.9.10",
+    "_r-mutex 1.* anacondar_1"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/r-minqa-1.2.4-r36h80f5a37_4",
+  "features": "",
+  "files": [
+    "lib/R/library/minqa/DESCRIPTION",
+    "lib/R/library/minqa/INDEX",
+    "lib/R/library/minqa/Meta/Rd.rds",
+    "lib/R/library/minqa/Meta/features.rds",
+    "lib/R/library/minqa/Meta/hsearch.rds",
+    "lib/R/library/minqa/Meta/links.rds",
+    "lib/R/library/minqa/Meta/nsInfo.rds",
+    "lib/R/library/minqa/Meta/package.rds",
+    "lib/R/library/minqa/NAMESPACE",
+    "lib/R/library/minqa/R/minqa",
+    "lib/R/library/minqa/R/minqa.rdb",
+    "lib/R/library/minqa/R/minqa.rdx",
+    "lib/R/library/minqa/help/AnIndex",
+    "lib/R/library/minqa/help/aliases.rds",
+    "lib/R/library/minqa/help/minqa.rdb",
+    "lib/R/library/minqa/help/minqa.rdx",
+    "lib/R/library/minqa/help/paths.rds",
+    "lib/R/library/minqa/html/00Index.html",
+    "lib/R/library/minqa/html/R.css",
+    "lib/R/library/minqa/libs/minqa.so"
+  ],
+  "fn": "r-minqa-1.2.4-r36h80f5a37_4.conda",
+  "legacy_bz2_md5": "ba93d963b2f64ad654c7076172fcc0ad",
+  "legacy_bz2_size": 143533,
+  "license": "GPL-2",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/r-minqa-1.2.4-r36h80f5a37_4",
+    "type": 1
+  },
+  "md5": "60def3bf26485ec0acc893f7209b1511",
+  "name": "r-minqa",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/r-minqa-1.2.4-r36h80f5a37_4.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/minqa/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "1b2fcaa88348da6bdf301b00c383c1bb4e4e354e592469fa94ca60aa167b1a21",
+        "sha256_in_prefix": "1b2fcaa88348da6bdf301b00c383c1bb4e4e354e592469fa94ca60aa167b1a21",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "lib/R/library/minqa/INDEX",
+        "path_type": "hardlink",
+        "sha256": "90ed695490e6a5602dccfc64d70fa7dbe8ebad3f4276ac3ae70f4e399cdb1b2a",
+        "sha256_in_prefix": "90ed695490e6a5602dccfc64d70fa7dbe8ebad3f4276ac3ae70f4e399cdb1b2a",
+        "size_in_bytes": 306
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "58c5199499f9567d222401156791d3e6e7f3504f399c963bc1abc3508b4ebb2a",
+        "sha256_in_prefix": "58c5199499f9567d222401156791d3e6e7f3504f399c963bc1abc3508b4ebb2a",
+        "size_in_bytes": 319
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "sha256_in_prefix": "6296906d51e085e4013cc3a2d264bd7753dc17975cbe3bc585f3679e2d6787f1",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "dbeb6a3f1b667dedf0fe87cfa042c6f6ab6ea6ee4ebee750a21d3a17452c57c4",
+        "sha256_in_prefix": "dbeb6a3f1b667dedf0fe87cfa042c6f6ab6ea6ee4ebee750a21d3a17452c57c4",
+        "size_in_bytes": 353
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "07e250daf7db20a3577bbdbfdf285f38fbec9b05d64d96d4d95a6302ade76575",
+        "sha256_in_prefix": "07e250daf7db20a3577bbdbfdf285f38fbec9b05d64d96d4d95a6302ade76575",
+        "size_in_bytes": 120
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "be47318d2902edb68655b1c11957cf918823417505b9c7ce18df9b47a516de83",
+        "sha256_in_prefix": "be47318d2902edb68655b1c11957cf918823417505b9c7ce18df9b47a516de83",
+        "size_in_bytes": 314
+      },
+      {
+        "_path": "lib/R/library/minqa/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "9883793b28b5eb852e631b34b29441b8011134e5a0b7edc1a4dd2f1f5512ec2e",
+        "sha256_in_prefix": "9883793b28b5eb852e631b34b29441b8011134e5a0b7edc1a4dd2f1f5512ec2e",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "lib/R/library/minqa/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "4f591cda660d4bcbd9bebbabfa8046ed7e728b01f490feaa7fa64aaa0a129baa",
+        "sha256_in_prefix": "4f591cda660d4bcbd9bebbabfa8046ed7e728b01f490feaa7fa64aaa0a129baa",
+        "size_in_bytes": 107
+      },
+      {
+        "_path": "lib/R/library/minqa/R/minqa",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/minqa/R/minqa.rdb",
+        "path_type": "hardlink",
+        "sha256": "9618127e9b0d642df4c36a7d309506bd64951c29c154100b16f7a98c71e1105f",
+        "sha256_in_prefix": "9618127e9b0d642df4c36a7d309506bd64951c29c154100b16f7a98c71e1105f",
+        "size_in_bytes": 14305
+      },
+      {
+        "_path": "lib/R/library/minqa/R/minqa.rdx",
+        "path_type": "hardlink",
+        "sha256": "65ed5f47cea6fb015fc751998b373b7f34f5e8f681fa8e2f634574f17965b6bb",
+        "sha256_in_prefix": "65ed5f47cea6fb015fc751998b373b7f34f5e8f681fa8e2f634574f17965b6bb",
+        "size_in_bytes": 321
+      },
+      {
+        "_path": "lib/R/library/minqa/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "3663483dac9baa2994cd65094bb2a13b206e08f0533d796582431c94be62f6fe",
+        "sha256_in_prefix": "3663483dac9baa2994cd65094bb2a13b206e08f0533d796582431c94be62f6fe",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "lib/R/library/minqa/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "9942d1f5af42d9c2287900c98e94c304f12a184ef67bac318041c84f1ded49d3",
+        "sha256_in_prefix": "9942d1f5af42d9c2287900c98e94c304f12a184ef67bac318041c84f1ded49d3",
+        "size_in_bytes": 89
+      },
+      {
+        "_path": "lib/R/library/minqa/help/minqa.rdb",
+        "path_type": "hardlink",
+        "sha256": "fe090a8478cfe0b99ac6756f333ef57bc56e72ead5b93bad31cdc29e6df5c558",
+        "sha256_in_prefix": "fe090a8478cfe0b99ac6756f333ef57bc56e72ead5b93bad31cdc29e6df5c558",
+        "size_in_bytes": 19684
+      },
+      {
+        "_path": "lib/R/library/minqa/help/minqa.rdx",
+        "path_type": "hardlink",
+        "sha256": "c5293f449330a438cf95aeb82edc0392faa289812e48c109f9d01d0d644e5ced",
+        "sha256_in_prefix": "c5293f449330a438cf95aeb82edc0392faa289812e48c109f9d01d0d644e5ced",
+        "size_in_bytes": 202
+      },
+      {
+        "_path": "lib/R/library/minqa/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "07bbc7dd97ee70ef75d09108b0529f832e17c4194517040d506ed2858feea89e",
+        "sha256_in_prefix": "07bbc7dd97ee70ef75d09108b0529f832e17c4194517040d506ed2858feea89e",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "lib/R/library/minqa/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "1b04d237a7750479b128ff99e97c4f6cb188502e4f970662ff6d37c67c775ea8",
+        "sha256_in_prefix": "1b04d237a7750479b128ff99e97c4f6cb188502e4f970662ff6d37c67c775ea8",
+        "size_in_bytes": 1407
+      },
+      {
+        "_path": "lib/R/library/minqa/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/minqa/libs/minqa.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/builder/ktietz/conda/conda-bld/r-minqa_1558439859081/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+        "sha256": "0c3a2f914f089dfd35ed27d1336020aeb231b1b90124efbf511b69006b733b35",
+        "sha256_in_prefix": "6b66d58f74a3daaf2166470a18d7cbfae2e3d63fb9459f7af4ad107b3f77985b",
+        "size_in_bytes": 205680
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "r-minqa==1.2.4=r36h80f5a37_4",
+  "sha256": "aff3a7a0f63741af9c7cc5aa2cf705cf47cbdeb67c806260192423e704276060",
+  "size": 136718,
+  "subdir": "linux-64",
+  "timestamp": 1558439931704,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/r-minqa-1.2.4-r36h80f5a37_4.conda",
+  "version": "1.2.4"
+}
