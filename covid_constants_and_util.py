@@ -1,9 +1,11 @@
 import getpass
 import os
-import dask
+#import dask
 from multiprocessing.pool import ThreadPool
 import platform
 import numpy as np
+import numpy as np
+# import pandas as pd
 
 from tqdm import tqdm
 
@@ -14,7 +16,7 @@ os.environ["MKL_NUM_THREADS"] = str(MAX_NUMPY_CORES)  # this keeps numpy from us
 os.environ["NUMEXPR_NUM_THREADS"] = str(MAX_NUMPY_CORES)
 os.environ["OMP_NUM_THREADS"] = str(MAX_NUMPY_CORES)
 os.environ["NUMEXPR_MAX_THREADS"] = str(MAX_NUMPY_CORES)
-dask.config.set(pool=ThreadPool(MAX_NUMPY_CORES))  # This is to make Dask play nicely with the thread limit. See:
+# dask.config.set(pool=ThreadPool(MAX_NUMPY_CORES))  # This is to make Dask play nicely with the thread limit. See:
 # https://stackoverflow.com/questions/39422092/error-with-omp-num-threads-when-using-dask-distributed
 # https://stackoverflow.com/questions/40621543/how-to-specify-the-number-of-threads-processes-for-the-default-dask-scheduler
 # Using these settings, things seem to be running without incident on Stanford systems (assuming you don't try to run too many jobs at once).
@@ -57,16 +59,27 @@ PATH_TO_SEIR_INIT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/seir_init/')
 
 # supplementary datasets: census, geographical, NYT, Google
 PATH_TO_ACS_1YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2018_one_year_acs_population_data/nhgis0001_ds239_20185_2018_blck_grp.csv')
-PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/external_datasets_for_aggregate_analysis/2019_five_year_acs_data/2019_five_year_acs_data.csv')
+PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG/ACS_race_cbsa_2019.csv')
 # PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2017_five_year_acs_data/2017_five_year_acs_data.csv')
 PATH_TO_ACS_5YR_DATA_GEODATABASE = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG.gdb.zip')
-PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/external_datasets_for_aggregate_analysis/2019_five_year_acs_data/2019_five_year_acs_data.csv')
+# PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/external_datasets_for_aggregate_analysis/2019_five_year_acs_data/2019_five_year_acs_data.csv')
 PATH_TO_CENSUS_BLOCK_GROUP_DATA = os.path.join(BASE_DIR, 'base_dir_for_all_new_data_and_results/non_safegraph_datasets/census_block_group_data/ACS_5_year_2013_to_2017_joined_to_blockgroup_shapefiles/') # census block group boundaries.
-PATH_TO_COUNTY_TO_MSA_MAPPING = os.path.join(BASE_DIR, 'base_dir_for_all_new_data_and_results/non_safegraph_datasets/census_block_group_data/august_2017_county_to_metropolitan_mapping.csv') # maps counties to MSAs, consistent with the Experienced Segregation paper. Data was downloaded from https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2017/delineation-files/list1.xls.
+PATH_TO_COUNTY_TO_MSA_MAPPING = os.path.join(BASE_DIR, 'covid_mobility_results/base_dir_for_all_new_data_and_results/non_safegraph_datasets/census_block_group_data/august_2017_county_to_metropolitan_mapping.csv') # maps counties to MSAs, consistent with the Experienced Segregation paper. Data was downloaded from https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2017/delineation-files/list1.xls.
 PATH_TO_NYT_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/nytimes_coronavirus_data/covid-19-data/us-counties.csv')
-PATH_TO_OLD_NYT_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/nytimes_coronavirus_data/covid-19-data-used-in-nature/us-counties.csv')
+PATH_TO_OLD_NYT_DATA = os.path.join(BASE_DIR, '/media/gpu/easystore/all_aggregate_data/us-counties.csv')
 PATH_TO_GOOGLE_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/20200508_google_mobility_report.csv')
 PATH_TO_MASK_USE_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/mask-use-ihme')
+
+#######################################################################
+# Huan
+#######################################################################
+# CORE_POI_DIR: the POI list of Safegraph
+CORE_POI_DIR = r'/media/gpu/easystore/Safegraph/Core Places US (Nov 2020 - Present)/core_poi/2021/06/05/00'   # No column of safegraph_place_id since July
+FOOTPRINT_FILE = r'/media/gpu/easystore/Safegraph/Geometry Footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz'
+# FOOTPRINT_FILE has safegraph_place_id only.
+WEEKLY_PATTERNS_BEFORE_20201130 = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/patterns_backfill/2020/12/14/21'
+WEEKLY_PATTERNS_AFTER_20201130  = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns'
+# WEEKLY_PATTERNS after July 2021 need to be manually request.
 
 #######################################################################
 # PARAMS USED IN EXPERIMENTS THAT WILL NOT OFTEN CHANGE
@@ -74,8 +87,9 @@ PATH_TO_MASK_USE_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_
 ALL_TIME_PERIODS = ['20181231_20190325', '20190401_20190624', '20190701_20190923', '20190930_20191223',
                     '20191230_20200224', '20200302_20200608', '20200615_20200817', '20200824_20201019',
                     '20201026_20210118', '20210125_20210201']  # POI data saved in chunks of 2-3 months
-IPF_ID_PREFIX = '2020-09-01_to_2020-11-30'  # time range to use for loading POI and CBG ids
-POI_VISITS_PREFIX = '2018-12-31_to_2021-01-24'  # time range for all saved hourly POI visits
+IPF_ID_PREFIX = '2020-12-28_to_2021-01-17'  # the file PREFIX!  time range to use for loading POI and CBG ids. The acutal hours of Safegraph, not release date.
+# POI_VISITS_PREFIX = '2018-12-31_to_2021-02-01'  # the file PREFIX!   time range for all saved hourly POI visits
+POI_VISITS_PREFIX = '2020-12-28_to_2021-01-17' # Huan
 
 MSAS = ['Atlanta_Sandy_Springs_Roswell_GA',
         'Chicago_Naperville_Elgin_IL_IN_WI',
@@ -91,6 +105,10 @@ VA_MSAS = ['Washington_Arlington_Alexandria_DC_VA_MD_WV',
            'Richmond_VA',
            'Virginia_Beach_Norfolk_Newport_News_VA_NC',
 'Blacksburg_Christiansburg_Radford_VA+Charlottesville_VA+Harrisonburg_VA+Lynchburg_VA+Roanoke_VA+Staunton_Waynesboro_VA']
+
+SC_MSAS = [
+           'Columnbia_VA',
+           ]
 
 P0_SICK_RANGE = [5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
 BETA_PLAUSIBLE_RANGE = (0.7, 1.3)
@@ -123,7 +141,11 @@ INCIDENCE_POP = 100000
 # PARAMS USED IN EXPERIMENTS THAT SHOULD BE CHECKED/CHANGED
 # IF NECESSARY BEFORE EVERY EXPERIMENT
 #######################################################################
-MSAS_IMPLEMENTED_FOR_V2 = ['Richmond_VA']  # the list of MSAs you want to run experiments for right now
+# MSAS_IMPLEMENTED_FOR_V2 = ['Richmond_VA']  # the list of MSAs you want to run experiments for right now  Washington_Arlington_Alexandria_DC_VA_MD_WV
+# MSAS_IMPLEMENTED_FOR_V2 = ['Washington_Arlington_Alexandria_DC_VA_MD_WV']  # the list of MSAs you want to run experiments for right now    # Huan
+MSAS_IMPLEMENTED_FOR_V2 = ['Columbia_SC']  # the list of MSAs you want to run experiments for right now    # Huan
+
+
 CPU_USAGE_THRESHOLD = 70
 MEM_USAGE_THRESHOLD = 50
 SECONDS_TO_WAIT_AFTER_EXCEEDING_COMP_THRESHOLD = 8
@@ -145,9 +167,15 @@ MAX_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_01_19_17_02_36_029096'
 #                                 "max_poi_psi": 6204.298191231721}
 
 #### PARAMETERS FOR SECOND WAVE EXPERIMENTS ####
-MIN_DATETIME = datetime.datetime(2020, 11, 1, 0)
-MAX_DATETIME = datetime.datetime(2020, 12, 31, 23)
-TRAIN_TEST_PARTITION = datetime.datetime(2020, 12, 18)
+# MIN_DATETIME = datetime.datetime(2020, 11, 1, 0)
+# MAX_DATETIME = datetime.datetime(2020, 12, 31, 23)
+# TRAIN_TEST_PARTITION = datetime.datetime(2020, 12, 18)
+
+#### PARAMETERS FOR 2021 EXPERIMENTS ####
+MIN_DATETIME = datetime.datetime(2020, 12, 28, 0)
+MAX_DATETIME = datetime.datetime(2021, 1, 17, 23)  #
+TRAIN_TEST_PARTITION = datetime.datetime(2021, 1, 21)
+
 # # beta_and_psi_plausible_range is output of make_param_plausibility_plot and should be updated whenever you recalibrate R0. These numbers allow R0_base to range from 0.1 - 2 and R0_PSI to range from 0.1 - 2 in first week of Nov 2020.
 BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.002820909916243525, 
                                 "max_home_beta": 0.056418198324870494, 
@@ -337,7 +365,8 @@ MSAS_TO_PRETTY_NAMES = {'Atlanta_Sandy_Springs_Roswell_GA':'Atlanta',
                         'Washington_Arlington_Alexandria_DC_VA_MD_WV':"Washington DC",
                         'Richmond_VA':'Richmond',
                         'Virginia_Beach_Norfolk_Newport_News_VA_NC':'Eastern',
-                        'Blacksburg_Christiansburg_Radford_VA+Charlottesville_VA+Harrisonburg_VA+Lynchburg_VA+Roanoke_VA+Staunton_Waynesboro_VA':'Joint VA MSAs'}
+                        'Blacksburg_Christiansburg_Radford_VA+Charlottesville_VA+Harrisonburg_VA+Lynchburg_VA+Roanoke_VA+Staunton_Waynesboro_VA':'Joint VA MSAs',
+                        'Columbia_SC':"Columbia, SC"}
 
 MSAS_TO_STATE_CBG_FILES = {'Washington_Arlington_Alexandria_DC_VA_MD_WV':['ACS_2017_5YR_BG_11_DISTRICT_OF_COLUMBIA.gdb',
                                                         'ACS_2017_5YR_BG_24_MARYLAND.gdb',

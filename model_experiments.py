@@ -101,7 +101,8 @@ def fit_disease_model_on_real_data(d,
                                    counties_to_track=None,
                                    include_cbg_prop_out=False,
                                    include_inter_cbg_travel=False,
-                                   include_mask_use=True,
+                                   # include_mask_use=True,
+                                   include_mask_use=False,  # Huan
                                    model_init_kwargs=None,
                                    simulation_kwargs=None,
                                    counterfactual_poi_opening_experiment_kwargs=None,
@@ -135,6 +136,10 @@ def fit_disease_model_on_real_data(d,
     counterfactual_poi_opening_experiment_kwargs: dict; arguments for POI category reopening experiments
     counterfactual_retrospective_experiment_kwargs: dict; arguments for counterfactual mobility reduction experiment
     """
+    if counties_to_track is not None:
+        counties_to_track = [str(s).zfill(5) for s in counties_to_track]
+
+
     assert min_datetime <= max_datetime
     assert all([k in exogenous_model_kwargs for k in ['poi_psi', 'home_beta']])
     assert all([k in poi_attributes_to_clip for k in ['clip_areas', 'clip_dwell_times', 'clip_visits']])
@@ -164,7 +169,11 @@ def fit_disease_model_on_real_data(d,
         assert len(poi_cbg_visits_list) == len(all_hours)
     hour_cols = ['hourly_visits_%s' % get_datetime_hour_as_string(dt) for dt in all_hours]
     if poi_cbg_visits_list is None:  # don't need hourly visits in dataframe otherwise
-        assert(all([col in d.columns for col in hour_cols]))  
+
+        for col in hour_cols:   # Huan
+            if col not in d.columns:
+                print(f"hour_cols {col} is not in d.columns, exit!")
+                assert (all([col in d.columns for col in hour_cols]))
     model_days = helper.list_datetimes_in_range(min_datetime, max_datetime)
     home_beta = exogenous_model_kwargs['home_beta']
     if type(home_beta) in {np.ndarray, list}:
@@ -176,7 +185,7 @@ def fit_disease_model_on_real_data(d,
         
     # aggregate median_dwell time over weeks
     if 'avg_median_dwell' not in d.columns:
-        weekly_median_dwell_pattern = re.compile('2020-\d\d-\d\d.median_dwell')
+        weekly_median_dwell_pattern = re.compile('202.*_.*_of_median_dwell')
         median_dwell_cols = [col for col in d.columns if re.match(weekly_median_dwell_pattern, col)]
         print('Taking median over median_dwell from %s to %s' % (median_dwell_cols[0], median_dwell_cols[-1]))
         # note: this may trigger "RuntimeWarning: All-NaN slice encountered" if a POI has all nans for median_dwell;
@@ -195,7 +204,10 @@ def fit_disease_model_on_real_data(d,
         print('After clipping, %i POIs' % len(d))
 
     # filter POIs
-    if poi_ids is None:   
+    if poi_ids is None:
+        # weekly_median_dwell_pattern = re.compile('202.*_.*_of_median_dwell')
+        # median_dwell_cols = [col for col in d.columns if re.match(weekly_median_dwell_pattern, col)] # Huan
+        aggregate_home_cbg_col = median_dwell_cols[0][:18] + aggregate_home_cbg_col
         d = d.loc[d[aggregate_home_cbg_col].map(lambda x:len(x.keys()) > 0)]
         if verbose: print("After dropping for missing CBG home data, %i POIs" % len(d))
         d = d.dropna(subset=['avg_median_dwell'])
@@ -237,24 +249,36 @@ def fit_disease_model_on_real_data(d,
     # filter CBGs
     poi_cbg_proportions = d[aggregate_home_cbg_col].values  # an array of dicts; each dict represents CBG distribution for POI
     acs_d = helper.load_and_reconcile_multiple_acs_data()
-    cbgs_to_census_pops = dict(zip(acs_d['census_block_group'].values,
-                                   acs_d['total_cbg_population_2018_1YR'].values))  # use most recent population data
+    acs_d['GEOID'] = acs_d['GEOID'].str[-12:]
+    acs_d['county_code'] = acs_d['GEOID'].str[:5]
+    acs_d['census_block_group'] = acs_d['GEOID']
+    cbgs_to_census_pops = dict(zip(acs_d['GEOID'].values,
+                                   acs_d['total_cbg_population_2019_5YR'].values))  # use most recent population data
     if cbg_ids is None:
         all_cbgs = [a for b in poi_cbg_proportions for a in b.keys()]
         cbg_counts = Counter(all_cbgs).most_common()
+        cbg_counts = [(str(cgb).zfill(12), count) for cgb, count in cbg_counts]
         all_unique_cbgs = [cbg for cbg, count in cbg_counts if count >= cbg_count_cutoff]  # only keep CBGs that have visited at least this many POIs
         if verbose: print("After dropping CBGs that appear in < %i POIs, %i CBGs (%2.1f%%)" %
               (cbg_count_cutoff, len(all_unique_cbgs), 100.*len(all_unique_cbgs)/len(cbg_counts)))
         if cbgs_to_filter_for is not None:
             all_unique_cbgs = [a for a in all_unique_cbgs if a in cbgs_to_filter_for]
             print("After filtering for CBGs in MSA, %i CBGs" % len(all_unique_cbgs))
-        all_unique_cbgs = [cbg for cbg in all_unique_cbgs if cbgs_to_census_pops[cbg] > 0]
+        all_unique_cbgs2 = []
+        for idx, cbg in enumerate(all_unique_cbgs):
+            cgb_populoation = cbgs_to_census_pops.get(cbg, False)  # cbgs_to_census_pops. All 202k groupblock in the U.S>
+            if cgb_populoation:
+                if cgb_populoation > 0:
+                    all_unique_cbgs2.append(cbg)
+        all_unique_cbgs  = all_unique_cbgs2
+        #all_unique_cbgs = [cbg for cbg in all_unique_cbgs if cbgs_to_census_pops[cbg] > 0]
         if verbose: print('After dropping CBGs with population size 0 in ACS data, %i CBGs' % len(all_unique_cbgs))
         all_unique_cbgs = sorted(all_unique_cbgs)      # order CBGs lexicographically
     else:
         print('Received %d pre-specified CBG ids' % len(cbg_ids))
         all_unique_cbgs = cbg_ids
     N = len(all_unique_cbgs)
+    all_unique_cbgs = [str(s).zfill(12) for s in all_unique_cbgs]
     cbgs_to_idxs = dict(zip(all_unique_cbgs, range(N)))
     print('FINAL: number of CBGs (N) = %d, number of POIs (M) = %d' % (N, M))
 
@@ -262,8 +286,10 @@ def fit_disease_model_on_real_data(d,
     poi_cbg_proportions_mat = np.zeros((M, N))
     for poi_idx, old_dict in enumerate(poi_cbg_proportions):
         for string_key, prop in old_dict.items():
+            string_key = str(string_key).zfill(12)
             if string_key in cbgs_to_idxs:
                 int_key = cbgs_to_idxs[string_key]
+                # poi_cbg_proportions_mat[poi_idx, int_key] = prop
                 poi_cbg_proportions_mat[poi_idx, int_key] = prop
     E = np.sum(poi_cbg_proportions_mat > 0)
     print('Num connected POI-CBG pairs (E) = %d, network density (E/N) = %.3f' %
@@ -313,8 +339,8 @@ def fit_disease_model_on_real_data(d,
             # Basically we take ratio of ACS US population to SafeGraph population in Feb 2020.
             # SafeGraph thinks this is reasonable.
             # https://safegraphcovid19.slack.com/archives/C0109NPA543/p1586801883190800?thread_ts=1585770817.335800&cid=C0109NPA543
-            total_us_population_in_50_states_plus_dc = acs_d.loc[acs_d['state_code'].map(lambda x:x in FIPS_CODES_FOR_50_STATES_PLUS_DC), 'total_cbg_population_2018_1YR'].sum()
-            safegraph_visitor_count_df = pd.read_csv('/dfs/scratch1/safegraph_homes/all_aggregate_data/20191213-safegraph-aggregate-longitudinal-data-to-unzip-to/SearchofAllRecords-CORE_POI-GEOMETRY-PATTERNS-2020_02-2020-03-16/visit_panel_summary.csv')
+            total_us_population_in_50_states_plus_dc = acs_d.loc[acs_d['state_code'].map(lambda x:x in FIPS_CODES_FOR_50_STATES_PLUS_DC), 'total_cbg_population_2019_5YR'].sum()
+            safegraph_visitor_count_df = pd.read_csv('/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/visit_panel_summary/2021/02/03/21/visit_panel_summary.csv')
             safegraph_visitor_count = safegraph_visitor_count_df.loc[safegraph_visitor_count_df['state'] == 'ALL_STATES', 'num_unique_visitors'].iloc[0]
 
             # remove a few safegraph visitors from non-US states.
@@ -335,6 +361,7 @@ def fit_disease_model_on_real_data(d,
 
     # get CBG-related variables from census data
     print('2. Processing ACS data...')
+    all_unique_cbgs = [str(s).zfill(12) for s in all_unique_cbgs]
     cbg_sizes = np.array([cbgs_to_census_pops[a] for a in all_unique_cbgs])
     assert np.sum(np.isnan(cbg_sizes)) == 0
     if verbose:
@@ -365,8 +392,10 @@ def fit_disease_model_on_real_data(d,
     np.warnings.filterwarnings('ignore')
     cbg_idx_to_track = set(range(N))  # include all CBGs
     for attribute in ['p_black', 'p_white', 'median_household_income']:
-        attr_col_name = '%s_2017_5YR' % attribute  # using 5-year ACS data for attributes bc less noisy
+        # attr_col_name = '%s_2017_5YR' % attribute  # using 5-year ACS data for attributes bc less noisy
+        attr_col_name = attribute #  Huan
         assert attr_col_name in acs_d.columns
+        acs_d['census_block_group'] = acs_d['GEOID']  # Huan
         mapper_d = dict(zip(acs_d['census_block_group'].values, acs_d[attr_col_name].values))
         attribute_vals = np.array([mapper_d[a] if a in mapper_d and cbgs_to_idxs[a] in cbg_idx_to_track else np.nan for a in all_unique_cbgs])
         non_nan_vals = attribute_vals[~np.isnan(attribute_vals)]
@@ -418,8 +447,8 @@ def fit_disease_model_on_real_data(d,
             print('Giving model inter-CBG travel for %s to %s' % (cols_to_keep[0], cols_to_keep[-1]))
             inter_cbg_travel = helper.compute_daily_inter_cbg_travel(sdm_df, cbg_sizes, model_days)
             # num_cbgs x num_days; avg num visits to other CBGs per capita
-            inter_cbg_travel = (inter_cbg_travel.values.T / (cbg_sizes+1)).T  
-
+            inter_cbg_travel = (inter_cbg_travel.values.T / (cbg_sizes+1)).T
+    include_mask_use = False # Huan
     if include_mask_use:
         day_strs = [dt.strftime('%Y-%m-%d') for dt in model_days]
         most_common_state = d['region'].value_counts().idxmax()
@@ -434,13 +463,26 @@ def fit_disease_model_on_real_data(d,
         
     if 'p_sick_at_t0' not in exogenous_model_kwargs or exogenous_model_kwargs['p_sick_at_t0'] is None:
         fn = os.path.join(PATH_TO_SEIR_INIT, 'all_cbgs_s=%s.csv' % (min_datetime.strftime('%Y-%m-%d')))
-        assert os.path.isfile(fn)
+        assert os.path.isfile(fn),  "Cannot find file: %s" % fn
         cbg_init_shrinkage_alpha = 0.5 if min_datetime < datetime.datetime(2020, 4, 1) else 0.1  # if early, we trust estimates less, want to shrink more
         print('Loading CBG init data; basing inferred SEIR on %s and applying shrinkage of %s' % (cbg_init_mode, cbg_init_shrinkage_alpha))
         init_df = pd.read_csv(fn)
+        init_df['census_block_group'] = init_df['census_block_group'].astype(str).str.zfill(12)
+        init_df['county_fips'] = init_df['county_fips'].astype(str).str.zfill(5)
+        print('init_df.dtypes')
+        print(init_df.dtypes)
+
+        print('init_df.head(5)')
+        print(init_df.head(5))
+
         init_df = init_df.set_index('census_block_group')
+        print('all_unique_cbgs')
+        print(all_unique_cbgs)
         init_df = init_df.loc[all_unique_cbgs]
         is_null = pd.isnull(init_df['county_fips']).values
+        print('init_df.head(5)')
+        print('init_df.index')
+        print(init_df.index)
         assert np.sum(is_null) == 0
         states_to_init = ['E', 'I', 'R']
         eir_cols = ['%s_%s' % (cbg_init_mode, state) for state in states_to_init]
@@ -1167,6 +1209,8 @@ def fit_and_save_one_model(timestring,
         else:
             d = helper.prep_msa_df_for_model_experiments(data_kwargs['MSA_name'], time_period_strings=[])
     nyt_outcomes, nyt_counties, nyt_cbgs, msa_counties, msa_cbgs = get_variables_for_evaluating_msa_model(data_kwargs['MSA_name'])
+    msa_counties = [str(s).zfill(5) for s in msa_counties]
+    nyt_cbgs = [str(s).zfill(12) for s in nyt_cbgs]
     if 'counties_to_track' not in model_kwargs:
         model_kwargs['counties_to_track'] = msa_counties
     cbg_groups_to_track = {}
@@ -2041,6 +2085,7 @@ def check_memory_usage():
 def run_many_models_in_parallel(configs_to_fit):
     max_processes_for_user = int(multiprocessing.cpu_count() / 1.2)
     print("Maximum number of processes to run: %i" % max_processes_for_user)
+    # for config_idx in range(len(configs_to_fit) - 0):  # Huan
     for config_idx in range(len(configs_to_fit)):
         t0 = time.time()
         # Check how many processes user is running.
@@ -2071,8 +2116,15 @@ def run_many_models_in_parallel(configs_to_fit):
         experiment_to_run = configs_to_fit[config_idx]['experiment_to_run']
         print("Starting job %i/%i" % (config_idx + 1, len(configs_to_fit)))
         outfile_path = os.path.join(FITTED_MODEL_DIR, 'model_fitting_logfiles/%s.out' % timestring)
-        cmd = 'nohup python -u model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
+        # cmd = 'python model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
+        # Huan
+        # fit_and_save_one_model(timestring=timestring, model_kwargs=model_kwargs,   data_kwargs=data_kwargs, outfile_path)
+        # cmd = 'nohup python -u model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
+        cmd = 'python -u model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
         print("Command: %s" % cmd)
+        print("Current Python:")
+        # os.system('source activate /media/gpu/easystore/covid-mobility-tool/env_dir/')
+        os.system('which python')
         os.system(cmd)
         time.sleep(SECONDS_TO_WAIT_BETWEEN_JOBS)
         print("Time between job submissions: %2.3f" % (time.time() - t0))
@@ -2096,8 +2148,11 @@ def partition_jobs_across_computers(computer_name, configs_to_fit):
     if username in USERNAME2COMPUTERS:
         computers_to_use = USERNAME2COMPUTERS[username]
     else:
-        computers_to_use = ['rambo']
-    computer_stats = {'rambo':288, 'trinity':144, 'furiosa':144, 'madmax':64, 'madmax2':80,  'madmax3':80, 'madmax4':80, 'madmax5':80,  'madmax6':80,  'madmax7':80}
+        #computers_to_use = ['rambo']
+        computers_to_use = ['Deep']  # Huan
+    #computer_stats = {'rambo':288, 'trinity':144, 'furiosa':144, 'madmax':64, 'madmax2':80,  'madmax3':80, 'madmax4':80, 'madmax5':80,  'madmax6':80,  'madmax7':80}
+    computer_stats = {'Deep':12}  # HUan
+
     total_cores = sum([computer_stats[a] for a in computers_to_use])
     computer_loads = dict([(k, computer_stats[k]/total_cores) for k in computers_to_use])
     print('Partitioning up jobs among computers as follows', computer_loads)
@@ -2316,6 +2371,7 @@ def get_fips_codes_from_state_and_county_fp(state_vec, county_vec):
 
 def get_nyt_outcomes_over_counties(counties=None):
     outcomes = pd.read_csv(PATH_TO_NYT_DATA)
+    outcomes['fips'] = outcomes.fillna(0)['fips'].astype(float).astype(int).astype(str).str.zfill(5)  # "Huan
     if counties is not None:
         outcomes = outcomes[outcomes['fips'].isin(counties)]
     return outcomes
@@ -2370,8 +2426,10 @@ def get_variables_for_evaluating_msa_model(msa_name, verbose=False):
         msa_matches.append(msa_match)
     msa_data = acs_data[acs_data['CBSA Title'].isin(msa_matches)].copy()
     msa_data['id_to_match_to_safegraph_data'] = msa_data['GEOID'].map(lambda x:x.split("US")[1]).astype(int)
+    msa_data['id_to_match_to_safegraph_data'] = msa_data['id_to_match_to_safegraph_data'].astype(str).str.zfill(12)
     msa_cbgs = msa_data['id_to_match_to_safegraph_data'].values
     msa_data['fips'] = get_fips_codes_from_state_and_county_fp(msa_data.STATEFP, msa_data.COUNTYFP)
+    msa_data['fips'] = msa_data['fips'].astype(str)
     msa_counties = list(set(msa_data['fips'].values))
     if verbose:
         print('Found %d counties and %d CBGs in MSA' % (len(msa_counties), len(msa_cbgs)))
@@ -2832,11 +2890,29 @@ def compare_model_vs_real_num_cases_per_county(nyt_outcomes, model, mdl_start_ti
             county2preds[county] = pred_dict
             
     model_summary = {}
-    pop_sizes_per_county = np.array([history[county]['total_pop'] for county in nyt_counties])
+    pop_sizes_per_county = []
+    for county in nyt_counties:
+        try:
+            pop_sizes_per_county.append(history[county]['total_pop'] )
+        except Exception as e:
+            print(e, county, "missing, huan")
+            # nyt_counties.remove(county)  # Huan
+
+    pop_sizes_per_county = np.array(pop_sizes_per_county)
+
     for mode in ['daily_cases_RMSE', 'daily_cases_per_capita_RMSE', 
                  'daily_cases_RMSE_time_varying_cdr', 'daily_cases_per_capita_RMSE_time_varying_cdr',
                  'daily_deaths_RMSE', 'daily_deaths_per_capita_RMSE']:
-        results_per_county = np.array([county2scores[county][mode] for county in nyt_counties])
+        # results_per_county = np.array([county2scores[county][mode] for county in nyt_counties])
+        results_per_county = []
+        for county in nyt_counties:
+            try:
+                results_per_county.append(county2scores[county][mode])
+            except Exception as e:
+                print(e, county, " huan")
+
+        results_per_county = np.array(results_per_county)
+                # nyt_counties.remove(county)  # Huan
         model_summary['unweighted_avg_%s' % mode] = np.mean(results_per_county)
         model_summary['weighted_avg_%s' % mode] = np.sum(pop_sizes_per_county * results_per_county) / np.sum(pop_sizes_per_county)
         model_summary['max_%s' % mode] = np.max(results_per_county)
@@ -3254,7 +3330,7 @@ if __name__ == '__main__':
     # Less frequently used arguments.
     config_idx_to_start_at = None
     skip_previously_fitted_kwargs = False
-    min_timestring = '2020_07_16_10_4'
+    min_timestring = '2021_01_06_0_0'
 
     config_filename = '%s_configs.pkl' % COMPUTER_WE_ARE_RUNNING_ON.replace('.stanford.edu', '')
     if args.manager_or_worker_job == 'run_many_models_in_parallel':
@@ -3286,9 +3362,9 @@ if __name__ == '__main__':
         print("Total number of configs to run on %s (%i experiments): %i" % (COMPUTER_WE_ARE_RUNNING_ON, len(configs_to_fit), len(experiment_list)))        
         f = open(config_filename, 'wb')
         pickle.dump(configs_to_fit, f)
-        f.close()
+        f.close()   # save the config
         # fire off worker jobs.
-        run_many_models_in_parallel(configs_to_fit)
+        run_many_models_in_parallel(configs_to_fit)   # start running, 30 fiting jobs.
     
     else:  # worker job needs to load the list of configs and figure out which one it's running.
         assert args.experiment_to_run in valid_experiments

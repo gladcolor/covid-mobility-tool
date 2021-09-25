@@ -1,4 +1,6 @@
-#!/media/gpu/easystore/covid-mobility-tool/env_dir/bin/python
+#!/bin/sh
+'''exec' /media/gpu/easystore/covid-mobility-tool/env_dir/bin/python "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

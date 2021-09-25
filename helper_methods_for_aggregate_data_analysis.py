@@ -15,7 +15,10 @@ import csv
 import os
 from geopandas.tools import sjoin
 import time
-import scipy 
+import scipy
+
+import helper_methods_for_aggregate_data_analysis as helper
+
 
 # automatically read weekly strings so we don't have to remember to update it each week.
 ALL_WEEKLY_STRINGS = sorted([a.replace('-weekly-patterns.csv.gz', '') for a in os.listdir('/media/gpu/easystore/Safegraph/Weekly Places Patterns v2 (until 2020-06-15)/main-file/')])
@@ -24,6 +27,21 @@ try:
 except:
     print(ALL_WEEKLY_STRINGS)
     raise Exception("At least one weekly string is badly formatted.")
+
+
+# Huan
+def get_all_files(root_dir, ext_list):
+    if not isinstance(ext_list, list):
+        ext_list = [ext_list]
+    all_files = []
+    for root, dirs, files in os.walk(root_dir, topdown=False):
+        for file in files:
+            for target_ext in ext_list:
+                ext_len = len(target_ext)
+                ext = file[-ext_len:]
+                if ext == target_ext:
+                    all_files.append(os.path.join(root, file))
+    return all_files
 
 def load_social_distancing_metrics(datetimes, version='v2'):
     """
@@ -45,7 +63,7 @@ def load_social_distancing_metrics(datetimes, version='v2'):
         elif version == 'v2':
 #             path = os.path.join('/dfs/scratch1/safegraph_homes/all_aggregate_data/daily_counts_of_people_leaving_homes/social_distancing_v2/',
 #                             dt.strftime('%Y/%m/%d/%Y-%m-%d-social-distancing.csv.gz'))
-              path = os.path.join(CURRENT_DATA_DIR, 'social_distancing_metrics/%s' % dt.strftime('%Y/%m/%d/%Y-%m-%d-social-distancing.csv.gz'))
+              path = os.path.join(CURRENT_DATA_DIR, 'Social Distancing Metrics v2.1 (formerly Physical Distancing Metrics)/%s' % dt.strftime('%Y/%m/%d/%Y-%m-%d-social-distancing.csv.gz'))
         else:
             raise Exception("Version should be v1 or v2")
 
@@ -75,6 +93,7 @@ def load_social_distancing_metrics(datetimes, version='v2'):
             raise Exception('Missing Social Distancing Metrics for %s' % dt.strftime('%Y/%m/%d'))
     if concatenated_d is None:  # could not find any of the dates
         return concatenated_d
+    concatenated_d['census_block_group'] = concatenated_d['census_block_group'].astype(str).str.zfill(12)
     concatenated_d = concatenated_d.set_index('census_block_group')
     print("Total time to load social distancing metrics: %2.3f seconds; total rows %i" %
           (time.time() - t0, len(concatenated_d)))
@@ -229,7 +248,7 @@ def load_patterns_data(month=None, year=None, week_string=None, extra_cols=[], j
             filenames = filenames[:2]
         print("Number of files to load: %i" % len(filenames))
         full_paths = [os.path.join(base_dir, a) for a in filenames]
-        x = load_csv_possibly_with_dask(full_paths, use_dask=True, usecols=['safegraph_place_id',
+        x = load_csv_possibly_with_dask(full_paths, use_dask=True, usecols=['safegraph_place_id'
                                                                             'parent_safegraph_place_id',
                                                                             'location_name',
                                                                             'latitude',
@@ -389,11 +408,13 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
     else:
         if week_string <= '2020-12-09':  # this is release date; start of this week is 2020-11-30
             path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20200615/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+
+        # The above code have not modified! Huan
         else:
             #date_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
             ##hour_dir = os.listdir(date_dir)[0]
             #week_dir = os.path.join(date_dir, hour_dir)
-            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            path_to_weekly_dir = os.path.join(WEEKLY_PATTERNS_AFTER_20201130 + '/%s/' % week_datetime.strftime('%Y/%m/%d'))
         inner_folder = os.listdir(path_to_weekly_dir)
         assert len(inner_folder) == 1  # there is always a single folder inside the weekly folder 
         path_to_patterns_parts = os.path.join(path_to_weekly_dir, inner_folder[0])
@@ -466,7 +487,7 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
     return df
 
 def load_core_places_footprint_data(cols_to_keep):
-    area_csv = os.path.join(CURRENT_DATA_DIR, 'Geometry Footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz')
+    area_csv = os.path.join(FOOTPRINT_FILE)
     print('Loading', area_csv)
     df = load_csv_possibly_with_dask(area_csv, usecols=cols_to_keep, use_dask=False)
     df = df.set_index('safegraph_place_id')
@@ -474,7 +495,7 @@ def load_core_places_footprint_data(cols_to_keep):
     return df
 
 def load_core_places_data(cols_to_keep):
-    core_dir = os.path.join(CURRENT_DATA_DIR, 'Core Places US (Nov 2020 - Present)/core_poi/2021/06/05/00')  # use the most recent core info
+    core_dir = os.path.join(CORE_POI_DIR)  # use the most recent core info
     dfs = []
     for filename in sorted(os.listdir(core_dir)):
         if filename.startswith('core_poi-part'):
@@ -546,6 +567,7 @@ def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=N
     Usage: d = aggregate_visitor_home_cbgs_over_months(d).
     cutoff = the earliest time (could be year or year.month) to aggregate data from
     population_df = the DataFrame loaded by load_dataframe_to_correct_for_population_size
+    return: row: blockgroup, column: weekly POI visitation
     """
     t0 = time.time()
     if periods_to_include is not None:
@@ -563,11 +585,12 @@ def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=N
     # Helper variables to use if visitor_home_cbgs counts need adjusting for differential sampling across CBGs. 
     adjusted_cols = []
     if population_df is not None:
-        int_cbgs = [int(cbg) for cbg in population_df.census_block_group]
+        # int_cbgs = [int(cbg) for cbg in population_df.census_block_group]
+        int_cbgs = [str(cbg) for cbg in population_df.census_block_group]   # Huan
 
     for k in cols:
         if type(d.iloc[0][k]) != Counter:
-            print('Filling %s with Counter objects' % k)
+            print('Filling %s with Counter objects' % k)  # d: core_poi_df
             d[k] = d[k].fillna('{}').map(lambda x:Counter(cast_keys_to_ints(json.loads(x))))  # map strings to counters.
         if population_df is not None:
             sub_t0 = time.time()
@@ -584,8 +607,11 @@ def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=N
             cbg_coverage = dict(zip(int_cbgs, cbg_coverage))
             assert ~np.isnan(median_coverage)
             assert ~np.isinf(median_coverage)
-            assert median_coverage > 0.001 
-            # want to make sure we aren't missing data for too many CBGs, so a small hack - have
+            # assert median_coverage > 0.001
+            if median_coverage > 0.001:
+                print(f'WARNING: median_coverage {median_coverage:.4f} is large than 0.001!') # Huan
+            # want to make sure we aren't mis
+            # sing data for too many CBGs, so a small hack - have
             # adjust_home_cbg_counts_for_coverage return two arguments, where the second argument
             # tells us if we had to clip or fill in the missing coverage number.
             d[new_col] = d[k].map(lambda x:adjust_home_cbg_counts_for_coverage(x, cbg_coverage, median_coverage=median_coverage))
@@ -612,6 +638,8 @@ def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=N
           'aggregated_visitor_home_cbgs']:
         y = d.loc[d[k].map(lambda x:len(x) > 0), k]
         y = y.map(lambda x:sum(x.values()))
+
+        print('y:', y.isna().sum())
         assert np.allclose(y, 1)
 
     print("Aggregating CBG visitors over %i time periods took %2.3f seconds" % (len(cols), time.time() - t0))
@@ -686,20 +714,31 @@ def load_dataframe_for_individual_msa(MSA_name, version='v2', time_period=None, 
         if time_period is None:  # want time-aggregated
             agg_dir = os.path.join(NEW_STRATIFIED_BY_AREA_DIR, 'time_aggregated/')
             filename = None
-            for fn in os.listdir(agg_dir):
+            for fn in os.listdir(agg_dir):  # find the CSV file with according to the date span.  # Huan
                 if fn.endswith('%s.csv' % MSA_name):
                     filename = os.path.join(agg_dir, fn)
                     break
             d = pd.read_csv(filename)
+
             for k in d.columns:
                 if k.endswith('aggregated_cbg_population_adjusted_visitor_home_cbgs') or k.endswith('aggregated_visitor_home_cbgs'):
+                    print(f"cast_keys_to_ints column {k} ...")
                     d[k] = d[k].map(lambda x:cast_keys_to_ints(json.loads(x)))
+                    # print(d[k])
         else:
             filename = os.path.join(NEW_STRATIFIED_BY_AREA_DIR, '%s/%s.csv' % (time_period, MSA_name))
-            assert os.path.isfile(filename)
+            print('filename:', filename)
+            assert os.path.isfile(filename), f"{filename} is not exist."
+
             d = pd.read_csv(filename)
-    d.set_index('safegraph_place_id', inplace=True)
+
+
     print("Loaded %i rows for %s in %2.3f seconds" % (len(d), MSA_name, time.time() - t0))
+    #d.loc[:, 'poi_cbg'] = d['poi_cbg'].astype(int).astype(str).str.zfill(12)
+    try:
+        d.set_index('safegraph_place_id', inplace=True)
+    except:
+        pass
     return d
 
 def prep_msa_df_for_model_experiments(msa_name, time_period_strings=None):
@@ -712,11 +751,21 @@ def prep_msa_df_for_model_experiments(msa_name, time_period_strings=None):
     for msa_name in all_msa_names:
         merged_df = load_dataframe_for_individual_msa(msa_name, version='v2', time_period=None)
         # change column names to fit model experiments code
-        merged_df = merged_df.rename(columns={'area_square_feet':'safegraph_computed_area_in_square_feet', '20191230_20201019_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
+        # Huan do not understand.
+        merged_df = merged_df.rename(columns={'area_square_feet':'safegraph_computed_area_in_square_feet',
+                                              '20191230_20201019_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
+                                              # '20210125_20210201_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
                                               '20191230_20201019_median_of_median_dwell':'avg_median_dwell'})
+                                              # '20210125_20210201_median_of_median_dwell':'avg_median_dwell'})
+        merged_df['aggregated_cbg_population_adjusted_visitor_home_cbgs'] = merged_df['20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs']  # Huan
+        merged_df['median_of_median_dwell'] = merged_df['20210106_20210120_median_of_median_dwell']
+        merged_df['median_of_median_dwell'] = merged_df['20210106_20210120_median_of_median_dwell']
+        # merged_df: witouhd hourly visitation
+        #
         if time_period_strings is not None:
             for ts in time_period_strings:  # get hourly info from time-specific dataframes
                 time_specific_df = load_dataframe_for_individual_msa(msa_name, version='v2', time_period=ts)
+                # time_specific_df: have hour visitation
                 hourly_cols = [col for col in time_specific_df.columns if col.startswith('hourly_visits')]
                 merged_df = pd.merge(merged_df, time_specific_df[hourly_cols], how='left', left_index=True, right_index=True, validate='one_to_one')        
         all_msa_dfs.append(merged_df)
@@ -751,7 +800,8 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     #                           'BLKGRPA':str,
     #                          'TRACTA':str})
 
-    acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA) # Huan
+    acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA, engine='python') # acs_data: blockgroups, row: blockgroup,
+    # column: GEOID, income, black/white_race_ratio,  Huan
     # acs_data = pd.read_csv(PATH_TO_ACS_1YR_DATA,
     '''
     acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA,
@@ -781,8 +831,10 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     print("%i rows of 2018 1-year ACS data read" % len(acs_data))    
     '''
 
-    acs_data['census_block_group'] = acs_data['census_block_group'].astype(int)
-    acs_data['county_code'] = (acs_data['STATEA'] + acs_data['COUNTYA']).astype(int)
+    # acs_data['census_block_group'] = acs_data['GEOID'].astype(int)
+    acs_data['census_block_group'] = acs_data['GEOID'].astype(str).str[-12:]
+    #print("acs_data['census_block_group']:", acs_data['census_block_group'])
+    acs_data['total_cbg_population'] = acs_data['cbg_total_population']
 
     if just_load_census_data:
         return acs_data
@@ -813,14 +865,27 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
                 '/dfs/scratch1/safegraph_homes/all_aggregate_data/weekly_patterns_data/v1/home_summary_file/%s-home-panel-summary.csv' % date_string)
             all_date_strings.append(date_string)
     else:
-        path_to_weekly_v2_pt1 = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns Backfill for Dec 2020 and Onward Release/home_panel_summary_backfill/2020/12/14/21/')
-        for filename in os.listdir(path_to_weekly_v2_pt1):
-            date_string = filename[:-len('-home-panel-summary.csv')]
-            if min_date_string is None or date_string >= min_date_string:
-                if max_date_string is None or date_string <= max_date_string:
-                    all_filenames.append(os.path.join(path_to_weekly_v2_pt1, filename))
-                    all_date_strings.append(date_string)
-        path_to_weekly_v2_pt2 = os.path.join(CURRENT_DATA_DIR, '/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-06-15 to 2020-11-30)/home_panel_summary/')
+        # path_to_weekly_v2_pt1 = os.path.join(CURRENT_DATA_DIR, '/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/home_panel_summary_backfill/2020/12/14/21/')
+        # for filename in os.listdir(path_to_weekly_v2_pt1):
+        #     date_string = filename[:-len('-home-panel-summary.csv')]
+        #     if min_date_string is None or date_string >= min_date_string:
+        #         if max_date_string is None or date_string <= max_date_string:
+        #             all_filenames.append(os.path.join(path_to_weekly_v2_pt1, filename))
+        #             all_date_strings.append(date_string)
+        # path_to_weekly_v2_pt1 = os.path.join(CURRENT_DATA_DIR, '/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/home_panel_summary/')
+        # print("path_to_weekly_v2_pt1", path_to_weekly_v2_pt1)
+        # all_home_panel_summary_files = get_all_files(path_to_weekly_v2_pt1, '.csv')
+        # # for filename in os.listdir(path_to_weekly_v2_pt1):
+        # for filename in all_home_panel_summary_files:
+        #     # date_string = filename[:-len('-home-panel-summary.csv')]
+        #     tag_str = r'home_panel_summary'
+        #     tag_pos = filename.find(tag_str) + len(tag_str)
+        #     date_string = filename[tag_pos+1:tag_pos + 11].replace('\\', r'-').replace(r'/', r'-')
+        #     if min_date_string is None or date_string >= min_date_string:
+        #         if max_date_string is None or date_string <= max_date_string:
+        #             all_filenames.append(os.path.join(path_to_weekly_v2_pt1, filename))
+        #             all_date_strings.append(date_string)
+        path_to_weekly_v2_pt2 = os.path.join(CURRENT_DATA_DIR, '/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/home_panel_summary/')
         for year in os.listdir(path_to_weekly_v2_pt2):
             for month in os.listdir(os.path.join(path_to_weekly_v2_pt2, year)):
                 for week in os.listdir(os.path.join(path_to_weekly_v2_pt2, '%s/%s/' % (year, month))):
@@ -833,26 +898,37 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     
     files_and_dates = zip(all_filenames, all_date_strings)
     files_and_dates = sorted(files_and_dates, key=lambda x:x[1])  # sort by date_string
+    processed_cnt = 0
     cbgs_with_ratio_above_one = np.array([False for a in range(len(acs_data))])
     for filename, date_string in files_and_dates:
-        safegraph_counts = pd.read_csv(filename, dtype={'census_block_group':str})
-        safegraph_counts = safegraph_counts[['census_block_group', 'number_devices_residing']]
+        processed_cnt += 1
+        print(f"Processing: {processed_cnt} / {len(files_and_dates)}", filename)
+        safegraph_counts = pd.read_csv(filename, dtype={'census_block_group':str}, engine='python')
+
+        if 'iso_country_code' in safegraph_counts.columns:
+            safegraph_counts = safegraph_counts[safegraph_counts['iso_country_code'] == 'US']
+        safegraph_counts = safegraph_counts[['census_block_group', 'number_devices_residing']]  # blockgroup devices count
         col_name = 'number_devices_residing_%s' % date_string
         safegraph_counts.columns = ['census_block_group', col_name]
-        safegraph_counts['census_block_group'] = safegraph_counts['census_block_group'].map(int)
+        safegraph_counts = safegraph_counts[~safegraph_counts['census_block_group'].astype(str).str.contains("CA:")]  # Do not county Canadian block/POIs.
+        # safegraph_counts['census_block_group'] = safegraph_counts['census_block_group'].map(int)
+        safegraph_counts['census_block_group'] = safegraph_counts['census_block_group'].astype(str).str.zfill(12)
+        #print('safegraph_counts:', safegraph_counts)
         assert len(safegraph_counts['census_block_group'].dropna()) == len(safegraph_counts)
         safegraph_counts = safegraph_counts.drop_duplicates(subset=['census_block_group'], keep=False)
-        combined_data = pd.merge(combined_data,
+
+        combined_data = pd.merge(combined_data,  # combined_data is copy of acs_data.
                                  safegraph_counts,
                                  how='left',
                                  validate='one_to_one',
                                  on='census_block_group')
+        #print("combined_data['census_block_group']: ", combined_data['census_block_group'])
         missing_data_idxs = pd.isnull(combined_data[col_name])
         combined_data.loc[missing_data_idxs, col_name] = 0
         r, p = pearsonr(combined_data['total_cbg_population'], combined_data[col_name])
         combined_data['ratio'] = combined_data[col_name]/combined_data['total_cbg_population']
-        cbgs_with_ratio_above_one = cbgs_with_ratio_above_one | (combined_data['ratio'].values > 1)
-        combined_data.loc[combined_data['total_cbg_population'] == 0, 'ratio'] = None
+        cbgs_with_ratio_above_one = cbgs_with_ratio_above_one | (combined_data['ratio'].values > 1) # mobile devices will not more than population
+        combined_data.loc[combined_data['total_cbg_population'] == 0, 'ratio'] = None  # some block groups have zero population, then lead to infinit by /zero.
         
         if verbose:
             print("\n*************")
@@ -865,30 +941,39 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     print("Warning: %i CBGs with a ratio greater than 1 in at least one period" % cbgs_with_ratio_above_one.sum())
     del combined_data['ratio']
     combined_data.index = range(len(combined_data))
-    assert len(combined_data.dropna()) == len(combined_data)
+    # assert len(combined_data.dropna()) == len(combined_data)  # Huan "metropolitan Division Code" has nan.
     return combined_data
 
 def load_and_reconcile_multiple_acs_data():
     """
     Because we use Census data from two data sources, load a single dataframe that combines both. 
     """
-    acs_1_year_d = load_dataframe_to_correct_for_population_size(just_load_census_data=True)
-    column_rename = {'total_cbg_population': 'total_cbg_population_2019_5YR'}
-    acs_1_year_d = acs_1_year_d.rename(mapper=column_rename, axis=1)
-    acs_1_year_d['state_name'] = acs_1_year_d['state_code'].map(lambda x:FIPS_CODES_FOR_50_STATES_PLUS_DC[str(x)] if str(x) in FIPS_CODES_FOR_50_STATES_PLUS_DC else np.nan)
+    # acs_5_year_d = load_dataframe_to_correct_for_population_size(just_load_census_data=True)
+    # column_rename = {'total_cbg_population': 'total_cbg_population_2019_5YR'}
+    # acs_5_year_d = acs_5_year_d.rename(mapper=column_rename, axis=1)
+    # acs_5_year_d['state_name'] = acs_1_year_d['state_code'].map(lambda x:FIPS_CODES_FOR_50_STATES_PLUS_DC[str(x)] if str(x) in FIPS_CODES_FOR_50_STATES_PLUS_DC else np.nan)
+    # acs_5_year_d = pd.read_csv(PATH_TO_ACS_5YR_DATA)
+    # print('%i rows of 2017 5-year ACS data read' % len(acs_5_year_d))
+    # acs_5_year_d['census_block_group'] = acs_5_year_d['GEOID'].map(lambda x:x.split("US")[1]).astype(int)
+    # # rename dynamic attributes to indicate that they are from ACS 2017 5-year
+    # dynamic_attributes = ['p_black', 'p_white', 'p_asian', 'median_household_income',
+    #                       'block_group_area_in_square_miles', 'people_per_mile']
+    # column_rename = {attr:'%s_2019_5YR' % attr for attr in dynamic_attributes}
+    # acs_5_year_d = acs_5_year_d.rename(mapper=column_rename, axis=1)
+    # # repetitive with 'state_code' and 'county_code' column from acs_1_year_d
+    # acs_5_year_d = acs_5_year_d.drop(['Unnamed: 0', 'STATEFP', 'COUNTYFP'], axis=1)
+    # combined_d = pd.merge(acs_1_year_d, acs_5_year_d, on='census_block_group', how='outer', validate='one_to_one')
+    # combined_d['people_per_mile_hybrid'] = combined_d['total_cbg_population_2018_1YR'] / combined_d['block_group_area_in_square_miles_2017_5YR']
+    # return combined_d
     acs_5_year_d = pd.read_csv(PATH_TO_ACS_5YR_DATA)
-    print('%i rows of 2017 5-year ACS data read' % len(acs_5_year_d))
-    acs_5_year_d['census_block_group'] = acs_5_year_d['GEOID'].map(lambda x:x.split("US")[1]).astype(int)
-    # rename dynamic attributes to indicate that they are from ACS 2017 5-year
-    dynamic_attributes = ['p_black', 'p_white', 'p_asian', 'median_household_income',
-                          'block_group_area_in_square_miles', 'people_per_mile']
-    column_rename = {attr:'%s_2019_5YR' % attr for attr in dynamic_attributes}
-    acs_5_year_d = acs_5_year_d.rename(mapper=column_rename, axis=1)
-    # repetitive with 'state_code' and 'county_code' column from acs_1_year_d
-    acs_5_year_d = acs_5_year_d.drop(['Unnamed: 0', 'STATEFP', 'COUNTYFP'], axis=1)
-    combined_d = pd.merge(acs_1_year_d, acs_5_year_d, on='census_block_group', how='outer', validate='one_to_one')
-    combined_d['people_per_mile_hybrid'] = combined_d['total_cbg_population_2018_1YR'] / combined_d['block_group_area_in_square_miles_2017_5YR']
-    return combined_d
+    column_rename = {'cbg_total_population': 'total_cbg_population_2019_5YR'}
+    acs_5_year_d['GEOID'] = acs_5_year_d['GEOID'].astype(str).str.zfill(12)
+    acs_5_year_d['FIPS State Code'] = acs_5_year_d['FIPS State Code'].astype(str).str.zfill(2)
+    acs_5_year_d['state_code'] = acs_5_year_d['FIPS State Code'].astype(str).str.zfill(2)
+    acs_5_year_d = acs_5_year_d.rename(columns=column_rename)
+    return acs_5_year_d
+
+
 
 def compute_cbg_day_prop_out(sdm_of_interest, cbgs_of_interest=None):
     '''
@@ -978,8 +1063,10 @@ def get_daily_case_detection_rate(min_datetime=None, max_datetime=None):
     aug_oct_rates = np.linspace(0.18, 0.23, len(aug_oct))
     nov_dec = list_datetimes_in_range(datetime.datetime(2020, 11, 1), datetime.datetime(2020, 12, 31))
     nov_dec_rates = np.linspace(0.23, 0.3, len(nov_dec))
-    all_dates = mar + apr_jul + aug_oct + nov_dec
-    all_rates = np.concatenate([mar_rates, apr_jul_rates, aug_oct_rates, nov_dec_rates]).reshape(-1)
+    jan_aug_2021 = list_datetimes_in_range(datetime.datetime(2021, 1, 1), datetime.datetime(2021, 3, 1))
+    jan_aug_2021_rates = np.linspace(0.3, 0.4, len(jan_aug_2021))
+    all_dates = mar + apr_jul + aug_oct + nov_dec + jan_aug_2021
+    all_rates = np.concatenate([mar_rates, apr_jul_rates, aug_oct_rates, nov_dec_rates, jan_aug_2021_rates]).reshape(-1)
     assert len(all_dates) == len(all_rates)
     
     if min_datetime is not None:
@@ -1030,14 +1117,14 @@ def write_out_acs_5_year_data():
     print(pd.isnull(df_to_write_out).mean())
     df_to_write_out.to_csv(PATH_TO_ACS_5YR_DATA)
     
-def load_poi_ids_for_msa(msa_name, ipf_id_prefix=IPF_ID_PREFIX, verbose=False):
+def load_poi_ids_for_msa(msa_name, ipf_id_prefix=IPF_ID_PREFIX, verbose=True):
     path_to_poi_csv = os.path.join(PATH_TO_NEW_IPF_OUTPUT, '%s/%s_poi_ids.csv' % (msa_name, ipf_id_prefix))
     if verbose:
         print('Loading POI ids from', path_to_poi_csv)
     poi_ids = pd.read_csv(path_to_poi_csv)['poi_id'].values
     return poi_ids
     
-def load_cbg_ids_for_msa(msa_name, ipf_id_prefix=IPF_ID_PREFIX, verbose=False):
+def load_cbg_ids_for_msa(msa_name, ipf_id_prefix=IPF_ID_PREFIX, verbose=True):
     path_to_cbg_csv = os.path.join(PATH_TO_NEW_IPF_OUTPUT, '%s/%s_cbg_ids.csv' % (msa_name, ipf_id_prefix))
     if verbose:
         print('Loading CBG ids from', path_to_cbg_csv)
@@ -1166,8 +1253,8 @@ class CensusBlockGroups:
             # https://www.reddit.com/r/gis/comments/775imb/accessing_a_gdb_without_esri_arcgis/doj9zza
             full_path = os.path.join(self.base_directory, file)
             layer_list = fiona.listlayers(full_path)
-            print(file)
-            print(layer_list)
+            print("file:", file)
+            print("layer_list:", layer_list)
             geographic_layer_name = [a for a in layer_list if a[:15] == 'ACS_2019_5YR_BG']
             assert len(geographic_layer_name) == 1
             geographic_layer_name = geographic_layer_name[0]
@@ -1376,4 +1463,13 @@ class CensusBlockGroups:
         return results
 
 if __name__ == "__main__":
-    write_out_acs_5_year_data()
+    #write_out_acs_5_year_data()
+    all_dates, all_rates = helper.get_daily_case_detection_rate()  # based on IHME estimate
+    fig, ax = plt.subplots(figsize=(20, 10))
+    ax.plot_date(all_dates, all_rates, marker='.', markersize=5, linestyle='-')
+    ax.xaxis.set_major_locator(mdates.MonthLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
+    ax.set_ylabel('Case detection rate', fontsize=14)
+    ax.tick_params(labelsize=10)
+    ax.grid(alpha=0.3)
+    plt.show()

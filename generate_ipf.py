@@ -9,25 +9,25 @@ import matplotlib.pyplot as plt
 import json
 import datetime
 import copy
-import dask
+#import dask
 import re
 import scipy 
 import time 
 
-TIME_PERIODS_FOR_CURR_IPF = ['20210125_20210201']
-MIN_DATETIME_FOR_CURR_IPF = datetime.datetime(2021, 1, 25, 0)
-MAX_DATETIME_FOR_CURR_IPF = datetime.datetime(2021, 2, 7, 23)
+TIME_PERIODS_FOR_CURR_IPF = ['20210106_20210120']  # Safegrah data release date.
+MIN_DATETIME_FOR_CURR_IPF = datetime.datetime(2020, 12, 28, 0)
+MAX_DATETIME_FOR_CURR_IPF = datetime.datetime(2021, 1, 17, 23)  # actually date
 TEST_IPF_HOUR = datetime.datetime(2020, 10, 1, 0)
 CBG_COUNT_CUTOFF = 100
 POI_HOURLY_VISITS_CUTOFF = 'all'
 
 def generate_ipf_for_msa(msa_name, merged_df, min_datetime, max_datetime, poi_ids=None, cbg_ids=None,
-                         update_poi_hourly_visits=True):
+                         update_poi_hourly_visits=False):  # update_poi_hourly_visits=True # Huan
     m = fit_disease_model_on_real_data(d=merged_df,
                                    min_datetime=min_datetime,
                                    max_datetime=max_datetime,
                                    msa_name=msa_name,
-                                   exogenous_model_kwargs={'poi_psi':1, 
+                                   exogenous_model_kwargs={'poi_psi':1,
                                                            'home_beta':1, 
                                                            'p_sick_at_t0':0,  # don't need infections
                                                            'just_compute_r0':False},
@@ -200,9 +200,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('msa_names', type=str)
     parser.add_argument('--process', type=str, default='ipf', choices=['ipf', 'poi_visits'])
+    # parser.add_argument('--process', type=str, default='poi_visits', choices=['ipf', 'poi_visits'])
     parser.add_argument('--use_existing_ids', type=bool, default=False)
-    parser.add_argument('--outer_or_inner_call', type=str, default='outer', choices=['outer', 'inner'])
-    parser.add_argument('--update_poi_visits', type=bool, default=True)
+    parser.add_argument('--outer_or_inner_call', type=str, default='inner', choices=['outer', 'inner'])
+    parser.add_argument('--update_poi_visits', type=bool, default=False)  #   Huan default=True
     args = parser.parse_args()
     msa_names = args.msa_names.split(',')
     joint_msa_key = '+'.join(msa_names)
@@ -247,4 +248,7 @@ if __name__ == '__main__':
             max_date = hourly_visit_cols[-1].split('_')[-1]
             year, month, date, hour = max_date.split('.')
             max_datetime = datetime.datetime(int(year), int(month), int(date), int(hour))
+
+
+
             generate_hourly_visits_per_poi(joint_msa_key, msa_df, min_datetime, max_datetime, TEST_IPF_HOUR)

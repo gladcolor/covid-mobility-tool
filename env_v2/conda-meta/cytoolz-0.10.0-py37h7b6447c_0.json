@@ -1,0 +1,646 @@
+{
+  "build": "py37h7b6447c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "toolz >=0.10.0"
+  ],
+  "extracted_package_dir": "/home/gpu/anaconda3/pkgs/cytoolz-0.10.0-py37h7b6447c_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/installed-files.txt",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/requires.txt",
+    "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/cytoolz/__init__.pxd",
+    "lib/python3.7/site-packages/cytoolz/__init__.py",
+    "lib/python3.7/site-packages/cytoolz/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/__pycache__/_signatures.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/__pycache__/_version.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/__pycache__/compatibility.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/__pycache__/utils_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/_signatures.py",
+    "lib/python3.7/site-packages/cytoolz/_version.py",
+    "lib/python3.7/site-packages/cytoolz/compatibility.py",
+    "lib/python3.7/site-packages/cytoolz/cpython.pxd",
+    "lib/python3.7/site-packages/cytoolz/curried/__init__.py",
+    "lib/python3.7/site-packages/cytoolz/curried/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/curried/__pycache__/exceptions.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/curried/__pycache__/operator.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/curried/exceptions.py",
+    "lib/python3.7/site-packages/cytoolz/curried/operator.py",
+    "lib/python3.7/site-packages/cytoolz/dicttoolz.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/cytoolz/dicttoolz.pxd",
+    "lib/python3.7/site-packages/cytoolz/dicttoolz.pyx",
+    "lib/python3.7/site-packages/cytoolz/functoolz.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/cytoolz/functoolz.pxd",
+    "lib/python3.7/site-packages/cytoolz/functoolz.pyx",
+    "lib/python3.7/site-packages/cytoolz/itertoolz.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/cytoolz/itertoolz.pxd",
+    "lib/python3.7/site-packages/cytoolz/itertoolz.pyx",
+    "lib/python3.7/site-packages/cytoolz/recipes.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/cytoolz/recipes.pxd",
+    "lib/python3.7/site-packages/cytoolz/recipes.pyx",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/dev_skip_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_compatibility.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_curried.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_curried_toolzlike.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_dev_skip_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_dicttoolz.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_docstrings.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_doctests.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_embedded_sigs.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_functoolz.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_inspect_args.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_itertoolz.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_none_safe.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_recipes.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_serialization.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_signatures.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_tlz.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/cytoolz/tests/dev_skip_test.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_compatibility.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_curried.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_curried_toolzlike.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_dev_skip_test.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_dicttoolz.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_docstrings.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_doctests.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_embedded_sigs.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_functoolz.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_inspect_args.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_itertoolz.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_none_safe.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_recipes.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_serialization.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_signatures.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_tlz.py",
+    "lib/python3.7/site-packages/cytoolz/tests/test_utils.py",
+    "lib/python3.7/site-packages/cytoolz/utils.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/cytoolz/utils.pxd",
+    "lib/python3.7/site-packages/cytoolz/utils.pyx",
+    "lib/python3.7/site-packages/cytoolz/utils_test.py"
+  ],
+  "fn": "cytoolz-0.10.0-py37h7b6447c_0.conda",
+  "legacy_bz2_md5": "80a798a76b6ca97bf88a4aabcaa679e5",
+  "legacy_bz2_size": 435187,
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/gpu/anaconda3/pkgs/cytoolz-0.10.0-py37h7b6447c_0",
+    "type": 1
+  },
+  "md5": "71a9f96bbec5eb9d42fcc7264c64eb74",
+  "name": "cytoolz",
+  "package_tarball_full_path": "/home/gpu/anaconda3/pkgs/cytoolz-0.10.0-py37h7b6447c_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "376d9ac8694d93bce3ae2bd91080bc2bf479e792428e83947dfb1098c1ee81da",
+        "sha256_in_prefix": "376d9ac8694d93bce3ae2bd91080bc2bf479e792428e83947dfb1098c1ee81da",
+        "size_in_bytes": 4896
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "58b083ec50f3f1cab8c236a712778ecef4a8ad58acbca0967fef9c360630d192",
+        "sha256_in_prefix": "58b083ec50f3f1cab8c236a712778ecef4a8ad58acbca0967fef9c360630d192",
+        "size_in_bytes": 1365
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "bf84ad7f84ee4058bbbbeb8d3fd531b514e014ee1da144c6926ba3c5b6a18d5e",
+        "sha256_in_prefix": "bf84ad7f84ee4058bbbbeb8d3fd531b514e014ee1da144c6926ba3c5b6a18d5e",
+        "size_in_bytes": 2976
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "2d882152adcfb732e7216e4e55fb4f157bce40c2691fac73086eacd4a8b70f0c",
+        "sha256_in_prefix": "2d882152adcfb732e7216e4e55fb4f157bce40c2691fac73086eacd4a8b70f0c",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz-0.10.0-py3.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f95bb693a507a8068567fc78f981fd8abbce3c56705ea86216780b59bf7f2a5d",
+        "sha256_in_prefix": "f95bb693a507a8068567fc78f981fd8abbce3c56705ea86216780b59bf7f2a5d",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "a1dbb74a719d322168b79eae79f48c309474f48a81b88b70f6db51c24a5cdfbc",
+        "sha256_in_prefix": "a1dbb74a719d322168b79eae79f48c309474f48a81b88b70f6db51c24a5cdfbc",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b72a8b97cf73725e2cc1a769496f57a1c3e1b21c061f3ab1075dfe572329ca42",
+        "sha256_in_prefix": "b72a8b97cf73725e2cc1a769496f57a1c3e1b21c061f3ab1075dfe572329ca42",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "0219bacec52e67ffedf451cea02322a6d0c4d3bc30fb70c8327ee4bd6ba16bc8",
+        "sha256_in_prefix": "0219bacec52e67ffedf451cea02322a6d0c4d3bc30fb70c8327ee4bd6ba16bc8",
+        "size_in_bytes": 585
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__pycache__/_signatures.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "657fc9f9474efb9fbf8e2d6b4806437620a7972523e9f61612efadc48003b577",
+        "sha256_in_prefix": "657fc9f9474efb9fbf8e2d6b4806437620a7972523e9f61612efadc48003b577",
+        "size_in_bytes": 8382
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__pycache__/_version.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "0d8c1bd0f39ff80f69e704564a871d55295d4066c389079d936f8ee37ed44ad3",
+        "sha256_in_prefix": "0d8c1bd0f39ff80f69e704564a871d55295d4066c389079d936f8ee37ed44ad3",
+        "size_in_bytes": 181
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__pycache__/compatibility.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "68562fca9792e42d61b4f62011a12105c8f304274770f9d313ddaf6ba2883708",
+        "sha256_in_prefix": "68562fca9792e42d61b4f62011a12105c8f304274770f9d313ddaf6ba2883708",
+        "size_in_bytes": 998
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/__pycache__/utils_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "fdd238f1022534c57be5da10b1591225ed4ebeea8f3ab8b0c2a72018094305fe",
+        "sha256_in_prefix": "fdd238f1022534c57be5da10b1591225ed4ebeea8f3ab8b0c2a72018094305fe",
+        "size_in_bytes": 1436
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/_signatures.py",
+        "path_type": "hardlink",
+        "sha256": "529a9154678ceb1faf131f5c4e150aef33b079102101eb40c2e671202222fd46",
+        "sha256_in_prefix": "529a9154678ceb1faf131f5c4e150aef33b079102101eb40c2e671202222fd46",
+        "size_in_bytes": 4356
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/_version.py",
+        "path_type": "hardlink",
+        "sha256": "50cf354e427e7d7cb58a6d8f3641ac69b7c906c3a34c6be2bdffc3e2f17047a8",
+        "sha256_in_prefix": "50cf354e427e7d7cb58a6d8f3641ac69b7c906c3a34c6be2bdffc3e2f17047a8",
+        "size_in_bytes": 52
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/compatibility.py",
+        "path_type": "hardlink",
+        "sha256": "a03ff1f2e24858560130870a5e8d4e7aea408c53126464363c59ad0c31b0c9f1",
+        "sha256_in_prefix": "a03ff1f2e24858560130870a5e8d4e7aea408c53126464363c59ad0c31b0c9f1",
+        "size_in_bytes": 1074
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/cpython.pxd",
+        "path_type": "hardlink",
+        "sha256": "7ad769515a17528cdbba65fb2066f676764557e43f56d5ec4d1c5d4496fb85dc",
+        "sha256_in_prefix": "7ad769515a17528cdbba65fb2066f676764557e43f56d5ec4d1c5d4496fb85dc",
+        "size_in_bytes": 497
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a3ecec5e1284b2281ecda4ea3386be21cdd90ac433c6a7d49d3cce8bd82f9a15",
+        "sha256_in_prefix": "a3ecec5e1284b2281ecda4ea3386be21cdd90ac433c6a7d49d3cce8bd82f9a15",
+        "size_in_bytes": 2884
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b8b91514bbe86544a35cafb576df03f5e984894541aded4a1673716b33adad60",
+        "sha256_in_prefix": "b8b91514bbe86544a35cafb576df03f5e984894541aded4a1673716b33adad60",
+        "size_in_bytes": 2409
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/__pycache__/exceptions.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b4fd6bbfc0b721bfc1315f15d59b4eee511d12257f3b59e8bcbe403f476d238",
+        "sha256_in_prefix": "1b4fd6bbfc0b721bfc1315f15d59b4eee511d12257f3b59e8bcbe403f476d238",
+        "size_in_bytes": 508
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/__pycache__/operator.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "19b8a997b13b6f04dc0121cea661a24c2b9ec59e3b82d581e79c92bf170b1cec",
+        "sha256_in_prefix": "19b8a997b13b6f04dc0121cea661a24c2b9ec59e3b82d581e79c92bf170b1cec",
+        "size_in_bytes": 728
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "c35bfd4c6122e8cd98c9942a046ba8fd9c3696472af332229298124753bb448f",
+        "sha256_in_prefix": "c35bfd4c6122e8cd98c9942a046ba8fd9c3696472af332229298124753bb448f",
+        "size_in_bytes": 350
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/curried/operator.py",
+        "path_type": "hardlink",
+        "sha256": "3337ae6f5baff1d20e64b707bf07e59016e2d8ec3ac4ca2c9299a47cd976762d",
+        "sha256_in_prefix": "3337ae6f5baff1d20e64b707bf07e59016e2d8ec3ac4ca2c9299a47cd976762d",
+        "size_in_bytes": 502
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/dicttoolz.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "7fae692b0125296f8a0e33aa66a04a0a5da7ff454185099c6ad249396cf7e5d4",
+        "sha256_in_prefix": "7fae692b0125296f8a0e33aa66a04a0a5da7ff454185099c6ad249396cf7e5d4",
+        "size_in_bytes": 167352
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/dicttoolz.pxd",
+        "path_type": "hardlink",
+        "sha256": "b12546579c3a60e27fee62a633150076d077b7a8de8efaa5a89c7a4953ee0fb3",
+        "sha256_in_prefix": "b12546579c3a60e27fee62a633150076d077b7a8de8efaa5a89c7a4953ee0fb3",
+        "size_in_bytes": 1368
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/dicttoolz.pyx",
+        "path_type": "hardlink",
+        "sha256": "7e8d5e421876f3df330ac1580d460b77fff84b3aaf3b7d5efe1e0c83a4db401b",
+        "sha256_in_prefix": "7e8d5e421876f3df330ac1580d460b77fff84b3aaf3b7d5efe1e0c83a4db401b",
+        "size_in_bytes": 15507
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/functoolz.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "3625935dbd9c6dc02527e20047f2c659647a2f73ce15111c5c35492d6f8f3a37",
+        "sha256_in_prefix": "3625935dbd9c6dc02527e20047f2c659647a2f73ce15111c5c35492d6f8f3a37",
+        "size_in_bytes": 326304
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/functoolz.pxd",
+        "path_type": "hardlink",
+        "sha256": "423ba3826afdcccac34b16b0b9f735f9f9ab5b6c573c7cd9099ba264fba348db",
+        "sha256_in_prefix": "423ba3826afdcccac34b16b0b9f735f9f9ab5b6c573c7cd9099ba264fba348db",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/functoolz.pyx",
+        "path_type": "hardlink",
+        "sha256": "0d42a9c2748bf1143e270dc418311e53c9d1c13420d824471ecc557ecd5f1d3d",
+        "sha256_in_prefix": "0d42a9c2748bf1143e270dc418311e53c9d1c13420d824471ecc557ecd5f1d3d",
+        "size_in_bytes": 25166
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/itertoolz.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "5f0d2653df96056d9dfbdb207d154fb4605bd14139d85e97036b44a15778c930",
+        "sha256_in_prefix": "5f0d2653df96056d9dfbdb207d154fb4605bd14139d85e97036b44a15778c930",
+        "size_in_bytes": 583208
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/itertoolz.pxd",
+        "path_type": "hardlink",
+        "sha256": "4ff441cec4ede0d29202160fe5f12b97fc30caeea439b29b3f50a2046ed37c9a",
+        "sha256_in_prefix": "4ff441cec4ede0d29202160fe5f12b97fc30caeea439b29b3f50a2046ed37c9a",
+        "size_in_bytes": 4695
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/itertoolz.pyx",
+        "path_type": "hardlink",
+        "sha256": "f7fd46018f52554f99e3b8dfd2e2424192d5352f7bc0853c9c1169b6225c6dac",
+        "sha256_in_prefix": "f7fd46018f52554f99e3b8dfd2e2424192d5352f7bc0853c9c1169b6225c6dac",
+        "size_in_bytes": 51213
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/recipes.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "0585173a04e5394a048419c449ff573a23e598579cd4b3b2c3e64e96d241a565",
+        "sha256_in_prefix": "0585173a04e5394a048419c449ff573a23e598579cd4b3b2c3e64e96d241a565",
+        "size_in_bytes": 77736
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/recipes.pxd",
+        "path_type": "hardlink",
+        "sha256": "856d137b38c43113595b58734d002174a42eb68220934b70709e1f28449763a8",
+        "sha256_in_prefix": "856d137b38c43113595b58734d002174a42eb68220934b70709e1f28449763a8",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/recipes.pyx",
+        "path_type": "hardlink",
+        "sha256": "36fd15a4a99eaa100ccb9a827688b0198aa820d9113c9e946dcd82e897310014",
+        "sha256_in_prefix": "36fd15a4a99eaa100ccb9a827688b0198aa820d9113c9e946dcd82e897310014",
+        "size_in_bytes": 1638
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/dev_skip_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "d65bc1d3e4c0f4a2a2cead28100296b884fec346242f72313a6a877def86c6b5",
+        "sha256_in_prefix": "d65bc1d3e4c0f4a2a2cead28100296b884fec346242f72313a6a877def86c6b5",
+        "size_in_bytes": 1089
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_compatibility.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf508373fcd4abf0e02bd9096a54bb9c2f8db0a5fe23652ff21175c8e446f191",
+        "sha256_in_prefix": "bf508373fcd4abf0e02bd9096a54bb9c2f8db0a5fe23652ff21175c8e446f191",
+        "size_in_bytes": 956
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_curried.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "20a82e6ab5ca07c46d4af4a34bd9b4fab6f4ac6c13bf83a062e15d87cabfe2af",
+        "sha256_in_prefix": "20a82e6ab5ca07c46d4af4a34bd9b4fab6f4ac6c13bf83a062e15d87cabfe2af",
+        "size_in_bytes": 4334
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_curried_toolzlike.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "92e3b781b87cb6ea02d5bb4e44dae2a3eac0a6d3c2aa43c1c80173e4f245d05e",
+        "sha256_in_prefix": "92e3b781b87cb6ea02d5bb4e44dae2a3eac0a6d3c2aa43c1c80173e4f245d05e",
+        "size_in_bytes": 1326
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_dev_skip_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "5821f86bf2acdf3888ac6efff14408938d6de57c7d6afbbd0e2d48e6f9ee37dc",
+        "sha256_in_prefix": "5821f86bf2acdf3888ac6efff14408938d6de57c7d6afbbd0e2d48e6f9ee37dc",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_dicttoolz.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "3213a7e69e5a9d3e571b5b252fa15bf31d51c511c338bebfda44f9c76241183b",
+        "sha256_in_prefix": "3213a7e69e5a9d3e571b5b252fa15bf31d51c511c338bebfda44f9c76241183b",
+        "size_in_bytes": 11715
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_docstrings.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "82d62acbe824ebe71d7340bff18d15aa907730d779aac244faa478af5fba03f5",
+        "sha256_in_prefix": "82d62acbe824ebe71d7340bff18d15aa907730d779aac244faa478af5fba03f5",
+        "size_in_bytes": 2594
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_doctests.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "3aab293da538ed66a646b9b508f8c636fde9356faebe91aab2ae3006a335c1c6",
+        "sha256_in_prefix": "3aab293da538ed66a646b9b508f8c636fde9356faebe91aab2ae3006a335c1c6",
+        "size_in_bytes": 600
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_embedded_sigs.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "036c5274c6f05fc7fdef8db8d5b6346bf4b07bf8343e7f3489616d1d53cb54d8",
+        "sha256_in_prefix": "036c5274c6f05fc7fdef8db8d5b6346bf4b07bf8343e7f3489616d1d53cb54d8",
+        "size_in_bytes": 3093
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_functoolz.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b997dd21588ee96b509fbd91616b729a824fb22c045ba8690aef51c4b939afe",
+        "sha256_in_prefix": "5b997dd21588ee96b509fbd91616b729a824fb22c045ba8690aef51c4b939afe",
+        "size_in_bytes": 27901
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_inspect_args.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "9d74fea8b5f96b5c91ce2aac6f257b5e0a4b108bddd08383eb37f3d404c3cc7b",
+        "sha256_in_prefix": "9d74fea8b5f96b5c91ce2aac6f257b5e0a4b108bddd08383eb37f3d404c3cc7b",
+        "size_in_bytes": 16911
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_itertoolz.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "11fa9b09d018056e1ce20ac85df01d722c68fe3d5c0b919c8fe4bc4b80fcd95c",
+        "sha256_in_prefix": "11fa9b09d018056e1ce20ac85df01d722c68fe3d5c0b919c8fe4bc4b80fcd95c",
+        "size_in_bytes": 23447
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_none_safe.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "047023795bb84a9295f06d7eed760e6ffa79ac9d1ee650375c6568bf087ce6a6",
+        "sha256_in_prefix": "047023795bb84a9295f06d7eed760e6ffa79ac9d1ee650375c6568bf087ce6a6",
+        "size_in_bytes": 17522
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_recipes.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "73c5c536b13e0ef94dcdf12799a000be489d1cae9fe9677235dfbc9c2dc7edf5",
+        "sha256_in_prefix": "73c5c536b13e0ef94dcdf12799a000be489d1cae9fe9677235dfbc9c2dc7edf5",
+        "size_in_bytes": 1076
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_serialization.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "92f137db3428c6203a28cbdf96d9a2269688e05db318813ccc87ee2ec0e389d7",
+        "sha256_in_prefix": "92f137db3428c6203a28cbdf96d9a2269688e05db318813ccc87ee2ec0e389d7",
+        "size_in_bytes": 5930
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_signatures.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "31e076cd82d1fdf4c9f49105a76f2a7b8a444aa2c71f1aa4b02a1f4d46147e47",
+        "sha256_in_prefix": "31e076cd82d1fdf4c9f49105a76f2a7b8a444aa2c71f1aa4b02a1f4d46147e47",
+        "size_in_bytes": 2531
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_tlz.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "2f97bce0ac9da6fd1efd3f36862ea32963532b1fdb6b11b3c51316876cffc8ce",
+        "sha256_in_prefix": "2f97bce0ac9da6fd1efd3f36862ea32963532b1fdb6b11b3c51316876cffc8ce",
+        "size_in_bytes": 1345
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/__pycache__/test_utils.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "77d54dddc6fb8d43df4048a5e641cd3592edbbf3e90086d23a8a99669d7b028b",
+        "sha256_in_prefix": "77d54dddc6fb8d43df4048a5e641cd3592edbbf3e90086d23a8a99669d7b028b",
+        "size_in_bytes": 1039
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/dev_skip_test.py",
+        "path_type": "hardlink",
+        "sha256": "051bc64163d21476e80f69d098b01136a6335729d7dcb21661af5a7ff0bcb351",
+        "sha256_in_prefix": "051bc64163d21476e80f69d098b01136a6335729d7dcb21661af5a7ff0bcb351",
+        "size_in_bytes": 1003
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_compatibility.py",
+        "path_type": "hardlink",
+        "sha256": "26577bca1cb142eb8b3a12944f75c6aa6b3c4b5d208d20ceb12457c6cafb3790",
+        "sha256_in_prefix": "26577bca1cb142eb8b3a12944f75c6aa6b3c4b5d208d20ceb12457c6cafb3790",
+        "size_in_bytes": 547
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_curried.py",
+        "path_type": "hardlink",
+        "sha256": "a26e589217252d23704606c5ba607c337a058400c86af298f98ae53674dfc075",
+        "sha256_in_prefix": "a26e589217252d23704606c5ba607c337a058400c86af298f98ae53674dfc075",
+        "size_in_bytes": 3703
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_curried_toolzlike.py",
+        "path_type": "hardlink",
+        "sha256": "9b8222f3aa76c792bd994cfab2bf050f6fcbac29e993274b94b2c3c7f242e60e",
+        "sha256_in_prefix": "9b8222f3aa76c792bd994cfab2bf050f6fcbac29e993274b94b2c3c7f242e60e",
+        "size_in_bytes": 1399
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_dev_skip_test.py",
+        "path_type": "hardlink",
+        "sha256": "2162b67e7a55f21e7235602c7662887001581c362c337113ec37725f0e63b1d9",
+        "sha256_in_prefix": "2162b67e7a55f21e7235602c7662887001581c362c337113ec37725f0e63b1d9",
+        "size_in_bytes": 380
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_dicttoolz.py",
+        "path_type": "hardlink",
+        "sha256": "7db618f7984637d1097cf4c0056b358a63ccb81f6a41b49d627e992b15fbb1e4",
+        "sha256_in_prefix": "7db618f7984637d1097cf4c0056b358a63ccb81f6a41b49d627e992b15fbb1e4",
+        "size_in_bytes": 8945
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_docstrings.py",
+        "path_type": "hardlink",
+        "sha256": "c173df3b15141f7aec83c9d500ab8547f882a8d899cf6fd7c3262660b683943c",
+        "sha256_in_prefix": "c173df3b15141f7aec83c9d500ab8547f882a8d899cf6fd7c3262660b683943c",
+        "size_in_bytes": 3034
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_doctests.py",
+        "path_type": "hardlink",
+        "sha256": "e2fb2adff6e108f034a5a1870d2c5d3c4ac65210737bc582e2f6e93a59a6c1c2",
+        "sha256_in_prefix": "e2fb2adff6e108f034a5a1870d2c5d3c4ac65210737bc582e2f6e93a59a6c1c2",
+        "size_in_bytes": 435
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_embedded_sigs.py",
+        "path_type": "hardlink",
+        "sha256": "dd1e06eab057ccefb482d6ed8b69c6d199b2ac216e74afd63a8eb3717ac6b33e",
+        "sha256_in_prefix": "dd1e06eab057ccefb482d6ed8b69c6d199b2ac216e74afd63a8eb3717ac6b33e",
+        "size_in_bytes": 3495
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_functoolz.py",
+        "path_type": "hardlink",
+        "sha256": "586fbbb9a81f6e2c4cb61f61cba7e2de01ee19a67150df881076730ce436c4a6",
+        "sha256_in_prefix": "586fbbb9a81f6e2c4cb61f61cba7e2de01ee19a67150df881076730ce436c4a6",
+        "size_in_bytes": 20351
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_inspect_args.py",
+        "path_type": "hardlink",
+        "sha256": "8893a60f15d69bdf4dbd1604ff46234ae196b0da40e3b893223fb56917cfeebe",
+        "sha256_in_prefix": "8893a60f15d69bdf4dbd1604ff46234ae196b0da40e3b893223fb56917cfeebe",
+        "size_in_bytes": 16252
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_itertoolz.py",
+        "path_type": "hardlink",
+        "sha256": "26c7559f97fdf51be557e0a22808a67b56351c553e714fc771523eb2bcadc813",
+        "sha256_in_prefix": "26c7559f97fdf51be557e0a22808a67b56351c553e714fc771523eb2bcadc813",
+        "size_in_bytes": 18213
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_none_safe.py",
+        "path_type": "hardlink",
+        "sha256": "6594e7ad29e78d273fefcab28ca63d91f1c9c074a61877a3733a008740c0b5fb",
+        "sha256_in_prefix": "6594e7ad29e78d273fefcab28ca63d91f1c9c074a61877a3733a008740c0b5fb",
+        "size_in_bytes": 12222
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_recipes.py",
+        "path_type": "hardlink",
+        "sha256": "37efbe6c9f47f566076d5dc3ade0920ca2407446486f50b9e41ce2eceb73c277",
+        "sha256_in_prefix": "37efbe6c9f47f566076d5dc3ade0920ca2407446486f50b9e41ce2eceb73c277",
+        "size_in_bytes": 822
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_serialization.py",
+        "path_type": "hardlink",
+        "sha256": "d09359f6d5dad37a229c7cdb7142d3b75b91d73a6e991bf38ba4d6cd5ec952f7",
+        "sha256_in_prefix": "d09359f6d5dad37a229c7cdb7142d3b75b91d73a6e991bf38ba4d6cd5ec952f7",
+        "size_in_bytes": 5894
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_signatures.py",
+        "path_type": "hardlink",
+        "sha256": "02fd1eb94c19a5d17e06c834895a4855e7d7ccce24b4a7ebb8df0856cdd2ffe5",
+        "sha256_in_prefix": "02fd1eb94c19a5d17e06c834895a4855e7d7ccce24b4a7ebb8df0856cdd2ffe5",
+        "size_in_bytes": 2933
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_tlz.py",
+        "path_type": "hardlink",
+        "sha256": "b113cb6502bb87b91018a3371a5c5070dee51a4d70ca9b39eb9a0d620b9bdad9",
+        "sha256_in_prefix": "b113cb6502bb87b91018a3371a5c5070dee51a4d70ca9b39eb9a0d620b9bdad9",
+        "size_in_bytes": 1486
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/tests/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "88ebc05e5f6051848b76b8ebcfda19771da397db8fc40f6e0d77b399ae9f631e",
+        "sha256_in_prefix": "88ebc05e5f6051848b76b8ebcfda19771da397db8fc40f6e0d77b399ae9f631e",
+        "size_in_bytes": 385
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/utils.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "17fa4cac2505f74d700e851e0879cc9f46b5e94c7efcfdd0493e948f3d34f851",
+        "sha256_in_prefix": "17fa4cac2505f74d700e851e0879cc9f46b5e94c7efcfdd0493e948f3d34f851",
+        "size_in_bytes": 58200
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/utils.pxd",
+        "path_type": "hardlink",
+        "sha256": "7447cc5456a039a4c131befe9f3195106dd9b90498cf879af752ad74edd751e8",
+        "sha256_in_prefix": "7447cc5456a039a4c131befe9f3195106dd9b90498cf879af752ad74edd751e8",
+        "size_in_bytes": 33
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/utils.pyx",
+        "path_type": "hardlink",
+        "sha256": "43617fc9dd7008d06e51f5d7e821f9fe77b332b15b53677ad1024213ac3d5978",
+        "sha256_in_prefix": "43617fc9dd7008d06e51f5d7e821f9fe77b332b15b53677ad1024213ac3d5978",
+        "size_in_bytes": 1353
+      },
+      {
+        "_path": "lib/python3.7/site-packages/cytoolz/utils_test.py",
+        "path_type": "hardlink",
+        "sha256": "e571f66a23d9ea96934cdd27181219d021c928f9d7f80b10b9eb5cb022dd68c5",
+        "sha256_in_prefix": "e571f66a23d9ea96934cdd27181219d021c928f9d7f80b10b9eb5cb022dd68c5",
+        "size_in_bytes": 2075
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "cytoolz==0.10.0=py37h7b6447c_0",
+  "sha256": "bd2f9a55b0108b4faf4ce618f1e1b859767461adac11cec8bcaa154fd72d7c6e",
+  "size": 382713,
+  "subdir": "linux-64",
+  "timestamp": 1563285780647,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cytoolz-0.10.0-py37h7b6447c_0.conda",
+  "version": "0.10.0"
+}

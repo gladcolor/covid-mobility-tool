@@ -200,7 +200,6 @@
   ],
   "fn": "tornado-5.1.1-py37h7b6447c_0.conda",
   "legacy_bz2_md5": "f6ba14c98545875d4d671f0dfd095c4a",
-  "legacy_bz2_size": 677767,
   "license": "Apache 2.0",
   "license_family": "Apache",
   "link": {
@@ -1524,7 +1523,7 @@
     ],
     "paths_version": 1
   },
-  "requested_spec": "tornado==5.1.1=py37h7b6447c_0",
+  "requested_spec": "None",
   "sha256": "fe834102002b66c312fcfd3fb5a1f7aa8ba66dcda0bd509514ab480577426bca",
   "size": 633808,
   "subdir": "linux-64",

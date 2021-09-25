@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Add a &quot;quadratic&quot; layer to a Bokeh figure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ly_quadratic {rbokeh}"><tr><td>ly_quadratic {rbokeh}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Add a &quot;quadratic&quot; layer to a Bokeh figure</h2>
+
+<h3>Description</h3>
+
+<p>Draws quadratic curves with the given starting, ending, and control points.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ly_quadratic(fig, x0, y0, x1, y1, cx, cy, data = figure_data(fig),
+  color = NULL, alpha = NULL, type = 1, width = 1, hov_color = NULL,
+  hov_alpha = NULL, ns_color = NULL, ns_alpha = NULL, sel_color = NULL,
+  sel_alpha = NULL, legend = TRUE, lname = NULL, lgroup = NULL, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>fig</code></td>
+<td>
+<p>Figure to modify.</p>
+</td></tr>
+<tr valign="top"><td><code>x0</code></td>
+<td>
+<p>Values or field name / expression indicating starting x coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>y0</code></td>
+<td>
+<p>Values or field name / expression indicating starting y coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>x1</code></td>
+<td>
+<p>Values or field name / expression indicating ending x coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>y1</code></td>
+<td>
+<p>Values or field name / expression indicating ending y coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>cx</code></td>
+<td>
+<p>Values or field name / expression indicating control point x coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>cy</code></td>
+<td>
+<p>Values or field name / expression indicating control point y coordinates.</p>
+</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>an optional data frame, providing the source for start, end, and control point intputs, as well as other glyph properties</p>
+</td></tr>
+<tr valign="top"><td><code>color</code></td>
+<td>
+<p>Color to use to stroke lines with - a hex code (with no alpha) or any of the 147 named CSS colors, e.g 'green', 'indigo'.</p>
+</td></tr>
+<tr valign="top"><td><code>alpha</code></td>
+<td>
+<p>Transparency value for the line between 0 (transparent) and 1 (opaque).</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>An integer between 1 and 6 matching the <code>lty</code> property in <code><a href="../../graphics/html/par.html">par</a></code> or an array of integer pixel distances that describe the on-off pattern of dashing to use.</p>
+</td></tr>
+<tr valign="top"><td><code>width</code></td>
+<td>
+<p>Stroke width in units of pixels.</p>
+</td></tr>
+<tr valign="top"><td><code>hov_color</code></td>
+<td>
+<p>Color to use to stroke lines when they are hovered.</p>
+</td></tr>
+<tr valign="top"><td><code>hov_alpha</code></td>
+<td>
+<p>Transparency value for the line when it is hovered.</p>
+</td></tr>
+<tr valign="top"><td><code>ns_color</code></td>
+<td>
+<p>Color to use to stroke lines when they are not selected.</p>
+</td></tr>
+<tr valign="top"><td><code>ns_alpha</code></td>
+<td>
+<p>Transparency value for the line when it is not selected.</p>
+</td></tr>
+<tr valign="top"><td><code>sel_color</code></td>
+<td>
+<p>Color to use to stroke lines when they are selected.</p>
+</td></tr>
+<tr valign="top"><td><code>sel_alpha</code></td>
+<td>
+<p>Transparency value for the line when it is selected.</p>
+</td></tr>
+<tr valign="top"><td><code>legend</code></td>
+<td>
+<p>Either a logical specifying not to plot a legend for this layer (FALSE) or a string indicating the name of the legend entry for this layer. Note that when mapping plot attributes to variables in <code>data</code>, a legend is automatically created and does not need to be specified. See &quot;Mapped plot attributes and legends&quot; below.</p>
+</td></tr>
+<tr valign="top"><td><code>lname</code></td>
+<td>
+<p>Layer name.</p>
+</td></tr>
+<tr valign="top"><td><code>lgroup</code></td>
+<td>
+<p>Layer group.</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>additional parameters for fine control over fill and line properties (see &quot;Additional parameters&quot; below)</p>
+</td></tr>
+</table>
+
+
+<h3>Mapped plot attributes and legends</h3>
+
+<p>When specifying an input data frame for a layer through the <code>data</code> argument, columns of <code>data</code> can be used to specify various plot attributes such as <code>color</code>, etc. For example, with <code>ly_points(..., data = iris, color = Species)</code>, the <code>Species</code> variable is used to determine how to color the points.  Here, <code>Species</code> is &quot;mapped&quot; to the <code>color</code> attribute.  Both continuous and categorical variables can be mapped.  In the case of continuous variables, the range is cut into slices and attributes are applied to each interval.  The mapping from the values of the variable to the actual plot attributes is determined based on the theme. When attributes are mapped, legend entries are automatically created for the mappings (when possible).
+</p>
+
+
+<h3>Additional parameters</h3>
+
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+  <code>fill_color</code> </td><td style="text-align: left;"> color to use to fill the glyph with - a hex code (with no alpha) or any of the 147 named CSS colors, e.g 'green', 'indigo' </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>fill_alpha</code> </td><td style="text-align: left;"> transparency value between 0 (transparent) and 1 (opaque) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_color</code> </td><td style="text-align: left;"> color to use to stroke lines with - a hex code (with no alpha) or any of the 147 named CSS colors, e.g 'green', 'indigo' </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_width</code> </td><td style="text-align: left;"> stroke width in units of pixels </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_alpha</code> </td><td style="text-align: left;"> transparency value between 0 (transparent) and 1 (opaque) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_join</code> </td><td style="text-align: left;"> how path segments should be joined together 'miter' 'round' 'bevel' </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_cap</code> </td><td style="text-align: left;"> how path segments should be terminated 'butt' 'round' 'square' </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_dash</code> </td><td style="text-align: left;"> array of integer pixel distances that describe the on-off pattern of dashing to use </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  <code>line_dash_offset</code> </td><td style="text-align: left;"> the distance in pixels into the line_dash that the pattern should start from
+ </td>
+</tr>
+
+</table>
+
+
+
+<h3>See Also</h3>
+
+<p>Other layer functions: <code><a href="ly_annular_wedge.html">ly_annular_wedge</a></code>,
+<code><a href="ly_annulus.html">ly_annulus</a></code>, <code><a href="ly_arc.html">ly_arc</a></code>,
+<code><a href="ly_bar.html">ly_bar</a></code>, <code><a href="ly_bezier.html">ly_bezier</a></code>,
+<code><a href="ly_boxplot.html">ly_boxplot</a></code>, <code><a href="ly_contour.html">ly_contour</a></code>,
+<code><a href="ly_crect.html">ly_crect</a></code>, <code><a href="ly_curve.html">ly_curve</a></code>,
+<code><a href="ly_density.html">ly_density</a></code>, <code><a href="ly_hist.html">ly_hist</a></code>,
+<code><a href="ly_image_url.html">ly_image_url</a></code>, <code><a href="ly_image.html">ly_image</a></code>,
+<code><a href="ly_lines.html">ly_lines</a></code>, <code><a href="ly_multi_line.html">ly_multi_line</a></code>,
+<code><a href="ly_oval.html">ly_oval</a></code>, <code><a href="ly_patch.html">ly_patch</a></code>,
+<code><a href="ly_points.html">ly_points</a></code>, <code><a href="ly_polygons.html">ly_polygons</a></code>,
+<code><a href="ly_quantile.html">ly_quantile</a></code>, <code><a href="ly_ray.html">ly_ray</a></code>,
+<code><a href="ly_rect.html">ly_rect</a></code>, <code><a href="ly_segments.html">ly_segments</a></code>,
+<code><a href="ly_text.html">ly_text</a></code>, <code><a href="ly_wedge.html">ly_wedge</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# this plot does not serve any practical purpose but illustrates ly_quadratic
+figure() %&gt;%
+  ly_quadratic(
+    x0 = Sepal.Length,
+    x1 = Sepal.Length + runif(150),
+    cx = Sepal.Length + runif(150),
+    y0 = Sepal.Width,
+    y1 = Sepal.Width + runif(150),
+    cy = Sepal.Width + runif(150),
+    color = Species,
+    data = iris,
+    hover = iris)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>rbokeh</em> version 0.6.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

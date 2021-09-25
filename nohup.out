@@ -1,0 +1,1048 @@
+Setting numpy cores to 1
+Running code on Deep; at Stanford=False
+ERROR:fbprophet:Importing plotly failed. Interactive plots will not work.
+loading configs from Deep_configs.pkl
+Running single model (config idx = 20). Kwargs are
+{
+    "data_kwargs": {
+        "MSA_name": "Columbia_SC",
+        "nrows": "None"
+    },
+    "experiment_to_run": "calibrate_r0",
+    "model_kwargs": {
+        "exogenous_model_kwargs": "{'home_beta': 0.0005, 'poi_psi': 2500, 'p_sick_at_t0': 0.0001, 'inter_cbg_gamma': None, 'just_compute_r0': True}",
+        "include_cbg_prop_out": "False",
+        "include_inter_cbg_travel": "False",
+        "include_mask_use": "True",
+        "max_datetime": "2021-01-17 23:00:00",
+        "min_datetime": "2020-12-28 00:00:00",
+        "model_init_kwargs": "{'num_seeds': 30}",
+        "poi_attributes_to_clip": "{'clip_areas': True, 'clip_dwell_times': True, 'clip_visits': True}",
+        "simulation_kwargs": "{'use_aggregate_mobility': False, 'use_home_proportion_beta': False, 'use_inter_cbg_leak_factor': False}"
+    },
+    "version": "v2"
+}
+Fitting single model. Results will be saved using timestring 2021_09_21_00_23_22_661136
+cast_keys_to_ints column 20210106_20210120_aggregated_visitor_home_cbgs ...
+cast_keys_to_ints column 20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs ...
+Loaded 10247 rows for Columbia_SC in 0.299 seconds
+Loading IPF output for 504 hours
+Finished loading IPF output in 1.88s [0.00s per hour]
+Loading POI ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_poi_ids.csv
+Loading CBG ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_cbg_ids.csv
+Successfully loaded IPF output and POI/CBG ids for 2020-12-28-00 to 2021-01-17-23
+1. Processing SafeGraph data...
+Found 504 hours in all (2020.12.28.0 to 2021.1.17.23)
+Taking median over median_dwell from 20210106_20210120_median_of_median_dwell to 20210106_20210120_median_of_median_dwell
+Precomputed POI-CBG networks were passed in; will NOT be clipping hourly visits in dataframe
+Clipping areas: True (below=5, above=95), clipping dwell times: True (above=90), clipping visits: False (above=95)
+Found 89 sub-categories with >= 20 POIs and 38 top categories with >= 20 POIs -> covers 9795 POIs
+Could not cover 452/10247 POIs (4.4% POIs) -> dropping these POIs
+Accounting, Tax Preparation, Bookkeeping, and Payroll Services -> has 45 POIs, processed 3 POIs
+Activities Related to Credit Intermediation -> has 29 POIs, processed 8 POIs
+Automotive Equipment Rental and Leasing -> has 32 POIs, processed 32 POIs
+Automotive Parts, Accessories, and Tire Stores -> has 184 POIs, processed 13 POIs
+Automotive Repair and Maintenance -> has 405 POIs, processed 38 POIs
+Building Equipment Contractors -> has 29 POIs, processed 1 POIs
+Building Finishing Contractors -> has 25 POIs, processed 25 POIs
+Building Material and Supplies Dealers -> has 98 POIs, processed 30 POIs
+Clothing Stores -> has 142 POIs, processed 43 POIs
+Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly -> has 49 POIs, processed 49 POIs
+Electronics and Appliance Stores -> has 79 POIs, processed 5 POIs
+Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers -> has 38 POIs, processed 8 POIs
+Health and Personal Care Stores -> has 226 POIs, processed 13 POIs
+Home Furnishings Stores -> has 45 POIs, processed 13 POIs
+Individual and Family Services -> has 57 POIs, processed 4 POIs
+Jewelry, Luggage, and Leather Goods Stores -> has 42 POIs, processed 5 POIs
+Justice, Public Order, and Safety Activities -> has 124 POIs, processed 19 POIs
+Lawn and Garden Equipment and Supplies Stores -> has 47 POIs, processed 12 POIs
+Lessors of Real Estate -> has 75 POIs, processed 1 POIs
+Machinery, Equipment, and Supplies Merchant Wholesalers -> has 31 POIs, processed 31 POIs
+Management, Scientific, and Technical Consulting Services -> has 25 POIs, processed 25 POIs
+Medical and Diagnostic Laboratories -> has 29 POIs, processed 29 POIs
+Miscellaneous Durable Goods Merchant Wholesalers -> has 34 POIs, processed 7 POIs
+Museums, Historical Sites, and Similar Institutions -> has 136 POIs, processed 13 POIs
+Nondepository Credit Intermediation -> has 22 POIs, processed 22 POIs
+Offices of Other Health Practitioners -> has 219 POIs, processed 8 POIs
+Other Ambulatory Health Care Services -> has 32 POIs, processed 11 POIs
+Other Amusement and Recreation Industries -> has 238 POIs, processed 30 POIs
+Other Financial Investment Activities -> has 43 POIs, processed 14 POIs
+Other Miscellaneous Manufacturing -> has 24 POIs, processed 24 POIs
+Other Miscellaneous Store Retailers -> has 150 POIs, processed 31 POIs
+Other Motor Vehicle Dealers -> has 64 POIs, processed 25 POIs
+Other Personal Services -> has 64 POIs, processed 25 POIs
+Other Professional, Scientific, and Technical Services -> has 70 POIs, processed 15 POIs
+Other Schools and Instruction -> has 76 POIs, processed 34 POIs
+Outpatient Care Centers -> has 37 POIs, processed 12 POIs
+Personal and Household Goods Repair and Maintenance -> has 43 POIs, processed 43 POIs
+Specialty Food Stores -> has 55 POIs, processed 55 POIs
+All Other Amusement and Recreation Industries -> has 38 POIs, processed 38 POIs
+All Other General Merchandise Stores -> has 132 POIs, processed 132 POIs
+All Other Home Furnishings Stores -> has 32 POIs, processed 32 POIs
+All Other Miscellaneous Ambulatory Health Care Services -> has 21 POIs, processed 21 POIs
+Automotive Body, Paint, and Interior Repair and Maintenance -> has 94 POIs, processed 94 POIs
+Automotive Parts and Accessories Stores -> has 171 POIs, processed 171 POIs
+Barber Shops -> has 45 POIs, processed 45 POIs
+Beauty Salons -> has 177 POIs, processed 177 POIs
+Beer, Wine, and Liquor Stores -> has 64 POIs, processed 64 POIs
+Car Washes -> has 52 POIs, processed 52 POIs
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1370: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input, interpolation=interpolation
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1114: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input)
+Cemeteries and Crematories -> has 25 POIs, processed 25 POIs
+Child Day Care Services -> has 230 POIs, processed 230 POIs
+Child and Youth Services -> has 32 POIs, processed 32 POIs
+Colleges, Universities, and Professional Schools -> has 35 POIs, processed 35 POIs
+Commercial Banking -> has 147 POIs, processed 147 POIs
+Convenience Stores -> has 183 POIs, processed 183 POIs
+Cosmetics, Beauty Supplies, and Perfume Stores -> has 32 POIs, processed 32 POIs
+Credit Unions -> has 50 POIs, processed 50 POIs
+Department Stores -> has 31 POIs, processed 31 POIs
+Diet and Weight Reducing Centers -> has 21 POIs, processed 21 POIs
+Drinking Places (Alcoholic Beverages) -> has 88 POIs, processed 88 POIs
+Electronics Stores -> has 74 POIs, processed 74 POIs
+Elementary and Secondary Schools -> has 191 POIs, processed 191 POIs
+Family Clothing Stores -> has 24 POIs, processed 24 POIs
+Fire Protection -> has 84 POIs, processed 84 POIs
+Fitness and Recreational Sports Centers -> has 170 POIs, processed 170 POIs
+Florists -> has 48 POIs, processed 48 POIs
+Food (Health) Supplement Stores -> has 23 POIs, processed 23 POIs
+Full-Service Restaurants -> has 818 POIs, processed 818 POIs
+Funeral Homes and Funeral Services -> has 29 POIs, processed 29 POIs
+Furniture Stores -> has 87 POIs, processed 87 POIs
+Gasoline Stations with Convenience Stores -> has 314 POIs, processed 314 POIs
+General Automotive Repair -> has 221 POIs, processed 221 POIs
+Gift, Novelty, and Souvenir Stores -> has 35 POIs, processed 35 POIs
+Hardware Stores -> has 68 POIs, processed 68 POIs
+Hobby, Toy, and Game Stores -> has 30 POIs, processed 30 POIs
+Home Health Care Services -> has 48 POIs, processed 48 POIs
+Hotels (except Casino Hotels) and Motels -> has 133 POIs, processed 133 POIs
+Insurance Agencies and Brokerages -> has 225 POIs, processed 225 POIs
+Investment Advice -> has 29 POIs, processed 29 POIs
+Jewelry Stores -> has 37 POIs, processed 37 POIs
+Kidney Dialysis Centers -> has 25 POIs, processed 25 POIs
+Lessors of Miniwarehouses and Self-Storage Units -> has 74 POIs, processed 74 POIs
+Libraries and Archives -> has 24 POIs, processed 24 POIs
+Limited-Service Restaurants -> has 527 POIs, processed 527 POIs
+Mortgage and Nonmortgage Loan Brokers -> has 21 POIs, processed 21 POIs
+Motor Vehicle Towing -> has 47 POIs, processed 47 POIs
+Motorcycle, ATV, and All Other Motor Vehicle Dealers -> has 39 POIs, processed 39 POIs
+Museums -> has 20 POIs, processed 20 POIs
+Musical Instrument and Supplies Stores -> has 23 POIs, processed 23 POIs
+Nail Salons -> has 32 POIs, processed 32 POIs
+Nature Parks and Other Similar Institutions -> has 103 POIs, processed 103 POIs
+New Car Dealers -> has 50 POIs, processed 50 POIs
+Nursery, Garden Center, and Farm Supply Stores -> has 35 POIs, processed 35 POIs
+Nursing Care Facilities (Skilled Nursing Facilities) -> has 82 POIs, processed 82 POIs
+Office Supplies and Stationery Stores -> has 29 POIs, processed 29 POIs
+Offices of All Other Miscellaneous Health Practitioners -> has 30 POIs, processed 30 POIs
+Offices of Chiropractors -> has 62 POIs, processed 62 POIs
+Offices of Dentists -> has 316 POIs, processed 316 POIs
+Offices of Mental Health Practitioners (except Physicians) -> has 78 POIs, processed 78 POIs
+Offices of Physical, Occupational and Speech Therapists, and Audiologists -> has 41 POIs, processed 41 POIs
+Offices of Physicians (except Mental Health Specialists) -> has 318 POIs, processed 318 POIs
+Offices of Real Estate Agents and Brokers -> has 71 POIs, processed 71 POIs
+Optical Goods Stores -> has 50 POIs, processed 50 POIs
+Other Personal Care Services -> has 87 POIs, processed 87 POIs
+Pet Care (except Veterinary) Services -> has 39 POIs, processed 39 POIs
+Pet and Pet Supplies Stores -> has 91 POIs, processed 91 POIs
+Pharmacies and Drug Stores -> has 108 POIs, processed 108 POIs
+Plumbing, Heating, and Air-Conditioning Contractors -> has 28 POIs, processed 28 POIs
+Police Protection -> has 21 POIs, processed 21 POIs
+Postal Service -> has 39 POIs, processed 39 POIs
+Religious Organizations -> has 1116 POIs, processed 1116 POIs
+Retail Bakeries -> has 39 POIs, processed 39 POIs
+Services for the Elderly and Persons with Disabilities -> has 21 POIs, processed 21 POIs
+Sewing, Needlework, and Piece Goods Stores -> has 22 POIs, processed 22 POIs
+Shoe Stores -> has 25 POIs, processed 25 POIs
+Snack and Nonalcoholic Beverage Bars -> has 160 POIs, processed 160 POIs
+Sporting Goods Stores -> has 62 POIs, processed 62 POIs
+Sporting and Recreational Goods and Supplies Merchant Wholesalers -> has 27 POIs, processed 27 POIs
+Sports and Recreation Instruction -> has 42 POIs, processed 42 POIs
+Supermarkets and Other Grocery (except Convenience) Stores -> has 146 POIs, processed 146 POIs
+Tax Preparation Services -> has 42 POIs, processed 42 POIs
+Tobacco Stores -> has 28 POIs, processed 28 POIs
+Used Car Dealers -> has 104 POIs, processed 104 POIs
+Used Merchandise Stores -> has 78 POIs, processed 78 POIs
+Veterinary Services -> has 55 POIs, processed 55 POIs
+Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers -> has 30 POIs, processed 30 POIs
+Wireless Telecommunications Carriers (except Satellite) -> has 49 POIs, processed 49 POIs
+Women's Clothing Stores -> has 75 POIs, processed 75 POIs
+After clipping, 9795 POIs
+Received 7013 pre-specified POI ids -> missing 0 in dataframe
+Received 341 pre-specified CBG ids
+FINAL: number of CBGs (N) = 341, number of POIs (M) = 7013
+Num connected POI-CBG pairs (E) = 85632, network density (E/N) = 251.120
+486 CBGs in nyt -> matched 327 (0.673)
+Dwell time correction factors: mean = 0.17, min = 0.01, max = 0.85
+Precomputed POI-CBG networks were passed in; will NOT be applying dwell-time-based correction to hourly visits in dataframe
+Precomputed POI-CBG networks were passed in; will NOT be applying undersampling correction to hourly visits in dataframe
+2. Processing ACS data...
+CBGs: median population size = 1592, sum of population sizes = 690529
+Found 6 counties to track...
+Low coverage warning: only modeling 9/15 (60.0%) of the CBGs in 45081
+Low coverage warning: only modeling 5/12 (41.7%) of the CBGs in 45017
+Low coverage warning: only modeling 11/18 (61.1%) of the CBGs in 45039
+Low coverage warning: only modeling 131/245 (53.5%) of the CBGs in 45079
+Tracking infection trajectories from 6 of the counties
+Attribute p_black: was able to compute for 100.0% out of 341 CBGs, median is 0.207
+Attribute p_white: was able to compute for 100.0% out of 341 CBGs, median is 0.726
+Attribute median_household_income: was able to compute for 100.0% out of 341 CBGs, median is 54866.000
+Running model to compute r0 -> looping first week visit counts
+Extending time period; simulation now ends at 2021-04-11 23:00:00 (2520 hours)
+Total time to prep data: 1.790s
+11.3% of POIs have at least 50% of visitors coming from non-modeled CBGs
+Adjusted POI transmission rates with dwell time correction factors
+Received POI_CBG_VISITS_LIST, will NOT be computing hourly matrices on the fly
+=== PARAMETERS ===
+poi_psi = 2500, home_beta = 0.0005, p_sick_at_t0 = 0.0001, num_hours = 2520
+POI factors (psi * dwell_time_factor / area) for first 10 POIs
+[0.00956334 0.01583573 0.06601508 0.01102964 0.08200613 0.03248589
+ 0.00832312 0.01262972 0.10290675 0.08461399]
+simulating confirmed cases: False, simulating deaths: False
+=== RESULTS (30 seeds) ===
+t=  0: L= 68.7 (  7.2)   I=  0.0 (  0.0)   R=  0.0 (  0.0)
+t= 24: L= 52.3 (  6.7)   I= 14.4 (  3.0)   R= 31.1 (  8.8)
+t= 48: L= 40.9 (  6.7)   I= 20.4 (  3.8)   R=105.4 ( 24.0)
+t= 72: L= 31.9 (  5.5)   I= 23.4 (  5.0)   R=192.0 ( 40.2)
+t= 96: L= 25.3 (  4.9)   I= 23.5 (  5.1)   R=274.6 ( 54.0)
+t=120: L= 19.9 (  5.2)   I= 22.7 (  4.8)   R=311.0 ( 60.6)
+t=144: L= 15.6 (  4.4)   I= 21.5 (  4.2)   R=377.0 ( 66.2)
+t=168: L= 11.7 (  3.6)   I= 20.3 (  4.7)   R=434.6 ( 69.3)
+t=192: L=  8.6 (  2.8)   I= 18.0 (  4.4)   R=496.4 ( 75.6)
+t=216: L=  6.6 (  2.4)   I= 14.8 (  4.6)   R=558.1 ( 82.9)
+t=240: L=  5.2 (  2.2)   I= 12.1 (  3.6)   R=609.5 ( 91.2)
+t=264: L=  4.0 (  1.6)   I= 10.5 (  3.5)   R=645.4 ( 93.2)
+t=288: L=  3.0 (  1.4)   I=  8.6 (  2.9)   R=660.2 ( 94.6)
+t=312: L=  2.1 (  1.5)   I=  7.3 (  2.4)   R=684.1 ( 99.0)
+t=336: L=  1.7 (  1.2)   I=  6.1 (  2.4)   R=702.1 (101.4)
+t=360: L=  1.4 (  1.1)   I=  4.6 (  2.2)   R=720.3 (103.6)
+t=384: L=  1.1 (  1.0)   I=  3.8 (  2.1)   R=735.7 (105.8)
+t=408: L=  0.8 (  1.0)   I=  3.0 (  1.7)   R=749.7 (108.1)
+t=432: L=  0.6 (  0.7)   I=  2.4 (  1.5)   R=759.0 (109.3)
+t=456: L=  0.4 (  0.7)   I=  2.0 (  1.3)   R=761.8 (109.9)
+t=480: L=  0.3 (  0.5)   I=  1.5 (  1.4)   R=767.0 (110.8)
+t=504: L=  0.2 (  0.5)   I=  1.3 (  1.3)   R=770.8 (112.0)
+t=528: L=  0.1 (  0.4)   I=  1.0 (  1.2)   R=775.2 (112.6)
+t=552: L=  0.0 (  0.2)   I=  0.7 (  0.8)   R=778.4 (114.0)
+t=576: L=  0.0 (  0.2)   I=  0.5 (  0.7)   R=781.1 (115.0)
+t=600: L=  0.0 (  0.2)   I=  0.4 (  0.6)   R=782.5 (115.7)
+t=624: L=  0.0 (  0.2)   I=  0.3 (  0.5)   R=783.5 (116.4)
+t=648: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=783.9 (116.9)
+t=672: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=784.1 (116.9)
+t=696: L=  0.0 (  0.2)   I=  0.1 (  0.2)   R=784.3 (117.0)
+t=720: L=  0.0 (  0.2)   I=  0.1 (  0.2)   R=784.5 (117.3)
+t=744: L=  0.0 (  0.2)   I=  0.0 (  0.2)   R=784.7 (117.5)
+t=768: L=  0.0 (  0.2)   I=  0.0 (  0.0)   R=784.7 (117.6)
+t=792: L=  0.0 (  0.2)   I=  0.0 (  0.0)   R=784.7 (117.6)
+t=816: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=784.8 (117.6)
+t=840: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=784.8 (117.7)
+t=864: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=784.9 (117.7)
+Disease died off after t=870. Stopping experiment.
+Average number of people infected across random seeds: 784.933
+Mean initial cases across seeds: 68.733; new cases from initial: 716.200; estimated R0: 10.430
+Simulation time = 6.292s -> 0.007s per iteration
+Saving model at /media/gpu/easystore/extra_safegraph_aggregate_models/full_models/fitted_model_2021_09_21_00_23_22_661136.pkl...
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 95 dates after applying min_threshold 10
+Successfully fitted and saved model and data_and_model_kwargs; total time taken 17.024 seconds
+Setting numpy cores to 1
+Running code on Deep; at Stanford=False
+ERROR:fbprophet:Importing plotly failed. Interactive plots will not work.
+loading configs from Deep_configs.pkl
+Running single model (config idx = 7). Kwargs are
+{
+    "data_kwargs": {
+        "MSA_name": "Columbia_SC",
+        "nrows": "None"
+    },
+    "experiment_to_run": "calibrate_r0",
+    "model_kwargs": {
+        "exogenous_model_kwargs": "{'home_beta': 0.001, 'poi_psi': 1000, 'p_sick_at_t0': 0.0001, 'inter_cbg_gamma': None, 'just_compute_r0': True}",
+        "include_cbg_prop_out": "False",
+        "include_inter_cbg_travel": "False",
+        "include_mask_use": "True",
+        "max_datetime": "2021-01-17 23:00:00",
+        "min_datetime": "2020-12-28 00:00:00",
+        "model_init_kwargs": "{'num_seeds': 30}",
+        "poi_attributes_to_clip": "{'clip_areas': True, 'clip_dwell_times': True, 'clip_visits': True}",
+        "simulation_kwargs": "{'use_aggregate_mobility': False, 'use_home_proportion_beta': False, 'use_inter_cbg_leak_factor': False}"
+    },
+    "version": "v2"
+}
+Fitting single model. Results will be saved using timestring 2021_09_23_11_25_49_932041
+cast_keys_to_ints column 20210106_20210120_aggregated_visitor_home_cbgs ...
+cast_keys_to_ints column 20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs ...
+Loaded 10247 rows for Columbia_SC in 0.294 seconds
+Loading IPF output for 504 hours
+Finished loading IPF output in 1.92s [0.00s per hour]
+Loading POI ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_poi_ids.csv
+Loading CBG ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_cbg_ids.csv
+Successfully loaded IPF output and POI/CBG ids for 2020-12-28-00 to 2021-01-17-23
+1. Processing SafeGraph data...
+Found 504 hours in all (2020.12.28.0 to 2021.1.17.23)
+Taking median over median_dwell from 20210106_20210120_median_of_median_dwell to 20210106_20210120_median_of_median_dwell
+Precomputed POI-CBG networks were passed in; will NOT be clipping hourly visits in dataframe
+Clipping areas: True (below=5, above=95), clipping dwell times: True (above=90), clipping visits: False (above=95)
+Found 89 sub-categories with >= 20 POIs and 38 top categories with >= 20 POIs -> covers 9795 POIs
+Could not cover 452/10247 POIs (4.4% POIs) -> dropping these POIs
+Accounting, Tax Preparation, Bookkeeping, and Payroll Services -> has 45 POIs, processed 3 POIs
+Activities Related to Credit Intermediation -> has 29 POIs, processed 8 POIs
+Automotive Equipment Rental and Leasing -> has 32 POIs, processed 32 POIs
+Automotive Parts, Accessories, and Tire Stores -> has 184 POIs, processed 13 POIs
+Automotive Repair and Maintenance -> has 405 POIs, processed 38 POIs
+Building Equipment Contractors -> has 29 POIs, processed 1 POIs
+Building Finishing Contractors -> has 25 POIs, processed 25 POIs
+Building Material and Supplies Dealers -> has 98 POIs, processed 30 POIs
+Clothing Stores -> has 142 POIs, processed 43 POIs
+Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly -> has 49 POIs, processed 49 POIs
+Electronics and Appliance Stores -> has 79 POIs, processed 5 POIs
+Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers -> has 38 POIs, processed 8 POIs
+Health and Personal Care Stores -> has 226 POIs, processed 13 POIs
+Home Furnishings Stores -> has 45 POIs, processed 13 POIs
+Individual and Family Services -> has 57 POIs, processed 4 POIs
+Jewelry, Luggage, and Leather Goods Stores -> has 42 POIs, processed 5 POIs
+Justice, Public Order, and Safety Activities -> has 124 POIs, processed 19 POIs
+Lawn and Garden Equipment and Supplies Stores -> has 47 POIs, processed 12 POIs
+Lessors of Real Estate -> has 75 POIs, processed 1 POIs
+Machinery, Equipment, and Supplies Merchant Wholesalers -> has 31 POIs, processed 31 POIs
+Management, Scientific, and Technical Consulting Services -> has 25 POIs, processed 25 POIs
+Medical and Diagnostic Laboratories -> has 29 POIs, processed 29 POIs
+Miscellaneous Durable Goods Merchant Wholesalers -> has 34 POIs, processed 7 POIs
+Museums, Historical Sites, and Similar Institutions -> has 136 POIs, processed 13 POIs
+Nondepository Credit Intermediation -> has 22 POIs, processed 22 POIs
+Offices of Other Health Practitioners -> has 219 POIs, processed 8 POIs
+Other Ambulatory Health Care Services -> has 32 POIs, processed 11 POIs
+Other Amusement and Recreation Industries -> has 238 POIs, processed 30 POIs
+Other Financial Investment Activities -> has 43 POIs, processed 14 POIs
+Other Miscellaneous Manufacturing -> has 24 POIs, processed 24 POIs
+Other Miscellaneous Store Retailers -> has 150 POIs, processed 31 POIs
+Other Motor Vehicle Dealers -> has 64 POIs, processed 25 POIs
+Other Personal Services -> has 64 POIs, processed 25 POIs
+Other Professional, Scientific, and Technical Services -> has 70 POIs, processed 15 POIs
+Other Schools and Instruction -> has 76 POIs, processed 34 POIs
+Outpatient Care Centers -> has 37 POIs, processed 12 POIs
+Personal and Household Goods Repair and Maintenance -> has 43 POIs, processed 43 POIs
+Specialty Food Stores -> has 55 POIs, processed 55 POIs
+All Other Amusement and Recreation Industries -> has 38 POIs, processed 38 POIs
+All Other General Merchandise Stores -> has 132 POIs, processed 132 POIs
+All Other Home Furnishings Stores -> has 32 POIs, processed 32 POIs
+All Other Miscellaneous Ambulatory Health Care Services -> has 21 POIs, processed 21 POIs
+Automotive Body, Paint, and Interior Repair and Maintenance -> has 94 POIs, processed 94 POIs
+Automotive Parts and Accessories Stores -> has 171 POIs, processed 171 POIs
+Barber Shops -> has 45 POIs, processed 45 POIs
+Beauty Salons -> has 177 POIs, processed 177 POIs
+Beer, Wine, and Liquor Stores -> has 64 POIs, processed 64 POIs
+Car Washes -> has 52 POIs, processed 52 POIs
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1370: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input, interpolation=interpolation
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1114: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input)
+Cemeteries and Crematories -> has 25 POIs, processed 25 POIs
+Child Day Care Services -> has 230 POIs, processed 230 POIs
+Child and Youth Services -> has 32 POIs, processed 32 POIs
+Colleges, Universities, and Professional Schools -> has 35 POIs, processed 35 POIs
+Commercial Banking -> has 147 POIs, processed 147 POIs
+Convenience Stores -> has 183 POIs, processed 183 POIs
+Cosmetics, Beauty Supplies, and Perfume Stores -> has 32 POIs, processed 32 POIs
+Credit Unions -> has 50 POIs, processed 50 POIs
+Department Stores -> has 31 POIs, processed 31 POIs
+Diet and Weight Reducing Centers -> has 21 POIs, processed 21 POIs
+Drinking Places (Alcoholic Beverages) -> has 88 POIs, processed 88 POIs
+Electronics Stores -> has 74 POIs, processed 74 POIs
+Elementary and Secondary Schools -> has 191 POIs, processed 191 POIs
+Family Clothing Stores -> has 24 POIs, processed 24 POIs
+Fire Protection -> has 84 POIs, processed 84 POIs
+Fitness and Recreational Sports Centers -> has 170 POIs, processed 170 POIs
+Florists -> has 48 POIs, processed 48 POIs
+Food (Health) Supplement Stores -> has 23 POIs, processed 23 POIs
+Full-Service Restaurants -> has 818 POIs, processed 818 POIs
+Funeral Homes and Funeral Services -> has 29 POIs, processed 29 POIs
+Furniture Stores -> has 87 POIs, processed 87 POIs
+Gasoline Stations with Convenience Stores -> has 314 POIs, processed 314 POIs
+General Automotive Repair -> has 221 POIs, processed 221 POIs
+Gift, Novelty, and Souvenir Stores -> has 35 POIs, processed 35 POIs
+Hardware Stores -> has 68 POIs, processed 68 POIs
+Hobby, Toy, and Game Stores -> has 30 POIs, processed 30 POIs
+Home Health Care Services -> has 48 POIs, processed 48 POIs
+Hotels (except Casino Hotels) and Motels -> has 133 POIs, processed 133 POIs
+Insurance Agencies and Brokerages -> has 225 POIs, processed 225 POIs
+Investment Advice -> has 29 POIs, processed 29 POIs
+Jewelry Stores -> has 37 POIs, processed 37 POIs
+Kidney Dialysis Centers -> has 25 POIs, processed 25 POIs
+Lessors of Miniwarehouses and Self-Storage Units -> has 74 POIs, processed 74 POIs
+Libraries and Archives -> has 24 POIs, processed 24 POIs
+Limited-Service Restaurants -> has 527 POIs, processed 527 POIs
+Mortgage and Nonmortgage Loan Brokers -> has 21 POIs, processed 21 POIs
+Motor Vehicle Towing -> has 47 POIs, processed 47 POIs
+Motorcycle, ATV, and All Other Motor Vehicle Dealers -> has 39 POIs, processed 39 POIs
+Museums -> has 20 POIs, processed 20 POIs
+Musical Instrument and Supplies Stores -> has 23 POIs, processed 23 POIs
+Nail Salons -> has 32 POIs, processed 32 POIs
+Nature Parks and Other Similar Institutions -> has 103 POIs, processed 103 POIs
+New Car Dealers -> has 50 POIs, processed 50 POIs
+Nursery, Garden Center, and Farm Supply Stores -> has 35 POIs, processed 35 POIs
+Nursing Care Facilities (Skilled Nursing Facilities) -> has 82 POIs, processed 82 POIs
+Office Supplies and Stationery Stores -> has 29 POIs, processed 29 POIs
+Offices of All Other Miscellaneous Health Practitioners -> has 30 POIs, processed 30 POIs
+Offices of Chiropractors -> has 62 POIs, processed 62 POIs
+Offices of Dentists -> has 316 POIs, processed 316 POIs
+Offices of Mental Health Practitioners (except Physicians) -> has 78 POIs, processed 78 POIs
+Offices of Physical, Occupational and Speech Therapists, and Audiologists -> has 41 POIs, processed 41 POIs
+Offices of Physicians (except Mental Health Specialists) -> has 318 POIs, processed 318 POIs
+Offices of Real Estate Agents and Brokers -> has 71 POIs, processed 71 POIs
+Optical Goods Stores -> has 50 POIs, processed 50 POIs
+Other Personal Care Services -> has 87 POIs, processed 87 POIs
+Pet Care (except Veterinary) Services -> has 39 POIs, processed 39 POIs
+Pet and Pet Supplies Stores -> has 91 POIs, processed 91 POIs
+Pharmacies and Drug Stores -> has 108 POIs, processed 108 POIs
+Plumbing, Heating, and Air-Conditioning Contractors -> has 28 POIs, processed 28 POIs
+Police Protection -> has 21 POIs, processed 21 POIs
+Postal Service -> has 39 POIs, processed 39 POIs
+Religious Organizations -> has 1116 POIs, processed 1116 POIs
+Retail Bakeries -> has 39 POIs, processed 39 POIs
+Services for the Elderly and Persons with Disabilities -> has 21 POIs, processed 21 POIs
+Sewing, Needlework, and Piece Goods Stores -> has 22 POIs, processed 22 POIs
+Shoe Stores -> has 25 POIs, processed 25 POIs
+Snack and Nonalcoholic Beverage Bars -> has 160 POIs, processed 160 POIs
+Sporting Goods Stores -> has 62 POIs, processed 62 POIs
+Sporting and Recreational Goods and Supplies Merchant Wholesalers -> has 27 POIs, processed 27 POIs
+Sports and Recreation Instruction -> has 42 POIs, processed 42 POIs
+Supermarkets and Other Grocery (except Convenience) Stores -> has 146 POIs, processed 146 POIs
+Tax Preparation Services -> has 42 POIs, processed 42 POIs
+Tobacco Stores -> has 28 POIs, processed 28 POIs
+Used Car Dealers -> has 104 POIs, processed 104 POIs
+Used Merchandise Stores -> has 78 POIs, processed 78 POIs
+Veterinary Services -> has 55 POIs, processed 55 POIs
+Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers -> has 30 POIs, processed 30 POIs
+Wireless Telecommunications Carriers (except Satellite) -> has 49 POIs, processed 49 POIs
+Women's Clothing Stores -> has 75 POIs, processed 75 POIs
+After clipping, 9795 POIs
+Received 7013 pre-specified POI ids -> missing 0 in dataframe
+Received 341 pre-specified CBG ids
+FINAL: number of CBGs (N) = 341, number of POIs (M) = 7013
+Num connected POI-CBG pairs (E) = 85632, network density (E/N) = 251.120
+486 CBGs in nyt -> matched 327 (0.673)
+Dwell time correction factors: mean = 0.17, min = 0.01, max = 0.85
+Precomputed POI-CBG networks were passed in; will NOT be applying dwell-time-based correction to hourly visits in dataframe
+Precomputed POI-CBG networks were passed in; will NOT be applying undersampling correction to hourly visits in dataframe
+2. Processing ACS data...
+CBGs: median population size = 1592, sum of population sizes = 690529
+Found 6 counties to track...
+Low coverage warning: only modeling 5/12 (41.7%) of the CBGs in 45017
+Low coverage warning: only modeling 9/15 (60.0%) of the CBGs in 45081
+Low coverage warning: only modeling 131/245 (53.5%) of the CBGs in 45079
+Low coverage warning: only modeling 11/18 (61.1%) of the CBGs in 45039
+Tracking infection trajectories from 6 of the counties
+Attribute p_black: was able to compute for 100.0% out of 341 CBGs, median is 0.207
+Attribute p_white: was able to compute for 100.0% out of 341 CBGs, median is 0.726
+Attribute median_household_income: was able to compute for 100.0% out of 341 CBGs, median is 54866.000
+Running model to compute r0 -> looping first week visit counts
+Extending time period; simulation now ends at 2021-04-11 23:00:00 (2520 hours)
+Total time to prep data: 1.852s
+11.3% of POIs have at least 50% of visitors coming from non-modeled CBGs
+Adjusted POI transmission rates with dwell time correction factors
+Received POI_CBG_VISITS_LIST, will NOT be computing hourly matrices on the fly
+=== PARAMETERS ===
+poi_psi = 1000, home_beta = 0.001, p_sick_at_t0 = 0.0001, num_hours = 2520
+POI factors (psi * dwell_time_factor / area) for first 10 POIs
+[0.00382534 0.00633429 0.02640603 0.00441185 0.03280245 0.01299436
+ 0.00332925 0.00505189 0.0411627  0.0338456 ]
+simulating confirmed cases: False, simulating deaths: False
+=== RESULTS (30 seeds) ===
+t=  0: L= 68.7 (  7.2)   I=  0.0 (  0.0)   R=  0.0 (  0.0)
+t= 24: L= 52.4 (  7.6)   I= 14.2 (  4.7)   R= 13.9 (  5.7)
+t= 48: L= 40.8 (  6.5)   I= 20.9 (  4.7)   R= 44.5 ( 11.6)
+t= 72: L= 31.2 (  5.8)   I= 24.4 (  4.2)   R= 83.2 ( 15.9)
+t= 96: L= 23.4 (  5.2)   I= 24.7 (  4.4)   R=121.6 ( 23.3)
+t=120: L= 18.5 (  4.4)   I= 22.3 (  5.0)   R=140.9 ( 24.4)
+t=144: L= 13.7 (  3.8)   I= 21.5 (  5.6)   R=171.0 ( 25.2)
+t=168: L= 10.8 (  3.2)   I= 18.7 (  5.2)   R=197.8 ( 26.6)
+t=192: L=  8.3 (  2.9)   I= 15.7 (  3.8)   R=223.8 ( 29.3)
+t=216: L=  6.2 (  2.2)   I= 13.3 (  3.6)   R=248.6 ( 32.4)
+t=240: L=  4.9 (  1.9)   I= 11.1 (  3.2)   R=269.8 ( 36.2)
+t=264: L=  3.8 (  1.8)   I=  9.1 (  3.3)   R=284.6 ( 39.5)
+t=288: L=  3.0 (  1.6)   I=  7.2 (  3.0)   R=291.8 ( 40.5)
+t=312: L=  2.4 (  1.6)   I=  5.9 (  2.7)   R=300.5 ( 42.7)
+t=336: L=  1.7 (  1.3)   I=  4.6 (  2.4)   R=307.9 ( 43.9)
+t=360: L=  1.2 (  1.2)   I=  3.8 (  2.0)   R=314.5 ( 45.7)
+t=384: L=  1.1 (  1.0)   I=  3.2 (  1.8)   R=319.5 ( 47.0)
+t=408: L=  1.0 (  1.0)   I=  2.4 (  1.5)   R=324.4 ( 48.6)
+t=432: L=  0.7 (  0.9)   I=  2.1 (  1.4)   R=326.9 ( 49.0)
+t=456: L=  0.5 (  0.7)   I=  1.6 (  1.2)   R=328.5 ( 49.4)
+t=480: L=  0.4 (  0.6)   I=  1.4 (  1.0)   R=330.3 ( 50.2)
+t=504: L=  0.3 (  0.5)   I=  1.2 (  1.0)   R=332.0 ( 51.0)
+t=528: L=  0.3 (  0.5)   I=  0.9 (  0.7)   R=333.4 ( 51.4)
+t=552: L=  0.2 (  0.5)   I=  0.8 (  0.8)   R=334.7 ( 51.8)
+t=576: L=  0.2 (  0.5)   I=  0.7 (  0.8)   R=335.9 ( 52.2)
+t=600: L=  0.2 (  0.5)   I=  0.6 (  0.8)   R=337.3 ( 52.6)
+t=624: L=  0.1 (  0.4)   I=  0.4 (  0.7)   R=337.6 ( 52.8)
+t=648: L=  0.1 (  0.3)   I=  0.4 (  0.7)   R=338.1 ( 52.8)
+t=672: L=  0.1 (  0.3)   I=  0.4 (  0.7)   R=338.3 ( 52.9)
+t=696: L=  0.1 (  0.3)   I=  0.3 (  0.6)   R=338.8 ( 53.2)
+t=720: L=  0.1 (  0.2)   I=  0.2 (  0.5)   R=339.2 ( 53.4)
+t=744: L=  0.0 (  0.2)   I=  0.2 (  0.4)   R=339.5 ( 53.5)
+t=768: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=339.8 ( 53.7)
+t=792: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=339.9 ( 53.7)
+t=816: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=339.9 ( 53.6)
+t=840: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=339.9 ( 53.7)
+t=864: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=339.9 ( 53.7)
+t=888: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=339.9 ( 53.7)
+t=912: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=340.0 ( 53.7)
+t=936: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=340.0 ( 53.7)
+t=960: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=340.0 ( 53.7)
+Disease died off after t=963. Stopping experiment.
+Average number of people infected across random seeds: 340.000
+Mean initial cases across seeds: 68.733; new cases from initial: 271.267; estimated R0: 3.941
+Simulation time = 6.488s -> 0.007s per iteration
+Saving model at /media/gpu/easystore/extra_safegraph_aggregate_models/full_models/fitted_model_2021_09_23_11_25_49_932041.pkl...
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 95 dates after applying min_threshold 10
+Successfully fitted and saved model and data_and_model_kwargs; total time taken 15.303 seconds
+Setting numpy cores to 1
+Running code on Deep; at Stanford=False
+ERROR:fbprophet:Importing plotly failed. Interactive plots will not work.
+loading configs from Deep_configs.pkl
+Running single model (config idx = 12). Kwargs are
+{
+    "data_kwargs": {
+        "MSA_name": "Columbia_SC",
+        "nrows": "None"
+    },
+    "experiment_to_run": "calibrate_r0",
+    "model_kwargs": {
+        "exogenous_model_kwargs": "{'home_beta': 0.001, 'poi_psi': 3500, 'p_sick_at_t0': 0.0001, 'inter_cbg_gamma': None, 'just_compute_r0': True}",
+        "include_cbg_prop_out": "False",
+        "include_inter_cbg_travel": "False",
+        "include_mask_use": "True",
+        "max_datetime": "2021-01-17 23:00:00",
+        "min_datetime": "2020-12-28 00:00:00",
+        "model_init_kwargs": "{'num_seeds': 30}",
+        "poi_attributes_to_clip": "{'clip_areas': True, 'clip_dwell_times': True, 'clip_visits': True}",
+        "simulation_kwargs": "{'use_aggregate_mobility': False, 'use_home_proportion_beta': False, 'use_inter_cbg_leak_factor': False}"
+    },
+    "version": "v2"
+}
+Fitting single model. Results will be saved using timestring 2021_09_23_11_25_49_932041
+cast_keys_to_ints column 20210106_20210120_aggregated_visitor_home_cbgs ...
+cast_keys_to_ints column 20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs ...
+Loaded 10247 rows for Columbia_SC in 0.299 seconds
+Loading IPF output for 504 hours
+Finished loading IPF output in 1.92s [0.00s per hour]
+Loading POI ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_poi_ids.csv
+Loading CBG ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_cbg_ids.csv
+Successfully loaded IPF output and POI/CBG ids for 2020-12-28-00 to 2021-01-17-23
+1. Processing SafeGraph data...
+Found 504 hours in all (2020.12.28.0 to 2021.1.17.23)
+Taking median over median_dwell from 20210106_20210120_median_of_median_dwell to 20210106_20210120_median_of_median_dwell
+Precomputed POI-CBG networks were passed in; will NOT be clipping hourly visits in dataframe
+Clipping areas: True (below=5, above=95), clipping dwell times: True (above=90), clipping visits: False (above=95)
+Found 89 sub-categories with >= 20 POIs and 38 top categories with >= 20 POIs -> covers 9795 POIs
+Could not cover 452/10247 POIs (4.4% POIs) -> dropping these POIs
+Accounting, Tax Preparation, Bookkeeping, and Payroll Services -> has 45 POIs, processed 3 POIs
+Activities Related to Credit Intermediation -> has 29 POIs, processed 8 POIs
+Automotive Equipment Rental and Leasing -> has 32 POIs, processed 32 POIs
+Automotive Parts, Accessories, and Tire Stores -> has 184 POIs, processed 13 POIs
+Automotive Repair and Maintenance -> has 405 POIs, processed 38 POIs
+Building Equipment Contractors -> has 29 POIs, processed 1 POIs
+Building Finishing Contractors -> has 25 POIs, processed 25 POIs
+Building Material and Supplies Dealers -> has 98 POIs, processed 30 POIs
+Clothing Stores -> has 142 POIs, processed 43 POIs
+Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly -> has 49 POIs, processed 49 POIs
+Electronics and Appliance Stores -> has 79 POIs, processed 5 POIs
+Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers -> has 38 POIs, processed 8 POIs
+Health and Personal Care Stores -> has 226 POIs, processed 13 POIs
+Home Furnishings Stores -> has 45 POIs, processed 13 POIs
+Individual and Family Services -> has 57 POIs, processed 4 POIs
+Jewelry, Luggage, and Leather Goods Stores -> has 42 POIs, processed 5 POIs
+Justice, Public Order, and Safety Activities -> has 124 POIs, processed 19 POIs
+Lawn and Garden Equipment and Supplies Stores -> has 47 POIs, processed 12 POIs
+Lessors of Real Estate -> has 75 POIs, processed 1 POIs
+Machinery, Equipment, and Supplies Merchant Wholesalers -> has 31 POIs, processed 31 POIs
+Management, Scientific, and Technical Consulting Services -> has 25 POIs, processed 25 POIs
+Medical and Diagnostic Laboratories -> has 29 POIs, processed 29 POIs
+Miscellaneous Durable Goods Merchant Wholesalers -> has 34 POIs, processed 7 POIs
+Museums, Historical Sites, and Similar Institutions -> has 136 POIs, processed 13 POIs
+Nondepository Credit Intermediation -> has 22 POIs, processed 22 POIs
+Offices of Other Health Practitioners -> has 219 POIs, processed 8 POIs
+Other Ambulatory Health Care Services -> has 32 POIs, processed 11 POIs
+Other Amusement and Recreation Industries -> has 238 POIs, processed 30 POIs
+Other Financial Investment Activities -> has 43 POIs, processed 14 POIs
+Other Miscellaneous Manufacturing -> has 24 POIs, processed 24 POIs
+Other Miscellaneous Store Retailers -> has 150 POIs, processed 31 POIs
+Other Motor Vehicle Dealers -> has 64 POIs, processed 25 POIs
+Other Personal Services -> has 64 POIs, processed 25 POIs
+Other Professional, Scientific, and Technical Services -> has 70 POIs, processed 15 POIs
+Other Schools and Instruction -> has 76 POIs, processed 34 POIs
+Outpatient Care Centers -> has 37 POIs, processed 12 POIs
+Personal and Household Goods Repair and Maintenance -> has 43 POIs, processed 43 POIs
+Specialty Food Stores -> has 55 POIs, processed 55 POIs
+All Other Amusement and Recreation Industries -> has 38 POIs, processed 38 POIs
+All Other General Merchandise Stores -> has 132 POIs, processed 132 POIs
+All Other Home Furnishings Stores -> has 32 POIs, processed 32 POIs
+All Other Miscellaneous Ambulatory Health Care Services -> has 21 POIs, processed 21 POIs
+Automotive Body, Paint, and Interior Repair and Maintenance -> has 94 POIs, processed 94 POIs
+Automotive Parts and Accessories Stores -> has 171 POIs, processed 171 POIs
+Barber Shops -> has 45 POIs, processed 45 POIs
+Beauty Salons -> has 177 POIs, processed 177 POIs
+Beer, Wine, and Liquor Stores -> has 64 POIs, processed 64 POIs
+Car Washes -> has 52 POIs, processed 52 POIs
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1370: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input, interpolation=interpolation
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1114: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input)
+Cemeteries and Crematories -> has 25 POIs, processed 25 POIs
+Child Day Care Services -> has 230 POIs, processed 230 POIs
+Child and Youth Services -> has 32 POIs, processed 32 POIs
+Colleges, Universities, and Professional Schools -> has 35 POIs, processed 35 POIs
+Commercial Banking -> has 147 POIs, processed 147 POIs
+Convenience Stores -> has 183 POIs, processed 183 POIs
+Cosmetics, Beauty Supplies, and Perfume Stores -> has 32 POIs, processed 32 POIs
+Credit Unions -> has 50 POIs, processed 50 POIs
+Department Stores -> has 31 POIs, processed 31 POIs
+Diet and Weight Reducing Centers -> has 21 POIs, processed 21 POIs
+Drinking Places (Alcoholic Beverages) -> has 88 POIs, processed 88 POIs
+Electronics Stores -> has 74 POIs, processed 74 POIs
+Elementary and Secondary Schools -> has 191 POIs, processed 191 POIs
+Family Clothing Stores -> has 24 POIs, processed 24 POIs
+Fire Protection -> has 84 POIs, processed 84 POIs
+Fitness and Recreational Sports Centers -> has 170 POIs, processed 170 POIs
+Florists -> has 48 POIs, processed 48 POIs
+Food (Health) Supplement Stores -> has 23 POIs, processed 23 POIs
+Full-Service Restaurants -> has 818 POIs, processed 818 POIs
+Funeral Homes and Funeral Services -> has 29 POIs, processed 29 POIs
+Furniture Stores -> has 87 POIs, processed 87 POIs
+Gasoline Stations with Convenience Stores -> has 314 POIs, processed 314 POIs
+General Automotive Repair -> has 221 POIs, processed 221 POIs
+Gift, Novelty, and Souvenir Stores -> has 35 POIs, processed 35 POIs
+Hardware Stores -> has 68 POIs, processed 68 POIs
+Hobby, Toy, and Game Stores -> has 30 POIs, processed 30 POIs
+Home Health Care Services -> has 48 POIs, processed 48 POIs
+Hotels (except Casino Hotels) and Motels -> has 133 POIs, processed 133 POIs
+Insurance Agencies and Brokerages -> has 225 POIs, processed 225 POIs
+Investment Advice -> has 29 POIs, processed 29 POIs
+Jewelry Stores -> has 37 POIs, processed 37 POIs
+Kidney Dialysis Centers -> has 25 POIs, processed 25 POIs
+Lessors of Miniwarehouses and Self-Storage Units -> has 74 POIs, processed 74 POIs
+Libraries and Archives -> has 24 POIs, processed 24 POIs
+Limited-Service Restaurants -> has 527 POIs, processed 527 POIs
+Mortgage and Nonmortgage Loan Brokers -> has 21 POIs, processed 21 POIs
+Motor Vehicle Towing -> has 47 POIs, processed 47 POIs
+Motorcycle, ATV, and All Other Motor Vehicle Dealers -> has 39 POIs, processed 39 POIs
+Museums -> has 20 POIs, processed 20 POIs
+Musical Instrument and Supplies Stores -> has 23 POIs, processed 23 POIs
+Nail Salons -> has 32 POIs, processed 32 POIs
+Nature Parks and Other Similar Institutions -> has 103 POIs, processed 103 POIs
+New Car Dealers -> has 50 POIs, processed 50 POIs
+Nursery, Garden Center, and Farm Supply Stores -> has 35 POIs, processed 35 POIs
+Nursing Care Facilities (Skilled Nursing Facilities) -> has 82 POIs, processed 82 POIs
+Office Supplies and Stationery Stores -> has 29 POIs, processed 29 POIs
+Offices of All Other Miscellaneous Health Practitioners -> has 30 POIs, processed 30 POIs
+Offices of Chiropractors -> has 62 POIs, processed 62 POIs
+Offices of Dentists -> has 316 POIs, processed 316 POIs
+Offices of Mental Health Practitioners (except Physicians) -> has 78 POIs, processed 78 POIs
+Offices of Physical, Occupational and Speech Therapists, and Audiologists -> has 41 POIs, processed 41 POIs
+Offices of Physicians (except Mental Health Specialists) -> has 318 POIs, processed 318 POIs
+Offices of Real Estate Agents and Brokers -> has 71 POIs, processed 71 POIs
+Optical Goods Stores -> has 50 POIs, processed 50 POIs
+Other Personal Care Services -> has 87 POIs, processed 87 POIs
+Pet Care (except Veterinary) Services -> has 39 POIs, processed 39 POIs
+Pet and Pet Supplies Stores -> has 91 POIs, processed 91 POIs
+Pharmacies and Drug Stores -> has 108 POIs, processed 108 POIs
+Plumbing, Heating, and Air-Conditioning Contractors -> has 28 POIs, processed 28 POIs
+Police Protection -> has 21 POIs, processed 21 POIs
+Postal Service -> has 39 POIs, processed 39 POIs
+Religious Organizations -> has 1116 POIs, processed 1116 POIs
+Retail Bakeries -> has 39 POIs, processed 39 POIs
+Services for the Elderly and Persons with Disabilities -> has 21 POIs, processed 21 POIs
+Sewing, Needlework, and Piece Goods Stores -> has 22 POIs, processed 22 POIs
+Shoe Stores -> has 25 POIs, processed 25 POIs
+Snack and Nonalcoholic Beverage Bars -> has 160 POIs, processed 160 POIs
+Sporting Goods Stores -> has 62 POIs, processed 62 POIs
+Sporting and Recreational Goods and Supplies Merchant Wholesalers -> has 27 POIs, processed 27 POIs
+Sports and Recreation Instruction -> has 42 POIs, processed 42 POIs
+Supermarkets and Other Grocery (except Convenience) Stores -> has 146 POIs, processed 146 POIs
+Tax Preparation Services -> has 42 POIs, processed 42 POIs
+Tobacco Stores -> has 28 POIs, processed 28 POIs
+Used Car Dealers -> has 104 POIs, processed 104 POIs
+Used Merchandise Stores -> has 78 POIs, processed 78 POIs
+Veterinary Services -> has 55 POIs, processed 55 POIs
+Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers -> has 30 POIs, processed 30 POIs
+Wireless Telecommunications Carriers (except Satellite) -> has 49 POIs, processed 49 POIs
+Women's Clothing Stores -> has 75 POIs, processed 75 POIs
+After clipping, 9795 POIs
+Received 7013 pre-specified POI ids -> missing 0 in dataframe
+Received 341 pre-specified CBG ids
+FINAL: number of CBGs (N) = 341, number of POIs (M) = 7013
+Num connected POI-CBG pairs (E) = 85632, network density (E/N) = 251.120
+486 CBGs in nyt -> matched 327 (0.673)
+Dwell time correction factors: mean = 0.17, min = 0.01, max = 0.85
+Precomputed POI-CBG networks were passed in; will NOT be applying dwell-time-based correction to hourly visits in dataframe
+Precomputed POI-CBG networks were passed in; will NOT be applying undersampling correction to hourly visits in dataframe
+2. Processing ACS data...
+CBGs: median population size = 1592, sum of population sizes = 690529
+Found 6 counties to track...
+Low coverage warning: only modeling 9/15 (60.0%) of the CBGs in 45081
+Low coverage warning: only modeling 131/245 (53.5%) of the CBGs in 45079
+Low coverage warning: only modeling 5/12 (41.7%) of the CBGs in 45017
+Low coverage warning: only modeling 11/18 (61.1%) of the CBGs in 45039
+Tracking infection trajectories from 6 of the counties
+Attribute p_black: was able to compute for 100.0% out of 341 CBGs, median is 0.207
+Attribute p_white: was able to compute for 100.0% out of 341 CBGs, median is 0.726
+Attribute median_household_income: was able to compute for 100.0% out of 341 CBGs, median is 54866.000
+Running model to compute r0 -> looping first week visit counts
+Extending time period; simulation now ends at 2021-04-11 23:00:00 (2520 hours)
+Total time to prep data: 1.840s
+11.3% of POIs have at least 50% of visitors coming from non-modeled CBGs
+Adjusted POI transmission rates with dwell time correction factors
+Received POI_CBG_VISITS_LIST, will NOT be computing hourly matrices on the fly
+=== PARAMETERS ===
+poi_psi = 3500, home_beta = 0.001, p_sick_at_t0 = 0.0001, num_hours = 2520
+POI factors (psi * dwell_time_factor / area) for first 10 POIs
+[0.01338867 0.02217002 0.09242111 0.01544149 0.11480858 0.04548025
+ 0.01165237 0.01768161 0.14406945 0.11845959]
+simulating confirmed cases: False, simulating deaths: False
+=== RESULTS (30 seeds) ===
+t=  0: L= 68.7 (  7.2)   I=  0.0 (  0.0)   R=  0.0 (  0.0)
+t= 24: L= 52.5 (  5.8)   I= 14.1 (  3.9)   R= 41.4 ( 14.4)
+t= 48: L= 41.0 (  5.2)   I= 20.7 (  4.5)   R=139.4 ( 40.2)
+t= 72: L= 32.3 (  5.6)   I= 22.7 (  4.3)   R=261.6 ( 59.7)
+t= 96: L= 24.3 (  5.3)   I= 23.4 (  4.1)   R=370.5 ( 74.3)
+t=120: L= 18.3 (  4.3)   I= 22.5 (  4.1)   R=420.3 ( 79.1)
+t=144: L= 14.4 (  3.4)   I= 20.8 (  4.0)   R=512.4 ( 83.1)
+t=168: L= 11.3 (  3.1)   I= 18.2 (  3.7)   R=586.1 ( 89.0)
+t=192: L=  8.7 (  2.7)   I= 16.3 (  3.2)   R=666.2 ( 97.5)
+t=216: L=  6.9 (  2.7)   I= 13.4 (  3.1)   R=742.6 (103.6)
+t=240: L=  5.1 (  2.1)   I= 11.7 (  2.7)   R=809.9 (111.8)
+t=264: L=  3.9 (  1.9)   I= 10.2 (  2.5)   R=858.3 (117.4)
+t=288: L=  3.1 (  1.6)   I=  7.8 (  2.7)   R=877.6 (118.7)
+t=312: L=  2.6 (  1.4)   I=  6.1 (  2.1)   R=905.3 (122.8)
+t=336: L=  1.9 (  1.4)   I=  5.2 (  2.0)   R=924.6 (127.1)
+t=360: L=  1.5 (  1.2)   I=  4.0 (  2.1)   R=945.0 (131.9)
+t=384: L=  1.0 (  0.9)   I=  3.4 (  2.1)   R=964.0 (139.1)
+t=408: L=  0.8 (  0.8)   I=  3.0 (  2.1)   R=981.2 (145.5)
+t=432: L=  0.7 (  0.7)   I=  2.3 (  1.7)   R=992.9 (149.5)
+t=456: L=  0.5 (  0.6)   I=  1.9 (  1.4)   R=996.7 (151.5)
+t=480: L=  0.4 (  0.6)   I=  1.7 (  1.4)   R=1004.2 (153.3)
+t=504: L=  0.3 (  0.5)   I=  1.2 (  1.2)   R=1009.1 (154.6)
+t=528: L=  0.2 (  0.4)   I=  0.9 (  1.1)   R=1014.4 (157.5)
+t=552: L=  0.2 (  0.4)   I=  0.7 (  0.9)   R=1019.9 (160.6)
+t=576: L=  0.2 (  0.4)   I=  0.6 (  0.7)   R=1023.0 (161.3)
+t=600: L=  0.1 (  0.3)   I=  0.5 (  0.6)   R=1025.3 (161.4)
+t=624: L=  0.1 (  0.3)   I=  0.3 (  0.5)   R=1026.1 (161.4)
+t=648: L=  0.1 (  0.3)   I=  0.3 (  0.5)   R=1027.6 (161.9)
+t=672: L=  0.1 (  0.2)   I=  0.3 (  0.4)   R=1028.9 (161.8)
+t=696: L=  0.1 (  0.2)   I=  0.3 (  0.4)   R=1030.2 (161.8)
+t=720: L=  0.0 (  0.2)   I=  0.3 (  0.4)   R=1031.0 (161.6)
+t=744: L=  0.0 (  0.2)   I=  0.2 (  0.4)   R=1031.9 (161.6)
+t=768: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1032.6 (161.5)
+t=792: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1032.9 (161.7)
+t=816: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1033.2 (161.7)
+t=840: L=  0.0 (  0.0)   I=  0.1 (  0.3)   R=1033.5 (161.5)
+t=864: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1034.0 (161.4)
+t=888: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1034.5 (161.3)
+t=912: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1035.1 (161.3)
+t=936: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=1035.3 (161.2)
+t=960: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=1035.4 (161.3)
+Disease died off after t=977. Stopping experiment.
+Average number of people infected across random seeds: 1035.533
+Mean initial cases across seeds: 68.733; new cases from initial: 966.800; estimated R0: 14.089
+Simulation time = 6.424s -> 0.007s per iteration
+Saving model at /media/gpu/easystore/extra_safegraph_aggregate_models/full_models/fitted_model_2021_09_23_11_25_49_932041.pkl...
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 95 dates after applying min_threshold 10
+Successfully fitted and saved model and data_and_model_kwargs; total time taken 15.442 seconds
+Setting numpy cores to 1
+Running code on Deep; at Stanford=False
+ERROR:fbprophet:Importing plotly failed. Interactive plots will not work.
+loading configs from Deep_configs.pkl
+Running single model (config idx = 12). Kwargs are
+{
+    "data_kwargs": {
+        "MSA_name": "Columbia_SC",
+        "nrows": "None"
+    },
+    "experiment_to_run": "calibrate_r0",
+    "model_kwargs": {
+        "exogenous_model_kwargs": "{'home_beta': 0.001, 'poi_psi': 3500, 'p_sick_at_t0': 0.0001, 'inter_cbg_gamma': None, 'just_compute_r0': True}",
+        "include_cbg_prop_out": "False",
+        "include_inter_cbg_travel": "False",
+        "include_mask_use": "True",
+        "max_datetime": "2021-01-17 23:00:00",
+        "min_datetime": "2020-12-28 00:00:00",
+        "model_init_kwargs": "{'num_seeds': 30}",
+        "poi_attributes_to_clip": "{'clip_areas': True, 'clip_dwell_times': True, 'clip_visits': True}",
+        "simulation_kwargs": "{'use_aggregate_mobility': False, 'use_home_proportion_beta': False, 'use_inter_cbg_leak_factor': False}"
+    },
+    "version": "v2"
+}
+Fitting single model. Results will be saved using timestring 2021_09_23_11_25_49_932041
+cast_keys_to_ints column 20210106_20210120_aggregated_visitor_home_cbgs ...
+cast_keys_to_ints column 20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs ...
+Loaded 10247 rows for Columbia_SC in 0.301 seconds
+Loading IPF output for 504 hours
+Finished loading IPF output in 1.94s [0.00s per hour]
+Loading POI ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_poi_ids.csv
+Loading CBG ids from /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC/2020-12-28_to_2021-01-17_cbg_ids.csv
+Successfully loaded IPF output and POI/CBG ids for 2020-12-28-00 to 2021-01-17-23
+1. Processing SafeGraph data...
+Found 504 hours in all (2020.12.28.0 to 2021.1.17.23)
+Taking median over median_dwell from 20210106_20210120_median_of_median_dwell to 20210106_20210120_median_of_median_dwell
+Precomputed POI-CBG networks were passed in; will NOT be clipping hourly visits in dataframe
+Clipping areas: True (below=5, above=95), clipping dwell times: True (above=90), clipping visits: False (above=95)
+Found 89 sub-categories with >= 20 POIs and 38 top categories with >= 20 POIs -> covers 9795 POIs
+Could not cover 452/10247 POIs (4.4% POIs) -> dropping these POIs
+Accounting, Tax Preparation, Bookkeeping, and Payroll Services -> has 45 POIs, processed 3 POIs
+Activities Related to Credit Intermediation -> has 29 POIs, processed 8 POIs
+Automotive Equipment Rental and Leasing -> has 32 POIs, processed 32 POIs
+Automotive Parts, Accessories, and Tire Stores -> has 184 POIs, processed 13 POIs
+Automotive Repair and Maintenance -> has 405 POIs, processed 38 POIs
+Building Equipment Contractors -> has 29 POIs, processed 1 POIs
+Building Finishing Contractors -> has 25 POIs, processed 25 POIs
+Building Material and Supplies Dealers -> has 98 POIs, processed 30 POIs
+Clothing Stores -> has 142 POIs, processed 43 POIs
+Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly -> has 49 POIs, processed 49 POIs
+Electronics and Appliance Stores -> has 79 POIs, processed 5 POIs
+Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers -> has 38 POIs, processed 8 POIs
+Health and Personal Care Stores -> has 226 POIs, processed 13 POIs
+Home Furnishings Stores -> has 45 POIs, processed 13 POIs
+Individual and Family Services -> has 57 POIs, processed 4 POIs
+Jewelry, Luggage, and Leather Goods Stores -> has 42 POIs, processed 5 POIs
+Justice, Public Order, and Safety Activities -> has 124 POIs, processed 19 POIs
+Lawn and Garden Equipment and Supplies Stores -> has 47 POIs, processed 12 POIs
+Lessors of Real Estate -> has 75 POIs, processed 1 POIs
+Machinery, Equipment, and Supplies Merchant Wholesalers -> has 31 POIs, processed 31 POIs
+Management, Scientific, and Technical Consulting Services -> has 25 POIs, processed 25 POIs
+Medical and Diagnostic Laboratories -> has 29 POIs, processed 29 POIs
+Miscellaneous Durable Goods Merchant Wholesalers -> has 34 POIs, processed 7 POIs
+Museums, Historical Sites, and Similar Institutions -> has 136 POIs, processed 13 POIs
+Nondepository Credit Intermediation -> has 22 POIs, processed 22 POIs
+Offices of Other Health Practitioners -> has 219 POIs, processed 8 POIs
+Other Ambulatory Health Care Services -> has 32 POIs, processed 11 POIs
+Other Amusement and Recreation Industries -> has 238 POIs, processed 30 POIs
+Other Financial Investment Activities -> has 43 POIs, processed 14 POIs
+Other Miscellaneous Manufacturing -> has 24 POIs, processed 24 POIs
+Other Miscellaneous Store Retailers -> has 150 POIs, processed 31 POIs
+Other Motor Vehicle Dealers -> has 64 POIs, processed 25 POIs
+Other Personal Services -> has 64 POIs, processed 25 POIs
+Other Professional, Scientific, and Technical Services -> has 70 POIs, processed 15 POIs
+Other Schools and Instruction -> has 76 POIs, processed 34 POIs
+Outpatient Care Centers -> has 37 POIs, processed 12 POIs
+Personal and Household Goods Repair and Maintenance -> has 43 POIs, processed 43 POIs
+Specialty Food Stores -> has 55 POIs, processed 55 POIs
+All Other Amusement and Recreation Industries -> has 38 POIs, processed 38 POIs
+All Other General Merchandise Stores -> has 132 POIs, processed 132 POIs
+All Other Home Furnishings Stores -> has 32 POIs, processed 32 POIs
+All Other Miscellaneous Ambulatory Health Care Services -> has 21 POIs, processed 21 POIs
+Automotive Body, Paint, and Interior Repair and Maintenance -> has 94 POIs, processed 94 POIs
+Automotive Parts and Accessories Stores -> has 171 POIs, processed 171 POIs
+Barber Shops -> has 45 POIs, processed 45 POIs
+Beauty Salons -> has 177 POIs, processed 177 POIs
+Beer, Wine, and Liquor Stores -> has 64 POIs, processed 64 POIs
+Car Washes -> has 52 POIs, processed 52 POIs
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1370: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input, interpolation=interpolation
+/media/gpu/easystore/covid-mobility-tool/env_dir/lib/python3.7/site-packages/numpy/lib/nanfunctions.py:1114: RuntimeWarning: All-NaN slice encountered
+  overwrite_input=overwrite_input)
+Cemeteries and Crematories -> has 25 POIs, processed 25 POIs
+Child Day Care Services -> has 230 POIs, processed 230 POIs
+Child and Youth Services -> has 32 POIs, processed 32 POIs
+Colleges, Universities, and Professional Schools -> has 35 POIs, processed 35 POIs
+Commercial Banking -> has 147 POIs, processed 147 POIs
+Convenience Stores -> has 183 POIs, processed 183 POIs
+Cosmetics, Beauty Supplies, and Perfume Stores -> has 32 POIs, processed 32 POIs
+Credit Unions -> has 50 POIs, processed 50 POIs
+Department Stores -> has 31 POIs, processed 31 POIs
+Diet and Weight Reducing Centers -> has 21 POIs, processed 21 POIs
+Drinking Places (Alcoholic Beverages) -> has 88 POIs, processed 88 POIs
+Electronics Stores -> has 74 POIs, processed 74 POIs
+Elementary and Secondary Schools -> has 191 POIs, processed 191 POIs
+Family Clothing Stores -> has 24 POIs, processed 24 POIs
+Fire Protection -> has 84 POIs, processed 84 POIs
+Fitness and Recreational Sports Centers -> has 170 POIs, processed 170 POIs
+Florists -> has 48 POIs, processed 48 POIs
+Food (Health) Supplement Stores -> has 23 POIs, processed 23 POIs
+Full-Service Restaurants -> has 818 POIs, processed 818 POIs
+Funeral Homes and Funeral Services -> has 29 POIs, processed 29 POIs
+Furniture Stores -> has 87 POIs, processed 87 POIs
+Gasoline Stations with Convenience Stores -> has 314 POIs, processed 314 POIs
+General Automotive Repair -> has 221 POIs, processed 221 POIs
+Gift, Novelty, and Souvenir Stores -> has 35 POIs, processed 35 POIs
+Hardware Stores -> has 68 POIs, processed 68 POIs
+Hobby, Toy, and Game Stores -> has 30 POIs, processed 30 POIs
+Home Health Care Services -> has 48 POIs, processed 48 POIs
+Hotels (except Casino Hotels) and Motels -> has 133 POIs, processed 133 POIs
+Insurance Agencies and Brokerages -> has 225 POIs, processed 225 POIs
+Investment Advice -> has 29 POIs, processed 29 POIs
+Jewelry Stores -> has 37 POIs, processed 37 POIs
+Kidney Dialysis Centers -> has 25 POIs, processed 25 POIs
+Lessors of Miniwarehouses and Self-Storage Units -> has 74 POIs, processed 74 POIs
+Libraries and Archives -> has 24 POIs, processed 24 POIs
+Limited-Service Restaurants -> has 527 POIs, processed 527 POIs
+Mortgage and Nonmortgage Loan Brokers -> has 21 POIs, processed 21 POIs
+Motor Vehicle Towing -> has 47 POIs, processed 47 POIs
+Motorcycle, ATV, and All Other Motor Vehicle Dealers -> has 39 POIs, processed 39 POIs
+Museums -> has 20 POIs, processed 20 POIs
+Musical Instrument and Supplies Stores -> has 23 POIs, processed 23 POIs
+Nail Salons -> has 32 POIs, processed 32 POIs
+Nature Parks and Other Similar Institutions -> has 103 POIs, processed 103 POIs
+New Car Dealers -> has 50 POIs, processed 50 POIs
+Nursery, Garden Center, and Farm Supply Stores -> has 35 POIs, processed 35 POIs
+Nursing Care Facilities (Skilled Nursing Facilities) -> has 82 POIs, processed 82 POIs
+Office Supplies and Stationery Stores -> has 29 POIs, processed 29 POIs
+Offices of All Other Miscellaneous Health Practitioners -> has 30 POIs, processed 30 POIs
+Offices of Chiropractors -> has 62 POIs, processed 62 POIs
+Offices of Dentists -> has 316 POIs, processed 316 POIs
+Offices of Mental Health Practitioners (except Physicians) -> has 78 POIs, processed 78 POIs
+Offices of Physical, Occupational and Speech Therapists, and Audiologists -> has 41 POIs, processed 41 POIs
+Offices of Physicians (except Mental Health Specialists) -> has 318 POIs, processed 318 POIs
+Offices of Real Estate Agents and Brokers -> has 71 POIs, processed 71 POIs
+Optical Goods Stores -> has 50 POIs, processed 50 POIs
+Other Personal Care Services -> has 87 POIs, processed 87 POIs
+Pet Care (except Veterinary) Services -> has 39 POIs, processed 39 POIs
+Pet and Pet Supplies Stores -> has 91 POIs, processed 91 POIs
+Pharmacies and Drug Stores -> has 108 POIs, processed 108 POIs
+Plumbing, Heating, and Air-Conditioning Contractors -> has 28 POIs, processed 28 POIs
+Police Protection -> has 21 POIs, processed 21 POIs
+Postal Service -> has 39 POIs, processed 39 POIs
+Religious Organizations -> has 1116 POIs, processed 1116 POIs
+Retail Bakeries -> has 39 POIs, processed 39 POIs
+Services for the Elderly and Persons with Disabilities -> has 21 POIs, processed 21 POIs
+Sewing, Needlework, and Piece Goods Stores -> has 22 POIs, processed 22 POIs
+Shoe Stores -> has 25 POIs, processed 25 POIs
+Snack and Nonalcoholic Beverage Bars -> has 160 POIs, processed 160 POIs
+Sporting Goods Stores -> has 62 POIs, processed 62 POIs
+Sporting and Recreational Goods and Supplies Merchant Wholesalers -> has 27 POIs, processed 27 POIs
+Sports and Recreation Instruction -> has 42 POIs, processed 42 POIs
+Supermarkets and Other Grocery (except Convenience) Stores -> has 146 POIs, processed 146 POIs
+Tax Preparation Services -> has 42 POIs, processed 42 POIs
+Tobacco Stores -> has 28 POIs, processed 28 POIs
+Used Car Dealers -> has 104 POIs, processed 104 POIs
+Used Merchandise Stores -> has 78 POIs, processed 78 POIs
+Veterinary Services -> has 55 POIs, processed 55 POIs
+Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers -> has 30 POIs, processed 30 POIs
+Wireless Telecommunications Carriers (except Satellite) -> has 49 POIs, processed 49 POIs
+Women's Clothing Stores -> has 75 POIs, processed 75 POIs
+After clipping, 9795 POIs
+Received 7013 pre-specified POI ids -> missing 0 in dataframe
+Received 341 pre-specified CBG ids
+FINAL: number of CBGs (N) = 341, number of POIs (M) = 7013
+Num connected POI-CBG pairs (E) = 85632, network density (E/N) = 251.120
+486 CBGs in nyt -> matched 327 (0.673)
+Dwell time correction factors: mean = 0.17, min = 0.01, max = 0.85
+Precomputed POI-CBG networks were passed in; will NOT be applying dwell-time-based correction to hourly visits in dataframe
+Precomputed POI-CBG networks were passed in; will NOT be applying undersampling correction to hourly visits in dataframe
+2. Processing ACS data...
+CBGs: median population size = 1592, sum of population sizes = 690529
+Found 6 counties to track...
+Low coverage warning: only modeling 9/15 (60.0%) of the CBGs in 45081
+Low coverage warning: only modeling 11/18 (61.1%) of the CBGs in 45039
+Low coverage warning: only modeling 5/12 (41.7%) of the CBGs in 45017
+Low coverage warning: only modeling 131/245 (53.5%) of the CBGs in 45079
+Tracking infection trajectories from 6 of the counties
+Attribute p_black: was able to compute for 100.0% out of 341 CBGs, median is 0.207
+Attribute p_white: was able to compute for 100.0% out of 341 CBGs, median is 0.726
+Attribute median_household_income: was able to compute for 100.0% out of 341 CBGs, median is 54866.000
+Running model to compute r0 -> looping first week visit counts
+Extending time period; simulation now ends at 2021-04-11 23:00:00 (2520 hours)
+Total time to prep data: 1.877s
+11.3% of POIs have at least 50% of visitors coming from non-modeled CBGs
+Adjusted POI transmission rates with dwell time correction factors
+Received POI_CBG_VISITS_LIST, will NOT be computing hourly matrices on the fly
+=== PARAMETERS ===
+poi_psi = 3500, home_beta = 0.001, p_sick_at_t0 = 0.0001, num_hours = 2520
+POI factors (psi * dwell_time_factor / area) for first 10 POIs
+[0.01338867 0.02217002 0.09242111 0.01544149 0.11480858 0.04548025
+ 0.01165237 0.01768161 0.14406945 0.11845959]
+simulating confirmed cases: False, simulating deaths: False
+=== RESULTS (30 seeds) ===
+t=  0: L= 68.7 (  7.2)   I=  0.0 (  0.0)   R=  0.0 (  0.0)
+t= 24: L= 52.5 (  5.8)   I= 14.1 (  3.9)   R= 41.4 ( 14.4)
+t= 48: L= 41.0 (  5.2)   I= 20.7 (  4.5)   R=139.4 ( 40.2)
+t= 72: L= 32.3 (  5.6)   I= 22.7 (  4.3)   R=261.6 ( 59.7)
+t= 96: L= 24.3 (  5.3)   I= 23.4 (  4.1)   R=370.5 ( 74.3)
+t=120: L= 18.3 (  4.3)   I= 22.5 (  4.1)   R=420.3 ( 79.1)
+t=144: L= 14.4 (  3.4)   I= 20.8 (  4.0)   R=512.4 ( 83.1)
+t=168: L= 11.3 (  3.1)   I= 18.2 (  3.7)   R=586.1 ( 89.0)
+t=192: L=  8.7 (  2.7)   I= 16.3 (  3.2)   R=666.2 ( 97.5)
+t=216: L=  6.9 (  2.7)   I= 13.4 (  3.1)   R=742.6 (103.6)
+t=240: L=  5.1 (  2.1)   I= 11.7 (  2.7)   R=809.9 (111.8)
+t=264: L=  3.9 (  1.9)   I= 10.2 (  2.5)   R=858.3 (117.4)
+t=288: L=  3.1 (  1.6)   I=  7.8 (  2.7)   R=877.6 (118.7)
+t=312: L=  2.6 (  1.4)   I=  6.1 (  2.1)   R=905.3 (122.8)
+t=336: L=  1.9 (  1.4)   I=  5.2 (  2.0)   R=924.6 (127.1)
+t=360: L=  1.5 (  1.2)   I=  4.0 (  2.1)   R=945.0 (131.9)
+t=384: L=  1.0 (  0.9)   I=  3.4 (  2.1)   R=964.0 (139.1)
+t=408: L=  0.8 (  0.8)   I=  3.0 (  2.1)   R=981.2 (145.5)
+t=432: L=  0.7 (  0.7)   I=  2.3 (  1.7)   R=992.9 (149.5)
+t=456: L=  0.5 (  0.6)   I=  1.9 (  1.4)   R=996.7 (151.5)
+t=480: L=  0.4 (  0.6)   I=  1.7 (  1.4)   R=1004.2 (153.3)
+t=504: L=  0.3 (  0.5)   I=  1.2 (  1.2)   R=1009.1 (154.6)
+t=528: L=  0.2 (  0.4)   I=  0.9 (  1.1)   R=1014.4 (157.5)
+t=552: L=  0.2 (  0.4)   I=  0.7 (  0.9)   R=1019.9 (160.6)
+t=576: L=  0.2 (  0.4)   I=  0.6 (  0.7)   R=1023.0 (161.3)
+t=600: L=  0.1 (  0.3)   I=  0.5 (  0.6)   R=1025.3 (161.4)
+t=624: L=  0.1 (  0.3)   I=  0.3 (  0.5)   R=1026.1 (161.4)
+t=648: L=  0.1 (  0.3)   I=  0.3 (  0.5)   R=1027.6 (161.9)
+t=672: L=  0.1 (  0.2)   I=  0.3 (  0.4)   R=1028.9 (161.8)
+t=696: L=  0.1 (  0.2)   I=  0.3 (  0.4)   R=1030.2 (161.8)
+t=720: L=  0.0 (  0.2)   I=  0.3 (  0.4)   R=1031.0 (161.6)
+t=744: L=  0.0 (  0.2)   I=  0.2 (  0.4)   R=1031.9 (161.6)
+t=768: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1032.6 (161.5)
+t=792: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1032.9 (161.7)
+t=816: L=  0.0 (  0.2)   I=  0.1 (  0.3)   R=1033.2 (161.7)
+t=840: L=  0.0 (  0.0)   I=  0.1 (  0.3)   R=1033.5 (161.5)
+t=864: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1034.0 (161.4)
+t=888: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1034.5 (161.3)
+t=912: L=  0.0 (  0.0)   I=  0.1 (  0.2)   R=1035.1 (161.3)
+t=936: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=1035.3 (161.2)
+t=960: L=  0.0 (  0.0)   I=  0.0 (  0.2)   R=1035.4 (161.3)
+Disease died off after t=977. Stopping experiment.
+Average number of people infected across random seeds: 1035.533
+Mean initial cases across seeds: 68.733; new cases from initial: 966.800; estimated R0: 14.089
+Simulation time = 6.613s -> 0.007s per iteration
+Saving model at /media/gpu/easystore/extra_safegraph_aggregate_models/full_models/fitted_model_2021_09_23_11_25_49_932041.pkl...
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 35 dates after applying min_threshold 2
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 50 dates after applying min_threshold 3
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 72 dates after applying min_threshold 5
+Warning: dropped 95 dates after applying min_threshold 10
+Warning: dropped 95 dates after applying min_threshold 10
+Successfully fitted and saved model and data_and_model_kwargs; total time taken 15.684 seconds

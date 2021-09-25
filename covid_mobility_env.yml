@@ -1,4 +1,4 @@
-name: base
+name: env_v2
 channels:
   - conda-forge
   - defaults
@@ -444,5 +444,5 @@ dependencies:
     - zipp==3.1.0
     - zope-deprecation==4.4.0
     - zope-interface==5.2.0
-prefix: /dfs/scratch1/safegraph_homes/safegraph_env_v3/safegraph_env_v3
+prefix: /media/gpu/easystore/covid-mobility-tool/env_v2
 
