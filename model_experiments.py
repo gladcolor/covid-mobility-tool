@@ -283,7 +283,9 @@ def fit_disease_model_on_real_data(d,
     print('FINAL: number of CBGs (N) = %d, number of POIs (M) = %d' % (N, M))
 
     # convert data structures with CBG names to CBG indices
+    # fill the matric using proportions
     poi_cbg_proportions_mat = np.zeros((M, N))
+    # for each POI
     for poi_idx, old_dict in enumerate(poi_cbg_proportions):
         for string_key, prop in old_dict.items():
             string_key = str(string_key).zfill(12)
@@ -368,7 +370,7 @@ def fit_disease_model_on_real_data(d,
         print('CBGs: median population size = %d, sum of population sizes = %d' %
           (np.median(cbg_sizes), np.sum(cbg_sizes)))
         
-    if counties_to_track is not None:
+    if counties_to_track is not None:  # extract blockgroups for each county
         print('Found %d counties to track...' % len(counties_to_track))
         county2cbgs = {}
         for county in counties_to_track:
@@ -469,20 +471,20 @@ def fit_disease_model_on_real_data(d,
         init_df = pd.read_csv(fn)
         init_df['census_block_group'] = init_df['census_block_group'].astype(str).str.zfill(12)
         init_df['county_fips'] = init_df['county_fips'].astype(str).str.zfill(5)
-        print('init_df.dtypes')
-        print(init_df.dtypes)
+        # print('init_df.dtypes')
+        # print(init_df.dtypes)
 
-        print('init_df.head(5)')
-        print(init_df.head(5))
+        # print('init_df.head(5)')
+        # print(init_df.head(5))
 
         init_df = init_df.set_index('census_block_group')
-        print('all_unique_cbgs')
-        print(all_unique_cbgs)
+        # print('all_unique_cbgs')
+        # print(all_unique_cbgs)
         init_df = init_df.loc[all_unique_cbgs]
         is_null = pd.isnull(init_df['county_fips']).values
-        print('init_df.head(5)')
-        print('init_df.index')
-        print(init_df.index)
+        # print('init_df.head(5)')
+        # print('init_df.index')
+        # print(init_df.index)
         assert np.sum(is_null) == 0
         states_to_init = ['E', 'I', 'R']
         eir_cols = ['%s_%s' % (cbg_init_mode, state) for state in states_to_init]
@@ -662,7 +664,7 @@ def fit_disease_model_on_real_data(d,
                                poi_time_counts=poi_time_counts,
                                poi_areas=poi_areas,
                                poi_dwell_time_correction_factors=poi_dwell_time_correction_factors,
-                               cbg_sizes=cbg_sizes,
+                               cbg_sizes=cbg_sizes,  # block group population
                                all_unique_cbgs=all_unique_cbgs,
                                cbgs_to_idxs=cbgs_to_idxs,
                                all_states=all_states,
@@ -1207,7 +1209,7 @@ def fit_and_save_one_model(timestring,
         if version == 'v1':
             d = helper.load_dataframe_for_individual_msa(data_kwargs['MSA_name'], version=version)
         else:
-            d = helper.prep_msa_df_for_model_experiments(data_kwargs['MSA_name'], time_period_strings=[])
+            d = helper.prep_msa_df_for_model_experiments(data_kwargs['MSA_name'], time_period_strings=[])  # load POI attributes.
     nyt_outcomes, nyt_counties, nyt_cbgs, msa_counties, msa_cbgs = get_variables_for_evaluating_msa_model(data_kwargs['MSA_name'])
     msa_counties = [str(s).zfill(5) for s in msa_counties]
     nyt_cbgs = [str(s).zfill(12) for s in nyt_cbgs]
@@ -1244,6 +1246,7 @@ def fit_and_save_one_model(timestring,
         try:
             poi_cbg_visits_list, poi_ids, cbg_ids = helper.load_ipf_output_for_hours(
                 data_kwargs['MSA_name'], min_datetime, max_datetime, return_ids=True)
+            # poi_cbg_visits_list: hourly garph
             model_kwargs['poi_cbg_visits_list'] = poi_cbg_visits_list
             model_kwargs['poi_ids'] = poi_ids
             model_kwargs['cbg_ids'] = cbg_ids
@@ -1553,7 +1556,7 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
     print('Running experiment=%s for these MSAs:' % experiment_to_run, msas)
     data_kwargs = [{'MSA_name':msa_name, 'nrows':None} for msa_name in msas]
     # Generate model kwargs. How exactly we do this depends on which experiments we're running.
-    num_seeds = 30
+    num_seeds = 30   # Huan ?
     configs_with_changing_params = []
     if experiment_to_run == 'just_save_ipf_output':
         model_kwargs = [{'min_datetime':min_datetime,
@@ -1724,17 +1727,21 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
         else:
             msa2proportions = None
 
-        for row in data_kwargs:
+        for row in data_kwargs:   # {}
             msa_t0 = time.time()
             msa_name = row['MSA_name']
             timestrings_for_msa = list(
                 timestring_msa_df.loc[timestring_msa_df['model_msa'] == msa_name, 'model_timestring'].values)
             print("Evaluating %i timestrings for %s" % (len(timestrings_for_msa), msa_name))
+
+            # sort the models
             best_msa_models = evaluate_all_fitted_models_for_msa(msa_name, timestrings=timestrings_for_msa)
 
+            # select the normal_grid_search results
             best_msa_models = best_msa_models.loc[(best_msa_models['experiment_to_run'] == 'normal_grid_search') &
             (best_msa_models['poi_psi'] > 0)].sort_values(by=key_to_sort_by)
 
+            # number of models (?)
             if n_models_for_msa_prior_to_quality_filter is None:
                 n_models_for_msa_prior_to_quality_filter = len(best_msa_models) # make sure nothing weird happening / no duplicate models.
             else:
@@ -1743,14 +1750,17 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
             best_loss = float(best_msa_models.iloc[0][key_to_sort_by])
             print("After filtering for normal_grid_search models, %i models for MSA" % (len(best_msa_models)))
             best_msa_models = best_msa_models.loc[best_msa_models[key_to_sort_by] <= acceptable_loss_tolerance * best_loss]
+            # Select several models, not only one.
 
+            # limit the number of models.
             best_msa_models = best_msa_models.iloc[:max_models_to_take_per_msa]
             print("After filtering for models with %s within factor %2.3f of best loss, and taking max %i models, %i models" %
                 (key_to_sort_by, acceptable_loss_tolerance, max_models_to_take_per_msa, len(best_msa_models)))
 
+            # for each model
             for i in range(len(best_msa_models)):
 
-                loss_ratio = best_msa_models.iloc[i][key_to_sort_by]/best_loss
+                loss_ratio = best_msa_models.iloc[i][key_to_sort_by]/best_loss   # check the loss if in the range [1, 1.2 or other]
                 assert loss_ratio >= 1 and loss_ratio <= acceptable_loss_tolerance
                 model_quality_dict = {'model_fit_rank_for_msa':i,
                                       'how_to_select_best_grid_search_models':how_to_select_best_grid_search_models,
@@ -1771,6 +1781,7 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
                         kwarg_copy['model_kwargs']['model_quality_dict'] = model_quality_dict.copy()
                         kwarg_copy['model_kwargs']['counterfactual_retrospective_experiment_kwargs'] = counterfactual_retrospective_experiment_kwargs
                         list_of_data_and_model_kwargs.append(kwarg_copy)
+                    # above: prepare parameters
 
                     # what if we shifted the timeseries by x days?
                     for shift in [-7, -3, 3, 7]:  # how many days to shift
@@ -1778,7 +1789,8 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
                         counterfactual_retrospective_experiment_kwargs = {'shift_in_days':shift}
                         kwarg_copy['model_kwargs']['model_quality_dict'] = model_quality_dict.copy()
                         kwarg_copy['model_kwargs']['counterfactual_retrospective_experiment_kwargs'] = counterfactual_retrospective_experiment_kwargs
-                        list_of_data_and_model_kwargs.append(kwarg_copy)
+                        list_of_data_and_model_kwargs.append(kwarg_copy)  # the same list as degree
+                    # above: do not know what is shift. Huan
 
                 elif experiment_to_run == 'test_interventions':
                     # FUTURE EXPERIMENTS: reopen each category of POI.
@@ -1897,13 +1909,13 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
 
         # sanity check to make sure nothing strange - number of parameters we expect.
         expt_params = []
-        for row in list_of_data_and_model_kwargs:
+        for row in list_of_data_and_model_kwargs:   # number = best-models * degree (4) * shift (4)  / 2 (?, seems no need to /2 . Huan)
             expt_params.append(
                 {'home_beta':row['model_kwargs']['exogenous_model_kwargs']['home_beta'],
                  'poi_psi':row['model_kwargs']['exogenous_model_kwargs']['poi_psi'],
                  'p_sick_at_t0':row['model_kwargs']['exogenous_model_kwargs']['p_sick_at_t0'],
                  'MSA_name':row['data_kwargs']['MSA_name']})
-        expt_params = pd.DataFrame(expt_params)
+        expt_params = pd.DataFrame(expt_params)   # expt_params is not use again, strange! Huan
 
     else:  # if experiment_to_run is not in best_models_experiments
         if experiment_to_run != 'just_save_ipf_output':  # model_kwargs is already set for ipf experiment
@@ -1954,7 +1966,7 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
         print("After removing previously fitted kwargs, %i kwargs" % (len(list_of_data_and_model_kwargs)))
 
     print("Total data/model configs to fit: %i; randomly shuffling order" % len(list_of_data_and_model_kwargs))
-    random.Random(0).shuffle(list_of_data_and_model_kwargs)
+    random.Random(0).shuffle(list_of_data_and_model_kwargs)   # do not know why shuffle. Huan
     if config_idx_to_start_at is not None:
         print("Skipping first %i configs" % config_idx_to_start_at)
         list_of_data_and_model_kwargs = list_of_data_and_model_kwargs[config_idx_to_start_at:]
@@ -3330,18 +3342,19 @@ if __name__ == '__main__':
     # Less frequently used arguments.
     config_idx_to_start_at = None
     skip_previously_fitted_kwargs = False
-    min_timestring = '2021_01_06_0_0'
+    min_timestring = '2021_01_06_0_0'  # used to select the full models and configs
 
+    # the filename of to config, started with the computer name.
     config_filename = '%s_configs.pkl' % COMPUTER_WE_ARE_RUNNING_ON.replace('.stanford.edu', '')
     if args.manager_or_worker_job == 'run_many_models_in_parallel':
         # manager job generates configs.
-        assert args.timestring is None
-        assert args.config_idx is None
-        experiment_list = args.experiment_to_run.split(',')
-        assert [a in valid_experiments for a in experiment_list]
+        assert args.timestring is None   # timestring is the file name of the log files (or the saved models?)
+        assert args.config_idx is None  # the ID of the config in the config file.
+        experiment_list = args.experiment_to_run.split(',')  # the name of the config
+        assert [a in valid_experiments for a in experiment_list]   # all experiments should be predefined.
         print("Starting the following list of experiments")
         print(experiment_list)
-        configs_to_fit = []
+        configs_to_fit = []   # to store the configs
         for experiment in experiment_list:
             if experiment == 'rerun_failed_configs':
                 assert args.failed_configs_filename is not None
@@ -3349,7 +3362,8 @@ if __name__ == '__main__':
                 configs_for_experiment = pickle.load(failed_configs_file)
                 failed_configs_file.close()
             else:
-                if 'grid_search' not in experiment or experiment not in ['calibrate_r0', 'just_save_ipf_output']:
+                if 'grid_search' not in experiment or experiment not in ['calibrate_r0', 'just_save_ipf_output']:  # these two experiments do not need
+                    # Other experiments
                     assert args.how_to_select_best_grid_search_models is not None, 'Error: must specify how you wish to select best-fit models'
                 configs_for_experiment = generate_data_and_model_configs(config_idx_to_start_at=config_idx_to_start_at,
                     skip_previously_fitted_kwargs=skip_previously_fitted_kwargs,
@@ -3365,7 +3379,8 @@ if __name__ == '__main__':
         f.close()   # save the config
         # fire off worker jobs.
         run_many_models_in_parallel(configs_to_fit)   # start running, 30 fiting jobs.
-    
+
+    # args.manager_or_worker_job == 'fit_and_save_one_model':
     else:  # worker job needs to load the list of configs and figure out which one it's running.
         assert args.experiment_to_run in valid_experiments
         print("loading configs from %s" % config_filename)

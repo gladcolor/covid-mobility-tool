@@ -1,8 +1,0 @@
-poppler_datadir=/media/gpu/easystore/covid-mobility-tool/env_dir/share/poppler
-
-Name: poppler-data
-Description: Encoding files for use with poppler
-Version: 0.4.9
-
-Cflags: -DPOPPLER_DATADIR=/media/gpu/easystore/covid-mobility-tool/env_dir/share/poppler
-

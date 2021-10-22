@@ -944,7 +944,7 @@ def load_dataframe_to_correct_for_population_size(version='v2', just_load_census
     # assert len(combined_data.dropna()) == len(combined_data)  # Huan "metropolitan Division Code" has nan.
     return combined_data
 
-def load_and_reconcile_multiple_acs_data():
+def load_and_reconcile_multiple_acs_data():   # Now we use the 2019 5-year ACS instead.
     """
     Because we use Census data from two data sources, load a single dataframe that combines both. 
     """
@@ -1064,7 +1064,7 @@ def get_daily_case_detection_rate(min_datetime=None, max_datetime=None):
     nov_dec = list_datetimes_in_range(datetime.datetime(2020, 11, 1), datetime.datetime(2020, 12, 31))
     nov_dec_rates = np.linspace(0.23, 0.3, len(nov_dec))
     jan_aug_2021 = list_datetimes_in_range(datetime.datetime(2021, 1, 1), datetime.datetime(2021, 3, 1))
-    jan_aug_2021_rates = np.linspace(0.3, 0.4, len(jan_aug_2021))
+    jan_aug_2021_rates = np.linspace(0.3, 0.32, len(jan_aug_2021))
     all_dates = mar + apr_jul + aug_oct + nov_dec + jan_aug_2021
     all_rates = np.concatenate([mar_rates, apr_jul_rates, aug_oct_rates, nov_dec_rates, jan_aug_2021_rates]).reshape(-1)
     assert len(all_dates) == len(all_rates)

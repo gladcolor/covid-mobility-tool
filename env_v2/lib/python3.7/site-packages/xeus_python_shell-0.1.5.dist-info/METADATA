@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xeus-python-shell
+Version: 0.1.5
+Summary: The xeus-python core python logic.
+Home-page: https://github.com/jupyter-xeus/xeus-python-shell
+Author: QuantStack dev team
+Maintainer: QuantStack dev team
+License: BSD 3-Clause
+Keywords: python ipython xeus-python
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: ipython (<8,>=7.21)
+Requires-Dist: debugpy (<2,>=1.1.0)
+Provides-Extra: testing
+Requires-Dist: flake8 ; extra == 'testing'
+
+UNKNOWN
+

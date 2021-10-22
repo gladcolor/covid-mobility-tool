@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /media/gpu/easystore/covid-mobility-tool/env_dir/bin/python -m PyQt5.uic.pyuic ${1+"$@"}

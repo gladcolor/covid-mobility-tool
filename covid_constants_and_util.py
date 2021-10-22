@@ -59,7 +59,7 @@ PATH_TO_SEIR_INIT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/seir_init/')
 
 # supplementary datasets: census, geographical, NYT, Google
 PATH_TO_ACS_1YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2018_one_year_acs_population_data/nhgis0001_ds239_20185_2018_blck_grp.csv')
-PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG/ACS_race_cbsa_2019.csv')
+PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG/ACS_race_cbsa_income_2019.csv')
 # PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2017_five_year_acs_data/2017_five_year_acs_data.csv')
 PATH_TO_ACS_5YR_DATA_GEODATABASE = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG.gdb.zip')
 # PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/external_datasets_for_aggregate_analysis/2019_five_year_acs_data/2019_five_year_acs_data.csv')
@@ -153,8 +153,10 @@ SECONDS_TO_WAIT_BETWEEN_JOBS = 8  # make higher if individual jobs will take up 
 SAVE_MODEL_RESULTS_SEPARATELY = False # if set to True, save a pickle of various model fields. Not doing this for now because it's redundant with the model and takes up room.
 USERNAME2COMPUTERS = {'emmap1':['rambo', 'trinity'],
                       'serinac':['rambo']} # , 'furiosa', 'madmax2', 'madmax3']}
-MIN_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_01_19_10_48_52_008132'
-MAX_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_01_19_17_02_36_029096'
+
+# Need to adjust this! Huan
+MIN_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_09_05_13_55_13_859583'
+MAX_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_11_05_13_55_13_859583'
 
 #### PARAMETERS FOR FIRST WAVE EXPERIMENTS ####
 # MIN_DATETIME = datetime.datetime(2020, 3, 15, 0)
@@ -171,9 +173,9 @@ MAX_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_01_19_17_02_36_029096'
 # MAX_DATETIME = datetime.datetime(2020, 12, 31, 23)
 # TRAIN_TEST_PARTITION = datetime.datetime(2020, 12, 18)
 
-#### PARAMETERS FOR 2021 EXPERIMENTS ####
-MIN_DATETIME = datetime.datetime(2020, 12, 28, 0)
-MAX_DATETIME = datetime.datetime(2021, 1, 17, 23)  #
+#### PARAMETERS FOR 2021 EXPERIMENTS ####                 # Huan: do not know what is this
+MIN_DATETIME = datetime.datetime(2021, 10, 1, 0)
+MAX_DATETIME = datetime.datetime(2021, 11, 17, 23)  #
 TRAIN_TEST_PARTITION = datetime.datetime(2021, 1, 21)
 
 # # beta_and_psi_plausible_range is output of make_param_plausibility_plot and should be updated whenever you recalibrate R0. These numbers allow R0_base to range from 0.1 - 2 and R0_PSI to range from 0.1 - 2 in first week of Nov 2020.
@@ -571,6 +573,9 @@ def get_daily_from_cumulative(x):
     assert len(x.shape) in [1, 2]
     if len(x.shape) == 1:
         arr_to_return = np.array([x[0]] + list(x[1:] - x[:-1]))
+        # there is a big BUG if the first day cumulative number is largely greater than new cases.
+        # a temporal solution: use the second day as the first day new case.
+        arr_to_return[0] = arr_to_return[1]
     else:
         # seeds are axis 0, so want to subtract along axis 1.
         x0 = x[:, :1]

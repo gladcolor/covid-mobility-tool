@@ -1,0 +1,12 @@
+{
+  "display_name": "Python 3.7 (XPython)",
+  "argv": [
+      "python3.7",
+      "-m",
+      "xpython_launcher",
+      "-f",
+      "{connection_file}"
+  ],
+  "language": "python",
+  "metadata": { "debugger": true }
+}

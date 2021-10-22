@@ -1,0 +1,3 @@
+eval "$(/home/gpu/anaconda3/bin/conda shell.posix hook)"
+conda activate  /media/gpu/easystore/covid-mobility-tool/env_v2
+python model_experiments.py run_many_models_in_parallel normal_grid_search

@@ -435,7 +435,7 @@ class Model:
         number of new cases is drawn randomly; otherwise, the expectation of the
         random variable is used.
 
-        This method computes the weighted rates then uses a Poisson approximation.
+        This method computes the weighted rates then uses a PTrueoisson approximation.
         '''
         # M is number of POIs
         # N is number of CBGs
@@ -561,8 +561,10 @@ class Model:
                 seed_poi_cbg_infected = seed_poi_cbg_sus.transpose().multiply(seed_poi_infection_rates).transpose()  # M x N
                 self.cbg_num_cases_per_poi.append(seed_poi_cbg_infected)
 
-        if self.debug:
-            print(f'using poisson approx: expected new cases = {np.sum(cbg_mean_new_cases)}')
+        # Huan Row position:
+            if self.debug:
+                # print(f'using poisson approx: expected new cases = {np.sum(cbg_mean_new_cases)}')  # Raw
+                print(f'using poisson approx: expected new cases = {np.sum(self.cbg_num_cases_per_poi)}') # Huan
 
         self.num_cbgs_with_clipped_poi_cases = np.sum(num_cases_from_poi > num_sus)
         self.cbg_new_cases_from_poi = np.clip(num_cases_from_poi, None, num_sus)
