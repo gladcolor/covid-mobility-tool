@@ -1,4 +1,4 @@
-name: env_v2
+name: env_v3
 channels:
   - conda-forge
   - defaults
@@ -444,5 +444,5 @@ dependencies:
     - zipp==3.1.0
     - zope-deprecation==4.4.0
     - zope-interface==5.2.0
-prefix: /media/gpu/easystore/covid-mobility-tool/env_v2
+prefix: /media/gpu/easystore/covid-mobility-tool/env_v3
 

@@ -1,0 +1,17 @@
+cd /media/gpu/easystore/covid-mobility-tool
+conda activate /media/gpu/easystore/covid-mobility-tool/env_v2
+jupyter lab
+
+cd /media/gpu/easystore/covid-mobility-tool
+conda activate /media/gpu/easystore/covid-mobility-tool/env_v2
+
+
+
+conda run python model_experiments.py run_many_models_in_parallel calibrate_r0
+
+
+conda run python model_experiments.py run_many_models_in_parallel normal_grid_search
+
+python model_experiments.py fit_and_save_one_model normal_grid_search --timestring Huan_timestring  --config_idx 5
+
+

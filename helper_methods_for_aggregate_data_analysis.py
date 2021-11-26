@@ -1,8 +1,8 @@
 from covid_constants_and_util import *
-import statsmodels.api as sm
+# import statsmodels.api as sm
 import json
 import copy
-from fbprophet import Prophet
+# from fbprophet import Prophet
 from collections import Counter
 import re
 import h5py
@@ -68,6 +68,7 @@ def load_social_distancing_metrics(datetimes, version='v2'):
             raise Exception("Version should be v1 or v2")
 
         if os.path.exists(path):
+            print("    loading: ", path)
             social_distancing_d = pd.read_csv(path, usecols=['origin_census_block_group'] + daily_cols)[['origin_census_block_group'] + daily_cols]
             social_distancing_d.columns = ['census_block_group'] + ['%i.%i.%i_%s' %
                                                                     (dt.year, dt.month, dt.day, a) for a in daily_cols]
@@ -381,13 +382,21 @@ def load_patterns_data(month=None, year=None, week_string=None, extra_cols=[], j
         print("%i rows loaded for week %s" % (len(x), week_string))
     return x
 
-def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits=True, path_to_csv=None):
+def load_weekly_patterns_v2_data(week_string, cols_to_keep=[], expand_hourly_visits=True, path_to_csv=None):
     """
+    week_string: csv file name (released date)
     Load in Weekly Patterns V2 data for a single week. 
     If week_string <= '2020-06-15': we are using the earlier version of Weekly Pattern v2, and 
                                     week_string denotes the first day of the week.
     Else: we are using the later version of Weekly Patterns v2, and week_string denotes the day this update was released.
     """
+
+    if len(cols_to_keep) == 0:
+        cols_to_keep = ['safegraph_place_id', 'poi_cbg', 'visitor_home_cbgs', 'visitor_daytime_cbgs',
+                                     'visitor_country_of_origin', 'distance_from_home', 'median_dwell',
+                                     'bucketed_dwell_times']
+
+    # make sure the week_string is correct.
     ts = time.time()
     elements = week_string.split('-')
     assert len(elements) == 3
@@ -397,7 +406,8 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
     for k in must_load_cols:
         if k not in cols_to_load:
             cols_to_load.append(k)
-    
+
+
     if week_string <= '2020-06-15':
         path_to_csv = os.path.join(CURRENT_DATA_DIR, 'weekly_pre_20200615/main-file/%s-weekly-patterns.csv.gz' % week_string)
         assert os.path.isfile(path_to_csv)
@@ -405,16 +415,21 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
         df = load_csv_possibly_with_dask(path_to_csv, use_dask=True, usecols=cols_to_load, dtype={'poi_cbg':'float64'})
         start_day_string = week_string
         start_datetime = week_datetime
+
+    # week_string <= '2020-06-15'
     else:
-        if week_string <= '2020-12-09':  # this is release date; start of this week is 2020-11-30
-            path_to_weekly_dir = os.path.join(CURRENT_DATA_DIR, 'weekly_post_20200615/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+        print("week_string:", week_string)
+        if week_string <= '2020-12-08':  # this is release date; start of this week is 2020-11-30
+            path_to_weekly_dir = os.path.join(WEEKLY_PATTERNS_BEFORE_20201130, r'/%s/' % week_datetime.strftime('%Y/%m/%d'))
 
         # The above code have not modified! Huan
+        # week_string > '2020-12-08'
         else:
             #date_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
             ##hour_dir = os.listdir(date_dir)[0]
             #week_dir = os.path.join(date_dir, hour_dir)
             path_to_weekly_dir = os.path.join(WEEKLY_PATTERNS_AFTER_20201130 + '/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            # print(f"WEEKLY_PATTERNS_AFTER_20201130: {WEEKLY_PATTERNS_AFTER_20201130}")
         inner_folder = os.listdir(path_to_weekly_dir)
         assert len(inner_folder) == 1  # there is always a single folder inside the weekly folder 
         path_to_patterns_parts = os.path.join(path_to_weekly_dir, inner_folder[0])
@@ -424,25 +439,29 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
                 path_to_csv = os.path.join(path_to_patterns_parts, filename)
                 assert os.path.isfile(path_to_csv)
                 print('Loading from %s' % path_to_csv)
-                df = load_csv_possibly_with_dask(path_to_csv, use_dask=False, usecols=cols_to_load, dtype={'poi_cbg':'float64'})
+                df = load_csv_possibly_with_dask(path_to_csv, use_dask=False, usecols=cols_to_load, dtype={'poi_cbg':str})
+                #df = df[df['poi_cbg'].astype(str).str[:2] == '45']
                 dfs.append(df)
         df = pd.concat(dfs, axis=0)
+        del dfs # to save some memory
         start_day_string = df.iloc[0].date_range_start.split('T')[0]
         print('Actual start of the week:', start_day_string)
         elements = start_day_string.split('-')
         assert len(elements) == 3
         start_datetime = datetime.datetime(int(elements[0]), int(elements[1]), int(elements[2]))
     assert df['date_range_start'].map(lambda x:x.startswith(start_day_string + 'T00:00:00')).all()  # make sure date range starts where we expect for all rows.     
-    
+
+    # the dataframe is ready by the above code.
+    # Start to process dataframe
     if expand_hourly_visits:     # expand single hourly visits column into one column per hour
         df['visits_by_each_hour'] = df['visits_by_each_hour'].map(json.loads) # convert string lists to lists.
         all_dates = [start_datetime + datetime.timedelta(days=i) for i in range(7)]  # all days in the week
         hours = pd.DataFrame(df['visits_by_each_hour'].values.tolist(),
                      columns=[f'hourly_visits_%i.%i.%i.%i' % (date.year, date.month, date.day, hour)
-                              for date in all_dates
-                              for hour in range(0, 24)])
+                              for date in all_dates   # 7 days in the week
+                              for hour in range(0, 24)])  # 0 - 23 hour
         assert len(hours) == len(df)
-        hours.index = df.index
+        hours.index = df.index  # safegraph_place_id
         df = pd.concat([df, hours], axis=1)
         # The hourly data has some spurious spikes
         # related to the GMT-day boundary which we have to correct for.
@@ -451,19 +470,22 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
         offset_counts = df['offset_from_gmt'].value_counts()
         print(offset_counts)
         hourly_offset_strings = offset_counts[:4].index  # four most common timezones across POIs
+        #
         assert all(['-0%i:00' % x in hourly_offset_strings for x in [5, 6, 7]])  # should always include GMT-5, -6, -7
         assert ('-04:00' in hourly_offset_strings) or ('-08:00' in hourly_offset_strings)  # depends on DST 
         percent_rows_being_corrected = (df['offset_from_gmt'].map(lambda x:x in hourly_offset_strings).mean() * 100)
         print("%2.3f%% of rows have timezones that we spike-correct for." % percent_rows_being_corrected) 
         assert percent_rows_being_corrected > 98  # almost all rows should fall in these timezones
         end_datetime = datetime.datetime(all_dates[-1].year, all_dates[-1].month, all_dates[-1].day, 23)
+
         # have to correct for each timezone separately.
-        for offset_string in sorted(hourly_offset_strings):
-            print('Correcting GMT%s...' % offset_string)
+        # Huan: don't understant yet.
+        for offset_string in sorted(hourly_offset_strings):  # four most common timezones across POIs
+            print('Correcting GMT%s...' % offset_string)   # offset_string: -05:00, -06:00, -07:00, , -08:00
             idxs = df['offset_from_gmt'] == offset_string
             offset_int = int(offset_string.split(':')[0])
-            assert (-8 <= offset_int) and (offset_int <= -4)
-            for date in all_dates:
+            assert (-8 <= offset_int) and (offset_int <= -4)  # -5, -6, -7, , -8
+            for date in all_dates:   # all days in the week, 7 days, e.g.: 2020-12-14
                 # not totally clear which hours are messed up - it's mainly one hour, but the surrounding ones 
                 # look weird too - but this yields plots which look reasonable.
                 for hour_to_correct in [24 + offset_int - 1,
@@ -476,8 +498,10 @@ def load_weekly_patterns_v2_data(week_string, cols_to_keep, expand_hourly_visits
                     cols_to_use = [f'hourly_visits_%i.%i.%i.%i' % (dt.year, dt.month, dt.day, dt.hour) for dt in list_hours_in_range(start_hour, end_hour)]
                     assert all([col in df.columns for col in cols_to_use])
                     # this technically overlaps with earlier hours, but it should be okay because they will 
-                    # already have been corrected. 
-                    df.loc[idxs, 'hourly_visits_%i.%i.%i.%i' % (date.year, date.month, date.day, hour_to_correct)] = df.loc[idxs, cols_to_use].mean(axis=1)             
+                    # already have been corrected.
+                    # Huan don't understand
+                    df.loc[idxs, 'hourly_visits_%i.%i.%i.%i' % (date.year, date.month, date.day, hour_to_correct)] = df.loc[idxs, cols_to_use].mean(axis=1)
+                    # will bring some decimal numbers.
     
     non_required_cols = [col for col in df.columns if not(col in cols_to_keep or col.startswith('hourly_visits_'))]
     df = df.drop(columns=non_required_cols)
@@ -535,7 +559,7 @@ def list_hours_in_range(min_hour, max_hour):
     """
     Return a list of datetimes in a range from min_hour to max_hour, inclusive. Increment is one hour. 
     """
-    assert(min_hour <= max_hour)
+    assert(min_hour <= max_hour), f'min_hour: {min_hour}, max_hour: {max_hour}'
     hours = []
     while min_hour <= max_hour:
         hours.append(min_hour)
@@ -554,10 +578,15 @@ def normalize_dict_values_to_sum_to_one_and_cast_keys_to_ints(old_dict):
         new_dict[int(k)] = old_dict[k] / value_sum
     return new_dict
 
-def cast_keys_to_ints(old_dict):
+def cast_keys_to_ints(old_dict, verbose=True):
     new_dict = {}
     for k in old_dict:
-        new_dict[int(k)] = old_dict[k]
+        # Huan remove "CA:XXX" (CA means Canada)
+        if str(k).isnumeric():
+            new_dict[int(k)] = old_dict[k]
+        else:
+            if verbose:
+                print(f"cast_keys_to_ints(): {k} is not numeric, skipped it.")
     return new_dict
 
 def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=None, periods_to_include=None):
@@ -607,9 +636,9 @@ def aggregate_visitor_home_cbgs_over_months(d, cutoff_year=2019, population_df=N
             cbg_coverage = dict(zip(int_cbgs, cbg_coverage))
             assert ~np.isnan(median_coverage)
             assert ~np.isinf(median_coverage)
-            # assert median_coverage > 0.001
-            if median_coverage > 0.001:
-                print(f'WARNING: median_coverage {median_coverage:.4f} is large than 0.001!') # Huan
+            assert median_coverage > 0.001
+            # if median_coverage > 0.001:
+            #     print(f'WARNING: median_coverage {median_coverage:.4f} is large than 0.001!') # Huan
             # want to make sure we aren't mis
             # sing data for too many CBGs, so a small hack - have
             # adjust_home_cbg_counts_for_coverage return two arguments, where the second argument
@@ -753,13 +782,13 @@ def prep_msa_df_for_model_experiments(msa_name, time_period_strings=None):
         # change column names to fit model experiments code
         # Huan do not understand.
         merged_df = merged_df.rename(columns={'area_square_feet':'safegraph_computed_area_in_square_feet',
-                                              '20191230_20201019_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
-                                              # '20210125_20210201_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
-                                              '20191230_20201019_median_of_median_dwell':'avg_median_dwell'})
-                                              # '20210125_20210201_median_of_median_dwell':'avg_median_dwell'})
-        merged_df['aggregated_cbg_population_adjusted_visitor_home_cbgs'] = merged_df['20210106_20210120_aggregated_cbg_population_adjusted_visitor_home_cbgs']  # Huan
-        merged_df['median_of_median_dwell'] = merged_df['20210106_20210120_median_of_median_dwell']
-        merged_df['median_of_median_dwell'] = merged_df['20210106_20210120_median_of_median_dwell']
+                                              # '20191230_20201019_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
+                                              '20201209_20210630_aggregated_visitor_home_cbgs':'aggregated_cbg_population_adjusted_visitor_home_cbgs',
+                                              # '20191230_20201019_median_of_median_dwell':'avg_median_dwell'})
+                                              '20201209_20210630_median_of_median_dwell':'avg_median_dwell'})
+        # merged_df['aggregated_cbg_population_adjusted_visitor_home_cbgs'] = merged_df['20201209_20210630_aggregated_cbg_population_adjusted_visitor_home_cbgs']  # Huan
+        # merged_df['median_of_median_dwell'] = merged_df['20201209_20210630_median_of_median_dwell']
+        # merged_df['median_of_median_dwell'] = merged_df['20201209_20210630_median_of_median_dwell']
         # merged_df: witouhd hourly visitation
         #
         if time_period_strings is not None:
@@ -1062,9 +1091,9 @@ def get_daily_case_detection_rate(min_datetime=None, max_datetime=None):
     aug_oct = list_datetimes_in_range(datetime.datetime(2020, 8, 1), datetime.datetime(2020, 10, 31))
     aug_oct_rates = np.linspace(0.18, 0.23, len(aug_oct))
     nov_dec = list_datetimes_in_range(datetime.datetime(2020, 11, 1), datetime.datetime(2020, 12, 31))
-    nov_dec_rates = np.linspace(0.23, 0.3, len(nov_dec))
-    jan_aug_2021 = list_datetimes_in_range(datetime.datetime(2021, 1, 1), datetime.datetime(2021, 3, 1))
-    jan_aug_2021_rates = np.linspace(0.3, 0.32, len(jan_aug_2021))
+    nov_dec_rates = np.linspace(0.55, 0.65, len(nov_dec))
+    jan_aug_2021 = list_datetimes_in_range(datetime.datetime(2021, 1, 1), datetime.datetime(2021, 5, 1))
+    jan_aug_2021_rates = np.linspace(0.65, 0.65, len(jan_aug_2021))
     all_dates = mar + apr_jul + aug_oct + nov_dec + jan_aug_2021
     all_rates = np.concatenate([mar_rates, apr_jul_rates, aug_oct_rates, nov_dec_rates, jan_aug_2021_rates]).reshape(-1)
     assert len(all_dates) == len(all_rates)
@@ -1463,13 +1492,15 @@ class CensusBlockGroups:
         return results
 
 if __name__ == "__main__":
-    #write_out_acs_5_year_data()
-    all_dates, all_rates = helper.get_daily_case_detection_rate()  # based on IHME estimate
-    fig, ax = plt.subplots(figsize=(20, 10))
-    ax.plot_date(all_dates, all_rates, marker='.', markersize=5, linestyle='-')
-    ax.xaxis.set_major_locator(mdates.MonthLocator())
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
-    ax.set_ylabel('Case detection rate', fontsize=14)
-    ax.tick_params(labelsize=10)
-    ax.grid(alpha=0.3)
-    plt.show()
+    # #write_out_acs_5_year_data()
+    # all_dates, all_rates = helper.get_daily_case_detection_rate()  # based on IHME estimate
+    # fig, ax = plt.subplots(figsize=(20, 10))
+    # ax.plot_date(all_dates, all_rates, marker='.', markersize=5, linestyle='-')
+    # ax.xaxis.set_major_locator(mdates.MonthLocator())
+    # ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
+    # ax.set_ylabel('Case detection rate', fontsize=14)
+    # ax.tick_params(labelsize=10)
+    # ax.grid(alpha=0.3)
+    # plt.show()
+
+    load_weekly_patterns_v2_data('2021-06-30')

@@ -34,7 +34,7 @@ import time
 import math
 import random
 from dask.diagnostics import ProgressBar
-import dask.dataframe as dd
+# import dask.dataframe as dd
 
 #######################################################################
 # DIRECTORIES
@@ -75,10 +75,15 @@ PATH_TO_MASK_USE_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_
 #######################################################################
 # CORE_POI_DIR: the POI list of Safegraph
 CORE_POI_DIR = r'/media/gpu/easystore/Safegraph/Core Places US (Nov 2020 - Present)/core_poi/2021/06/05/00'   # No column of safegraph_place_id since July
-FOOTPRINT_FILE = r'/media/gpu/easystore/Safegraph/Geometry Footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz'
+# /media/gpu/easystore/Safegraph/Core Places US (Nov 2020 - Present)/core_poi/2021/08/06/16
+# FOOTPRINT_FILE = r'/media/gpu/easystore/Safegraph/Geometry Footprint/August2020Release/SafeGraphPlacesGeoSupplementSquareFeet.csv.gz'
+FOOTPRINT_FILE = r'/media/gpu/easystore/Safegraph/Core Places US (Nov 2020 - Present)/core_poi/core_POI_area.csv'  # this file has areas corrected by the shapefiles.
 # FOOTPRINT_FILE has safegraph_place_id only.
+
 WEEKLY_PATTERNS_BEFORE_20201130 = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/patterns_backfill/2020/12/14/21'
 WEEKLY_PATTERNS_AFTER_20201130  = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns'
+WEEKLY_PATTERNS_AFTER_2021  = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/release-2021-07/weekly/patterns_backfill/2021/07/15/15'
+
 # WEEKLY_PATTERNS after July 2021 need to be manually request.
 
 #######################################################################
@@ -87,9 +92,10 @@ WEEKLY_PATTERNS_AFTER_20201130  = r'/media/gpu/easystore/Safegraph/Weekly Places
 ALL_TIME_PERIODS = ['20181231_20190325', '20190401_20190624', '20190701_20190923', '20190930_20191223',
                     '20191230_20200224', '20200302_20200608', '20200615_20200817', '20200824_20201019',
                     '20201026_20210118', '20210125_20210201']  # POI data saved in chunks of 2-3 months
-IPF_ID_PREFIX = '2020-12-28_to_2021-01-17'  # the file PREFIX!  time range to use for loading POI and CBG ids. The acutal hours of Safegraph, not release date.
+IPF_ID_PREFIX = '2020-11-30_to_2021-04-05'  # the file PREFIX!  time range to use for loading POI and CBG ids. The acutal hours of Safegraph, not release date.
 # POI_VISITS_PREFIX = '2018-12-31_to_2021-02-01'  # the file PREFIX!   time range for all saved hourly POI visits
-POI_VISITS_PREFIX = '2020-12-28_to_2021-01-17' # Huan
+# /media/gpu/easystore/all_aggregate_data/ipf_output/Columbia_SC
+POI_VISITS_PREFIX = '2020-11-30_to_2021-04-05' # Huan
 
 MSAS = ['Atlanta_Sandy_Springs_Roswell_GA',
         'Chicago_Naperville_Elgin_IL_IN_WI',
@@ -107,7 +113,7 @@ VA_MSAS = ['Washington_Arlington_Alexandria_DC_VA_MD_WV',
 'Blacksburg_Christiansburg_Radford_VA+Charlottesville_VA+Harrisonburg_VA+Lynchburg_VA+Roanoke_VA+Staunton_Waynesboro_VA']
 
 SC_MSAS = [
-           'Columnbia_VA',
+           'Columbia_SC',
            ]
 
 P0_SICK_RANGE = [5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
@@ -123,10 +129,11 @@ ACCEPTABLE_LOSS_TOLERANCE = 1.2
 WGS_84_CRS = {'init' :'epsg:4326'}
 LATENCY_PERIOD_IN_DAYS= 4
 INFECTIOUS_PERIOD_IN_DAYS= 3.5
-DETECTION_RATE = 0.23
-DETECTION_LAG = 9
+RECOVERY_PEIROD_IN_DAYS = 14   # Huan, no literature yet.
+DETECTION_RATE = 0.6
+DETECTION_LAG = 9 # in days
 DEATH_RATE = 0.006
-DEATH_LAG = 18
+DEATH_LAG = 18  # in days
 MASK_EFFICACY = 0.5
 FIXED_HOLIDAY_DATES = ['01-01',  # New Year's Day
                        '07-01',  # Independence Day
@@ -136,6 +143,7 @@ FIXED_HOLIDAY_DATES = ['01-01',  # New Year's Day
 LOWER_PERCENTILE = 2.5
 UPPER_PERCENTILE = 97.5
 INCIDENCE_POP = 100000
+
 
 #######################################################################
 # PARAMS USED IN EXPERIMENTS THAT SHOULD BE CHECKED/CHANGED
@@ -173,17 +181,26 @@ MAX_TIMESTRING_TO_LOAD_BEST_FIT_MODELS = '2021_11_05_13_55_13_859583'
 # MAX_DATETIME = datetime.datetime(2020, 12, 31, 23)
 # TRAIN_TEST_PARTITION = datetime.datetime(2020, 12, 18)
 
-#### PARAMETERS FOR 2021 EXPERIMENTS ####                 # Huan: do not know what is this
-MIN_DATETIME = datetime.datetime(2021, 10, 1, 0)
-MAX_DATETIME = datetime.datetime(2021, 11, 17, 23)  #
-TRAIN_TEST_PARTITION = datetime.datetime(2021, 1, 21)
+#### PARAMETERS FOR 2021 EXPERIMENTS ####                 # Huan: for: python model_experiments.py run_many_models_in_parallel calibrate_r0
+# MIN_DATETIME = datetime.datetime(2020, 12, 28, 0)   # the acutall data date.
+MIN_DATETIME = datetime.datetime(2020, 12, 20, 0)   # the acutall data date.   Same as the all_cgbs_s=xxxx.csv  # start date
 
-# # beta_and_psi_plausible_range is output of make_param_plausibility_plot and should be updated whenever you recalibrate R0. These numbers allow R0_base to range from 0.1 - 2 and R0_PSI to range from 0.1 - 2 in first week of Nov 2020.
-BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.002820909916243525, 
-                                "max_home_beta": 0.056418198324870494, 
-                                "min_poi_psi": 628.3147342601472,
-                                "max_poi_psi": 20177.930428375937}
+# simulation
+MAX_DATETIME = datetime.datetime(2021, 1, 29, 23)  #  the acutall data date.
+# simulation
+TRAIN_TEST_PARTITION = datetime.datetime(2021, 1, 30)   # test
 
+# # beta_and_psi_plausible_range is output of make_param_plausibility_plot and should be updated whenever you recalibrate R0.
+# These numbers allow R0_base to range from 0.1 - 2 and R0_PSI to range from 0.1 - 2 in first week of Nov 2020.
+# BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.002820909916243525,
+#                                 "max_home_beta": 0.056418198324870494,
+#                                 "min_poi_psi": 628.3147342601472,
+#                                 "max_poi_psi": 20177.930428375937}
+# Huan
+BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.001,
+                                "max_home_beta": 0.02,
+                                "min_poi_psi": 50,
+                                "max_poi_psi": 1000}
 #######################################################################
 # USEFUL DICTIONARIES / LISTS
 #######################################################################
@@ -535,7 +552,9 @@ def load_csv_possibly_with_dask(filenames, use_dask=False, compression='gzip', b
         # return pd.concat(pd.read_csv(f, **kwargs) for f in tqdm_wrap(filenames))
         if not isinstance(filenames, list):
             filenames = [filenames]
-        return pd.concat(pd.read_csv(f, **kwargs, engine='python') for f in tqdm(filenames))
+        # return pd.concat(pd.read_csv(f, **kwargs, engine='python', nrows=None) for f in tqdm(filenames))
+        # return pd.concat(pd.read_csv(f, **kwargs, nrows=None) for f in tqdm(filenames))
+        return pd.concat(pd.read_csv(f, **kwargs, nrows=None) for f in filenames)
 
 def get_cumulative(x):
     '''
@@ -576,6 +595,7 @@ def get_daily_from_cumulative(x):
         # there is a big BUG if the first day cumulative number is largely greater than new cases.
         # a temporal solution: use the second day as the first day new case.
         arr_to_return[0] = arr_to_return[1]
+        # print("arr_to_return[0]:", arr_to_return[0] )
     else:
         # seeds are axis 0, so want to subtract along axis 1.
         x0 = x[:, :1]

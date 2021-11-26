@@ -233,7 +233,7 @@ class Model:
         self.estimated_R0 = None
 
     def simulate_disease_spread(self, verbosity=24,
-                                simulate_cases=False, simulate_deaths=False,
+                                simulate_cases=True, simulate_deaths=True,
                                 groups_to_track_num_cases_per_poi=None,
                                 use_aggregate_mobility=False,
                                 use_home_proportion_beta=False,
@@ -295,6 +295,9 @@ class Model:
             print(f'=== RESULTS ({self.num_seeds} seeds) ===')
             start_time = time.time()
 
+        print("CBG population:", np.sum(self.CBG_SIZES))
+
+
         t = 0
         while t < self.T:
             iter_t0 = time.time()
@@ -302,6 +305,8 @@ class Model:
                 L = np.sum(self.cbg_latent, axis=1)
                 I = np.sum(self.cbg_infected, axis=1)
                 R = np.sum(self.cbg_removed, axis=1)
+                # print("get_new_infectious:", self.get_new_infectious().shape, self.get_new_infectious())
+                # print(f"get_new_cases({t}):", self.get_new_cases(t).shape, self.get_new_cases(t))
                 print((
                     f't={t:3d}: L={np.mean(L):5.1f} ({np.std(L):5.1f})'
                     f'   I={np.mean(I):5.1f} ({np.std(I):5.1f})'
@@ -435,7 +440,7 @@ class Model:
         number of new cases is drawn randomly; otherwise, the expectation of the
         random variable is used.
 
-        This method computes the weighted rates then uses a PTrueoisson approximation.
+        This method computes the weighted rates then uses a Poisson approximation.
         '''
         # M is number of POIs
         # N is number of CBGs
@@ -453,16 +458,16 @@ class Model:
             beta = self.HOME_BETA
         
         ### Compute CBG densities and infection rates
-        cbg_densities = self.cbg_infected / self.CBG_SIZES  # S x N
-        overall_densities = (np.sum(self.cbg_infected, axis=1) / np.sum(self.CBG_SIZES)).reshape(-1, 1)  # S x 1
-        num_sus = np.clip(self.CBG_SIZES - self.cbg_latent - self.cbg_infected - self.cbg_removed, 0, None)  # S x N
-        sus_frac = num_sus / self.CBG_SIZES  # S x N
+        cbg_densities = self.cbg_infected / self.CBG_SIZES  # S x N   : seeds * CBS counts
+        overall_densities = (np.sum(self.cbg_infected, axis=1) / np.sum(self.CBG_SIZES)).reshape(-1, 1)  # S x 1 : seeds * 1
+        num_sus = np.clip(self.CBG_SIZES - self.cbg_latent - self.cbg_infected - self.cbg_removed, 0, None)  # S x N: seeds * CBS counts
+        sus_frac = num_sus / self.CBG_SIZES  # S x N   : seeds * CBS counts
         assert (cbg_densities >= 0).all()
         assert (cbg_densities <= 1).all()
         assert (sus_frac >= 0).all()
         assert (sus_frac <= 1).all()
         
-        if self.PSI > 0:  # Our model: can only be infected by people in your home CBG.
+        if self.PSI > 0:   # POI_psi # Our model: can only be infected by people in your home CBG.
             if self.use_home_proportion_beta:
                 cbg_prop_home = 1 - self.cbg_day_prop_out[:, day]  # 1 x N
                 cbg_base_infection_rates = beta * cbg_prop_home * cbg_densities  # S x N
@@ -471,13 +476,13 @@ class Model:
         else:
             # Ablation: standard model with uniform mixing.
             cbg_base_infection_rates = np.tile(overall_densities, self.N) * beta  # S x N
-        cbg_base_infection_rates = cbg_base_infection_rates * scaling_factor
+        cbg_base_infection_rates = cbg_base_infection_rates * scaling_factor  # scaling_factor: mask-wearing
         self.num_base_infection_rates_clipped = np.sum(cbg_base_infection_rates > 1)
         cbg_base_infection_rates = np.clip(cbg_base_infection_rates, None, 1.0)
 
         ### Load or compute POI x CBG matrix
         if self.POI_CBG_VISITS_LIST is not None:  # try to load
-            poi_cbg_visits = self.POI_CBG_VISITS_LIST[t]  # M x N
+            poi_cbg_visits = self.POI_CBG_VISITS_LIST[t]  # M x N    : POI_count * CBG_count
             poi_visits = poi_cbg_visits @ np.ones(poi_cbg_visits.shape[1])  # M, faster than summing axis=1
         else:  # otherwise, compute it
             poi_visits = self.POI_TIME_COUNTS[:, t]  # M
@@ -488,7 +493,9 @@ class Model:
                 cbg_prop_out = self.cbg_day_prop_out[:, day]
 
                 # rows are POIs, columns are CBGs.
-                target_row_sums = poi_visits * (self.POI_CBG_PROPORTIONS @ np.ones(self.POI_CBG_PROPORTIONS.shape[1])) # POI sums. This is the same as poi_visits * np.sum(self.POI_CBG_PROPORTIONS, axis = 1) but it's 5x faster 
+                target_row_sums = poi_visits * (self.POI_CBG_PROPORTIONS @ np.ones(self.POI_CBG_PROPORTIONS.shape[1]))
+                # POI sums. This is the same as poi_visits * np.sum(self.POI_CBG_PROPORTIONS, axis = 1) but it's 5x faster
+
                 target_col_sums = cbg_prop_out * self.CBG_SIZES # CBG sums
                 target_col_sums = target_col_sums * np.sum(target_row_sums) / np.sum(target_col_sums) # Renormalize to match POI sums
 
@@ -542,6 +549,8 @@ class Model:
             # S x M = (M) * ((M x N) @ (S x N).T ).T
             poi_infection_rates = self.POI_FACTORS * (poi_cbg_visits @ cbg_densities.T).T
             poi_infection_rates = poi_infection_rates * scaling_factor
+            # scaling_factor: mask-wearing
+
             self.num_poi_infection_rates_clipped = np.sum(poi_infection_rates > 1)
             if self.clip_poisson_approximation:
                 poi_infection_rates = np.clip(poi_infection_rates, None, 1.0)

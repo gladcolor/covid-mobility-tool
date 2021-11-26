@@ -173,6 +173,7 @@ def fit_disease_model_on_real_data(d,
         for col in hour_cols:   # Huan
             if col not in d.columns:
                 print(f"hour_cols {col} is not in d.columns, exit!")
+                print("d.columns:\n", d.columns)
                 assert (all([col in d.columns for col in hour_cols]))
     model_days = helper.list_datetimes_in_range(min_datetime, max_datetime)
     home_beta = exogenous_model_kwargs['home_beta']
@@ -205,9 +206,10 @@ def fit_disease_model_on_real_data(d,
 
     # filter POIs
     if poi_ids is None:
-        # weekly_median_dwell_pattern = re.compile('202.*_.*_of_median_dwell')
-        # median_dwell_cols = [col for col in d.columns if re.match(weekly_median_dwell_pattern, col)] # Huan
-        aggregate_home_cbg_col = median_dwell_cols[0][:18] + aggregate_home_cbg_col
+        #weekly_median_dwell_pattern = re.compile('202*median_dwell')  # raw:   re.compile('202.*_.*_of_median_dwell')   Huan
+        #median_dwell_cols = [col for col in d.columns if re.match(weekly_median_dwell_pattern, col)] # Huan
+        #median_dwell_cols = [col for col in d.columns if col.endswith('median_dwell')]
+        #aggregate_home_cbg_col = median_dwell_cols[0][:18] + aggregate_home_cbg_col
         d = d.loc[d[aggregate_home_cbg_col].map(lambda x:len(x.keys()) > 0)]
         if verbose: print("After dropping for missing CBG home data, %i POIs" % len(d))
         d = d.dropna(subset=['avg_median_dwell'])
@@ -244,7 +246,7 @@ def fit_disease_model_on_real_data(d,
             d = d.fillna(value=fill_with_0)
         else:
             assert poi_cbg_visits_list[0].shape[0] == len(poi_ids)
-    M = len(d)
+    M = len(d)  # POI counts
 
     # filter CBGs
     poi_cbg_proportions = d[aggregate_home_cbg_col].values  # an array of dicts; each dict represents CBG distribution for POI
@@ -258,7 +260,9 @@ def fit_disease_model_on_real_data(d,
         all_cbgs = [a for b in poi_cbg_proportions for a in b.keys()]
         cbg_counts = Counter(all_cbgs).most_common()
         cbg_counts = [(str(cgb).zfill(12), count) for cgb, count in cbg_counts]
-        all_unique_cbgs = [cbg for cbg, count in cbg_counts if count >= cbg_count_cutoff]  # only keep CBGs that have visited at least this many POIs
+        all_unique_cbgs = [cbg for cbg, count in cbg_counts if count >= cbg_count_cutoff]
+        # only keep CBGs that have visited at least this many POIs
+
         if verbose: print("After dropping CBGs that appear in < %i POIs, %i CBGs (%2.1f%%)" %
               (cbg_count_cutoff, len(all_unique_cbgs), 100.*len(all_unique_cbgs)/len(cbg_counts)))
         if cbgs_to_filter_for is not None:
@@ -269,7 +273,7 @@ def fit_disease_model_on_real_data(d,
             cgb_populoation = cbgs_to_census_pops.get(cbg, False)  # cbgs_to_census_pops. All 202k groupblock in the U.S>
             if cgb_populoation:
                 if cgb_populoation > 0:
-                    all_unique_cbgs2.append(cbg)
+                    all_unique_cbgs2.append(str(int(cbg)))
         all_unique_cbgs  = all_unique_cbgs2
         #all_unique_cbgs = [cbg for cbg in all_unique_cbgs if cbgs_to_census_pops[cbg] > 0]
         if verbose: print('After dropping CBGs with population size 0 in ACS data, %i CBGs' % len(all_unique_cbgs))
@@ -358,12 +362,23 @@ def fit_disease_model_on_real_data(d,
                     (total_us_population_in_50_states_plus_dc,
                     safegraph_visitor_count,
                     correction_factor))
+            # use South Carolina population to obtain the correction factor.
+            state_population = 5149000
+            state_unique_visitors = 415034   # 2021-02-03
+            correction_factor = state_population / state_unique_visitors
+            print(
+                "Total state population of South Carolina: %i; total safegraph visitor count in South Carolina: %i; correction factor for POI visits is %2.3f" %
+                (state_population,
+                 state_unique_visitors,
+                 correction_factor))
+
             poi_time_counts = poi_time_counts * correction_factor
             d[hour_cols] = poi_time_counts
 
     # get CBG-related variables from census data
     print('2. Processing ACS data...')
-    all_unique_cbgs = [str(s).zfill(12) for s in all_unique_cbgs]
+    all_unique_cbgs = [str(round(float(s))).zfill(12) for s in all_unique_cbgs]
+    print("all_unique_cbgs[0]:", type(all_unique_cbgs[0]), all_unique_cbgs[0])
     cbg_sizes = np.array([cbgs_to_census_pops[a] for a in all_unique_cbgs])
     assert np.sum(np.isnan(cbg_sizes)) == 0
     if verbose:
@@ -660,6 +675,7 @@ def fit_disease_model_on_real_data(d,
 
     # feed everything into model.
     m = Model(**model_init_kwargs)
+    # just init, no calculation
     m.init_exogenous_variables(poi_cbg_proportions=poi_cbg_proportions_mat,
                                poi_time_counts=poi_time_counts,
                                poi_areas=poi_areas,
@@ -1556,8 +1572,10 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
     print('Running experiment=%s for these MSAs:' % experiment_to_run, msas)
     data_kwargs = [{'MSA_name':msa_name, 'nrows':None} for msa_name in msas]
     # Generate model kwargs. How exactly we do this depends on which experiments we're running.
-    num_seeds = 30   # Huan ?
+    num_seeds = 30   # Compute 30 times for each MSA.  # Huan ?
     configs_with_changing_params = []
+    # will 1050 configs: 15 * 10 * 7
+
     if experiment_to_run == 'just_save_ipf_output':
         model_kwargs = [{'min_datetime':min_datetime,
                          'max_datetime':max_datetime,
@@ -1587,6 +1605,8 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
                                BETA_AND_PSI_PLAUSIBLE_RANGE['max_poi_psi'], 15)
         home_betas = np.linspace(BETA_AND_PSI_PLAUSIBLE_RANGE['min_home_beta'],
                                  BETA_AND_PSI_PLAUSIBLE_RANGE['max_home_beta'], 10)
+
+        # ?? do not understand
         beta_multipliers = np.linspace(BETA_PLAUSIBLE_RANGE[0], BETA_PLAUSIBLE_RANGE[1], 7)
         for poi_psi in poi_psis:
             for start_beta in home_betas:
@@ -1663,13 +1683,23 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
                                                              'inter_cbg_gamma':gamma})
         
     elif experiment_to_run == 'calibrate_r0':
-        home_betas = [5e-1, 2e-1, 1e-1, 5e-2, 2e-2, 1e-2, 5e-3, 2e-3, 1e-3, 5e-4, 2e-4, 1e-4]
-        poi_psis = [20000, 16000, 13000, 10000, 7500, 6000, 5000, 4500, 4000, 
-                    3500, 3000, 2500, 2000, 1500, 1000, 500, 250, 100]
+        # home_betas = [5e-1, 2e-1, 1e-1, 5e-2, 2e-2, 1e-2, 5e-3, 2e-3, 1e-3, 5e-4, 2e-4, 1e-4]
+        # poi_psis = [20000, 16000, 13000, 10000, 7500, 6000, 5000, 4500, 4000,
+        #             3500, 3000, 2500, 2000, 1500, 1000, 500, 250, 100]
+
+        home_betas = [0.00001,  0.00002, 0.00005, 0.001, 0.005,  0.01]
+        poi_psis = [10, 100, 200, 300, 400, 500, 50]
+                    
+        # for home_beta in home_betas:
+        #     configs_with_changing_params.append({'home_beta':home_beta, 'poi_psi':2500, 'p_sick_at_t0':1e-4})
+        # for poi_psi in poi_psis:
+        #     configs_with_changing_params.append({'home_beta':0.001, 'poi_psi':poi_psi, 'p_sick_at_t0':1e-4})
+
+        # Huan
         for home_beta in home_betas:
-            configs_with_changing_params.append({'home_beta':home_beta, 'poi_psi':2500, 'p_sick_at_t0':1e-4})
-        for poi_psi in poi_psis:
-            configs_with_changing_params.append({'home_beta':0.001, 'poi_psi':poi_psi, 'p_sick_at_t0':1e-4})
+            # configs_with_changing_params.append({'home_beta':home_beta, 'poi_psi':2500, 'p_sick_at_t0':1e-4})
+            for poi_psi in poi_psis:
+                configs_with_changing_params.append({'home_beta':home_beta, 'poi_psi':poi_psi, 'p_sick_at_t0':1e-4})
 
     elif experiment_to_run == 'calibrate_r0_aggregate_mobility':
         # home beta range will be the same as normal experiment
@@ -1919,6 +1949,7 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
 
     else:  # if experiment_to_run is not in best_models_experiments
         if experiment_to_run != 'just_save_ipf_output':  # model_kwargs is already set for ipf experiment
+            # create model kwargs.
             model_kwargs = []
             for config in configs_with_changing_params:
                 model_kwargs.append({'min_datetime':min_datetime,
@@ -2125,14 +2156,17 @@ def run_many_models_in_parallel(configs_to_fit):
 
         # If we pass these checks, start a job.
         timestring = str(datetime.datetime.now()).replace(' ', '_').replace('-', '_').replace('.', '_').replace(':', '_')
+
         experiment_to_run = configs_to_fit[config_idx]['experiment_to_run']
+        timestring = f'{timestring}_{experiment_to_run}'
         print("Starting job %i/%i" % (config_idx + 1, len(configs_to_fit)))
         outfile_path = os.path.join(FITTED_MODEL_DIR, 'model_fitting_logfiles/%s.out' % timestring)
         # cmd = 'python model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
         # Huan
         # fit_and_save_one_model(timestring=timestring, model_kwargs=model_kwargs,   data_kwargs=data_kwargs, outfile_path)
         # cmd = 'nohup python -u model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
-        cmd = 'python -u model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' % (experiment_to_run, timestring, config_idx, outfile_path)
+        cmd = 'python model_experiments.py fit_and_save_one_model %s --timestring %s --config_idx %i > %s 2>&1 &' \
+              % (experiment_to_run, timestring, config_idx, outfile_path)
         print("Command: %s" % cmd)
         print("Current Python:")
         # os.system('source activate /media/gpu/easystore/covid-mobility-tool/env_dir/')
@@ -2414,16 +2448,20 @@ def find_model_and_real_overlap_for_eval(real_dates, real_cases, mdl_hours, mdl_
         compare_start_time = min(overlap)
     if compare_end_time is None:
         compare_end_time = max(overlap)
-    comparable_period = helper.list_hours_in_range(compare_start_time, compare_end_time)
-    overlap = sorted(overlap.intersection(set(comparable_period)))
-    real_date2case = dict(zip(real_dates, real_cases))
-    mdl_date2case = dict(zip(mdl_hours, mdl_cases.T)) # mdl_cases has an extra random_seed first dim
-    real_vec = []
-    mdl_mat = np.zeros((len(mdl_cases), len(overlap)))  # num_seed x num_time
-    for idx, date in enumerate(overlap):
-        real_vec.append(real_date2case[date])
-        mdl_mat[:, idx] = mdl_date2case[date]
-    return np.array(real_vec), mdl_mat, overlap[0], overlap[-1]
+    try:
+        comparable_period = helper.list_hours_in_range(compare_start_time, compare_end_time)
+        overlap = sorted(overlap.intersection(set(comparable_period)))
+        real_date2case = dict(zip(real_dates, real_cases))
+        mdl_date2case = dict(zip(mdl_hours, mdl_cases.T)) # mdl_cases has an extra random_seed first dim
+        real_vec = []
+        mdl_mat = np.zeros((len(mdl_cases), len(overlap)))  # num_seed x num_time
+        for idx, date in enumerate(overlap):
+            real_vec.append(real_date2case[date])
+            mdl_mat[:, idx] = mdl_date2case[date]
+        return np.array(real_vec), mdl_mat, overlap[0], overlap[-1]
+    except Exception as e:
+        print("Error in find_model_and_real_overlap_for_eval():", e, mdl_hours, mdl_cases,
+                                         compare_start_time, compare_end_time)
 
 def get_variables_for_evaluating_msa_model(msa_name, verbose=False):
     acs_data = pd.read_csv(PATH_TO_ACS_5YR_DATA)
@@ -2581,7 +2619,9 @@ def compare_model_vs_real_num_cases(nyt_outcomes,
 
     if not mdl_prediction_provided:
         # align cases with datetimes
-        mdl_IR = (history['nyt']['infected'] + history['nyt']['removed']) # should think of this as a cumulative count because once you enter the removed state, you never leave. So mdl_cases is the number of people who have _ever_ been infectious or removed (ie, in states I or R).
+        mdl_IR = (history['nyt']['infected'] + history['nyt']['removed'])
+        # should think of this as a cumulative count because once you enter the removed state, you never leave.
+        # So mdl_cases is the number of people who have _ever_ been infectious or removed (ie, in states I or R).
         num_hours = mdl_IR.shape[1]
         mdl_end_time = mdl_start_time + datetime.timedelta(hours=num_hours-1)
         mdl_hours = helper.list_hours_in_range(mdl_start_time, mdl_end_time)
@@ -2602,7 +2642,9 @@ def compare_model_vs_real_num_cases(nyt_outcomes,
         if not mdl_prediction_provided:
             # note: mdl_prediction should always represent an hourly *cumulative* count per seed x hour
             if mode == 'cases':
-                min_thresholds = [1, 10, 20, 50, 100]  # don't evaluate LL on very small numbers -- too noisy
+                min_thresholds = [1, 10, 20, 50, 100]
+                # don't evaluate LL on very small numbers -- too noisy
+
                 if prediction_mode == 'deterministic':  # assume constant detection rate and delay
                     mdl_prediction = mdl_IR * detection_rate
                     projected_hrs = [hr + datetime.timedelta(days=detection_lag) for hr in mdl_hours]
@@ -3138,7 +3180,9 @@ def evaluate_all_fitted_models_for_msa(msa_name, min_timestring=None,
 
     """
     required_properties refers to params that are defined in data_and_model_kwargs, outside of ‘model_kwargs’ and ‘data_kwargs`
+    E.g., required_properties={'experiment_to_run':'normal_grid_search'})
     """
+
 
     pd.set_option('max_columns', 50)
     pd.set_option('display.width', 500)
@@ -3319,6 +3363,7 @@ if __name__ == '__main__':
     # The other important command line argument is experiment_to_run, which specifies which step of the experimental pipeline we're running.
     # The worker jobs take additional arguments like timestring (which specifies the timestring we use to save model files)
     # and config_idx, which specifies which config we're using.
+    print("Starting...")
     valid_experiments = ['normal_grid_search', 'grid_search_no_mobility', 'grid_search_no_mask_data',
                          'grid_search_home_proportion_beta', 'grid_search_fixed_beta',
                          'grid_search_inter_cbg_gamma', 'grid_search_aggregate_mobility', 
@@ -3342,13 +3387,19 @@ if __name__ == '__main__':
     # Less frequently used arguments.
     config_idx_to_start_at = None
     skip_previously_fitted_kwargs = False
-    min_timestring = '2021_01_06_0_0'  # used to select the full models and configs
+
+    # the confirm cases date, or simulation starting date? Or Safegraph date?
+    # Actually, the computing date. ??
+    min_timestring = '2020_12_20_0_0'  # used to select the full models and configs
 
     # the filename of to config, started with the computer name.
+    # To save or load the configs from this file
     config_filename = '%s_configs.pkl' % COMPUTER_WE_ARE_RUNNING_ON.replace('.stanford.edu', '')
     if args.manager_or_worker_job == 'run_many_models_in_parallel':
         # manager job generates configs.
         assert args.timestring is None   # timestring is the file name of the log files (or the saved models?)
+        # the computing date.
+
         assert args.config_idx is None  # the ID of the config in the config file.
         experiment_list = args.experiment_to_run.split(',')  # the name of the config
         assert [a in valid_experiments for a in experiment_list]   # all experiments should be predefined.
@@ -3388,10 +3439,12 @@ if __name__ == '__main__':
         configs_to_fit = pickle.load(f)
         f.close()
         timestring = args.timestring
+        timestring = f'{timestring}_{args.experiment_to_run}'
         config_idx = args.config_idx
         assert timestring is not None and config_idx is not None
         data_and_model_config = configs_to_fit[config_idx]
         if 'grid_search' in args.experiment_to_run:
+            # do not know this
             train_test_partition = TRAIN_TEST_PARTITION
         else:
             train_test_partition = None

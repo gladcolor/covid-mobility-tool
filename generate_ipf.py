@@ -14,10 +14,10 @@ import re
 import scipy 
 import time 
 
-TIME_PERIODS_FOR_CURR_IPF = ['20210106_20210120']  # Safegrah data release date.
-MIN_DATETIME_FOR_CURR_IPF = datetime.datetime(2020, 12, 28, 0)
-MAX_DATETIME_FOR_CURR_IPF = datetime.datetime(2021, 1, 17, 23)  # actually date
-TEST_IPF_HOUR = datetime.datetime(2020, 10, 1, 0)
+TIME_PERIODS_FOR_CURR_IPF = ['20201209_20210630']  # Safegrah data release date.
+MIN_DATETIME_FOR_CURR_IPF = datetime.datetime(2020, 11, 30, 0)   # for IPF generation
+MAX_DATETIME_FOR_CURR_IPF = datetime.datetime(2021, 4, 5, 23)  # actually date
+TEST_IPF_HOUR = datetime.datetime(2021, 3, 1, 0)
 CBG_COUNT_CUTOFF = 100
 POI_HOURLY_VISITS_CUTOFF = 'all'
 
@@ -71,14 +71,15 @@ def generate_ipf_for_msa(msa_name, merged_df, min_datetime, max_datetime, poi_id
         path_to_poi_csv = os.path.join(PATH_TO_NEW_IPF_OUTPUT, '%s/%s_to_%s_poi_ids.csv' % 
                                    (msa_name, min_datetime.strftime('%Y-%m-%d'), max_datetime.strftime('%Y-%m-%d')))
         poi_df.to_csv(path_to_poi_csv, index=False)
-        print(path_to_poi_csv)
+        print("Saved poi_df in:", path_to_poi_csv)
     
     if cbg_ids is None:  # don't resave if CBG IDs were given
         cbg_df = pd.DataFrame({'cbg_id':cbg_labels})
         path_to_cbg_csv = os.path.join(PATH_TO_NEW_IPF_OUTPUT, '%s/%s_to_%s_cbg_ids.csv' % 
                                        (msa_name, min_datetime.strftime('%Y-%m-%d'), max_datetime.strftime('%Y-%m-%d')))
         cbg_df.to_csv(path_to_cbg_csv, index=False)
-        print(path_to_cbg_csv)
+        print("Saved path_to_cbg_csv in:", path_to_cbg_csv)
+        # print(path_to_cbg_csv)
     
     all_hours = helper.list_hours_in_range(min_datetime, max_datetime)
     assert len(ipf_out) == len(all_hours)
