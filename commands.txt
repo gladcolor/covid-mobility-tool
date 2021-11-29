@@ -15,3 +15,21 @@ conda run python model_experiments.py run_many_models_in_parallel normal_grid_se
 python model_experiments.py fit_and_save_one_model normal_grid_search --timestring Huan_timestring  --config_idx 5
 
 
+
+pip install prompt_toolkit
+
+conda env create --prefix /media/gpu/easystore/covid-mobility-tool/env_v3 --file covid_mobility_env.yml
+
+
+
+
+cd /media/gpu/easystore/covid-mobility-tool
+conda activate /media/gpu/Seagate/covid-mobility-tool/env_v3
+jupyter lab
+
+
+cd /media/gpu/easystore/covid-mobility-tool
+conda activate /media/gpu/Seagate/covid-mobility-tool/env_v3
+
+
+fit_and_save_one_model normal_grid_search --timestring Huan_selected --config_idx 5

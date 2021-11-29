@@ -182,8 +182,8 @@ def fit_disease_model_on_real_data(d,
             home_beta = np.linspace(home_beta[0], home_beta[1], len(model_days))  # increment daily
             exogenous_model_kwargs['home_beta'] = home_beta
         else:  # should be daily
-            assert len(home_beta) == len(model_days)
-        
+            assert len(home_beta) == len(model_days)  # daily home_beta
+
     # aggregate median_dwell time over weeks
     if 'avg_median_dwell' not in d.columns:
         weekly_median_dwell_pattern = re.compile('202.*_.*_of_median_dwell')
@@ -477,7 +477,8 @@ def fit_disease_model_on_real_data(d,
         assert all((mask_data >= 0) & (mask_data <= 1))
     else:
         mask_data = None
-        
+
+    # Given a starting date and the associated initial S, E, I, R rate. See the initialized_seir.ipynb
     if 'p_sick_at_t0' not in exogenous_model_kwargs or exogenous_model_kwargs['p_sick_at_t0'] is None:
         fn = os.path.join(PATH_TO_SEIR_INIT, 'all_cbgs_s=%s.csv' % (min_datetime.strftime('%Y-%m-%d')))
         assert os.path.isfile(fn),  "Cannot find file: %s" % fn
@@ -1187,6 +1188,9 @@ def sanity_check_error_metrics(fast_to_load_results):
         assert np.allclose(train_plus_test_loss, overall_loss, rtol=1e-6)
     print("Sanity check error metrics passed")
 
+
+
+
 def fit_and_save_one_model(timestring,
                            model_kwargs,
                            data_kwargs,
@@ -1194,7 +1198,8 @@ def fit_and_save_one_model(timestring,
                            experiment_to_run=None,
                            train_test_partition=None,
                            filter_for_cbgs_in_msa=False,
-                           version='v2'):
+                           version='v2',
+                           existing_config=None):
     '''
     Fits one model, saves its results and evaluations of the results.
     timestring: str; to use in filenames to identify the model and its config;
@@ -1210,6 +1215,8 @@ def fit_and_save_one_model(timestring,
     filter_for_cbgs_in_msa: bool; whether to only model CBGs in the MSA
     version: str; either v1 (data + infrastructure from our Nature paper) or v2 (updated data + infrastructure)
     '''
+
+
     assert all([k in model_kwargs for k in ['min_datetime', 'max_datetime', 'exogenous_model_kwargs',
                                             'poi_attributes_to_clip']])
     assert 'MSA_name' in data_kwargs
@@ -1225,14 +1232,16 @@ def fit_and_save_one_model(timestring,
         if version == 'v1':
             d = helper.load_dataframe_for_individual_msa(data_kwargs['MSA_name'], version=version)
         else:
-            d = helper.prep_msa_df_for_model_experiments(data_kwargs['MSA_name'], time_period_strings=[])  # load POI attributes.
+            d = helper.prep_msa_df_for_model_experiments(data_kwargs['MSA_name'], time_period_strings=[])
+            # load POI attributes.
+
     nyt_outcomes, nyt_counties, nyt_cbgs, msa_counties, msa_cbgs = get_variables_for_evaluating_msa_model(data_kwargs['MSA_name'])
-    msa_counties = [str(s).zfill(5) for s in msa_counties]
-    nyt_cbgs = [str(s).zfill(12) for s in nyt_cbgs]
+    msa_counties = [str(s).zfill(5) for s in msa_counties]  # county fips
+    nyt_cbgs = [str(s).zfill(12) for s in nyt_cbgs]  # block groups
     if 'counties_to_track' not in model_kwargs:
         model_kwargs['counties_to_track'] = msa_counties
     cbg_groups_to_track = {}
-    cbg_groups_to_track['nyt'] = nyt_cbgs
+    cbg_groups_to_track['nyt'] = nyt_cbgs  # block groups
     if filter_for_cbgs_in_msa:
         print("Filtering for %i CBGs within MSA %s" % (len(msa_cbgs), data_kwargs['MSA_name']))
         cbgs_to_filter_for = set(msa_cbgs) # filter for CBGs within MSA
@@ -1602,14 +1611,17 @@ def generate_data_and_model_configs(config_idx_to_start_at=None,
         
     elif experiment_to_run == 'normal_grid_search' or experiment_to_run == 'grid_search_no_mask_data':
         # sample the poi_psi and home_beta from plausible range.
-        poi_psis = np.linspace(BETA_AND_PSI_PLAUSIBLE_RANGE['min_poi_psi'], 
-                               BETA_AND_PSI_PLAUSIBLE_RANGE['max_poi_psi'], 15)
-        home_betas = np.linspace(BETA_AND_PSI_PLAUSIBLE_RANGE['min_home_beta'],
-                                 BETA_AND_PSI_PLAUSIBLE_RANGE['max_home_beta'], 10)
+        poi_psi_num = 4
+        home_beta_num = 4
+        beta_multipliers_num = 4
+        poi_psis = np.linspace(BETA_AND_PSI_PLAUSIBLE_RANGE_SINGLE['min_poi_psi'],
+                               BETA_AND_PSI_PLAUSIBLE_RANGE_SINGLE['max_poi_psi'], poi_psi_num)
+        home_betas = np.linspace(BETA_AND_PSI_PLAUSIBLE_RANGE_SINGLE['min_home_beta'],
+                                 BETA_AND_PSI_PLAUSIBLE_RANGE_SINGLE['max_home_beta'], home_beta_num)
 
         # ?? do not understand
         # fine tuning the home_betasj, 15*10*7 = 1050
-        beta_multipliers = np.linspace(BETA_PLAUSIBLE_RANGE[0], BETA_PLAUSIBLE_RANGE[1], 7)
+        beta_multipliers = np.linspace(BETA_PLAUSIBLE_RANGE_SINGLE[0], BETA_PLAUSIBLE_RANGE_SINGLE[1], beta_multipliers_num)
         for poi_psi in poi_psis:  # iter: 15
             for start_beta in home_betas:   # iter: 10
                 for multiplier in beta_multipliers:  # iter: 7
@@ -3367,6 +3379,14 @@ if __name__ == '__main__':
     # The worker jobs take additional arguments like timestring (which specifies the timestring we use to save model files)
     # and config_idx, which specifies which config we're using.
     print("Starting...")
+
+    BETA_AND_PSI_PLAUSIBLE_RANGE_SINGLE = {"min_home_beta": 0.010,
+                                    "max_home_beta": 0.018,
+                                    "min_poi_psi": 5,
+                                    "max_poi_psi": 15}
+
+    BETA_PLAUSIBLE_RANGE_SINGLE = (0.25, 0.75)
+
     valid_experiments = ['normal_grid_search', 'grid_search_no_mobility', 'grid_search_no_mask_data',
                          'grid_search_home_proportion_beta', 'grid_search_fixed_beta',
                          'grid_search_inter_cbg_gamma', 'grid_search_aggregate_mobility', 
@@ -3436,23 +3456,39 @@ if __name__ == '__main__':
 
     # args.manager_or_worker_job == 'fit_and_save_one_model':
     else:  # worker job needs to load the list of configs and figure out which one it's running.
-        assert args.experiment_to_run in valid_experiments
-        print("loading configs from %s" % config_filename)
-        f = open(config_filename, 'rb')
-        configs_to_fit = pickle.load(f)
-        f.close()
         timestring = args.timestring
         timestring = f'{timestring}_{args.experiment_to_run}'
-        config_idx = args.config_idx
-        assert timestring is not None and config_idx is not None
-        data_and_model_config = configs_to_fit[config_idx]
+
+
+
+        EXISTING_CONFIG = None
+        EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2021_11_28_13_18_45_911113_normal_grid_search_normal_grid_search.pkl'
+
+        if EXISTING_CONFIG is not None:
+            f = open(EXISTING_CONFIG, 'rb')
+            data_and_model_config = pickle.load(f)
+
+        else:
+            assert args.experiment_to_run in valid_experiments
+            print("loading configs from %s" % config_filename)
+            f = open(config_filename, 'rb')
+            configs_to_fit = pickle.load(f)
+            f.close()
+            config_idx = args.config_idx
+            print("Running single model (config idx = %d). Kwargs are" % config_idx)
+
+            assert timestring is not None and config_idx is not None
+            data_and_model_config = configs_to_fit[config_idx]
+
+
+
         if 'grid_search' in args.experiment_to_run:
             # do not know this
             train_test_partition = TRAIN_TEST_PARTITION
         else:
             train_test_partition = None
 
-        print("Running single model (config idx = %d). Kwargs are" % config_idx)
+
         print_config_as_json(data_and_model_config)
         try:
             fit_and_save_one_model(timestring,

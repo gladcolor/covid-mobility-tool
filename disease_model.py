@@ -56,6 +56,10 @@ class Model:
                                  track_full_history_for_all_CBGs=False,
                                  poi_subcategory_types=None):
 
+        # Huan, to store the infection rates.
+        self.cbg_infection_rates = []
+        self.poi_infection_rates = []
+
         self.M = len(poi_areas)
         self.N = len(cbg_sizes)
         self.T = len(all_hours)
@@ -295,6 +299,7 @@ class Model:
             print(f'=== RESULTS ({self.num_seeds} seeds) ===')
             start_time = time.time()
 
+        print("CBG count:", len(self.CBG_SIZES))
         print("CBG population:", np.sum(self.CBG_SIZES))
 
 
@@ -302,6 +307,7 @@ class Model:
         while t < self.T:
             iter_t0 = time.time()
             if (verbosity > 0) and (t % verbosity == 0):
+                # axis = 1: for each realization, the default is 30.
                 L = np.sum(self.cbg_latent, axis=1)
                 I = np.sum(self.cbg_infected, axis=1)
                 R = np.sum(self.cbg_removed, axis=1)
@@ -457,7 +463,7 @@ class Model:
         else:
             beta = self.HOME_BETA
         
-        ### Compute CBG densities and infection rates
+        ### Compute CBG densities (infected/population) and infection rates
         cbg_densities = self.cbg_infected / self.CBG_SIZES  # S x N   : seeds * CBS counts
         overall_densities = (np.sum(self.cbg_infected, axis=1) / np.sum(self.CBG_SIZES)).reshape(-1, 1)  # S x 1 : seeds * 1
         num_sus = np.clip(self.CBG_SIZES - self.cbg_latent - self.cbg_infected - self.cbg_removed, 0, None)  # S x N: seeds * CBS counts
@@ -479,6 +485,13 @@ class Model:
         cbg_base_infection_rates = cbg_base_infection_rates * scaling_factor  # scaling_factor: mask-wearing
         self.num_base_infection_rates_clipped = np.sum(cbg_base_infection_rates > 1)
         cbg_base_infection_rates = np.clip(cbg_base_infection_rates, None, 1.0)
+
+        # Huan
+        self.cbg_infection_rates.append(cbg_base_infection_rates)
+
+        # save the cbg_base_infection_rates:
+        is_save_infection_rate = True
+
 
         ### Load or compute POI x CBG matrix
         if self.POI_CBG_VISITS_LIST is not None:  # try to load
@@ -554,6 +567,9 @@ class Model:
             self.num_poi_infection_rates_clipped = np.sum(poi_infection_rates > 1)
             if self.clip_poisson_approximation:
                 poi_infection_rates = np.clip(poi_infection_rates, None, 1.0)
+
+            # Huan
+            self.poi_infection_rates.append(poi_infection_rates)
 
             # S x N = (S x N) * ((S x M) @ (M x N))
             cbg_mean_new_cases_from_poi = sus_frac * (poi_infection_rates @ poi_cbg_visits)

@@ -51,7 +51,7 @@ OLD_FITTED_MODEL_DIR = os.path.join(BASE_DIR, 'all_aggregate_data/fitted_models/
 
 # in new base dir
 NEW_BASE_DIR = '/media/gpu/easystore/'
-FITTED_MODEL_DIR = os.path.join(NEW_BASE_DIR, 'extra_safegraph_aggregate_models/')
+# FITTED_MODEL_DIR = os.path.join(NEW_BASE_DIR, 'extra_safegraph_aggregate_models/')
 CURRENT_DATA_DIR = os.path.join(NEW_BASE_DIR, 'Safegraph/')
 NEW_STRATIFIED_BY_AREA_DIR = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/stratified_by_metro_area/')
 PATH_TO_NEW_IPF_OUTPUT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/ipf_output/')
@@ -83,8 +83,11 @@ FOOTPRINT_FILE = r'/media/gpu/easystore/Safegraph/Core Places US (Nov 2020 - Pre
 WEEKLY_PATTERNS_BEFORE_20201130 = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/patterns_backfill/2020/12/14/21'
 WEEKLY_PATTERNS_AFTER_20201130  = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns'
 WEEKLY_PATTERNS_AFTER_2021  = r'/media/gpu/easystore/Safegraph/Weekly Places Patterns Backfill for Dec 2020 and Onward Release/release-2021-07/weekly/patterns_backfill/2021/07/15/15'
-
 # WEEKLY_PATTERNS after July 2021 need to be manually request.
+
+FITTED_MODEL_DIR = r'/media/gpu/Seagate/extra_safegraph_aggregate_models'
+
+
 
 #######################################################################
 # PARAMS USED IN EXPERIMENTS THAT WILL NOT OFTEN CHANGE
@@ -117,7 +120,7 @@ SC_MSAS = [
            ]
 
 P0_SICK_RANGE = [5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
-BETA_PLAUSIBLE_RANGE = (0.7, 1.3)
+BETA_PLAUSIBLE_RANGE = (0.5, 2)
 AREA_CLIPPING_BELOW = 5
 AREA_CLIPPING_ABOVE = 95
 DWELL_TIME_CLIPPING_ABOVE = 90
@@ -197,10 +200,10 @@ TRAIN_TEST_PARTITION = datetime.datetime(2021, 1, 30)   # test
 #                                 "min_poi_psi": 628.3147342601472,
 #                                 "max_poi_psi": 20177.930428375937}
 # Huan
-BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.001,
-                                "max_home_beta": 0.02,
-                                "min_poi_psi": 50,
-                                "max_poi_psi": 1000}
+BETA_AND_PSI_PLAUSIBLE_RANGE = {"min_home_beta": 0.002,
+                                "max_home_beta": 0.04,
+                                "min_poi_psi": 5,
+                                "max_poi_psi": 100}
 #######################################################################
 # USEFUL DICTIONARIES / LISTS
 #######################################################################
