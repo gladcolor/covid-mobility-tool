@@ -25,7 +25,10 @@ conda env create --prefix /media/gpu/easystore/covid-mobility-tool/env_v3 --file
 
 cd /media/gpu/easystore/covid-mobility-tool
 conda activate /media/gpu/Seagate/covid-mobility-tool/env_v3
-jupyter lab
+jupyter z
+
+
+
 
 
 cd /media/gpu/easystore/covid-mobility-tool
