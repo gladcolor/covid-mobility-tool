@@ -1,5 +1,5 @@
 cd /media/gpu/easystore/covid-mobility-tool
-conda activate /media/gpu/easystore/covid-mobility-tool/env_v2
+conda activate /media/gpu/easystore/covid-mobility-tool/env_v3
 jupyter lab
 
 cd /media/gpu/easystore/covid-mobility-tool

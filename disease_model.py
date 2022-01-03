@@ -21,6 +21,8 @@ class Model:
         self.ipf_num_iter = ipf_num_iter
         self.clip_poisson_approximation = clip_poisson_approximation
 
+
+
         np.random.seed(self.starting_seed)
 
     def init_exogenous_variables(self,
@@ -57,10 +59,14 @@ class Model:
                                  poi_subcategory_types=None):
 
         # Huan, to store the infection rates.
+        self.IS_SAVE_INFECTION_RATE = False
         self.cbg_infection_rates = []
         self.poi_infection_rates = []
+        self.each_cbg_new_cases_from_poi = []
+        self.each_cbg_new_cases_from_base = []
 
-        self.M = len(poi_areas)
+
+        self.M = len(poi_areas)   # M: poi count
         self.N = len(cbg_sizes)
         self.T = len(all_hours)
         num_days = int(self.T / 24)  # will use for different sanity checks below
@@ -239,6 +245,7 @@ class Model:
     def simulate_disease_spread(self, verbosity=24,
                                 simulate_cases=True, simulate_deaths=True,
                                 groups_to_track_num_cases_per_poi=None,
+                                # groups_to_track_num_cases_per_poi=['all'],   # Huan
                                 use_aggregate_mobility=False,
                                 use_home_proportion_beta=False,
                                 use_inter_cbg_leak_factor=False,
@@ -464,6 +471,7 @@ class Model:
             beta = self.HOME_BETA
         
         ### Compute CBG densities (infected/population) and infection rates
+        ## densities: the infected ratio
         cbg_densities = self.cbg_infected / self.CBG_SIZES  # S x N   : seeds * CBS counts
         overall_densities = (np.sum(self.cbg_infected, axis=1) / np.sum(self.CBG_SIZES)).reshape(-1, 1)  # S x 1 : seeds * 1
         num_sus = np.clip(self.CBG_SIZES - self.cbg_latent - self.cbg_infected - self.cbg_removed, 0, None)  # S x N: seeds * CBS counts
@@ -490,7 +498,7 @@ class Model:
         self.cbg_infection_rates.append(cbg_base_infection_rates)
 
         # save the cbg_base_infection_rates:
-        is_save_infection_rate = True
+        # is_save_infection_rate = True
 
 
         ### Load or compute POI x CBG matrix
@@ -599,6 +607,10 @@ class Model:
             num_sus_remaining.astype(int),
             cbg_base_infection_rates)
         self.cbg_new_cases = self.cbg_new_cases_from_poi + self.cbg_new_cases_from_base
+
+        # huan
+        self.each_cbg_new_cases_from_poi.append(self.cbg_new_cases_from_poi)
+        self.each_cbg_new_cases_from_base.append(self.cbg_new_cases_from_base)
         
         if self.use_inter_cbg_leak_factor:
             cbg_leak_infection_rates = np.tile(overall_densities, self.N) * self.GAMMA * scaling_factor  # S x N
@@ -650,5 +662,10 @@ class Model:
         self.DWELL_TIME_CORRECTION_FACTORS = None
         self.POI_FACTORS = None
         self.POI_SUBCATEGORY_TYPES = None
+        if not self.IS_SAVE_INFECTION_RATE:
+            self.cbg_infection_rates = "Not saved."
+            self.poi_infection_rates = 'Not saved.'
+            self.each_cbg_new_cases_from_poi = 'Not saved.'
+            self.each_cbg_new_cases_from_base = 'Not saved.'
         pickle.dump(self, file, protocol=4) # https://stackoverflow.com/questions/29704139/pickle-in-python3-doesnt-work-for-large-data-saving
         file.close()

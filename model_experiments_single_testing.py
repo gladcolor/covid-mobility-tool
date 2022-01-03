@@ -1312,6 +1312,8 @@ def fit_and_save_one_model(timestring,
     
     # Save kwargs
     keys_to_delete = ['poi_cbg_visits_list', 'poi_ids', 'cbg_ids']  # their values are too large, we don't want to save
+    keys_to_delete = []  # Huan
+
     for k in keys_to_delete:
         if k in model_kwargs:
             model_kwargs[k] = None
@@ -3462,11 +3464,19 @@ if __name__ == '__main__':
 
 
         EXISTING_CONFIG = None
-        EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2021_11_28_13_18_45_911113_normal_grid_search_normal_grid_search.pkl'
+        EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2022_01_02_23_03_13_321102_normal_grid_search_normal_grid_search.pkl'
 
         if EXISTING_CONFIG is not None:
             f = open(EXISTING_CONFIG, 'rb')
             data_and_model_config = pickle.load(f)
+            home_beta_arry = data_and_model_config['model_kwargs']['exogenous_model_kwargs']['home_beta']
+            poi_psi = data_and_model_config['model_kwargs']['exogenous_model_kwargs']['poi_psi']
+            home_beta_arry = home_beta_arry * 1.02
+            poi_psi = poi_psi * 1.02
+
+            data_and_model_config['model_kwargs']['exogenous_model_kwargs']['home_beta'] = home_beta_arry
+            data_and_model_config['model_kwargs']['exogenous_model_kwargs']['poi_psi'] = poi_psi
+
 
         else:
             assert args.experiment_to_run in valid_experiments

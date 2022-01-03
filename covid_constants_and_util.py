@@ -116,7 +116,9 @@ VA_MSAS = ['Washington_Arlington_Alexandria_DC_VA_MD_WV',
 'Blacksburg_Christiansburg_Radford_VA+Charlottesville_VA+Harrisonburg_VA+Lynchburg_VA+Roanoke_VA+Staunton_Waynesboro_VA']
 
 SC_MSAS = [
-           'Columbia_SC',
+           # 'Columbia_SC',
+            'Greenville_Anderson_SC',
+
            ]
 
 P0_SICK_RANGE = [5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
@@ -154,7 +156,9 @@ INCIDENCE_POP = 100000
 #######################################################################
 # MSAS_IMPLEMENTED_FOR_V2 = ['Richmond_VA']  # the list of MSAs you want to run experiments for right now  Washington_Arlington_Alexandria_DC_VA_MD_WV
 # MSAS_IMPLEMENTED_FOR_V2 = ['Washington_Arlington_Alexandria_DC_VA_MD_WV']  # the list of MSAs you want to run experiments for right now    # Huan
-MSAS_IMPLEMENTED_FOR_V2 = ['Columbia_SC']  # the list of MSAs you want to run experiments for right now    # Huan
+# MSAS_IMPLEMENTED_FOR_V2 = ['Columbia_SC']  # the list of MSAs you want to run experiments for right now    # Huan
+# MSAS_IMPLEMENTED_FOR_V2 = ['Greenville_Anderson_SC']  # the list of MSAs you want to run experiments for right now    # Huan
+MSAS_IMPLEMENTED_FOR_V2 = ['Charleston_North_Charleston_SC']  # the list of MSAs you want to run experiments for right now    # Huan
 
 
 CPU_USAGE_THRESHOLD = 70
