@@ -10,3 +10,15 @@ The code was forked from the study of ["Supporting COVID-19 policy response with
  - Used ACS 2019 instead of ACS 2018.
  - Added functions to store simulation results of Census blockgroups.
 
+
+Note:
+- Ubuntu only.
+- Carefully deal with the data directories.
+- Be aware of the data type of GEOID of Census blockgroup. This fork uses `str` instead of `int` in the origin.
+
+
+To do:
+
+- Generate the mobility matric in a better way. Current method needs a lot of memory.
+- replace the grid search by heuristic methods.
+
