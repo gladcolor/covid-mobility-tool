@@ -382,6 +382,7 @@ def load_patterns_data(month=None, year=None, week_string=None, extra_cols=[], j
         print("%i rows loaded for week %s" % (len(x), week_string))
     return x
 
+
 def load_weekly_patterns_v2_data(week_string, cols_to_keep=[], expand_hourly_visits=True, path_to_csv=None):
     """
     week_string: csv file name (released date)
@@ -518,6 +519,155 @@ def load_core_places_footprint_data(cols_to_keep):
     print('Loaded core places footprint data for %d POIs' % len(df))
     return df
 
+
+def load_weekly_patterns_api_split_data(counties, week_string, cols_to_keep=[], expand_hourly_visits=True, path_to_csv=None):
+    """
+    counties: a list of counties whose data need to be loaded
+    week_string: csv file name (released date)
+    Load in Weekly Patterns API data for a single week.
+    The data should be split and stored as: state_fips/county_fips/county_fips_start_date_end_date.csv
+    """
+
+    if len(cols_to_keep) == 0:
+        cols_to_keep = ['date_range_start', 'date_range_end', 'placekey', 'sg_wp__parent_placekey', 'sg_wp__location_name',
+    'sg_wp__street_address', 'sg_wp__city', 'sg_wp__region', 'sg_wp__postal_code', 'sg_wp__iso_country_code',
+    'sg_wp__safegraph_brand_ids', 'sg_wp__brands', 'sg_wp__date_range_start', 'sg_wp__date_range_end',
+    'sg_wp__raw_visit_counts', 'sg_wp__raw_visitor_counts', 'sg_wp__visits_by_day', 'sg_wp__visits_by_each_hour',
+     'sg_wp__poi_cbg', 'sg_wp__visitor_home_cbgs', 'sg_wp__visitor_home_aggregation',
+     'sg_wp__visitor_daytime_cbgs', 'sg_wp__visitor_country_of_origin', 'sg_wp__distance_from_home',
+     'sg_wp__median_dwell', 'sg_wp__bucketed_dwell_times', 'sg_wp__related_same_day_brand',
+     'sg_wp__related_same_week_brand', 'sg_wp__device_type', 'county_fips', 'state_fips', 'date_range']
+    """
+    All columns of split CSV:
+    'date_range_start', 'date_range_end', 'placekey', 'sg_wp__parent_placekey', 'sg_wp__location_name', 
+    'sg_wp__street_address', 'sg_wp__city', 'sg_wp__region', 'sg_wp__postal_code', 'sg_wp__iso_country_code', 
+    'sg_wp__safegraph_brand_ids', 'sg_wp__brands', 'sg_wp__date_range_start', 'sg_wp__date_range_end', 
+    'sg_wp__raw_visit_counts', 'sg_wp__raw_visitor_counts', 'sg_wp__visits_by_day', 'sg_wp__visits_by_each_hour',
+     'sg_wp__poi_cbg', 'sg_wp__visitor_home_cbgs', 'sg_wp__visitor_home_aggregation', 
+     'sg_wp__visitor_daytime_cbgs', 'sg_wp__visitor_country_of_origin', 'sg_wp__distance_from_home', 
+     'sg_wp__median_dwell', 'sg_wp__bucketed_dwell_times', 'sg_wp__related_same_day_brand', 
+     'sg_wp__related_same_week_brand', 'sg_wp__device_type', 'county_fips', 'state_fips', 'date_range'
+    """
+
+    # make sure the week_string is correct.
+    ts = time.time()
+    elements = week_string.split('-')
+    assert len(elements) == 3
+    week_datetime = datetime.datetime(int(elements[0]), int(elements[1]), int(elements[2]))
+    cols_to_load = cols_to_keep.copy()
+    must_load_cols = ['date_range_start', 'visits_by_each_hour']  # required for later logic
+    for k in must_load_cols:
+        if k not in cols_to_load:
+            cols_to_load.append(k)
+
+    if week_string <= '2020-06-15':
+        path_to_csv = os.path.join(CURRENT_DATA_DIR,
+                                   'weekly_pre_20200615/main-file/%s-weekly-patterns.csv.gz' % week_string)
+        assert os.path.isfile(path_to_csv)
+        print('Loading from %s' % path_to_csv)
+        df = load_csv_possibly_with_dask(path_to_csv, use_dask=True, usecols=cols_to_load, dtype={'poi_cbg': 'float64'})
+        start_day_string = week_string
+        start_datetime = week_datetime
+
+    # week_string <= '2020-06-15'
+    else:
+        print("week_string:", week_string)
+        if week_string <= '2020-12-08':  # this is release date; start of this week is 2020-11-30
+            path_to_weekly_dir = os.path.join(WEEKLY_PATTERNS_BEFORE_20201130,
+                                              r'/%s/' % week_datetime.strftime('%Y/%m/%d'))
+
+        # The above code have not modified! Huan
+        # week_string > '2020-12-08'
+        else:
+            # date_dir = os.path.join(CURRENT_DATA_DIR, 'Weekly Places Patterns (for data from 2020-11-30 to Present)/patterns/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            ##hour_dir = os.listdir(date_dir)[0]
+            # week_dir = os.path.join(date_dir, hour_dir)
+            path_to_weekly_dir = os.path.join(
+                WEEKLY_PATTERNS_AFTER_20201130 + '/%s/' % week_datetime.strftime('%Y/%m/%d'))
+            # print(f"WEEKLY_PATTERNS_AFTER_20201130: {WEEKLY_PATTERNS_AFTER_20201130}")
+        inner_folder = os.listdir(path_to_weekly_dir)
+        assert len(inner_folder) == 1  # there is always a single folder inside the weekly folder
+        path_to_patterns_parts = os.path.join(path_to_weekly_dir, inner_folder[0])
+        dfs = []
+        for filename in sorted(os.listdir(path_to_patterns_parts)):
+            if filename.startswith('patterns-part'):  # e.g., patterns-part1.csv.gz
+                path_to_csv = os.path.join(path_to_patterns_parts, filename)
+                assert os.path.isfile(path_to_csv)
+                print('Loading from %s' % path_to_csv)
+                df = load_csv_possibly_with_dask(path_to_csv, use_dask=False, usecols=cols_to_load,
+                                                 dtype={'poi_cbg': str})
+                # df = df[df['poi_cbg'].astype(str).str[:2] == '45']
+                dfs.append(df)
+        df = pd.concat(dfs, axis=0)
+        del dfs  # to save some memory
+        start_day_string = df.iloc[0].date_range_start.split('T')[0]
+        print('Actual start of the week:', start_day_string)
+        elements = start_day_string.split('-')
+        assert len(elements) == 3
+        start_datetime = datetime.datetime(int(elements[0]), int(elements[1]), int(elements[2]))
+    assert df['date_range_start'].map(lambda x: x.startswith(
+        start_day_string + 'T00:00:00')).all()  # make sure date range starts where we expect for all rows.
+
+    # the dataframe is ready by the above code.
+    # Start to process dataframe
+    if expand_hourly_visits:  # expand single hourly visits column into one column per hour
+        df['visits_by_each_hour'] = df['visits_by_each_hour'].map(json.loads)  # convert string lists to lists.
+        all_dates = [start_datetime + datetime.timedelta(days=i) for i in range(7)]  # all days in the week
+        hours = pd.DataFrame(df['visits_by_each_hour'].values.tolist(),
+                             columns=[f'hourly_visits_%i.%i.%i.%i' % (date.year, date.month, date.day, hour)
+                                      for date in all_dates  # 7 days in the week
+                                      for hour in range(0, 24)])  # 0 - 23 hour
+        assert len(hours) == len(df)
+        hours.index = df.index  # safegraph_place_id
+        df = pd.concat([df, hours], axis=1)
+        # The hourly data has some spurious spikes
+        # related to the GMT-day boundary which we have to correct for.
+        df['offset_from_gmt'] = df['date_range_start'].map(lambda x: x[len(start_day_string + 'T00:00:00'):])
+        print("Offset from GMT value counts")
+        offset_counts = df['offset_from_gmt'].value_counts()
+        print(offset_counts)
+        hourly_offset_strings = offset_counts[:4].index  # four most common timezones across POIs
+        #
+        assert all(['-0%i:00' % x in hourly_offset_strings for x in [5, 6, 7]])  # should always include GMT-5, -6, -7
+        assert ('-04:00' in hourly_offset_strings) or ('-08:00' in hourly_offset_strings)  # depends on DST
+        percent_rows_being_corrected = (df['offset_from_gmt'].map(lambda x: x in hourly_offset_strings).mean() * 100)
+        print("%2.3f%% of rows have timezones that we spike-correct for." % percent_rows_being_corrected)
+        assert percent_rows_being_corrected > 98  # almost all rows should fall in these timezones
+        end_datetime = datetime.datetime(all_dates[-1].year, all_dates[-1].month, all_dates[-1].day, 23)
+
+        # have to correct for each timezone separately.
+        # Huan: don't understant yet.
+        for offset_string in sorted(hourly_offset_strings):  # four most common timezones across POIs
+            print('Correcting GMT%s...' % offset_string)  # offset_string: -05:00, -06:00, -07:00, , -08:00
+            idxs = df['offset_from_gmt'] == offset_string
+            offset_int = int(offset_string.split(':')[0])
+            assert (-8 <= offset_int) and (offset_int <= -4)  # -5, -6, -7, , -8
+            for date in all_dates:  # all days in the week, 7 days, e.g.: 2020-12-14
+                # not totally clear which hours are messed up - it's mainly one hour, but the surrounding ones
+                # look weird too - but this yields plots which look reasonable.
+                for hour_to_correct in [24 + offset_int - 1,
+                                        24 + offset_int,
+                                        24 + offset_int + 1]:
+                    # interpolate using hours fairly far from hour_to_correct to avoid pollution.
+                    dt_hour_to_correct = datetime.datetime(date.year, date.month, date.day, hour_to_correct)
+                    start_hour = max(start_datetime, dt_hour_to_correct + datetime.timedelta(hours=-3))
+                    end_hour = min(end_datetime, dt_hour_to_correct + datetime.timedelta(hours=3))
+                    cols_to_use = [f'hourly_visits_%i.%i.%i.%i' % (dt.year, dt.month, dt.day, dt.hour) for dt in
+                                   list_hours_in_range(start_hour, end_hour)]
+                    assert all([col in df.columns for col in cols_to_use])
+                    # this technically overlaps with earlier hours, but it should be okay because they will
+                    # already have been corrected.
+                    # Huan don't understand
+                    df.loc[idxs, 'hourly_visits_%i.%i.%i.%i' % (date.year, date.month, date.day, hour_to_correct)] = \
+                    df.loc[idxs, cols_to_use].mean(axis=1)
+                    # will bring some decimal numbers.
+
+    non_required_cols = [col for col in df.columns if not (col in cols_to_keep or col.startswith('hourly_visits_'))]
+    df = df.drop(columns=non_required_cols)
+    df = df.set_index('safegraph_place_id')
+    te = time.time()
+    print("%i rows loaded for week %s [total time = %.2fs]" % (len(df), start_day_string, te - ts))
+    return df
 def load_core_places_data(cols_to_keep):
     core_dir = os.path.join(CORE_POI_DIR)  # use the most recent core info
     dfs = []

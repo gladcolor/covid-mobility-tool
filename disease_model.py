@@ -56,10 +56,12 @@ class Model:
                                  death_lag=DEATH_LAG*24,  # 18 days
                                  mask_efficacy=MASK_EFFICACY,
                                  track_full_history_for_all_CBGs=False,
-                                 poi_subcategory_types=None):
+                                 poi_subcategory_types=None,
+                                 is_save_infection_rate=False,
+                                 ):
 
         # Huan, to store the infection rates.
-        self.IS_SAVE_INFECTION_RATE = False
+        self.IS_SAVE_INFECTION_RATE = is_save_infection_rate
         self.cbg_infection_rates = []
         self.poi_infection_rates = []
         self.each_cbg_new_cases_from_poi = []

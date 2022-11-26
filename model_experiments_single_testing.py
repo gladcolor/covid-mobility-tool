@@ -1,3 +1,5 @@
+import os.path
+
 from covid_constants_and_util import *
 from disease_model import Model
 import matplotlib.ticker as ticker
@@ -153,6 +155,8 @@ def fit_disease_model_on_real_data(d,
     if simulation_kwargs is None:
         simulation_kwargs = {}
 
+    simulation_kwargs['groups_to_track_num_cases_per_poi'] = ['all']
+
     if preload_poi_visits_list_filename is not None:
         f = open(preload_poi_visits_list_filename, 'rb')
         poi_cbg_visits_list = pickle.load(f)
@@ -249,7 +253,9 @@ def fit_disease_model_on_real_data(d,
     M = len(d)  # POI counts
 
     # filter CBGs
-    poi_cbg_proportions = d[aggregate_home_cbg_col].values  # an array of dicts; each dict represents CBG distribution for POI
+    poi_cbg_proportions = d[aggregate_home_cbg_col].values
+    # an array of dicts; each dict represents CBG distribution for POI
+
     acs_d = helper.load_and_reconcile_multiple_acs_data()
     acs_d['GEOID'] = acs_d['GEOID'].str[-12:]
     acs_d['county_code'] = acs_d['GEOID'].str[:5]
@@ -284,6 +290,7 @@ def fit_disease_model_on_real_data(d,
     N = len(all_unique_cbgs)
     all_unique_cbgs = [str(s).zfill(12) for s in all_unique_cbgs]
     cbgs_to_idxs = dict(zip(all_unique_cbgs, range(N)))
+    print("\ncbgs_to_idxs:\n", cbgs_to_idxs)
     print('FINAL: number of CBGs (N) = %d, number of POIs (M) = %d' % (N, M))
 
     # convert data structures with CBG names to CBG indices
@@ -694,7 +701,9 @@ def fit_disease_model_on_real_data(d,
                                daily_mask_use=mask_data,
                                intervention_cost=intervention_cost,
                                poi_subcategory_types=poi_subcategory_types,
-                               **exogenous_model_kwargs)
+                               **exogenous_model_kwargs,
+                               is_save_infection_rate=True,
+                               )
     m.init_endogenous_variables()
     if attach_data_to_model:
         m.d = d
@@ -3458,13 +3467,19 @@ if __name__ == '__main__':
 
     # args.manager_or_worker_job == 'fit_and_save_one_model':
     else:  # worker job needs to load the list of configs and figure out which one it's running.
-        timestring = args.timestring
-        timestring = f'{timestring}_{args.experiment_to_run}'
+
 
 
 
         EXISTING_CONFIG = None
-        EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2022_01_02_23_03_13_321102_normal_grid_search_normal_grid_search.pkl'
+        # Columbia
+        # EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2021_11_28_13_18_45_911113_normal_grid_search_normal_grid_search.pkl'
+
+        # Greenville
+        EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2022_01_02_14_46_37_084470_normal_grid_search_normal_grid_search.pkl'
+
+        # Charleston
+        # EXISTING_CONFIG = r'/media/gpu/Seagate/extra_safegraph_aggregate_models/data_and_model_configs/config_2022_01_02_23_03_13_321102_normal_grid_search_normal_grid_search.pkl'
 
         if EXISTING_CONFIG is not None:
             f = open(EXISTING_CONFIG, 'rb')
@@ -3477,8 +3492,12 @@ if __name__ == '__main__':
             data_and_model_config['model_kwargs']['exogenous_model_kwargs']['home_beta'] = home_beta_arry
             data_and_model_config['model_kwargs']['exogenous_model_kwargs']['poi_psi'] = poi_psi
 
+            timestring = os.path.basename(EXISTING_CONFIG)[7:33]
+            args.timestring = timestring
+            timestring = f'{timestring}_{args.experiment_to_run}'
 
         else:
+            timestring = args.timestring
             assert args.experiment_to_run in valid_experiments
             print("loading configs from %s" % config_filename)
             f = open(config_filename, 'rb')

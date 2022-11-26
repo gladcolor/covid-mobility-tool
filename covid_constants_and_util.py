@@ -58,7 +58,7 @@ PATH_TO_NEW_IPF_OUTPUT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/ipf_outp
 PATH_TO_SEIR_INIT = os.path.join(NEW_BASE_DIR, 'all_aggregate_data/seir_init/')
 
 # supplementary datasets: census, geographical, NYT, Google
-PATH_TO_ACS_1YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2018_one_year_acs_population_data/nhgis0001_ds239_20185_2018_blck_grp.csv')
+# PATH_TO_ACS_1YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2018_one_year_acs_population_data/nhgis0001_ds239_20185_2018_blck_grp.csv')
 PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG/ACS_race_cbsa_income_2019.csv')
 # PATH_TO_ACS_5YR_DATA = os.path.join(BASE_DIR, 'external_datasets_for_aggregate_analysis/2017_five_year_acs_data/2017_five_year_acs_data.csv')
 PATH_TO_ACS_5YR_DATA_GEODATABASE = os.path.join(BASE_DIR, 'covid_mobility_results/new_census_data/ACS_2019_5YR_BG.gdb.zip')
